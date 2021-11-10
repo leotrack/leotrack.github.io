@@ -1,0 +1,335 @@
+/*
+	Theme Name: Simply Dark
+	Theme URI: http://www.zhu8.net/blog/project/simply-dark/
+	Description: Just Dark...with Just Icons.By <a href="http://www.zhu8.net/blog/">Zhu8</a>.
+	Version: 1.0
+	Author: Zhu8
+	Author URI: http://www.zhu8.net/
+*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font:1em Courier New, MingLiU, sans-serif;
+	line-height:1.4em;
+	text-align:center;
+	color:#fff;
+	background:#000;
+}
+
+a {
+	color:#8dc63f;
+	font-weight:400;
+	text-decoration:none;
+	background-color:inherit;
+}
+
+a:hover {
+	color:#80a630;
+	text-decoration:none;
+	background-color:inherit;
+}
+
+a img {
+	border:none;
+}
+
+p {
+	padding:0 0 1.6em;
+}
+
+p form {
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+img.floatleft,img.center,img.floatright {
+	border:1px solid #a0a0a0;
+	padding:4px;
+}
+
+img.floatleft {
+	float:left;
+	margin:0 12px 5px 0;
+}
+
+img.center {
+	display:block;
+	margin:0 auto 5px;
+}
+
+img.floatright {
+	float:right;
+	margin:0 0 5px 12px;
+}
+
+/* header and navigation */
+#container {
+	width:75%;
+	text-align:left;
+	background:#000;
+	color:#999;
+	border:2px solid #333;
+	margin:20px auto 20px 20px;
+	padding:1px 0;
+}
+
+#header {
+	height:100px;
+	width:100%;
+	background:#000;
+	color:#fff;
+	margin:0 1px 1px;
+}
+
+#header h1 {
+	font-size:2em;
+	background-color:inherit;
+	color:#999;
+	font-weight:400;
+	padding:35px 0 0 20px;
+}
+
+#header h1 a {
+	color:#999;
+	text-decoration:none;
+}
+
+#header h2 {
+	font-size:1.4em;
+	background-color:inherit;
+	color:#6699FF;
+	font-weight:400;
+	margin:10px 0 0 20px;
+}
+
+#navigation {
+	height:2.2em;
+	line-height:2.2em;
+	width:100%;
+	background:#222;
+	color:#999;
+	margin:0 1px;
+}
+
+#navigation li {
+	float:left;
+	list-style-type:none;
+	border-right:1px solid #999;
+	white-space:nowrap;
+	padding:0 15px;
+}
+
+#navigation li a {
+	text-decoration:none;
+	background-color:inherit;
+	color:#80a630;
+}
+
+*
+html #navigation a {
+	width:1%;
+}
+
+#navigation a:hover {
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+}
+
+#navigation .home {
+	background:#000;
+	color:#80a630;
+	text-decoration:none;
+}
+
+/* left column (content) */
+#content {
+	float:left;
+	width:68%;
+	font-size:1em;
+	padding:20px 0 0 20px;
+}
+
+#content h2 {
+	display:block;
+	font-size:1.6em;
+	font-weight:400;
+	color:#F63;
+	background-color:inherit;
+	margin:0 0 16px;
+}
+
+.splitcontentleft {
+	float:left;
+	width:48%;
+}
+
+.splitcontentright {
+	float:right;
+	width:48%;
+}
+
+#content h2 a {
+	font-weight:400;
+}
+
+#content h3 {
+	font-size:1.4em;
+
+	margin:0 0 5px;
+}
+
+#content dl {
+	margin:0 5px 10px 25px;
+}
+
+#content dt {
+	font-weight:700;
+	margin-bottom:5px;
+}
+
+#content dd {
+	margin:0 0 10px 15px;
+}
+
+.bold {
+	font-weight:700;
+	font-size:1.1em;
+}
+
+.box {
+	border:1px solid #333;
+	background-color:#000;
+	color:#999;
+	line-height:1.5em;
+	margin:0 0 20px;
+	padding:10px;
+}
+
+/* right column (sidebar) */
+#sidebar {
+	float:right;
+	width:25%;
+	line-height:1.4em;
+	padding:20px 20px 10px 0;
+}
+
+.sidebarbox {
+	border:1px solid #333;
+	background-color:#000;
+	color:#999;
+	font-size:.9em;
+	line-height:1.6em;
+	margin:0 0 20px;
+	padding:10px;
+}
+
+#sidebar h2 {
+	display:block;
+	font-size:1.6em;
+	font-weight:400;
+	text-align:left;
+	color:#F36;
+	background-color:inherit;
+	margin:0 0 15px;
+	padding:0 0 0 25px;
+}
+
+#sidebar p {
+	font-size:0.9em;
+	margin:0 0 16px;
+}
+
+#sidebar ul {
+	list-style-type:none;
+	margin:0 5px 5px;
+}
+
+#sidebar ul a {
+	color:#8dc63f;
+	text-decoration:none;
+}
+
+#sb-search {
+	background:transparent url(images/finder.png) no-repeat scroll 0% 0%;
+}
+
+#sb-about {
+	background:transparent url(images/home.png) no-repeat scroll 0% 0%;
+}
+
+#sb-blog {
+	background:transparent url(images/archive.png) no-repeat scroll 0% 0%;
+}
+
+#sb-more {
+	background:transparent url(images/network.png) no-repeat scroll 0% 0%;
+}
+
+#sb-menu {
+	background:transparent url(images/info.png) no-repeat scroll 0% 0%;
+}
+/* footer */
+#footer {
+	clear:both;
+	width:100%;
+	font-size:0.9em;
+	color:#f0f0f0;
+	background:#222;
+	margin:0 1px;
+	padding:5px 0;
+}
+
+#footer p {
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+#footer a {
+	color:#8dc63f;
+	background-color:inherit;
+	font-weight:400;
+}
+
+#footer a:hover {
+	color:#fff;
+	background-color:inherit;
+	text-decoration:none;
+	border-bottom:#6F9 1px solid;
+}
+
+/* sidebarnav */
+#sidebarnav {
+	position:fixed !important;
+	position:absolute;/* for IE */
+	top:20px;
+	width:18%;
+	right:5%;
+	border-left:#6F9 2px solid;
+	border-top:#6F9 2px solid;
+	margin:0 0 0 -110px;
+}
+#sidebarnav ul li{
+list-style-type:none;
+}
+a#comment {
+	color:#F36;
+	font-weight:700;
+}
+
+#header h1 a:hover,#sidebar ul a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+#content a:hover,#subcontent a:hover {
+	text-decoration:underline;
+}
+
+#content ul,#content ol {
+	margin:0 5px 16px 35px;
+}

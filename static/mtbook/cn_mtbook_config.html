@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第二章 ─ 设定 Movable Type</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第一章 ─ 安装 Movable Type" href="cn_mtbook_install.html" />
+  <link rel="next" title="第三章 ─ 管理文章" href="cn_mtbook_entry.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第二章 ─ 设定 Movable Type</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#config">第二章 ─ 设定 Movable Type</a></li>
+  <ul>
+    <li><a href="#cfg">设定 mt.cfg</a></li>
+    <li><a href="#db">设定数据库</a></li>
+    <li><a href="#init">第一次激活系统</a></li>
+    <li><a href="#blog_config">网志组态</a></li>
+      <ul>
+        <li><a href="#blog_config_core">核心设定</a></li>
+        <li><a href="#blog_config_pref">偏好</a></li>
+        <ul>
+          <li><a href="#blog_config_pref_general">一般设定</a></li>
+          <li><a href="#blog_config_pref_archiving">汇整</a></li>
+          <li><a href="#blog_config_pref_publicity">出版/远程接口/引用</a></li>
+          <li><a href="#blog_config_pref_comments">回响组态</a></li>
+        </ul>
+        <li><a href="#blog_config_arc">汇整</a></li>
+        <li><a href="#blog_config_profile">修改个人数据</a></li>
+      </ul>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="config"></a>第二章 ─ 设定 Movable Type</h1>
+<p>当你按照<a href="cn_mtbook_install.html#install">第一章</a>完成 Movable Type 安装后，还需要先加以调整各项设定，然后才能够开始使用。</p>
+<p>以下我们将逐一加以说明，请务必按照本章指引来调整 Movable Type ，否则可能会发生意料之外的错误。</p>
+<h2><a id="cfg"></a>设定 mt.cfg</h2>
+<p>大部分的设定值都写在一个叫做 <code>mt.cfg</code> 的档案里；无论你是在甚么操作系统上安装了 Movable Type ，都会需要修改这个档案内的设定。以下的步骤原则上是写给 Windows 的使用者看的， FreeBSD 、 Linux 或其它 UN*X 操作系统的使用者，请用任何文字编辑器编辑 Movable Type 安装目录底下的 <code>mt.cfg</code> （例如 <code>/usr/local/www/cgi-bin/mt.cfg</code> ），然后一并按照<a href="#cfg_03">步骤三</a>之后的说明来加以修改。</p>
+<p><ol>
+  <li><a id="cfg_01"></a>执行<strong>开始 &raquo; 程序集 &raquo; 附属应用程序 &raquo; 记事本</strong> 来开启 记事本 。</li>
+  <li><a id="cfg_02"></a>如<a href="#img_01">图一</a>，开启 <strong>C:\Program Files\OurInternet\Movable Type\mt\mt.cfg</strong> 这个档案。<br />请注意，你可能得在<code>档案类型</code>里选择<strong>所有档案</strong>，才有办法看到这个档案。<div class="img"><img src="http://junnie.3322.org/bookimg/mtcfg_01.png"><br />图一：在 <code>记事本</code> 中开启 <code>C:\Program Files\OurInternet\Movable Type\mt\mt.cfg</code> 。</div></li>
+  <li><a id="cfg_03"></a>如<a href="#img_02">图二</a>，在这个档案里找到写著以下内容的那一列：<pre>CGIPath http://localhost/</pre><div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtcfg_02.png" alt="找到写著「 CGIPath http://localhost/ 」的这一列"><br />图二：在 <code>mt.cfg</code> 里找到写著 <code>CGIPath http://localhost/</code> 的那一列。</div></li>
+  <li><a id="cfg_04"></a>在<a href="#cfg_03">步骤三</a>我们所找到的那一列，是用来设定 Movable Type 的 CGI 路径的。这一个设定项目如果没有设好的话，将会导致你的网页读者没办法顺利使用回响及引用功能。如果你按照了第零章／<a href="cn_mtbook_domain.html#free">免费的网域名称</a>小节的说明申请了免费网址，或按照第零章／<a href="cn_mtbook_domain.html#dynamic">浮动 IP 的解决方案</a>小节的说明申请了免费的浮动网域名称的话，你就应该把这一列中的 <code>localhost</code> 改成你所设定的网域名称（如果是免费的网域名称的话，就是在<a href="cn_mtbook_domain.html#free_11">步骤十一</a>；如果是浮动网域名称的话，则是在<a href="cn_mtbook_domain.html#dynamic_11">步骤十一</a>），最后面别忘记加上一个 <strong>/</strong> 符号，如<a href="#img_03">图三</a>。如果你是 UN*X 平台（如 FreeBSD 或 Linux ）的使用者，或者你重新修改过网页服务器，把 CGI 路径指到别的目录的话，你也该在这里做出相对应的修改，例如把这一列改成 <code>CGIPath http://Jedimt.dyndns.org/cgi-bin/</code> 。<div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtcfg_03.png" alt="修改 CGIPath 的设定值"><br />图三：修改 CGIPath 的设定值。在这个范例中，我把这一列改成 <code>CGIPath http://Jedimt.dyndns.org/</code> 。</div></li>
+  <li><a id="cfg_05"></a>接下来这两个步骤祇有 Windows 的使用者（或者需要用 SMTP 来寄信的 UN*X 使用者）才会用到。一般 UN*X 的使用者请直接跳到<a href="#cfg_07">步骤七</a>；另外也请确定你已经按照<a href="cn_mtbook_install.html#win32_sendmail">第一章的指示</a>安装了 <code>Mail::Sendmail</code> 模块，接下来这几个步骤所做的修改才会有效。请继续在 <code>mt.cfg</code> 里寻找以下两列的内容，如<a href="#img_04">图四</a>：<pre># MailTransfer smtp
+# SMTPServer smtp.your-site.com</pre><div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtcfg_04.png" alt="寻找关于寄信的设定"><br />图四：在 <code>mt.cfg</code> 里寻找跟 SMTP 有关的设定。</div></li>
+  <li><a id="cfg_06"></a>对于 Windows 的使用者来说，要寄信祇得用 SMTP 协议，因此我们得修改<a href="#cfg_05">步骤五</a>找到的那两列。请先把「 <code># MailTransfer smtp</code> 」这一列前面的「 <strong># </strong> 」删除，如<a href="#img_05">图五</a>；然后「 <code># SMTPServer smtp.your-site.com</code> 」这一列中，除了也要把「 <strong># </strong> 」删除之外，还得把「 <strong>smtp.your-site.com</strong> 」修改成你能够使用的送信主机。举例来说，如果你用的是 HiNet 的 ADSL 的话，你就可以把 <code>smtp.your-site.com</code> 改成 <code>ms1.hinet.net</code> ，如<a href="#img_06">图六</a>。<div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mtcfg_05.png" alt="启用 SMTP"><br />图五：启用 Movable Type 的 SMTP 功能。</div><div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtcfg_06.png" alt="设定你的 SMTP 服务器"><br />图六：设定 SMTP 服务器。在这个范例中设定的是 <code>ms1.hinet.net</code> 。</div></li>
+  <li><a id="cfg_07"></a>让我们继续在 <code>mt.cfg</code> 往后寻找。你应该要看到有一列写著 <strong>NoHTMLEntities 1</strong> ，如果这一列前面有 <strong># </strong> 的话，请加以删除，务必确定这一列祇有以下的内容，如<a href="#img_07">图七</a>，否则你将会在文章编辑字段中看到一堆乱码：<pre>NoHTMLEntities 1</pre><div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mtcfg_07.png" alt="不要把内容编码成 HTML 本体"><br />图七：不要把内容编码成 HTML 本体。</div></li>
+  <li><a id="cfg_08"></a>如果你的服务器位于防火墙之后，而必须使用另外的代理服务器 (Proxy Server) 才有办法联机出去的话，你就得如<a href="#img_08">图八</a>自己加上这一列指令：<pre>PingProxy http://代理服务器地址:代理服务器连接埠</pre>这一列指令可以加在 <code>mt.cfg</code> 里的任何位置，如果你在储存文章时发生了「<code>发送引用通告出错</code>」的错误讯息，那么你就该设定这一项指令了。<div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtcfg_08.png" alt="设定引用功能的代理服务器为 proxy.hinet.net:80"><br />图八：设定引用功能会用到的代理服务器，在这个范例中我们设定的是「 http://proxy.hinet.net:80 」。</li>
+  <li><a id="cfg_09"></a>继续在 <code>mt.cfg</code> 往后寻找，看看有没有一列写著 <strong>PublishCharset UTF-8</strong> ；这是用来处理万国码 (UNICODE) 中文字的。如果你找不到这一列的话，请按照<a href="#img_09">图九</a>，自己加上这一列：<pre>PublishCharset UTF-8</pre><div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtcfg_09.png" alt="设定出版字元集设定为 UTF-8"><br />图九：设定出版字元集设定为 <code>UTF-8</code> 。</div></li>
+  <li><a id="cfg_10"></a>现在我们要存盘了。请如<a href="#img_10">图十</a>从<code>档案</code>选单里选择<strong>储存盘案</strong>，最后再如<a href="#img_11">图十一</a>按下关闭图标即可。恭喜你完成设定了。<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtcfg_10.png" alt="储存盘案"><br />图十：储存盘案。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtcfg_11.png" alt="按下关闭图标"><br />图十一：按下 <code>记事本</code> 的<strong>关闭图标</strong>。</div></li>
+</ol></p>
+<h2><a id="db"></a>设定数据库</h2>
+<p>Movable Type 如果不加以调整设定的话，会用 <code>Berkeley DB</code> 来当作数据库后端；实际上对于一般的使用者来说，这样也就够了。但是如果你决定要用 <code>MySQL</code> 或 <code>PostgreSQL</code> 来当数据库后端的话，就必须按照本节的内容加以设定才行。</p>
+<p>如果你是 <code>Windows</code> 的使用者，而且用了我们在<a href="cn_mtbook_install.html#win32">第一章提到的安装档</a>的话，就可以直接跳过这一个小节，因为这个安装档里，使用的是 <code>Berkeley DB</code> 。除非你自己另外装了 <code>MySQL</code> ，才有必要继续读这一节。</p>
+<p>设定数据库所会动到的档案祇有两个，分别是 <code>mt.cfg</code> 和 <code>mt-db-pass.cgi</code> ，请按照以下的步骤逐一修改其内容：</p>
+<p><ol>
+  <li><a id="db_01"></a>用文字编辑器开启 <code>mt.cfg</code> 。</li>
+  <li><a id="db_02"></a>在 <code>mt.cfg</code> 里加入这一列：「 <strong>ObjectDriver 驱动程序_名称</strong>」。这里的「<code>驱动程序_名称</code>」可能会是「<strong>DBI::mysql</strong>」（如果你用的是 <code>MySQL</code> ）、「<strong>DBI::postgres</strong>」（如果你用的是 <code>PostgreSQL</code> ）或「<strong>DBI::sqlite</strong>」（如果你用的是 <code>SQLite</code> ）</li>
+  <li><a id="db_03"></a>在 <code>mt.cfg</code> 里加入这一列：「 <strong>Database 数据库_名称</strong>」。这里的「<code>数据库_名称</code>」指的是<strong>你要用来存放数据的 SQL 数据库名称</strong>。</li>
+  <li><a id="db_04"></a>在 <code>mt.cfg</code> 里加入这一列：「 <strong>DBUser 数据库_使用者</strong>」。这里的「<code>数据库_使用者</code>」指的是<strong>你要用来连接到数据库的使用者名称</strong>。</li>
+  <li><a id="db_05"></a>如果你的 SQL 服务器位于不同的主机上的话，也请在 <code>mt.cfg</code> 里加入这一列：「 <strong>DBHost 数据库_主机</strong>」。这里的「<code>数据库_主机</code>」指的是<strong>你的 SQL 主机名称</strong>。</li>
+  <li>如果你的 SQL 服务器位于本地端，但是 socket 却不是在标准的位置上时，则请在 <code><a id="db_06"></a>mt.cfg</code> 里加入这一列：「 <strong>DBSocket /路径/指到/mysql.sock</strong> 」。这里的「 <code>/路径/指到/mysql.sock</code> 」指的是<strong>你的 SQL 的 socket 路径</strong>。</li>
+  <li><a id="db_07"></a>储存并关闭 <code>mt.cfg</code> 。</li>
+  <li><a id="db_08"></a>接下来的步骤祇有用 <code>MySQL</code> 或 <code>PostgreSQL</code> 的使用者才需要设定；如果你用的是 <code>SQLite</code> 的话，可以直接跳到<a href=#init">下一节</a>去。现在请用文字编辑器开启 <code>mt-db-pass.cgi</code> 。</li>
+  <li><a id="db_09"></a>在这个档案里祇需要写一列，这一列的内容就是<strong>你的 SQL 数据库口令</strong>。</li>
+  <li><a id="db_10"></a>储存并关闭 <code>mt-db-pass.cgi</code> 。这样就完成数据库设定了。</li>
+</ol></p>
+<h2><a id="init"></a>第一次激活系统</h2>
+<p>如果你是 <code>Windows</code> 的使用者，而且用了我们在<a href="cn_mtbook_install.html#win32">第一章提到的安装档</a>的话，一样可以直接跳过这个小节，因为安装程序已经帮你做完这件事了。</p>
+<p>对于其它平台的使用者、或者选择手动安装的使用者来说，你的 Movable Type 还不能正式开始运作；我们还得先把数据库的架构准备好，才能够开始使用 Movable Type ，否则连预设的使用者帐号口令都没有。请按照以下的步骤：</p>
+<p><ol>
+  <li><a id="init_01"></a>用浏览器连到 Movable Type 的 <strong>mt-load.cgi</strong> 。举例来说，如果你的网页服务器位于 <code>http://Jedimt.dyndns.org/</code> ，而 CGI 脚本放在 <code>cgi-bin/</code> 的话，那你就应该要连到 <code>http://Jedimt.dyndns.org/cgi-bin/mt-load.cgi</code> 去。</li>
+  <li><a id="init_02"></a>你应该会看到如<a href="#img_12">图十二</a>的画面，这个时候就表示数据库初始化完成了。请按下浏览器里的「<code>进入设定画面</code>」链结，并继续参考<a href="#blog_config">下一节</a>的内容组态你的网志。<br />注意：<strong>一旦你完成数据库的初始化后，你最好把 <code>mt-load.cgi</code> 这个档案给删除掉，以免发生预期外的安全性漏洞。</strong><div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtinitial_02.png" alt="数据库初始化"><br />图十二：数据库初始化完成了，请按下「<code>进入设定画面</code>」的链结。</div></li>
+</ol></p>
+<h2><a id="blog_config"></a>网志组态</h2>
+<p>虽然我们已经完成了 <code>mt.cfg</code> 的设定，也把数据库的架构建起来了，但是此时 Movable Type 内的各项设定值都还是预设值，你应该按照本节的内容加以调整，才能够符合你自己的实际设置状况：</p>
+<p><ol>
+  <li><a id="blog_config_01"></a>如果你还没有登入 Movable Type ，请用浏览器连到 Movable Type 的 <strong>mt.cgi</strong> 。举例来说，如果你的网页服务器位于 <code>http://Jedimt.dyndns.org/</code> ，而 CGI 脚本放在 <code>cgi-bin/</code> 的话，那你就应该要连到 <code>http://Jedimt.dyndns.org/cgi-bin/mt.cgi</code> 去；把 Movable Type 安装到 Windows 的使用者则应该是连到 <code>http://Jedimt.dyndns.org/mt.cgi</code> 之类的网址去，因为 Windows 的安装档会把 CGI 脚本放在网页服务器的 <code>/</code> 里。<br />如果你早就登入 Movable Type 了的话，请直接跳到「<a href="#blog_config_core">核心设定</a>」的部分。</li>
+  <li><a id="blog_config_02"></a>第一次登入系统的时候，请使用预设的帐号来登入。如<a href="#img_13">图十三</a>，预设的<code>使用者</code>帐号 (<code>Username</code>) 是 <strong>Melody</strong> ，而预设的<code>口令</code> (<code>Password</code>) 则是 <strong>Nelson</strong> ；依图填妥后，请按下「<code>登入</code> (<code>LOG IN</code>)」按钮。<br />注意：如果你有在用<code>自然输入法</code>的话，请务必<strong>不要把自然输入法设成预设输入法</strong>，否则会发生登入错误的状况。<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtconfig_01.png" alt="用 Melody/Nelson 来登入"><br />图十三：用 <strong>Melody</strong>/<strong>Nelson</strong> 的使用者帐号/口令来登入 Movable Type 。</div></li>
+  <li><a id="blog_config_03"></a>登入 Movable Type 之后，你应该会看到如<a href="#img_14">图十四</a>的系统主画面；请先按下画面上的「<code>管理网志</code>」链结，再依<a href="#img_15">图十五</a>按下左方工具列上的「<code>网志组态</code>」按钮，然后参照「<a href="#blog_config_core">核心设定</a>」的部分加以设定。<div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtinitial_03.png" alt="按「管理网志」"><br />图十四：这是 Movable Type 的系统主画面，请按下「<code>管理网志</code>」的链结。</div><div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtinitial_04.png" alt="按「网志组态」"><br />图十五：请按下左方工具列上的「<code>网志组态</code>」按钮。</div></li>
+</ol></p>
+<h3><a id="blog_config_core"></a>核心设定</h3>
+<p><ol>
+  <li><a id="blog_config_core_01"></a>在「<code>网志名称</code>」这一栏里，设定的是你的网志名称。你可以把它想成就是一个站台的名称，例如「<code>飞雪连天电子报</code>」之类的东西。请依<a href="#img_16">图十六</a>把预设的「<code>我的网志</code>」改掉。<div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_01.png" alt="设定网志名称"><br />图十六：设定<code>网志名称</code>。在这个范例中所填入的是「光剑格斗学院」。</div></li>
+  <li><a id="blog_config_core_02"></a>「<code>本机站台路径</code>」指的是说你要把 Movable Type 产生出来的网页档案放在硬碟上的那个地方；除非你知道你自己正在做些甚么，否则你最好不要乱动这一栏的设定值。</li>
+  <li><a id="blog_config_core_03"></a>「<code>站台网址</code>」指的是你的索引页面网址（不含档名）；对于把 Movable Type 安装在 Windows 上的使用者来说，祇需要把 <strong>localhost</strong> 这个字符串替换成你申请到的网域名称就可以了；这也就是你在第零章<a href="cn_mtbook_domain.html#free_11">「免费的网域名称」小节步骤十一</a>设定的网域名称，或<a href="cn_mtbook_domain.html#dynamic_11">「浮动 IP 的解决方案」小节步骤十一</a>设定的动态网域名称。<br />请依<a href="#img_17">图十七</a>把 <code>localhost</code> 改成你的网域名称，并务必保留前面的 <strong>http://</strong> 和最后的 <strong>/</strong> ，否则别人将难以浏览你的网志。<div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_02.png" alt="填写站台网址"><br />图十七：填写站台网址。在这个范例中填写的是 <code>http://Jedimt.dyndns.org/</code> 。</div></li>
+  <li><a id="blog_config_core_04"></a>「<code>本机汇整路径</code>」指的是说你要把 Movable Type 产生出来的网页汇整档案放在硬碟上的那个地方；除非你知道你自己正在做些甚么，否则你最好不要乱动这一栏的设定值。<br />理论上这一栏可以填得跟「<code>本机站台路径</code>」一样，不过这么一来，你的「<code>汇整网址</code>」就也得要跟「<code>站台网址</code>」设成一样才行。</li>
+  <li><a id="blog_config_core_05"></a>「<code>汇整网址</code>」指的是你的汇整页面网址（不含档名），这个网址应该会跟你的「<code>站台网址</code>」有关才对；对于把 Movable Type 安装在 Windows 上的使用者来说，祇需要把 <strong>localhost</strong> 这个字符串替换成你申请到的网域名称就可以了；这也就是你在第零章<a href="cn_mtbook_domain.html#free_11">「免费的网域名称」小节步骤十一</a>设定的网域名称，或<a href="cn_mtbook_domain.html#dynamic_11">「浮动 IP 的解决方案」小节步骤十一</a>设定的动态网域名称。<br />请依<a href="#img_18">图十八</a>把 <code>localhost</code> 改成你的网域名称，并务必保留前面的 <strong>http://</strong> 和最后的 <strong>/</strong> ，否则别人将难以浏览你的网志。<div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_03.png" alt="填写汇整网址"><br />图十八：填写汇整网址。在这个范例中填写的是 <code>http://Jedimt.dyndns.org/archives/</code> 。</div></li>
+  <li><a id="blog_config_core_06"></a>把画面往下卷动，「<code>时区</code>」这一栏应该是个下拉式选单；你应该从这个下拉式选单里选择<strong>你本人所在地的时区</strong>（而不是服务器所在位置的时区）。对于住在台湾的使用者来说，你应该如<a href="#img_19">图十九</a>选「<strong>UTC+8 (中国沿海, 台湾)</strong>」。<div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_04.png" alt="选择时区"><br />图十九：从<code>时区</code>中选择 <strong>UTC+8 (中国沿海, 台湾)</strong> 。</div></li>
+  <li><a id="blog_config_core_07"></a>上述的设定都修改过之后，请如<a href="#img_20">图二十</a>按下「<conde>储存</code>」按钮。<div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_05.png" alt="按下「储存」"><br />图二十：按下「<code>储存</code>」按钮。</div></li>
+  <li><a id="blog_config_core_08"></a>设定储存起来后，你应该会看到如<a href="#img_21">图二十一</a>的画面。现在我们要继续调整别的设定，请按下「<code>偏好</code>」链结，然后参照<a href="#blog_config_pref">下一小节</a>的指引。<div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mtconfig_core_06.png" alt="储存后按下「偏好」链结"><br />图二十一：设定储存后，按下「<code>偏好</code>」链结。</div></li>
+</ol></p>
+<h3><a id="blog_config_pref"></a>偏好</h3>
+<p>在这个页面里的设定比较多，大致又可以分成四类：<a href="#blog_config_pref_general">一般设定</a>、<a href="#blog_config_pref_archiving">汇整</a>、<a href="#blog_config_pref_publicity">出版/远程接口/引用</a>、以及<a href="#blog_config_pref_comments">回响组态</a>。让我们一类一类地加以设定：</p>
+<h4><a id="blog_config_pref_01"></a><a id="blog_config_pref_general"></a>一般设定</h4>
+<p><ol>
+  <li><a id="blog_config_pref_general_01"></a>「<code>网志描述</code>」这一栏是用来填写你的网志的描述用的。一般说来，这里可以用来填写像是<strong>标语或口号</strong>之类的东西，例如「和平、奋斗、救中国」。这一栏可以留空不填，也可以如<a href="#img_22">图二十二</a>这样填入任意的文字内容。<div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_01.png" alt="填写网志描述"><br />图二十二：填写网志描述，在这个范例中填写的是「<code>如光似影／人剑合一</code>」。</div></li>
+  <li><a id="blog_config_pref_general_02"></a>「<code>文章显示天数范围</code>」指的是<strong>你要在首页（也就是主索引页面）放多少天内的新文章</strong>。这个值祇是一个预设值而已，你随时都可以修改模版，来做出不同的效果，像是改成祇放最后几篇新文章之类的。你应该视文章实际的新增频率来调整这里的数值：如果你的文章增加得很快的话，就应该设小一点，反之就应该设大一点。如果你完全不知道该设成多少的话，按照<a href="#img_23">图二十三</a>这样保留预设值 <strong>7 天</strong>或许也是个好主意。<div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_02.png" alt="设定文章显示天数范围"><br />图二十三：设定文章显示天数范围，在这个范例中我们保留 <code>7</code> 天的预设值。</div></li>
+  <li><a id="blog_config_pref_general_03"></a>「<code>显示日期用的语言</code>」会影响到你的页面中任何日期的显示方法。 Movable Type 截至目前为止还没有做出中文日期的显示格式，所以请如<a href="#img_24">图二十四</a>这样在下拉式选单中选择「<strong>英语</strong>」。<div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_03.png" alt="设定显示日期用的语言为英语"><br />图二十四：设定显示日期用的语言，请依图标选择<code>英语</code>。</div></li>
+  <li><a id="blog_config_pref_general_04"></a>「<code>文章显示顺序</code>」会影响到任何有两篇（或更多）文章同时出现的页面中，文章排列的顺序。祇要你的文章更新频率没有太低的话，你就应该如<a href="#img_25">图二十五</a>照预设值选「<strong>递减</strong>」，这么一来新的文章才会出现在页面的开端，（假想中的）读者一旦能够轻易地发现你的新文章，就更会常常晃过来看你的东西。<div class="img"><a id="img_25"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_04.png" alt="设定文章显示顺序为递减"><br />图二十五：设定文章显示顺序，在这个范例中我们保留了<code>递减</code>的预设值。</div></li>
+  <li><a id="blog_config_pref_general_05"></a>「<code>Default Text Formatting for new entries</code> （新文章的预设文字格式）」指的是发表文章时的预设文字格式。除非你有特殊需求，不然你应该如<a href="#img_26">图二十六</a>这般，用预设值「<strong>转换换列</strong>」来自动处理文章中的<code>段落</code>（自动加上 <code>&lt;p&gt;</code> 与 <code>&lt;/p&gt;</code> ）及<code>换列</code>（自动加上 <code>&lt;br /&gt;</code> ）。<div class="img"><a id="img_26"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_05.png" alt="设定新文章的预设文字格式为「转换换列」"><br />图二十六：设定新文章的预设文字格式，在这个范例中我们保留了<code>转换换列</code>的预设值。</div></li>
+  <li><a id="blog_config_pref_general_06"></a>文章的出版状态如果是「<code>草稿</code>」的话，就不会显示在网页上；祇有出版状态为「<code>定稿</code>」的文章才会显示出来。「<code>预设的文章出版状态</code>」就是在设定文章出版状态的预设值的。当然你在发表新文章或编辑旧文章的时候，仍然可以随时改变出版状态；但是如果你没有特殊需要的话，在这里就按照<a href="#img_27">图二十七</a>设定成「<strong>定稿</strong>」显然会方便许多。<div class="img"><a id="img_27"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_06.png" alt="设定预设的文章出版状态为「定稿」"><br />图二十七：设定预设的文章出版状态，在这个范例中我们设定成「<code>定稿</code>」。</div></li>
+  <li><a id="blog_config_pref_general_07"></a>新增文章的时候，可以在<code>文摘</code>字段里填写这一篇文章的文摘；如果你没有填写那一栏的话， Movable Type 就会拿「<code>主要文章本体</code>」这一栏的前几个字来当作文摘。这里的「<code>文摘字数</code>」就是在设定这个的。如果你不知道要设成多少，就如<a href="#img_28">图二十八</a>保留预设值 <strong>20</strong> 个字吧。<div class="img"><a id="img_28"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_07.png" alt="设定文摘字数"><br />图二十八：设定文摘字数，在这个范例中我们保留了 <code>20</code> 个字的预设值。</div></li>
+  <li><a id="blog_config_pref_general_08"></a>「<code>消毒规格</code>」会决定回响里可以用的 HTML 卷标。如果你甚么都不懂，就如<a href="#img_29">图二十九</a>这样，选「<strong>按照预设值</strong>」吧。<div class="img"><a id="img_29"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_08.png" alt="设定消毒规格为「按照预设值」"><br />图二十九：设定消毒规格，在这个范例中我们选了「<code>按照预设值<code>」。</div></li>
+  <li><a id="blog_config_pref_general_09"></a><a href="#img_30">图三十</a>里的「<code>欢迎讯息</code>」大概祇有在同一份网志有许多不同作者一起维护的时候，才会有用，所以我们在此就先不写了。至于「<code>创意公用授权条款</code>」的部分，请见<a href="cn_mtbook_cc.html#cc">附录二</a>的介绍；<strong>如果你对于甚么是<code>创意公用授权条款</code>完全没概念的话，现在最好啥也别碰</strong>。<div class="img"><a id="img_30"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_general_09.png" alt="欢迎讯息与创意公用授权条款"><br />图三十：欢迎讯息与创意公用授权条款。在这个范例中我们甚么事也不做。</div></li>
+</ol></p>
+<h4><a id="blog_config_pref_02"></a><a id="blog_config_pref_archiving"></a>汇整</h4>
+<p>这一个区块中的设定选项都与汇整 (archiving) 有关，你可以一并参照<a href="cn_mtbook_archive.html#archive">第八章</a>的介绍。</p>
+<p><ol>
+  <li><a id="blog_config_pref_archiving_01"></a>Movable Type 除了能让你很容易新增文章之外，也会按照你指定的方法自动地帮你把文章蒐集起来汇整归档，这一个「<code>偏好汇整类别</code>」就是让你设定你最惯用的汇整方法的。在多数的情况下，你应该会想要跟<a href="#img_31">图三十一</a>一样，选择「<strong>单篇汇整</strong>」；这么一来，从你的首页（也就是主索引页面）点选任何一篇文章的时候，就会连到祇有该篇文章的汇整页面去。<div class="img"><a id="img_31"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_archiving_01.png" alt="设定偏好汇整类别为「单篇汇整」"><br />图三十一：设定偏好汇整类别，在这个范例中我们用了<code>单篇汇整</code>的预设值。</div></li>
+  <li><a id="blog_config_pref_archiving_02"></a>「<code>汇整档案扩展名</code>」是让你设定产生出来的网页档案扩展名的。如果你懂得 PHP 或其它各种语言的话，就能够善用这个设定；除此之外，如<a href="#img_32">图三十二</a>用预设值 <strong>html</strong> 显然会是个好主意。<div class="img"><a id="img_32"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_archiving_02.png" alt="设定汇整档案扩展名为 html"><br />图三十二：设定汇整档案扩展名，在这个范例中我们保留了 <code>html</code> 这个预设值。</div></li>
+</ol></p>
+<h4><a id="blog_config_pref_03"></a><a id="blog_config_pref_publicity"></a>出版/远程接口/引用</h4>
+<p><ol>
+  <li><a id="blog_config_pref_publicity_01"></a>「<code>当我更新我的网志时通知下列网站</code>」选项跟「<code>通告</code> (<code>ping</code>) 」功能有关：有一些服务器，像是 <code>blo.gs</code> 和 <code>weblogs.com</code> 都会列出近期更新过的网志（或网站）。这些服务器当然不可能整天花费大量的力气去察看全世界的的网站页面有没有更新，他们之所以能够知道页面有所更新，是因为他们能接受及处理<code>更新通告</code>。<br />Movable Type 就能够送出这种<code>更新通告</code>，所以为了打响你的知名度，请按照<a href="#img_33">图三十三</a>核选 <code>blo.gs</code> 和 <code>weblogs.com</code> 这两个核选框吧。如果你还知道其它服务器也能处理这种<code>更新通告</code>的话，也可以再填进下面那一个字段里，并以换列作为间隔。<div class="img"><a id="img_33"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_publicity_01.png" alt="核选 blo.gs 和 weblogs.com"><br />图三十三：核选 <code>blo.gs</code> 和 <code>weblogs.com</code> ，让你的网志更广为人知。</div></li>
+  <li><a id="blog_config_pref_publicity_02"></a>「<code>近期更新金钥</code>」祇对有捐钱给 Six Apart （这是 Movable Type 的公司）或购买了 Movable Type 商用许可的使用者有用；在这里填入了近期更新金钥后，你的 Movable Type 才会发送<code>更新通告</code>给 Movable Type 的官方网站。<br />对于一般的使用者来说，留著空白不填就可以了。</li>
+  <li><a id="blog_config_pref_publicity_03"></a>「<code>Google API 金钥</code>」祇对有用到 Google API 的人才有用。如果你会用到 Google API 的话，请先去 Google 申请一份 Google API 金钥，然后填到这里来。<br />对于一般的使用者来说，留著空白不填就可以了。</li>
+  <li><a id="blog_config_pref_publicity_04"></a>「<code>预设允许通告</code>」选项跟<code>引用功能</code>有关，你可以参考<a href="cn_mtbook_trackback.html#trackback">第七章</a>的介绍。大致上来说，设定了这个选项之后，能够让读者们更容易接触到与你的文章相关的其它文章，也比较能够让你的网志与其它人的网志间有更好、更频繁的互动。所以强烈建议你按照<a href="#img_34">图三十四</a>核选这个核选框。<div class="img"><a id="img_34"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_publicity_02.png" alt="核选预设允许通告的核选框"><br />图三十四：核选预设允许通告的核选框。</div></li>
+  <li><a id="blog_config_pref_publicity_05"></a>「<code>用 Email 通知新的引用通告</code>」选项一旦被核选之后，祇要有人引用了你的文章， Movable Type 就会寄一封信通知你。不过在平常的状况下，这是没有必要的，因为祇要有合适的模版，你连到自己的网志上的时候就自然会看到了嘛。有谁会在没有特殊需求的情况下，还希望一直收到信件打搅呢？<br />这个选项跟<code>引用功能</code>有关，你可以参考<a href="cn_mtbook_trackback.html#trackback">第七章</a>的介绍。</li>
+  <li><a id="blog_config_pref_publicity_06"></a>「<code>启用引用自动发掘功能</code>」选项跟<code>引用功能</code>有关，你可以参考<a href="cn_mtbook_trackback.html#trackback">第七章</a>的介绍。这个选项强烈建议核选，因为一旦核选之后，祇要你的文章中有其它网站的链结， Movable Type 就会自动送出<code>引用通告</code>；简单来说，就是自动帮你在别人的文章里打广告。<br />这种这么方便的功能，不用实在太对不起自己了。所以请参照<a href="#img_35">图三十五</a>核选这个核选框。<div class="img"><a id="img_35"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_publicity_03.png" alt="核选「启用引用自动发掘功能」"><br />图三十五：核选「启用引用自动发掘功能」的核选框。</div></li>
+</ol></p>
+<h4><a id="blog_config_pref_04"></a><a id="blog_config_pref_comments"></a>回响组态</h4>
+<p>这一个区块中的设定选项都跟回响 (comments) 功能有关，你可以一并参照<a href="cn_mtbook_comment.html#comment">第六章</a>的介绍。</p>
+<p><ol>
+  <li><a id="blog_config_pref_comments_01"></a>一旦你勾选了「<code>允许匿名回响</code>」的核选框后，读者发表回响时就可以完全不需要填写姓名（昵称）、 Email 地址以及网址。虽然说，就算你不要核选这个核选框，也没办法阻止读者发表回响时留下假数据，但是这么做还是有点好处的：因为读者可能祇是「忘记填写基本数据」而已，而如<a href="#img_36">图三十六</a>保留这个核选框不勾选的话，就会在这种情况下提醒读者说，「啊，你忘记填写基本数据了呦！」<div class="img"><a id="img_36"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_01.png" alt="不要核选「允许匿名回响」"><br />图三十六：不要核选「允许匿名回响」的核选框。</div></li>
+  <li><a id="blog_config_pref_comments_02"></a>「<code>回响显示的顺序</code>」会决定同一篇文章里，回响呈现的先后次序。在<a href="#blog_config_pref_general_04">文章显示顺序的设定</a>中，我们提到了文章排列时，越新的应该放在越前面才方便读者阅读，不过对于<code>回响</code>来说，情况却不同。<br />因为文章可以祇按照时间来透露重要性（越近期被写下的，越能代表作者最近的心境），但是跟著某一篇文章的回响，彼此间却会出现脉络性，所以越新的回响应该出现在越后面，其它读者才能够循著脉络读下去。<br />基于这个原因，我们按照<a href="#img_37">图三十七</a>保留预设的<strong>递增</strong>。<div class="img"><a id="img_37"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_02.png" alt="设定回响显示的顺序为「递增」"><br />图三十七：设定回响显示的顺序，在这个范例中我们保留了预设的<code>递增</code>。</div></li>
+  <li><a id="blog_config_pref_comments_03"></a>「<code>有新的回响时寄给我</code>」核选框就跟<a href="#blog_config_pref_publicity_05">「<code>用 Email 通知新的引用通告</code>」核选框</a>一样，在正常的情况下实在不需要加以核选，因为你祇要浏览自己的网志，顶多略微修改一下模版就够了。何必跟自己的信箱过不去呢？</li>
+  <li><a id="blog_config_pref_comments_04"></a>「<code>回响文字格式</code>」指的是读者发表回响时的文字格式。除非你有特殊需求，不然你应该如<a href="#img_38">图三十八</a>这般，用预设值「<strong>转换换列</strong>」来自动处理回响中的段落（自动加上 <code>&lt;p&gt;</code> 与 <code>&lt;/p&gt;</code> ）及换列（自动加上 <code>&lt;br /&gt;</code> ）。<div class="img"><a id="img_38"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_03.png" alt="设定回响文字格式为「转换换列」"><br />图三十八：设定回响文字格式，在这个范例中我们保留了预设的<code>转换换列</code>。</div></li>
+  <li><a id="blog_config_pref_comments_05"></a>如果你核选了「<code>允许回响使用 HTML 语法</code>」的核选框，那么要发表回响的读者就可以在回响中使用各种 HTML 卷标。这么做的好处是，读者发表回响时也可以有很大的自由度，但是相对来说，她们甚至有机会在你的页面里加入奇怪的背景音乐，或者其它可能会危及其它读者的动作（当然你还是可以透过<a href="#blog_config_pref_general_08">消毒规格</a>来加以限制她们可用的 HTML 卷标）。因此在<a href="#img_39">图三十九</a>的范例中，我们并不核选这个核选框。<div class="img"><a id="img_39"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_04.png" alt="不要允许回响使用 HTML 语法"><br />图三十九：不要允许回响使用 HTML 语法。</div></li>
+  <li><a id="blog_config_pref_comments_06"></a>祇要你没有<a href="#blog_config_pref_comments_05">允许回响使用 HTML 语法</a>，你就应该要如<a href="#img_40">图四十</a>核选「<code>自动连结网址</code>」核选框。这么一来， Movable Type 就会把任何在回响里出现的网址，通通转换成可以直接按下的超级链结，于是读者就不需要自己再复制一次网址了。<div class="img"><a id="img_40"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_05.png" alt="核选「自动连结网址」"><br />图四十：核选「自动连结网址」的核选框。</div></li>
+  <li><a id="blog_config_pref_comments_07"></a>「<code>预设允许回响</code>」选项会决定你的文章在预设的情况下，要不要让读者们能够发表回响。除非你要做成公告式的站台，否则开启回响功能可以说是利多于弊，因为这将让读者跟你有更好的互动，而这种互动则会吸引更多读者前来阅读你们所写下的东西。因此，请如<a href="#img_41">图四十一</a>，在这个选项选用预设的「<strong>开启</strong>」。<div class="img"><a id="img_41"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_comments_06.png" alt="开启预设允许回响"><br />图四十一：开启<code>预设允许回响</code>的选项。</div></li>
+</ol></p>
+<p>以上就是在<code>偏好</code>页面中的设定。全部设定完后请别忘了要把它们储存起来，请这样做：</p>
+<p><ol>
+  <li><a id="blog_config_pref_05"></a>如<a href="#img_42">图四十二</a>按下「<code>储存</code>」按钮。<div class="img"><a id="img_42"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_01.png" alt="按下「储存」按钮"><br />图四十二：按下「<code>储存</code>」按钮。</div></li>
+  <li><a id="blog_config_pref_06"></a><code>偏好</code>被储存后，你会看到如<a href="#img_43">图四十三</a>的画面，提示你<code>偏好</code>已被储存了。由于我们还要设定汇整方式，所以请依图按下<code>偏好</code>旁的「<strong>汇整</strong>」链结，并按照<a href="#blog_config_arc">下一节</a>的说明来继续设定。<div class="img"><a id="img_43"></a><img src="http://junnie.3322.org/bookimg/mtconfig_pref_02.png" alt="按下「汇整」的链结"><br />图四十三：<code>偏好</code>被储存后，按下<strong>汇整</strong>链结。</div></li>
+</ol></p>
+<h3><a id="blog_config_arc"></a>汇整</h3>
+<p>这个页面主要是用来设定你所想采用的汇整方式，以及订定汇整档案的档名规则的。关于汇整的各项细节，你可以参考<a href="cn_mtbook_archive.html#archive">第八章</a>的介绍。</p>
+<p><ol>
+  <li><a id="blog_config_arc_01"></a>在「<code>汇整类别</code>」这一栏中，你可以勾选你想使用的汇整方式；预设的汇整类别是<code>单篇汇整</code>以及<code>逐月汇整</code>，这意味著每一篇文章都会被单独做成一页，另外相同月份的所有文章也会被做成一页。这似乎是在兼顾节省硬碟使用以及提高便利性的双重考量下，相当不错的一种作法。<br />由于每一份网志在刚设立的时候，是没有任何<code>类别</code>的，所以<code>类别</code>这一项并没有被核选。不过我们在<a href="cn_mtbook_practice.html#practice">后面的章节</a>就会提到该如何运用<code>分类汇整</code>，所以现在不妨就按照<a href="#img_44">图四十四</a>这样，把<strong>类别</strong>给选起来。<div class="img"><a id="img_44"></a><img src="http://junnie.3322.org/bookimg/mtconfig_arc_01.png" alt="核选「类别」"><br />图四十四：选择你所想采行的汇整方式，在本范例中我们除了预设值外，还加选了「<code>类别</code>」。</div></li>
+  <li><a id="blog_config_arc_02"></a>勾选好了之后，请按下「<code>储存</code>」按钮。<div class="img"><a id="img_45"></a><img src="http://junnie.3322.org/bookimg/mtconfig_arc_02.png" alt="按下「储存」按钮"><br />图四十五：选好汇整方式后按下「<code>储存</code>」按钮。</div></li>
+  <li><a id="blog_config_arc_03"></a>储存好后，你就会看到像<a href="#img_46">图四十六</a>这样的画面。我们现在还要修改你的个人数据，所以请如<a href="#img_46">图</a>按下画面右上方的 <strong>Melody</strong> ，然后参照<a href="#blog_config_profile">下一节</a>的内容加以修改。<div class="img"><a id="img_46"></a><img src="http://junnie.3322.org/bookimg/mtconfig_arc_03.png" alt="按下画面右上方的 Melody"><br />图四十六：储存好后，按下画面右上方的 <strong>Melody</strong> 链结。</div></li>
+</ol></p>
+<h3><a id="blog_config_profile"></a>修改个人数据</h3>
+<p>到此为止，你的身份仍旧叫做 <code>Melody</code> ，然后你的口令则是 <code>Nelson</code> 。很不幸地，全世界读过 <a href="http://mtbook.org/index.html">Movable Type 文件</a>的人都知道这回事。换而言之，这些陌生人都可以很快乐地联机到你的 Movable Type ，然后用这组预设的帐号跟口令登入，并大肆破坏。</p>
+<p>没有人真的希望这种事情发生，所以请务必按照下列的步骤来把预设的帐号修改掉：</p>
+<p><ol>
+  <li><a id="blog_config_profile_01"></a>「<code>使用者</code>」字段中的是你用来登入 Movable Type 系统的使用者名字；预设的使用者是 <code>Melody</code> ，请随意修改成你自己想用的名字，如<a href="#img_47">图四十七</a>。这里不建议使用中文字，你最好还是祇使用英文字母跟数字来当作使用者名字；就算真的要用中文名字，也建议填到<a href="#blog_config_profile_02">昵称</a>那一栏去。<div class="img"><a id="img_47"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_01.png" alt="修改使用者名字"><br />图四十七：修改<code>使用者</code>字段，在这个范例中我们把 <code>Melody</code> 换成了 <code>Jedi</code> 。</div></li>
+  <li><a id="blog_config_profile_02"></a>「<code>昵称</code>」字段可填可不填；你的使用者名字不能跟其它使用者相同，但是昵称可以。所以遇到多位作者习惯用的名字重复时，就可以设在<code>昵称</code>里，而继续使用不同的使用者帐号来登入。另外，<code>昵称</code>当然也可以跟使用者名字相同，如<a href="#img_48">图四十八</a>。<div class="img"><a id="img_48"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_02.png" alt="填入昵称"><br />图四十八：填入<code>昵称</code>，在这个范例中填入的是 <code>Jedi</code> 。</div></li>
+  <li><a id="blog_config_profile_03"></a>「 <code>Email 地址</code>」这一栏虽然可以不填，但是你最好还是如<a href="#img_49">图四十九</a>加以填写；因为如果不幸你忘记自己的口令时， Movable Type 就得要知道你的 Email 地址，才有办法把新的口令寄给你。<div class="img"><a id="img_49"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_03.png" alt="填写 Email 地址"><br />图四十九：填写 Email 地址，在这个范例中填入的是 <code>JediMT@Jedism.org</code> 。</div></li>
+  <li><a id="blog_config_profile_04"></a>如果你自己有另外的网站时，也可以如<a href="#img_50">图五十</a>在「<code>网站网址</code>」加以填写。<div class="img"><a id="img_50"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_04.png" alt="填写网站网址"><br />图五十：填写网站网址，在这个范例中填入的是 <code>http://blog.elixus.org/jedi/</code> 。</div></li>
+  <li><a id="blog_config_profile_05"></a>「<code>偏好语言</code>」不但会改变你的 Movable Type 的各项接口、讯息所使用的语言，甚至也会改变说明文件的语言，以及你所建立的新网志中的预设模版语言。请如<a href="#img_51">图五十一</a>从下拉式选单里选择 <strong>Taiwan Chinese</strong> （繁体中文）。<div class="img"><a id="img_51"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_05.png" alt="选择偏好语言为「 Taiwan Chinese 」"><br />图五十一：选择偏好语言，在这个范例中所选择的是 <code>Taiwan Chinese</code> 。</div></li>
+  <li><a id="blog_config_profile_06"></a>现在我们还要把预设的口令 (<code>Nelson</code>) 给换掉才安全。请在「<code>口令</code>」字段里填入你想要用的口令，大小写是不一样的。<div class="img"><a id="img_52"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_06.png" alt="填入新口令"><br />图五十二：填入新口令。</div></li>
+  <li><a id="blog_config_profile_07"></a>在「<code>口令确认</code>」字段里把你刚刚填入的口令再填一次，以确认你没有不慎打错字。<div class="img"><a id="img_53"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_07.png" alt="在「口令确认」字段里再打一次口令"><br />图五十三：确认口令有没有打错。</div></li>
+  <li><a id="blog_config_profile_08"></a>如果你不慎忘记口令了， Movable Type 还可以用最后的<code>口令恢复</code>机制来让你挽回。在这种情况下， Movable Type 会询问你的出生地为何，这个时候你就得回答你在这边的「<code>出生地</code>」字段里所填写的东西。因此这一栏的内容你也应该保密，不要让其它人轻易得知（不过这一栏的答案就算外泄了，你还有机会保有秘密，因为 Movable Type 祇会把口令寄到你在<a href="#blog_config_profile_03">步骤三</a>所设定的 Email 地址去）。<div class="img"><a id="img_54"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_08.png" alt="填写出生地"><br />图五十四：填写恢复口令功能会用到的出生地信息，在这个范例中填写的是 <code>Mars</code> 。</div></li>
+  <li><a id="blog_config_profile_09"></a>以上的字段都填／改完后，请如<a href="#img_55">图五十五</a>按下「<code>储存</code>」按钮。<div class="img"><a id="img_55"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_09.png" alt="按下「储存」按钮"><br />图五十五：按下「<code>储存</code>」按钮。</div></li>
+  <li><a id="blog_config_profile_10"></a>个人数据储存起来后，你应该会看到如<a href="#img_56">图五十六</a>的讯息，提示你个人数据已经储存起来了。这个时候你的使用者名字、口令等信息都已经更新了，所以你毋须重新登入 Movable Type 。<div class="img"><a id="img_56"></a><img src="http://junnie.3322.org/bookimg/mtconfig_profile_10.png" alt="个人数据已储存"><br />图五十六：你的个人数据皆已更新了。</div></li>
+</ol></p>
+<p>以上就是你第一次登入 Movable Type 后，应该加以修改／设定的选项。接下来请阅读<a href="cn_mtbook_entry.html#entry">后面的章节</a>来学著如何使用 Movable Type 。
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

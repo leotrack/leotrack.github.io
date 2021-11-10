@@ -1,0 +1,30 @@
+<HTML><HEAD>
+<TITLE>ERROR: The requested URL could not be retrieved</TITLE>
+</HEAD><BODY>
+<H1>ERROR</H1>
+<H2>The requested URL could not be retrieved</H2>
+<HR>
+<P>
+While trying to retrieve the URL:
+<A HREF="http://127.0.0.1:8010/cvs/index.pl/*checkout*/webnote/images/close.png?">http://127.0.0.1:8010/cvs/index.pl/*checkout*/webnote/images/close.png?</A>
+<P>
+The following error was encountered:
+<UL>
+<LI>
+<STRONG>
+Connection Failed
+</STRONG>
+</UL>
+
+<P>
+The system returned:
+<PRE><I>    (111) Connection refused</I></PRE>
+
+<P>
+The remote host or network may be down.  Please try the request again.
+<P>Your cache administrator is <A HREF="mailto:webmaster">webmaster</A>. 
+
+<br clear="all">
+<hr noshade size=1>
+Generated Fri, 28 Apr 2006 10:54:00 GMT by www.spacing-guild.net (Squid/2.4.STABLE6)
+</BODY></HTML>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hack on 猪八的网：浮生志</title>
+    <link>/tags/hack/</link>
+    <description>Recent content in Hack on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Mon, 27 Jul 2009 15:04:22 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rokr E2从Outlook Express中导入联系人</title>
+      <link>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
+      <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
+      
+      <guid>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
+      <description>&lt;p&gt;最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。&lt;/p&gt;
+&lt;p&gt;就是一直为如何将原来Palm 680的通讯录导过来以及更新烦恼。寻找了如下方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;装Moto的官方软件Motorola Phone Tools，可以与Outlook Express互相同步，但是不知道什么原因，老是无法连接机器，我想再次更新的时候却没辙了。只好——&lt;strong&gt;放弃&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;使用网上流传的用Google 的Sync，但是我配置了之后一直是更新失败，无法连接到Google的服务器上面。——&lt;strong&gt;放弃&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;研究了一下Moto自带的&lt;strong&gt;导入名片&lt;/strong&gt;功能，发现它可以支持vcf格式文件——名片（vCard）文件的！这样就简单了。具体操作步骤如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
+&lt;p&gt;首先，打开你的OE：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如&lt;em&gt;My Contacts&lt;/em&gt;，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：&lt;/p&gt;
+&lt;p&gt;进入通讯录——按左键——管理联系人：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;选择——导入名片：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;找到你保存.vcf名片文件的文件夹，比如上面的&lt;em&gt;My Contacts&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;全选，导入！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;至此，你的E2已经与你的OE完全一致了！以后你要同步你的通讯录。重复上述步骤即可！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此文为响应&lt;a href=&#34;http://welog.org/&#34;&gt;King&lt;/a&gt;对于我的“&lt;a href=&#34;https://zhu8.net/blog/2009/05/braid.html#comment-244&#34;&gt;月经&lt;/a&gt;”评论，在七月月底放出……哈哈&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关闭WordPress的Revision功能</title>
+      <link>/blog/2009/03/disable-wordpress-revision.html</link>
+      <pubDate>Tue, 03 Mar 2009 23:25:55 +0800</pubDate>
+      
+      <guid>/blog/2009/03/disable-wordpress-revision.html</guid>
+      <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……&lt;/p&gt;
+&lt;p&gt;如何关闭Revision？我试用了几种方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;第一种&lt;/strong&gt;：在&lt;em&gt;wp-config.php&lt;/em&gt;中加入如下代码：
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;define(‘WP_POST_REVISIONS’, 0 );&lt;br&gt;
+define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  
+    经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——**放弃**。
+*   **第二种**：使用插件：[No Revisions][2]，经测试可以使用。看了一下他的代码，很纯粹：  
+    ```php
+&amp;lt;?php @remove_action ( &#39;pre_post_update&#39;, &#39;wp_save_post_revision&#39; ); ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;——&lt;strong&gt;使用&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;第三种&lt;/strong&gt;：如果你不想使用插件，可以参考这位老兄的&lt;a href=&#34;http://programmingnote.com/blog/?p=35&#34;&gt;修改方法&lt;/a&gt;。他说Comment掉第二条插件所使用的命令之后还要再加一句，但我测试，&lt;strong&gt;单纯用上面那个插件是没有问题的&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关于如何&lt;strong&gt;回收利用在你还没来得及关闭Revision功能之前就产生的Revisions&lt;/strong&gt;？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 &lt;em&gt;post_type = “revision”&lt;/em&gt; 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 &lt;em&gt;post_status&lt;/em&gt; 从 &lt;em&gt;inherit&lt;/em&gt; 改成 &lt;strong&gt;publish&lt;/strong&gt; ，将 &lt;em&gt;post_type&lt;/em&gt; 从 &lt;strong&gt;revision&lt;/strong&gt; 改成 &lt;strong&gt;post&lt;/strong&gt;，其它例如： &lt;em&gt;post_name&lt;/em&gt; &lt;em&gt;post_date&lt;/em&gt; 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>从wordpress到textpattern</title>
+      <link>/blog/2008/04/from-wordpress-to-textpattern.html</link>
+      <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
+      
+      <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;打开 &lt;em&gt;import_wp.php&lt;/em&gt; ，找到下面这行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql_select_db($b2db, $b2link);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在后面加上：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql_query(&amp;quot;SET NAMES &#39;utf8&#39;&amp;quot;, $b2link);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;增加 Excerpt 部分&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;找到下面这行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;p.post_content as Body,&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在后面加上：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;p.post_excerpt as Excerpt,&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;同样的，找到这行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Body_html = &#39;&amp;quot;.doSlash($Body_html).&amp;quot;&#39;,&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在后面加上：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75af00&#34;&gt;Excerpt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;
+&lt;span style=&#34;color:#75af00&#34;&gt;Excerpt_html&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不导入附件生成的页面&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;找到下面这行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;quot;.$wpdbprefix.&amp;quot;users as u on u.ID = p.post_author&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在后面加上：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
+&lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>定制Trackback特定样式</title>
+      <link>/blog/2006/12/style-wordpress-trackback.html</link>
+      <pubDate>Sat, 23 Dec 2006 12:06:50 +0800</pubDate>
+      
+      <guid>/blog/2006/12/style-wordpress-trackback.html</guid>
+      <description>&lt;p&gt;首先要自我打击一下，在产生这个想法之后，本来我是&lt;strong&gt;异想天开&lt;/strong&gt;地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么简单，只好用笨办法了：手动添加代码到模板中去。&lt;/p&gt;
+&lt;p&gt;本来想用的来自这里：&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/commentstyling/&#34; title=&#34;Making Comments stand out&#34;&gt;WordPress – Comment styling&lt;/a&gt;，确实是一篇不错的文章，里面不仅介绍了为Trackback和Pingback增加独特样式，也有为特定评论的与众不同的显示提供了解决方案。而且作者Podz所写的&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/&#34; title=&#34;WordPress Help&amp;amp;Podz @ Tamba2&#34;&gt;The Temba2 WordPress Guides&lt;/a&gt;是一篇不错的基础教程。评论姑且不谈，我需要的是第一个。&lt;/p&gt;
+&lt;p&gt;首先是在你的Blog模版的评论页面（一般为&lt;strong&gt;comments.php&lt;/strong&gt;）找到这句：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;foreach&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$comments&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$comment&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在后面加上（&lt;strong&gt;1&lt;/strong&gt;）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$istback&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$comment&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;comment_type&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;trackback&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$istback&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php $ispingb = false; if($comment-&amp;gt;comment_type == &amp;#39;pingback&amp;#39;) { $ispingb = true; } ?&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;随后再找到这句：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;comment_text&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在前后加上东西之后变成这个样子（&lt;strong&gt;2&lt;/strong&gt;）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$istback&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;div class=&amp;#34;pbcomment&amp;#34;&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($istback ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当然，为了不那么打击自己而全部照抄，我做了点小小的修改：将（&lt;strong&gt;1&lt;/strong&gt;）更改为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$istb&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;get_comment_type&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;comment&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$istb&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里就是图个简单，逆向思维，不是comment的当然就是Trackback和Pingback了。后面的（&lt;strong&gt;2&lt;/strong&gt;）也就一起简单了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$istb&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($istb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后，在样式表中添加这个CSS样式，就大功告成了：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;tbcomment&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt;
+&lt;span style=&#34;color:#00a8c8&#34;&gt;font&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;italic&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;em&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;140&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;Georgia&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;sans-serif&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#00a8c8&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;gray&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;勉强以此安慰下自己，还能有一小小的创新，不过我并没有彻底的将Comment和Trackback区分开来，单独显示。因为我的TB不算多，所以没有再去弄个插件影响速度，如果你有需要，可以看看这些地方，希望能对你有所帮助：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://mk.netgenes.org/wiki/Trackping_Separator&#34; title=&#34;Trackping Separator&#34;&gt;Trackping Separator&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.noscope.com/journal/2005/01/wp-separating-trackbacks-pingbacks&#34; title=&#34;Noscope&amp;amp;Separating Trackbacks &amp;amp; Pingbacks in WordPress 1.5 &amp;amp; Above&#34;&gt;Separating Trackbacks &amp;amp; Pingbacks in WordPress 1.5 &amp;amp; Above&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://jackosh.com/wpplugins/trackbacklist/&#34; title=&#34;Trackback List Plugin&#34;&gt;Trackback List Plugin&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>发现自己原来一根筋</title>
+      <link>/blog/2006/11/trouble-with-so-much-things.html</link>
+      <pubDate>Mon, 27 Nov 2006 06:39:54 +0800</pubDate>
+      
+      <guid>/blog/2006/11/trouble-with-so-much-things.html</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;em&gt;到底出了什么问题？&lt;strong&gt;这句话是我刚才试着看发帖是否能通过的，结果还是给我空白页面，或者是&lt;/strong&gt;&lt;/em&gt;“该页无法显示找不到服务器或发生DNS错误”&lt;/em&gt;**。今天一天都在搞新Theme的修改，最后快大功告成的时候，准备发点小文字来，结果又出现了…&lt;/p&gt;
+&lt;p&gt;不好意思，到现在还没说具体是哪儿的问题，其他都好的，就是修改或者新撰写文章时，&lt;em&gt;&lt;strong&gt;../wp-admin/post.php&lt;/strong&gt;&lt;/em&gt;就报上面的错误。但是我又犯了二十多年的老毛病，一根筋往这上面想，把&lt;a href=&#34;http://wordpress.org/support/forum/3&#34; title=&#34;How-To and Troubleshooting « WordPress Support&#34;&gt;WordPress Support Forum&lt;/a&gt;几乎翻了个底朝天，发现一些情况和我一样的空白页面的，但是没有一个好好回答的，因为我上午装了Php+Apche+Mysql调试的，在Wordpress支持论坛看到说有&lt;em&gt;&lt;strong&gt;php.ini&lt;/strong&gt;&lt;/em&gt;配置错误导致此种问题的，于是一根筋的我就正经八百的把这些全都卸载，结果还是不行啊。在WpCN的&lt;a href=&#34;http://groups.google.com/group/WordPressCN&#34; title=&#34;WordpressCN Google Group&#34;&gt;Group&lt;/a&gt;里问了一下，没人帮我解答，只好继续自己动手。&lt;/p&gt;
+&lt;p&gt;千错万错，只怪我弄Theme忘了，其实我是自己新建的一个Theme，怎么也没想到会是我的Plugin出了问题，因为我是在&lt;a href=&#34;http://binarybonsai.com/wordpress/kubrick/&#34; title=&#34;Kubrick at Binary Bonsai&#34;&gt;Kubrick&lt;/a&gt;上搞的Theme，所以一下把它的&lt;em&gt;&lt;strong&gt;fuctions.php&lt;/strong&gt;&lt;/em&gt;什么的都搞来了，再阴差阳错什么时候装了个&lt;del datetime=&#34;2006-11-26T11:22:41+00:00&#34;&gt;Widgets插件&lt;/del&gt;，原来就是&lt;strong&gt;它&lt;/strong&gt;的问题！&lt;/p&gt;
+&lt;p&gt;不八婆了，越来越烦自己如此一根筋到底…&lt;strong&gt;Sigh…&lt;/strong&gt;，前面也都是这样&lt;a href=&#34;https://zhu8.net/blog/2006/11/small-cases.html&#34; title=&#34; 二三事&#34;&gt;（1）&lt;/a&gt;、&lt;a href=&#34;https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html&#34; title=&#34;解决WP汉化和UTW链接问题&#34;&gt;（2）&lt;/a&gt;，看来是做什么事情都要把东西先记下来了，唉。&lt;/p&gt;
+&lt;p&gt;还没有玩过分页，现在试试，顺便可以玩一下新插件&lt;a href=&#34;http://zeo.unic.net.my/notes/lightbox-js-version-20/&#34; title=&#34;WordPress Lightbox 2&#34;&gt;WordPress Lightbox 2&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决WP汉化和UTW链接问题</title>
+      <link>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
+      <pubDate>Sun, 19 Nov 2006 04:17:00 +0800</pubDate>
+      
+      <guid>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
+      <description>&lt;p&gt;其实严格说来是因为我在&lt;a href=&#34;http://www.512j.com/&#34; title=&#34;我要安家&#34;&gt;我要安家&lt;/a&gt;的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);&lt;br&gt;
+web服务器 Apache 1.3.31&lt;br&gt;
+PHP版本 PHP 4.3.11&lt;br&gt;
+Mysql版本 Mysql 4.0.20&lt;br&gt;
+Zend支持 支持&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原来都是&lt;strong&gt;PHP版本&lt;/strong&gt;搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在&lt;strong&gt;&lt;strong&gt;wp-includes/gettext.php&lt;/strong&gt;&lt;/strong&gt;中&lt;strong&gt;第105行&lt;/strong&gt;有这样一段代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$MAGIC1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1794895138&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;  
+&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)0xde120495; //bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;569244523&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要&lt;strong&gt;注释&lt;/strong&gt;掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt; &lt;span style=&#34;color:#111&#34;&gt;$MAGIC1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x950412de&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0xde120495&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
+在Blog的wp-includes目录下建立languages文件夹&lt;br&gt;
+将zh_CN.mo文件上传到wp-includes/languages文件夹&lt;br&gt;
+修改Blog根目录下的wp-config.php文件，将&lt;br&gt;
+define (‘WPLANG’, “);&lt;br&gt;
+修改为&lt;br&gt;
+define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
+注意：zh和CN之间是下划线，引号和括号都是英文半角字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Updated On 2006/11/20：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;昨天把WP升级到了2.0.5，结果问题出来了，在先将所有的插件停用再启用的时候，其他的都可以，就是UTW（Ultimate Tag Warrior）的链接结构（Permalink Structure）不工作了，搞得我到处搜，去修改.htaccess文件，都不能解决，后来实在没辙了，把WP的链接结果先改成别的，再改回来，就OK了，虽然昨天我也试过，但是是在UTW还没有重新激活的情况下，将WP的链接结构重新升级了一遍之后才激活的UTW，所以没有起到作用。我的天啊，原来是这么简单的事情，偏偏我又是不见棺材不掉泪的类型，折腾到最后还是没弄好才回去睡觉的，记下来，以防自己（以及遇到此类问题的朋友）以后再干这种蠢事。Sigh……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二三事</title>
+      <link>/blog/2006/11/small-cases.html</link>
+      <pubDate>Sun, 05 Nov 2006 21:10:10 +0800</pubDate>
+      
+      <guid>/blog/2006/11/small-cases.html</guid>
+      <description>&lt;p&gt;瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+ErrorDocument 500 /error.html  
+RewriteEngine on  
+RewriteCond %{HTTP_REFERER} !^$  
+RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
+RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;[F]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在下面的代码中，必须用您网站所用语言所对应的三位或四位数代码页编号来替换&amp;quot;您的网页所用代码页&amp;quot;。&lt;br&gt;
+例如，如果您的网站是用源于拉丁文的语言（英语、法语或德语）编写的，则用 1252 编号来取代此指令：value=&amp;ldquo;1252&amp;rdquo;&lt;br&gt;
+有关各语言所对应的代码页值，请参阅 &lt;a href=&#34;http://g.msn.com/0HEWL_WEBMASTERSZHCN9/91008&#34; title=&#34;Code Pages Supported by Windows&#34;&gt;Windows 支持的代码页&lt;/a&gt;网页。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;很显然，里面有GBK码（代码：936），但是没有UTF-8码（应该不是我没有找到），只好到网上去找，不经意发现了&lt;strong&gt;UTF-8的代码：65001&lt;/strong&gt;，于是将代码一修改，就成了。详细可以到&lt;a href=&#34;http://chenjun.com/404.html&#34; title=&#34;404/500 错误页面&#34;&gt;这个页面&lt;/a&gt;去看下源代码就好了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;贰、解决了WinXP下chm电子书无法显示页面的问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本来想把原来的&lt;em&gt;偏航&lt;/em&gt;里无声听雨的小波文集弄起来的，因为我这一直存着opig做的chm电子书档，结果在网吧翻出来弄，书的导航栏倒是没有问题，页面却老是&lt;em&gt;无法显示网页&lt;/em&gt;，弄的我郁闷，网上去搜，先是到了微软的&lt;a href=&#34;http://support.microsoft.com/kb/892675&#34; title=&#34;安装安全更新 896358 或 890175 后，某些网站和 HTML 帮助功能可能无法运作&#34;&gt;官方说明页面&lt;/a&gt;，以为要折腾注册表，在网吧要弄注册表是很烦的事情，再去搜搜，在这发现了最简单的方法：Loveyuki一语惊醒梦中人，原来&lt;a href=&#34;http://www.i170.com/article/5298#comment&#34; title=&#34;一起来&amp;amp;如何解决chm格式文件无法显示问题&#34;&gt;如此简单&lt;/a&gt;（内有截图），还去按微软那样复杂何必呢？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;叁、以前的旧Blog&lt;a href=&#34;http://chenjun.com/old/&#34; title=&#34;短长书&#34;&gt;重新贴出&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于空间是PHP的，所以也没打算重新弄个Z-Blog重出江湖，把文档重新归了一下档，做成了HTML的静态页面，但是音乐文件就没去修改，因为很多都失效了。倒是网吧没有装Ofice，而我又需要打开ACCESS的数据库，先是下了微软的Excel Viewer，后来发现只能看，不能修改，而我恰恰需要把Mdb文件解下来提取日志的相关内容，后来终于找到了：&lt;a href=&#34;http://www.greendown.cn/soft/156.html&#34; title=&#34;Microsoft Office 2003 Sp2 精简免安装绿色版&#34;&gt;Microsoft Office 2003 Sp2〖精简免安装绿色版〗&lt;/a&gt;。把该数据库导出成XLS，打开，选了文章、评论等等复制出来，一切OK。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;肆、修改了原颜色代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;把原来的中英文颜色代码弄掉了，换了个国外的，胡乱翻译了一下，&lt;a href=&#34;http://chenjun.com/other/color.html&#34; title=&#34;Html color codes&#34;&gt;放出来&lt;/a&gt;了。页面自我感觉还蛮好看的，就是都是TABLE，想改成DIV+CSS可是东西太多，没什么必要。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

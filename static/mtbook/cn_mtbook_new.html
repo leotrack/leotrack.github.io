@@ -1,0 +1,649 @@
+<html>
+<head>
+  <title>附录四 ─ 补增信息</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="prev" title="附录三 ─ 相关资源" href="cn_mtbook_resource.html" />
+  <style type="text/css">
+  <!--
+  ul li img { vertical-align: middle; margin-right: 5px; border: 1px solid;}
+  -->
+  </style>
+</head>
+<body>
+<h3>Movable Type 完全手册：附录四 ─ 补增信息</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#new">附录四 ─ 补增信息</a></li>
+  <ul>
+    <li><a href="#download">下载最新版本的档案</a></li>
+    <ul>
+      <li><a href="#download_win32">如果要把 Movable Type 装在 Windows 上</a></li>
+      <li><a href="#download_unix">如果要把 Movable Type 装在 UN*X 上</a></li>
+      <li><a href="#download_host">如果要把 Movable Type 装在虚拟主机上</a></li>
+      <li><a href="#download_ebook">电子书</a></li>
+      <li><a href="#download_cd">光碟映象档</a></li>
+    </ul>
+    <li><a href="#install">安装与反安装</a></li>
+    <li><a href="#ports">FreeBSD 上的快速安装</a></li>
+    <li><a href="#date">中文日期格式</a></li>
+    <li><a href="#cfg">不在文件里的 <code>mt.cfg</code> 指令</a></li>
+    <ul>
+      <li><a href="#cfg_ThrottleSeconds">ThrottleSeconds</a></li>
+    </ul>
+    <li><a href="#tags">不在文件里的模版卷标</a></li>
+    <ul>
+      <li><a href="#tags_MTCGIRelativeURL">MTCGIRelativeURL</a></li>
+      <li><a href="#tags_MTIfNonEmpty">MTIfNonEmpty</a></li>
+      <li><a href="#tags_MTEntryModifiedDate">MTEntryModifiedDate</a></li>
+    </ul>
+    <li><a href="#default-templates">中文化过的预设模版</a></li>
+    <ul>
+      <li><a href="#default-templates_indexes">索引模版</a>
+      <li><a href="#default-templates_archives">汇整相关模版</a>
+      <li><a href="#default-templates_others">其它模版</a>
+    </ul>
+    <li><a href="#htmlarea">所见即所得的文章编辑功能</a></li>
+    <ul>
+      <li><a href="#htmlarea_format">文字变化功能</a></li>
+      <li><a href="#htmlarea_clipboard">剪贴簿功能</a></li>
+      <li><a href="#htmlarea_layout">排版对齐功能</a></li>
+      <li><a href="#htmlarea_color">颜色变化功能</a></li>
+      <li><a href="#htmlarea_insert">插入对象功能</a></li>
+      <li><a href="#htmlarea_edit">编辑模式</a></li>
+      <li><a href="#htmlarea_other">其它</a></li>
+      <li><a href="#htmlarea_table">表格编辑器</a></li>
+      <ul>
+        <li><a href="#htmlarea_table_row">列编辑功能</a></li>
+        <li><a href="#htmlarea_table_column">栏编辑功能</a></li>
+        <li><a href="#htmlarea_table_cell">储存格编辑功能</a></li>
+      </ul>
+      <li><a href="#htmlarea_note">注意事项</a></li>
+    </ul>
+    <li><a href="#rebuild">重建静态档案</a></li>
+    <ul>
+      <li><a href="#rebuild_reason">重建档案的原因</a></li>
+      <li><a href="#rebuild_moment">重建档案的时机</a></li>
+      <li><a href="#rebuild_auto">自动重建档案</a></li>
+      <li><a href="#rebuild_effective">有效率地重建档案</a></li>
+    </ul>
+    <li><a href="#blacklist">管理黑名单</a></li>
+    <ul>
+      <li><a href="#blacklist_active">启用黑名单</a></li>
+      <li><a href="#blacklist_update">更新黑名单</a></li>
+    </ul>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="new"></a>补增信息</h1>
+<p>随著时间飞逝， Six Apart 终于在 2003 年圣诞节前夕释出了 2.65 版的 Movable Type ，这是一份安全性更新，修补了 XML-RPC 服务器以及邮件转发的潜在漏洞；这个版本同时还增加了对 Atom API 的支持，也为此增加了一些没有列在文件中的卷标。</p>
+<p>我紧锣密鼓地也赶在 2003 年年底释出了新的安装套件，除了针对新版 Movable Type 进行翻修之外，也加强了预设模版，让它更适合中文使用者的情境；同时，我也加入了一些好用的外挂模块，让使用者能更轻松地建构完善的环境。当然事情远比这还要复杂，随著本书专属站台日益完善，许多原本得到处搜刮的资源现在也都可以直接在 <a href="http://mtbook.net">http://mtbook.net/</a> 取得了。有鉴于这些改变，本书的改版更新可以说是迫不及待，于是我决定补增一份附录，把这些事情好好讲清楚，顺便把原来就没有交代清楚的细节也交代一番。</p>
+<h2><a id="download"></a>下载最新版本的档案</h2>
+<p>在<a href="cn_mtbook_install.html#install" title="第一章 ─ 安装 Movable Type">第一章</a>里，我们曾经为各位介绍过<a href="cn_mtbook_install.html#win32">艺立协的安装套件</a>，现在这个套件的任何更新档都可以在本书专属站台下载页面 <a href="http://mtbook.net/download.html">http://mtbook.net/download.html</a> 取得；同样的本来提供给<a href="cn_mtbook_install.html#unix">要把 Movable Type 装在虚拟主机或非 Windows 系统上的使用者</a>的档案，现在也能在本书专属站台下载页面 <a href="http://mtbook.net/download.html">http://mtbook.net/download.html</a> 取得。你祇需要如图这样在档名或下载图标上点选，就能够下载或开启档案了。</p>
+<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mtnew_download_01.png" alt="在 MTBook.net 首页点选右方导览列的「档案下载」链接"><br />图一：请先连到本书专属网页 <a href="http://mtbook.net">http://mtbook.net</a> 的首页，然后按下右方导览列的「<code>档案下载</code>」链接。</div>
+<div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtnew_download_02.png" alt="MTBook.net 的档案下载页面"><br />图二：在档案下载页面中，可以点选档案名称或右方的图标以下载档案；你也可以先阅读每个档案的说明、以及比对 MD5 加总检查核对码。</div>
+<p>让我们来看看上头有些甚么值得你注意的东西：</p>
+<ul>
+  <li><a id="download_win32"></a>如果你要把 Movable Type 安装在 Windows 上的话，你应该抓这个档案：</li>
+  <ol>
+    <li><a id="download_win32_01"></a><a href="http://mtbook.net/download.html#8">http://mtbook.net/download.html#8</a> : 最新版的 Windows 安装档，档名会是「 <strong>mt-版本号码.释出号码.exe</strong> 」</li>
+  </ol>
+  <li><a id="download_unix"></a>如果你要把 Movable Type 安装在非 Windows 操作系统上的话，你应该抓这些档案：</li>
+  <ol>
+    <li><a id="download_unix_01"></a><a href="http://mtbook.net/download.html#12">http://mtbook.net/download.html#12</a> : 最新的补充档案，档名会是「 <strong>MT-版本号码-full-lib.new.tar.gz</strong> 」</li>
+    <li><a id="download_unix_02"></a><a href="http://mtbook.net/download.html#13">http://mtbook.net/download.html#13</a> : 最新的补缀档案，档名会是「 <strong>mt.diff</strong> 」；这是含有 htmlArea 补缀的版本。如果你不想使用 htmlArea 的话请略过这个档案。</li>
+    <li><a id="download_unix_03"></a><a href="http://mtbook.net/download.html#14">http://mtbook.net/download.html#14</a> : 最新的补缀档案，档名会是「 <strong>mt.no-htmlarea.diff</strong> 」；这是不使用 htmlArea 补缀的版本。如果你想使用 htmlArea 的话请略过这个档案。</li>
+  </ol>
+  <li><a id="download_host"></a>如果你要把 Movable Type 安装在虚拟主机上，而必须先在 Windows 里完成档案补缀的话，你应该抓这些档案：</li>
+  <ol>
+    <li><a id="download_host_01"></a><a href="http://mtbook.net/download.html#12">http://mtbook.net/download.html#12</a> : 最新的补充档案，档名会是「 <strong>MT-版本号码-full-lib.new.tar.gz</strong> 」</li>
+    <li><a id="download_host_02"></a><a href="http://mtbook.net/download.html#13">http://mtbook.net/download.html#13</a> : 最新的补缀档案，档名会是「 <strong>mt.diff</strong> 」；这是含有 htmlArea 补缀的版本。如果你不想使用 htmlArea 的话请略过这个档案。</li>
+    <li><a id="download_host_03"></a><a href="http://mtbook.net/download.html#14">http://mtbook.net/download.html#14</a> : 最新的补缀档案，档名会是「 <strong>mt.no-htmlarea.diff</strong> 」；这是不使用 htmlArea 补缀的版本。如果你想使用 htmlArea 的话请略过这个档案。</li>
+    <li><a id="download_host_04"></a><a href="http://mtbook.net/download.html#15">http://mtbook.net/download.html#15</a> : 补缀用的工具集合，档名会是「 <strong>util.zip</strong> 」；藉由这里提供的工具，就能够使用与 UN*X 完全相同的指令与步骤来补缀 Movable Type 。</li>
+  </ol>
+  <li><a id="download_ebook"></a>如果你想取得本书的电子档，可以从下列档案择一下载：</li>
+  <ol>
+    <li><a id="download_ebook_01"></a><a href="http://mtbook.net/download.html#1">http://mtbook.net/download.html#1</a> : Acrobat 6 格式的繁体中文版电子书，档名会是「 <strong>mtbook_释出日期_acrobat6_tw.pdf</strong> 」。</li>
+    <li><a id="download_ebook_02"></a><a href="http://mtbook.net/download.html#2">http://mtbook.net/download.html#2</a> : Acrobat 5 格式的繁体中文版电子书，档名会是「 <strong>mtbook_释出日期_acrobat5_tw.pdf</strong> 」。</li>
+    <li><a id="download_ebook_03"></a><a href="http://mtbook.net/download.html#4">http://mtbook.net/download.html#4</a> : Acrobat 6 格式的简体中文版电子书，档名会是「 <strong>mtbook_释出日期_acrobat6_cn.pdf</strong> 」。</li>
+    <li><a id="download_ebook_04"></a><a href="http://mtbook.net/download.html#5">http://mtbook.net/download.html#5</a> : Acrobat 5 格式的简体中文版电子书，档名会是「 <strong>mtbook_释出日期_acrobat5_cn.pdf</strong> 」。</li>
+    <li><a id="download_ebook_05"></a><a href="http://mtbook.net/download.html#3">http://mtbook.net/download.html#3</a> : HTML 格式的繁体中文版电子书，档名会是「 <strong>mtbook_释出日期_tw.zip</strong> 」。</li>
+    <li><a id="download_ebook_06"></a><a href="http://mtbook.net/download.html#6">http://mtbook.net/download.html#6</a> : HTML 格式的简体中文版电子书，档名会是「 <strong>mtbook_释出日期_cn.zip</strong> 」。</li>
+  </ol>
+  <li><a id="download_cd"></a>如果你想取得本书附赠 CD 的映象档，可以选择下载这个档案：</li>
+  <ol>
+    <li><a id="download_cd_01"></a><a href="http://mtbook.net/download.html#11">http://mtbook.net/download.html#11</a> : 标准 ISO 格式的最新 CD 映象档，档名会是「 <strong>MTBookCD_释出日期.iso</strong> 」。</li>
+  </ol>
+</ul>
+<p>原则上上述这些档案，也多半能在本书附赠的 CD 里，找到还算稳定的堪用版本；因此当你因故无法存取网络时，不妨就用这张 CD 救急吧！</p>
+<h2><a id="install"></a>安装与反安装</h2>
+<p>许多使用 Windows 安装档的朋友一直不清楚到底这个安装档会装进些甚么、又该怎么反安装、反安装完又会遗留下些甚么东西。事实上诚如<a href="cn_mtbook_install.html">第一章</a>所述，这个安装档除了会帮你安装 Movable Type 外，也会把 <code>parl</code> 及 <code>Apache</code> 装起来；前者是执行 Movable Type 所需的 Perl 执行环境，后者则是网页服务器。如果你需要把这两个组件移除掉的话，到「控制台」的「新增/移除」是没有办法的。你得执行他们各自目录里的反安装程序才行：</p>
+<ul>
+  <li>如果你想移除 <code>parl</code> 的话，请执行 <strong>C:\Program Files\OurInternet\Common\parl\Uninstall.exe</strong></li>
+  <li>如果你想移除 <code>Apache</code> 的话，请执行 <strong>C:\Program Files\OurInternet\Common\httpd\Uninstall.exe</strong></li>
+</ul>
+<p>另外，在安装的时候安装档会试著保留下列这些东西（如果他们出现在安装路径里的话）而不会覆盖：</p>
+<ul>
+  <li><code>mt.cfg</code></li>
+  <li><code>db/.</code> 数据库</li>
+</ul>
+<p>因此你可以放心地从「控制台」的「新增/移除」里移除 Movable Type ，然后再从新版的安装档安装，而毋须担心任何的网志组态、文章会遗失。事实上当你移除 Movable Type 时，（几乎）所有可能有所更动的档案都会被保留下来，这包括了：</p>
+<ul>
+  <li>站台存取／出错日志</li>
+  <ul>
+    <li><code>C:\Program Files\OurInternet\Movable Type\logs\httpd-access.log</code></li>
+    <li><code>C:\Program Files\OurInternet\Movable Type\logs\httpd-error.log</code></li>
+  </ul>
+  <li>组态档案</li>
+  <ul>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\mt.cfg</code></li>
+  </ul>
+  <li>数据库</li>
+  <ul>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\db\*</code></li>
+  </ul>
+  <li>索引档案</li>
+  <ul>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\archives.html</code></li>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\atom.xml</code></li>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\index.rdf</code></li>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\index.xml</code></li>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\rsd.xml</code></li>
+  </ul>
+  <li>汇整档案</li>
+  <ul>
+    <li><code>C:\Program Files\OurInternet\Movable Type\mt\archives\*</code></li>
+  </ul>
+</ul>
+<p>所以你祇需要把整个目录另存副本，就可以轻易地备份所有的网志数据。</p>
+<div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtnew_uninstall_01.png" alt="从「新增或移除程序」里移除 Movable Type"><br />图三：单纯祇从「新增或移除程序」里移除 Movable Type 的话，并不会真的把所有的组件都清乾净。</div>
+<h2><a id="ports"></a>FreeBSD 上的快速安装</h2>
+<p>好消息是，现在 <a href="http://www.leeym.com/" title="Yen-Ming Lee's Homepage">leeym</a> 负责了 FreeBSD 上的中文 Movable Type <code>ports</code> ，所以要把中文化过的 Movable Type 安装到 FreeBSD 上就变得万分简单。你祇需要以 <code>root</code> 登入，然后这么做就可以了：<pre>cd /usr/ports/chinese/MT
+make clean install</pre></p>
+<p>如果你有装了 <code>sudo</code> ，而且你自己的帐号亦属于 <code>sudoer</code> 的话，也可以这么做：<pre>cd /usr/ports/chinese/MT
+sudo make clean install</pre></p>
+<h2><a id="date"></a>中文日期格式</h2>
+<p>我们曾经在<a href="cn_mtbook_config.html#blog_config_pref_general_03">第二章</a>介绍过网志组态里的「<code>显示日期用的语言</code>」选项，当时我们说官方的 Movable Type 并没有中文日期格式可用，不过现在我们自己放进了分别由 <a href="http://www.mhsin.org/">mhsin</a> 和 <a href="http://www.csie.nctu.edu.tw/~tnlin/blog/archives/000008.html">contagious</a> 所提供的中文日期格式，兹整理如下：</p>
+<p><table border="1" cellpadding="2" style="border:1px solid black;padding:5px">
+  <caption>中文的日期格式、变数、与效果范例</caption>
+  <tbody>
+    <tr>
+      <th rowspan="2" colspan="2">变数</th>
+      <th rowspan="2">意义</th>
+      <th colspan="3">显示日期的语言及效果</th>
+    </tr>
+    <tr>
+      <th>中文 (<strong>zh</strong>)</th>
+      <th>彻底中文 (<strong>zh_all</strong>)</th>
+      <th>台湾, 中华民国 (<strong>tw</strong>)</th>
+    </tr>
+    <tr>
+      <td rowspan="19">内建</td>
+      <td>%a</td>
+      <td>一周里的哪一天，以缩写表示</td>
+      <td>无法使用</td>
+      <td>无法使用</td>
+      <td>无法使用</td>
+    </tr>
+    <tr>
+      <td>%A</td>
+      <td>一周里的哪一天，以全称表示</td>
+      <td>星期二</td>
+      <td>星期二</td>
+      <td>星期二</td>
+    </tr>
+    <tr>
+      <td>%b</td>
+      <td>月份名称的缩写</td>
+      <td>无法使用</td>
+      <td>无法使用</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>%B</td>
+      <td>完整的月份名称</td>
+      <td>十二月</td>
+      <td>十二月</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>%d</td>
+      <td>该月的第几天，以两位数字表示；必要的时候在前面补 <code>0</code></td>
+      <td>30</td>
+      <td>30</td>
+      <td>三十</td>
+    </tr>
+    <tr>
+      <td>%e</td>
+      <td>该月的第几天，必要的时候在前面补上空白</td>
+      <td>30</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>%H</td>
+      <td>时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补 <code>0</code></td>
+      <td>03</td>
+      <td>03</td>
+      <td>三</td>
+    </tr>
+    <tr>
+      <td>%I</td>
+      <td>时，以 12 时制表示成两位数字，必要的时候在前面补 <code>0</code></td>
+      <td>03</td>
+      <td>03</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <td>%j</td>
+      <td>该年的第几天，以三位数字表示，必要的时候在前面补 <code>0</code></td>
+      <td>364</td>
+      <td>364</td>
+      <td>364</td>
+    </tr>
+    <tr>
+      <td>%k</td>
+      <td>时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补上空白</td>
+      <td> 3</td>
+      <td> 3</td>
+      <td> 3</td>
+    </tr>
+    <tr>
+      <td>%l</td>
+      <td>时，以 12 时制表示成两位数字，必要的时候在前面补上空白</td>
+      <td> 3</td>
+      <td> 3</td>
+      <td> 3</td>
+    </tr>
+    <tr>
+      <td>%m</td>
+      <td>月份，以两位数字表示，必要的时候在前面补 <code>0</code></td>
+      <td>12</td>
+      <td>12</td>
+      <td>十二</td>
+    </tr>
+    <tr>
+      <td>%M</td>
+      <td>分，以两位数字表示，必要的时候在前面补 <code>0</code></td>
+      <td>00</td>
+      <td>00</td>
+      <td>零</td>
+    </tr>
+    <tr>
+      <td>%p</td>
+      <td><code>AM</code> 或 <code>PM</code></td>
+      <td>上午</td>
+      <td>上午</td>
+      <td>上午</td>
+    </tr>
+    <tr>
+      <td>%S</td>
+      <td>秒，以两位数字表示，必要的时候在前面补 <code>0</code></td>
+      <td>01</td>
+      <td>01</td>
+      <td>一</td>
+    </tr>
+    <tr>
+      <td>%x</td>
+      <td>按照语言决定的日期格式</td>
+      <td>2003年12月30日 星期二</td>
+      <td>民国九十二年十二月三十日 星期二</td>
+      <td>民国九十二年十二月三十日</td>
+    </tr>
+    <tr>
+      <td>%X</td>
+      <td>按照语言决定的日期格式</td>
+      <td>上午03时00分</td>
+      <td>上午三时零分</td>
+      <td>上午三点零分</td>
+    </tr>
+    <tr>
+      <td>%y</td>
+      <td>年份，以两位数字表示，必要的时候在前面补 <code>0</code></td>
+      <td>03</td>
+      <td>03</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <td>%Y</td>
+      <td>年份，以四位数字表示</td>
+      <td>2003</td>
+      <td>2003</td>
+      <td>九十二</td>
+    </tr>
+    <tr>
+      <td rowspan="20">额外</td>
+      <td>%V</td>
+      <td>小写四位数公元年份简读</td>
+      <td colspan="3">二零零四</td>
+    </tr>
+    <tr>
+      <td>%v</td>
+      <td>小写二位数公元年份简读</td>
+      <td colspan="3">零四</td>
+    </tr>
+    <tr>
+      <td>%U</td>
+      <td>大写四位数公元年份简读</td>
+      <td colspan="3">贰零零肆</td>
+    </tr>
+    <tr>
+      <td>%u</td>
+      <td>大写二位数公元年份简读</td>
+      <td colspan="3">零肆</td>
+    </tr>
+    <tr>
+      <td>%C</td>
+      <td>小写民国年份全读</td>
+      <td colspan="3">九十三</td>
+    </tr>
+    <tr>
+      <td>%c</td>
+      <td>大写民国年份全读</td>
+      <td colspan="3">玖拾参</td>
+    </tr>
+    <tr>
+      <td>%T</td>
+      <td>小写公元年份全读</td>
+      <td colspan="3">二千零四</td>
+    </tr>
+    <tr>
+      <td>%t</td>
+      <td>大写公元年份全读</td>
+      <td colspan="3">贰仟零肆</td>
+    </tr>
+    <tr>
+      <td>%Q</td>
+      <td>小写月份全读</td>
+      <td colspan="3">一</td>
+    </tr>
+    <tr>
+      <td>%q</td>
+      <td>大写月份全读</td>
+      <td colspan="3">壹</td>
+    </tr>
+    <tr>
+      <td>%R</td>
+      <td>该月的第几天，小写全读</td>
+      <td colspan="3">十五</td>
+    </tr>
+    <tr>
+      <td>%r</td>
+      <td>该月的第几天，大写全读</td>
+      <td colspan="3">拾伍</td>
+    </tr>
+    <tr>
+      <td>%F</td>
+      <td>时，以 24 时制表示成小写全读</td>
+      <td colspan="3">十六</td>
+    </tr>
+    <tr>
+      <td>%f</td>
+      <td>时，以 12 时制表示成小写全读</td>
+      <td colspan="3">四</td>
+    </tr>
+    <tr>
+      <td>%G</td>
+      <td>时，以 24 时制表示成小写简读</td>
+      <td colspan="3">一六</td>
+    </tr>
+    <tr>
+      <td>%g</td>
+      <td>时，以 12 时制表示成小写简读</td>
+      <td colspan="3">零四</td>
+    </tr>
+    <tr>
+      <td>%N</td>
+      <td>分，小写全读</td>
+      <td colspan="3">三十二</td>
+    </tr>
+    <tr>
+      <td>%n</td>
+      <td>分，小写简读</td>
+      <td colspan="3">三二</td>
+    </tr>
+    <tr>
+      <td>%O</td>
+      <td>秒，小写全读</td>
+      <td colspan="3">零</td>
+    </tr>
+    <tr>
+      <td>%o</td>
+      <td>秒，小写简读</td>
+      <td colspan="3">零零</td>
+    </tr>
+  </tbody>
+</table></p>
+<h2><a id="cfg"></a>不在文件里的 <code>mt.cfg</code> 指令</h2>
+<p>Movable Type 从 2.66 版起，又多了一个可以加在 <code>mt.cfg</code> 里的指令（选项）：</p>
+<ul>
+  <li><a id="cfg_ThrottleSeconds"></a><strong>ThrottleSeconds</strong><br /></li>这个指令的功能是用来设定来自相同 IP 的连续两个回响，最少必须间隔的秒数。这是用来消极地抵御使用程序猛灌垃圾或广告回响的不肖份子的。举例来说，你可以在 <code>mt.cfg</code> 里加上这一列：<pre>ThrottleSeconds 10</pre>那么来自同一个 IP 、且发表间隔小于 10 秒的回响，都会被系统驳回。</li>
+</ul>
+<h2><a id="tags"></a>不在文件里的模版卷标</h2>
+<p>Movable Type 屡次改版中，并不是所有的模版卷标都会被记载在<a href="http://mtbook.org/mtmanual_tags.html">文件</a>里。有些卷标可能祇在<a href="http://mtbook.org/mtchanges.html">版本更新演进史</a>里提到过，或者是你必须亲自去探索新的预设模版才会发现的。这些新卷标往往是为了满足特定需求、或者让事情更加合理及方便才被做出来的，因此你当然也应该把他们放进你的模版里，然后把原来为了相同目的而装的外挂模块给扔开。以下就让我们来看看这些模版卷标：</p>
+<ul>
+  <li><a id="tags_MTCGIRelativeURL"></a><strong>MTCGIRelativeURL</strong><br />这是一个从 2.60 版起就被加进来的<strong>变数卷标</strong>，代表的是你的 <code>mt.cgi</code> 相对于<code>站台网址</code>的路径。举例来说，如果你的<code>站台网址</code>是「 <code>http://blog.my-domain.org/</code> 」，而你又在 <code>mt.cfg</code> 里设定了「 <code>CGIPath http://blog.my-domain.org/cgi-bin/</code> 」的话，那么 <code>&lt;$MTCGIRelativeURL$&gt;</code> 的值就会是「 <code>cgi-bin/</code> 」。</li>
+  <li><a id="tags_MTIfNonEmpty"></a><strong>MTIfNonEmpty</strong><br />这是一个从 2.65 版起被加进来的<strong>容器卷标</strong>，代表的是一个<strong>条件情境</strong>。这个卷标有一个一定要指明的 <code>tag</code> 属性，这个属性的内容可以是任何 Movable Type <strong>变数卷标</strong>的名称（但是请不要加上角括号跟钱号）；祇有当这个变数卷标的值不是空字符串时， &lt;MTIfNonEmpty&gt; 容器卷标里的内容才会被采用。当然这个卷标也能与 <code>&lt;MTElse&gt;</code> 卷标混用：<pre>&lt;ol&gt;&lt;MTCategories&gt;&lt;li&gt;
+  &lt;MTIfNonEmpty tag="MTCategoryDescription"&gt;
+  类别描述： &lt;$MTCategoryDescription$&gt;
+  &lt;MTElse&gt;
+  类别名称： &lt;$MTCategoryLabel$&gt;
+  &lt;/MTElse&gt;
+  &lt;/MTIfNonEmpty&gt;
+&lt;/li&gt;&lt;/MTCategories&gt;&lt;ol&gt;</pre>上列的范例会依序列出所有的类别；如果某个类别设定了类别描述的话，就会显示出类别描述，否则就祇会显示出类别名称而已。</li>
+  <li><a id="tags_MTEntryModifiedDate"></a><strong>MTEntryModifiedDate</strong><br />这个从 2.65 版才被加进来的变数卷标，代表的是文章项目的修改日期。这个卷标目前看起来跟 <code>&lt;$MTEntryDate$&gt;</code> 似乎没有任何实质上的差别，但是我们可以推论下一个版本的 Movable Type 会在数据库里增设一个字段，用来存放（无法变更的）文章日期。</li>
+</ul>
+<p>我们在<a href="#default-templates" title="中文化过的预设模版">下一节</a>所要介绍的预设模版，正是用上了这些新增而又没有被放进文件里的模版卷标；所以一方面这些模版会有适用的版本限制，另一方面则是你得先搞懂他们到底有些甚么功用，才能随意修改。</p>
+<h2><a id="default-templates"></a>中文化过的预设模版</h2>
+<p>我在本书专属站台上也提供了中文化过的预设模版，这份模版除了把官方预设模版中文化外，又略加调整过，因此即便你选用了中文日期格式、中文类别描述、类别图标、或者启用了允许匿名回响的功能时，一切看起来仍旧相当正确，不会有不知所云的情况。</p>
+<p>这份模版可以在 <a href="http://mtbook.net/default-templates.html">http://mtbook.net/default-templates.html</a> 找到，你可以轻易地选取、复制，然后贴回你自己的网志里。</p>
+<div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_01.png" alt="在 MTBook.net 首页点选右方导览列的「预设模版」链接"><br />图四：请先连到本书专属网页 <a href="http://mtbook.net">http://mtbook.net</a> 的首页，然后按下右方导览列的「<code>预设模版</code>」链接。</div>
+<div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_02.png" alt="点选「 Atom 索引」的链接"><br />图五：你可以从页面上方的清单里快速选取要察看的预设模版；在这个例子里我们选的是 Movable Type 2.65 新增的 Atom 索引模版。</div>
+<div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_03.png" alt="从鼠标右键选单里「全选」整个模版内容"><br />图六：你可以看到每个模版实际所属的模版类别，也可以看到这个模版应该要有的输出档名。接下来你该做的事情是在模版内容区块里按下鼠标右键，选择「全选」。</div>
+<div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_04.png" alt="从鼠标右键选单里「复制」整个模版内容"><br />图七：全选了之后，请再次按下鼠标右键，然后选「复制」，把整个模版的内容复制到剪贴簿里。</div>
+<div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_05.png" alt="在「列出模版」画面中，按下「索引模版」区段的「建立新的索引模版」链接"><br />图八：接下来请回到你自己的网志管理后台，在「<code>列出模版</code>」画面中，按下「索引模版」区段里的「建立新的索引模版」链接（因为在这个升级的例子里，我们没有 Atom 索引模版。如果你祇是要把弄烂的模版还原的话，也可以直接按下编辑该模版的链接）。</div>
+<div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_06.png" alt="从鼠标右键选单里把刚刚复制起来的模版内容「贴上」"><br />图九：（如果你是要还原某个模版的话，别忘了要先「全选」）从鼠标右键选单里选择贴上，把刚刚我们复制到剪贴簿里的模版内容给贴进去；同时「模版名称」和「输出档案」也别忘了按照刚刚页面上的信息填妥。</div>
+<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtnew_default-templates_07.png" alt="按下「储存」按钮"><br />图十：最后按下「储存」按钮，就大功告成了（当然你也有可能会想要重建这个模版，不过这是<a href="#rebuild" title="重建静态档案">后面小节</a>的内容了）。</div>
+<p>现在就让我们看看有哪些预设模版：</p>
+<ul>
+  <li><a id="default-templates_indexes"></a>索引模版</li>
+  <ul>
+    <li><a id="default-templates_atom.xml"></a>Atom 索引： <a href="http://mtbook.net/default-templates.html#atom.xml">http://mtbook.net/default-templates.html#atom.xml</a></li>
+    <li><a id="default-templates_rsd.xml"></a>RSD ： <a href="http://mtbook.net/default-templates.html#rsd.xml">http://mtbook.net/default-templates.html#rsd.xml</a></li>
+    <li><a id="default-templates_index.rdf"></a>RSS 1.0 索引： <a href="http://mtbook.net/default-templates.html#index.rdf">http://mtbook.net/default-templates.html#index.rdf</a></li>
+    <li><a id="default-templates_index.xml"></a>RSS 2.0 索引： <a href="http://mtbook.net/default-templates.html#index.xml">http://mtbook.net/default-templates.html#index.xml</a></li>
+    <li><a id="default-templates_index.html"></a>主索引： <a href="http://mtbook.net/default-templates.html#index.html">http://mtbook.net/default-templates.html#index.html</a></li>
+    <li><a id="default-templates_archives.html"></a>总汇整索引： <a href="http://mtbook.net/default-templates.html#archives.html">http://mtbook.net/default-templates.html#archives.html</a></li>
+  </ul>
+  <li><a id="default-templates_archives"></a>汇整相关模版</li>
+  <ul>
+    <li><a id="default-templates_category"></a>分类汇整： <a href="http://mtbook.net/default-templates.html#category">http://mtbook.net/default-templates.html#category</a></li>
+    <li><a id="default-templates_individual"></a>单篇汇整： <a href="http://mtbook.net/default-templates.html#individual">http://mtbook.net/default-templates.html#individual</a></li>
+    <li><a id="default-templates_archive"></a>按时汇整： <a href="http://mtbook.net/default-templates.html#archive">http://mtbook.net/default-templates.html#archive</a></li>
+  </ul>
+  <li><a id="default-templates_others"></a>其它模版</li>
+  <ul>
+    <li><a id="default-templates_comments"></a>回响清单模版： <a href="http://mtbook.net/default-templates.html#comments">http://mtbook.net/default-templates.html#comments</a></li>
+    <li><a id="default-templates_comment_preview"></a>回响预览模版： <a href="http://mtbook.net/default-templates.html#comment_preview">http://mtbook.net/default-templates.html#comment_preview</a></li>
+    <li><a id="default-templates_comment_error"></a>回响出错模版： <a href="http://mtbook.net/default-templates.html#comment_error">http://mtbook.net/default-templates.html#comment_error</a></li>
+    <li><a id="default-templates_pings"></a>引用清单模版： <a href="http://mtbook.net/default-templates.html#pings">http://mtbook.net/default-templates.html#pings</a></li>
+    <li><a id="default-templates_popup_image"></a>弹出已上传图片模版： <a href="http://mtbook.net/default-templates.html#popup_image">http://mtbook.net/default-templates.html#popup_image</a></li>
+  </ul>
+</ul>
+<h2><a id="htmlarea"></a>所见即所得的文章编辑功能</h2>
+<p>新的 Movable Type 的 Windows 安装档（以及 mt.diff ）会把原本我们在<a href="cn_mtbook_entry.html#entry" title="第三章 ─ 管理文章">第三章</a>介绍过的<a href="cn_mtbook_entry.html#post_buttom">超级链接与文字变化按钮</a>给取消掉，改以功能更为强大的 <a href="http://www.interactivetools.com/products/htmlarea/" title="interactivetools.com : htmlArea">htmlArea</a> 代替之；这是一个<strong>所见即所得</strong> (WYSIWYG, What You See Is What You Get) 的 HTML 编辑接口，有各式各样的按钮，帮助你做出字型变化，或插入图片、链接、表格等。</p>
+<p>当你进入编辑文章画面时， htmlArea 并不会自动启用；对于进阶使用者或者是不需要繁复变化的使用者来说，这确实是有效率且安全的作法。如果你真的有需要进入这个所见即所得的编辑模式时，请如图用鼠标按一下<img style="border-top:1px solid #e9e9e9;border-left:1px solid #e9e9e9;border-right:1px solid black;border-bottom:1px solid black;margin:0 5px;visibility:auto;vertical-align:middle" src="bookimg/ed_color_fg.gif" alt="" title="HTMLEdit">图案，接著文章编辑区马上就会进入「所见即所得」模式。</p>
+<div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtnew_htmlarea_01.png" alt="正常的文章编辑画面"><br />图十一：这是正常的文章编辑画面，你可以看到编辑窗口里都是 HTML 源码。现在请用鼠标按一下<img style="border-top:1px solid #e9e9e9;border-left:1px solid #e9e9e9;border-right:1px solid black;border-bottom:1px solid black;margin:0 5px;visibility:auto;vertical-align:middle" src="bookimg/ed_color_fg.gif" alt="" title="HTMLEdit">图案以进入「所见即所得」模式。</div>
+<div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtnew_htmlarea_02.png" alt="进入了「所见即所得」模式后的文章编辑画面"><br />图十二：进入了所见即所得模式后，你就再也看不到 HTML 源码了；反之你能看到的是这些 HTML 源码所会产生的效果，同时也出现了大量不同功能的按钮，帮助你编辑 HTML 文件。</div>
+<p>在这个模式中，你可以使用下列不同的功能：</p>
+<ul>
+  <li><a id="htmlarea_format"></a>文字变化功能<br />这些按钮的功能都是改变字型状态的。所有的按钮都可以重复累加套用。</li>
+  <ul>
+    <li><a id="htmlarea_format_bold"></a><img alt="" src="bookimg/ed_format_bold.gif">粗体<br />先以光标选取文字，按下这个按钮后，这些字就会转为粗体字；若再按一次的话，则会还原成没有粗体的状态。</li>
+    <li><a id="htmlarea_format_italic"></a><img alt="" src="bookimg/ed_format_italic.gif">斜体<br />先以光标选取文字，按下这个按钮后，这些字就会转为斜体字；若再按一次的话，则会还原成没有斜体的状态。</li>
+    <li><a id="htmlarea_format_underline"></a><img alt="" src="bookimg/ed_format_underline.gif">加底线<br />先以光标选取文字，按下这个按钮后，这些字就会加上底线；若再按一次的话，则会还原成没有底线的状态。</li>
+    <li><a id="htmlarea_format_strike"></a><img alt="" src="bookimg/ed_format_strike.gif">删除线<br />先以光标选取文字，按下这个按钮后，这些字就会加上删除线；若再按一次的话，则会还原成没有删除线的状态。</li>
+    <li><a id="htmlarea_format_sub"></a><img alt="" src="bookimg/ed_format_sub.gif">下标<br />先以光标选取文字，按下这个按钮后，这些字就会缩小而成为下标字；若再按一次的话，则会还原回一般状态。</li>
+    <li><a id="htmlarea_format_sup"></a><img alt="" src="bookimg/ed_format_sup.gif">上标<br />先以光标选取文字，按下这个按钮后，这些字就会缩小而成为上标字；若再按一次的话，则会还原回一般状态。</li>
+  </ul>
+  <li><a id="htmlarea_clipboard"></a>剪贴簿功能</li>
+  <ul>
+    <li><a id="htmlarea_clipboard_copy"></a><img alt="" src="bookimg/ed_copy.gif">复制<br />先以光标选取文字，按下这个按钮后，这些字以及连带的样式、变化就会被复制到系统的剪贴簿里。</li>
+    <li><a id="htmlarea_clipboard_cut"></a><img alt="" src="bookimg/ed_cut.gif">剪下<br />先以光标选取文字，按下这个按钮后，这些字以及连带的样式、变化就会被删除，然后复制到系统的剪贴簿里。</li>
+    <li><a id="htmlarea_clipboard_paste"></a><img alt="" src="bookimg/ed_paste.gif">贴上<br />按下这个按钮后，系统剪贴簿里的文字以及连带的样式、变化就会被插入到光标所在的位置。</li>
+    <li><a id="htmlarea_clipboard_undo"></a><img alt="" src="bookimg/ed_undo.gif">还原<br />按下这个按钮后，就会还原最后一次的变更；这个按钮可以多次重复使用，效果会累加。</li>
+    <li><a id="htmlarea_clipboard_redo"></a><img alt="" src="bookimg/ed_redo.gif">重做<br />按下这个按钮后，就会重做最后一次的变更；这个按钮可以多次重复使用，效果会累加。</li></li>
+  </ul>
+  <li><a id="htmlarea_layout"></a>排版对齐功能</li>
+  <ul>
+    <li><a id="htmlarea_layout_left"></a><img alt="" src="bookimg/ed_align_left.gif">齐左<br />按下这个按钮后，光标所在的段落就会靠左对齐。这也是预设的对齐方式。</li>
+    <li><a id="htmlarea_layout_center"></a><img alt="" src="bookimg/ed_align_center.gif">居中<br />按下这个按钮后，光标所在的段落就会居中对齐。</li>
+    <li><a id="htmlarea_layout_right"></a><img alt="" src="bookimg/ed_align_right.gif">齐右<br />按下这个按钮后，光标所在的段落就会靠右对齐。</li>
+    <li><a id="htmlarea_layout_justify"></a><img alt="" src="bookimg/ed_align_justify.gif">全齐<br />按下这个按钮后，光标所在的段落就会自动按照状况而左右拉齐。</li>
+    <li><a id="htmlarea_layout_ol"></a><img alt="" src="bookimg/ed_list_num.gif">插入排序清单<br />按下这个按钮后，光标所在的地方就会成为排序清单，再按一次可取消。</li>
+    <li><a id="htmlarea_layout_ul"></a><img alt="" src="bookimg/ed_list_bullet.gif">插入未排序清单<br />按下这个按钮后，光标所在的段落就会成为未排序清单，再按一次可取消。</li>
+    <li><a id="htmlarea_layout_outdent"></a><img alt="" src="bookimg/ed_indent_less.gif">凸排<br />按下这个按钮后，光标所在的地方就会凸排，再按一次可取消；这个按钮可以多次重复使用，效果会累加。</li>
+    <li><a id="htmlarea_layout_indent"></a><img alt="" src="bookimg/ed_indent_more.gif">缩排<br />按下这个按钮后，光标所在的段落就会缩排，再按一次可取消；这个按钮可以多次重复使用，效果会累加。</li>
+  </ul>
+  <li><a id="htmlarea_color"></a>颜色变化功能</li>
+  <ul>
+    <li><a id="htmlarea_color_fg"></a><img alt="" src="bookimg/ed_color_fg.gif">前景色<br />先以光标选取文字，按下这个按钮后，就会弹出一个色盘窗口让你选色，然后你所选的颜色就会成为这些字的颜色。</li>
+    <li><a id="htmlarea_color_bg"></a><img alt="" src="bookimg/ed_color_bg.gif">背景色<br />先以光标选取文字，按下这个按钮后，就会弹出一个色盘窗口让你选色，然后你所选的颜色就会成为这些字的背景颜色。</li>
+  </ul>
+  <li><a id="htmlarea_insert"></a>插入对象功能</li>
+  <ul>
+    <li><a id="htmlarea_insert_hr"></a><img alt="" src="bookimg/ed_hr.gif">插入水平线<br />按下这个按钮后，就会在光标处插入一条水平线。</li>
+    <li><a id="htmlarea_insert_link"></a><img alt="" src="bookimg/ed_link.gif">插入链接<br />先以光标选取文字，按下这个按钮后，就会弹出一让你输入网址的对话窗，让你建立这段文字的链接。</li>
+    <li><a id="htmlarea_insert_image"></a><img alt="" src="bookimg/ed_image.gif">插入图片<br />按下这个按钮后，就会弹出一个插入图片窗口；你可以输入图片网址、替代文字、对齐方式、边框厚度、留白等属性，而在光标处插入图片。</li>
+    <li><a id="htmlarea_insert_table"></a><img alt="" src="bookimg/insert_table.gif">插入表格<br />按下这个按钮后，就会弹出一个插入表格窗口；你可以输入表格的栏数、列数、对齐方式、边框厚度、储存格间距及留白等属性，而在光标处插入表格。</li>
+  </ul>
+  <li><a id="htmlarea_edit"></a>编辑模式</li>
+  <ul>
+    <li><a id="htmlarea_edit_plaintext"></a><img alt="" src="bookimg/ed_html.gif">模式切换<br />按下这个按钮后，就会把编辑区切换回直接显示 HTML 卷标的「<code>纯文字模式</code>」，再按一次就又会切换回「<code>所见即所得模式</code>」。</li>
+    <li><a id="htmlarea_edit_fullscreen"></a><img alt="" src="bookimg/fullscreen_maximize.gif">大屏幕编辑模式<br />觉得编辑区太小了吗？按下这个按钮后，就可以获得一个几乎占满整个屏幕的编辑区喔！当你在这个大编辑区完成编辑后，可以按下<img alt="" src="bookimg/fullscreen_minimize.gif">按钮回到原来的编辑区。</li>
+  </ul>
+  <li><a id="htmlarea_other"></a>其它</li>
+  <ul>
+    <li><a id="htmlarea_other_help"></a><img alt="" src="bookimg/ed_help.gif">说明<br />按下这个按钮后，就可以检视 htmlArea 的线上说明文件。</li>
+    <li><a id="htmlarea_other_about"></a><img alt="" src="bookimg/ed_about.gif">关于<br />按下这个按钮后，就可以观看 htmlArea 的版权宣告。</li>
+  </ul>
+  <li><a id="htmlarea_table"></a>表格编辑器<br />以下这些按钮都位于工具列的最后一列，全部都是用于表格编辑的。实际上 Mozilla 或 Firebird 的使用者可以看到比较多（也比较强力）的表格编辑功能，但是我们在此仅列举 IE 也能够使用的部分。有兴趣的朋友请参考献上文件的说明。</li>
+  <ul>
+    <li><a id="htmlarea_table_property"></a><img alt="" src="bookimg/table-prop.gif">表格内容<br />先用鼠标点选某个表格中的任何一个储存格，然后按下这个按钮，就会弹出一个表格内容窗口；你可以在这里填写表格标头、摘要，设定表格的浮动方式、长宽尺寸、对齐方式、间隔、补白、框线、样式等属性。</li>
+    <li><a id="htmlarea_table_row"></a>列编辑功能</li>
+    <ul>
+      <li><a id="htmlarea_table_row_property"></a><img alt="" src="bookimg/row-prop.gif">整列内容<br />先用鼠标点选欲编辑那一列中的任何一个储存格，然后按下这个按钮，就会弹出一个整列内容窗口；你可以在这里修改这一列的版面及样式属性。</li>
+      <li><a id="htmlarea_table_row_insert_above"></a><img alt="" src="bookimg/row-insert-above.gif">在前面插入列<br />按下这个按钮，就会在光标所在列的上方插入一个空白列。</li>
+      <li><a id="htmlarea_table_row_insert_under"></a><img alt="" src="bookimg/row-insert-under.gif">在后面插入列<br />按下这个按钮，就会在光标所在列的下方插入一个空白列。</li>
+      <li><a id="htmlarea_table_row_delete"></a><img alt="" src="bookimg/row-delete.gif">删除列<br />按下这个按钮，就会删除光标所在的那一列、以及其内的所有内容。</li>
+      <li><a id="htmlarea_table_row_split"></a><img alt="" src="bookimg/row-split.gif">分割列<br />按下这个按钮，就会把光标所在的储存格分割成上下两列。</li>
+    </ul>
+    <li><a id="htmlarea_table_column"></a>栏编辑功能</li>
+    <ul>
+      <li><a id="htmlarea_table_column_insert_before"></a><img alt="" src="bookimg/col-insert-before.gif">在前面插入栏<br />按下这个按钮，就会在光标所在栏的左边插入一个空白栏。</li>
+      <li><a id="htmlarea_table_column_insert_after"></a><img alt="" src="bookimg/col-insert-after.gif">在后面插入栏<br />按下这个按钮，就会在光标所在栏的右边插入一个空白栏。</li>
+      <li><a id="htmlarea_table_column_delete"></a><img alt="" src="bookimg/col-delete.gif">删除栏<br />按下这个按钮，就会删除光标所在的那一栏、以及其内的所有内容。</li>
+      <li><a id="htmlarea_table_column_split"></a><img alt="" src="bookimg/col-split.gif">分割栏<br />按下这个按钮，就会把光标所在的储存格分割成左右两栏。</li>
+    </ul>
+    <li><a id="htmlarea_table_cell"></a>储存格编辑功能</li>
+    <ul>
+      <li><a id="htmlarea_table_cell_property"></a><img alt="" src="bookimg/cell-prop.gif">储存格内容<br />先用鼠标点选欲编辑的储存格，然后按下这个按钮，就会弹出一个储存格内容窗口；你可以在这里修改这个储存格的版面及样式属性。</li>
+      <li><a id="htmlarea_table_cell_insert_before"></a><img alt="" src="bookimg/cell-insert-before.gif">在前面插入储存格<br />按下这个按钮，就会在光标所在储存格的左边插入一个空白储存格。</li>
+      <li><a id="htmlarea_table_cell_insert_after"></a><img alt="" src="bookimg/cell-insert-after.gif">在后面插入储存格<br />按下这个按钮，就会在光标所在储存格的右边插入一个空白储存格。</li>
+      <li><a id="htmlarea_table_cell_delete"></a><img alt="" src="bookimg/cell-delete.gif">删除储存格<br />按下这个按钮，就会删除光标所在的那一栏、以及其内的所有内容；同时右侧的储存格则会往左递补。</li>
+      <li><a id="htmlarea_table_cell_merge"></a><img alt="" src="bookimg/cell-merge.gif">合并储存格<br />先用鼠标选取所有欲合并的储存格，然后按下这个按钮，这些储存格就会合并为一个。</li>
+      <li><a id="htmlarea_table_cell_split"></a><img alt="" src="bookimg/cell-split.gif">分割储存格<br />按下这个按钮，就会把光标所在的储存格分割成上下左右四格。</li>
+    </ul>
+  </ul>
+</ul>
+<h3><a id="htmlarea_note"></a>注意事项</h3>
+<p>请注意，由于尚未被清掉的程序瑕疵，当你完成编辑后请务必再次按下 <img alt="" src="bookimg/ed_html.gif" style="vertical-align:middle;margin-right:5px;border:1px solid;"> 按钮，切换到<strong>纯文字模式</strong>后再储存文章，否则你辛苦输入的内容将可能会付之一炬！</p>
+<h2><a id="rebuild"></a>重建静态档案</h2>
+<p>「重建档案」是另一个先前没有特别提到的功能，然而有许多使用者不断在询问著「重建档案是甚么意思？」「我甚么时候需要重建档案？」因此我觉得有必要在这里花一点篇幅来说一说。</p>
+<h3><a id="rebuild_reason"></a>重建档案的原因</h3>
+<p>Movable Type 使用了一份数据库来储存各种你所输入的东西，包括像是网志组态、模版、文章、回响、引用通告等。这些讯息都是先存放到 Movable Type 所使用的数据库里，等到有需要的时候才会从数据库中被倒出来，而成为静态档案的一部份。<strong>这个「把数据从数据库中倒出来，制作成静态档案」的过程，就是所谓的「重建档案」</strong>。</p>
+<p>这么做有甚么好处呢？最大的好处是可以有极大的弹性，相同的信息内容可以很方便的出现在许多地方、或者是藏匿起来不予呈现。另一个相当重要的好处在于效率；随著日积月累，网志里的信息会越来越多，如果每次一有新的东西被加入，系统就要把所有的档案都整理一遍的话，将会花去难以计算的时间跟系统资源。然而如果我们先把数据扔进数据库的话，就祇需要在重建档案时，挑选有相关的信息片段一并重建就行了。这么一来，祇需要花费极少的资源，就能维持站台的更新。</p>
+<p>其实还有另一个好处就是安全。因为你的数据是存放在数据库里，而不是袒胸露肚地摊在网页目录中，所以就算有人突破了你的防火墙、毁掉了你的网页静态档案，你依旧能够轻易地全部还原，而不会受到影响。</p>
+<h3><a id="rebuild_moment"></a>重建档案的时机</h3>
+<p>那么甚么情况下会需要重建档案呢？一般说来，在你做了下列这些事情后，就得重建档案：</p>
+<ul>
+  <li>修改了 mt.cfg 后<br />mt.cfg 里面有一些设定值，像是 <code>CGIPath</code> 、 <code>ExcerptWords</code> 、 <code>NoCDATA</code> 、 <code>PublishCharset</code> 等，都有可能影响到你的静态档案实际内容。</li>
+  <li>调整了网志组态后</li>
+  <li>编辑了任何索引模版、汇整模版、或模版模块后</li>
+  <li>删除或修改了任何回响后</li>
+  <li>删除或修改了任何引用通告后</li>
+</ul>
+<p>上述这些变更完成时，都祇会更新你的数据库，却不会立即反映到网页目录里的静态档案，所以你得自己重建档案才行。至于实际重建档案的技巧，则请参考<a href="#rebuild_effective" title="有效率地重建档案">稍后的段落</a>。</p>
+<h3><a id="rebuild_auto"></a>自动重建档案</h3>
+<p>你或许会注意到，当你新增一篇文章时，系统就会自动地帮你套用<strong>所有相关的模版</strong>来重建可能会受到影响的静态页面。事实上，祇要你在文章编辑画面按下<code>储存</code>按钮，系统就会这样子来自动重建部分的档案。</p>
+<p>这个设计相当地巧妙，也相当地有效。对于常常写新东西的使用者来说，他们毋须把时间花在按下「重建」按钮上，就能够在页面上不断新增文章；对于常常回头修改文章的使用者来说也是如此。无论你正在新增或修改文章，祇要一按下「储存」按钮，系统就会帮你把剩下来的事情做完。另一方面，当有访客留下回响或发出引用通告后，系统也会针对特定的文章如此重建；要不然你的站台页面可不会更新呢！</p>
+<p>不仅如此，善用这个机制，我们甚至可以把维护站台所需的重建时间大幅缩短。且看<a href="#rebuild_effective" title="有效率地重建档案">接下来的这个段落</a>。
+<h3><a id="rebuild_effective"></a>有效率地重建档案</h3>
+<p>在这个段落里，我们将条列许多重建档案的原则；越后面的原则越能帮你节省时间和系统资源，所以请仔细读下去吧：</p>
+<ol>
+  <li><strong>祇有当你做了会影响所有页面的变更时，才重建所有的档案</strong><br />因为重建所有的档案将会花去最多时间及资源，所以除非你所做的变更会影响到所有的页面，例如修改了 CGI 脚本的路径、或变更了网志名称，否则不要轻易重建所有的档案。</li>
+  <li><strong>当你修改了某个汇整模版后，就祇需要重建该汇整方式的档案即可</strong><br />在重建档案的对话窗里，有个下拉式选单可以选择祇重建分类汇整、按时汇整、或单篇汇整的档案。如果你祇修改了某一个汇整模版，那么其它的静态档案是不会被波及的，因此你祇需要重建该汇整方式的档案即可。<br />这里有个例外，就是若你修改了汇整档案的档案名称模版的话，或许就得重建所有的档案了。</li>
+  <li><strong>修改了任何索引模版后，可以祇以该模版来重建索引档案</strong><br />当你编辑任何索引模版时，也许会注意到在「储存」按钮旁边还有个「重建」按钮。这个按钮比左方工具列上的「重建」还要威力强大，因为它能够祇以你所编辑的这个模版来重建特定的某一个索引档案，毋须一口气重建全部的索引档案。别忘了，你得先储存了更新过的模版，才能按这个「重建」按钮喔！</li>
+  <li><strong>修改了任何文章后，祇需要把文章再储存一遍即可</strong><br />没错，祇需要按下「储存」按钮，跟这一篇文章相关的单篇汇整页面、按时汇整页面、分类汇整页面、乃至于索引页面，都将会被更新。</li>
+  <li><strong>修改、删除了任何回响或引用通告后，也祇需要把文章再储存一遍即可</strong><br />你应该会发现，当你储存了对任何回响或引用通告的变更后，就会跳回相关联的文章编辑画面。同样地，你也祇需要按下「储存」按钮，那么跟这一篇文章相关的单篇汇整页面、按时汇整页面、分类汇整页面、乃至于索引页面，也都将会被更新。</li>
+  <li><strong>修改了任何「其它模版」后，完全毋须重建任何档案</strong><br />举凡<code>回响清单模版</code>、<code>回响预览模版</code>、<code>回响出错模版</code>、以及<code>引用清单模版</code>都是当读者点击了特定链接后，才会用于生成动态页面的，所以你根本不需要手动加以重建。而<code>弹出已上传图片模版</code>套用的时机则祇有发生在上传了图片的时候，所以这个模版所建立出来的静态档案也不是重建档案系统所能干涉的，就算你重建所有档案也没有用。</li>
+</ol>
+<h2><a id="blacklist"></a>管理黑名单</h2>
+<p>随著网志日益流行，渐渐地有不肖之徒开始到别人的网志上留下回响或引用通告；他们所留下的文字多半言不及义、或与原来的文章没有丝毫瓜葛，他们的目的在于留下生效的超链接，试图拉高自己站台的 Google 评比 (Google Rank) ，顺便看会不会有人误闯贼门。</p>
+<p>这种东西我们称做「<code>回响垃圾 (Comment Spam)</code>」，已成为继垃圾信 (Spam) 后的严重问题。原本的 Movable Type 祇能让你透过<a href="cn_mtbook_comment.html#ban">禁用 IP</a> 的方式，以抵御来自特定位置的攻击。但是这个方法毕竟过于被动，而且这些混蛋总是有办法换用不同的 IP ；因此 <a href="http://www.jayallen.org">Jay Allen</a> 发展了一套 <a href="http://www.jayallen.org/projects/mt-blacklist">MT-Blacklist</a> 外挂模块，透过黑名单比对回响内容，主动封杀可疑的回响垃圾。</p>
+<p>现在这个外挂模块也成为 Movable Type 的 Windows 安装档内的预设模块了。你祇需要如图在网志主选单里点击「<strong>设定黑名单</strong>」的链接，就可以予以启用或组态。</p>
+<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_01.png" alt="在网志主选单里点击「设定黑名单」链接"><br />图十三：在网志主选单里点击「<strong>设定黑名单</strong>」的链接。</div>
+<div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_02.png" alt="MT-Blacklist 的预设画面"><br />图十四： MT-Blacklist 的预设画面，你可以看到目前已在黑名单中的字符串跟正规表示式。</div>
+<h3><a id="blacklist_active"></a>启用黑名单</h3>
+<p>虽然现在会预设就帮你把 MT-Blacklist 装好，但是基于兼容性考量，一开始时是不会启用的，你得自己启用才行。别担心，这并不难；请先如图按下「 Configure 」按钮，在第一个选项选择「 Yes 」，然后把画面卷到最下方，把「 Automatic Blacklist Publishing 」的输出档名改成「 <strong>./blacklist.txt</strong> 」（否则在 Windows 上会出问题），最后按下「 Save Configuration 」即可。</p>
+<div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_active_01.png" alt="按下「 Configure 」按钮"><br />图十五：一开始 MT-Blacklist 尚未启用，请按下选单里的「 Configure 」按钮。</div>
+<div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_active_02.png" alt="在第一个选项选择「 Yes 」"><br />图十六：在 MT-Blacklist 的主开关选择「 Yes 」来启用。</div>
+<div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_active_03.png" alt="把「 Automatic Blacklist Publishing 」的输出档名改成「 ./blacklist.txt 」，然后按下「 Save Configuration 」"><br />图十七：先把屏幕卷到最底下，接著把「 Automatic Blacklist Publishing 」的输出档名改成「 ./blacklist.txt 」，最后按下「 Save Configuration 」来储存 MT-Blacklist 组态设定。</div>
+<div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_active_04.png" alt="MT-Blacklist 已启用"><br />图十八：现在 MT-Blacklist 已经启用了。</div>
+<p>当然这里还有许多细节可以调校，但是我在此不打算赘述（不然就会变成另一章了），请有兴趣的朋友自己啃线上说明吧！</p>
+<h3><a id="blacklist_update"></a>更新黑名单</h3>
+<p>除了预设把 MT-Blacklist 装好之外，这里还预先附上了一份黑名单，让你能够立即生效。但是你还是应该随时注意有没有更新的黑名单，才能时时抵御最新的垃圾。</p>
+<p>你可以订阅 MT-Blacklist 交换所 RSS Feed (<a href="http://www.jayallen.org/comment_spam/feeds/blacklist-changes.rdf">http://www.jayallen.org/comment_spam/feeds/blacklist-changes.rdf</a> 或 <a href="http://www.jayallen.org/comment_spam/feeds/blacklist-changes.xml">http://www.jayallen.org/comment_spam/feeds/blacklist-changes.xml</a>) 来监视任何的黑名单更新；最新的黑名单则会发布在 <a href="http://www.jayallen.org/comment_spam/blacklist.txt">http://www.jayallen.org/comment_spam/blacklist.txt</a> ，你祇需要如图把整个档案的内容复制起来，然后贴进「 <code>Add</code> 」画面中的「 <code>Import blacklist</code> 」字段中，最后按下「 <code>Import entries</code> 」按钮即可。
+<div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_01.png" alt="按下 MT-Blacklist 选单里的「 Add 」按钮"><br />图十九：在 MT-Blacklist 画面中，按下选单上的「 Add 」按钮，准备汇入最新的黑名单。</div>
+<div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_02.png" alt="点击「 updated list 」链接"><br />图二十：要取得最新的黑名单的话，祇需要从这个画面里点击「 updated list 」即可。</div>
+<div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_03.png" alt="「全选」黑名单"><br />图二十一：当浏览器开启了最新的黑名单后，请从编辑选单（或用任何方法）把内容给全选起来。</div>
+<div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_04.png" alt="从鼠标右键「复制」黑名单内容"><br />图二十二：全选了黑名单后，请按下鼠标右键然后选「复制」，把所有的内容给复制起来。</div>
+<div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_05.png" alt="以鼠标右键「贴上」到汇入字段里"><br />图二十三：回到 MT-Blacklist 的「 Add 」页面，在「 Import blacklist 」字段里按鼠标右键，选「贴上」来把刚刚复制的黑名单贴进去。</div>
+<div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mtnew_blacklist_update_06.png" alt="按下「 Import entries 」按钮"><br />图二十四：最后别忘了按下「 Import entries 」按钮，就可以更新你的黑名单了。</div>
+<p>再次强调，这个外挂模块的功能远比我们在此所介绍的更为强大，不过碍于篇幅，我们就不多加描述了，请有兴趣的朋友自行研究、阅读线上文件。</p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

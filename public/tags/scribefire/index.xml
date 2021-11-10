@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ScribeFire on 猪八的网：浮生志</title>
+    <link>/tags/scribefire/</link>
+    <description>Recent content in ScribeFire on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Fri, 26 Dec 2008 15:33:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/scribefire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ScribeFire添加Blogger出错及解决</title>
+      <link>/blog/2008/12/error-scribefire-to-blogger.html</link>
+      <pubDate>Fri, 26 Dec 2008 15:33:00 +0800</pubDate>
+      
+      <guid>/blog/2008/12/error-scribefire-to-blogger.html</guid>
+      <description>&lt;p&gt;ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说出错，没有任何内容。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/blogger-error.jpg&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：把Http://改成&lt;span style=&#39;color: red;&#39;&gt;&lt;strong&gt;Https://&lt;/strong&gt;&lt;/span&gt;，如图：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/Blogger-set.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ok，搞定！&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P.S：为了凑点字数，同时测试一下新买的键盘Dell SK-8115。发表感想若干：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;很想把全站都弄成&lt;a href=&#34;http://www.google.com/&#34;&gt;Google&lt;/a&gt;集成的，用 &lt;a href=&#34;http://start.zhu8.net/&#34;&gt;Google Apps&lt;/a&gt; 中的Pages或者Sites发布首页和其他页面。用&lt;a href=&#34;http://www.blogger.com/&#34;&gt;Blogger&lt;/a&gt;发布&lt;a href=&#34;http://blog.zhu8.net/&#34;&gt;Blog&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目前&lt;a href=&#34;http://www.whopig.com/&#34;&gt;WhoPig.Com&lt;/a&gt;不在我的控制之下（使用了&lt;a href=&#34;http://www.webhostingbuzz.com/&#34;&gt;WHB&lt;/a&gt;的空间），所以修改域名DNS比较麻烦，只好拿&lt;a href=&#34;http://chenjun.com/&#34;&gt;Zhu8.Net&lt;/a&gt;来试验。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WhoPig.Com目前又没有什么激情去弄了，我发觉我已经没有以前在学校为了某个CSS错误一个通宵做网站的耐性了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Blog.Zhu8.Net很快就被Google全盘收录了（&lt;em&gt;数小时之内，并且连我开始发布错误的测试页都收了&lt;/em&gt;），而WhoPig.Com到目前还没有收完……&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;测试Windows Live Writer，发现配置同样需要修改，先选择其他日志服务，使用原始地址http://zhu8.blogspot.com或者http://chenjun.com/都提示错误，必须将两个都改成HTTPS才可以，然后输入你的Google帐号和密码，另外类型需选择Atom Publishing Protocol，不要选择Blogger，然后在下面的地址输入：https://www.blogger.com/feeds/1265273302531055728/posts/default。记得将blogID换成你自己的。&lt;/strong&gt;&lt;em&gt;——其实我自己试下来，无法读取旧日志，提示：远程主机强迫关闭了一个现有的连接，而且开始连接老是断掉，ScribeFire却不会断，亦可以读取，具体原因不明。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;延伸阅读：什么是&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTPS&#34;&gt;HTTPS&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;HTTPS&lt;/strong&gt;以保密为目标研发，简单讲是&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTP&#34; title=&#34;HTTP&#34;&gt;HTTP&lt;/a&gt;的安全版。其安全基础是SSL协议，因此加密的详细内容请看&lt;a href=&#34;http://zh.wikipedia.org/wiki/SSL&#34; title=&#34;SSL&#34;&gt;SSL&lt;/a&gt;。全称&lt;strong&gt;Hypertext Transfer Protocol over Secure Socket Layer&lt;/strong&gt;。&lt;br&gt;
+它是一个&lt;a href=&#34;http://zh.wikipedia.org/wiki/URI&#34; title=&#34;URI&#34;&gt;URI&lt;/a&gt; scheme，句法类同&lt;tt&gt;http:&lt;/tt&gt;体系。它使用了HTTP，但HTTPS存在不同于HTTP的默认&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%AB%AF%E5%8F%A3&#34; title=&#34;端口&#34;&gt;端口&lt;/a&gt;及一个加密/身份验证层（在&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTP&#34; title=&#34;HTTP&#34;&gt;HTTP&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/TCP&#34; title=&#34;TCP&#34;&gt;TCP&lt;/a&gt;之间）。这个协议的最初研发由&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%BD%91%E6%99%AF%E5%85%AC%E5%8F%B8&#34; title=&#34;网景公司&#34;&gt;网景公司&lt;/a&gt;进行，提供了&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81&#34; title=&#34;身份验证&#34;&gt;身份验证&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8A%A0%E5%AF%86&#34; title=&#34;加密&#34;&gt;加密&lt;/a&gt;通讯方法，现在它被广泛用于&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91&#34; title=&#34;互联网&#34;&gt;互联网&lt;/a&gt;上安全敏感的通讯，例如交易支付方面。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

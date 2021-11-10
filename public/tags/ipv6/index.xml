@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ipv6 on 猪八的网：浮生志</title>
+    <link>/tags/ipv6/</link>
+    <description>Recent content in ipv6 on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Sat, 21 May 2011 00:46:07 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/ipv6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>转移到Ubuntu同时开启ipv6</title>
+      <link>/blog/2011/05/change-to-ubuntu-and-ipv6.html</link>
+      <pubDate>Sat, 21 May 2011 00:46:07 +0800</pubDate>
+      
+      <guid>/blog/2011/05/change-to-ubuntu-and-ipv6.html</guid>
+      <description>&lt;p&gt;转眼又大半年过去了，曾经的火炉南京也烧到了35度的高温，风就像蒸汽一样的薰人。不过晚上的凉风仍然让人感觉到夏天还没有正在到来。生活依然平淡的在继续，“要加薪”没有成功，但是也没有胜利者，就如同在法院外放鞭炮的人一样，他们也仅仅是在那一刹那得到了一些病态的慰籍。如同在微博上“狂欢”的人们一样，生活并没有因此也改变，生存环境也不会因此而宽大，铁屋子似乎越来越密封。一如南京中午13：00的空气。&lt;/p&gt;
+&lt;p&gt;闲得无事，终于想去折腾Linux，选择自然是我在06还是07年索取过的漂洋过海来到中国的&lt;a href=&#34;http://www.ubuntu.com&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;。不料冲动坏事，在格式化的时候把我的1TB硬盘全部格掉，更始料未及的是两天前冲动的那个我用Recovery软件恢复的时候，把原来要恢复的扇区给覆盖了，导致近一年的相片无存，如同我的生命少了一年。&lt;/p&gt;
+&lt;p&gt;今天在Hi-PDA的水与空气的D版，再次翻回两天前看到的IPV6的帖子，以及关于“方校长”和“白名单”的种种讨论和逆袭，干脆“破罐破摔”，系统就装了Ubuntu 11.04，反正不得已用Windows的时候，我那1000块收回来的IBM Thinkpad X41上面的Win7可以派上用场。于是终于第一次完整的体验了Linux，用起了命令行，穿越了IPV6，很好很强大——不得不说。虽然固有的10多年的Windows想法时时作崇，影响使用，但是如今的系统的人性化已经让我很受用，特别是强大的命令行，不再需要找网站，下软件，安装到哪哪，注意有没有恶意插件，只需要简单的几行命令。这让我觉得我以前可浪费了多么宝贵的生命！&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;IPV6完成后的截图：&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;img src=&#34;/images/ubuntu-screenshot.png&#34; alt=&#34;Ubuntu Screenshot&#34; title=&#34;Ubuntu Screenshot&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;具体步骤&#34;&gt;具体步骤：&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ctrl+Alt+T 打开终端，输入如下命令：&lt;br&gt;
+&lt;code&gt;$sudo apt-get install miredo&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;$ifconfig&lt;/code&gt;&lt;br&gt;
+在结果中应该能看见一个叫 teredo 的虚拟网卡。&lt;br&gt;
+&lt;code&gt;$ ping6 ipv6.google.com&lt;/code&gt;&lt;br&gt;
+&lt;em&gt;PING ipv6.google.com(2404:6800:8003::93) 56 data bytes&lt;br&gt;
+64 bytes from 2404:6800:8003::93: icmp_seq=2 ttl=57 time=910 ms..&lt;/em&gt;&lt;br&gt;
+现在您的浏览器应该可以访问 &lt;a href=&#34;https://ipv6.google.com&#34;&gt;https://ipv6.google.com&lt;/a&gt; 了。&lt;br&gt;
+&lt;code&gt;$sudo gedit /etc/hosts&lt;/code&gt;&lt;br&gt;
+把host列表拷贝进去,&lt;br&gt;
+hosts列表发布地址：&lt;a href=&#34;http://docs.google.com/View?id=dfkdmxnt_61d9ck9ffq&#34;&gt;http://docs.google.com/View?id=dfkdmxnt_61d9ck9ffq&lt;/a&gt;&lt;br&gt;
+现在应该可以正常访问：&lt;a href=&#34;http://www.youtube.com/&#34;&gt;http://www.youtube.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修改下防火墙设置：&lt;br&gt;
+&lt;code&gt;$sudo gedit /etc/default/ufw&lt;/code&gt;&lt;br&gt;
+把&lt;em&gt;IPV6=no&lt;/em&gt; 改成 &lt;strong&gt;yes&lt;/strong&gt;&lt;br&gt;
+最后禁用/启用防火墙来使刚刚的改动生效：&lt;br&gt;
+&lt;code&gt;$ sudo ufw disable&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;$ sudo ufw enable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Via：&lt;a href=&#34;http://www.lirui.name/post/206.html&#34;&gt;http://www.lirui.name/post/206.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;废话很多，也许没人看，多年后自己来翻，也许记得，也许已遗忘，一如我翻看2004年的文字一样；一如我电脑中被清空的那一年的照片一样；一如，我们看到不知真假的哆啦A梦结局，痛苦的如同死去一样。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;——星期六, 五月 21, 12:44 上午【The End】&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

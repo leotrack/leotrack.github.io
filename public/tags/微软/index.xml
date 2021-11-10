@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>微软 on 猪八的网：浮生志</title>
+    <link>/tags/%E5%BE%AE%E8%BD%AF/</link>
+    <description>Recent content in 微软 on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Mon, 27 Jul 2009 15:04:22 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%BE%AE%E8%BD%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rokr E2从Outlook Express中导入联系人</title>
+      <link>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
+      <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
+      
+      <guid>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
+      <description>&lt;p&gt;最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。&lt;/p&gt;
+&lt;p&gt;就是一直为如何将原来Palm 680的通讯录导过来以及更新烦恼。寻找了如下方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;装Moto的官方软件Motorola Phone Tools，可以与Outlook Express互相同步，但是不知道什么原因，老是无法连接机器，我想再次更新的时候却没辙了。只好——&lt;strong&gt;放弃&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;使用网上流传的用Google 的Sync，但是我配置了之后一直是更新失败，无法连接到Google的服务器上面。——&lt;strong&gt;放弃&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;研究了一下Moto自带的&lt;strong&gt;导入名片&lt;/strong&gt;功能，发现它可以支持vcf格式文件——名片（vCard）文件的！这样就简单了。具体操作步骤如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
+&lt;p&gt;首先，打开你的OE：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如&lt;em&gt;My Contacts&lt;/em&gt;，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：&lt;/p&gt;
+&lt;p&gt;进入通讯录——按左键——管理联系人：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;选择——导入名片：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;找到你保存.vcf名片文件的文件夹，比如上面的&lt;em&gt;My Contacts&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;全选，导入！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;至此，你的E2已经与你的OE完全一致了！以后你要同步你的通讯录。重复上述步骤即可！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此文为响应&lt;a href=&#34;http://welog.org/&#34;&gt;King&lt;/a&gt;对于我的“&lt;a href=&#34;https://zhu8.net/blog/2009/05/braid.html#comment-244&#34;&gt;月经&lt;/a&gt;”评论，在七月月底放出……哈哈&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二三事</title>
+      <link>/blog/2006/11/small-cases.html</link>
+      <pubDate>Sun, 05 Nov 2006 21:10:10 +0800</pubDate>
+      
+      <guid>/blog/2006/11/small-cases.html</guid>
+      <description>&lt;p&gt;瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+ErrorDocument 500 /error.html  
+RewriteEngine on  
+RewriteCond %{HTTP_REFERER} !^$  
+RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
+RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;[F]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在下面的代码中，必须用您网站所用语言所对应的三位或四位数代码页编号来替换&amp;quot;您的网页所用代码页&amp;quot;。&lt;br&gt;
+例如，如果您的网站是用源于拉丁文的语言（英语、法语或德语）编写的，则用 1252 编号来取代此指令：value=&amp;ldquo;1252&amp;rdquo;&lt;br&gt;
+有关各语言所对应的代码页值，请参阅 &lt;a href=&#34;http://g.msn.com/0HEWL_WEBMASTERSZHCN9/91008&#34; title=&#34;Code Pages Supported by Windows&#34;&gt;Windows 支持的代码页&lt;/a&gt;网页。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;很显然，里面有GBK码（代码：936），但是没有UTF-8码（应该不是我没有找到），只好到网上去找，不经意发现了&lt;strong&gt;UTF-8的代码：65001&lt;/strong&gt;，于是将代码一修改，就成了。详细可以到&lt;a href=&#34;http://chenjun.com/404.html&#34; title=&#34;404/500 错误页面&#34;&gt;这个页面&lt;/a&gt;去看下源代码就好了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;贰、解决了WinXP下chm电子书无法显示页面的问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本来想把原来的&lt;em&gt;偏航&lt;/em&gt;里无声听雨的小波文集弄起来的，因为我这一直存着opig做的chm电子书档，结果在网吧翻出来弄，书的导航栏倒是没有问题，页面却老是&lt;em&gt;无法显示网页&lt;/em&gt;，弄的我郁闷，网上去搜，先是到了微软的&lt;a href=&#34;http://support.microsoft.com/kb/892675&#34; title=&#34;安装安全更新 896358 或 890175 后，某些网站和 HTML 帮助功能可能无法运作&#34;&gt;官方说明页面&lt;/a&gt;，以为要折腾注册表，在网吧要弄注册表是很烦的事情，再去搜搜，在这发现了最简单的方法：Loveyuki一语惊醒梦中人，原来&lt;a href=&#34;http://www.i170.com/article/5298#comment&#34; title=&#34;一起来&amp;amp;如何解决chm格式文件无法显示问题&#34;&gt;如此简单&lt;/a&gt;（内有截图），还去按微软那样复杂何必呢？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;叁、以前的旧Blog&lt;a href=&#34;http://chenjun.com/old/&#34; title=&#34;短长书&#34;&gt;重新贴出&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于空间是PHP的，所以也没打算重新弄个Z-Blog重出江湖，把文档重新归了一下档，做成了HTML的静态页面，但是音乐文件就没去修改，因为很多都失效了。倒是网吧没有装Ofice，而我又需要打开ACCESS的数据库，先是下了微软的Excel Viewer，后来发现只能看，不能修改，而我恰恰需要把Mdb文件解下来提取日志的相关内容，后来终于找到了：&lt;a href=&#34;http://www.greendown.cn/soft/156.html&#34; title=&#34;Microsoft Office 2003 Sp2 精简免安装绿色版&#34;&gt;Microsoft Office 2003 Sp2〖精简免安装绿色版〗&lt;/a&gt;。把该数据库导出成XLS，打开，选了文章、评论等等复制出来，一切OK。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;肆、修改了原颜色代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;把原来的中英文颜色代码弄掉了，换了个国外的，胡乱翻译了一下，&lt;a href=&#34;http://chenjun.com/other/color.html&#34; title=&#34;Html color codes&#34;&gt;放出来&lt;/a&gt;了。页面自我感觉还蛮好看的，就是都是TABLE，想改成DIV+CSS可是东西太多，没什么必要。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>链接 on 猪八的网：浮生志</title>
+    <link>/tags/%E9%93%BE%E6%8E%A5/</link>
+    <description>Recent content in 链接 on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Sun, 19 Nov 2006 04:17:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%93%BE%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决WP汉化和UTW链接问题</title>
+      <link>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
+      <pubDate>Sun, 19 Nov 2006 04:17:00 +0800</pubDate>
+      
+      <guid>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
+      <description>&lt;p&gt;其实严格说来是因为我在&lt;a href=&#34;http://www.512j.com/&#34; title=&#34;我要安家&#34;&gt;我要安家&lt;/a&gt;的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);&lt;br&gt;
+web服务器 Apache 1.3.31&lt;br&gt;
+PHP版本 PHP 4.3.11&lt;br&gt;
+Mysql版本 Mysql 4.0.20&lt;br&gt;
+Zend支持 支持&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原来都是&lt;strong&gt;PHP版本&lt;/strong&gt;搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在&lt;strong&gt;&lt;strong&gt;wp-includes/gettext.php&lt;/strong&gt;&lt;/strong&gt;中&lt;strong&gt;第105行&lt;/strong&gt;有这样一段代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$MAGIC1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1794895138&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;  
+&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)0xde120495; //bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;569244523&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要&lt;strong&gt;注释&lt;/strong&gt;掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt; &lt;span style=&#34;color:#111&#34;&gt;$MAGIC1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x950412de&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0xde120495&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;//bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
+在Blog的wp-includes目录下建立languages文件夹&lt;br&gt;
+将zh_CN.mo文件上传到wp-includes/languages文件夹&lt;br&gt;
+修改Blog根目录下的wp-config.php文件，将&lt;br&gt;
+define (‘WPLANG’, “);&lt;br&gt;
+修改为&lt;br&gt;
+define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
+注意：zh和CN之间是下划线，引号和括号都是英文半角字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Updated On 2006/11/20：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;昨天把WP升级到了2.0.5，结果问题出来了，在先将所有的插件停用再启用的时候，其他的都可以，就是UTW（Ultimate Tag Warrior）的链接结构（Permalink Structure）不工作了，搞得我到处搜，去修改.htaccess文件，都不能解决，后来实在没辙了，把WP的链接结果先改成别的，再改回来，就OK了，虽然昨天我也试过，但是是在UTW还没有重新激活的情况下，将WP的链接结构重新升级了一遍之后才激活的UTW，所以没有起到作用。我的天啊，原来是这么简单的事情，偏偏我又是不见棺材不掉泪的类型，折腾到最后还是没弄好才回去睡觉的，记下来，以防自己（以及遇到此类问题的朋友）以后再干这种蠢事。Sigh……&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

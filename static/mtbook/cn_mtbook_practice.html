@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第十章 ─ 动手做做看</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第九章 ─ 模版" href="cn_mtbook_template.html" />
+  <link rel="next" title="结语" href="cn_mtbook_epilogue.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第十章 ─ 动手做做看</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#practice">第十章 ─ 动手做做看</a></li>
+  <ul>
+    <li><a href="#category">中文类别名称/在索引页面加入分类汇整的链结</a></li>
+    <li><a href="#icon">分类图标</a></li>
+    <li><a href="#calendar">把月历上特定日期连到相对应的逐日汇整</a></li>
+    <li><a href="#recent_comment">显示最近的回响</a></li>
+    <li><a href="#question_mark">问号光标</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="practice"></a>第十章 ─ 动手做做看</h1>
+<p>接下来这一章中，我将会实地操演一些模版撰写的技巧。这些技巧也多半可以直接套用在你自己的模版上。不过希望各位抄用之馀，也要看看为什么我这样子写；毕竟网页写作变化万千，唯有观念奠立了，才能够随意之所至地撰写出合用的模版。</p>
+<h2><a id="category"></a>中文类别名称/在索引页面加入分类汇整的链结</h2>
+<p>在前面的章节里有提到，由于 Movable Type 预设会使用类别名称来当作分类汇整档名的一部份，所以你不能够在这里使用中文字。权变的方法是在类别名称用英文，然后在<strong>类别描述</strong>里才使用中文。</p>
+<p>可是这么一来，当你在模版里使用 &lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTArchiveTitle$&gt;&lt;/a&gt;  卷标时，显示出来的就会是英文的类别名称。你很有可能想要显示的是中文的类别描述，所以得用这样的卷标组合：<pre><code>&lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTCategoryDescription$&gt;&lt;/a&gt;</code></pre></p>
+<p>请注意，为了要使用 &lt;$MTArchiveLink$&gt; 卷标，你得把上面这些卷标包在<strong>汇整清单情境</strong>里，也就是用 &lt;MTArchiveList&gt; 和 &lt;/MTArchiveList&gt; 包起来；此外为了要使用 &lt;$MTCategoryDescription$&gt; 卷标，你也得把上面这些卷标包在<strong>类别清单情境</strong>里，也就是要用 &lt;MTCategories&gt; 和 &lt;/MTCategories&gt; 包起来，或者是用 &lt;MTEntryCategories&gt; 和 &lt;/MTEntryCategories&gt; 包起来。</p>
+<p>另外，当然，你还得先在「网志组态」的「汇整」里，启用「分类汇整」的选项才能够做出连结到分类汇整页面的链结。</p>
+<p>以下是在文章标题前面加上中文类别描述的范例：<pre><div class="codenote">&lt;!-- 「文章」情境开始 --&gt;</div><strong>&lt;MTEntries&gt;</strong>
+<div class="codenote">&lt;!-- 「引用」数据，不会被显示出来 --&gt;</div>  &lt;$MTEntryTrackbackData$&gt;
+<div class="codenote">&lt;!-- 「如果这是这一天的第一篇」情境开始 --&gt;</div>  &lt;MTDateHeader&gt;
+<div class="codenote">&lt;!-- 就用「date」这个 <acronym title="Cascading Style Sheets">CSS</acronym> class 样式做出第二级标题字 --&gt;</div>    &lt;h2 class=&quot;date&quot;&gt;
+<div class="codenote">&lt;!-- 然后按照 %x 格式显示日期 --&gt;</div>      &lt;$MTEntryDate format=&quot;%x&quot;$&gt;
+<div class="codenote">&lt;!-- 对应 &lt;h2 class=&quot;date&quot;&gt; --&gt;</div>    &lt;/h2&gt;
+<div class="codenote">&lt;!-- 「如果这是这一天的第一篇」情境结束 --&gt;</div>  &lt;/MTDateHeader&gt;
+<div class="codenote">&lt;!-- 用「blogbody」这个 CSS class 样式做出一个栏框 --&gt;</div>  &lt;div class=&quot;blogbody&quot;&gt;
+<div class="codenote">&lt;!-- 用文章 ID 来当「锚」 --&gt;</div>    &lt;a id=&quot;entry&lt;$MTEntryID pad=&quot;1&quot;$&gt;&quot;&gt;&lt;/a&gt;
+<div class="codenote">&lt;!-- 用「title」这个 CSS class 样式做出第三级标题字 --&gt;</div>    &lt;h3 class=&quot;title&quot;&gt;
+<div class="codenote">&lt;!-- 「文章所属类别」情境开始 --&gt;</div>      <strong>&lt;MTEntryCategories glue=&quot;, &quot;&gt;</strong>
+<div class="codenote">&lt;!-- 分类汇整的链结 --&gt;</div>        <strong>&lt;a href=&quot;&lt;$MTCategoryArchiveLink$&gt;&quot;&gt;</strong>
+<div class="codenote">&lt;!-- 显示中文类别描述 --&gt;</div>        <strong>&lt;$MTCategoryDescription$&gt;&lt;/a&gt;</strong>
+<div class="codenote">&lt;!-- 「文章所属类别」情境结束 --&gt;</div>      <strong>&lt;/MTEntryCategories&gt;</strong>
+<div class="codenote">&lt;!-- 冒号以及文章标题 --&gt;</div>      : &lt;$MTEntryTitle$&gt;
+<div class="codenote">&lt;!-- 对应 &lt;h3 class=&quot;title&quot;&gt; --&gt;</div>    &lt;/h3&gt;
+<div class="codenote">&lt;!-- 文章内容 --&gt;</div>    &lt;$MTEntryBody$&gt;
+<div class="codenote">&lt;!-- 「如果文章有延伸内容」情境开始 --&gt;</div>    &lt;MTEntryIfExtended&gt;
+<div class="codenote">&lt;!-- 用「extended」这个 CSS class 样式做出一个区块 --&gt;</div>      &lt;span class=&quot;extended&quot;&gt;
+<div class="codenote">&lt;!-- 就显示「深入阅读」的链结 --&gt;</div>        &lt;a href=&quot;&lt;$MTEntryPermalink$&gt;&quot;&gt;深入阅读&lt;/a&gt;
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;extended&quot;&gt; --&gt;</div>      &lt;/span&gt;&lt;br /&gt;
+<div class="codenote">&lt;!-- 「如果文章有延伸内容」情境结束 --&gt;</div>    &lt;/MTEntryIfExtended&gt;
+<div class="codenote">&lt;!-- 用「posted」这个 CSS class 样式做出一个栏框 --&gt;</div>    &lt;div class=&quot;posted&quot;&gt;
+<div class="codenote">&lt;!-- 显示作者 --&gt;</div>      由 &lt;$MTEntryAuthor$&gt;
+<div class="codenote">&lt;!-- 建立连结到文章单篇汇整的链结 --&gt;</div>      于 &lt;a href=&quot;&lt;$MTEntryPermalink$&gt;&quot;&gt;
+<div class="codenote">&lt;!-- 按照 %X 格式显示出版时间 --&gt;</div>      &lt;$MTEntryDate format=&quot;%X&quot;$&gt;
+      &lt;/a&gt; 所发表
+<div class="codenote">&lt;!-- 「如果文章允许评论」情境开始 --&gt;</div>      &lt;MTEntryIfAllowComments&gt;
+<div class="codenote">&lt;!-- 就显示「回响」链结 --&gt;</div>        | &lt;a
+        href=&quot;&lt;$MTCGIPath$&gt;&lt;$MTCommentScript$&gt;?entry_id=&lt;$MTEntryID$&gt;&quot;
+        onclick=&quot;OpenComments(this.href); return false&quot;&gt;
+        回响&lt;/a&gt;
+<div class="codenote">&lt;!-- 「如果文章允许评论」情境结束 --&gt;</div>      &lt;/MTEntryIfAllowComments&gt;
+<div class="codenote">&lt;!-- 「如果文章接受引用通告」情境开始 --&gt;</div>      &lt;MTEntryIfAllowPings&gt;
+<div class="codenote">&lt;!-- 就显示「引用」链结 --&gt;</div>        | &lt;a
+        href=&quot;&lt;$MTCGIPath$&gt;&lt;$MTTrackbackScript$&gt;?__mode=view&amp;entry_id=&lt;$MTEntryID$&gt;&quot;
+        onclick=&quot;OpenTrackback(this.href); return false&quot;>
+        引用&lt;/a&gt;
+<div class="codenote">&lt;!-- 「如果文章接受引用通告」情境结束 --&gt;</div>      &lt;/MTEntryIfAllowPings&gt;
+<div class="codenote">&lt;!-- 对应 &lt;div class=&quot;posted&quot;&gt; --&gt;</div>    &lt;/div&gt;
+<div class="codenote">&lt;!-- 对应 &lt;div class=&quot;blogbody&quot;&gt; --&gt;</div>  &lt;/div&gt;
+<div class="codenote">&lt;!-- 「文章情境」结束 --&gt;</div><strong>&lt;/MTEntries&gt;</strong></pre></p>
+<p>以下是列出所有类别、并且让他们各自连到自己的分类汇整页面的范例：<pre><div class="codenote">&lt;!-- 先显示一个 | --&gt;</div>|
+<div class="codenote">&lt;!-- 「类别清单」情境开始 --&gt;</div><strong>&lt;MTCategories&gt;</strong>
+<div class="codenote">&lt;!-- 空一格后建立起连结到分类汇整的链结 --&gt;</div>  &lt;a href=&quot;<strong>&lt;$MTCategoryArchiveLink$&gt;</strong>&quot;&gt;
+<div class="codenote">&lt;!-- 显示中文类别描述 --&gt;</div> <strong>&lt;$MTCategoryDescription$&gt;</strong>
+<div class="codenote">&lt;!-- 空一格后再显示一个 | --&gt;</div> &lt;/a&gt; |
+<div class="codenote">&lt;!-- 「类别清单」情境结束 --&gt;</div><strong>&lt;/MTCategories&gt;</strong></pre></p>
+<p>你可以把这一段 HTML 卷标放在 Banner 区下方，类别与类别之间、最前面以及最后面都会用 | 符号来隔开；或者你也可以加以修改（像是加入 <code>&lt;br /&gt</code> 来换列，并且重新调整 | 的位置）后放到旁边的连结列去。</p>
+<h2><a id="icon"></a>分类图标</h2>
+<p>使用分类图标的秘诀在于<strong>类别描述可以使用 HTML 卷标</strong>。所以搭配前一节的范例，你就可以在文章标题前面显示分类图标，或者在 Banner 底下列出所有的分类图标，连结到各个分类汇整去。</p>
+<p>以下是用于<strong>类别描述</strong>的范例：<pre><div class="codenote">&lt;!-- 开始放一张图片 --&gt;</div>&lt;img
+<div class="codenote">&lt;!-- 不能显示图片时，就显示中文类别描述，前后用中括号夹住，再空一格空白 --&gt;</div>alt=&quot;[中文类别描述] &quot;
+<div class="codenote">&lt;!-- 光标指到图片上时，就显示中文类别描述 --&gt;</div>title=&quot;中文类别描述&quot;
+<div class="codenote">&lt;!-- 用 foo.png 这个图档来当作图标 --&gt;</div>src=&quot;foo.png&quot;
+<div class="codenote">&lt;!-- 指定图标样式为「不要有边框」 --&gt;</div>style=&quot;border:0&quot; /></pre></p>
+<p>请注意：使用图标固然可以更精简地传达复杂的意涵，但是你在使用图标的时候应当要考量到：图档大小（下载时间会不会太久）、颜色对比（色盲是不是看得清楚），同时也应该提供<strong>替换文字</strong>（也就是 <strong>alt</strong> 这个属性），这样其它使用纯文字模式浏览器、甚至是非视觉接口浏览器的读者，才能够知道这里到底有些甚么东西。</p>
+<p>另外，别忘记这个图档 (foo.png) 你也得上传到服务器上；同时注意要清楚地指定到正确的路径。</p>
+<h2><a id="calendar"></a>把月历上特定日期连到相对应的逐日汇整</h2>
+<p>预设的模版里，月历上的日期在那一天有文章被发表时，就建立连往该日第一篇文章静态页面的链结；但是如果你有制作「逐日汇整」的时候，把这个链结连到「逐日汇整」去。</p>
+<p>关键的要点就是在 <strong>&lt;$MTEntryPermalink$&gt;</strong> 卷标中把 <strong>archive_type</strong> 属性指定成 <strong>&quot;Daily&quot;</strong> 就可以了。</p>
+<p>以下就是这样子的月历范例：<pre><div class="codenote">&lt;!-- 做一个栏框，把整个月历放进去 --&gt;</div>&lt;div align=&quot;center&quot; class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 栏框的内容全部置中对齐 --&gt;</div>
+<div class="codenote">&lt;!-- 这个栏框会采用「calendar」这个 CSS class 的样式 --&gt;</div>
+<div class="codenote">&lt;!-- 做一个表格来放月历（本来就是一格一格的） --&gt;</div>  &lt;table border=&quot;0&quot; cellspacing=&quot;4&quot;
+  cellpadding=&quot;0&quot; summary=&quot;当月月历以及连往每日汇整的连结&quot;&gt;
+<div class="codenote">&lt;!-- 这个表格不要有外框 --&gt;</div>
+<div class="codenote">&lt;!-- 表格里，格子与格子之间的间隔是 4 个点 --&gt;</div>
+<div class="codenote">&lt;!-- 表格里，每个格子内不要再多留白 --&gt;</div>
+<div class="codenote">&lt;!-- 并设定表格的摘要 --&gt;</div>
+<div class="codenote">&lt;!-- 表格的标题 --&gt;</div>    &lt;caption class=&quot;calendarhead&quot;&gt;
+<div class="codenote">&lt;!-- 按照 %Y-%m 的格式显示目前的日期 --&gt;</div>      &lt;$MTDate format=&quot;%Y-%m&quot;$&gt;
+<div class="codenote">&lt;!-- 对应 &lt;caption class=&quot;calendarhead&quot;&gt; --&gt;</div>    &lt;/caption&gt;
+<div class="codenote">&lt;!-- 显示星期几的那一列 --&gt;</div>    &lt;tr&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期日」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期日&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「日」 --&gt;</div>          日
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期日&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期一」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期一&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「一」 --&gt;</div>          一
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期一&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期二」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期二&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「二」 --&gt;</div>          二
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期二&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期三」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期三&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「三」 --&gt;</div>          三
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期三&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期四」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期四&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「四」 --&gt;</div>          四
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期四&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期五」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期五&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「五」 --&gt;</div>          五
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期五&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 这一栏是「星期六」的缩写，置中排列 --&gt;</div>      &lt;th abbr=&quot;星期六&quot; align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 按照「calendar」这个 CSS class 样式做一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 显示「六」 --&gt;</div>          六
+<div class="codenote">&lt;!-- 对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 对应 &lt;th abbr=&quot;星期六&quot; align=&quot;center&quot;&gt; --&gt;</div>      &lt;/th&gt;
+<div class="codenote">&lt;!-- 对应 &lt;tr&gt; --&gt;</div>    &lt;/tr&gt;
+<div class="codenote">&lt;!-- 「月历」情境开始 --&gt;</div>    &lt;MTCalendar&gt;
+<div class="codenote">&lt;!-- 「如果这是一周的第一天」情境开始 --&gt;</div>      &lt;MTCalendarWeekHeader&gt;
+<div class="codenote">&lt;!-- 就开始新的一列 --&gt;</div>        &lt;tr&gt;
+<div class="codenote">&lt;!-- 「如果这是一周的第一天」情境结束 --&gt;</div>      &lt;/MTCalendarWeekHeader&gt;
+<div class="codenote">&lt;!-- 这一栏的内容要置中对齐 --&gt;</div>      &lt;td align=&quot;center&quot;&gt;
+<div class="codenote">&lt;!-- 用「claendar」这个 CSS class 样式做出一个区块 --&gt;</div>        &lt;span class=&quot;calendar&quot;&gt;
+<div class="codenote">&lt;!-- 「如果这一天有文章」情境开始 --&gt;</div>          &lt;MTCalendarIfEntries&gt;
+<div class="codenote">&lt;!-- 就让「文章」情境开始 --&gt;</div>            &lt;MTEntries lastn=&quot;1&quot;&gt;
+<div class="codenote">&lt;!-- 但是祇采用最后一篇文章的信息 --&gt;</div>
+<div class="codenote">&lt;!-- 建立链结 --&gt;</div>              &lt;a href=&quot;&lt;$MTEntryPermalink <strong>archive_type=&quot;Daily&quot;</strong>$&gt;&quot;&gt;
+<div class="codenote">&lt;!-- <strong>指定连到逐日汇整</strong>的静态页面 --&gt;</div>
+<div class="codenote">&lt;!-- 同时也显示日期 --&gt;</div>                &lt;$MTCalendarDay$&gt;
+<div class="codenote">&lt;!-- 链结结束 --&gt;</div>              &lt;/a&gt;
+<div class="codenote">&lt;!-- 「文章」情境结束 --&gt;</div>            &lt;/MTEntries&gt;
+<div class="codenote">&lt;!-- 「如果这一天有文章」情境结束 --&gt;</div>          &lt;/MTCalendarIfEntries&gt;
+<div class="codenote">&lt;!-- 「如果这一天没有文章」情境开始 --&gt;</div>          &lt;MTCalendarIfNoEntries&gt;
+<div class="codenote">&lt;!-- 就祇显示日期就好 --&gt;</div>            &lt;$MTCalendarDay$&gt;
+<div class="codenote">&lt;!-- 「如果这一天没有文章」情境结束 --&gt;</div>          &lt;/MTCalendarIfNoEntries&gt;
+<div class="codenote">&lt;!-- 「如果这个格子不是这个月份的日期」情境开始 --&gt;</div>          &lt;MTCalendarIfBlank&gt;
+<div class="codenote">&lt;!-- 就显示一个空白 --&gt;</div>            &amp;nbsp;
+<div class="codenote">&lt;!-- 「如果这个格子不是这个月份的日期」情境结束 --&gt;</div>          &lt;/MTCalendarIfBlank&gt;
+<div class="codenote">&lt;!-- 区块结束，对应 &lt;span class=&quot;calendar&quot;&gt; --&gt;</div>        &lt;/span&gt;
+<div class="codenote">&lt;!-- 这一栏结束，对应 &lt;td align=&quot;center&quot;&gt; --&gt;</div>      &lt;/td&gt;
+<div class="codenote">&lt;!-- 「如果这是一周的最后一天」情境开始 --&gt;</div>      &lt;MTCalendarWeekFooter&gt;
+<div class="codenote">&lt;!-- 就把这一列结束 --&gt;</div>        &lt;/tr&gt;
+<div class="codenote">&lt;!-- 「如果这是一周的最后一天」情境结束 --&gt;</div>      &lt;/MTCalendarWeekFooter&gt;
+<div class="codenote">&lt;!-- 「月历」情境结束 --&gt;</div>    &lt;/MTCalendar&gt;
+<div class="codenote">&lt;!-- 表格的结尾 --&gt;</div>  &lt;/table&gt;
+<div class="codenote">&lt;!-- 栏框的结尾 --&gt;</div>&lt;/div&gt;</pre></p>
+<h2><a id="recent_comment"></a>显示最近的回响</h2>
+<p>预设的模版中，并不会列出最近的回响；但是如果你打算做出相当活跃的网志的话，意味著可能会有许多访客前来发表回响。这个时候如果你能够列出最近被发表的回响，就可以在某种程度上促进读者交流互动 ─ 因为读者（当然你自己也是）能够一眼就看到「最近又有哪些话题是大家在热烈讨论的」了。</p>
+<p>以下就是列出近 10 篇回响的范例：<pre><div class="codenote">&lt;!-- 以「sidetitle」这个 CSS class 样式做出一个栏框 --&gt;</div>&lt;div class=&quot;sidetitle&quot;&gt;
+<div class="codenote">&lt;!-- 显示「最近的回响」 --&gt;</div>  最近的回响
+<div class="codenote">&lt;!-- 对应 &lt;div class=&quot;sidetitle&quot;&gt; --&gt;</div>&lt;/div&gt;
+<div class="codenote">&lt;!-- 以「side」这个 CSS class 样式做出一个栏框 --&gt;</div>&lt;div class=&quot;side&quot;&gt;
+<div class="codenote">&lt;!-- 「评论」情境开始 --&gt;</div>  &lt;MTComments lastn=&quot;10&quot;
+  sort_order=&quot;descend&quot;&gt;
+<div class="codenote">&lt;!-- 新的评论在前面，祇列出最新 10 项 --&gt;</div>
+<div class="codenote">&lt;!-- 「评论对应文章项目」情境开始 --&gt;</div>    &lt;MTCommentEntry&gt;
+<div class="codenote">&lt;!-- 建立起评论链结 --&gt;</div>      &lt;a
+      href=&quot;&lt;$MTCGIPath$&gt;&lt;$MTCommentScript$&gt;?entry_id=&lt;$MTCommentEntryID$&gt;&quot;&gt;
+<div class="codenote">&lt;!-- 显示「Re: 」--&gt;</div>        Re:
+<div class="codenote">&lt;!-- 文章标题 --&gt;</div>        &lt;$MTEntryTitle$&gt;
+<div class="codenote">&lt;!-- 建立链结的部分到此为止 --&gt;</div>      &lt;/a&gt;
+<div class="codenote">&lt;!-- 「评论对应文章项目」情境结束 --&gt;</div>    &lt;/MTCommentEntry&gt;
+<div class="codenote">&lt;!-- 显示「, by 」--&gt;</div>    , by
+<div class="codenote">&lt;!-- 评论作者 --&gt;</div>    &lt;$MTCommentAuthor$&gt;
+<div class="codenote">&lt;!-- 显示「 (」 --&gt;</div>     (
+<div class="codenote">&lt;!-- 以 %b %d 的格式显示评论发表日期 --&gt;</div>    &lt;$MTCommentDate format=&quot;%b %d&quot;$&gt;
+<div class="codenote">&lt;!-- 显示「)」 --&gt;</div>    )
+<div class="codenote">&lt;!-- 换一列 --&gt;</div>    &lt;br /&gt;
+<div class="codenote">&lt;!-- 「评论」情境结束 --&gt;</div>  &lt;/MTComments&gt;
+<div class="codenote">&lt;!-- 对应 &lt;div class=&quot;side&quot;&gt; --&gt;</div>&lt;/div&gt;</pre></p>
+<p>在这个范例中，我们会用 Re: 后面接上原来的文章标题，表示这是对这一篇文章的回响；并且建立起链结，连到回响页面去。接著，还会在标题后面接上逗号，并以 by 来指出这一篇回响是由谁所发表的；为了不要让版面太复杂（充斥著链结），所以这里的回响作者并不会附上任何链结。最后并用括号注明这一篇回响发表的日期。</p>
+<p>你可以把上面这一段插入到 &lt;div id=&quot;links&quot;&gt; 和 &lt;/div&gt; 之间、尽量靠近版面上方的位置，让读者加载页面之后，不需要往下卷动太多就可以看得到这份清单。</p>
+<h2><a id="question_mark"></a>问号光标</h2>
+<p>这个技巧是我在 <a href="http://ccca.nctu.edu.tw/~hlb/articles/">hlb</a> 所<a href="http://ccca.nctu.edu.tw/~hlb/articles/archives/000238.html">翻译</a>的 <a href="http://ccca.nctu.edu.tw/~hlb/trans/practicalcss/">CSS实务排版技巧、秘诀与技术</a>一文中学到的。兹重新整理节录如下：</p>
+<p>acronym(头字语) 与 abbr(缩写) 卷标虽然只在少数情况派上用场，却有不错的实用价值，可以配合著 title 属性来解释头字语或缩写。但即使网页有提供文字来协助网站参观者了解缩写或头字语的意义，现在大部分的浏览器却不会为这个卷标作出任何的警示。所以让我们从 CSS 来著手。</p>
+<p>你可以在样式表里为这些卷标加上底线，让它们能引起注意。透过浏览器的支持，你也可以用 CSS 把光标换成「求助」符号 (通常用问号表示)。当然你也可以不用被 HTML 卷标限制：创造一个叫 .help 的类别，再用 span 来为那些容易让读者混淆的字词添加信息。</p>
+<p>以下是实际的范例：<pre>	abbr, acronym, .help {
+		border-bottom:1px dotted #333;
+		<strong>cursor:help;</strong>
+	}</pre></p>
+<p>这个 CSS 配合缩写或头字语卷标的 title 属性使用，可以产生跟超级链结不一样的底线效果。把光标改成「求助」暗示著这些文字是不能按的，而 title 属性则会解释缩写或头字语。</p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

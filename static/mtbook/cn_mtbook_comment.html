@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第六章 ─ 回响功能</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第五章 ─ 管理类别" href="cn_mtbook_category.html" />
+  <link rel="next" title="第七章 ─ 引用功能" href="cn_mtbook_trackback.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第六章 ─ 回响功能</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#comment">第六章 ─ 回响功能</a></li>
+  <ul>
+    <li><a href="#intro">甚么是回响</a></li>
+    <li><a href="#enable">启用回响功能与回响状态</a></li>
+    <li><a href="#anonymous">匿名回响</a></li>
+    <li><a href="#html">回响允许 HTML</a></li>
+    <li><a href="#sanitize">回响消毒</a></li>
+    <li><a href="#convert">自动转换链结</a></li>
+    <li><a href="#edit">编辑与删除回响</a></li>
+    <li><a href="#ban">禁用 IP</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="comment"></a>第六章 ─ 回响功能</h1>
+<p>本章与<a href="cn_mtbook_trackback.html#trackback">下一章</a>将分别为各位介绍 Movable Type 所提供的互动工具 ─ <code>回响</code>和<code>引用</code>功能。本章将讲解回响的意义与用途，同时也会介绍各种与回响有关的设定及操作；但是这一章并不会提及与回响有关的模版撰写技巧。我们照例将把所有跟实际撰写模版有关的部分，都放到<a href="cn_mtbook_practice.html#practice">第十章</a>去，有兴趣的读者请先读完本章、确实了解了<code>回响</code>之后，再行翻阅后面的实做技巧。</p>
+<h2><a id="intro"></a>甚么是回响</h2>
+<p>回响功能可能是最简单而又直接的互动方式了。</p>
+<p>一旦你启用了回响功能之后，读者就能够针对你的文章发表响应、评论或感言；这样子的响应模式是以<code>文章</code>为单位来处理的，换而言之，你可以随意指定哪几篇文章要启用回响功能而哪几篇不要。对于在网络上活跃的作者来说，提供回响功能是一个绝佳的选择，因为你并不需要公开电子邮件信箱或任何私人联络信息，却又能够让读者们发表她们想说的话。</p>
+<p>事实上热烈的读者参与正是站台活力的来源；当有越来越多的读者会在你的站台发表回响的时候，就会使得更多人养成前来浏览你的页面的习惯 ─ 因为就算你自己没空写新的文章，你的站台还是会一直发生不少新鲜事 ─ 接著更多的读者也会开始发表回响。一切就有如滚雪球般，不断地成长下去。举例来说，<a href="http://www.kottke.org/"> Jason Kottke 的网志</a>上有一篇文章「 <a href="http://www.kottke.org/03/05/030515the_matrix_r.html">The Matrix Reloaded</a> 」，其内容不过寥寥数百字，但是引发的回响却洋洋洒洒多达九百篇、计数十万字！回响的威力由此可见一斑。</p>
+<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/kottke_tmr.png" alt="http://www.kottke.org/03/05/030515the_matrix_r.html"><br />图一： Kottke 的文章引来超大量的回响，因此他不得不把这些回响另外独立整理出来。</div>
+<h2><a id="enable"></a>启用回响功能与回响状态</h2>
+<p>在 Movable Type 里，每一篇文章都有各自的回响状态，回响状态则总共有三种：</p>
+<p><ul>
+  <li><code>开启</code>：文章之后会显示出该文章的回响，同时也开放让读者们能够继续发表回响。</li>
+  <li><code>关闭</code>：文章之后会显示出该文章的回响，但读者们将不能继续发表回响。</li>
+  <li><code>无</code>：文章之后不显示出该文章的回响，也不让读者们继续发表回响。</li>
+</ul></p>
+<p>你可以针对任何一篇文章，指定它的回响状态；也可以把你最常采用的回响状态设定成预设值，这样就不需要每次去更改了。请见以下的步骤说明：</p>
+<p><ol>
+  <li><a id="enable_01"></a>在<code>编辑文章</code>画面里，有一个「<strong>允许回响</strong>」的下拉式选单，你可以按照<a href="#img_02">图二</a>那样选择这一篇文章的回响状态，再按下「储存」按钮，就可以更新这一篇文章的回响状态了。当然，日后你还是可以随时修改。<div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_entry_01.png" alt="修改特定文章的回响状态，然后按下「储存」按钮"><br />图二：从「允许回响」下拉式选单里选择这一篇文章的回响状态，然后按下「储存」按钮；在这个范例中我们选的是「开启」。</div></li>
+  <li><a id="enable_02"></a>根据回响状态的不同，你的网志版面也会适时地提供不同的信息。<div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_entry_02.png" alt="主索引页面上，会在文章下方出现回响链结并标示回响数量"><br />图三：如果你选的是「开启」或「关闭」的话，就可以在该文章底下看到一个「回响」的链结，同时还会标示出目前的回响数量。</div><div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_entry_03.png" alt="回响清单里会列出所有的回响内容，并提供发表回响的表单"><br />图四：按下那个「回响」链结后会弹出一个回响清单；在这里会列出这篇文章所有的回响内容，同时也会提供一个回响表单，让读者能够继续发表回响。在这个范例里，我们可以看到有个自称 Yoda 的读者，发表了内容是「 Nice font it is. Get this font you must. 」的回响。</div><div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_entry_04.png" alt="回响表单不见得能用"><br />图五：然而如果这篇文章的回响状态是「关闭」的话，虽然你能在回响清单窗口里看到回响表单，但是读者们试图发表回响的时候，就会被告知这篇文章并不开放其它回响。</div><div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_entry_05.png" alt="不列出「回响」的链结"><br />图六：如果文章的回响状态是「无」的话，就不会出现「回响」链结了。</div></li>
+  <li><a id="enable_03"></a>你也可以预先把你会最常选用的回响状态设成网志的预设值。首先请如<a href="#img_07">图七</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_08">图八</a>点击网志组态画面上方的「<strong>偏好</strong>」链结，再如<a href="#img_09">图九</a>点击网志组态偏好画面上方的「<strong>回响组态</strong>」链结。<div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_default_01.png" alt="按下「网志组态」按钮"><br />图七：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_default_02.png" alt="点击「偏好」链结"><br />图八：点击「偏好」链结。</div><div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_default_03.png" alt="点击「回响组态」链结"><br />图九：点击「回响组态」链结。</div></li>
+  <li><a id="enable_04"></a>回响组态的最后一项设定值，就是「<strong>预设允许回响</strong>」，你可以如<a href="#img_10">图十</a>从这个下拉式选单选一个来当作预设值，并如<a href="#img_11">图十一</a>按下画面最底下的「储存」按钮。从此之后当你新增文章时，就会预设把回响状态设定成你在这里所设定的值。<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_default_04.png" alt="从下拉式选单选择一个回响状态"><br />图十：从下拉式选单选择一个回响状态，你一样可以从「开启」、「关闭」或「无」里面选一个。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtcomment_enable_default_05.png" alt="按下「储存」按钮"><br />图十一：按下「储存」按钮，把你的设定值存盘。</div></li>
+</ol></p>
+<h2><a id="anonymous"></a>匿名回响</h2>
+<p>所谓的<code>匿名回响</code>指的是读者不需要留下电子邮件及网址信息，也能发表回响。实际上所有的回响都可以视为匿名 ─ 因为没有人能够证明读者所留下来的电子邮件及网址信息是真的，甚至也没有任何机制能够避免冒名顶替的事件发生。你可以不要启用匿名回响功能，但是你却该将这件事牢记在心：<strong>没有人能够真的证明以及辨识这些留言者的身份</strong>。</p>
+<p>在这种情况下，其实有没有启用匿名回响唯一的差别，恐怕就祇剩下系统会不会要求读者一定要填写那两个字段了。如果你因为某些理由，希望读者们就算造假也得填写电子邮件地址及网址信息的话，就可以关闭匿名回响的功能；反之若你看开了，了解到其实没有强迫填写的意义的话，就可以启用匿名回响的功能。开与不开并没有绝对的好坏，端看你自己如何抉择。</p>
+<p><code>匿名回响</code>是一个会涉及整份网志的开关，也就是说你没办法决定某一篇文章接受匿名回响、而另一篇不要。所有在这份网志里的文章要不是都不接受匿名回响，就是都得接受匿名回响。这个开关得在<code>网志组态</code>里切换，请见下列的步骤：</p>
+<p><ol>
+  <li><a id="anonymous_01"></a>请如<a href="#img_12">图十二</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_13">图十三</a>点击网志组态画面上方的「<strong>偏好</strong>」链结，再如<a href="#img_14">图十四</a>点击网志组态偏好画面上方的「<strong>回响组态</strong>」链结。<div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtcomment_anonymous_01.png" alt="按下「网志组态」按钮"><br />图十二：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtcomment_anonymous_02.png" alt="点击「偏好」链结"><br />图十三：点击「偏好」链结。</div><div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtcomment_anonymous_03.png" alt="点击「回响组态」链结"><br />图十四：点击「回响组态」链结。</div></li>
+  <li><a id="anonymous_02"></a>回响组态的第一个设定值就是「<strong>允许匿名回响</strong>」，你可以如<a href="#img_15">图十五</a>核选这个核选框，然后再按下最底下的「储存」按钮，就可以开启允许匿名回响的功能了。<div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtcomment_anonymous_04.png" alt="核选「允许匿名回响」再按下「储存」按钮"><br />图十五：核选「允许匿名回响」的核选框，再按下「储存」按钮，以启用匿名回响功能。</div></li>
+</ol></p>
+<h2><a id="html"></a>回响允许 HTML</h2>
+<p>当你开放了回响功能之后，还可以进一步地让读者们能够在评论里使用 HTML 卷标，这样将能够提供她们更大的弹性，让她们能够做出一些字型变化、加上列表清单、绘制表格、插入图片、嵌入各种媒体档案、以及所有其它可能的效果 ─ 祇要她们懂得如何善用这些 HTML 卷标。</p>
+<p><code>回响允许 HTML </code>是一个会涉及整份网志的开关，也就是说你没办法决定某一篇文章的回响能够使用 HTML 卷标、而另一篇不要。所有在这份网志里的文章要不是都不能够使用 HTML 卷标，就是都得要能够使用。这个开关得在<code>网志组态</code>里切换，请见下列的步骤：</p>
+<p><ol>
+  <li><a id="html_01"></a>请如<a href="#img_16">图十六</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_17">图十七</a>点击网志组态画面上方的「<strong>偏好</strong>」链结，再如<a href="#img_18">图十八</a>点击网志组态偏好画面上方的「<strong>回响组态</strong>」链结。<div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtcomment_html_01.png" alt="按下「网志组态」按钮"><br />图十六：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtcomment_html_02.png" alt="点击「偏好」链结"><br />图十七：点击「偏好」链结。</div><div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtcomment_html_03.png" alt="点击「回响组态」链结"><br />图十八：点击「回响组态」链结。</div></li>
+  <li><a id="html_02"></a>回响组态的倒数第三个设定值就是「<strong>允许回响使用 HTML 语法</strong>」，你可以如<a href="#img_19">图十九</a>核选这个核选框，然后再按下最底下的「储存」按钮，就可以让读者们在发表回响时使用各种 HTML 卷标了。<div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mtcomment_html_04.png" alt="核选「允许回响使用 HTML 语法」的核选框，再按下「储存」按钮"><br />图十九：核选「允许回响使用 HTML 语法」的核选框，再按下「储存」按钮，以启用匿名回响功能。</div></li>
+</ol></p>
+<h2><a id="sanitize"></a>回响消毒</h2>
+<p>这一个小节对于部分的使用者来说可能会比较艰深；如果你对于 HTML 卷标根本不熟悉的话，请<a href="#convert">跳过这一小节</a>，直接采用预设值就可以了。这一小节是要写给那些懂得如何徒手撰写网页的人的。</p>
+<p>实际上<code>允许回响使用 HTML 语法</code>远比你所能想像得更严重，因为这意味著读者在发表回响的时候将能够嵌入像是 <code>JavaScript</code> 或 <code>PHP</code> 等脚本语言，然后从服务器上的 cookie 里读取隐私档案，并拿来做任何事。</p>
+<p>新版的 Movable Type 加入了一个「<strong>消毒功能</strong>」，可以针对<code>回响</code>（事实上还有<code>引用</code>也会）的内容进行处理，透过一个正向列表，祇留下你允许使用的卷标，而把不在列表里的都给清掉。除此之外，这个消毒功能也会帮你把回响里漏掉的结束卷标像是 <code>&lt;/b&gt;</code> 、 <code>&lt;/p&gt;</code> 等给补上，以免由于回响的不当而毁了你接下来的版面。</p>
+<p>预设可以使用的卷标（和属性）包含了有： <code>&lt;a href=&quot;&quot;&gt;</code> 、 <code>&lt;/a&gt;</code> 、 <code>&lt;b&gt;</code> 、 <code>&lt;/b&gt;</code> 、 <code>&lt;br&gt;</code> 、 <code>&lt;p&gt;</code> 、 <code>&lt;/p&gt;</code> 、 <code>&lt;strong&gt;</code> 、 <code>&lt;/strong&gt;</code> 、 <code>&lt;em&gt;</code> 、 <code>&lt;/em&gt;</code> 、 <code>&lt;ul&gt;</code> 、 <code>&lt;/ul&gt;</code> 、 <code>&lt;li&gt;</code> 、 <code>&lt;/li&gt;</code> 、 <code>&lt;blockquote&gt;</code> 和 <code>&lt;/blockquote&gt;</code> ，不过你还是可以修改这个清单。在我们开始解说要如何修改这个设定值前，首先让我们来看看要如何撰写这个正向列表 ─ 它也被称做<strong>消毒规格</strong>。</p>
+<p>消毒规格会由四种组件组成：<code>可用的卷标</code>、<code>可用的属性</code>、<code>空白</code>和<code>逗号</code>。你得在消毒规格里列出所有允许使用的 HTML 卷标，彼此以逗号隔开；如果这些卷标还可以加上属性的话，那么你也得把允许使用的属性也放进去，它们之间则是以空白来隔开。举例来说，如果你想要让读者能够使用 <code>&lt;a&gt;</code> 卷标及其 <code>href</code> 属性，也要让读者能够使用 <code>&lt;b&gt;</code> 卷标（当然还有相对应的 <code>&lt;/a&gt;</code> 以及 <code>&lt;/b&gt;</code>）的话，那么你就得写成：<pre>a href,b</pre></p>
+<p>多数的 HTML 卷标都是成双成对的 ─ 卷标的作用范围是从 &lt;foo&gt; 开始，然后到 &lt;foo&gt; 为止；但是有一些卷标却是单独存在的，像是单纯的换列卷标 <code>&lt;br&gt;</code> ，这个卷标在 XHTML 里面都被改成 <code>&lt;br /&gt;</code> ，多了一个 <code>/</code> 来表示这个卷标是单独存在、没有对应卷标的。撰写<code>消毒规格</code>的时候，如果你遇到了这种卷标的话，也得以相似的形式，在卷标后面多加上一个斜线（ <code>/</code> ），来表示这个卷标是单独使用的。举例来说，如果你祇想让读者们能够使用 <code>&lt;p&gt;</code> 、 <code>&lt;/p&gt;</code> 和 <code>&lt;br&gt;</code> 的话，消毒规格就得写成：<pre>p,br/</pre></p>
+<p>请注意，你务必得把打算允许使用的卷标属性也都加进消毒规格里，否则会发生很糟的情况。例如说，如果你祇在消毒规格里写上：<pre>a,b,p,br/</pre></p>
+<p>那么如果有使用者写了：<pre>&lt;a href=&quot;http://www.movabletype.org&quot;&gt;MovableType&lt;/a&gt;</pre></p>
+<p>结果实际上在回响里出现的东西就会变成：<pre>&lt;a&gt;MovableType&lt;/a&gt;</pre></p>
+<p>这么一来这个超链结就失效了。</p>
+<p>除此之外，有些卷标属性几乎可以用于任何 HTML 卷标里，例如像是 <code>id</code> 或 <code>style</code> ，你可以不需要写在每个 HTML 卷标里，事情总是有比较偷懒的作法，那就是用 <strong>*</strong> 来表示<strong>所有被列出的卷标</strong>。举个例子来说，如果你想要让使用者能够使用像是 <code>&lt;a id=&quot;foo&quot;&gt;</code> 、 <code>&lt;a href=&quot;#foo&quot;&gt;</code> 、 <code>&lt;/a;&gt;</code> 、 <code>&lt;span&gt;</code> 、 <code>&lt;span id=&quot;bar&quot;&gt;</code> 、 <code>&lt;/span&gt;</code> 、 <code>&lt;hr&gt;</code> 、 <code>&lt;hr id=&quot;baz&quot;&gt;</code> 和 <code>&lt;br&gt;</code> 的话，你可以把消毒规格写成：<pre>a href id,span id,hr/ id,br/</pre></p>
+<p>不过我们可以用更精简的方式来撰写：<pre>a href,span,hr/,br/,* id</pre></p>
+<p>请注意，在上述的例子里，以下的 HTML 卷标是无效的：<pre>&lt;h1 id=&quot;foobar&quot;&gt;</pre></p>
+<p>你得把所有可以用的卷标都给列出来才行。消毒规格里的 <code>*</code> 祇能拿来代表其它有在消毒规格里出现的 HTML 卷标。现在就让我们来看看要如何修改这个消毒规格：</p>
+<p><ol>
+  <li><a id="sanitize_01"></a>请如<a href="#img_20">图二十</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_21">图二十一</a>点击网志组态画面上方的「<strong>偏好</strong>」链结，再如<a href="#img_22">图二十二</a>点击网志组态偏好画面上方的「<strong>一般设定</strong>」链结。<div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_01.png" alt="按下「网志组态」按钮"><br />图二十：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_02.png" alt="点击「偏好」链结"><br />图二十一：点击「偏好」链结。</div><div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_03.png" alt="点击「一般设定」链结"><br />图二十二：点击「一般设定」链结。</div></li>
+  <li><a id="sanitize_02"></a>一般设定的倒数第三个设定值就是「<strong>消毒规格</strong>」，你可以如<a href="#img_23">图二十三</a>选择要按照预设值，也可以如<a href="#img_24">图二十四</a>自行决定消毒规格，最后再如<a href="#img_25">图二十五</a>按下最底下的「储存」按钮，就完成消毒规格的设定了。<div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_04.png" alt="消毒规格采用预设值"><br />图二十三：在预设的情况下，消毒规格的设定就是采用预设值。</div><div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_05.png" alt="自订消毒规格"><br />图二十四：你也可以自己决定消毒规格；在这个范例中我们填入了「 a href,b,u,i,br/,p,* title 」。</div><div class="img"><a id="img_25"></a><img src="http://junnie.3322.org/bookimg/mtcomment_sanitize_06.png" alt="按下「储存」按钮"><br />图二十五：按下「储存」按钮。</div></li>
+</ol></p>
+<h2><a id="convert"></a>自动转换链结</h2>
+<p>如果你怕麻烦（或者祇是单纯地谨慎而保守）而决定不要在回响里接受 HTML 卷标的话，就该启用这个「<code>自动转换链结</code>」的功能，这么一来当读者发表回响时，如果提供了任何信息的链结时，这个链结就会自动生效，变成一个真的可以直接点击的链结，而不需要你或其它读者先小心翼翼地把它复制下来，再贴到浏览器的网址列里。</p>
+<p>举例来说，当读者在回响里写了：<pre>MovableType official site:<br />http://www.movabletype.org</pre></p>
+<p>如果你开启了这个自动转换链结的功能后，这一段回响就会变成：<pre>MovableType official site:<br />&lt;a href=&quot;http://www.movabletype.org&quot;&gt;http://www.movabletype.org&lt;/a&gt;</pre></p>
+<p><code>自动转换链结</code>是一个会涉及整份网志的开关，也就是说你没办法决定某一篇文章的回响要自动转换链结、而另一篇不要。所有在这份网志里的文章要不是都不要自动转换链结，就是都得要。这个开关得在<code>网志组态</code>里切换，请见下列的步骤：</p>
+<p><ol>
+  <li><a id="convert_01"></a>请如<a href="#img_26">图二十六</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_27">图二十七</a>点击网志组态画面上方的「<strong>偏好</strong>」链结，再如<a href="#img_28">图二十八</a>点击网志组态偏好画面上方的「<strong>回响组态</strong>」链结。<div class="img"><a id="img_26"></a><img src="http://junnie.3322.org/bookimg/mtcomment_convert_01.png" alt="按下「网志组态」按钮"><br />图二十六：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_27"></a><img src="http://junnie.3322.org/bookimg/mtcomment_convert_02.png" alt="点击「偏好」链结"><br />图二十七：点击「偏好」链结。</div><div class="img"><a id="img_28"></a><img src="http://junnie.3322.org/bookimg/mtcomment_convert_03.png" alt="点击「回响组态」链结"><br />图二十八：点击「回响组态」链结。</div></li>
+  <li><a id="convert_02"></a>回响组态的倒数第二个设定值就是「<strong>自动连结网址</strong>」，你可以如<a href="#img_29">图二十九</a>核选这个核选框，然后再按下最底下的「储存」按钮，就可以让读者们在发表回响时所输入的链结网址自动生效了。<div class="img"><a id="img_29"></a><img src="http://junnie.3322.org/bookimg/mtcomment_convert_04.png" alt="核选「自动连结网址」再按下「储存」按钮"><br />图二十九：核选「自动连结网址」的核选框，再按下「储存」按钮，以启用自动转换链结的功能。</div></li>
+</ol></p>
+<h2><a id="edit"></a>编辑与删除回响</h2>
+<p>身为网志的主人，你当然也能够编辑或删除读者们所发表的回响 ─ 当你做这件事的时候请务必小心！因为如果你总是去修改别人所发表的回响，恐怕过不了多久就没有人会想要继续发表了。这个功能通常是用来让你有机会修改回响里被错误使用的 HTML 语法，或者是让你有办法处理一些被曝光的敏感信息；当你开启回响功能之前就应该要先考虑到这些可能发生的后果，这个功能应该祇是备而不用而已。</p>
+<p>如果你真的需要这么做的话，请参考以下的步骤：</p>
+<p><ol>
+  <li><a id="edit_01"></a>在<code>编辑选单</code>画面里，除了会列出我们在<a href="cn_mtbook_entry.html#modify_search_recent5">第三章</a>提过的<code>最新五篇文章</code>之外，也会列出<code>最新五则回响</code>，如<a href="#img_30">图三十</a>所示，就在<code>最新五篇文章</code>底下。另外，在每一篇文章的<code>文章编辑画面</code>里，你也会看到如<a href="#img_31">图三十一</a>那样，在<code>进阶选项</code>区段的第一栏列出属于该篇文章的回响。上述两个清单都会列出<code>回响作者</code>以及<code>回响日期</code>这两个信息，祇要你点击回响作者的链结，就能够加以编辑该则回响。<div class="img"><a id="img_30"></a><img src="http://junnie.3322.org/bookimg/mtcomment_edit_recent5_01.png" alt="最新五则回响"><br />图三十：在编辑选单里可以看到最新五则回响，点击回响作者的链结即可编辑该则回响。</div><div class="img"><a id="img_31"></a><img src="http://junnie.3322.org/bookimg/mtcomment_edit_entry_01.png" alt="特定文章的回响清单"><br />图三十一：在文章编辑画面里可以看到属于该篇文章的回响清单，点击回响作者的链结即可编辑该则回响。</div></li>
+  <li><a id="edit_02"></a>如<a href="#img_32">图三十二</a>，一旦你点击回响作者的链结后，即可编辑该则回响；你能够修改的字段包括了<code>作者姓名</code>、<code>作者的电子邮件地址</code>、<code>作者的网址</code>以及<code>回响的内容</code>。一旦你修改完成后，请依<a href="#img_33">图三十三</a>按下底下的「<strong>储存</strong>」按钮，就可以把这个修改储存起来。接下来请跳至<a href="#edit_06">步骤六</a>的说明。<div class="img"><a id="img_32"></a><img src="http://junnie.3322.org/bookimg/mtcomment_edit_01.png" alt="在编辑回响画面里的作者、 Email 地址、网址、回响内容等字段"><br />图三十二：在编辑回响画面里，你可以修改作者、 Email 地址、网址、回响内容等字段。</div><div class="img"><a id="img_33"></a><img src="http://junnie.3322.org/bookimg/mtcomment_edit_02.png" alt="按下「储存」按钮"><br />图三十三：当你完成修改后，就按下「储存」按钮来把你所做的变更给存起来。</div></li>
+  <li><a id="edit_03"></a>如果你不想要修改回响内容，而是打算将之删除的话，也可以在这个<code>回响编辑画面</code>里，如<a href="#img_34">图三十四</a>按下「<strong>删除</strong>」按钮；或者你也可以如<a href="#img_35">图三十五</a>在<code>文章编辑</code>画面里，核选想要删除的那几篇回响后面的核选框，再如<a href="#img_36">图三十六</a>按下「<strong>删除核选的项目</strong>」按钮。<div class="img"><a id="img_34"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_01.png" alt="按下「删除」按钮"><br />图三十四：在回响编辑画面里，按下「删除」按钮来删除该则回响。</div><div class="img"><a id="img_35"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_02.png" alt="核选欲删除回响的核选框"><br />图三十五：在文章编辑画面里，核选欲删除的回响后面的核选框。</div><div class="img"><a id="img_36"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_03.png" alt="按下「删除核选的项目」按钮"><br />图三十六：按下「删除核选的项目」按钮，来把被核选的回响一并删除。</div></li>
+  <li><a id="edit_04"></a>无论你是删除特定的回响或者是一次删除多篇回响，都会看到如<a href="#img_37">图三十七</a>的窗口弹出来，要求你确认。此时请按下「<strong>删除</strong>」按钮，即可真的把这些回响给删除。<div class="img"><a id="img_37"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_04.png" alt="按下「删除」按钮"><br />图三十七：按下「删除」按钮，确认把这些回响给删除掉。</div></li>
+  <li><a id="edit_05"></a>接著会出现如<a href="#img_38">图三十八</a>的画面，提示你回响已被删除，并把你带回到回响所属的文章编辑画面。<div class="img"><a id="img_38"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_05.png" alt="回响已被删除"><br />图三十八：回响已被删除。</div></li>
+  <li><a id="edit_06"></a>然而此时祇有数据库里的东西被变更了，你的静态页面上仍然有原来的回响内容；你得<strong>重建</strong>相关的页面才能够一并更新这些静态页面。最简单的方法就是在这个<code>文章编辑画面</code>里，如<a href="#img_39">图三十九</a>按下「<strong>储存</strong>」按钮，那么跟这一篇文章有关的页面就都会被一起重建了。<div class="img"><a id="img_39"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_06.png" alt="按下「储存」按钮"><br />图三十九：按下「储存」按钮，重建与此篇文章有关的页面。</div></li>
+  <li><a id="edit_07"></a>现在你的静态页面应该也照你所做的修改更新过了。<div class="img"><a id="img_40"></a><img src="http://junnie.3322.org/bookimg/mtcomment_delete_07.png" alt="静态页面也被更新了"><br />图四十：静态页面也被更新了；在这个范例中我们可以看到回响数量又回复成 0 则。</div></li>
+</ol></p>
+<h2><a id="ban"></a>禁用 IP</h2>
+<p>要说有甚么跟回响有关的功能，是比<code>编辑回响</code>还要更少用到的话，恐怕就是<code>禁用 IP </code>的功能了。然而这并不代表这个功能就不重要，相反地，有时候这个功能确实能够挽救你宝贵的时间与生命。</p>
+<p>你也许不知道，宽广无垠的网际网络里，充斥著各式各样的广告机器人 ─ 她们会逛遍整个网络王国的疆域，并且四处留下恼人的广告，而你所提供的回响也是她们的目标之一；再者，偶而也会出现几个祇会吵闹滋事的网民，她们可能总是在你的网志上发表充满挑衅味道却毫无实质内容的回响。单单为了这类的事情，就把回响功能关闭的话，实在是过于可惜。</p>
+<p>在这种情况下，<code>禁用 IP </code>功能也许就能助你一臂之力了。这个功能能够帮你抵挡来自特定位置的使用者（或机器人），让她们无法在你的地盘留下任何恼人的话语 ─ 而其它人却丝毫不受影响！</p>
+<p>像这样的功能当然也会涉及整份网志，任何来自被禁用的 IP 地址的读者，将无法在任何一篇文章发表回响。请见下列的步骤：</p>
+<p><ol>
+  <li><a id="ban_01"></a>请如<a href="#img_41">图四十一</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_42">图四十二</a>点击网志组态画面上方的「<strong>禁用 IP </strong>」链结。<div class="img"><a id="img_41"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_01.png" alt="按下「网志组态」按钮"><br />图四十一：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_42"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_02.png" alt="点击「禁用 IP 」链结"><br />图四十二：点击「禁用 IP 」链结。</div></li>
+  <li><a id="ban_02"></a>把你打算要禁用的 IP 地址如<a href="#img_43">图四十三</a>填入 IP 地址的字段，然后再如<a href="#img_44">图四十四</a>按下「<strong>加入</strong>」按钮。<div class="img"><a id="img_43"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_03.png" alt="填入要禁用的 IP 地址"><br />图四十三：填入要禁用的 IP 地址，在这个范例里我们填的是「 192.168.1.99 」。</div><div class="img"><a id="img_44"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_04.png" alt="按下「加入」按钮"><br />图四十四：按下「加入」按钮，把我们所填写的 IP 地址加进<code> IP 禁用清单</code>里。</div></li>
+  <li><a id="ban_03"></a>你会看到如<a href="#img_45">图四十五</a>的画面，在<code> IP 禁用清单</code>里会列出已被禁用的 IP 地址。<div class="img"><a id="img_45"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_05.png" alt="IP 禁用清单"><br />图四十五： IP 禁用清单里会列出已被禁用的 IP 地址，在这个范例里的是「 192.168.1.99 」。</div></li>
+  <li><a id="ban_04"></a>如果你打算取消对某几个 IP 地址的禁用令的话，请如<a href="#img_46">图四十六</a>核选这些 IP 地址后面的核选框，再如<a href="#img_47">图四十七</a>按下「<strong>删除</strong>」按钮。<div class="img"><a id="img_46"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_06.png" alt="核选欲取消禁用的 IP 地址"><br />图四十六：核选欲取消禁用的 IP 地址，在这个范例里我们核选了「 192.168.1.99 」后的核选框。</div><div class="img"><a id="img_47"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_07.png" alt="按下「删除」按钮"><br />图四十七：按下「删除」按钮，来把被核选的 IP 地址移出 IP 禁用清单。</div></li>
+  <li><a id="ban_05"></a>接著会弹出如<a href="#img_48">图四十八</a>的窗口，请按「<strong>删除</strong>」按钮，来确定删除这些 IP 地址的禁用令。<div class="img"><a id="img_48"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_08.png" alt="按下「删除」按钮"><br />图四十八：按下「删除」按钮。</div></li>
+  <li><a id="ban_06"></a>如<a href="#img_49">图四十九</a>，这样子来自这些 IP 的读者就又能够在你的网志上发表回响了。<div class="img"><a id="img_49"></a><img src="http://junnie.3322.org/bookimg/mtcomment_ban_09.png" alt="指定的 IP 地址被取消禁用了"><br />图四十九：指定的 IP 地址被取消禁用了。</div></li>
+</ol></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

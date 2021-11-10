@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>招商银行 on 猪八的网：浮生志</title>
+    <link>/tags/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/</link>
+    <description>Recent content in 招商银行 on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Thu, 21 Jan 2010 14:02:35 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>招行信用卡绑定Google Checkout</title>
+      <link>/blog/2010/01/use-cmb-card-as-google-checkout.html</link>
+      <pubDate>Thu, 21 Jan 2010 14:02:35 +0800</pubDate>
+      
+      <guid>/blog/2010/01/use-cmb-card-as-google-checkout.html</guid>
+      <description>&lt;p&gt;使用招行信用卡购买了Google的**$5**/年的&lt;strong&gt;20GB&lt;/strong&gt;存储空间！没有办法，&lt;a href=&#34;https://checkout.google.com/&#34;&gt;Google Checkout&lt;/a&gt;不支持&lt;strong&gt;中国（P.R.C）&lt;/strong&gt;，所以只能**“被”**成为香港（&lt;strong&gt;Hong.Kong&lt;/strong&gt;）公民了，因为只能购买一年的，Google提示是：&lt;strong&gt;您目前的方案將在 2011/1/20自動續約&lt;/strong&gt;。目前已经增容成功，关键一点就是害怕，会不会因为卡片的注册地不在香港被停止这张信用卡在Google Checkout的使用，明年会自动续费么？这些都得等明年才知道了。&lt;/p&gt;
+&lt;p&gt;信用卡使用的是&lt;strong&gt;双币&lt;/strong&gt;信用卡，&lt;strong&gt;Visa&lt;/strong&gt;的，开通了&lt;strong&gt;Visa验证&lt;/strong&gt;，购买后，招行短信提示有两条：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;您尾号XXXX的招行信用卡于1月21日10时15分网上交易&lt;strong&gt;当地币&lt;/strong&gt;8.00元；&lt;/li&gt;
+&lt;li&gt;您尾号XXXX的招行信用卡于1月21日10时36分网上交易&lt;strong&gt;美元&lt;/strong&gt;5.00元。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;据说，那8元港币会在几天内还给你，你不需要还这个款项，详见&lt;a href=&#34;http://checkout.google.com/support/bin/answer.py?hl=en&amp;amp;answer=105940&#34;&gt;Google的解释&lt;/a&gt;：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Authorizations&lt;/strong&gt;&lt;br&gt;
+Authorizations occur between our billing system and your bank&amp;rsquo;s billing system to ensure that the card is valid and the necessary funds are available in your account before the order is charged. Because the order has been cancelled, the pending authorization will not result in a charge.&lt;br&gt;
+You may also notice a $1.00 transaction from Google, which is actually a pending authorization request between our billing system and the bank that issued your credit or debit card, so you won&amp;rsquo;t end up paying the extra $1.00.&lt;br&gt;
+When you check your bank account or credit card statement, payment authorizations are often listed as &amp;ldquo;pending.&amp;ldquo;These transactions might remain in your account between 1-14 business days, depending on your card-issuing bank. Please keep in mind they are authorization requests only, not actual charges.&lt;br&gt;
+Authorizations can remain in your account anywhere from 24 hours up to 14 business days, depending on the bank. You may contact your bank to confirm the charge for your purchase with Google or to check on the authorization status.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;购买的截图，注意&lt;strong&gt;Outlying Islands&lt;/strong&gt;和&lt;strong&gt;Hong Kong&lt;/strong&gt;这两个地址哈：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googlecheckout.png&#34; alt=&#34;google-checkout&#34; title=&#34;google-checkout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;P.S ：&lt;strong&gt;上面的图片就是用&lt;/strong&gt;&lt;del&gt;Google Docs&lt;/del&gt;&lt;/strong&gt;（经数次测试，图片链接&lt;strong&gt;不是&lt;/strong&gt;固定链接，过一段时间就会变化，无法外部引用，只能用来存储了……）**附：**上传界面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googledocs.png&#34; alt=&#34;google-docs&#34; title=&#34;google-docs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;关于信用卡是否会被停用Google Checkout和订单是否会被退订，我会在这里&lt;strong&gt;继续更新&lt;/strong&gt;，或者知道的可以&lt;strong&gt;留言&lt;/strong&gt;哈！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

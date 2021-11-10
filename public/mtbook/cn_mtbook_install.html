@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第一章 ─ 安装 Movable Type</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第零章 ─ 申请网域名称" href="cn_mtbook_domain.html" />
+  <link rel="next" title="第二章 ─ 设定 Movable Type" href="cn_mtbook_config.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第一章 ─ 安装 Movable Type</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#install">第一章 ─ 安装 Movable Type</a></li>
+  <ul>
+    <li><a href="#download">下载 MovableType</a></li>
+    <li><a href="#win32">装在 Windows 上</a></li>
+    <li><a href="#win32_note">跟 Windows 有关的注意事项</a></li>
+    <li><a href="#unix">装在 FreeBSD 或 Linux 上</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="install"></a>第一章 ─ 安装 Movable Type</h1>
+<p>实际上你祇需要安装一次 Movable Type ，就可以让很多人一起用，也可以建立好几份网志；对于单纯的使用者来说，并不需要在自己的计算机上安装 Movable Type ，祇需要安装在网页服务器上就可以了。</p>
+<p>理论上祇要你所使用的网页服务器能够执行 <acronym title="Common Gateway Interface">CGI</acronym> ，就能够安装 Movable Type ；不过国内能够执行 CGI 的免费网页空间越来越少，在这种情况下你可能就得考虑要自己拉一条 ADSL 或 Cable ，并参考<a href="cn_mtbook_domain.html#domain">第零章</a>的内容设定网域名称，然后用自己家的机器架一台服务器起来。</p>
+<p>本章我们将大致带领各位安装一次 Movable Type ，包括在 Windows 上的作法以及 BSD/Linux 上的作法；至于详细的设定细节，则留待<a href="cn_mtbook_config.html#config">第二章</a>讲解。
+<h2><a id="download"></a>下载 MovableType</h2>
+<p>不管你要把 MovableType 安装到哪儿，你都得在官方网站阅读过授权条款，然后才能从官方网站下载。这是唯一合法的取得途径，现在就让我们来看看该怎么做。</p>
+<p><ol>
+  <li><a id="download_01"></a>请用网页浏览器连到 <a href="http://www.movabletype.org">http://www.movabletype.org</a> 。如<a href="#img_01">图一</a>按下网页左上方的下载链结。<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mtdownload_official_01.png" alt="MovableType 的主页面，下载链结在左上方"><br />图一：连结到 MovableType 的主页面，并由此再连结到 MovableType 最新版的下载页面。</div></li>
+  <li><a id="download_02"></a>如<a href="#img_02">>图二</a>，在接下来的这个下载页面里，请于 <code>Select the type of distribution you wish to download.</code> 这一个下拉式选单里选择你要下载的档案。 Movable Type 有三种包装，其中 <strong>Full Version, with Libraries</strong> 包装里还附上了所有必须要的模块；这是预设的下载，也是我们在此建议的。<div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtdownload_official_02.png" alt="选择「 Full Version, with Libraries 」"><br />图二：选择完整暨函式库版本。</div></li>
+  <li><a id="download_03"></a>接下来如<a href="#img_03">图三</a>，请于 <code>Select the decompression method that your computer supports.</code> 这一个下拉式选单里选择你所要下载的档案格式。不管你用的是哪一种作业平台，都请选 <strong>Gzipped TAR</strong> 这一个格式，这也是预设的档案格式。<div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtdownload_official_03.png" alt="选择「 Gzipped TAR 」"><br />图三：选择以 gzip 压缩过的 TAR 档案格式。</div></li>
+  <li><a id="download_04"></a>然后你还得如<a href="#img_04">图四</a>在底下两栏里填入你的姓名与电子邮件地址，才能够下载。除此之外，还有一个「要不要收到更新通知之类的电子报」的选项，如果你不是死忠教义派的 Movable Type 使用者（一开始显然你不会是），就可以按照预设值，选择不要收。<div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtdownload_official_04.png" alt="填入姓名与电子邮件地址"><br />图四：填写姓名与电子邮件地址，并选择「不要收到电子报」。</div></li>
+  <li><a id="download_05"></a>下载之前，你还该大略读过 Movable Type 的授权条款；我知道你可能没有时间耐心，所以我在这边就简短地告诉你： <strong>Movable Type 允许个人免费使用，政府机关或商业使用则需要注册；用于学术单位仅需自由捐献即可。你可以自己修改 Movable Type 里的程序码，但是不能任意重新散布。</strong>读过这份授权条款后，请如<a href="#img_05">图五</a>点选「 <code>I accept the terms of this license agreement</code> 」，然后按下「 <code>DOWNLOAD</code> 」按钮，就会开始下载档案了。你应该会抓到一个档名像是 <strong>MT-2.64-full-lib.tar.gz</strong> 的档案，请找个目录先存放起来，并且记住你把它放在哪儿，我们稍后就会用到。<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtdownload_official_05.png" alt="同意授权条款并开始下载档案"><br />图五：点选「同意上述授权条款」后，按下「下载」的按钮。</div></li>
+</ol></p>
+<h2><a id="win32"></a>装在 Windows 上</h2>
+<p>最新的好消息是国内<a href="http://irc.elixus.org">艺立协</a>的 <a href="http://www.autrijus.org" alt="连结到 autrijus 的首页去">autrijus</a> 为 Windows 的使用者制作了 Movable Type 的 Windows 安装档，大大简化了安装的步骤，同时套用了由 <a href="mailto:digdog@mac.com">Kevin Fyure</a> 及笔者所完成的中文语系，也修正了不少程序瑕疵，甚至还会自动帮你在 Windows 上安装网页服务器以及各种必备会用到的东西。且让我们来看看要怎么安装：</p>
+<p><ol>
+  <li><a id="win32_01"></a>首先让我们连到艺立协的协同开发区去；请打开网页浏览器，连到 <a href="http://p4.elixus.org">http://p4.elixus.org</a> ，如<a href="#img_06">图六</a>。<div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtdownload_from_p4_01.png" alt="http://p4.elixus.org"><br />图六：用网页浏览器连到 <a href="http://p4.elixus.org">http://p4.elixus.org</a> 。</div></li>
+  <li><a id="win32_02"></a>现在把这个窗口往下卷动，你会看到有一个叫 <code>dist/</code> 的链结，其下的说明指出这是「稳定版本的释出套件」；请按这个链结，连到 <a href="http://p4.elixus.org/dist/">http://p4.elixus.org/dist/</a> 去，如<a href="#img_07">图七</a>。<div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtdownload_from_p4_02.png" alt="dist/"><br />图七：连到 <a href="http://p4.elixus.org/dist/">http://p4.elixus.org/dist/</a> 去。</div></li>
+  <li><a id="win32_03"></a>连进 <a href="http://p4.elixus.org/dist/">http://p4.elixus.org/dist/</a> 后，你会看到如<a href="#img_08">图八</a>的画面，列出来许许多多的档案；我们要找的是档名以 <code>mt</code> 开头的 <code>.exe</code> 档，档名里的数字则代表版本。你可以看到目前最新的释出套件应该是 <code>mt-2.64.exe</code> ，这是 2.64 版的 Movable Type 的 Windows 安装程序，请点选这个档案，并且下载储存到你要用来当作网页服务器的计算机上。请注意，你在<a href="#download">前一小节</a>所抓到的那个档案，也应该要跟这个档案放在同样的位置。<div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtdownload_from_p4_03.png" alt="mt-2.64.exe"><br />图八：下载最新版的 Movable Type 的 Windows 安装档。在本范例中，我们抓的是 <a href="http://p4.elixus.org/dist/mt-2.64.exe">mt-2.64.exe</a> 。</div></li>
+  <li><a id="win32_04"></a>抓下来后，请用鼠标双击这个档案以执行之。安装画面如<a href="#img_09">图九</a>，祇有一个对话框；这时请<strong>务必不要更改安装路径，直接按下「<code>安装</code>」按钮</strong>。 <code>mt-2.64.exe</code> 首先会自己解压缩，然后同时会自己去下载 <code>oin-httpd</code> 跟 <code>Parl</code> 这两个会用到的组件（前者其实就是 <code>Apache 2</code> 这个知名的网页服务器，后者可说是 Perl 的精简版）；这意味著<strong>你得在安装过程中保持网络联机畅通</strong>。<div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtinstaller_01.png" alt="按「安装」"><br />图九：安装程序询问安装路径时，请务必不要修改；请直接按下「<code>安装</code>」按钮。</div></li>
+  <li><a id="win32_05"></a>如果你没有按照<a href="#download">前一段</a>的指示，从 MovableType 官方网站下载档案，或者是下载的档案没有放在同一个数据夹里的话，这个时候就会看到如<a href="#img_10">图十</a>的画面，此时请按下确定，然后再如<a href="#img_11">图十一</a>按下「<code>取消</code>」按钮，等抓到该抓的档案之后，才再次执行本程序。<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtinstaller_error_01.png" alt="在这个数据夹里没有找到 MT-2.64-full-lib.tar.gz"><br />图十：安装程序找不到所需的 MovableType 官方释出套件。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtinstaller_error_02.png" alt="安装中 止"><br />图十一：安装中止。请备齐档案后再执行此安装程序。</div></li>
+  <li><a id="win32_06"></a>下载经过一段时间的安装后，你应该还会看到像是<a href="#img_12">图十二</a>跟<a href="#img_13">图十三</a>这样的画面，请都不要理会，它们应该都会在执行完后自动关闭。这个安装程序还会把 Apache 设定成 Windows 里的一项「服务」（祇有在 Windows 2000 或 Windows XP 上才会这样；在 Windows 98 或 Windows ME 上面，因为系统里没有「服务」的架构，则会用仿真的方式来处理）。<div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtinstaller_02.png" alt="正在解开及安装 MovableType 套件中，并进行必要的补缀"><br />图十二：安装正在解开官方释出的 MovableType 套件，进行必要的补缀，以及安装其它所需的程序。</div><div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtinstaller_03.png" alt="安装程序正在补缀你的 MovableType"><br />图十三：安装程序此时正在进行实际补缀的动作。</div>
+  <li><a id="win32_07"></a>安装完成后，安装程序会自己开启你的网页浏览器，并且执行 <code>http://localhost/oin-setup.cgi</code> 这个脚本，来设定数据库的初始结构。你可能会看到如<a href="#img_14">图十四</a>这样的画面，这时请遵照画面上的指引，按下「<code>网志组态</code>」的链结。如果你没有看到如<a href="#img_05">图五</a>的画面的话，你可能会看到如<a href="#img_15">图十五</a>的画面；这时请按照画面上的指引按下「<code>进入设定画面</code>」的按钮，然后在接下来的画面中，如<a href="#img_16">图十六</a>这样按下「<code>管理网志</code>」的链结，再如<a href="#img_17">图十七</a>按下左方工具列上的「<code>网志组态</code>」按钮。<div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtinitial_01.png" alt="按「网志组态」"><br />图十四：数据库设定完成，请按下「<code>网志组态</code>」的链结。</div><div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtinitial_02.png" alt="按「进入设定画面」"><br />图十五：数据库设定完成，请按下「<code>进入设定画面</code>」的链结。</div><div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtinitial_03.png" alt="按「管理网志」"><br />图十六：这是网志系统主画面；请先按下画面上的「<code>管理网志</code>」链结。</div><div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtinitial_04.png" alt="按「网志组态」"><br />图十七：按下左边工具列上的「<code>网志组态</code>」按钮。</li>
+  <li><a id="win32_08"></a>接下来你应该会看到如<a href="#img_18">图十八</a>的画面；请按照<a href="cn_mtbook_config.html#config">第二章</a>的内容来加以设定。<div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtinitial_05.png" alt="网志组态画面"><br />图十八：「网志组态」的画面。</div></li>
+</ol></p>
+<h2><a id="win32_note"></a>跟 Windows 有关的注意事项</h2>
+<p>虽然 Windows 版本的 Movable Type 安装程序用起来如此轻松，但是在不同版本的 Windows 上，其实会遇到不同的状况。且看以下的注意事项：</p>
+<p><ul>
+  <li><a id="win32_note_01"></a>最适合安装 Movable Type 的 Windows 版本是 <strong>Windows 2000</strong> 或 <strong>WIndows XP</strong> 。至于 Windows ME 、 Windows 98 SE 勉强可以安装执行， Windows 95 则还没有人测试过。</li>
+  <li><a id="win32_note_02"></a>如果你的 Windows 已经安装过 IIS 或其它网页服务器（尤其是在 Server 版的 Windows 2000 或 XP 上）的话，你得先把这些网页服务器停掉，或至少空出 Port 80 ，才能够顺利安装 Movable Type 。如果你不知道该怎么做，请找当初安装 IIS 的人来帮忙。</li>
+  <li><a id="win32_note_03"></a>如果你把 Movable Type 安装在 <code>Windows ME</code> 、 <code>Windows 98 SE</code> 、 <code>Windows 98</code> 等版本的 Windows 上的话， <code>oin-httpd</code> 会以仿真成系统服务的方式执行；所以每次开机后都会跑出一个 DOS 窗口以激活 oin-httpd ，然后关机的时候也会出现一个对话框，要求你强制关闭 oin-httpd 之后才让你关机。</li>
+  <li><a id="win32_note_04"></a><a id="win32_sendmail"></a>要在 Windows 上面的 Movable Type 使用任何跟电子邮件有关的功能（通知书之类的）的话，你还得再安装一个 <code>Mail::Sendmail</code> 模块。方法如下：<ol>
+    <li><a id="win32_sendmail_01"></a>在你的 <code>C:\Program Files\OurInternet\Movable Type\lib\</code> 数据夹内，再新增一个叫 <strong>Mail</strong> 的数据夹。</li>
+    <li><a id="win32_sendmail_02"></a>下载 <a href="http://www.movabletype.org/cpan/cpan-Mail-Sendmail.tar.gz">http://www.movabletype.org/cpan/cpan-Mail-Sendmail.tar.gz</a> 。</li>
+    <li><a id="win32_sendmail_03"></a>用 WinZip 之类的解压缩程序解开这个 <code>cpan-Mail-Sendmail.tar.gz</code> 压缩档，然后把所得到的 <strong>Sendmail.pm</strong> 档案放到刚刚建立的 <code>C:\Program Files\OurInternet\Movable Type\lib\Mail\</code> 数据夹内，就可以了。</li>
+  </ol></li>
+</ul></p>
+<h2><a id="unix"></a>装在 FreeBSD 或 Linux 上</h2>
+<p>在 Movable Type 的官方文件集里，有一份<a href="http://mtbook.net/mtinstall.html">安装指引</a>，详述了安装的步骤，兹简短描述如下：</p>
+<p><ol>
+  <li><a id="unix_01"></a>首先，我们得先确定你的系统上有 Perl 。理论上 5.004_04 版以上的 Perl 就可以执行 Movable Type ，不过 Perl 从 5.8 版起，对于万国码 (UNICODE) 才有完善的支持；如果你希望 Movable Type 对中文字有更好的掌握，你就应该要把 Perl （以及所有会用到的 Perl 模块）升级到 5.8 版。如果你不知道你的 Perl 版本的话，你可以像<a href="#img_10">图十九</a>这样，执行 <pre>perl -v</pre><div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mt_check_perl_01.png" alt="perl -v"><br />图十九：执行 <code>perl -v</code> 来查看 Perl 版本。</div></li>
+  <li><a id="unix_02"></a>请按照<a href="#download">本章第一小节</a>所描述的步骤，从官方网站取得正式释出的 MovableType 套件 <code>MT-2.64-full-lib.tar.gz</code> ，然后请用下列的指令将其解开：<pre>gunzip MT-2.64-full-lib.tar.gz
+tar -xvf MT-2.64-full-lib.tar</pre></li>
+  <li><a id="unix_03"></a>现在解开的档案都应该在 <strong>MT-2.64-full-lib/</strong> 目录底下；请再如<a href="#img_20">图二十</a>抓取 <a href="http://p4.elixus.org/depot/MT/diff/MT-2.64-full-lib.new.tar.gz">http://p4.elixus.org/depot/MT/diff/MT-2.64-full-lib.new.tar.gz</a> ，这个档案里包含了完整的中文语系档、中文文件、中文搜寻模版、修改过的 <code>MT RSSfeed</code> 外挂模块；我们仍然要把这个档案解到 <strong>MT-2.64-full-lib/</strong> 里。请用下列的指令：<pre>gunzip MT-2.64-full-lib.new.tar.gz
+tar -xvf MT-2.64-full-lib.new.tar</pre><div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mtdownload_extra_files.png" alt="从 p4.elixus.org 上抓取 MT-2.64-full-lib.new.tar.gz"><br />图二十：从 p4.elixus.org 上抓取补增的档案汇整。</div></li>
+  <li><a id="unix_04"></a>最后我们还要修改 Movable Type 里的程序码（以及神秘而重要的 <code>CGI.pm</code> Perl 模块），来解决中文兼容性的问题。请先切换 (<code>cd</code>) 到你解开压缩档的目录（像是 <code>MT-2.64-full-lib</code> ），然后如<a href="#img_21">图二十一</a>抓取 <a href="http://p4.elixus.org/depot/MT/diff/mt.diff">http://p4.elixus.org/depot/MT/diff/mt.diff</a> ，用下列的指令来补缀：<pre>patch -p1 &lt; mt.diff</pre><div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mtdownload_diff.png" alt="从 p4.elixus.org 上抓取 mt.diff"><br />图二十一：从 p4.elixus.org 上抓取补缀档。</div></li>
+  <li><a id="unix_05"></a>你还得要知道你的系统把 Perl 安装在哪里；因为 <i>mt-add-notify.cgi</i> 、 <i>mt-check.cgi</i> 、 <i>mt-comments.cgi</i> 、 <i>mt-load.cgi</i> 、 <i>mt-send-entry.cgi</i> 、 <i>mt-tb.cgi</i> 、 <i>mt-search.cgi</i> 、 <i>mt.cfg</i> 、 <i>mt-xmlrpc.cgi</i> 和 <i>mt-view.cgi</i> 这些档案通通都是 Perl 脚本，所以如果你的 Perl 并非安装在 <strong>/usr/bin/perl</strong> 的话，你就得修改上述档案的第一列，来让这些脚本找得到 Perl 。<br />请注意，你应该保留这一列开头的 <strong>#!</strong> 以及结尾的 <strong>-w</strong> 。<br />举例来说，如果你的 Perl 装在 <code>/usr/bin/perl580</code> 的话，你就应该把 <code>#!/usr/bin/perl -w</code> 这一列修改成 <strong>#!/usr/bin/perl580 -w</strong> 。<br />如果你不知道系统上的 Perl 在哪里的话，请用下列的指令来察看：<pre>whereis perl</pre></li>
+  <li><a id="unix_06"></a>我们还得把这些档案复制到网页服务器使用的目录中、能够使用 CGI 脚本的目录里。举例来说，如果你在网页服务器的组态档案（例如 <code>/usr/local/etc/apache/httpd.conf</code> ）里设定可以执行 CGI 的目录位于 <code>/usr/local/www/cgi-bin/</code> 的话，你可能就应该这么做：<pre>cd /usr/local/www/cgi-bin
+cp -r /home/foo/MT-2.64-full-lib/ .</pre></li>
+  <li><a id="unix_07"></a>不过我们还得先把 MovableType 管理接口的静态档案（包括整个 <code>docs</code> 目录、整个 <code>images</code> 目录，以及 <code>styles.css</code> 搬移到正确的目录去，他们才能够被正确显示出来。举例来说，如果你在网页服务器的组态档案（例如 <code>/usr/local/etc/apache/httpd.conf</code> ）里设定 MovableType 的主索引目录 (<code>DocumentRoot</code>) 为 <code>/usr/local/www/mt</code> 的话，你可能就应该这么做：<pre>mv /usr/local/www/cgi-bin/docs /usr/local/www/mt/docs
+mv /usr/local/www/cgi-bin/images /usr/local/www/mt/images
+mv /usr/local/www/cgi-bin/styles.css /usr/local/www/mt/styles.css</pre></li>
+  <li><a id="unix_08"></a>档案复制过去后，你还需要调整档案权限，让它们能够被执行。请用这样的指令：<pre>chmod 755 /usr/local/www/cgi-bin/mt*.cgi</pre></li>
+  <li><a id="unix_09"></a>Movable Type 还需要用到数据库来储存文章或模版等东西，你可以选用 <code>MySQL</code> 、 <code>PostgreSQL</code> 、 <code>Berkeley DB</code> 或 <code>SQLite</code> 。如果你决定要用 <code>MySQL</code> 或 <code>PostgreSQL</code> 的话，请先把他们装好，并参照<a href="cn_mtbook_config.html#config">第二章</a>来调整相关的设定；如果你决定要用 <code>Berkeley DB</code> 或 <code>SQLite</code> 的话，你得要在安装 Movable Type 的目录中建立起一个叫 <strong>db</strong> 的目录，并把目录的权限设成 <strong>777</strong> 。可能的指令会是像这样：<pre>mkdir /usr/local/www/cgi-bin/db
+chmod 777 /usr/local/www/cgi-bin/db</pre></li>
+  <li><a id="unix_10"></a>这样就算安装完成了。接下来请参照<a href="cn_mtbook_config.html#config">第二章</a>的内容来加以设定组态。</li>
+</ol></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

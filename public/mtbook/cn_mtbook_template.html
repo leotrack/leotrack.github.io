@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第九章 ─ 模版</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第八章 ─ 汇整" href="cn_mtbook_archive.html" />
+  <link rel="next" title="第十章 ─ 动手做做看" href="cn_mtbook_practice.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第九章 ─ 模版</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#template">第九章 ─ 模版</a></li>
+  <ul>
+    <li><a href="#structure">模版架构</a></li>
+    <ul>
+      <li><a href="#structure_index">索引模版</a></li>
+      <li><a href="#structure_archive">汇整相关模版</a></li>
+      <li><a href="#structure_others">其它模版</a></li>
+      <li><a href="#structure_module">模版模块</a></li>
+      <li><a href="#structure_search">搜寻模块</a></li>
+    </ul>
+    <li><a href="#tag">模版卷标</a></li>
+    <ul>
+      <li><a href="#tag_philosophy">模版和卷标哲学</a></li>
+      <li><a href="#tag_types">卷标种类</a></li>
+      <ul>
+        <li><a href="#tag_types_container">容器卷标</a></li>
+        <li><a href="#tag_types_variable">变数卷标</a></li>
+      </ul>
+      <li><a href="#tag_syntax">卷标语法</a></li>
+      <li><a href="#tag_attributes">卷标属性</a></li>
+      <li><a href="#tag_context">情境</a></li>
+    </ul>
+    <li><a href="#tags">卷标索引</a></li>
+    <ul>
+      <li><a href="#tags_weblog_data">网志数据</a></li>
+      <li><a href="#tags_entry_listings_archive_pages">文章项目列示/汇整页面</a></li>
+      <li><a href="#tags_comments">回响</a></li>
+      <li><a href="#tags_comment_previewing">预览回响</a></li>
+      <li><a href="#tags_archive_templates_master_archive_index">汇整模版及汇整总索引</a></li>
+      <li><a href="#tags_category">与分类相关的卷标</a></li>
+      <li><a href="#tags_calendar">月历显示卷标</a></li>
+      <li><a href="#tags_trackback">引用功能卷标</a></li>
+      <li><a href="#tags_search_results">搜寻结果卷标</a></li>
+      <li><a href="#tags_miscellaneous">其它卷标</a></li>
+      <li><a href="#tags_global_attributes">全域卷标属性</a></li>
+      <li><a href="#tags_date_tag_formats">日期卷标格式</a></li>
+    </ul>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="template"></a>第九章 ─ 模版</h1>
+<p>这一章的份量相当之多，前半段是比较抽象的论述以及注意事项，著重在观念的厘清，接著是把这一章范围内的使用者接口快速描述一遍；由于本章涉及大量的 HTML 码，所以将不会以逐步骤抓图的方式解说，否则将把篇幅拖得过于冗长。而后半段则主要是摘录改写自官方文件里的数据。虽然本章对于初学乍练的读者来说会比较难以吸收，但是对于稍微有些基础的读者来说，却应该是相当丰富而实用的数据。</p>
+<h2><a id="structure"></a>模版结构</h2>
+<p>Movable Type 的模版能力恐怕正是其强大之处了。这套系统使得网志的「内容」可以跟「形式」抽离；当你在修改版面安排（形式）的时候，完全不会影响到内容；反之亦然。然而在 Movable Type 的预设模版里，又更进一步地使用了 <acronym title="Cascading Style Sheets, 样式表">CSS</acronym> ，把这个「形式」又拆解成「顺序结构」跟「效果」；前者是 <acronym title="HyperText Markup Language">HTML</acronym> 或 <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> 的部分，后者则是 CSS 的部分。藉由这样的拆解，你可以重新安置页面中的各个组件，而不改变每个组件的呈现效果；也可以重新设计每个组件的呈现效果，而不会改变页面组件的安置。</p>
+<p>像是这样的设计理念，有一个说法称做「模块化」，强调各自独立的合作关系，不会一个地方烂掉就全部烂光光。而这也是你在规划模版的时候所该记在心里面的。</p>
+<p>以下我们要讨论的事情大概都发生在<code>模版编辑画面</code>里，任何时候你都可以如<a href="#img_01">图一</a>按下左方工具列上的「<strong>模版</strong>」按钮，就可以开始把玩模版了。</p>
+<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_01.png" alt="按下「模版」按钮"><br />图一：按下左方工具列的「模版」按钮。</div>
+<p>接下来让我们一一仔细察看：</p>
+<h3><a id="structure_index"></a>索引模版</h3>
+<p>在<code>列出模版</code>画面的第一区里，列出的是索引模版。你可以点击<code>模版名称</code>字段里的任何一个，就能够加以编辑该模版，或者调整跟该模版有关的设定；另外在这个画面里还会标示出各个模版所会输出的档案名称，也注明它们会不会在重建索引模版的时候一并被自动重建。当然你还可以利用<code>删除</code>核选框以及<code>删除</code>按钮来删除不再使用的模版，或者是点击「<code>建立新的索引模版</code>」链结来新增新的索引模版。</p>
+<p><div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_01.png" alt="索引模版"><br />图二：索引模版。</div><div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_02.png" alt="模版名称"><br />图三：索引模版的模版名称。</div><div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_03.png" alt="输出档案"><br />图四：索引模版的输出档案信息。</div><div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_04.png" alt="是否重建的信息"><br />图五：索引模版是否重建的信息。</div><div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_05.png" alt="删除核选框及删除按钮"><br />图六：索引模版的删除核选框及删除按钮。</div><div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_06.png" alt="「建立新的索引模版」链结"><br />图七：「建立新的索引模版」链结。</div></p>
+<p>当你新增或编辑索引模版的时候，首先能够修改这个模版的<code>模版名称</code>，这个名称祇是用来显示用的，所以你甚至可以把好几个模版都取做相同的名字 ─ 祇要你自己不会弄混就好。</p>
+<p>除此之外你也可以修改<code>输出档案</code>的档名，这个设定就很重要了；由索引模版所产生出来的档案会被放在<code>本机站台路径</code>底下，档案名称就是你在此所设定的名称，其它读者则可以由<code>站台网址</code>来读取这个档案。一旦你修改了这一栏的设定值，原先的档案并不会消失，但是更新过后的档案却会使用你新设定的名称；这意味著你得记得一并修改相关的其它档案或模版，读者们（或搜寻引擎）才不会祇看到老旧不更新的档案。</p>
+<p>接下来还有一个「<code>重建索引模版时自动重建此模版</code>」的核选框，预设是核选著的，表示每当你的索引模版需要更新（像是新增了文章、或储存了文章修改）时，这个模版也会被一并重建成档案。如果你的模版并不会跟文章扯上关系，例如祇是单纯的样式表，那么你大可取消核选这个核选框，如此一来就可以减少系统每次需要重建的档案数量，而降低系统负担。</p>
+<p>「<code>将此模版连结到档案</code>」是一个进阶的功能，让你把这个模版内容实际存放到服务器上的某个档案；藉由这个功能，你就能够让好几份网志使用完全相同的模版，而且它们也都会同步更新。不过这个功能也很有可能相当具有危险性 ─ 因为你可以以此开启系统里的某个特定档案，并且加以修改覆写。如果你没有这么复杂的需求，也不懂系统上各个目录里的东西的话，建议你还是空著别动。</p>
+<p>最大的那一个字段就是实际的模版内容了。你可以在此任意地编辑修改模版内容。一旦你修改了模版内容或者是上述的其它字段后，别忘了还要按下「<code>储存</code>」按钮，才会把你所做的变更储存回数据库；接著你还得按下「<code>重建</code>」按钮，才能以更新过的模版内容，制作新的静态页面档案。</p>
+<p><div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_07.png" alt="模版名称"><br />图八：可加以编辑的「模版名称」字段。</div><div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_08.png" alt="输出档案"><br />图九：可加以修改的「输出档案」字段。</div><div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_09.png" alt="「重建索引模版时自动重建此模版」核选框"><br />图十：「重建索引模版时自动重建此模版」核选框。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_10.png" alt="「将此模版连结到档案」字段"><br />图十一：「将此模版连结到档案」字段。</div><div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_11.png" alt="模版本体"><br />图十二：模版本体。</div><div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_12.png" alt="「储存」按钮"><br />图十三：「储存」按钮。</div><div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_index_13.png" alt="「重建」按钮"><br />图十四：「重建」按钮。</div></p>
+<p>Movable Type 预设的主索引模版里，除了提供几个不同版本及功能的 RSS 模版之外，还有两个可以用 CSS 调整版面的 HTML/XHTML 模版，分别是<code>主索引</code>模版以及<code>总汇整索引</code>模版。当然还少不了那个用来调整版面的 CSS 模版：<code>样式表</code>模版。</p>
+<p>首先我们要来讲讲这个 HTML/XHTML 的部分。虽然说，有了 CSS 之力，你可以随意地安置各个组件，几乎可以不要考虑他们的先后关联，都有办法做出整齐漂亮的版面；但是在这里仍旧要强调，<strong>逻辑清晰的 HTML/XHTML 才是建构优良页面的基础</strong>。</p>
+<p>为什么呢？有几个主要原因：</p>
+<p><ul>
+  <li>对于其它祇读取 HTML/XHTML 的浏览器来说，你所安排的组件顺序几乎就等同于他们所能取得信息的顺序。</li>对于那些因故无法使用你我所熟知的浏览器的读者来说，他们可能得仰赖其它科技的帮助，或者把网页内容逐一转换成点字、或者改以语音的方式逐一朗诵出来。在这种情况下，如果你的 HTML/XHTML 撰写得调理分明、层次清晰的话，也将能提供他们更多的语境线索。
+  <li>群组管理，维护方便。</li>把相关的组件放在一起，就可以很方便地套上相同的样式；同时在 HTML/XHTML 源码及网页实际输出上取得相似性的话，也比较能方便你日后加以维护修改的工作。
+</ul></p>
+<p>切记，编撰 HTML/XHTML 模版的时候，你应当扬弃以往使用表格来排版的方式，而把排版的工作留给 CSS 来处理。表格应该祇在真的是「表格」的情况下才使用。</p>
+<p>撰写 HTML/XHTML 模版的时候，你可能会需要具备基本的 HTML/XHTML 能力，另外可以参考 <a href="http://mtbook.org/mtmanual_tags.html">Movable Type 使用手册：模版卷标</a>来插入其它 MT 卷标；如果你之前也有使用过其它的网志系统或者出版管理系统，而且也用那些系统制作过模版的话，你也许会想参考一下 <a href="http://mtbook.org/mttags.html">Movable Type 模版</a>；这份文件里有对于不同系统间模版差异的解释，也有著简单的模版作用机制说明，对于编撰模版来说，一定有所帮助。</p>
+<p>如果想要做出比好还要好的 HTML/XHTML 模版，也应该留意 Accessibility(亲和力/无障碍) 的议题。你可以看一下 <a href="http://www.w3.org/WAI/Overview.html">W3C Web Accessibility Initiative</a> 的内容（有人正在把它翻译成<a href="http://www2.csj.ks.edu.tw/~tch023/accessibility/overint.htm">中文版</a>）；另外也有几份不错而简短的文件该读一读，像是我跟 <a href="http://ccca.nctu.edu.tw/~hlb/articles/index.html">hlb</a> 翻译完的 <a href="http://dia.z6i.org">Dive Into Accessibility （深入亲和力）</a>就是一本分量轻薄的小书，可以帮助你在三十天内让 Movable Type 做出来的网页更棒。</p>
+<p>当你写出 HTML/XHTML 模版后，也可以用 <a href="http://validator.w3.org/">W3C MarkUp Validation Service</a> 来验证看看是不是有语法上的瑕疵；通常要修改这些瑕疵都会耗上大量的时间精力，但是却可以帮助你把 HTML/XHTML 写得更合逻辑；事实上，这也可以锻鍊你的 HTML/XHTML 功力。</p>
+<p>CSS 是另外一门大学问；举凡字形变化、边框留白、颜色图片乃至于光标音效，都几乎可以透过 CSS 来达成。除此之外，可重复利用也是另一个 CSS 的特色；祇要你规划得当，就可以让同一类的 HTML/XHTML 组件去取用相同的属性变化，毫不罗唆。</p>
+<p>网络上可以找到的中文 CSS 相关文件不特别多，不过你可以从 <a href="http://ccca.nctu.edu.tw/~hlb/articles/index.html">hlb</a> 翻译的<a href="http://ccca.nctu.edu.tw/~hlb/trans/practicalcss/">CSS实务排版技巧、秘诀与技术</a>开始著手。大致上当你一开始祇能够修改既有的 CSS 档案时，你可以这么做：</p>
+<p><ul>
+  <li>从 HTML 模版里找出要修改的组件</li>这个组件通常会被包在 <strong>&lt;div&gt;</strong> 和 <strong>&lt;/div&gt;</strong> 卷标之间，所以你可以在 <strong>&lt;div&gt;</strong> 卷标里找到像是 <strong>class=&quot;divclass&quot;</strong> 或是 <strong>id=&quot;divid&quot;</strong> 这样的属性。有的时候这样的属性是放在 &lt;img&gt; 卷标里或是其它地方，请自行判断。
+  <li>到 CSS 模版里找到相对应的 class 或 id</li>如果是 id ，那么在 CSS 里面就会是像 <strong>#divid</strong> 命名的区块；如果是 class ，那么在 CSS 里面就会是像 <strong>.divclass</strong> 命名的区块。如果多个 class 使用相同的属性，也可以用 <strong>.divclass1, .divclass2, .divclass3</strong> 这样子的方法来群组 class 。
+  <li>修改 CSS 属性</li>每一个 CSS 区块都会以 <strong>{</strong> 开头、以 <strong>}</strong> 结束，其中列著许多属性，每一个属性后面都会有 <strong>:</strong> ，然后才是列著多个不同的参数值，再以 <strong>;</strong> 来结束对这一个属性的设定；参数值之间则是以空白来分隔。
+</ul></p>
+<p>另外一个 CSS 的重点是在于栏框的阶层。 CSS 中任何组件预设都是「占满可用空间」的，如果你要更动占用空间的尺寸、位置的话，就得留意这个「<strong>页(page) ─ 格(box) ─ 栏(margin) ─ 框(border) ─ 留白(padding) ─ 内容物</strong>」的先后关系：</p>
+<p><ul>
+  <li><strong>页(page)</strong>是最大的单位，也是几乎不能够调整的。整个浏览器的可视范围就是一个<strong>页</strong>；所以你不可能同时使用多个页。</li>
+  <li>一页里面可以有好几个<strong>格(box)</strong>；通常你可以直接使用像是 <strong>top</strong>, <strong>bottom</strong>, <strong>left</strong>, <strong>right</strong> 这样的属性来指定<strong>格</strong>的四个边界；这些数值都会直接参照页的四个边界来计算。</li>
+  <li>一格里面还可以有好几个<strong>栏(margin)</strong>；通常你可以用像是 <strong>margin-top</strong>, <strong>margin-bottom</strong>, <strong>margin-left</strong>, <strong>margin-right</strong> 这样的属性来指定<strong>栏</strong>的四个边界；这些数值都会参照这个栏所在的<strong>格</strong>的四个边界来计算。</li>
+  <li>每个栏都还可以加<strong>框(border)</strong>，你可以用 <strong>border</strong> 系列的属性来指定这些框的颜色、样式等。除了加框之外，框线往内还可以<strong>留白(padding)</strong>；通常你可以用像是 <strong>padding-top</strong>, <strong>padding-bottom</strong>, <strong>padding-left</strong>, <strong>padding-right</strong> 这样的属性来指定四边各要留多少空间，其内剩下来的区域才是内容物所会占用的空间。</li>
+</ul></p>
+<p>通常当你很高兴地安排完一整套的 CSS 栏框排版之后，很有可能出乎意料（或意料之中？）地发现，浏览器所画出来的样子跟你原先所设想的完全不同！所以在尝试及除错的阶段，你可以先<strong>暂时</strong>地使用粗而明显的边框，来观察看看到底浏览器把你的栏框放到哪里去了。以下是一个除错用边框的范例：<pre>border: red solid 10px;</pre></p>
+<p>你可以等位置摆对了之后，再把这个边框改回你想要的样子（或者把它去掉，如果你不想要有边框的话）。</p>
+<p>大致说来，你可以任意地把玩 CSS 的各种属性，无须担心会损毁你的内容跟架构。所以，尽情享乐吧！</p>
+<p>当你写出 CSS 模版后，也可以用 <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a> 来验证看看是不是有语法上的瑕疵。好消息是，这应该会比 HTML/XHTML 的验证容易通过得多了。</p>
+<p>另外还有一个坏消息：目前号称市场占有率最高的 <acronym title="Internet Explorer">IE</acronym> 实际上对于 W3C CSS 的实做程度却最低；所以你可能祇需要花 20% 的时间就可以做出漂亮的版面，却要再花上 80% 的时间来处理 IE 的兼容性。事情当然还可以更糟，几个月前微软的 IE 团队表示，三年内将不会有任何 IE 的更新档出现，因此这些问题在接下来的几年内也都不会被解决掉。</p>
+<p>额外给华文世界使用者的信息： KKMan 的结果会更糟。</p>
+<p>至于 <acronym title="Resource Description Framework">RDF</acronym> 的用途是用来描述你所能够提供给其它人的信息有哪些用的。透过 RDF 的架构，你才可以使用 <acronym title="RDF Site Summary">RSS</acronym> 来跟其它站台串联汇整。</p>
+<p>如果你对此毫无理解，那倒也没有关系；因为 MT 内附的 RDF 模版其实已足堪用了。你唯一应当注意的事情是，确定里面关于内容语言的描述是否正确。如果你的网志内容是繁体中文，请确定你用了 <strong>&lt;dc:language&gt;zh-tw&lt;/dc:language&gt;</strong>(RSS 1.0)  或 <strong>&lt;language&gt;zh-tw&lt;/language&gt;</strong>(RSS 0.91)。</p>
+<p>至于更深入的细节，则建议可以参考一下 <a href="http://www.w3.org/RDF/">Resource Description Framework (RDF) / W3C Semantic Web Activity</a> 以及 <a href="http://web.resource.org/rss/1.0/">RDF Site Summary (RSS) 1.0</a></p>
+<p>实际上 RDF 的门派版本相当分歧杂乱，真的打算开始摸索的朋友恐怕得先有点心理准备才行。</p>
+<h3><a id="structure_archive"></a>汇整相关模版</h3>
+<p>在<code>列出模版</code>画面的第二区里，列出的是汇整相关模版。你可以点击<code>模版名称</code>字段里的任何一个，就能够加以编辑该模版；你也可以利用<code>删除</code>核选框以及<code>删除</code>按钮来删除不再使用的模版，或者是点击「<code>建立新的汇整模版</code>」链结来新增新的汇整相关模版。</p>
+<p><div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_01.png" alt="汇整相关模版"><br />图十五：汇整相关模版。</div><div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_02.png" alt="模版名称"><br />图十六：模版名称。</div><div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_03.png" alt="删除核选框及删除按钮"><br />图十七：删除核选框及删除按钮。</div><div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_04.png" alt="「建立新的汇整模版」链结"><br />图十八：「建立新的汇整模版」链结。</div></p>
+<p>当你新增或编辑汇整相关模版的时候，首先能够修改这个模版的<code>模版名称</code>，这个名称祇是用来显示用的，所以你大可把好几个模版都取做相同的名字 ─ 祇要你自己不会弄混就好。</p>
+<p>跟索引模版不同的地方在于你并不能修改<code>输出档案</code>的档名，各种汇整档案的档名是在<code>网志组态</code>的画面里设定的，请参考<a href="cn_mtbook_archive.html#filename">第八章</a>的介绍。</p>
+<p>「<code>将此模版连结到档案</code>」是一个进阶的功能，让你把这个模版内容实际存放到服务器上的某个档案；藉由这个功能，你就能够让好几份网志使用完全相同的模版，而且它们也都会同步更新。不过这个功能也很有可能相当具有危险性 ─ 因为你可以以此开启系统里的某个特定档案，并且加以修改覆写。如果你没有这么复杂的需求，也不懂系统上各个目录里的东西的话，建议你还是空著别动。</p>
+<p>最大的那一个字段就是实际的模版内容了。你可以在此任意地编辑修改模版内容。一旦你修改了模版内容或者是上述的其它字段后，别忘了还要按下「<code>储存</code>」按钮，才会把你所做的变更储存回数据库。</p>
+<p><div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_05.png" alt="「模版名称」字段"><br />图十九：可加以编辑的「模版名称」字段。</div><div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_06.png" alt="「将此模版连结到档案」字段"><br />图二十：「将此模版连结到档案」字段。</div><div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_07.png" alt="模版本体"><br />图二十一：模版本体。</div><div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_archive_08.png" alt="「储存」按钮"><br />图二十二：「储存」按钮。</div></p>
+<p>Movable Type 一开始就提供的三个汇整相关模版分别是<code>分类汇整</code>模版、<code>单篇汇整</code>模版和<code>按时汇整</code>模版。顾名思义，前两个模版分别是拿来给<a href="cn_mtbook_archive.html#type_category">分类汇整</a>以及<a href="cn_mtbook_archive.html#type_individual">单篇汇整</a>用的，而第三个模版则可以适用于<a href="cn_mtbook_archive.html#type_timebased">逐月汇整、逐周汇整以及逐日汇整</a>。
+<h3><a id="structure_others"></a>其它模版</h3>
+<p>在<code>列出模版</code>画面的第三区里，列出的是其它模版。你可以按下各个模版前面的<code>编辑</code>按钮，来加以编辑该模版；这一区的模版都有特定的功能，因此你既不能删除任何一个，也无法新增这类的模版。</p>
+<p><div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_01.png" alt="其它模版"><br />图二十三：其它模版。</div><div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_02.png" alt="其它模版的「编辑」按钮"><br />图二十四：其它模版的「编辑」按钮。</div></p>
+<p>这一类的模版都是固定的，因此你也不能够更改各个模版的名称 ─ 它们从存在之时就被赋予特殊的用途了，因此你不能随意地修改。</p>
+<p>「<code>将此模版连结到档案</code>」是一个进阶的功能，让你把这个模版内容实际存放到服务器上的某个档案；藉由这个功能，你就能够让好几份网志使用完全相同的模版，而且它们也都会同步更新。不过这个功能也很有可能相当具有危险性 ─ 因为你可以以此开启系统里的某个特定档案，并且加以修改覆写。如果你没有这么复杂的需求，也不懂系统上各个目录里的东西的话，建议你还是空著别动。</p>
+<p>最大的那一个字段就是实际的模版内容了。你可以在此任意地编辑修改模版内容。一旦你修改了模版内容或者是上述的其它字段后，别忘了还要按下「<code>储存</code>」按钮，才会把你所做的变更储存回数据库。</p>
+<p><div class="img"><a id="img_25"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_03.png" alt="「模版名称」不能加以编辑"><br />图二十五：「模版名称」是固定的，无法加以编辑。</div><div class="img"><a id="img_26"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_04.png" alt="「将此模版连结到档案」字段"><br />图二十六：「将此模版连结到档案」字段。</div><div class="img"><a id="img_27"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_05.png" alt="模版本体"><br />图二十七：模版本体。</div><div class="img"><a id="img_28"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_other_06.png" alt="「储存」按钮"><br />图二十八：「储存」按钮。</div></p>
+<p>这里总共有五个模版。<code>回响清单模版</code>是用来制作动态回响清单的模版；<code>回响预览模版</code>所制作的动态页面，也就是读者预览她们即将发表的回响时，所看到的页面；<code>回响出错模版</code>则会决定当读者发表评论出错的时候，要看到的错误讯息页面的样子；<code>引用清单模版</code>则是用来制作列出某篇文章的引用清单的动态页面的模版；至于<code>弹出已上传图片模版</a>则是搭配<a href="cn_mtbook_entry.html#upload_imagenewentry_popup">上传图片并做成弹出式图片</a>的功能的模版。</p>
+<h3><a id="structure_module"></a>模版模块</h3>
+<p>在<code>列出模版</code>画面的最后一区里，列出的是模版模块。你可以点击<code>模版名称</code>字段里的任何一个，就能够加以编辑该模版；你也可以利用<code>删除</code>核选框以及<code>删除</code>按钮来删除不再使用的模版，或者是点击「<code>建立新的模版模块</code>」链结来新增新的模版模块。</p>
+<p><div class="img"><a id="img_29"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_01.png" alt="模版模块"><br />图二十九：模版模块。</div><div class="img"><a id="img_30"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_02.png" alt="模版模块的「模版名称」字段"><br />图三十：模版模块的「模版名称」字段。</div><div class="img"><a id="img_31"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_03.png" alt="没有内容的，模版模块的删除核选框及删除按钮"><br />图三十一：模版模块的删除核选框及删除按钮，现在因为没有东西，所以你看不到核选框。</div><div class="img"><a id="img_32"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_04.png" alt="「建立新的模版模块」链结"><br />图三十二：「建立新的模版模块」链结。</div></p>
+<p>当你新增或编辑模版模块的时候，你也能够修改这个模版的<code>模版名称</code>，这个名称却不祇是用来显示用而已，它们都会被拿来用于 <a href="#item_MTInclude"><code>&lt;MTInclude&gt;</code> 卷标</a>的 <code>module</code> 属性，所以你最好乖乖祇使用英文字母跟数字来当作模版名称，而且连特殊符号也避免使用会比较好。当然名称也就不能重复使用了。</p>
+<p>「<code>将此模版连结到档案</code>」是一个进阶的功能，让你把这个模版内容实际存放到服务器上的某个档案；藉由这个功能，你就能够让好几份网志使用完全相同的模版，而且它们也都会同步更新。不过这个功能也很有可能相当具有危险性 ─ 因为你可以以此开启系统里的某个特定档案，并且加以修改覆写。如果你没有这么复杂的需求，也不懂系统上各个目录里的东西的话，建议你还是空著别动。</p>
+<p>最大的那一个字段就是实际的模版内容了。你可以在此任意地编辑修改模版内容。一旦你修改了模版内容或者是上述的其它字段后，别忘了还要按下「<code>储存</code>」按钮，才会把你所做的变更储存回数据库。</p>
+<p><div class="img"><a id="img_33"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_05.png" alt="「模版名称」字段"><br />图三十三：可加以修改的「模版名称」字段。</div><div class="img"><a id="img_34"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_06.png" alt="「将此模版连结到档案」字段"><br />图三十四：「将此模版连结到档案」字段。</div><div class="img"><a id="img_35"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_07.png" alt="模版本体"><br />图三十五：模版本体。</div><div class="img"><a id="img_36"></a><img src="http://junnie.3322.org/bookimg/mttemplate_structure_module_08.png" alt="「储存」按钮"><br />图三十六：「储存」按钮。</div></p>
+<p>一开始 Movable Type 并没有提供任何预先建立好的模版模块的，这是因为 Movable Type 希望一开始不要把事情弄得太复杂 ─ 可不是每个人都能够无痛接受「模版」的观念。但是随著你的模版越写越复杂，你会开始发现有一些重复的片段反覆出现在多个模版里，这时候就是「模版模块」派上用场的时候了。</p>
+<p>你可以把这些完全相同的片段抽出来，放到模版模块里，再把 <a href="#item_MTInclude"><code>&lt;MTInclude&gt;</code> 卷标</a>放进原来这些片段会出现的地方。从此之后你祇要修改这个模版模块，再重建所有的档案，就可以一次更新众多模版以及跟它们有关的静态页面档案。</p>
+<p>这么一来，无论是要维护更新模版或是挪动各个组件在某个模版里的顺序，都将无比容易。</p>
+<h3><a id="structure_search"></a>搜寻模版</h3>
+<p>搜寻模版跟 Movable Type 里的其它模版管理起来并不同，因为他们并非依网志为准的，所以放在编辑选单的『模版』区段中反而没有意义。搜寻模版实际上是一些放在你的 <i>search_templates/</i> 目录中的档案；这个目录应该会跟 <i>mt.cgi</i> 位于同一个位置。</p>
+<p>对于 Windows 的使用者来说，这些<code>搜寻模版</code>应该位于像是 <code>C:\Program Files\OurInternet\Movable Type\mt\search_templates\</code> 的数据夹里面；对于 UN*X 的使用者来说，则可能位于像是 <code>/usr/local/www/cgi-bin/mt/search_templates/</code> 的路径里。</p>
+<p>在你的搜寻模版中，你可以用<a href="#tags_search_results">一些特殊的模版卷标集合</a>来显示搜寻结果。不过你几乎也可以用其它的 Movable Type 卷标；不过当然你还是得要尊重整体的脉络。除此之外，因为你的搜寻结果页面是动态随著每一次有人搜寻你的站台时所产生的，所以你应该要避免使用那些会消耗服务器大量资源来重建的卷标（像是 <code>&lt;MTArchiveList&gt;</code> 或 <code>&lt;MTCalendar&gt;</code> ）。</p>
+<p>你也可以在你的搜寻模版中使用 <code>&lt;MTInclude&gt;</code> 卷标，来包含某个搜寻模块或外部档案。你甚至可以把某个网志当作是前后文（因为模版模块会依各个网志而存），然后在 <code>&lt;MTSearchResults&gt;</code> 容器之外这么用这个卷标。不过我们仍然要警告你不要轻易使用这种方法，尤其是你有多重网志的时候更是如此。例如说，如果你在某个模版中用了<pre>&lt;$MTInclude module=&quot;Header&quot;$&gt;</pre></p>
+<p>那么系统就会知道它所要找的模块名为 <code>Header</code> 。如果搜寻结果是找到了，会很简单地把网志按照字母顺序列出；反之要是没有找到， Movable Type 就会试著从你的数据库里加载某个网志（被选择的网志则没有定义）。</p>
+<p>在 Movable Type 的预设模版中包含有一个简单的搜寻表单来搜寻你的站台，它看起来像这样：<pre>&lt;form method=&quot;get&quot; action=&quot;&lt;$MTCGIPath$&gt;&lt;$MTSearchScript$&gt;&quot;&gt;
+&lt;label for=&quot;search&quot; accesskey=&quot;4&quot;&gt;搜寻本站：&lt;/label&gt;&lt;br /&gt;
+&lt;input id=&quot;search&quot; name=&quot;search&quot; size=&quot;20&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;搜寻&quot; /&gt;
+&lt;/form&gt;</pre></p>
+<p>至于显示所有选项的搜寻表单，看起来可能会像这个样子：<pre>&lt;form method=&quot;post&quot; action=&quot;&lt;$MTCGIPath$&gt;&lt;$MTSearchScript$&gt;&quot;&gt;
+&lt;input size=&quot;30&quot; name=&quot;search&quot; value=&quot;&lt;$MTSearchString$&gt;&quot; /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Search&quot; /&gt;&lt;br /&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;CaseSearch&quot; /&gt; 大小写吻合
+&lt;input type=&quot;checkbox&quot; name=&quot;RegexSearch&quot; /&gt; 使用正规表示式&lt;br /&gt;
+&lt;b&gt;搜寻范围：&lt;/b&gt;
+&lt;input type=&quot;radio&quot; name=&quot;SearchElement&quot; value=&quot;entries&quot; /&gt; 祇有文章项目
+&lt;input type=&quot;radio&quot; name=&quot;SearchElement&quot; value=&quot;comments&quot; /&gt; 祇有评论
+&lt;input type=&quot;radio&quot; name=&quot;SearchElement&quot; value=&quot;both&quot; /&gt; 文章项目和评论 &lt;br /&gt;
+&lt;b&gt;排序字段：&lt;/b&gt;
+&lt;select name=&quot;SearchSortBy&quot;&gt;
+&lt;option value=&quot;created_on&quot;&gt;发表日期&lt;/option&gt;
+&lt;option value=&quot;title&quot;&gt;标题&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+&lt;b&gt;排序方式：&lt;/b&gt;
+&lt;select name=&quot;ResultDisplay&quot;&gt;
+&lt;option value=&quot;ascend&quot;&gt;递增&lt;/option&gt;
+&lt;option value=&quot;descend&quot;&gt;递减&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+&lt;b&gt;排除下列网志：&lt;/b&gt;
+&lt;MTBlogs&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;ExcludeBlogs&quot; value=&quot;&lt;$MTBlogID$&gt;&quot; /&gt; &lt;$MTBlogName$&gt;
+&lt;/MTBlogs&gt;&lt;br /&gt;
+&lt;b&gt;从下列时间范围内搜寻文章项目：&lt;/b&gt;
+&lt;select name=&quot;SearchCutoff&quot;&gt;
+&lt;option value=&quot;9999999&quot;&gt;从头开始&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;从一周前开始&lt;/option&gt;
+&lt;option value=&quot;14&quot;&gt;从两周前开始&lt;/option&gt;
+&lt;option value=&quot;30&quot;&gt;从一个月前开始&lt;/option&gt;
+&lt;option value=&quot;60&quot;&gt;从两个月前开始&lt;/option&gt;
+&lt;option value=&quot;90&quot;&gt;从三个月前开始&lt;/option&gt;
+&lt;option value=&quot;365&quot;&gt;从一年前开始&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+&lt;b&gt;每份网志的搜寻结果上限：&lt;/b&gt;
+&lt;select name=&quot;MaxResults&quot;&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+&lt;option value=&quot;50&quot;&gt;50&lt;/option&gt;
+&lt;option value=&quot;100&quot;&gt;100&lt;/option&gt;
+&lt;option value=&quot;9999999&quot;&gt;无上限&lt;/option&gt;
+&lt;/select&gt;
+&lt;/form&gt;</pre></p>
+<p>这个搜寻表单就可以提供使用者更多改变搜寻参数的控制变项，让她们得以指定像是大小写吻合的属性，或者是以正规表示式来进行搜寻，而非仅祇用布林字符串查询。搜寻也可以被限定在仅祇有项目或评论内（也可以两者均是），请注意，评论搜寻会比文章项目搜寻花去更多的时间和资源。</p>
+<p>上面的表单同时也让使用者在搜寻时可以排除特定的网志，对于那些祇想要搜寻某几个网志的读者来说会很好用。另一个替换<i>排除网志</i>的作法像这样：<pre>&lt;b&gt;包含下列网志：&lt;/b&gt;
+&lt;MTBlogs&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;IncludeBlogs&quot; value=&quot;&lt;$MTBlogID$&gt;&quot; /&gt; &lt;$MTBlogName$&gt;
+&lt;/MTBlogs&gt;&lt;br /&gt;</pre></p>
+<p>基本上这就是跟<i>排除网志</i>完全相反的作法，不过你当然有可能因为任何理由而改采这一种作法。例如说，这样的作法就可以让你祇搜寻特定的网志，而不需要列出一堆要排除掉的网志。你祇需要把这一段加进表单里：<pre>&lt;input type=&quot;hidden&quot; name=&quot;IncludeBlogs&quot; value=&quot;&lt;$MTBlogID$&gt;&quot; /&gt;</pre></p>
+<p><code>&lt;$MTBlogID$&gt;</code> 总是对应到现用的网志，所以这个搜寻祇会被限制在目前被浏览的网志里。</p>
+<p>上面的范例是一个直接搜寻的例子，完整的新评论搜寻表单看起来应该像这样：<pre>&lt;form method=&quot;post&quot; action=&quot;&lt;$MTCGIPath$&gt;&lt;$MTSearchScript$&gt;&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;Type&quot; value=&quot;newcomments&quot; /&gt;
+&lt;b&gt;排除下列网志：&lt;/b&gt;
+&lt;MTBlogs&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;ExcludeBlogs&quot; value=&quot;&lt;$MTBlogID$&gt;&quot; /&gt; &lt;$MTBlogName$&gt;
+&lt;/MTBlogs&gt;&lt;br /&gt;
+&lt;b&gt;从下列时间范围内搜寻文章项目：&lt;/b&gt;
+&lt;select name=&quot;CommentSearchCutoff&quot;&gt;
+&lt;option value=&quot;9999999&quot;&gt;从头开始&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;从一周前开始&lt;/option&gt;
+&lt;option value=&quot;14&quot;&gt;从两周前开始&lt;/option&gt;
+&lt;option value=&quot;30&quot;&gt;从一个月前开始&lt;/option&gt;
+&lt;option value=&quot;60&quot;&gt;从两个月前开始&lt;/option&gt;
+&lt;option value=&quot;90&quot;&gt;从三个月前开始&lt;/option&gt;
+&lt;option value=&quot;365&quot;&gt;从一年前开始&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+&lt;b&gt;文章项目搜寻结果上限：&lt;/b&gt;
+&lt;select name=&quot;MaxResults&quot;&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+&lt;option value=&quot;50&quot;&gt;50&lt;/option&gt;
+&lt;option value=&quot;100&quot;&gt;100&lt;/option&gt;
+&lt;option value=&quot;9999999&quot;&gt;无上限&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;寻找新回响&quot; /&gt;
+&lt;/form&gt;</pre></p>
+<p>如果你准备了多个不同的搜寻模版，那么首先你得用任何文字编辑器开启你的 <i>mt.cfg</i> 档案，然后用 <i>AltTemplate</i> 指令来组态替换模版。例如说，如果你有两份网志（ <code>Work</code> 和 <code>Play</code> ），而且你想要让你的网志有自己的模版，你可能会加上这些东西：<pre>AltTemplate work work.tmpl
+AltTemplate play play.tmpl</pre></p>
+<p>接下来你还得修改既有网志的模版，让它们在建造搜寻页面的时候也使用特定模版；你可以用一个隐藏的表单输入。例如说你就可以把下列的搜寻表单加入你的 <code>Work</code> 网志：<pre>&lt;input type=&quot;hidden&quot; name=&quot;Template&quot; value=&quot;work&quot; /&gt;</pre></p>
+<p><strong>注意：</strong>如果你祇想要把搜寻范围限定在祇有一个网志内，你也许也会想要在表单里加上：<pre>&lt;input type=&quot;hidden&quot; name=&quot;IncludeBlogs&quot; value=&quot;&lt;$MTBlogID$&gt;&quot; /&gt;</pre></p>
+<p>同样地，别忘了在你的<code>搜寻模版</code>里也应该做类似的调整，否则当使用著接下去搜寻的时候，就会发现搜寻结果页面的样子又变了！</p>
+<h2><a id="tag"></a>模版卷标</h2>
+<p>以下我们将先为各位概略描述用于 Movable Type 的模版卷标。</p>
+<h3><a id="tag_philosophy"></a>模版和卷标哲学</h3>
+<p>在 Movable Type 的模版卷标背后，有两个主要的概念：</p>
+<p><ul>
+  <li>情境是决定能否使用特定卷标的关键。</li>
+  <li>容器卷标代表著清单及条件，而变数卷标则代表著变数替换。</li>
+</ul></p>
+<p>祇要你掌握住这两个概念，所有的卷标对你来说就都不是难题了。</p>
+<h3><a id="tag_types"></a>卷标种类</h3>
+<p>Movable Type 的模版卷标可以分为两类 ─ 容器和变数：</p>
+<h4><a id="tag_types_container"></a>容器卷标</h4>
+<p>有些 MT 卷标是『容器』卷标，里面可能装有被称为子模版的东西；其实就是一些文字片段和 MT 卷标，然后被包在另外两个 MT 卷标：容器的开头和容器的结尾之间。举例来说，如果有个叫做 <code>&lt;MTFoo&gt;</code> 的卷标，那么你也许会在你的模版里看到下列的组成组件：<pre>&lt;MTFoo&gt;
+Foo bar
+&lt;/MTFoo&gt;</pre></p>
+<p>这个容器的开头卷标和结尾卷标看起来都很像标准的 HTML 卷标。</p>
+<p>容器卷标可能代表著一份清单或者是一种条件。</p>
+<p>如果容器代表著一份清单 ─ 例如像是 <code>&lt;MTEntries&gt;</code> 卷标 ─ 那么容器内的子模版将会套用于清单上的每一项。举例来说，如果你用了一个 <code>&lt;MTEntries&gt;</code> 卷标，那么在 &lt;MTEntries&gt; 卷标和 &lt;/MTEntries&gt; 卷标间的组成组件就会套用在清单上的每一则文章项目。</p>
+<p>如果容器代表著一种条件 ─ 例如像是 <code>&lt;MTEntryIfExtended&gt;</code> 卷标 ─ 那么开头卷标和结尾卷标间的组成组件就祇有<i>当</i>条件吻合时才会显示。举例来说，在 <code>&lt;MTEntryIfExtended&gt;</code> 的情况下，条件考验著是否文章项目有延伸的部分（『更多文字』）。</p>
+<h4><a id="tag_types_variable"></a>变数卷标</h4>
+<p>所有的非容器卷标通通都是单纯的变数替换卷标。它们其实是信息动态片段的位置保留器。举例来说， <code>&lt;$MTEntryTitle$&gt;</code> 卷标就会被文章项目的标题代换掉。</p>
+<h3><a id="tag_syntax"></a>卷标语法</h3>
+<p>所有的 Movable Type 卷标都被包在小于和大于符号之间，就跟 HTML 卷标一样。你可以选择在这些标志里插入 <code>$</code> ，就像这样：<pre>&lt;$MTEntryBody$&gt;</pre></p>
+<p>透过这个技巧，你就能够迅速地判断某个卷标到底是 HTML 卷标还是 Movable Type 卷标。</p>
+<p>这个 <code>$</code> 是选用性的；惯例上所有的预设模版和文件里都会把变数卷标加上 <code>$</code> ，但是并不会加进容器卷标里。一部份的原因是因为你<i>不</i>该在容器卷标的结尾卷标里用这个 <code>$</code> ，否则系统就会找不到结尾卷标。</p>
+<h3><a id="tag_attributes"></a>卷标属性</h3>
+<p>有些 Movable Type 卷标会透过属性来修改他们的预设作用。卷标属性的作用就跟 HTML 卷标的属性很像：他们是一连串的 <code>name=&quot;value&quot;</code> 配对，以空白隔开。举例来说：<pre>&lt;MTEntries author=&quot;Foo&quot; category=&quot;Bar&quot;&gt;</pre></p>
+<p>属性的值必须被包在引号中；否则就无法被正确地解读。当你在卷标中加入 <code>$</code> 时，必须把这个字符放在卷标的开始之后、结束之前；然后当你要在这样的卷标中加入卷标属性时，你得把这些属性放在卷标结尾的 <code>$</code> 字符之前。像是：<pre>&lt;$MTEntryDate format=&quot;%B %e, %Y&quot;$&gt;</pre></p>
+<h3><a id="tag_context"></a>情境</h3>
+<p>大部分的 Movable Type 卷标都是仰赖情境的，这表示这些卷标祇应该在适当的情境中被使用。</p>
+<p>情境通常都是由附近的模版或者是附近的容器卷标所决定的：举例来说，模版组成组件若被放在 <code>&lt;MTEntries&gt;</code> 卷标里、在<code>单篇</code>汇整页面里、在<code>回响清单</code>模版里或者在<code>回响预览</code>模版里的时候，就是在文章项目情境里。因为这样，所以在这些情境中使用 <code>&lt;$MTEntryTitle$&gt;</code> 卷标或 <code>&lt;MTComments&gt;</code> 容器时才有意义。</p>
+<h2><a id="tags"></a>卷标索引</h2>
+<p>以下我们将分类列出所有能用于 Movable Type 模版里的卷标：</p>
+<h3><a id="tags_weblog_data"></a>网志数据</h3>
+<p><ul>
+  <li><a id="item_MTBlogs"></a><strong>MTBlogs</strong><br />这是一个会列出系统上所有网志的容器卷标，会囊括所有你（也就是可以编辑模版、重建档案的人）可以存取的、以及所不可以存取的网志。你可以在这个容器卷标里使用任何的 <code>&lt;$MTBlog*$&gt;</code> 卷标。</li>
+  <li><a id="item_MTBlogID"></a><strong>MTBlogID</strong><br />你的网志的数字型 ID 。</li>
+  <li><a id="item_MTBlogName"></a><strong>MTBlogName</strong><br />你的网志名称，也就是会显示在网志组态画面上的那一个。</li>
+  <li><a id="item_MTBlogDescription"></a><strong>MTBlogDescription</strong><br />你的网志描述，也就是会显示在网志组态画面上的那一个。</li>
+  <li><a id="item_MTBlogURL"></a><strong>MTBlogURL</strong><br />你的网志的绝对网址，也就是会显示在网志组态画面上的那一个。</li>
+  <li><a id="item_MTBlogArchiveURL"></a><strong>MTBlogArchiveURL</strong><br />你的网志的<code>汇整网址</code>，也就是会显示在网志组态画面上的那一个。</li>
+  <li><a id="item_MTBlogRelativeURL"></a><strong>MTBlogRelativeURL</strong><br />你的网志的相对网址，就跟从网志组态画面上<i>站台网址</i>所取得的一样。这对于建立临时站台来说非常好用，因为你并不需要把任何网址写死在你的模版中。</li>
+  <li><a id="item_MTBlogSitePath"></a><strong>MTBlogSitePath</strong><br />你的网志的<i>本机站台路径</i>，也就是会显示在网志组态画面上的那一个。</li>
+  <li><a id="item_MTBlogHost"></a><strong>MTBlogHost</strong><br />你的网志绝对网址的主机名称部分。举例来说，如果你的<code>站台网址</code>（在网志组态画面里的那一个）是 <i><a href="http://www.your-site.com/blog/">http://www.your-site.com/blog/</a></i> ，那么主机名称部分就会是 <code>www.your-site.com</code> 。</li>
+  <li><a id="item_MTBlogTimezone"></a><strong>MTBlogTimezone</strong><br />你为网志所选择的时区，会被表示成从 UTC <code>+|-hh:mm</code> 的格式。例如说，领先 UTC <code>4</code> 小时的时区，就会被显示成 <code>+04:00</code> 。</li>
+  <li><a id="item_MTBlogEntryCount"></a><strong>MTBlogEntryCount</strong><br />网志的文章项目数量。</li>
+  <li><a id="item_MTBlogCommentCount"></a><strong>MTBlogCommentCount</strong><br />网志的评论数量。</li>
+  <li><a id="item_MTBlogCCLicenseURL"></a><strong>MTBlogCCLicenseURL</strong><br />对应到你所选择的创意公用授权条款信息的网址。</li>
+  <li><a id="item_MTCCLicenseRDF"></a><strong>MTCCLicenseRDF</strong><br />这会产生一份利于程序阅读的 RDF ，内容就是你所选择的创意公用授权条款。<br />这个卷标的作用会依情境而异：如果你把它用于文章情境的话，这份 RDF 就会包含跟这篇文章有关的额外信息；否则它就祇会包含整体性的网志信息。</li>
+  <li><a id="item_MTBlogIfCCLicense"></a><strong>MTBlogIfCCLicense</strong><br />这个容器卷标里的部分，祇有当你在网志组态中选择了创意公用授权条款后，才会被显示出来。</li>
+</ul></p>
+<h3><a id="tags_entry_listings_archive_pages"></a>文章项目列示/汇整页面</h3>
+<p><ul>
+  <li><a id="item_MTEntries"></a><strong>MTEntries</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照网志上的文章项目清单。实际的文章清单可拿选用的属性来加以配置；预设值是显示最新 <code>N</code> 天的文章项目，这里的 <code>N</code> 就是你在这个网志的组态中所设定的天数。当你要改变这个作用的时候，你可以加上下列的属性：</li>
+  <ul>
+    <li><a id="item_lastn"></a><strong>lastn=&quot;N&quot;</strong><br />显示这份网志上最新的 <code>N</code> 篇文章项目；这里的 <code>N</code> 是某个大于 0 的数字。</li>
+    <li><a id="item_offset"></a><strong>offset=&quot;M&quot;</strong><br />当这个属性跟 <code>lastn</code> （如前述）一起用的时候，就先从头数最新的 <code>M</code> 篇文章项目，然后才显示接在之后的 <code>N</code> 篇文章。举个例子来说，如果你用了下列的卷标：<pre>&lt;MTEntries lastn=&quot;5&quot; offset=&quot;5&quot;&gt;
+...
+&lt;/MTEntries&gt;</pre>那么就会显示第 6 到第 10 篇文章项目。<br /><strong>注意：</strong>祇有跟 <code>lastn</code> 一起用的时候才有效。</li>
+    <li><a id="item_category"></a><strong>category=&quot;类别名称&quot;</strong><br />显示在<code>类别名称</code>这个类别中的所有文章。请注意这很有可能会是一长串文章，所以你应该会想要再加上 <code>lastn</code> 来限定显示文章的篇数。<br />如果你想要从多个类别里把文章项目抓出来，或者是祇限定那些被指定到多个类别的文章时， <code>类别名称</code> 也可以包含 <code>AND</code> 和 <code>OR</code> 这两个布林逻辑算符。但是请注意，你祇能用其中的一个；也就是说，你没办法用 <code>Foo AND Bar OR Baz</code> ─ 这是行不通的！你祇能用 <code>Foo AND Bar AND ...</code> 或者 <code>Foo OR Bar OR ...</code> 。<br />再举一个例子说明，如果你想要列出所有同时被指定到 <code>Foo</code> 和 <code>Bar</code> 这两个类别的文章项目，你可以用：<pre>&lt;MTEntries category=&quot;Foo AND Bar&quot;&gt;
+...
+&lt;/MTEntries&gt;</pre></li>
+    <li><a id="item_author"></a><strong>author=&quot;作者姓名&quot;</strong><br />依照作者的<code>作者姓名</code>显示所有的文章。请注意这很有可能会是一长串文章，所以你应该会想要再加上 <code>lastn</code> 来限定显示文章的篇数。</li>
+    <li><a id="item_days%3D%22N%22"></a><strong>days=&quot;N&quot;</strong><br />显示所有 <code>N</code> 天之内的文章。</li>
+    <li><a id="item_recently_commented_on"></a><strong>recently_commented_on=&quot;N&quot;</strong><br />显示最新 <code>N</code> 篇有人发表评论的文章项目。每一则文章项目都祇会出现一次而已。所以如果文章甲有一篇评论，然后文章乙有一篇评论，接著又有人对文章甲发表评论，结果最后祇会显示两则文章项目：文章甲，然后显示的是文章乙。</li>
+    <li><a id="item_sort_order"></a><strong>sort_order=&quot;ascend|descend&quot;</strong><br />指定目前使用的 <code>&lt;MTEntries&gt;</code> 卷标所要采用的排序方法。这里的设定将会覆写掉你在网志组态的文章项目排序的全域设定。有效的值分别是 <code>ascend</code> 和 <code>descend</code> 。<br />在这个情境下， <code>ascend</code> 和 <code>descend</code> 并不祇是依时间先后排序；事实上这个属性还可以跟稍后会提到的 <code>sort_by</code> 一起用来排序。举例来说，你可以把文章项目标题排成从 A 到 Z (<code>ascend</code>) 或者是从 Z 到 A (<code>descend</code>) 。<br />预设值是 <code>descend</code> 。</li>
+    <li><a id="item_sort_by"></a><strong>sort_by=&quot;字段名称&quot;</strong><br />用写作日期以外的字段来排序文章项目。有效的<code>字段名称</code>值包含有 <code>title</code> 、 <code>status</code> 、 <code>modified_on</code> 、 <code>author_id</code> 或 <code>excerpt</code> 。<br />这个属性最常见的用法是拿来把文章项目按照字母顺序排列，而不是照他们的时间先后。举例来说，假设你拿 Movable Type 来显示某个字典站台，所以你会想拿字母来聚集部分的文章项目，所以你就建立 26 个不同的类别，也就是从 A 到 Z 。当你要显示站台上所有的文章项目，而又想以字母来分类，以字母顺序来排序（在此假设你拿字或词来当作每一则文章项目的标题）；你可以这么做：<pre>&lt;MTCategories&gt;
+&lt;$MTCategoryLabel$&gt;&lt;br /&gt;
+&lt;MTEntries sort_by=&quot;title&quot; sort_order=&quot;descend&quot;&gt;
+&lt;a href=&quot;&lt;$MTEntryPermalink$&gt;&quot;&gt;&lt;$MTEntryTitle$&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/MTEntries&gt;&lt;br /&gt;
+&lt;/MTCategories&gt;</pre></li>
+  </ul>
+  <i>请注意：</i>你可以把 <code>lastn</code> 、 <code>category</code> 和 <code>author</code> 一起混用来筛选文章项目列示（其实还有 <code>days</code> 这个被此卷标自己用掉的属性；然而祇要你用了其它属性，那么这个属性就会被覆写掉）。举例来说，你可以把 <code>lastn</code> 和 <code>category</code> 一起用在 <a href="#item_MTEntries"><code>MTEntries</code></a> 里，其结果就如你所预期的一般：显示该类别理最新得 N 则文章项目。如果你想要再用作者姓名加以筛选，你也可以把 <code>lastn</code> 、 <code>category</code> 和 <code>author</code> 三个都用上：<pre>&lt;MTEntries category=&quot;Fun&quot; author=&quot;Me&quot; lastn=&quot;10&quot;&gt;
+...
+&lt;/MTEntries&gt;</pre><br />这样就会显示 <code>Fun</code> 这个分类中，作者是 <code>Me</code> 的最新 10 则文章项目。
+  <li><a id="item_MTEntryTitle"></a><strong>MTEntryTitle</strong><br />文章项目的标题。</li>
+  <li><a id="item_MTEntryStatus"></a><strong>MTEntryStatus</strong><br />这则文章项目的出版状态（可能是<code>草稿</code>或者是<code>定稿</code>）。在大多数的情况下，这个卷标其实没有甚么用。因为在你的网志上，祇有状态为<code>定稿</code>的文章才会被显示出来。不过在汇出机制里，或许你会用到这个卷标。</li>
+  <li><a id="item_MTEntryExcerpt"></a><strong>MTEntryExcerpt</strong><br />这则文章项目的文章。如果你没有提供文摘的话，系统就会自动拿文章项目的前 20 个字，然后再加上删节号（ <code>...</code> ）来当作文摘。<br />如果你提供了文摘的话，请注意所有的换列或换段都不会被转换，除非你在这个卷标里用了 <code>convert_breaks</code> 属性：<pre>有断行的文摘：
+&lt;$MTEntryExcerpt convert_breaks=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_MTEntryBody"></a><strong>MTEntryBody</strong><br />文章项目的主要文字部分。<br />如果你在这则文章项目中核选了<code>转换换列</code>而自动转换换列和换段，那么段落 ─ 用两个换列所分隔出来的文字区块 ─ 就会被包在 &lt;p&gt; 和 &lt;/p&gt; 卷标里，而所有单一的换列都会维持著，并且插入一个 &lt;br /&gt; 卷标。<br />请注意，祇要你在这个卷标中加上了 <code>convert_breaks</code> 属性，就会覆写掉针对该文章项目的<code>文字格式</code>设定。所以假设你在文章项目中开启了这项设定，却想在特殊的情况下把它关闭，你可以这样做：<pre>&lt;$MTEntryBody convert_breaks=&quot;0&quot;$&gt;</pre>同时也请注意，如果你祇想显示文章本体的前 N 个字，那么就可以用 <i>words</i> 属性。再举例来说，下列的例子就祇会显示文章本体的前 5 个字。<pre>&lt;$MTEntryBody words=&quot;5&quot;$&gt;</pre>当寻找前 N 个字的时候，首先会从文章本体移去 HTML ，然后就祇会剩下字及字间空白了。</li>
+  <li><a id="item_MTEntryMore"></a><strong>MTEntryMore</strong><br />文章项目的延伸（『更多...』）文字部分。<br />如果你在这则文章项目中核选了<code>转换换列</code>而自动转换换列和换段，那么段落 ─ 用两个换列所分隔出来的文字区块 ─ 就会被包在 &lt;p&gt; 和 &lt;/p&gt; 卷标里，而所有单一的换列都会维持著，并且插入一个 &lt;br /&gt; 卷标。<br />请注意，祇要你在这个卷标中加上了 <code>convert_breaks</code> 属性，就会覆写掉针对该文章项目的<code>文字格式</code>设定。所以假设你在文章项目中开启了这项设定，却想在特殊的情况下把它关闭，你可以这样做：<pre>&lt;$MTEntryMore convert_breaks=&quot;0&quot;$&gt;</pre></li>
+  <li><a id="item_MTEntryLink"></a><strong>MTEntryLink</strong><br />指到包含此文章项目的汇整页面绝对网址；如果你选择了多重汇整类别，那么这里的汇整网址就会按照你所选定的<code>偏好汇整类别</code>而定。这也是预设的动作，你可以用 <code>archive_type</code> 属性来加以覆写成你想要连结的汇整类别。<br />举例来说，假设你已经选择了要用<a href="#item_Individual"><code>单篇</code></a>汇整来当作<code>偏好汇整类别</code>，那么接下来这个卷标：<pre>&lt;$MTEntryLink$&gt;</pre>就会产生一个通往该文章项目所属的单篇汇整页面网址，文章的档名将会是该则文章项目的 ID ，不满六位数字的部分则补上零，最后再接上你的网志的<code>汇整档案扩展名</code>（像是 <code>html</code>）。<br />如果你在网志里同时也启用了<code>分类</code>汇整，那么你也许会想改连到该则文章项目所属的分类汇整页面；这个时候你就可以用这个卷标：<pre>&lt;$MTEntryLink archive_type=&quot;Category&quot;$&gt;</pre>这个卷标会被取代成一个到该文章项目的类别汇整页面的链结。<br />如果你想要真正的静态链结 ─ 也就是某一个永远连到特定文章项目的链结，即使是跟许多其它文章项目一起被汇编到同一个页面亦然 ─ 这时你应该用 <code>&lt;$MTEntryPermalink$&gt;</code> 卷标。</li>
+  <li><a id="item_MTEntryPermalink"></a><strong>MTEntryPermalink</strong><br />一个指向包含该文章项目汇整页面的绝对网址，后面并以定位锚 (<code>#</code>) 来（藉由 ID ）指向该则文章项目。这跟 <code>&lt;$MTEntryLink$&gt;</code> 很像，但聪明得多，因为他在单篇汇整以外的汇整中都会包含这个锚（在单篇汇整中如果还加上这个定位锚，就会显得相当累赘）。<br />就跟 <code>&lt;$MTEntryLink$&gt;</code> 一样，这个卷标也有选用的 <code>archive_type</code> 属性来指定所要连结的汇整类别。</li>
+  <li><a id="item_MTEntryKeywords"></a><strong>MTEntryKeywords</strong><br />新增/编辑文章项目画面中的<i>关键词</i>字段的值。</li>
+  <li><a id="item_MTEntryAuthor"></a><strong>MTEntryAuthor</strong><br />该篇文章项目的作者名字。</li>
+  <li><a id="item_MTEntryAuthorNickname"></a><strong>MTEntryAuthorNickname</strong><br />该篇文章项目的作者昵称。</li>
+  <li><a id="item_MTEntryAuthorEmail"></a><strong>MTEntryAuthorEmail</strong><br />该篇文章项目的作者 E-mail 地址。<br />如果你加上了 <code>spam_protect</code> 属性，那么 E-mail 地址就会被加以修改，以免某些垃圾信机器人蒐集到你的 E-mail 地址；然而在这种情况下，网页浏览器却仍旧能够显示出正确的 E-mail 地址。举例来说，如果有个 E-mail 地址是 <code>foo@bar.com</code> ，然后你用了<pre>&lt;$MTEntryAuthorEmail spam_protect=&quot;1&quot;$&gt;</pre>那么这个 E-mail 地址就会被显示成 <code>foo&amp;#64;bar&amp;#46;com</code> 。</li>
+  <li><a id="item_MTEntryAuthorURL"></a><strong>MTEntryAuthorURL</strong><br />这则文章项目作者的网站网址。</li>
+  <li><a id="item_MTEntryAuthorLink"></a><strong>MTEntryAuthorLink</strong><br />加上链结的作者名字。加上链结的规则是这样的：如果作者有输入网页网址，那么这里的作者名字就会连到那个网址；如果作者祇有输入 E-mail 地址而没有输入网址的话，这里的作者名字就会连到他的 E-mail 地址；如果 E-mail 地址和网页网址都没有填写的话，这里就祇会显示出作者名字，而不提供任何链结。<br />这个规则可以用 <i>show_email</i> 和 <i>show_url</i> 这两个卷标属性来加以覆写。举例来说，如果你用了<pre>&lt;$MTEntryAuthorLink show_email=&quot;0&quot;$&gt;</pre>那么作者的 E-mail 地址就永远不会被显示出来；于是整个规则就会变成：如果作者有输入网页网址，那么作者名字就会连到那个网址；如果作者没有填写网址，那么这里就祇会显示出作者名字，而不提供任何链结。<br />如果你加上了 <code>spam_protect</code> 属性，而又显示了电子邮件链结的话，这里的 E-mail 地址也同样地会被加以修改，以免被某些垃圾信机器人蒐集到。然后在这种状况下，网页浏览器却还是可以显示出正确的 E-mail 地址。举例来说，如果有个 E-mail 地址是 <code>foo@bar.com</code> ，然后你用了<pre>&lt;$MTEntryAuthorLink spam_protect=&quot;1&quot;$&gt;</pre>那么这个 E-mail 地址就会被显示成 <code>foo&amp;#64;bar&amp;#46;com</code> 。</li>
+  <li><a id="item_MTEntryDate"></a><strong>MTEntryDate</strong><br />这则文章项目的日期。就跟所有的日期卷标一样，这个卷标也有著选用的 <code>format</code> 属性和 <code>language</code> 属性。关于这些属性的详细信息，请见<a href="#tags_date_tag_formats">日期卷标格式</a>小节。</li>
+  <li><a id="item_MTEntryCommentCount"></a><strong>MTEntryCommentCount</strong><br />这则文章项目的评论数量。</li>
+  <li><a id="item_MTEntryTrackbackCount"></a><strong>MTEntryTrackbackCount</strong><br />这则文章项目收到的引用通告数量。</li>
+  <li><a id="item_MTEntryTrackbackData"></a><strong>MTEntryTrackbackData</strong><br />给小书签用的引用数据 RDF 倾印。这些倾印将不会被浏览器显示出来。</li>
+  <li><a id="item_MTEntryTrackbackLink"></a><strong>MTEntryTrackbackLink</strong><br />如果这则文章项目的<i>允许通告</i>被打开了，那么这个引用通告网址就可以被用来送出通告给这则文章项目。</li>
+  <li><a id="item_MTEntryTrackbackID"></a><strong>MTEntryTrackbackID</strong><br />如果某篇文章的<i>允许通告</i>被打开了的话，这个卷标就会对应到这篇文章的引用对象的数字型 ID 。你也可以任意地用这个卷标来建立替换的引用通告网址。</li>
+  <li><a id="item_MTEntryIfExtended"></a><strong>MTEntryIfExtended</strong><br />这是一个容器卷标：被装在其中的内容祇有在当文章项目的延伸文字区块有被填写的时候，才会显示出来。如果你希望在索引模版中，祇有当文章项目还有『更多』文字的时候才显示出『尚有内容...』的链结时，就会非常有用。你可以用像是这样的东西：<pre>&lt;MTEntryIfExtended&gt;
+&lt;a href=&quot;&lt;$MTEntryLink$&gt;#&lt;$MTEntryID$&gt;&quot;&gt;尚有内容...&lt;/a&gt;
+&lt;/MTEntryIfExtended&gt;</pre></li>
+  <li><a id="item_MTEntryIfAllowComments"></a><strong>MTEntryIfAllowComments</strong><br />这是一个容器卷标：被装在其中的内容祇有当该则文章项目允许发表评论（也就是如果该则文章项目的<code>编辑文章项目</code>画面里的<code>允许评论</code>被设定成<code>开启</code>或<code>关闭</code>）的时候，才会被显示出来。你可以用这个卷标来让某个连到这则文章项目评论的链结，（当然）祇有在允许发表评论的时候才显示出来。<br />使用这个卷标的范例请见后面<i>文章项目</i>小节的<i>评论</i>区段。</li>
+  <li><a id="item_MTEntryIfCommentsOpen"></a><strong>MTEntryIfCommentsOpen</strong><br />这是一个容器卷标：被装在其中的内容祇有当该则文章项目的<i>允许回响</i>被设定成<code>开启</code>时才会被显示出来。举例来说，你就可以用这个卷标来适时地显示出『发表回响』表单。</li>
+  <li><a id="item_MTEntryIfAllowPings"></a><strong>MTEntryIfAllowPings</strong><br />这是一个容器卷标：被装在其中的内容祇有当该则文章项目允许使用引用通告（也就是如果该则文章项目的<code>编辑文章项目</code>画面里的<code>允许通告</code>设定被开启）的时候，才会被显示出来。</li>
+  <li><a id="item_MTEntryID"></a><strong>MTEntryID</strong><br />该文章项目的数字型 ID 。拿来做为永久链结的定位锚时非常好用。在预设的情况下，这个文章项目 ID 并不会补满零；也就是说，对于一个 ID <code>8</code> 的文章项目来说，这个卷标祇会产生 <code>8</code> 这个值。有的时候你会比较希望你的 ID 被补满零；在这种情况下，你可以在 <a href="#item_MTEntryID"><code>MTEntryID</code></a> 卷标里使用 <i>pad</i>属性：<pre>&lt;$MTEntryID pad=&quot;1&quot;$&gt;</pre>这会用零把文章项目 ID 补满成六 (6) 位数字，像是 <code>000008</code> 。</li>
+  <li><a id="item_MTEntryCategory"></a><strong>MTEntryCategory</strong><br />这个文章项目被指定的主要类别名称。</li>
+  <li><a id="item_MTEntryCategories"></a><strong>MTEntryCategories</strong><br />会显示该文章项目所被指定的所有类别 ─ 包括主要类别 ─ 清单的容器卷标。在这个容器理你可以用任何的 <code>&lt;$MTCategory*$&gt;</code> 卷标（<a href="#tags_category">说明文件</a>）来显示关于每一个类别的信息。<br />你也可以在这个卷标里用 <i>glue</i> 属性来指定类别间的分隔字符串。例如当你想要用逗号来隔开类别名称时就会很好用。请注意 <i>glue</i> 属性的值不可以是单引号或双引号。<br />举例来说：<pre>这篇文章被归类到下列的类别中：
+&lt;MTEntryCategories glue=&quot;, &quot;&gt;
+&lt;a href=&quot;&lt;$MTCategoryArchiveLink$&gt;&quot;&gt;&lt;$MTCategoryLabel$&gt;&lt;/a&gt;
+&lt;/MTEntryCategories&gt;</pre></li>
+  <li><a id="item_MTEntryFlag"></a><strong>MTEntryFlag</strong><br />该文章项目的某一个布林旗标的值。目前可用的两个旗标分别是 <code>convert_breaks</code> 和 <code>allow_comments</code> 。如果旗标的值为真，那么就会显示 <code>1</code> 这个值；否则就会显示 <code>0</code> 这个值。至于旗标的名称则是以 <code>flag</code> 属性来递送。例如：<pre>&lt;$MTEntryFlag flag=&quot;allow_comments&quot;$&gt;</pre>这个卷标用于以汇出机制来汇出文章项目数据的情况里。你应该不需要在你自己的模版里用到。</li>
+  <li><a id="item_MTEntryPrevious"></a><strong>MTEntryPrevious</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照前一则文章项目。举例来说，在这种 <a href="#item_MTEntryPrevious"><code>MTEntryPrevious</code></a> 情境中，某个 &lt;$MTEntryTitle$&gt; 卷标就会变成前一则文章项目的标题。在你（用一个 &lt;/MTEntryPrevious&gt; 卷标）结束这个情境后，所有的卷标又会恢复成参照当前的文章项目。<br />使用这卷标的范例请见后面的 <a href="#item_MTEntryNext"><code>MTEntryNext</code></a> 段落。</li>
+  <li><a id="item_MTEntryNext"></a><strong>MTEntryNext</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照下一则文章项目。举例来说，在这种 <a href="#item_MTEntryNext"><code>MTEntryNext</code></a> 情境中，某个 &lt;$MTEntryTitle$&gt; 卷标就会变成下一则文章项目的标题。在你（用一个 &lt;/MTEntryNext&gt; 卷标）结束这个情境后，所有的卷标又会恢复成参照当前的文章项目。
+<p>接下来这个范例是个导览列，让你连结到前一则和下一则文章项目，还有一个链结连回你的网志主索引。<pre>&lt;MTEntryPrevious&gt;
+&lt;a href=&quot;&lt;$MTEntryLink$&gt;&quot;&gt;&amp;lt;&amp;lt; &lt;$MTEntryTitle$&gt;&lt;/a&gt; |
+&lt;/MTEntryPrevious&gt;
+&lt;a href=&quot;&lt;$MTBlogURL$&gt;&quot;&gt;Main&lt;/a&gt;
+&lt;MTEntryNext&gt;
+| &lt;a href=&quot;&lt;$MTEntryLink$&gt;&quot;&gt;&lt;$MTEntryTitle$&gt; &amp;gt;&amp;gt;&lt;/a&gt;
+&lt;/MTEntryNext&gt;</pre></li>
+  <li><a id="item_MTDateHeader"></a><strong>MTDateHeader</strong><br />这是一个容器卷标：在这个容器里的内容祇有当该文章项目会在文章项目清单上产生新的一天的时候才会显示出来。像这种卷标祇有在 <a href="#item_MTEntries"><code>MTEntries</code></a> 容器里的时候才会变得非常有用。举例来说：<pre>&lt;MTEntries&gt;
+  &lt;MTDateHeader&gt;
+    &lt;$MTEntryDate format=&quot;%B %e, %Y&quot;$&gt;
+  &lt;/MTDateHeader&gt;
+  Title: &lt;$MTEntryTitle$&gt;
+&lt;/MTEntries&gt;</pre></li>
+  <li><a id="item_MTDateFooter"></a><strong>MTDateFooter</strong><br />这是一个容器卷标：在这个容器里的内容祇有当该文章项目跟下一则文章项目的发表日期不同时才会显示出来。这个卷标可以跟 <a href="#item_MTDateHeader"><code>MTDateHeader</code></a> 卷标来把你特定日期里的所有文章排进某种结构（例如说 <code>div</code> ）里。这个卷标就跟 <a href="#item_MTDateHeader"><code>MTDateHeader</code></a> 一样，祇有在 <a href="#item_MTEntries"><code>MTEntries</code></a> 容器里的时候才会非常有用。举例来说：<pre>&lt;MTEntries&gt;
+  &lt;MTDateHeader&gt;
+    &lt;div class=&quot;day&quot;&gt;
+    &lt;$MTEntryDate format=&quot;%B %e, %Y&quot;$&gt;
+  &lt;/MTDateHeader&gt;
+  Title: &lt;$MTEntryTitle$&gt;
+  &lt;MTDateFooter&gt;
+    &lt;/div&gt;
+  &lt;/MTDateFooter&gt;
+&lt;/MTEntries&gt;</pre></li>
+  <li><a id="item_MTEntriesHeader"></a><strong>MTEntriesHeader</strong><br />这是一个容器卷标：在这个容器里的内容祇有当该文章项目是整个 <code>&lt;MTEntries&gt;</code> 容器里的第一篇的时候才会显示出来。</li>
+  <li><a id="item_MTEntriesFooter"></a><strong>MTEntriesFooter</strong><br />这是一个容器卷标：在这个容器里的内容祇有当该文章项目是整个 <code>&lt;MTEntries&gt;</code> 容器里的最后一篇的时候才会显示出来。举例来说，这可以用在你的索引页面上，连结到前一则文章项目的汇整页面。例如当你在使用逐日汇整时：<pre>&lt;MTEntries days=&quot;1&quot;&gt;
+...
+&lt;MTEntriesFooter&gt;
+&lt;MTEntryPrevious&gt;
+&lt;a href=&quot;&lt;$MTEntryLink archive_type=&quot;Daily&quot;$&gt;&quot;&gt;昨日汇整： &lt;$MTEntryDate format=&quot;%A, %B %d, %Y&quot;$&gt;&lt;/a&gt;
+&lt;/MTEntryPrevious&gt;
+&lt;/MTEntriesFooter&gt;
+&lt;/MTEntries&gt;</pre></li>
+</ul></p>
+<h3><a id="tags_comments"></a>回响</h3>
+<p><ul>
+  <li><a id="item_MTComments"></a><strong>MTComments</strong><br />一个会列出特定文章项目或特定网志里（这得依 <code>lastn</code> 属性使用的情境而定，详见后述）所有回响清单的容器卷标。<br />如果你在这个卷标里加上了 <a href="#item_lastn"><code>lastn=&quot;N&quot;</code></a> 属性，这里的 <code>N</code> 是你想要显示的回响数量，那么就会显示当前文章项目 ─ 如果用在文章项目情境中 ─ 或网志 ─ 如果用在其它地方 ─ 里最新的 <code>N</code> 篇回响。<br />如果你使用这个卷标时没有加上任何属性，那么 <code>&lt;MTComments&gt;</code> 就会列出所有当前文章项目的回响。这表示当你使用这个卷标而不加上任何属性的时候，一定是用于文章项目情境：在<code>单篇汇整模版</code>、<code>回响预览模版</code>、<code>回响清单模版</code>或<code>回响出错模版</code>里，放进 <code>&lt;MTEntries&gt;</code> 中。<br />在预设的情况下，这些回响会按照你在网志组态里指定的<i>回响显示顺序</i>来排序并储存。不过你还是可以在这个卷标里用 <code>sort_order</code> 属性来覆写这个设定；这个属性的值可以是 <i>ascend</i> 或是 <i>descend</i> 。<br />举例来说，要显示你的网志上最近被发表的 6 篇回响，丝毫不考虑他们各自所属的文章项目，而以时间顺序倒序排列（把最新的放在最前面）的话，你可以把下列的卷标放到你的主索引模版里：<pre>&lt;MTComments lastn=&quot;6&quot; sort_order=&quot;descend&quot;&gt;
+&lt;p&gt;&lt;$MTCommentAuthor$&gt; 说道：&lt;br /&gt;
+&lt;$MTCommentBody$&gt;&lt;/p&gt;
+&lt;/MTComments&gt;</pre>对于回响清单里的每一篇来说，在容器内的文字及卷标都会被显示出来。下列每一个卷标都用于显示某篇回响的特定变数区块。</li>
+  <li><a id="item_MTCommentID"></a><strong>MTCommentID</strong><br />这篇回响的数字型 ID 。拿来做为永久链结的定位锚时非常好用。在预设的情况下，这个文章项目 ID 并不会补满零；也就是说，对于一个 ID <code>8</code> 的文章项目来说，这个卷标祇会产生 <code>8</code> 这个值。有的时候你会比较希望你的 ID 被补满零；在这种情况下，你可以在这个卷标里使用 <i>pad</i> 属性：<pre>&lt;$MTCommentID pad=&quot;1&quot;$&gt;</pre>这会用零把回响 ID 补满成六 (6) 位数字，像是 <code>000008</code> 。</li>
+  <li><a id="item_MTCommentEntryID"></a><strong>MTCommentEntryID</strong><br />这篇回响所对应到的文章项目数字型 ID 。当你在使用 <code>&lt;MTComments lastn=&quot;N&quot;&gt;</code> 的时候会相当有用，因为它会让你连到跟这篇回响所对应到的特定文章项目。<br />这个卷标也有一个选用的 <code>pad</code> 属性，其功能就跟前述的 <code>&lt;$MTCommentID$&gt;</code> 卷标中的 <code>pad</code> 属性一模一样。</li>
+  <li><a id="item_MTCommentIP"></a><strong>MTCommentIP</strong><br />发表回响的作者的来源 IP 地址。</li>
+  <li><a id="item_MTCommentAuthor"></a><strong>MTCommentAuthor</strong><br />这篇回响的作者名字。</li>
+  <li><a id="item_MTCommentAuthorLink"></a><strong>MTCommentAuthorLink</strong><br />加上链结的作者名字。加上链结的规则是这样的：如果作者有输入网页网址，那么这里的作者名字就会连到那个网址；如果作者祇有输入 E-mail 地址而没有输入网址的话，这里的作者名字就会连到他的 E-mail 地址；如果 E-mail 地址和网页网址都没有填写的话，这里就祇会显示出作者名字，而不提供任何链结。<br />这个规则可以用 <i>show_email</i> 和 <i>show_url</i> 这两个卷标属性来加以覆写。举例来说，如果你用了<pre>&lt;$MTCommentAuthorLink show_email=&quot;0&quot;$&gt;</pre>那么作者的 E-mail 地址就永远不会被显示出来；于是整个规则就会变成：如果作者有输入网页网址，那么作者名字就会连到那个网址；如果作者没有填写网址，那么这里就祇会显示出作者名字，而不提供任何链结。<br />如果你希望强迫发表回响的读者一定要留下 E-mail 地址 ─ 这意味著你不能够在网志组态里核选<i>允许匿名回响</i>核选框 ─ 而又不想在网志上显示她们的 E-mail 地址时会相当有用。<br />如果你加上了 <code>spam_protect</code> 属性，而又显示了电子邮件链结的话，这里的 E-mail 地址也同样地会被加以修改，以免被某些垃圾信机器人蒐集到。然后在这种状况下，网页浏览器却还是可以显示出正确的 E-mail 地址。举例来说，如果有个 E-mail 地址是 <code>foo@bar.com</code> ，然后你用了<pre>&lt;$MTCommentAuthorLink spam_protect=&quot;1&quot;$&gt;</pre>那么这个 E-mail 地址就会被显示成 <code>foo&amp;#64;bar&amp;#46;com</code> 。</li>
+  <li><a id="item_MTCommentEmail"></a><strong>MTCommentEmail</strong><br />这篇回响的作者 E-mail 地址。<br />如果你加上了 <code>spam_protect</code> 属性，那么 E-mail 地址就会被加以修改，以免某些垃圾信机器人蒐集到你的 E-mail 地址；然而在这种情况下，网页浏览器却仍旧能够显示出正确的 E-mail 地址。举例来说，如果有个 E-mail 地址是 <code>foo@bar.com</code> ，然后你用了<pre>&lt;$MTCommentEmail spam_protect=&quot;1&quot;$&gt;</pre>那么这个 E-mail 地址就会被显示成 <code>foo&amp;#64;bar&amp;#46;com</code> 。</li>
+  <li><a id="item_MTCommentURL"></a><strong>MTCommentURL</strong><br />这篇回响的作者网站网址。</li>
+  <li><a id="item_MTCommentBody"></a><strong>MTCommentBody</strong><br />回响的本体。如果你在网志组态里选择了<code>转换换列和换段</code>，那么段落 ─ 用两个换列所分隔出来的文字区块 ─ 就会被包在 &lt;p&gt; 和 &lt;/p&gt; 卷标里，而所有单一的换列都会维持著，并且插入一个 &amp;lt;br /&amp;gt; 卷标。<br />请注意，祇要你在这个卷标中加上了 <code>convert_breaks</code> 属性，就会覆写掉针对全域的<code>转换换列和换段</code>设定。所以假设你在全域设定中开启了这项设定，却想在特殊的情况下把它关闭，你可以这样做：<pre>&lt;$MTCommentBody convert_breaks=&quot;0&quot;$&gt;</pre></li>
+  <li><a id="item_MTCommentDate"></a><strong>MTCommentDate</strong><br />这篇回响发表在你的站台上的日期。就跟所有的日期卷标一样，这个卷标也有著选用的 <code>format</code> 属性和 <code>language</code> 属性。关于这些属性的详细信息，请见<a href="#tags_date_tag_formats">日期卷标格式</a>段落。</li>
+  <li><a id="item_MTCommentOrderNumber"></a><strong>MTCommentOrderNumber</strong><br />一连串回响中，特定回响的序数，从 <code>1</code> 开始。请注意这里的顺序是按照排序（递增或递减）而定的。</li>
+  <li><a id="item_MTCommentEntry"></a><strong>MTCommentEntry</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照回响所对应到的文章项目，所以你可以用 <code>&lt;$MTEntry*$&gt;</code> 卷标来参照该则文章项目。举例来说，你就可以这么用：<pre>&lt;MTComments lastn=&quot;5&quot; sort_order=&quot;descend&quot;&gt;
+&lt;MTCommentEntry&gt;
+这篇回响是针对 &lt;$MTEntryTitle$&gt; 这篇文章所发表的。
+&lt;/MTCommentEntry&gt;
+&lt;/MTComments&gt;</pre></li>
+</ul></p>
+<h3><a id="tags_comment_previewing"></a>预览回响</h3>
+<p>当你做出<code>回响预览模版</code>的时候，你应该要采用下列这些卷标。这些卷标全部都跟前述的<code>回响</code>小节里名称相近的卷标作用相仿；唯一的不同是这些卷标祇能用于预览之用，而不是用在 <code>&lt;MTComments&gt;</code> 区块中。</p>
+<p><ul>
+  <li><a id="item_MTCommentPreviewAuthor"></a><strong>MTCommentPreviewAuthor</strong></li>
+  <li><a id="item_MTCommentPreviewIP"></a><strong>MTCommentPreviewIP</strong></li>
+  <li><a id="item_MTCommentPreviewAuthorLink"></a><strong>MTCommentPreviewAuthorLink</strong></li>
+  <li><a id="item_MTCommentPreviewEmail"></a><strong>MTCommentPreviewEmail</strong></li>
+  <li><a id="item_MTCommentPreviewURL"></a><strong>MTCommentPreviewURL</strong></li>
+  <li><a id="item_MTCommentPreviewBody"></a><strong>MTCommentPreviewBody</strong></li>
+  <li><a id="item_MTCommentPreviewDate"></a><strong>MTCommentPreviewDate</strong></li>
+</ul></p>
+<p>这些卷标全部都跟前述的<code>回响</code>小节里名称相近的卷标意思相同。</p>
+<ul>
+  <li><a id="item_MTCommentPreviewIsStatic"></a><strong>MTCommentPreviewIsStatic</strong><br /这是一个神秘的隐藏卷标，你应该把这个卷标放进你的<code>回响预览</code>模版和<code>回响出错</code>模版里，好让系统得知发表完回响后要把读者转送到哪里。使用这个卷标时，把下面这个隐藏输入字段贴进你的<code>回响预览</code>模版和<code>回响</code>出错模版里：<pre>&lt;input type=&quot;hidden&quot; name=&quot;static&quot; value=&quot;&lt;$MTCommentPreviewIsStatic$&gt;&quot;&gt;</pre></li>
+  <li><a id="item_MTCommentPreviewState"></a><strong>MTCommentPreviewState</strong><br /><strong>注意：</strong>这个卷标到 Movable Type 1.4 版为止都不该使用。建立回响预览的建议方法是使用一个可编辑的表单来让读者得以编辑被预览的回响；在这种情况下，你<strong>不</strong>应该使用 <code>&lt;$MTCommentPreviewState$&gt;</code> 卷标。<br />这是一个你需要在回响预览页面（<code>回响预览模版</code>）里使用的神奇卷标。这个卷标会被取代成一切要发表回响所需的回响数据，以及回响是从嵌入式回响或弹出式回响所发表的消息。</li>
+</ul></p>
+<h3><a id="tags_archive_templates_master_archive_index"></a>汇整模版及汇整总索引</h3>
+<p>下列的模版卷标和变数适用于你的汇整页面及汇整总索引。</p>
+<p><ul>
+  <li><a id="item_MTArchiveList"></a><strong>MTArchiveList</strong><br />这是一个表是你所有汇整页面清单的容器卷标。对每一个汇整页面来说，你都可以用任何后述的卷标变数；除此之外，你也还可以用 <a href="#item_MTEntries"><code>MTEntries</code></a> 卷标来显示该页面上每一则文章项目的信息。举例来说：<pre>&lt;MTArchiveList&gt;
+  &lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTArchiveDate$&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;MTEntries&gt;
+    [&lt;$MTEntryTitle$&gt;]
+  &lt;/MTEntries&gt;
+  &lt;br /&gt;&lt;br /&gt;
+&lt;/MTArchiveList&gt;</pre>这会显示一个连往汇整页面的链结，后面再跟著那一个页面上每一则文章项目的标题清单。<br />这个卷标有两个属性可用： <code>archive_type</code> 会指定汇整清单的类别，而 <code>lastn</code> 则会限制列出的汇整数量。</li>
+  <ul>
+    <li><code>archive_type</code><br />这个属性是选用的；如果没有这个属性的时候，就会使用你的偏好汇整类别，或者你的汇整类别。不过这个属性在你选用了多于一种网志汇整类别的，而你又想要用不是你的偏好汇整类别列出的时候会很好用。举例来说，如果你打算要保持<a href="#item_Individual"><code>单篇</code></a>汇整和<a href="#item_Daily"><code>逐日</code></a>汇整，而你的偏好汇整类别是<a href="#item_Individual"><code>单篇</code></a>汇整时，你可以用这个卷标来列出你的<a href="#item_Daily"><code>逐日</code></a>汇整：<pre>&lt;MTArchiveList archive_type=&quot;Daily&quot;&gt;
+...
+&lt;/MTArchiveList&gt;</pre></li>
+    <li><code>lastn</code><br />这个属性可以用来限制列出的汇整数量；举例来说，如果你的网志上有多于 10 个月份量的汇整，但是你祇想要列出最近的 5 个时，就用这个卷标：<pre>&lt;MTArchiveList archive_type=&quot;Monthly&quot; lastn=&quot;5&quot;&gt;
+...
+&lt;/MTArchiveList&gt;</pre></li>
+  </ul>
+  <li><a id="item_MTArchiveLink"></a><strong>MTArchiveLink</strong><br />连到这个汇整页面的绝对网址。<br />根据预设值，这个链结会连到目前正在建立的汇整类别的汇整页面；举例来说，建立一连串的<a href="#item_Monthly"><code>逐月</code></a>汇整时， <code>&lt;$MTArchiveLink&gt;</code> 会产生连到特定的<a href="#item_Monthly"><code>逐月</code></a>汇整的链结。你可以指定 <code>archive_type</code> 属性来覆写这个作用；这个属性可以设成下列几个值之一： <a href="#item_Individual"><code>Individual</code></a> 、 <a href="#item_Daily"><code>Daily</code></a> 、 <a href="#item_Weekly"><code>Weekly</code></a> 、 <a href="#item_Monthly"><code>Monthly</code></a> 或 <a href="#item_Category"><code>Category</code></a> 。</li>
+  <li><a id="item_MTArchiveTitle"></a><strong>MTArchiveTitle</strong><br />汇整页面的『标题』。这个值会按照汇整的类别而决定：</li>
+  <ul>
+    <li><a id="item_Category"></a><strong>Category</strong><br />类别名称。</li>
+    <li><a id="item_Daily"></a><strong>Daily</strong><br />用 <code>Month Day, YYYY</code> 格式表示的日期。</li>
+    <li><a id="item_Weekly"></a><strong>Weekly</strong><br />用 <code>Month Day, YYYY - Month Day, YYYY</code> 格式表示的该周日期范围。</li>
+    <li><a id="item_Monthly"></a><strong>Monthly</strong><br />用 <code>Month YYYY</code> 格式表示的月份。</li>
+    <li><a id="item_Individual"></a><strong>Individual</strong><br />文章项目的标题。</li>
+  </ul>把 <a href="#item_MTArchiveTitle"><code>MTArchiveTitle</code></a> 跟 <a href="#item_MTArchiveLink"><code>MTArchiveLink</code></a> 放在一起用可以说是建立汇整总索引最简单的方法了。因为 <a href="#item_MTArchiveTitle"><code>MTArchiveTitle</code></a> 的值会随著任何你选择的类别而改写。举例来说：<pre>&lt;MTArchiveList&gt;
+&lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTArchiveTitle$&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/MTArchiveList&gt;</pre>不论你选择了哪一种汇整类别，都能够显示出有用的汇整页面清单。
+  <li><a id="item_MTArchiveCount"></a><strong>MTArchiveCount</strong><br />在特定的汇整集合中的文章项目数量；举例来说，如果你正在使用逐月汇整，这就会反映出这个月的文章项目数量。这个卷标被放进 <code>&lt;MTArchiveList&gt;</code> 容器时会很有用，就像这样：<pre>&lt;MTArchiveList&gt;
+&lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTArchiveTitle$&gt; (&lt;$MTArchiveCount$&gt;)&lt;/a&gt;&lt;br /&gt;
+&lt;/MTArchiveList&gt;</pre></li>
+  <li><a id="item_MTArchiveDate"></a><strong>MTArchiveDate</strong><br />汇整周期的开始日期。这个卷标祇有当你在列出<a href="#item_Daily"><code>逐日</code></a>汇整、<a href="#item_Weekly"><code>逐周</code></a>汇整或者是<a href="#item_Monthly"><code>逐月</code></a>汇整时才有意义。这也是标准的日期卷标，所以请参照后面会提到的<a href="#date tag formats">日期卷标格式</a>来自订日期格式。<br />你可以在某个 <a href="#item_MTArchiveList"><code>MTArchiveList</code></a> 容器里使用这个卷标，也可以用于某个和按时汇整类别相关联的汇整模版里、在 <a href="#item_MTEntries"><code>MTEntries</code></a> 卷标<i>以外</i>的地方。你可以用来显示特定汇整页面的日期档头 ─ 例如月份和年份：<pre>&lt;$MTBlogName$&gt; Archives: &lt;$MTArchiveDate format=&quot;%B %Y&quot;$&gt;
+&lt;MTEntries&gt;
+...
+&lt;/MTEntries&gt;</pre></li>
+  <li><a id="item_MTArchiveDateEnd"></a><strong>MTArchiveDateEnd</strong><br />汇整周期的结束日期。这个卷标祇有当你在列出<a href="#item_Daily"><code>逐日</code></a>汇整、<a href="#item_Weekly"><code>逐周</code></a>汇整或者是<a href="#item_Monthly"><code>逐月</code></a>汇整时才有意义；除此以外的情况都会失效。请参照后面会提到的<a href="#date tag formats">日期卷标格式</a>来自订日期格式。<br />你可以在 <code>&lt;$MTArchiveDate&gt;</code> 卷标所适用的相同情境中使用这个卷标。</li>
+  <li><a id="item_MTArchiveCategory"></a><strong>MTArchiveCategory</strong><br />这份汇整清单的名称。这个卷标祇有当你在列出<a href="#item_Category"><code>分类</code></a>汇整的时候才有意义。<br />你可以在某个 <a href="#item_MTArchiveList"><code>MTArchiveList</code></a> 容器中使用这个卷标，也可以用于某个和你的<a href="#item_Category"><code>分类</code></a>汇整相关联的汇整模版里、在 <a href="#item_MTEntries"><code>MTEntries</code></a> 卷标<i>以外</i>的地方。你可以用来显示特定汇整页面的类别档头，像是：<pre>&lt;$MTBlogName$&gt; Archives: &lt;$MTArchiveCategory$&gt;
+&lt;MTEntries&gt;
+...
+&lt;/MTEntries&gt;</pre></li>
+  <li><a id="item_MTArchivePrevious"></a><strong>MTArchivePrevious</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照前一个汇整。例如在 <a href="#item_MTArchivePrevious"><code>MTArchivePrevious</code></a> 情境中， &lt;$MTArchiveTitle$&gt; 卷标就会去参照前一个汇整的标题。当你（用 &lt;/MTArchivePrevious&gt; 卷标）结束这个情境后，所有的卷标又会回来参照现用的汇整。<br />这个卷标可以用于你指定与<a href="#item_Daily"><code>逐日</code></a>、<a href="#item_Weekly"><code>逐周</code></a>或<a href="#item_Monthly"><code>逐月</code></a>汇整相关联的汇整模版中；如果你想要在单篇文章汇整中也有相似的功能，请参考 <code>&lt;MTEntryPrevious&gt;</code> 卷标。<br />在预设的情况下，『前一份』汇整是按照汇整类别而定的 ─ 例如说，在<a href="#item_Daily"><code>逐日</code></a>汇整里，『前一份』汇整指的是前一天的文章汇整。如果你想要覆写这样的作用 ─ 像是你更想要连结到前一个月份的汇整 ─ 时你就可以用 <code>archive_type</code> 属性（范例见后）。<br />使用这个卷标的范例请见后面的 <code>&lt;MTArchiveNext&gt;</code> 文件。</li>
+  <li><a id="item_MTArchiveNext"></a><strong>MTArchiveNext</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照下一个汇整。例如在 <a href="#item_MTArchiveNext"><code>MTArchiveNext</code></a> 情境中， &lt;$MTArchiveTitle$&gt; 卷标就会去参照下一个汇整的标题。当你（用 &lt;/MTArchiveNext&gt; 卷标）结束这个情境后，所有的卷标又会回来参照现用的汇整。<br />这个卷标可以用于你指定与<a href="#item_Daily"><code>逐日</code></a>、<a href="#item_Weekly"><code>逐周</code></a>或<a href="#item_Monthly"><code>逐月</code></a>汇整相关联的汇整模版中；如果你想要在单篇文章汇整中也有相似的功能，请参考 <code>&lt;MTEntryNext&gt;</code> 卷标。<br />在预设的情况下，『下一份』汇整是按照汇整类别而定的 ─ 例如说，在<a href="#item_Daily"><code>逐日</code></a>汇整里，『下一份』汇整指的是前一天的文章汇整。如果你想要覆写这样的作用 ─ 像是你更想要连结到前一个月份的汇整 ─ 时你就可以用 <code>archive_type</code> 属性。<br />这个范例是一个导览列，提供连往前一份汇整和下一份汇整的链结，以及一个连回你的网志主索引的链结。<pre>&lt;MTArchivePrevious&gt;
+&lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&amp;lt;&amp;lt; &lt;$MTArchiveTitle$&gt;&lt;/a&gt; |
+&lt;/MTArchivePrevious&gt;
+&lt;a href=&quot;&lt;$MTBlogURL$&gt;&quot;&gt;Main&lt;/a&gt;
+&lt;MTArchiveNext&gt;
+| &lt;a href=&quot;&lt;$MTArchiveLink$&gt;&quot;&gt;&lt;$MTArchiveTitle$&gt; &amp;gt;&amp;gt;&lt;/a&gt;
+&lt;/MTArchiveNext&gt;</pre>接下来这个导览列的范例可以被用在<a href="#item_Daily"><code>逐日</code></a>汇整里，用来连到前一个月份的汇整以及下一个月份的汇整。如果你在你所有的<a href="#item_Daily"><code>逐日</code></a>汇整里都加上了月历，然后想要连到前一个月份和下一个月份的月历时，就会很有用。<pre>&lt;MTArchivePrevious archive_type=&quot;Monthly&quot;&gt;
+&lt;a href=&quot;&lt;$MTArchiveLink archive_type=&quot;Monthly&quot;$&gt;&quot;&gt;&lt;$MTArchiveDate format=&quot;%b&quot;$&gt;&lt;/a&gt;
+&lt;/MTArchivePrevious&gt;
+&lt;MTArchiveNext archive_type=&quot;Monthly&quot;&gt;
+&lt;a href=&quot;&lt;$MTArchiveLink archive_type=&quot;Monthly&quot;$&gt;&quot;&gt;&lt;$MTArchiveDate format=&quot;%b&quot;$&gt;&lt;/a&gt;
+&lt;/MTArchiveNext&gt;</pre></li>
+</ul></p>
+<h3><a id="tags_category"></a>与分类相关的卷标</h3>
+<p>接下来这些卷标可以用来显示网志上的类别清单，以及每一个类别的信息（ ID 、卷标等）。</p>
+<p><ul>
+  <li><a id="item_MTCategories"></a><strong>MTCategories</strong><br />这个容器卷标会建立起一个情境，使得其内的所有卷标都会去参照网志上的类别清单。对于每一个类别来说，你都可以使用任何下列的卷标变数；除此之外，你也可以用 <code>&lt;MTEntries&gt;</code> 卷标来显示这个类别中每一个文章项目的信息。例如：<pre>&lt;MTCategories&gt;
+  &lt;a href=&quot;&lt;$MTCategoryArchiveLink$&gt;&quot;&gt;&lt;$MTCategoryLabel$&gt;&lt;/a&gt;&lt;br /&gt;
+  &lt;MTEntries&gt;
+  &lt;$MTEntryTitle$&gt;&amp;nbsp;
+  &lt;/MTEntries&gt;
+  &lt;br /&gt;&lt;br /&gt;
+&lt;/MTCategories&gt;</pre>这会显示连往每一个类别的链结，然后后面再个别跟著该类别的文章标题清单。<br />如果某个类别里没有包含任何文章项目的话，预设这个类别就不会包含在这个类别清单里。这个预设的作用之所以会是这样，主要因为它是从 <code>&lt;MTArchiveList&gt;</code> 的预设作用所复制而来的。请注意如果你包括了连到分类汇整页面的话，这样也是建议的作法；因为空的类别不会产生汇整页面。换而言之，连往空的类别的汇整链结会是一个坏掉的链结。<br />如果你想要覆写这个预设的作用，你可以在这个卷标里加进 <code>show_empty</code> 属性。例如这些卷标：<pre>&lt;MTCategories show_empty=&quot;1&quot;&gt;
+&lt;$MTCategoryLabel$&gt;
+&lt;/MTCategories&gt;</pre>就会显示<strong>所有</strong>的类别清单，即使是空的类别也会。</li>
+  <li><a id="item_MTCategoryID"></a><strong>MTCategoryID</strong><br />类别的数字型 ID 。</li>
+  <li><a id="item_MTCategoryLabel"></a><strong>MTCategoryLabel</strong><br />类别卷标。</li>
+  <li><a id="item_MTCategoryArchiveLink"></a><strong>MTCategoryArchiveLink</strong><br />这是一个连到该分类的汇整页面的链结。这个卷标祇有在你启用了网志的<a href="#item_Category"><code>分类</code></a>汇整时才有效；否则你就会在重建页面的时候得到一个错误讯息。</li>
+  <li><a id="item_MTCategoryDescription"></a><strong>MTCategoryDescription</strong><br />该类别的描述。</li>
+  <li><a id="item_MTCategoryCount"></a><strong>MTCategoryCount</strong><br />该类别中的文章项目数量。</li>
+  <li><a id="item_MTCategoryTrackbackLink"></a><strong>MTCategoryTrackbackLink</strong><br />如果该类别已经被设定成<i>接受送进来的引用通告</i>那么引用通告网址就可以用来发送通告给这个类别。这个卷标可以用在任何类别情境（分类汇整或者是在 <code>&lt;MTCategories&gt;</code> 里面）中，不然你也可以用 <i>category</i> 属性来指明引用通告网址所要对应到的类别。举例来说：<pre>&lt;$MTCategoryTrackbackLink category=&quot;Foo Bar&quot;$&gt;</pre>祇要你指定了这个属性，就可以在任何你想要的地方使用这个卷标。</li>
+</ul></p>
+<h3><a id="tags_calendar"></a>月历显示卷标</h3>
+<p>下列的卷标可以用来在你的文章项目里画出月历。事实上并没有任何限制说你一定得要用 HTML 的表格来画出月历；这些卷标完全是泛用型的，因此你可以利用她们来做出各种迥然不同样子的月历。</p>
+<p><ul>
+  <li><a id="item_MTCalendar"></a><strong>MTCalendar</strong><br />这个容器卷标代表著一个月长度的月历，所有在 <code>&lt;MTCalendar&gt;</code> 卷标和 <code>&lt;/MTCalendar&gt;</code> 卷标之间的组成组件都代表著月历里的一个『格子』（有可能是一个月里的某一天，或者是属于别的月份的空白格子）。<br />这个卷标还可以加上选用的 <code>month</code> 属性，用来指定要显示哪一个月份和年份的月历。如果这个属性的值是 <code>this</code> 这个字符串，就会建立起近期情境；这表示说，你可以在汇整模版里用<pre>&lt;MTCalendar month=&quot;this&quot;&gt;
+...
+&lt;/MTCalendar&gt;</pre>来表示正被检视的汇整那个月份的月历。这个卷标在<a href="#item_Individual"><code>单篇</code></a>汇整、<a href="#item_Daily"><code>逐日</code></a>汇整、<a href="#item_Weekly"><code>逐周</code></a>汇整和<a href="#item_Monthly"><code>逐月</code></a>汇整里都可以用，但是你不能拿进<a href="#item_Category"><code>分类</code></a>汇整用。<br />如果 <code>month</code> 属性的值被设定成 <code>last</code> 的话，就会建立出相对目前日期的前一个月份的月历。<br />如果你想要建立特定月份的月历，你可以在 <code>month</code> 属性中用 <code>YYYYMM</code> 格式（例如： <code>200112</code> ）来指定确切的月份和年份。<br />如果你没有加上 <code>month</code> 属性的话，就会显示当月的月历。<br />如果你祇想要在月历里显示某个特定类别的文章，你可以指定 <code>category</code> 属性，并且指明该类别的名称。举例来说，下面这个卷标：<pre>&lt;MTCalendar month=&quot;200201&quot; category=&quot;Foo&quot;&gt;
+...
+&lt;/MTCalendar&gt;
+</pre>就祇会显示 2002 年一月份所有 <code>Foo</code> 这个类别里的文章项目。</li>
+  <li><a id="item_MTCalendarDay"></a><strong>MTCalendarDay</strong><br />用数字表示的日期（例如： <code>1</code> ）。你可以在 <code>&lt;MTCalendarIfEntries&gt;</code> 容器和 <code>&lt;MTCalendarIfNoEntries&gt;</code> 容器里用这个卷标。</li>
+  <li><a id="item_MTCalendarCellNumber"></a><strong>MTCalendarCellNumber</strong><br />月历里的『格子』号码；第一个格子位于最左上角的角落里，号码是 <code>1</code> ，然后依序增加，往水平方向在月历上横跨。<br />这个卷标跟前述的 <code>&lt;$MTCalendarDay$&gt;</code> 不同，因为后者仅套用于非『空白』的格子（也就是代表著特定月份里某个日子的项目）。</li>
+  <li><a id="item_MTCalendarDate"></a><strong>MTCalendarDate</strong><br />该月每一天的时间戳印；这个卷标接受标准的 <code>format</code> 属性。如果你祇想要显示数字型的日期，那么就祇需要用 <code>&lt;$MTCalendarDay$&gt;</code> 就可以了；祇有在你想要显示更多日期/时间信息的时候，才有必要使用这个卷标。</li>
+  <li><a id="item_MTCalendarWeekHeader"></a><strong>MTCalendarWeekHeader</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarWeekHeader&gt;</code> 卷标和 <code>&lt;/MTCalendarWeekHeader&gt;</code> 卷标间的组成元素都祇会在每一周的开始时被显示出来。</li>
+  <li><a id="item_MTCalendarWeekFooter"></a><strong>MTCalendarWeekFooter</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarWeekFooter&gt;</code> 卷标和 <code>&lt;/MTCalendarWeekFooter&gt;</code> 卷标间的组成元素都祇会在每一周的结束时被显示出来。</li>
+  <li><a id="item_MTCalendarIfBlank"></a><strong>MTCalendarIfBlank</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarIfBlank&gt;</code> 卷标和 <code>&lt;/MTCalendarIfBlank&gt;</code> 卷标间的组成元素都祇会在该格子是一个『空』格子 ─ 也就是不代表该月份任何一天的格子 ─ 时被显示出来。</li>
+  <li><a id="item_MTCalendarIfEntries"></a><strong>MTCalendarIfEntries</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarIfEntries&gt;</code> 卷标和  <code>&lt;/MTCalendarIfEntries&gt;</code> 卷标间的组成元素都祇会在该格子里的日期有任何文章项目时才显示出来。你还可以用 <code>&lt;MTEntries&gt;</code> 卷标来显示那一天里所有的文章项目。<br />举例来说：<pre>&lt;MTCalendarIfEntries&gt;
+    这一天里的文章：
+    &lt;MTEntries&gt;
+    &lt;a href=&quot;&lt;$MTEntryLink$&gt;&quot;&gt;&lt;$MTEntryTitle$&gt;&lt;/a&gt;&lt;br /&gt;
+    &lt;/MTEntries&gt;
+&lt;/MTCalendarIfEntries&gt;</pre></li>
+  <li><a id="item_MTCalendarIfNoEntries"></a><strong>MTCalendarIfNoEntries</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarIfNoEntries&gt;</code> 卷标和 <code>&lt;/MTCalendarIfNoEntries&gt;</code> 卷标间的组成元素祇有在该格子里的日期没有任何文章项目的时候才显示出来。</li>
+  <li><a id="item_MTCalendarIfToday"></a><strong>MTCalendarIfToday</strong><br />这是一个容器卷标；在 <code>&lt;MTCalendarIfToday&gt;</code> 卷标和 <code>&lt;/MTCalendarIfToday&gt;</code> 卷标间的组成元素祇有在该格子里的日期就是目前的日期时才显示出来。</li>
+</ul></p>
+<p>以下是一个标准的月历显示组成，会显示出目前的月份。<pre>&lt;table border=&quot;0&quot; cellspacing=&quot;4&quot; cellpadding=&quot;0&quot; summary=&quot;Monthly calendar&quot;&gt;
+&lt;caption&gt;&lt;$MTDate format=&quot;%B %Y&quot;$&gt;&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th abbr=&quot;星期日&quot; align=&quot;center&quot;&gt;Sun&lt;/th&gt;
+&lt;th abbr=&quot;星期一&quot; align=&quot;center&quot;&gt;Mon&lt;/th&gt;
+&lt;th abbr=&quot;星期二&quot; align=&quot;center&quot;&gt;Tue&lt;/th&gt;
+&lt;th abbr=&quot;星期三&quot; align=&quot;center&quot;&gt;Wed&lt;/th&gt;
+&lt;th abbr=&quot;星期四&quot; align=&quot;center&quot;&gt;Thu&lt;/th&gt;
+&lt;th abbr=&quot;星期五&quot; align=&quot;center&quot;&gt;Fri&lt;/th&gt;
+&lt;th abbr=&quot;星期六&quot; align=&quot;center&quot;&gt;Sat&lt;/th&gt;
+&lt;/tr&gt;
+&lt;MTCalendar&gt;
+&lt;MTCalendarWeekHeader&gt;&lt;tr&gt;&lt;/MTCalendarWeekHeader&gt;
+&lt;td &lt;MTCalendarIfToday&gt;bgcolor=&quot;#EEEEEE&quot;&lt;/MTCalendarIfToday&gt; align=&quot;center&quot;&gt;
+&lt;MTCalendarIfEntries&gt;&lt;MTEntries lastn=&quot;1&quot;&gt;&lt;a href=&quot;&lt;$MTEntryLink$&gt;&quot;&gt;&lt;$MTCalendarDay$&gt;
+&lt;/a&gt;&lt;/MTEntries&gt;&lt;/MTCalendarIfEntries&gt;
+&lt;MTCalendarIfNoEntries&gt;&lt;$MTCalendarDay$&gt;&lt;/MTCalendarIfNoEntries&gt;
+&lt;MTCalendarIfBlank&gt;&amp;nbsp;&lt;/MTCalendarIfBlank&gt;&lt;/td&gt;
+&lt;MTCalendarWeekFooter&gt;&lt;/tr&gt;&lt;/MTCalendarWeekFooter&gt;
+&lt;/MTCalendar&gt;
+&lt;/table&gt;</pre></p>
+<p><strong>请注意：</strong>计算出月历显示的代价相当高昂，所以如果你想要在网站上的每一页都摆上同样的月历，比较好的作法是在索引模版里建立一个月历，然后用服务器端的囊括功能或者是 PHP （或者是任何动态的网页服务器工具）来把这个档案囊括到你的每一页里。</p>
+<h3><a id="tags_trackback"></a>引用功能卷标</h3>
+<p>有一些卷标是和<a href="http://mtbook.org/mtmanual_trackback.html">引用功能系统</a>有关的。</p>
+<p><ul>
+  <li><a id="item_MTPings"></a><strong>MTPings</strong><br />这个容器卷标会列出特定文章项目、特定类别或者是你整个系统里所有的通告。<br />如果你在文章项目情境里 ─ 举例来说，像是在<i>引用清单模版</i>里 ─ 使用这个卷标，那么它就会列出所有送到该文章项目的引用通告。<br />如果是用在某个跟分类汇整相关联的模版中，那么这个卷标就会列出所有送到这个类别的引用通告。<br />如果适用在任何其它的情境中，那么这个卷标就会列出所有（除非你在卷标里也用了 <i>lastn</i> 属性 ─ 详见后述）送到你的系统的引用通告。<br />除此之外，如果你指定列出某一个特定类别的通告的话，你也可以在这个卷标里用 <i>category</i> 属性来提供该类别的名称，像这样：<pre>&lt;MTPings category=&quot;Foo&quot;&gt;
+...
+&lt;/MTPings&gt;</pre>同时你也可以在这个卷标里面使用 <i>sort_order</i> 属性和 <i>lastn</i> 属性，他们作用的情况会跟在其它 Movable Type 卷标里的一样。 <i>sort_order</i> 属性的值可以是 <code>ascend</code> 或者是 <code>descend</code> ；而 <i>lastn</i> 属性的值应该是正整数，表示要列出最近 N 个引用通告。<br /><a id="mtpings_example"></a>举例来说，要在头版页列出在 <code>Foo Bar</code> 这个类别中最新的 15 个通告的话，你可以把下列这段加入你的主索引模版之中：<pre>&lt;MTPings category=&quot;Foo Bar&quot; lastn=&quot;15&quot;&gt;
+&lt;a href=&quot;&lt;$MTPingURL$&gt;&quot;&gt;&lt;$MTPingTitle$&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/MTPings&gt;</pre></li>
+  <li><a id="item_MTPingID"></a><strong>MTPingID</strong><br />引用通告的数字型 ID 。</li>
+  <li><a id="item_MTPingTitle"></a><strong>MTPingTitle</strong><br />随著引用通告被送过来的标题。通常这也就是远程文章项目的标题。</li>
+  <li><a id="item_MTPingURL"></a><strong>MTPingURL</strong><br />随著引用通告被送过来的网址。通常这也就是远程文章项目的网址。</li>
+  <li><a id="item_MTPingExcerpt"></a><strong>MTPingExcerpt</strong><br />随著引用通告被送过来的文摘。</li>
+  <li><a id="item_MTPingDate"></a><strong>MTPingDate</strong><br />引用通告被送到你的站台的日期。就跟所有的日期卷标一样，在这个卷标里也能够选用 <code>format</code> 属性和 <code>language</code> 属性。更多信息请见<a href="#date tag formats">日期卷标格式</a>小节。</li>
+  <li><a id="item_MTPingBlogName"></a><strong>MTPingBlogName</strong><br />发表远程文章项目的网志名称。</li>
+  <li><a id="item_MTPingIP"></a><strong>MTPingIP</strong><br />送出该通告的主机 IP 地址。</li>
+  <li><a id="item_MTPingsSent"></a><strong>MTPingsSent</strong><br />这个容器卷标代表著从某个文章项目送出去的引用通告列示。这些是引用通告网址，而不是静态链结。<br />举例来说：<pre>&lt;MTPingsSent&gt;
+网址： &lt;$MTPingsSentURL$&gt;&lt;br /&gt;
+&lt;/MTPingsSent&gt;</pre></li>
+  <li><a id="item_MTPingsSentURL"></a><strong>MTPingsSentURL</strong><br />通告所用的网址；这个卷标得放在 <code>&lt;MTPingsSent&gt;</code> 卷标里面使用。</li>
+</ul></p>
+<h3><a id="tags_search_results"></a>搜寻结果卷标</h3>
+<p>下列这些卷标祇能用于你的搜寻模版里。</p>
+<p><ul>
+  <li><a id="item_MTSearchResults"></a><strong>MTSearchResults</strong><br />这个容器代表著所行搜寻结果的列示。在这个容器卷标内，你可以使用任何的 <code>&lt;$MTEntry*$&gt;</code> 卷标，因为搜寻结果所代表的项目会进入情境之中。你也可以用任何的 <code>&lt;$MTBlog*$&gt;</code> 卷标来存取特定文章项目结果被找到的网志数据。<br />举例来说：<pre>&lt;MTSearchResults&gt;
+&lt;MTBlogResultHeader&gt;
+&lt;h2&gt;&lt;$MTBlogName$&gt;内的结果&lt;/h2&gt;
+&lt;/MTBlogResultHeader&gt;
+&lt;h3&gt;&lt;a href=&quot;&lt;$MTEntryLink$&gt;#&lt;$MTEntryID pad=&quot;1&quot;$&gt;&quot;&gt;&lt;$MTEntryTitle$&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;$MTEntryExcerpt$&gt; &lt;$MTEntryEditLink$&gt;&lt;br /&gt;
+&lt;div class=&quot;posted&quot;&gt;&lt;$MTEntryDate$&gt; 时，被发表在 &lt;$MTBlogName$&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/MTSearchResults&gt;</pre></li>
+  <li><a id="item_MTSearchResultCount"></a><strong>MTSearchResultCount</strong><br />在所有的网志内搜寻所找到的结果数量（换而言之，并不是各网志的结果计数）。</li>
+  <li><a id="item_MTNoSearchResults"></a><strong>MTNoSearchResults</strong><br />这个容器卷标里面的内容祇有当搜寻之后没有找到任何数据时才显示出来。<br />举例来说：<pre>&lt;MTNoSearchResults&gt;
+&lt;h2&gt;已搜寻 &quot;&lt;$MTSearchString$&gt;&quot;&lt;/h2&gt;
+&lt;p&gt;没有找到任何包含有 &quot;&lt;$MTSearchString$&gt;&quot; 的页面。&lt;/p&gt;
+&lt;/MTNoSearchResults&gt;</pre></li>
+  <li><a id="item_MTNoSearch"></a><strong>MTNoSearch</strong><br />这个容器卷标里面的内容祇有当没有任何实际的搜寻动作采行的时候才显示出来。使用的时机是当某个读者直接在她的浏览器里连到你的 <i>mt-search.cgi</i> 页面时：<pre>http://YOURDOMAIN.COM/PATH-TO/mt-search.cgi</pre>或者是在新回响搜寻的情况下，有读者直接到<pre>http://YOURDOMAIN.COM/PATH-TO/mt-search.cgi?Type=newcomments&amp;help=1</pre>正确使用这个卷标的方法可能是显示搜寻指引，或者是提供更进阶的搜寻表单。<br />例如像这样：<pre>&lt;MTNoSearch&gt;
+&lt;h2&gt;指引&lt;/h2&gt;
+&lt;p&gt;... 这里是一些搜寻指引 ...&lt;/p&gt;
+&lt;/MTNoSearch&gt;</pre></li>
+  <li><a id="item_MTBlogResultHeader"></a><strong>MTBlogResultHeader</strong><br />当显示标准的搜寻结果（也就是指不是新回响搜寻的搜寻结果）时，找到的结果会依网志而被加以分组。<br />这个容器卷标里面的内容祇有当搜寻的结果位于网志分组里的第一笔时才显示。要显示网志名称、甚至是加上连往该网志的主索引链结时，都很好用。</li>
+  <li><a id="item_MTEntryEditLink"></a><strong>MTEntryEditLink</strong><br />如果使用者显示搜寻结果页面的时候已经登入 Movable Type 了，而且具有编辑被列出的文章项目权限时，这个卷标就会提供编辑搜寻结果所列出的文章项目的链结。</li>
+  <li><a id="item_MTSearchString"></a><strong>MTSearchString</strong><br />用 HTML 编码过的搜寻串列。</li>
+</ul></p>
+<h3><a id="tags_miscellaneous"></a>其它卷标</h3>
+<p>这些卷标并不适合放在上述任何一类里。</p>
+<p><ul>
+  <li><a id="item_MTElse"></a><strong>MTElse</strong><br />你可以用 <code>&lt;MTElse&gt;</code> 卷标来让任何条件卷标支持『否则』条件。也就是说，通常适用于任何名称里含有 <code>If</code> 的卷标（例如像 <code>&lt;MTEntryIfExtended&gt;</code> ）。 <code>&lt;MTElse&gt;</code> 这个容器卷标里面的内容祇有当条件<strong>不</strong>被符合时才显示。这个 <code>&lt;MTElse&gt;</code> 容器应该被<strong>放进</strong>能够提供『否则』条件的条件卷标容器里。<br />以下是一个用法的范例：<pre>&lt;MTEntryIfExtended&gt;
+这个文章项目具有延伸的内容。
+&lt;MTElse&gt;
+这个文章项目没有延伸的内容。
+&lt;/MTElse&gt;
+&lt;/MTEntryIfExtended&gt;</pre></li>
+  <li><a id="item_MTInclude"></a><strong>MTInclude</strong><br />你可以用 <a href="#item_MTInclude"><code>MTInclude</code></a> 卷标来把一个模版模块（请见前面提过的<i>模版模块</i>区段，这个区段位于<a href="http://mtbook.org/mtmanual_templates.html">模版</a>小节里）或外部档案囊括进另一个模版里。 <code>&lt;MTInclude&gt;</code> 会取用下列的属性：</li>
+  <ul>
+    <li><a id="item_module"></a><strong>module</strong><br />在你的模版清单中所定义的模版模块名称。举例来说，如果你把某个常用的 HTML 片段拿来当作模版的档头，然后你还想透过 Movable Type 来管理这个片段，那么你可以把这个片段拉进去，变成名叫 <code>Header</code> 的模版模块，再用 <code>&lt;MTInclude&gt;</code> 来囊括之：<pre>&lt;$MTInclude module=&quot;Header&quot;$&gt;</pre></li>
+    <li><a id="item_file"></a><strong>file</strong><br />要囊括进你的模版的外部档案路径。这个路径可以是完整的档案系统路径，也可以祇是在<code>本机站台路径</code>目录下或<code>本机汇整路径</code>目录下的单纯档名。举例来说，如果你的本机站台路径目录里，有个叫 <i>foo.html</i> 的档案，那么你可以像这样将其囊括进某个模版里：<pre>&lt;$MTInclude file=&quot;foo.html&quot;$&gt;</pre>这个档案将在<i>页面被重建</i>的时候被囊括进你的模版；请注意这个作用不该和服务器端囊括弄混，因为后者会在每次网页服务器收到该页的需求时就把外部档案囊括进去。所以每当你变更了透过 <code>&lt;MTInclude&gt;</code> 卷标被囊括的外部档案后，请别忘记得要重建这些页面才有办法囊括这些被修订过的部分。</li>
+  </ul>
+  <li><a id="item_MTLink"></a><strong>MTLink</strong><br />现在你可以用 <code>&lt;MTLink&gt;</code> 卷标来自动产生索引模版或系统中某篇文章的网址。 <code>&lt;MTLink&gt;</code> 可以使用下列的属性：</li>
+  <ul>
+    <li><a id="item_template"></a><strong>template</strong><br />在你的模版清单中所定义的索引模版名称。举例来说，如果你想要产生连结到你称做 <code>About Page</code> 的模版所产生的页面的话，你可以用：<pre>&lt;a href=&quot;&lt;$MTLink template=&quot;About Page&quot;$&gt;&quot;&gt;My About Page&lt;/a&gt;</pre></li>
+    <li><a id="item_entry_id"></a><strong>entry_id</strong><br />你所要连结的文章的数字型 ID 。像是这样：<pre>&lt;a href=&quot;&lt;$MTLink entry_id=&quot;562&quot;$&gt;&quot;&gt;Link to a certain entry&lt;/a&gt;</pre></li>
+  </ul>
+  <li><a id="item_MTDate"></a><strong>MTDate</strong><br />这是一个能够代表页面重建时的日期/时间的标准卷标。你可以用在像是<code>最近更新于</code>的地方，例如：<pre>本页面最后更新时间： &lt;$MTDate format=&quot;%B %d, %Y %I:%M %p&quot;$&gt;.</pre></li>
+  <li><a id="item_MTGoogleSearch"></a><strong>MTGoogleSearch</strong><br />利用 Google API 来维护特定查询的结果清单，或者是列出一些跟目前页面相似的页面。<br /><p>这个卷标可以加上下列的属性：</li>
+  <ul>
+    <li><a id="item_query"></a><strong>query</strong><br />搜寻串列。</li>
+    <li><a id="item_related"></a><strong>related</strong><br />要求 Google 传回跟某一页很像的页面；这个值可以是一个网址，在这种情况下传回的页面会跟这个网址很像；这个值也可以是 <code>1</code> ，在这个情况下传回的页面会跟你的页面（假设你在<i>站台网址</i>设定了你的主页网址）很像。范例请见后。</li>
+    <li><a id="item_title"></a><strong>title</strong><br />如果你设定了 <i>title=&quot;1&quot;</i> 这样的属性，那么送到 Google 的搜寻字符串就会是目前文章项目的标题。</li>
+    <li><a id="item_excerpt"></a><strong>excerpt</strong><br />如果你设定了 <i>excerpt=&quot;1&quot;</i> 这样的属性，那么送到 Google 的搜寻字符串就会是目前文章项目的文摘。</li>
+    <li><a id="item_keywords"></a><strong>keywords</strong><br />如果你设定了 <i>keywords=&quot;1&quot;</i> 这样的属性，那么送到 Google 的搜寻字符串就会是目前文章项目的关键词。</li>
+    <li><a id="item_results"></a><strong>results</strong><br />要传回的结果数量；目前 Google 对于每次查询将不会传回超过 10 笔查询结果，所以（目前所能使用的）最大值就是 <code>10</code> 。</li>
+  </ul>举例来说，如果你想要列出查询 <code>movable type</code> 的最前 5 笔搜寻结果：<pre>&lt;MTGoogleSearch query=&quot;movable type&quot; results=&quot;5&quot;&gt;
+&lt;a href=&quot;&lt;$MTGoogleSearchResult property=&quot;URL&quot;$&gt;&quot;&gt;&lt;$MTGoogleSearchResult property=&quot;title&quot;$&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/MTGoogleSearch&gt;</pre>或者是列出跟你的页面相似的其它页面清单：<pre>&lt;MTGoogleSearch related=&quot;1&quot;&gt;
+&lt;a href=&quot;&lt;$MTGoogleSearchResult property=&quot;URL&quot;$&gt;&quot;&gt;&lt;$MTGoogleSearchResult property=&quot;title&quot;$&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/MTGoogleSearch&gt;</pre>请注意 <i>query</i> 、 <i>related</i> 、 <i>title</i> 以及 <i>excerpt</i> 这些属性通通具有完全的排他性。<br />同时也请注意，如果你在你的单篇汇整模版里使用 Google 搜寻卷标的话，搜寻结果清单也会在任何你储存文章项目的时候被产生；而这会拖慢重建的进度；甚至当你发表的速度较快、或者当你的站台总是有大量回响时，你可能很快就会用完 Google 所允许的每日查询次数上限。<br /><strong>注意：</strong>使用这个卷标前你得先取得一把 Google API 金钥，并且将之贴进你的网志组态里；同时你还得先安装 <i>SOAP::Lite</i> 模块和 <i>LWP::UserAgent</i> 模块（你可以执行 <i>mt-check.cgi</i> 来看看你是否已经安装过这些模块了）。
+  <li><a id="item_MTGoogleSearchResult"></a><strong>MTGoogleSearchResult</strong><br />Google API 搜寻的单独结果（请见上述的 <code>&lt;MTGoogleSearch&gt;</code> 卷标）。<br />这个卷标祇有一个额外的 <i>property</i> 属性，用来指定要显示的搜寻结果字段（像是：标题、网址、摘要等等）。预设的 <i>property</i> 是 <a href="#item_title"><code>title</code></a> 。<br />有效的 <i>property</i> 值包括了： <code>summary</code> 、 <code>URL</code> 、 <code>snippet</code> 和 <a href="#item_title"><code>title</code></a> 。</p></li>
+  <li><a id="item_MTSetVar"></a><strong>MTSetVar</strong><br />这个卷标可以设定某个变数的值 ─ 你可以用 <code>name</code> 属性来设定变数名称，然后用 <code>value</code> 属性来设定变数值。然后你就可以用 <code>&lt;MTGetVar&gt;</code> 卷标（如后述）来取得这个变数的值。</li>
+  <li><a id="item_MTGetVar"></a><strong>MTGetVar</strong><br />这个卷标会把自己代换成某个变数的值；要取用的变数名称则由 <code>name</code> 属性来指定。举例来说，你可以在外部模版中设定变数 <code>foo</code> 的值：<pre>&lt;MTSetVar name=&quot;foo&quot; value=&quot;bar&quot;&gt;</pre>然后在某个被囊括的模版模块里，取得这个变数的值：<pre>&lt;MTGetVar name=&quot;foo&quot;&gt;</pre></li>
+  <li><a id="item_MTCGIPath"></a><strong>MTCGIPath</strong><br />包含有 Movable Type CGI 脚本的目录的网址路径。这个卷标会被组态档案中 <code>CGIPath</code> 列的值（在安装过程中所设定的；详见安装指引）代换掉。 <a href="#item_MTCGIPath"><code>MTCGIPath</code></a> 可以让连往 Movable Type CGI 脚本 ─ 像是 <i>mt-comments.cgi</i> 和 <i>mt-add-notify.cgi</i> ─ 这件事变得相当简单；你不再需要老是在你的模版里使用这些 CGI 脚本的网址，而祇需要用这个卷标就可以了。举例来说，当你要建立发表回响的表单时：<pre>&lt;form method=&quot;post&quot; action=&quot;&lt;$MTCGIPath$&gt;&lt;$MTCommentScript$&gt;&quot;&gt;</pre></li>
+  <li><a id="item_MTCommentScript"></a><strong>MTCommentScript</strong><br />你的 <i>mt.cfg</i> 档案里的 <i>CommentScript</i> 设定；预设值是 <i>mt-comments.cgi</i> 。</li>
+  <li><a id="item_MTTrackbackScript"></a><strong>MTTrackbackScript</strong><br />你的 <i>mt.cfg</i> 档案里的 <i>TrackbackScript</i> 设定，预设值是 <i>mt-tb.cgi</i> 。</li>
+  <li><a id="item_MTStaticWebPath"></a><strong>MTStaticWebPath</strong><br />你的 <i>mt.cfg</i> 档案里的 <i>StaticWebPath</i> 设定值。</li>
+  <li><a id="item_MTImageURL"></a><strong>MTImageURL</strong><br />已上传影像的绝对网址，用于<code>跳出已上传影像模版</code>。</li>
+  <li><a id="item_MTImageWidth"></a><strong>MTImageWidth</strong><br />已上传影像的宽度，用于<code>跳出已上传影像模版</code>。</li>
+  <li><a id="item_MTImageHeight"></a><strong>MTImageHeight</strong><br />已上传影像的高度，用于<code>跳出已上传影像模版</code>。</li>
+  <li><a id="item_MTErrorMessage"></a><strong>MTErrorMessage</strong><br />这个卷标祇能被用在<code>回响出错模版</code>里，它会被取代成送出回响过程中所发生的错误讯息（例如像是无效或缺少了的E-mail 地址）。</li>
+  <li><a id="item_MTVersion"></a><strong>MTVersion</strong><br />你所在使用的 Movable Type 版本。例如： <code>2.64</code> 。</li>
+  <li><a id="item_MTPublishCharset"></a><strong>MTPublishCharset</strong><br />你在 <i>mt.cfg</i> 里所设定的 <i>PublishCharset</i> ；如果你没有设定的话，预设值会是 <code>iso-8859-1</code> ，而这将导致中文显示的不正确。所以请务必在 <i>mt.cfg</i> 里将 <i>PublishCharset</i> 设成 <code>UTF-8</code> 。</li>
+</ul></p>
+<h3><a id="tags_global_attributes"></a>全域卷标属性</h3>
+<p>全域卷标属性可以被用于任何变数代换卷标（会被代换成某个值的卷标 ─ 这种卷标的对比就是会『容纳』其它组成元素和卷标的容器卷标）。然而这并不意味著当他们被使用于任何卷标里，都一定要<strong>有意义</strong>；实际上使用者得自己判断特定的卷标属性是否在实做上有意义。</p>
+<p>全域属性的用法就跟卷标专一属性的用法一样：在卷标里使用 <code>name=&quot;value&quot;</code> 配对。例如：<pre>&lt;$MTEntryExcerpt encode_html=&quot;1&quot;$&gt;
+</pre>这个卷标会被取代成以 HTML 编码过的文摘。</p>
+<p>以下是全域卷标属性的清单：</p>
+<p><ul>
+  <li><a id="item_filters"></a><strong>filters</strong><br />列出一组会被套用到卷标值里的文字格式过滤器。这里的过滤器名称将会是能够独特地指定出过滤器的短名称，而不是你在文字格式选项里所看到的长称号。你可以用逗号 (<code>,</code>) 来分隔过滤器名称。如果你指定了多重过滤器的话，它们将会按照你所列出的顺序先后被执行。举例来说，如果你定义了一个短名称叫 <i>wiki</i> 、会执行 <i>Text::WikiFormat</i> 这个 CPAN 模块的过滤器的话，你就可以这么做：<pre>&lt;$MTEntryTitle filters=&quot;wiki&quot;$&gt;</pre>来把 <code>''这是一个标题''</code> 这样的标题转换成 <code>&lt;em&gt;这是一个标题&lt;/em&gt;</code> 。</li>
+  <li><a id="item_encode_html"></a><strong>encode_html</strong><br />当这个属性被设成 <code>1</code> 的时候，卷标的值就会编码成 HTML 。举例来说，如果没有这个属性的时候卷标的值为 <code>Foo &amp; Bar -&gt; Baz</code> ，那么编码成 HTML 的版本就会变成 <code>Foo &amp;amp; Bar -&amp;gt; Baz</code> 。<br />使用范例：<pre>&lt;$MTEntryExcerpt encode_html=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_encode_xml"></a><strong>encode_xml</strong><br />当这个属性被设成 <code>1</code> 的时候，就把该项目中任何 XML 里需要加以编码的字符予以编码。这些字符包括有： <code>&amp;</code> 、 <code></code> 、 <code>&lt;</code> 和 <code>&gt;</code> 。<br />举例来说，如果没有这个属性的时候卷标的值为 <code>Foo &amp; Bar -&gt; Baz</code> ，那么编码成 XML 的版本就会变成 <code>Foo &amp;amp; Bar -&amp;gt; Baz</code> 。<br />使用范例（于 RSS 模版中）：<pre>&lt;item&gt;
+    &lt;title&gt;&lt;$MTEntryTitle encode_xml=&quot;1&quot;$&gt;&lt;/title&gt;</pre>注意：这个属性跟 <i>encode_html</i> 间的差异在于后者会把更多特殊字符编码成 HTML 项目；如果你安装了 <i>HTML::Entities</i> 模块，那么你就不需要在 <i>mt.cfg</i> 里开启 <i>NoHTMLEntities</i> 选项。</li>
+  <li><a id="item_encode_js"></a><strong>encode_js</strong><br />当这个属性被设成 <code>1</code> 的时候，就把卷标的值按照 Javascript 字符串值的用法编码成合适的格式。举例来说，如果没有这个属性的时候卷标的值为 <code>Foo &quot;Bar&quot; Baz's 1/2 Quux</code> ，那么编码后的版本就会变成 <code>Foo \&quot;Bar\&quot; Baz\'s 1\/2 Quux</code> 。<br />使用范例：<pre>&lt;script type=&quot;text/javascript&quot;&gt;
+var str = '&lt;$MTEntryTitle encode_js=&quot;1&quot;$&gt;';
+&lt;/script&gt;</pre></li>
+  <li><a id="item_encode_php"></a><strong>encode_php</strong><br />把卷标的值按照三种 PHP 字符串值： single-quote 、 double-quote 或 here document 其中之一的用法编码成合适的格式。这个卷标属性的值应该是 <code>q</code> (single-quote) 、 <code>qq</code> (double-quote) 或 <code>heredoc</code> (here document ─ 请注意此处的 <code>here</code> 对于一个 here document 来说仍然具有功效）。<br /><code>q</code> 的使用范例：<pre>&lt;?php
+$str = '&lt;$MTEntryTitle encode_php=&quot;q&quot;$&gt;'
+?&gt;</pre><code>heredoc</code> 的使用范例：<pre>&lt;?php
+$str = &lt;&lt;&lt;HERE
+&lt;$MTEntryBody encode_php=&quot;heredoc&quot;$&gt;
+HERE;
+?&gt;</pre></li>
+  <li><a id="item_encode_url"></a><strong>encode_url</strong><br />把卷标的值按照网址的用法编码成合适的格式。这会把非字母的字符编码成其十六进位等效字符串。举例来说， <code>foo bar</code> 这个字符串就会被转换成 <code>foo%20bar</code> 。<br />使用范例：<pre>&lt;a href=&quot;/search?q=&lt;$MTEntryTitle encode_url=&quot;1&quot;$&gt;&quot;&gt;搜寻&lt;/a&gt;</pre></li>
+  <li><a id="item_decode_html"></a><strong>decode_html</strong><br />当这个属性被设成 <code>1</code> 的时候，把所有在这个卷标值里的 HTML 项目加以译码。举例来说，如果没有这个属性的时候卷标的值为 <code>foo&amp;lt;br&amp;gt;</code> ，那么 HTML 项目被译码后的版本就会变成 <code>foo&lt;br&gt;</code> 。<br />用法范例：<pre>&lt;$MTEntryTitle decode_html=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_decode_xml"></a><strong>decode_xml</strong><br />当这个属性被设成 <code>1</code> 的时候，把所有在这个卷标值里的 XML 项目加以译码。举例来说，如果没有这个属性的时候卷标的值为 <code>foo&amp;lt;br&amp;gt;</code> ，那么 XML 项目被译码后的版本就会变成 <code>foo&lt;br /&gt;</code> 。<br />用法范例：<pre>&lt;$MTEntryTitle decode_xml=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_remove_html"></a><strong>remove_html</strong><br />当这个属性被设成 <code>1</code> 的时候，就从卷标值里删掉所有的 HTML 卷标。举例来说，如果没有这个属性的时候卷标的值为 <code>Foo&lt;br /&gt; Bar</code> ，那么没有 HTML 卷标的版本就会变成 <code>Foo Bar</code> 。<br />用法范例：<pre>&lt;$MTEntryTitle remove_html=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_dirify"></a><strong>dirify</strong><br />当这个属性被设成 <code>1</code> 的时候，就把这个卷标值给『变成目录』。这表示这个卷标的值会按照档案或目录名称的用法，转换成适当的样子：首先这个值会全部被转换成小写，接著删去所有的 HTML 卷标及项目，奇怪的字符接著也被删去（所谓奇怪的字符指的就是那些不包含在：字母数字字符、底线 (<code>_</code>) 和空白），然后再把空白转换成底线 (<code>_</code>) 。<br /><i>dirify</i> 同时也会把一些高-ASCII 字符（像是重音标记字符）转换成相对应的低-ASCII 字符；这表示像 <code>crudit&eacute;</code> 这样的东西将会被转换成 <code>crudite</code> 。<br />举例来说，如果没有这个属性的时候卷标的值为 <code>Foo &quot;Baz&quot; is&lt;br /&gt; Bar!</code> ，那么变成目录后的版本就会是 <code>foo_baz_is_bar</code> 。<br />用 ³范例：<pre>&lt;$MTArchiveCategory dirify=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_upper_case"></a><strong>upper_case</strong><br />把卷标的值转为全部大写。<br />用法范例：<pre>&lt;$MTEntryTitle upper_case=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_lower_case"></a><strong>lower_case</strong><br />把卷标的值转为全部小写。<br />用法范例：<pre>&lt;$MTArchiveDate format=&quot;%B&quot; lower_case=&quot;1&quot;$&gt;</pre></li>
+  <li><a id="item_trim_to"></a><strong>trim_to</strong><br />把卷标的值修剪成祇剩下前 N 个字符；这里的 N 需要用这个属性的值来指定。<br />用法范例：<pre>&lt;$MTEntryTitle trim_to=&quot;15&quot;$&gt;</pre>上面这个卷标将祇会显示出文章项目标题的前 <code>15</code> 个字符。</li>
+  <li><a id="item_space_pad"></a><strong>space_pad</strong><br />在卷标的值之前插入空白，使其总长度变成 N 个字符长；这里的 N 需要用这个属性的值来指定。<br />用法范例：<pre>&lt;$MTCalendarDay space_pad=&quot;3&quot;$&gt;</pre>上面这个卷标会在 <code>3</code> 这个值前面插入空白，使其变成『<code>  3</code>』。</li>
+  <li><a id="item_zero_pad"></a><strong>zero_pad</strong><br />在卷标的值之前插入零，使其总长度变成 N 个字符长；这里的 N 需要用这个属性的值来指定。<br />用法范例：<pre>&lt;$MTCalendarDay zero_pad=&quot;5&quot;$&gt;</pre>上面这个卷标会在 <code>8</code> 这个值前面插入零，使其变成 <code>00008</code> 。</li>
+  <li><a id="item_sprintf"></a><strong>sprintf</strong><br />这是泛用型的<i>sprintf</i>格式制订属性。这个属性的值应该要是格式字符串；卷标的值会被当作参数递送给<i>sprintf</i>。举例来说， <i>zero_pad</i> 也可以这样做：<pre>&lt;$MTCalendarDay sprintf=&quot;%05s&quot;$&gt;</pre></li>
+  <li><a id="item_sanitize"></a><strong>sanitize</strong><br />把讨论中的文字送进消毒过滤器里清理一番。如果这个属性的值被设定成 <code>1</code> 的话，预设的消毒规格 ─ 不论是该网志独有的或是整体设定里的 ─ 就会被采行。如果这个属性的值被设定成 <code>0</code> 的话，这个卷标的消毒功能就会被关闭。如果这个属性的值是任何其它的东西的话，也会被当成是要采行消毒规格。<br />用法范例<pre>&lt;$MTEntryBody sanitize=&quot;a href&quot;$&gt;</pre>这样将会把文章中所有的 HTML 卷标清乾净，祇留下 <code>&lt;a&gt;</code> （而且祇会留著带有 <code>href</code> 属性的）。</li>
+</ul></p>
+<h3><a id="tags_date_tag_formats"></a>日期卷标格式</h3>
+<p>Movable Type 用了标准的 <code>strftime</code> 格式字符串来描述日期和时间。（然而，请注意 <code>strftime</code> 本身并不真的是拿来施用格式的。）在任何的日期卷标里，你都应该可以用 <code>format</code> 属性来指定格式字符串，就像这样：<pre>&lt;$MTDate format=&quot;%B %e, %Y %I:%M %p&quot;$&gt;</pre>上面这个格式正是英文日期的预设格式，会做出像是这样子的日期：<pre>September 20, 2001 11:44 PM</pre>你可以在网志组态的<code>显示日期的语言</code>里面选取不同的语言，这个语言会被套用在周里的名称、月份的名称和上午/下午的说明。预设被使用的语言是<code>英文</code>。</p>
+
+<p>你也可以用 <code>language</code> 属性来指定语言，覆写掉预设的设定；这祇会套用在你正在制订格式的那个日期字符串上。以下是可用的语言卷标清单： <code>cz</code> 、 <code>dk</code> 、 <code>nl</code> 、 <code>en</code> 、 <code>fr</code> 、 <code>de</code> 、 <code>is</code> 、 <code>jp</code> 、 <code>it</code> 、 <code>no</code> 、 <code>pl</code> 、 <code>pt</code> 、 <code>si</code> 、 <code>es</code> 、 <code>fi</code> 、 <code>se</code> 。</p>
+<p>以下则是格式说明清单。</p>
+<p><ul>
+  <li><code>%a</code><br />一周里的哪一天，以缩写表示。例如： <code>Thu</code> 。</li>
+  <li><code>%A</code><br />一周里的哪一天，以全称表示。例如： <code>Thursday</code> 。</li>
+  <li><code>%b</code><br />月份名称的缩写。例如： <code>Sep</code> 。</li>
+  <li><code>%B</code><br />完整的月份名称。例如： <code>September</code> 。</li>
+  <li><code>%d</code><br />该月的第几天，以两位数字表示；必要的时候在前面补 <code>0</code> 。例如： <code>09</code> 。</li>
+  <li><code>%e</code><br />该月的第几天，必要的时候在前面补上空白。例如： <code> 9</code> 。</li>
+  <li><code>%H</code><br />时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补 <code>0</code> 。例如： <code>16</code> 。</li>
+  <li><code>%I</code><br />时，以 12 时制表示成两位数字，必要的时候在前面补 <code>0</code> 。例如： <code>04</code> 。</li>
+  <li><code>%j</code><br />该年的第几天，以三位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>056</code> 。</li>
+  <li><code>%k</code><br />时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补上空白。例如： <code> 9</code> 。</li>
+  <li><code>%l</code><br />时，以 12 时制表示成两位数字，必要的时候在前面补上空白。例如： <code> 4</code> 。</li>
+  <li><code>%m</code><br />月份，以两位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>09</code> 。</li>
+  <li><code>%M</code><br />分，以两位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>02</code> 。</li>
+  <li><code>%p</code><br /><code>AM</code> 或 <code>PM</code> 。</li>
+  <li><code>%S</code><br />秒，以两位数字表示，必要的时候在前面补 <code>0</code> ，例如： <code>04</code> 。</li>
+  <li><code>%x</code><br />按照语言决定的日期格式。对于多数的语言来说，就是 <i>%B %e, %Y</i> 。例如： <code>September 6, 2002</code> 。</li>
+  <li><code>%X</code><br />按照语言决定的时间格式。对于多数的语言来说，就是 <i>%I:%M %p</i> 。例如： <code>4:31 PM</code> 。</li>
+  <li><code>%y</code><br />年份，以两位数字表示，必要的时候在前面补 <code>0</code> ，例如： <code>01</code> 。</li>
+  <li><code>%Y</code><br />年份，以四位数字表示。例如： <code>2001</code> 。</li>
+</ul></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。</p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

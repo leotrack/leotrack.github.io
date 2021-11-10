@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>猪八的网：浮生志  | 在IE中为abbr标签加样式</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<meta name="generator" content="Hugo 0.89.2" />
+	
+	
+	<meta name="description" content="陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。">
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	
+	
+	
+	<link href="/dist/app.css" rel="stylesheet">
+	
+	
+	
+	
+<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+
+	
+	
+	
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HJRD89DCW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-5HJRD89DCW', { 'anonymize_ip': false });
+}
+</script>
+
+	
+	<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+	<script src="/vendor/js/jquery.min.js"></script>
+	<script src="/vendor/js/popper.min.js"></script>
+	<script src="/vendor/js/bootstrap.min.js"></script>
+	<script src="/vendor/js/smooth-scroll.polyfills.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/assets/css/custom.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	
+	<script src="/vendor/js/vue.min.js"></script>
+	
+	
+
+
+
+<link rel="stylesheet" href='/lib/katex.min.css' integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src='/lib/katex.min.js' integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src='/lib/contrib/auto-render.min.js' integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+	
+	
+	
+	<script>
+		(function (u, c) {
+			var d = document,
+				t = 'script',
+				o = d.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+			o.src = u;
+			if (c) {
+				o.addEventListener('load', function (e) {
+					c(e);
+				});
+			}
+			s.parentNode.insertBefore(o, s);
+		})('\/lib\/pangu.min.js', function () {
+			pangu.spacingPage();
+		});
+	</script>
+	
+	
+	
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "FancyTitleFont";
+			font-style: normal;
+			font-display: swap;
+			src: url('/fonts/%E6%9D%A8%E4%BB%BB%E4%B8%9C%E7%AB%B9%E7%9F%B3%E4%BD%93-Light.woff2') format('woff2'),
+				url('/fonts/%E6%9D%A8%E4%BB%BB%E4%B8%9C%E7%AB%B9%E7%9F%B3%E4%BD%93-Light.woff') format('woff');
+		}
+		 
+		  
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: local('Noto Serif CJK SC Light'), local('NotoSerifCJK-Light'),
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff2') format('woff2'),
+				 
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff') format('woff');
+			 
+		}
+
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local('Noto Serif CJK SC'), local('NotoSerifCJK-Regular'),
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff2') format('woff2'),
+				 
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff') format('woff');
+			 
+		}
+
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: local('Noto Serif CJK SC Medium'), local('NotoSerifCJK-Medium'),
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff2') format('woff2'),
+				 
+				url('/fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff') format('woff');
+			 
+		}
+	</style>
+	
+</head>
+
+<body class="bg-gray-100 text-gray-700 font-sans">
+	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
+		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
+			<div
+				class="z-50 bg-gray-100 bg-opacity-75 bg-opacity-custom lg:min-w-0.7 max-w-xl md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0 pt-2">
+				
+<div>
+	<h2>
+		<a href="/" title="猪八的网：浮生志" class="heading font-cursive icon">猪八的网：浮生志</a>
+	</h2>
+</div>
+<h1 class="pt-2">在IE中为abbr标签加样式</h1>
+
+<h3 class="text-java-700 font-normal leading-relaxed pt-2">  庸俗路上的无尽狂奔……
+  </h3>
+
+<div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
+	
+	
+	
+	
+	<a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400"
+		href='/categories/%E7%9F%B3%E9%A9%AC-code'>石马 | Code</a>
+	
+	
+	
+
+	
+	&nbsp;&nbsp;
+	
+
+	
+	
+	
+	
+	<a class="post-taxonomy-tag text-eucalyptus-500"
+		href='/tags/abbr'>abbr</a>&nbsp;&#47;
+	
+	<a class="post-taxonomy-tag text-eucalyptus-500"
+		href='/tags/ie'>IE</a>
+	
+	
+	
+</div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4"
+		datetime="2006-07-21T11:27:45&#43;08:00">2006-7-21 11:27</time>
+</div>
+
+<hr />
+
+
+			</div>
+		</header>
+		<main role="main" class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
+			
+
+<article>
+	<section class="mx-auto content">
+		<div class="c-rich-text"><p><strong>简介</strong></p>
+<p>&lt;abbr&gt;是用来为web页面上的简称（译者注：这里把简称和缩写分开而论，简称范围比缩写大，取首字母的缩写用&lt;acronym&gt;标签）<a href="http://www.evolt.org/article/HTML_is_not_an_acronym/17/35750/index.html">添加适当标注</a>的XHTML标签，Windows的IE浏览器暂不支持&lt;abbr&gt;标签。 在IE里，你可以应用CSS给&lt;acronym&gt;但是不能应用给&lt;abbr&gt;标签，IE会为&lt;acronym&gt;标签的title属性显示提示，但是会忽略&lt;abbr&gt;标签。</p>
+<p>这个IE的bug（或者特色）使得一些网站人员认为&lt;abbr&gt;标签一点用都没有，而显然这么认为是不对的。在Mozilla和Opera里还是很正确的处理了这个标签，并且它对于web内容的可读性和语义化来说非常重要。这也是我为什么一直在寻找解决方法，最终我找到了。</p>
+<p><strong>解决方法</strong></p>
+<p>本方法基于一个简单的事实：即使IE会忽略&lt;abbr&gt;标签，但是其他嵌套在&lt;abbr&gt;标签里的标签还是正常的。所以我在嵌了一个&lt;span&gt;标签在&lt;abbr&gt;里，设置&lt;span&gt;的title和class属性，然后&lt;abbr&gt;开始变得和&lt;acronym&gt;标签一样了。</p>
+<p><strong>代码例子</strong></p>
+<p>看一下下面的代码，是一个简单的缩写词的例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    <span style="color:#111">&lt;</span><span style="color:#f92672">abbr</span> <span style="color:#75af00">title</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;Cascading Style Sheets&#34;</span><span style="color:#111">&gt;</span>CSS<span style="color:#111">&lt;/</span><span style="color:#f92672">abbr</span><span style="color:#111">&gt;</span>
+</code></pre></div><p>现在，对比一下修改后的代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    <span style="color:#111">&lt;</span><span style="color:#f92672">abbr</span> <span style="color:#75af00">title</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;Cascading Style Sheets&#34;</span><span style="color:#111">&gt;&lt;</span><span style="color:#f92672">span</span> <span style="color:#75af00">class</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;abbr&#34;</span> <span style="color:#75af00">title</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;Cascading Style Sheets&#34;</span><span style="color:#111">&gt;</span>CSS<span style="color:#111">&lt;/</span><span style="color:#f92672">span</span><span style="color:#111">&gt;&lt;/</span><span style="color:#f92672">abbr</span><span style="color:#111">&gt;</span>
+</code></pre></div><p><strong>自动操作</strong></p>
+<p>手动的给每一个&lt;abbr&gt;标签嵌入&lt;span&gt;显然不可能&amp;#8212;-既无聊又对Mozilla和Opera没必要。幸运的是，现在有一个自动的、基于客户端脚本的解决方法。</p>
+<p>你可能注意到了，这个页面（译者注：<a href="http://www.sovavsiti.cz/css/abbr.html">原作者的页面</a>）上的简写词语即使在IE里都会有提示，并且加了CSS样式（虚下划线和一个问号状的鼠标光标）。然而你如果看一下源代码，你将找不到在上文提到的&lt;span&gt;标签。这得益于本页加载的一个简单的JavaScript：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#111">function</span> <span style="color:#75af00">styleAbbr</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+     <span style="color:#111">var</span> <span style="color:#111">oldBodyText</span><span style="color:#f92672">,</span> <span style="color:#111">newBodyText</span><span style="color:#f92672">,</span> <span style="color:#111">reg</span>
+     <span style="color:#75af00">if</span> <span style="color:#f92672">(</span><span style="color:#111">isIE</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+     <span style="color:#111">oldBodyText</span> <span style="color:#f92672">=</span> <span style="color:#111">document</span><span style="color:#f92672">.</span><span style="color:#75af00">body</span><span style="color:#f92672">.</span><span style="color:#75af00">innerHTML</span><span style="color:#f92672">;</span>
+     <span style="color:#111">reg</span> <span style="color:#f92672">=</span> <span style="color:#f92672">/&lt;</span><span style="color:#111">abbr</span><span style="color:#f92672">([^&gt;]*)&gt;([^&lt;]*)&lt;/</span><span style="color:#111">ABBR</span><span style="color:#f92672">&gt;/</span><span style="color:#111">g</span><span style="color:#f92672">;</span>
+     <span style="color:#111">newBodyText</span> <span style="color:#f92672">=</span> <span style="color:#111">oldBodyText</span><span style="color:#f92672">.</span><span style="color:#75af00">replace</span><span style="color:#f92672">(</span><span style="color:#111">reg</span><span style="color:#f92672">,</span> <span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#111">8216</span><span style="color:#f92672">;&lt;</span><span style="color:#111">abbr</span> <span style="color:#111">$1</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#111">span</span> <span style="color:#111">class</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;&#34;</span><span style="color:#111">abbr</span><span style="color:#d88200">&#34;&#34;</span> <span style="color:#111">$1</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#111">$2</span><span style="color:#f92672">&lt;/</span><span style="color:#111">span</span><span style="color:#f92672">&gt;&lt;/</span><span style="color:#111">abbr</span><span style="color:#f92672">&gt;&amp;</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#111">8216</span><span style="color:#f92672">;);</span>
+     <span style="color:#111">document</span><span style="color:#f92672">.</span><span style="color:#75af00">body</span><span style="color:#f92672">.</span><span style="color:#75af00">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#111">newBodyText</span><span style="color:#f92672">;</span>
+     <span style="color:#f92672">}</span>
+     <span style="color:#f92672">}</span>
+     <span style="color:#111">window</span><span style="color:#f92672">.</span><span style="color:#75af00">onload</span> <span style="color:#f92672">=</span> <span style="color:#111">function</span><span style="color:#f92672">(){</span>
+     <span style="color:#111">styleAbbr</span><span style="color:#f92672">()</span>
+     <span style="color:#f92672">};</span>
+     <span style="color:#111">isIE</span> <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#111">document</span><span style="color:#f92672">.</span><span style="color:#75af00">all</span><span style="color:#f92672">)</span> <span style="color:#f92672">?</span> <span style="color:#00a8c8">true</span><span style="color:#f92672">:</span><span style="color:#00a8c8">false</span><span style="color:#f92672">;</span>
+     <span style="color:#f92672">&lt;/</span><span style="color:#111">abbr</span><span style="color:#f92672">([^&gt;</span>
+</code></pre></div><p>你可能注意到了，我的站点也具有了此功效，是因为我将上面的代码写入了一个名为_abbr.js_的脚本中，然后在_Theme_的_header.php_中加入了这样一段代码，同时和插件<a href="https://zhu8.net/blog/?p=5">Acronym Replacer</a>配合使用就可以了。<strong>Zhu8[注]</strong></p>
+<p>这段脚本会检查客户端浏览器，如果是IE，那么则替换所有的&lt;abbr&gt;标签为修改过的版本（嵌入了&lt;span&gt;）。注意的是我们必须使用正则表达式和innerHTML属性来取代标准的DOM方法，因为IE不能通过DOM来获取&lt;abbr&gt;属性。</p>
+<p><strong>样式化</strong></p>
+<p>最后看一下这个页面上使用的CSS。相当简单：</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    <span style="color:#f92672">abbr</span><span style="color:#f92672">,</span> <span style="color:#f92672">acronym</span><span style="color:#f92672">,</span> <span style="color:#f92672">span</span><span style="color:#111">.</span><span style="color:#75af00">abbr</span> <span style="color:#111">{</span>
+     <span style="color:#00a8c8">cursor</span><span style="color:#111">:</span> <span style="color:#00a8c8">help</span><span style="color:#111">;</span>
+     <span style="color:#00a8c8">border-bottom</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span><span style="color:#00a8c8">px</span> <span style="color:#00a8c8">dashed</span> <span style="color:#ae81ff">#000</span><span style="color:#111">;</span>
+     <span style="color:#111">}</span>
+</code></pre></div><p>Mozilla和Opera使用abbr和acronym属性选择器，IE则使用acronym和span.abbr。无论如何，&lt;abbr&gt;和&lt;acronym&gt;都被样式化了——一个问号状的鼠标光标（当鼠标指上后）和虚下划线。</p>
+<p><strong>其他</strong></p>
+<p>1.感谢Michael Kusyn提供了JavaScript解决方法。
+2.更多关于&lt;abbr&gt;，&lt;acronym&gt;标签和两者的区别，参考_Craig Saila_的<a href="http://www.evolt.org/article/HTML_is_not_an_acronym/17/35750/index.html">HTML is not an acronym</a> （Evolt.org）</p>
+<p>欢迎交流意见评论，可以发邮件至<a href="mailto:marek@sovavsiti.cz">marek@sovavsiti.cz</a>.</p>
+<p>&amp;原文：<a href="http://www.sovavsiti.cz/css/abbr.html">http://www.sovavsiti.cz/css/abbr.html</a>
+&amp;翻译：<a href="http://blog.handsbrain.com/JunChen">JunChen </a>
+&amp;版权:译者JunChen所有，转载请联系译者。</p></div>
+	</section>
+
+
+</article>
+
+		</main>
+		<div class="w-full h-0 flex-none order-3"></div>
+		<aside role="contentinfo"
+			class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
+			<div class="md:float-right md:text-right leading-loose tracking-tight md:mb-2">
+				
+	<div class="md:max-w-xs  flex flex-col md:items-end">
+	<ul class="font-serif flex-grow-0 flex justify-between flex-wrap md:flex-col">
+	
+	
+	<li class="px-1 md:px-0">
+		<a href="/blog/" title="Blog | 日志 page" 
+			class="font-medium text-medium-red-violet-600 hover:text-medium-red-violet-400" >
+			Blog | 日志
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/about/" title="About | 关于 page" >
+			About | 关于
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/links/" title="Links | 链接 page" >
+			Links | 链接
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/project/" title="Project | 项目 page" >
+			Project | 项目
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/categories/" title="Categories | 分类 page" >
+			Categories | 分类
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/tags/" title="Tags | 标签 page" >
+			Tags | 标签
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/index.xml" title="RSS Feed page" >
+			RSS Feed
+		</a>
+	</li>
+	
+	
+	
+	<div id="fastSearch" class="m-0">
+		<input id="searchInput" type="text" size=10 
+			class="bg-gray-100 focus:outline-none border-b border-gray-100 focus:border-eucalyptus-300 md:text-right
+			placeholder-java-500 min-w-0 max-w-xxxs"
+			placeholder="search" />
+		<ul id="searchResults" class="bg-gray-200 px-2 divide-y divide-gray-400">
+		</ul>
+	</div>
+	
+</ul>
+	
+
+<div class="flex flex-wrap-reverse md:justify-end content-end md:content-start justify-start items-start   max-h-16">
+	
+	<a href='http://github.com/zhu8' target="_blank" class="github icon pl-1 text-eucalyptus-400 hover:text-java-400" title="github link" rel="noopener"
+		aria-label="follow on github——Opens in a new window">
+		
+		<div class="fill-current h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path fill-rule="nonzero" d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588-.094-.117.34.427.433.539.19.227.33.365.44.438.204.137.587.196 1.15.14.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308 1.477-.933 2.613-1.226 3.422-1.096.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19.691.936 1.058 2.045 1.058 3.293 0 3.757-1.674 5.665-4.642 6.392.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716 1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446.005-.705c.005-.708.007-1.338.007-1.998 0-.697-.183-1.152-.425-1.36-.661-.57-.326-1.655.54-1.752 2.967-.333 4.337-1.482 4.337-4.66 0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66.865.097 1.201 1.177.544 1.748-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z"/>
+    </g>
+</svg>
+
+		</div>
+	</a>
+	
+	<a href='http://gitlab.com/zhu8.net' target="_blank" class="gitlab icon pl-1 text-eucalyptus-400 hover:text-java-400" title="gitlab link" rel="noopener"
+		aria-label="follow on gitlab——Opens in a new window">
+		
+		<div class="fill-current h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path fill-rule="nonzero" d="M5.68 7.314l-1.82 5.914L12 19.442l8.14-6.214-1.82-5.914L16.643 11H7.356L5.681 7.314zM15.357 9l2.888-6.354a.4.4 0 0 1 .747.048l3.367 10.945a.5.5 0 0 1-.174.544L12 21.958 1.816 14.183a.5.5 0 0 1-.174-.544L5.009 2.694a.4.4 0 0 1 .747-.048L8.644 9h6.712z"/>
+    </g>
+</svg>
+
+		</div>
+	</a>
+	
+	<a href='http://twitter.com/5CJ' target="_blank" class="twitter icon pl-1 text-eucalyptus-400 hover:text-java-400" title="twitter link" rel="noopener"
+		aria-label="follow on twitter——Opens in a new window">
+		
+		<div class="fill-current h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path fill-rule="nonzero" d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z"/>
+    </g>
+</svg>
+
+		</div>
+	</a>
+	
+	<a href='http://weibo.com/zhu8' target="_blank" class="weibo icon pl-1 text-eucalyptus-400 hover:text-java-400" title="weibo link" rel="noopener"
+		aria-label="follow on weibo——Opens in a new window">
+		
+		<div class="fill-current h-8 w-8">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path fill-rule="nonzero" d="M20.194 14.197c0 3.362-4.53 6.424-9.926 6.424C5.318 20.62 1 18.189 1 14.534c0-1.947 1.18-4.087 3.24-6.088 2.832-2.746 6.229-4.033 7.858-2.448.498.482.723 1.122.719 1.858 1.975-.576 3.65-.404 4.483.752.449.623.532 1.38.326 2.207 1.511.61 2.568 1.77 2.568 3.382zm-4.44-2.07c-.386-.41-.4-.92-.198-1.41.208-.508.213-.812.12-.94-.264-.368-1.533-.363-3.194.311a2.043 2.043 0 0 1-.509.14c-.344.046-.671.001-.983-.265-.419-.359-.474-.855-.322-1.316.215-.67.18-1.076.037-1.215-.186-.18-.777-.191-1.659.143-1.069.405-2.298 1.224-3.414 2.306C3.925 11.54 3 13.218 3 14.534c0 2.242 3.276 4.087 7.268 4.087 4.42 0 7.926-2.37 7.926-4.424 0-.738-.637-1.339-1.673-1.652-.394-.113-.536-.171-.767-.417zm7.054-1.617a1 1 0 0 1-1.936-.502 4 4 0 0 0-4.693-4.924 1 1 0 1 1-.407-1.958 6 6 0 0 1 7.036 7.384z"/>
+    </g>
+</svg>
+
+		</div>
+	</a>
+	
+</div>
+	<div class="text-sm text-gray-500 leading-tight a-gray">
+		
+		<i class="fas fa-paint-roller"></i>Theme <a 
+		href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a> with1519 words here.<br>
+		<i class="fas fa-code-branch"></i><a href="https://coding.net">CODING</a> Powered by <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a><br><br>
+		
+		<i class="fas fa-copyright"></i>2021 &sect; Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;] 
+	</div>
+</div>
+
+			</div>
+		</aside>
+		<footer class="w-full md:w-3/5 xl:w-1/2 order-3 max-w-3xl md:order-4 pt-2">
+			
+<hr class="double-line" />
+<div class="flex flex-wrap justify-between pb-2 leading-loose font-serif">
+    
+    <a class="flex-grow-0" href="/blog/2006/07/my-wordpress-plugins.html">
+        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" /></svg>
+        我的WordPress插件列表
+    </a>
+    
+    
+    <a class="flex-grow-0" href="/blog/2006/07/google-ban-zhu8-net.html">
+        我被Google封了？
+        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" /></svg></a>
+    
+</div>
+<div >
+
+
+
+</div>
+<hr />
+<div class="pb-2">
+    
+<div id="waline"></div>
+<script>
+    new Waline({
+        el: '#waline',
+        path: location.pathname,
+        serverURL: "https://waline-zhu8.vercel.app/" ,
+        visitor: 'true'
+        uploadImage: false
+    });
+    </script>
+
+</div>
+<hr />
+
+		</footer>
+		
+
+<script src="/dist/app.js"></script>
+
+
+<script src="/lib/fuse.min.js"></script> 
+<script src="/lib/fastsearch.js"></script>
+
+	</div>
+</body>
+
+</html>

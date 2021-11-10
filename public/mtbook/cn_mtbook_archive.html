@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第八章 ─ 汇整</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第七章 ─ 引用功能" href="cn_mtbook_trackback.html" />
+  <link rel="next" title="第九章 ─ 模版" href="cn_mtbook_template.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第八章 ─ 汇整</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#archive">第八章 ─ 汇整</a></li>
+  <ul>
+    <li><a href="#intro">甚么是汇整</a></li>
+    <li><a href="#type">汇整的种类</a></li>
+    <ul>
+      <li><a href="#type_individual">单篇汇整</a></li>
+      <li><a href="#type_timebased">按时汇整</a></li>
+      <li><a href="#type_category">分类汇整</a></li>
+    </ul>
+    <li><a href="#enable">选择要使用的汇整方式</a></li>
+    <li><a href="#pref">指定偏好的汇整方式</a></li>
+    <li><a href="#filename">汇整档案的档名</a></li>
+    <li><a href="#multi">多重汇整</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="archive"></a>第八章 ─ 汇整</h1>
+<p>本章要介绍的是 Movable Type 里的汇整功能，将说明何谓汇整并介绍其种类，接著会介绍使用各种汇整的方法，还有相关的事项。虽然我们在这一章仍旧不会涉及较深入的模版写作实务，但是当我们提到汇整档名的时候，却会用到 Movable Type 的模版卷标；如果各位实在无法消化那一小节的内容，也不需要强迫自己阅读，可以先搁著稍后再回来翻阅参照。</p>
+<p>从这一章起我们也将进入文字较多而图片较少的世界，有些读者也许一开始不大能够接受，但是这些概念上的东西其实都不难，相信各位还是能够很快上手的。</p>
+<h2><a id="intro"></a>甚么是汇整</h2>
+<p>我们在一开始的<a href="cn_mtbook_intro.html#history">网志发迹史</a>曾经提过网志的四个要素：<code>汇整</code>、<code>静态链结</code>、<code>时间戳印</code>和<code>日期标头</code>。其中第一项「<strong>汇整</strong>」正是写网志 (blogging) 最重要的精神，也是本章的重点。</p>
+<p>如果我们把「写网志 (blogging) 」定义成「<strong>作者按照自己的信念整理信息的方法与过程</strong>」的话，那么这些被整理过后的信息产物，就是所谓的<code>汇整</code>了。实际上 archive （汇整）这个字就跟 blog （网志、写网志）这个字一样，可以单纯的当作名词来表示某一种东西，更可以当作动词来表示一种动作或过程。作为名词的时候，汇整就是<strong>汇集或整理著特定信息的一份档案</strong>；当作动词的时候则是<strong>汇集或整理信息的过程</strong>。</p>
+<p>让我们回到稍早的定义，因此<strong>网志就是一些特定的汇整档案</strong>，同时<strong>写网志就是一种汇整的行为</strong>。由此可见汇整在网志里有多重要了。</p>
+<p>实际上汇整是一种很自由的举动，虽然我们把这两个字解释得如此文诌诌的，但是就算你随意地、胡乱地把一堆文章片段放在一起，祇要你自己明白它们被放在一起的原因，那么你就可以称这样的一个档案是一份汇整，没有人能够反驳你；甚至同一篇文章（或图片、声音、任何媒体档案）也都可以同时出现在多个汇整档案里，没有人规定汇整里的信息都得要独一无二不可。</p>
+<h2><a id="type"></a>汇整的种类</h2>
+<p>在 Movable Type 里面预先定义了几种不同的汇整方式，能够自动地帮你维护这些汇整档案；这些汇整的方式也许并不独特，但却相当合理，而且对于多数的情况来说也已经足够了。它们包括了：</p>
+<p><ul>
+  <li><a href="#type_individual">单篇汇整</a></li>
+  <li><a href="#type_timebased">按时汇整</a></li>
+  <li><a href="#type_category">分类汇整</a></li>
+</ul></p>
+<p>以下就让我们逐一加以说明：</p>
+<h3><a id="type_individual"></a>单篇汇整</h3>
+<p>单篇汇整可以说是最简单而直觉的汇整方式了：每一份汇整档案里不多不少刚好就祇有那么一篇文章。单篇汇整是 Movable Type 预设就会使用的汇整方式之一，这种汇整方式有著不少好处，你可以把所有祇跟那篇文章有关的信息都显示出来，跟这一篇文章无关的信息则一概不予显示。</p>
+<p>这种把每一篇文章单独整理起来，成为一个静态页面的汇整方式，可以让读者把心思集中在当前这一篇文章上；你可以在此呈现文章的内容本体、延伸内容、回响、引用记录等信息，而丝毫不用担心造成读者信息负荷过重 ─ 因为在这里一次就祇会显示出一篇文章的内容罢了。</p>
+<h3><a id="type_timebased"></a>按时汇整</h3>
+<p>既然网志里的文章必定带著<code>时间戳印</code>，于是就有了<code>按时汇整</code>这样的汇整方式。这种汇整方式乃是把固定时间周期内的文章通通蒐集起来，整理呈一个静态页面；根据选用周期的不同，又可以分成<code>逐月汇整</code>、<code>逐周汇整</code>以及<code>逐日汇整</code>。</p>
+<p>顾名思义，逐月汇整就是以月份为单位，把时间戳印在同一个月份里的文章都集结起来；逐周汇整就是以星期为单位，把时间戳印在同一周里的文章都集结起来；逐日汇整就是以日期为单位，把时间戳印在同一天里的文章都集结起来。这么做的好处是，当任何人日后要回过头来找旧文章的时候，就祇需要大略记得是哪一段时间内的东西就好，然后再翻出相对应的那一份汇整。</p>
+<p>你可以发现你选用的汇整周期越大，所囊括的文章也就越多；这么一来一方面你找旧文章时的记忆就算更模糊也无所谓，但另一方面每一个汇整档案可能都会有更多内容 ─ 你很快就能确定你要找的东西在哪一个档案里，问题变成你不晓得它会在档案的哪一个角落出现。</p>
+<p>相反地，如果你选用的汇整周期较小，那么你就得比较精确地记得文章被发表的时间；但是一旦你找到正确的汇整档案后，很快就能够在那个汇整档案里找回你要的东西了。</p>
+<p>当然你可以同时选用各种不同的汇整周期；但是别忘了，虽然数据库里的东西一样多，但是你每多选用了一种汇整周期，你所制作出来的静态汇整档案就又会多占去足足一倍的服务器空间！选择合宜的汇整周期是一项学问，你应当自己斟酌文章发表的频率以及文章的性质，挑出合适的汇整周期。</p>
+<p>Movable Type 预设启用的汇整方式中，就包含了<strong>逐月汇整</strong>；对于刚开始写作的朋友来说，一个月的汇整周期其实是挺合适的。等到你写作的频率逐渐增加后，再考虑缩短汇整周期就可以了。</p>
+<h3><a id="type_category"></a>分类汇整</h3>
+<p>如果你已经按照我们在<a href="cn_mtbook_category.html#category">第五章</a>讨论过的步骤，开始把文章指派给不同的类别的话，那么利用这些类别来整理档案似乎也是很棒的选择。</p>
+<p>这种把归在同一个类别的文章通通汇集起来的汇整方式，就是<code>分类汇整</code>。这种汇整方式可以提供各个类别的脉络情境，当读者阅读某一个分类汇整档案里的文章时，将可以摆脱时间的不连续性，而将先后发生的事件串联在一起。当你开始发展出特定的书写方向的时候，也会是开始启用分类汇整的好时机。</p>
+<p>当你刚开始写作的时候，连系统都不甚熟悉，更遑论发展出特定写作方向了；此外 Movable Type 一开始也不会提供任何预设的类别，所以分类汇整一开始是不会启用的，你得自己把它打开。</p>
+<h2><a id="enable"></a>选择要使用的汇整方式</h2>
+<p>你可以在任何时候改变汇整方式、启用某几种汇整方式或不再使用某几种汇整方式。已经被建立出来的静态档案仍旧会存在，但是不再被继续使用的汇整方式就不会用来更新这些档案了。请参考下列的步骤：</p>
+<p><ol>
+  <li><a id="enable_01"></a>如<a href="#img_01">图一</a>按下左方工具列上的「<strong>网志组态</strong>」按钮，再如<a href="#img_02">图二</a>点击「<strong>汇整</strong>」链结。<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mtarchive_enable_01.png" alt="按下「网志组态」按钮"><br />图一：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtarchive_enable_02.png" alt="点击「汇整」链结"><br />图二：点击网志组态画面上方的「汇整」链结。</div></li>
+  <li><a id="enable_02"></a>在网志组态的汇整画面中，如<a href="#img_03">图三</a>核选欲启用的汇整方式，并且把不打算继续使用的汇整方式取消核选，再按下「<strong>储存</strong>」按钮，这样就可以了。<div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtarchive_enable_03.png" alt="核选「类别」"><br />图三：核选欲启用的汇整方式，在这个范例中我们核选了「类别」，表示我们打算开始进行分类汇整。</div></li>
+</ol></p>
+<h2><a id="pref"></a>指定偏好的汇整方式</h2>
+<p>除了决定要使用哪些汇整方式外，你还可以决定<strong>偏好汇整类别</strong>是甚么；这个决定会影响到文章静态链结的表现方式。</p>
+<p>如果你偏好的汇整方式是<code>单篇汇整</code>，那么文章的静态链结就会指到仅含有该篇文章的单篇汇整去；如果偏好的汇整方式是<code>逐日汇整</code>的话，文章的静态链结就会指到该篇文章所在的逐日汇整档案，并加上该篇文章的定位锚；如果偏好的汇整方式是<code>逐周汇整</code>的话，文章的静态链结就会指到该篇文章所在的逐周汇整档案，并加上该篇文章的定位锚；如果偏好的汇整方式是<code>逐月汇整</code>的话，文章的静态链结就会指到该篇文章所在的逐月汇整档案，并加上该篇文章的定位锚；如果偏好的汇整方式是<code>分类汇整</code>的话，文章的静态链结就会指到该篇文章所在的分类汇整档案，并加上该篇文章的定位锚。</p>
+<p>在正常的情况下，我会建议你选择<code>单篇汇整</code>作为偏好的汇整方式，因为这样的汇整方式恰好适合用来呈现所有跟单篇文章有关的信息，拿来当作文章静态链结的目的地再好不过了。不过也许你会有不同的规划及想法，这时候你可以用下列的步骤来修改这项设定：</p>
+<p><ol>
+  <li><a id="pref_01"></a>如<a href="#img_04">图四</a>按下左方工具列上的「<strong>网志组态</strong>」按钮，再如<a href="#img_05">图五</a>点击「<strong>偏好</strong>」链结；在接下来的网志组态画面中，再如<a href="#img_06">图六</a>点击「<strong>汇整</strong>」链结。<div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtarchive_pref_01.png" alt="按下「网志组态」按钮"><br />图四：按下左方工具列的「网志组态」按钮。</div><div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mtarchive_pref_02.png" alt="点击「偏好」链结"><br />图五：点击网志组态画面上方的「偏好」链结。</div><div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtarchive_pref_03.png" alt="点击「汇整」链结"><br />图六：点击偏好页面上的「汇整」链结。</div></li>
+  <li><a id="pref_02"></a>你可以看到在如<a href="#img_07">图七</a>的画面中，汇整区段的第一项设定值就是偏好汇整类别。这个设定项目是一个下拉式选单，祇有你照著<a href="#enable">前一小节</a>的方法启用的汇整方式，才会在这个下拉式选单里出现；如果你打算设为偏好汇整方式的选项没有出现，就表示你根本还没有启用那个汇整方式，请先启用后再回来设定。用这个下拉式选单设定好预设汇整方式后，别忘了还要如<a href="#img_08">图八</a>按下「储存」按钮就可以了。<div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mtarchive_pref_04.png" alt="从下拉式选单里选择「单篇汇整」"><br />图七：从下拉式选单里选择偏好汇整方式，在这个范例种选用的是「单篇汇整」。</div><div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtarchive_pref_05.png" alt="按下「储存」按钮"><br />图八：设定完成后别忘了按下「储存」按钮。</div></li>
+</ol></p>
+<h2><a id="filename"></a>汇整档案的档名</h2>
+<p>当你开始汇整文章之后，下一个会问的问题大概就是「档案在哪里？」了。</p>
+<p>所有的汇整档案都会被放到<code>本机汇整路径</code>里，任何读者都可以利用<code>汇整网址</code>来读取这些档案。这两项设定我们在<a href="cn_mtbook_config.html#blog_config_core">第二章的核心设定小节</a>提过了，如果你已经忘记当初设定了甚么的话，也可以循相同的方式去看一下你自己的设定值。</p>
+<p>而不同的汇整方式所产生的汇整档案，档名看起来也会有所不同。以下先让我们看一下各种汇整方式所产生的汇整档案档名格式：</p>
+<ul>
+  <li>单篇汇整档案的预设档名是<strong>六位数字的文章ID.html </strong>，不满六位的话会自动补上 0 。相当于在汇整档案模版里填上：<pre>&lt;$MTEntryID pad=&quot;1&quot;$&gt;.html</pre></li>
+  <li>逐月汇整档案的预设档名是<strong>该月的四位数字年份_该月的两位数字月份.html </strong>，位数不满的部分一样会补上 0 。相当于在汇整档案模版里填上：<pre>&lt;$MTArchiveDate format=&quot;%Y_%m&quot;$&gt;.html</pre></li>
+  <li>逐周汇整档案的预设档名是<strong> week_该周开始日的四位数字年份_该周开始日的两位数字月份_该周开始日的两位数日期.html </strong>，位数不满的部分一样会补上 0 。相当于在汇整档案模版里填上：<pre>week_&lt;$MTArchiveDate format=&quot;%Y_%m_%d&quot;$&gt;.html</pre></li>
+  <li>逐日汇整档案的预设档名是<strong>该日的四位数字年份_该日的两位数字月份_该日的两位数字日期.html </strong>，位数不满的部分一样会补上 0 。相当于在汇整档案模版里填上：<pre>&lt;$MTArchiveDate format=&quot;%Y_%m_%d&quot;$&gt;.html</pre></li>
+  <li>分类汇整档案的预设档名是<strong> cat_分类名称.html </strong>，相当于在汇整档案模版里填上：<pre>cat_&lt;$MTCategoryLabel$&gt;.html</pre></li>
+</ul>
+<p>在上述的这份清单里，出现了一些<strong>模版卷标</strong>；这可能是你第一次看到它们，不过别惊慌，它们没有你想像得那么复杂。可以用于汇整档名的模版卷标包含了：</p>
+<p><ul>
+  <li><code>&lt;$MTArchiveDate$&gt;</code><br />这个卷标祇能够用于<code>按时汇整</code>，代表的是<code>汇整开始的日期</code>。</li>
+  <li><code>&lt;$MTArchiveDateEnd$&gt;</code><br />这个卷标祇能够用于<code>按时汇整</code>，代表的是<code>汇整结束的日期</code>。</li>
+  <li><code>&lt;$MTArchiveCategory$&gt;</code><br />这个卷标祇能够用于<code>分类汇整</code>，代表的是这份汇整清单所属的<code>类别名称</code>。</li>
+  <li><code>&lt;$MTEntryTitle$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>标题</code>。</li>
+  <li><code>&lt;$MTEntryStatus$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>出版状态</code>。</li>
+  <li><code>&lt;$MTEntryExcerpt$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>文摘</code>。</li>
+  <li><code>&lt;$MTEntryBody$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>主要文章本体</code>。</li>
+  <li><code>&lt;$MTEntryMore$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>额外文章内容</code>。</li>
+  <li><code>&lt;$MTEntryKeywords$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>关键词</code>。</li>
+  <li><code>&lt;$MTEntryAuthor$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>作者名字</code>。</li>
+  <li><code>&lt;$MTEntryAuthorNickname$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>作者昵称</code>。</li>
+  <li><code>&lt;$MTEntryDate$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>日期</code>。</li>
+  <li><code>&lt;$MTEntryCommentCount$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>回响数量</code>。</li>
+  <li><code>&lt;$MTEntryTrackbackCount$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>引用通告数量</code>。</li>
+  <li><code>&lt;$MTEntryTrackbackID$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>引用对象 ID </code>。</li>
+  <li><code>&lt;$MTEntryID$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code> ID </code>。如果你打算把这个数字凑满六位，不足补 0 的话，就可以加上 <code>pad=&quot;1&quot;</code> 属性，像这样：<pre>&lt;$MTEntryID pad=&quot;1&quot;$&gt;</pre></li>
+  <li><code>&lt;$MTEntryCategory$&gt;</code><br />这个卷标祇能够用于<code>单篇汇整</code>，代表的是这篇文章的<code>主要类别名称</code>。</li>
+</ul></p>
+<p>对于 <code>&lt;$MTArchiveDate$&gt;</code> 、 <code>&lt;$MTArchiveDateEnd$&gt;</code> 和 <code>&lt;$MTEntryDate$&gt;</code> 这三个卷标来说，你也可以用 <code>format</code> 属性来自订日期显示格式。在这个属性里你可以用下列的字符串来任意排列组合：</p>
+<p><ul>
+  <li><code>%a</code><br />一周里的哪一天，以缩写表示。例如： <code>Thu</code> 。</li>
+  <li><code>%A</code><br />一周里的哪一天，以全称表示。例如： <code>Thursday</code> 。</li>
+  <li><code>%b</code><br />月份名称的缩写。例如： <code>Sep</code> 。</li>
+  <li><code>%B</code><br />完整的月份名称。例如： <code>September</code> 。</li>
+  <li><code>%d</code><br />该月的第几天，以两位数字表示；必要的时候在前面补 <code>0</code> 。例如： <code>09</code> 。</li>
+  <li><code>%e</code><br />该月的第几天，必要的时候在前面补上空白。例如： <code> 9</code> 。</li>
+  <li><code>%H</code><br />时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补 <code>0</code> 。例如： <code>16</code> 。</li>
+  <li><code>%I</code><br />时，以 12 时制表示成两位数字，必要的时候在前面补 <code>0</code> 。例如： <code>04</code> 。</li>
+  <li><code>%j</code><br />该年的第几天，以三位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>056</code> 。</li>
+  <li><code>%k</code><br />时，以 24 时制（军队时制）表示成两位数字，必要的时候在前面补上空白。例如： <code> 9</code> 。</li>
+  <li><code>%l</code><br />时，以 12 时制表示成两位数字，必要的时候在前面补上空白。例如： <code> 4</code> 。</li>
+  <li><code>%m</code><br />月份，以两位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>09</code> 。</li>
+  <li><code>%M</code><br />分，以两位数字表示，必要的时候在前面补 <code>0</code> 。例如： <code>02</code> 。</li>
+  <li><code>%p</code><br /><code>AM</code> 或 <code>PM</code> 。</li>
+  <li><code>%S</code><br />秒，以两位数字表示，必要的时候在前面补 <code>0</code> ，例如： <code>04</code> 。</li>
+  <li><code>%x</code><br />按照语言决定的日期格式。对于多数的语言来说，就是 <i>%B %e, %Y</i> 。例如： <code>September 6, 2002</code> 。</li>
+  <li><code>%X</code><br />按照语言决定的时间格式。对于多数的语言来说，就是 <i>%I:%M %p</i> 。例如： <code>4:31 PM</code> 。</li>
+  <li><code>%y</code><br />年份，以两位数字表示，必要的时候在前面补 <code>0</code> ，例如： <code>01</code> 。</li>
+  <li><code>%Y</code><br />年份，以四位数字表示。例如： <code>2001</code> 。</li>
+</ul></p>
+<p>除了上述的属性之外，所有的卷标也都可以（或应该）套用下列的属性：</p>
+<p><ul>
+  <li><code>dirify=&quot;1&quot;</code><br />这个属性可以把卷标代表的值，修裁成适合拿来当作目录或档案名称的样子。它实际上会把所有的字母转成小写，然后删除所有的 HTML 卷标及项目或奇怪的字符，最后再把所有的空白转换成底线（ <code>_</code> ）。</li>
+  <li><code>remove_html=&quot;1&quot;</code><br />这个属性会把卷标所代表的值里面，所有的 HTML 卷标都给清除。
+  <li><code>upper_case=&quot;1&quot;</code><br />这个属性会把卷标的值全部转为大写。</li>
+  <li><code>lower_case=&quot;1&quot;</code><br />这个属性会把卷标的值全部转为小写。</li>
+  <li><code>trim_to=&quot;N&quot;</code><br />这个属性会把卷标的值裁减成祇剩下前 N 个字符。你得在此指定 N 的数值才可以，像这样：<pre>&lt;$MTEntryBody trim_to=&quot;15&quot;&gt;</li>
+  <li><code>zero_pad=&quot;N&quot;</code><br />这个属性会在卷标所代表的数值前面插入 <code>0</code> ，使其总长度成为 N 个字符长。你得在此指定 N 的数值才可以，像这样：<pre>&lt;$MTEntryID zero_pad=&quot;10&quot;&gt;</pre></li>
+</ul></p>
+<p>如果你打算自订汇整档案格式的话，可以如<a href="#img_09">图九</a>在<code>网志组态</code>的<code>汇整</code>页面，自行填写汇整档名格式（留空表示采用预设值）。</p>
+<p><strong>注意：</strong>当你自订汇整档案格式的时候，切记一定要把扩展名（包含点号）加上去； Movable Type 并不为自动帮你加上扩展名的！</p>
+<div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtarchive_filename_01.png" alt="汇整档案模版字段"><br />图九：你可以在汇整档案模版自订汇整档案的档名格式。</div>
+<h2><a id="multi"></a>多重汇整</h2>
+<p>最后要介绍的是另一个更为罕用的功能：多重汇整。这里所谓的多重汇整，指的是针对同一种汇整方式做出多份汇整档案。透过这样的功能，你就能为相同方式的汇整制作出不同架构的档案；举例来说，你就可以为分类汇整制作两个档案，其中一个仅调列出该类别内各篇文章的标题、日期等信息，而另一个档案里则把各篇文章的主要文章本体也都加进去。</p>
+<p><strong>注意：</strong>在接下来的步骤之前，你得先做好另一份不同的<code>汇整模版</code>。关于这部分的细节，请参考<a href="cn_mtbook_template.html#template">第九章</a>的介绍。</p>
+<p>请参考下列的步骤，来设定多重模版：</p>
+<p><ol>
+  <li><a id="multi_01"></a>如<a href="#img_10">图十</a>按下左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_11">图十一</a>点击网志组态画面上方的「<strong>汇整</strong>」链结。<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_01.png" alt="按下「网志组态」按钮"><br />图十：按下左方工具列的「网志组态」按钮。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_02.png" alt="点击「汇整」链结"><br />图十一：点击网志组态画面上方的「汇整」链结。</div></li>
+  <li><a id="multi_02"></a>在网志组态的汇整画面里，请如<a href="#img_12">图十二</a>按下「<strong>新增...</strong>」按钮。<div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_03.png" alt="按下「新增...」按钮"><br />图十二：按下画面下方的「新增...」按钮。</div></li>
+  <li><a id="multi_03"></a>此时会弹出一个如<a href="#img_13">图十三</a>的窗口，让你能够增设新的「汇整方式─模版」关联性。请如<a href="#img_14">图十四</a>及<a href="#img_15">图十五</a>选择汇整方式及模版，再如<a href="#img_16">图十六</a>按下「<strong>加入</strong>」即可。这里可以选用的汇整方式，并不限于一定要被你启用过的才能选择；但是模版则一定要事先就建立起来，才会出现在下拉式选单里。<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_04.png" alt="弹出式窗口"><br />图十三：用来建立「汇整方式─模版」关联性的弹出式窗口。</div><div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_05.png" alt="选择「类别」汇整类别"><br />图十四：从下拉式选单选择汇整方式，在这个例子里我们选了「分类汇整」。</div><div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_06.png" alt="选择「分类精简汇整模版」这个汇整模版"><br />图十五：从下拉式选单选择相对应的模版，在这个例子里我们选的是「分类精简汇整模版」。</div><div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_07.png" alt="按下「加入」按钮"><br />图十六：按下「加入」按钮。</div></li>
+  <li><a id="multi_04"></a>一旦加入了新的「汇整方式─模版」关联性后，你马上就可以如<a href="#img_17">图十七</a>在画面中看到；你也可以趁这个机会再指定偏好的「汇整方式─模版」关联，祇需要在「模版」字段里，选择该汇整方式的偏好模版即可。<div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_08.png" alt="指定「分类精简汇整模版」"><br />图十七：指定「分类精简汇整模版」作为「分类汇整」的偏好汇整模版。</div></li>
+  <li><a id="multi_05"></a>如果某一种汇整方式启用了这种「多重汇整」的功能（也就是分配了超过一个模版），就应该在「<strong>汇整档案模版</strong>」的字段里指定不同的<code>汇整档案名称</code>，否则会导致各组汇整档案重复覆写的情况。这个步骤请参考<a href="#filename">前一小节</a>的内容。<div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_09.png" alt="指定另一个汇整模版所要使用的汇整档案名称"><br />图十八：指定汇整档案名称，在这个例子里我们输入的是「 &lt;$MTCategoryLabel dirify=&quot;1&quot;$&gt;/index.html 」，也就是以类别名称分别建立子目录来存放档案。</div></li>
+  <li><a id="multi_06"></a>最后别忘了要按下「储存」按钮，才能把这些变更都储存起来。<div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mtarchive_multi_10.png" alt="按下「储存」按钮"><br />图十九：按下「储存」按钮。</div></li>
+</ol></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

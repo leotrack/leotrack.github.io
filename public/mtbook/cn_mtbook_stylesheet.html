@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第四章 ─ 套用样式表</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第三章 ─ 管理文章" href="cn_mtbook_entry.html" />
+  <link rel="next" title="第五章 ─ 管理类别" href="cn_mtbook_category.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第四章 ─ 套用样式表</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#stylesheet">第四章 ─ 套用样式表</a></li>
+  <ul>
+    <li><a href="#intro">甚么是样式表</a></li>
+    <li><a href="#official">套用 Movable Type 提供的样式表</a></li>
+    <li><a href="#fix">修补 Movable Type 提供的预设样式表</a></li>
+    <li><a href="#resource">其它可以找到样式表的地方</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="stylesheet"></a>第四章 ─ 套用样式表</h1>
+<p>经过了前面几个漫长的章节，相信你已经学到了新增、删除等各种管理文章的技巧了。比较活跃的使用者甚至可能早已展开了自己的网志之路，在广大的信息海洋中，发表著一篇又一篇的优美篇章。</p>
+<p>很快地，你也会开始不满于站台看起来的样子 ─ 你已经能够掌握里面的文字，却还不晓得要如何改变它们看起来的样子；白底灰字虽然乾净简单，但是或许就是跟你的风格不同。你想要更炫丽的效果、更强烈的配色、更可爱的图案或更柔情的风采。要自己创造出完全符合自己需求的版面需要相当多的知识，然而如果退而求其次，祇先要能换个风格的话，事情却简单得多。</p>
+<p>由于 Movable Type 把页面的版面风格通通交给一个样式表模版来负责，所以你祇需要替换这个档案的内容、套用别人准备好的样式表，就能够让你的站台版面看起来迥然不同。本章的目的就是让你能在十分钟之内，把整个站台给改头换面。</p>
+<h2><a id="intro"></a>甚么是样式表</h2>
+<p>Movable Type 用了一系列的「模版 (template) 」，来决定你的站台页面里，要出现些甚么内容、以及它们要如何呈现；其中多数的模版决定的是页面的架构 ─ 要有哪些东西、甚么东西要先出现，不过页面的实际样式则完全仰赖一个叫「样式表 (Stylesheet) 」的模版来决定。在这个样式表里，会定义著页面里各个组件的颜色、底色、留白、间隔、边框、尺寸、高度等属性，甚至会定义著特定组件的位置 ─ 因此组件的视觉效果将不会囿于结构上的先后顺序，同时你就祇需要修改一个档案，就能够让所有的页面同时改头换面。</p>
+<p>这就是样式表的功能，也是它的优点。在网页的世界里，样式表的规格是由全球信息网协会 (W3C) 所制订的阶层样规 (CSS) 标准；本书撰写之时， CSS2 已被广泛地支持，而 CSS3 则还在草稿阶段。不过各家浏览器实际上对 CSS2 的支持程度却各有不同，其中又以微软的 Internet Explorer 问题最多。我们在此并不打算深入探讨这些细节的技术问题，你祇需要记得无论做了甚么修改，最好先拿各种不同的浏览器看一下，至少确保不会有很糟的结果出现。</p>
+<h2><a id="official"></a>套用 Movable Type 提供的样式表</h2>
+<p>要自己凭空撰写出一整份样式表，对于新手来说根本是天方夜谭。所幸网络上有许多地方，都能够找到别人预先撰写好的、适用于 Movable Type 的样式表；于是你一开始就祇需要会<strong>复制</strong>跟<strong>贴上</strong>，便能让页面看起来迥然不同。事实上， MovableType 的官方网页 <a href="http://www.movabletype.org">http://www.movabletype.org</a> 上就提供了七组不同的样式表，让你能够直接套用。现在就让我们来看看该怎么做：</p>
+<p><ol>
+  <li><a id="official_01"></a>首先请如<a href="#img_01">图一</a>先连到 MovableType 的官方网页 <a href="http://www.movabletype.org">http://www.movabletype.org</a> ，在左方的资源 (Resource) 区里，有一个叫 <strong>Default Styles</strong> 的链结，请点击这个链结。<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_01.png" alt="从 MovableType 的官方网页连结到「 Default Styles 」"><br />图一：从 MovableType 的官方网页，按下连往预设样式表的链结。</div></li>
+  <li><a id="official_02"></a>你会看到在<a href="#img_02">图二</a>的画面里，有七个样式表的链结，分别有著不同的名字；其中 <code>Clean</code> 其实就是你目前在用的白底灰字（如果你还没有改过的话）。每一个样式表，都会像<a href="#img_03">图三</a>那样，有一个 <code>[SCREENSHOT]</code> 的链结，按下后会跳出如<a href="#img_04">图四</a>的窗口，让你预先看一下这个样式表套用之后，页面会变成的样子。<div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_02.png" alt="有七个预设的样式表"><br />图二：有七个预设的样式表，分别叫 Clean 、 Trendy 、 Georgia Blue 、 Gettysburg 、 Rusty 、 Plain Jane 、 Stormy 。</div><div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_03.png" alt="Stormy 样式表旁边的 [SCREENSHOT] 链结"><br />图三：这七个样式表都付了一个 [SCREENSHOT] 的链结；这个范例里的是 Stormy 样式表旁的画面。</div><div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_04.png" alt="Stormy 样式表的预览画面"><br />图四：这个弹出的窗口里，是 Stormy 样式表套用后的样子。</div></li>
+  <li><a id="official_03"></a>一旦你挑好要套用的样式表后，可以如<a href="#img_05">图五</a>用鼠标在该样式表的内容处按下右键，然后选<code>全选</code>（当然你也可以按 <code>Ctrl</code>-<code>A</code> ），再如<a href="#img_06">图六</a>按下鼠标右键选<code>复制</code>（当然你也可以按 <code>Ctrl</code>-<code>C</code> ）。<div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_05.png" alt="按鼠标右键选「全选」"><br />图五：把欲套用的样式表给整个选取下来；在这个范例中我们所选取的是 Stormy 样式表。</div><div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_06.png" alt="按鼠标右键选「复制」"><br />图六：把欲套用的样式表给整个复制起来；在这个范例中我们所复制的是 Stormy 样式表的内容。</div></li>
+  <li><a id="official_04"></a>接下来让我们回到网志管理接口。登入后请如<a href="#img_07">图七</a>按下左方工具列的「<strong>模版</strong>」按钮。<div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_07.png" alt="按下左方工具列的「模版」按钮"><br />图七：登入网志管理接口后，按下左方工具列上的「模版」按钮。</div></li>
+  <li><a id="official_05"></a>接下来的画面里会列出目前正在使用中的模版；请如<a href="#img_08">图八</a>按下「<strong>样式表</strong>」模版的链结。<div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_08.png" alt="从模版清单中按下「样式表」模版的链结"><br />图八：从模版清单里按下「样式表」模版的链结，加以编辑。</div></li>
+  <li><a id="official_06"></a>在这个模版编辑画面里，请如<a href="#img_09">图九</a>在<strong>模版本体</strong>的字段里按鼠标右键，然后选「<code>全选</code>」（当然你也可以按 <code>Ctrl</code>-<code>A</code> ），接著再如<a href="#img_10">图十</a>按鼠标右键并选「<strong>贴上</strong>」（当然你也可以按 <code>Ctrl</code>-<strong>V</strong> ）；这么一来，就会把整个样式表给代换成新的了。<div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_09.png" alt="按鼠标右键选「全选」"><br />图九：把你目前的样式表给整个选取起来。</div><div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_10.png" alt="按鼠标右键选「贴上」"><br />图十：把你早先复制起来的样式表贴上，代换掉你原先所使用的。</div></li>
+  <li><a id="official_07"></a>如<a href="#img_11">图十一</a>按下「<code>储存</code>」按钮来储存这次的变更。<div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_11.png" alt="按下「储存」按钮"><br />图十一：按下「储存」按钮来更新样式表模版的内容。</div></li>
+  <li><a id="official_08"></a>光是把样式表模版给存盘，并不能实际更新你的页面上的视觉效果；请在储存后如<a href="#img_12">图十二</a>把画面往下卷动，并且按下「<code>重建</code>」按钮。<div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_12.png" alt="把画面往下卷动，按下「重建」按钮"><br />图十二：模版储存后，按下下方的「重建」按钮。</div></li>
+  <li><a id="official_09"></a>现在会弹出另外一个小窗口，通知你说目前要重建的是「<code>索引模版：样式表</code>」，请如<a href="#img_13">图十三</a>按下「<code>重建</code>」按钮。<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_13.png" alt="按下弹出窗口上的「重建」按钮"><br />图十三：按下弹出窗口上的「重建」按钮，来重建样式表。</div></li>
+  <li><a id="official_10"></a>一旦样式表重建好后，你就会看到如<a href="#img_14">图十四</a>的画面，这时请依图按下「<code>关闭</code>」按钮来把这个窗口关闭。<div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_14.png" alt="按下「关闭」按钮"><br />图十四：按下「关闭」按钮来把这个窗口关闭。</div></li>
+  <li><a id="official_11"></a>这样就完成了！检视网站的时候你就会看到整个版面已经焕然一新了！<div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mtstyle_official_15.png" alt="整个版面已经变成 Stormy 的样式了"><br />图十五：你的网志页面样式已经变了；在这个范例中变成了 Stormy 样式。</div></li>
+</ol></p>
+<h2><a id="fix"></a>修补 Movable Type 提供的预设样式表</h2>
+<p>很不幸地，虽然历经了多次改版，但是 Movable Type 所提供的预设样式表却还是有些瑕疵；这些瑕疵虽然不影响实际的操作，但是对于讲究细节的使用者来说，可能就不能接受因此产生的版面瑕疵了。如果你不在乎这一点的话，大可<a href="#resource">跳过这个段落</a>；不过若你愿意的话，也可以按照以下的说明（这很简单的，真的！）试著自己修正这些预设样式表里的瑕疵：</p>
+<p><ol>
+  <li><a id="fix_01"></a>除了 <code>Clean</code> 样式表外，所有的预设样式表都有著类似的问题。这个瑕疵会在文章数量不多、或者是许久没有新增文章的时候显现出来；请看<a href="#img_16">图十六</a>，当文章不多的时候，你会发现页面右方的链结区跑到左方来了。造成这个瑕疵的原因在于，样式表里指定了左方的内容区使用向左浮动属性（ <code>float:left;</code> ），却没有指定右方链结区的左边界（ <code>margin-left</code> ），于是当链结区左边没有东西的时候，内容就会跑到左边去了。<div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_01.png" alt="Stormy 样式表的瑕疵"><br />图十六：文章不多的时候， Stormy 样式表的瑕疵就会显现出来。</div></li>
+  <li><a id="fix_02"></a>为了要修正这个瑕疵，我们得帮右边的链结区指定左边界。然而在不同的预设样式表里，左方的内容区会占掉的宽度并不相同，所以我们得先如<a href="#img_17">图十七</a>那样，进入<strong>编辑模版</strong>画面，并选择「<strong>样式表</strong>」模版（详细的步骤可以参考<a href="#official">前一小节</a>的<a href="#official_04">步骤四</a>与<a href="#official_05">步骤五</a>），并从<code>模版本体</code>里找到关于 <strong>#content</strong> 的样式规则，在 Stormy 样式表里应该会像这样：<pre>#content {
+		float:left;
+		width:65%;
+		background:#333;
+		border-right:1px dotted #999;
+		margin-right:15px;
+		padding-bottom:20px;
+		}</pre>你应该可以找到其中有一列是以 <strong>width:</strong> 开头的样式规则，在 Stormy 样式表里的这一列是：<pre>width:65%;</pre>请把这个规则里的数字（在 Stormy 样式表里的是 <strong>65%</strong> ）记下来。<div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_02.png" alt="Stormy 样式表里的 #content 样式规则"><br />图十七： Stormy 样式表里的 #content 样式规则，我们要注意的是宽度信息。</div></li>
+  <li><a id="fix_03"></a>现在再稍微往下找，你应该马上就会看到如<a href="#img_18">图十八</a>的 <strong>#links</strong> 的样式规则。在 Stormy 样式表里，这段规则看起来应该像这样：<pre>#links {
+	padding-right:15px;
+	}</pre>请参考前一个步骤里的数字，在这里用 <strong>margin-left:</strong> 规则来设定链结区的左边界，并且在后面加上一个分号（<strong>;</strong>）来结尾。一般来说用一个比内容区宽度稍大一点的设定值，就可以确保两栏之间的留白，会比较好看。就 Stormy 样式表来说，我会建议把左边界设定成 <strong>67%</strong> ，所以整个 <code>#links</code> 规则看起来就会像<a href="#img_19">图十九</a>变成这样：<pre>#links {
+	padding-right:15px;
+	<strong>margin-left:67%;</strong>
+	}</pre><div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_03.png" alt="Stormy 样式表里的 #links 规则"><br />图十八： Stormy 样式表里的 #links 规则，并没有指定左边界。</div><div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_04.png" alt="加上左边界的 #links 规则"><br />图十九：现在 #links 规则里已经补上左边界的设定了。</div></li>
+  <li><a id="fix_04"></a>如<a href="#img_20">图二十</a>按下「<code>储存</code>」按钮来储存这次的变更。<div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_05.png" alt="按下「储存」按钮"><br />图二十：按下「储存」按钮来更新样式表模版的内容。</div></li>
+  <li><a id="fix_05"></a>光是把样式表模版给存盘，并不能实际更新你的页面上的视觉效果；请在储存后如<a href="#img_21">图二十一</a>把画面往下卷动，并且按下「<code>重建</code>」按钮。<div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_06.png" alt="把画面往下卷动，按下「重建」按钮"><br />图二十一：模版储存后，按下下方的「重建」按钮。</div></li>
+  <li><a id="fix_06"></a>现在会弹出另外一个小窗口，通知你说目前要重建的是「<code>索引模版：样式表</code>」，请如<a href="#img_22">图二十二</a>按下「<code>重建</code>」按钮。<div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_07.png" alt="按下弹出窗口上的「重建」按钮"><br />图二十二：按下弹出窗口上的「重建」按钮，来重建样式表。</div></li>
+  <li><a id="fix_07"></a>一旦样式表重建好后，你就会看到如<a href="#img_23">图二十三</a>的画面，这时请依图按下「<code>关闭</code>」按钮来把这个窗口关闭。<div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_08.png" alt="按下「关闭」按钮"><br />图二十三：按下「关闭」按钮来把这个窗口关闭。</div></li>
+  <li><a id="fix_08"></a>这样就修好了！请检视你的页面，现在应该不会再出现前述的瑕疵了。<div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mtstyle_fix_09.png" alt="页面的瑕疵已经修好了"><br />图二十四：页面的瑕疵已经修好了。</div></li>
+</ol></p>
+<h2><a id="resource"></a>其它可以找到样式表的地方</h2>
+<p>除了 MovableType 所预设提供的七组样式表外，还有不少地方是可以找到人家预先做好的样式表的。透过 <a href="http://www.google.com">Google</a> 或其它搜寻引擎相助，你可以试著用下面这几组关键词：<pre>Movable Type Skin</pre><pre>MT Skin</pre><pre>Movable Type CSS Template</pre><pre>MT CSS Template</pre></p>
+<p>使用上述的几组关键词应该就都可以找到不少提供此类服务的站台。不过在此我们还是帮各位介绍几个不错的地方：</p>
+<p><ul>
+  <li><a id="resource_blogskins"></a><a href="http://www.blogskins.com/">BlogSkins</a> 就是一个提供预先写好的样式表的站台，你可以根据<code>样式表名称</code>、<code>类别</code>、<code>作者</code>、<code>发表日期</code>、<code>下载次数</code>、<code>评分等第</code>等字段来排序及浏览，也能够预览各个样式表套用后的样子。这个站台没有直接提供缩图预览，所以你可能得花上比较多的功夫，从文字描述里揣摩猜测一番，才能够从几百个样式表里找出合意的那几个；不过这个站台算是资源相当丰富了，也有一些简易的教学指引，以及讨论区，许多样式表甚至会提供不同的网志平台适用的版本，相当不错。<div class="img"><a id="img_25"></a><img src="http://junnie.3322.org/bookimg/blogskins.png" alt=""><br />。</div></li>
+  <li><a id="resource_blogstyles"></a><a href="http://blogstyles.com/">blog&lt;styles&gt;</a>里的样式表虽然不及 <a href="http://www.blogskins.com/">BlogSkins</a> 来得多，但是却按照两栏式、三栏式、相簿式整理分类起来，一样地也提供了不同网志平台的版本，也能够按照配色的样式来检索，更提供了各种不同的模版技巧教学，也是值得花一些时间去浏览的站台。<div class="img"><a id="img_26"></a><img src="http://junnie.3322.org/bookimg/blogstyles.png" alt=""><br />。</div></li>
+  <li><a id="resource_foo"></a><a href="http://www.forgetfoo.com/">FoO</a> 也有各式各样华丽炫目的样式表，而且还提供了预览缩图。<div class="img"><a id="img_27"></a><img src="http://junnie.3322.org/bookimg/foo.png" alt=""><br />。</div></li>
+  <li><a id="resource_Jedi"></a><a href="http://Jedi.z6i.org/templates.html">我自己现用的模版及样式表</a>也有公开出来，也许不怎么好看，但一样欢迎大家取用或者加以修改。这是从预设模版里的 <code>Clean</code> 修改后的样式表，比 <code>Clean</code> 有趣些，然而风格也还是相当精简。此外我也以魔戒 (Lord of the Ring) 里的精灵三戒为名，制作了三个样式表：<a href="http://shds.med.ntcn.edu.tw/blog/zh/vilya/">精灵风戒</a>、<a href="http://shds.med.ntcn.edu.tw/blog/zh/nenya/">精灵水戒</a>、<a href="http://shds.med.ntcn.edu.tw/blog/zh/narya/">精灵火戒</a>。这三个样式表是我提供给<a href="http://shds.med.ntcn.edu.tw/blog/">台北护理学院听语障碍科学研究所</a>的，但有兴趣的朋友也可以自由取用或参考。<div class="img"><a id="img_28"></a><img src="http://junnie.3322.org/bookimg/vilya.png" alt="精灵风戒版面样式"><br />图二十八：精灵风戒的版面样式。</div><div class="img"><a id="img_29"></a><img src="http://junnie.3322.org/bookimg/nenya.png" alt="精灵水戒版面样式"><br />图二十九：精灵水戒的版面样式。</div><div class="img"><a id="img_30"></a><img src="http://junnie.3322.org/bookimg/narya.png" alt="精灵火戒版面样式"><br />图三十：精灵风戒的版面样式。</div></li>
+</ul></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

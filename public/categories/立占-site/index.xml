@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>立占 | Site on 猪八的网：浮生志</title>
+    <link>/categories/%E7%AB%8B%E5%8D%A0-site/</link>
+    <description>Recent content in 立占 | Site on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Sun, 27 Jul 2014 13:23:33 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/%E7%AB%8B%E5%8D%A0-site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用BitBucket和FTPloy私有Jekyll源码</title>
+      <link>/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</link>
+      <pubDate>Sun, 27 Jul 2014 13:23:33 +0800</pubDate>
+      
+      <guid>/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</guid>
+      <description>&lt;h2 id=&#34;为何用bitbucketftploy&#34;&gt;为何用BitBucket&amp;amp;FTPloy？&lt;/h2&gt;
+&lt;p&gt;网站使用&lt;a href=&#34;http://jekyllrb.com&#34; title=&#34;Jekyll • Simple, blog-aware, static sites&#34;&gt;Jekyll&lt;/a&gt;建成之后，放置在&lt;a href=&#34;https://pages.github.com&#34; title=&#34;Github Pages&#34;&gt;Github Pages&lt;/a&gt;的源码属于公开的访问，处于一些个人安全考虑，最重要的是放置在自己的FTP空间会相对安全一些，所以，我采用了支持私有源码的&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;作为Git仓库，并使用&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;作为Deploy方案，实现了自动发布到个人FTP的目的。
+&lt;img src=&#34;/images/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注册并使用bitbucket&#34;&gt;注册并使用BitBucket&lt;/h3&gt;
+&lt;p&gt;Github私有源码的话，是需要美刀的，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;吧：）注册完成之后，创建一个仓库，如 &lt;em&gt;&lt;strong&gt;下图&lt;/strong&gt;&lt;/em&gt; 所示，注意可选 &lt;strong&gt;私人仓库&lt;/strong&gt; 选项。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。
+&lt;img src=&#34;/images/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注册并使用ftploy&#34;&gt;注册并使用FTPloy&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;是一个自动监控Git库分支变更并发布到FTP的网站，支持Bitbucket和Github，当然为了简便起见，你也可以直接监控你的Github仓库，能使用的，应该都不用教啦！FTPloy&lt;em&gt;免费版&lt;/em&gt;仅支持&lt;strong&gt;一&lt;/strong&gt;个Project，但是对于小站长来说，监控一个就足够啦！所以，如&lt;em&gt;&lt;strong&gt;下面&lt;/strong&gt;&lt;/em&gt;两幅图，先新建Server，后新建Project。
+&lt;img src=&#34;/images/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
+&lt;img src=&#34;/images/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;本地生成jekyll页面并push&#34;&gt;本地生成Jekyll页面并Push&lt;/h3&gt;
+&lt;p&gt;本地安装网上教程太多，不多说啦，直接&lt;strong&gt;CMD&lt;/strong&gt;：&lt;em&gt;&lt;strong&gt;jekyll build&lt;/strong&gt;&lt;/em&gt;
+&lt;img src=&#34;/images/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
+然后就是如何Push，我使用的是&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;，所以，Windows用户请直接下载&lt;a href=&#34;http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;amp;utm_medium=link&amp;amp;utm_campaign=chenjun.com&#34; title=&#34;Mac/Windows上的免费Git/Mercurial客户端.&#34;&gt;SourceTree&lt;/a&gt;，自行探索吧，这就不教程了。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>重生@Jekyll&#43;GitHub Pages</title>
+      <link>/blog/2014/07/jekyll-github.html</link>
+      <pubDate>Fri, 04 Jul 2014 23:23:44 +0800</pubDate>
+      
+      <guid>/blog/2014/07/jekyll-github.html</guid>
+      <description>&lt;p&gt;本博开篇，Zhu8.Net Reborn!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enjoy it!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll？&lt;/h2&gt;
+&lt;p&gt;我想这不需要多说了吧？&lt;strong&gt;版本记录+Markdown+本地编辑&lt;/strong&gt;。嗯！爽！&lt;/p&gt;
+&lt;h3 id=&#34;1如何离线或在线编辑&#34;&gt;1.如何离线或在线编辑？&lt;/h3&gt;
+&lt;p&gt;经过无数试用，建议Chrome+&lt;a href=&#34;https://stackedit.io&#34; title=&#34;StackEdit&#34;&gt;Stackedit&lt;/a&gt;（&lt;a href=&#34;https://chrome.google.com/webstore/detail/stackedit/iiooodelglhkcpgbajoejffhijaclcdg?utm_source=chrome-ntp-launcher&#34;&gt;应用商店下载地址&lt;/a&gt;）！一个搞定所有！Stackedit可以支持安装应用商店使用离线功能，并且有完整的快捷键面板以及物理快捷键！&lt;/p&gt;
+&lt;h3 id=&#34;2-markdown新手快捷键参考&#34;&gt;2. Markdown新手快捷键参考&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;加粗——Ctrl+B&lt;br&gt;
+斜体——Ctrl+I&lt;br&gt;
+网址——Ctrl+L&lt;br&gt;
+引用——Ctrl+Q&lt;br&gt;
+代码——Ctrl+K&lt;br&gt;
+图片——Ctrl+G&lt;br&gt;
+有序列表——Ctrl+O&lt;br&gt;
+无序列表——Ctrl+U&lt;br&gt;
+标题——Ctrl+H&lt;br&gt;
+水平分割线——Ctrl+R&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-模板问题&#34;&gt;3. 模板问题&lt;/h3&gt;
+&lt;p&gt;直接Fork我的Github页面吧，花费了一个礼拜折腾的！当然，你得把里面的ga.html跟踪页码换掉，Disqus的代码换掉，config.yml里面的文件换成自己的，以及，你所有文件看一遍就明白了：）&lt;/p&gt;
+&lt;h3 id=&#34;4-wordpress导出&#34;&gt;4. Wordpress导出&lt;/h3&gt;
+&lt;p&gt;为什么要用Wordpress导出？因为最方便，其他平台使用率没有那么高，我使用的是wordpress-to-jekyll-exporter.zip，请点击&lt;a href=&#34;https://www.dropbox.com/s/maf5zc5zoj3eqec/wordpress-to-jekyll-exporter.zip&#34; title=&#34;wordpress-to-jekyll-exporter.zip&#34;&gt;下载&lt;/a&gt;，里面我修改并增加了日期和时间选项，方便使用。&lt;/p&gt;
+&lt;h3 id=&#34;5-待补充&#34;&gt;5. 待补充&lt;/h3&gt;
+&lt;p&gt;回头再补充一些吧，就酱。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>今天开始</title>
+      <link>/blog/2014/06/start.html</link>
+      <pubDate>Wed, 04 Jun 2014 22:27:20 +0800</pubDate>
+      
+      <guid>/blog/2014/06/start.html</guid>
+      <description>&lt;p&gt;上一篇 &lt;a rel=&#34;nofollow&#34; href=&#34;http://chenjun.com/&#34;&gt;日志&lt;/a&gt; 还是&lt;strong&gt;三年&lt;/strong&gt;前了。&lt;br&gt;
+选择在&lt;strong&gt;今天&lt;/strong&gt;，开始新的网站更新吧。微博、微信，都是危险的东西。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ChenJun.COM重生及继续折腾</title>
+      <link>/blog/2010/06/chenjun-com-reborn-and-zheteng.html</link>
+      <pubDate>Fri, 04 Jun 2010 21:52:37 +0800</pubDate>
+      
+      <guid>/blog/2010/06/chenjun-com-reborn-and-zheteng.html</guid>
+      <description>&lt;p&gt;自从去年&lt;a href=&#34;https://zhu8.net/blog/2009/03/chenjun-dot-com-online.html&#34;&gt;被不幸&lt;del&gt;与世隔绝&lt;/del&gt;&lt;/a&gt;1年余，&lt;strong&gt;今日&lt;/strong&gt;幸得真主眷顾，冲出牢笼。&lt;/p&gt;
+&lt;p&gt;兴奋不已，重燃激情，欣闻&lt;a href=&#34;http://wordpress.org/development/2010/05/wordpress-3-0-release-candidate/&#34;&gt;WordPress快到3.0&lt;/a&gt;，且使用Movable Type已有倦意，而WordPress的用户群广大，插件众多，用户感受颇好。且多年前我就是从&lt;a href=&#34;http://www.rainbowsoft.org&#34;&gt;Z-Blog&lt;/a&gt;之后就是&lt;a href=&#34;https://zhu8.net/blog/2006/07/my-wordpress-plugins.html&#34;&gt;从WordPress开始&lt;/a&gt;的，遂重新启用域名的同时，也改头换面，用回WP，继续折腾！&lt;/p&gt;
+&lt;p&gt;另：WordPress 3.0的默认主题TwentyTen很不错，也不至于像Kubrick那么久了难免有些审美疲劳，网上搜了一下未发现&lt;strong&gt;中文包&lt;/strong&gt;，遂做了一个：有需要的尽管自取：&lt;a href=&#34;/uploads/languages.zip&#34; title=&#34;Chinese Simplified Language Pack for WordPress 3.0 Defult Theme:TwentyTen&#34;&gt;&lt;strong&gt;zh_CN.po/mo&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下周三开始即将&lt;strong&gt;休假半月&lt;/strong&gt;，回来后可能还会结束北漂生涯，彼时又将是一个新的开始！&lt;/p&gt;
+&lt;p&gt;有人说我：&lt;em&gt;来北漂，三年后又结束北漂，真够折腾的。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;嗯，**生命在于折腾！**与君共勉。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ChenJun dot COM上线!</title>
+      <link>/blog/2009/03/chenjun-dot-com-online.html</link>
+      <pubDate>Thu, 12 Mar 2009 23:10:33 +0800</pubDate>
+      
+      <guid>/blog/2009/03/chenjun-dot-com-online.html</guid>
+      <description>&lt;p&gt;在Godaddy BackOrder了我的名字：&lt;em&gt;陈俊：&lt;em&gt;&lt;strong&gt;ChenJun dot COM&lt;/strong&gt; 作为&lt;/em&gt;&lt;/em&gt;&lt;em&gt;个人&lt;/em&gt;**域名。&lt;em&gt;&lt;strong&gt;2009-2-17&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It’s Blocked and Not Forgive By The Big Brother Yet. &lt;em&gt;2009.3～2009.6&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**I will hold it till the God Die.Forever.
+**&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>等待编辑中</title>
+      <link>/blog/2009/03/waitting-for-edit.html</link>
+      <pubDate>Mon, 02 Mar 2009 07:32:20 +0800</pubDate>
+      
+      <guid>/blog/2009/03/waitting-for-edit.html</guid>
+      <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……——**如何关闭？**看这里：&lt;a href=&#34;https://zhu8.net/blog/2009/03/disable-wordpress-revision.html&#34; rel=&#34;bookmark&#34;&gt;关闭Wordpress的Revision功能&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;其他事项将补充在这篇**/?p=1**的置顶文章中……&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

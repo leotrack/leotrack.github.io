@@ -1,0 +1,92 @@
+.fa,
+.fas {
+  border-left: 3px solid transparent !important;
+  border-right: 3px solid transparent !important;
+}
+
+.fa-home {
+  color: #3b5998;
+}
+
+.fa-bookmark {
+  color: #1da1f2;
+}
+
+fa-info {
+  color: #ff0000;
+}
+
+.fa-pen {
+  color: #4285f4;
+}
+
+.fa-code-branch {
+  color: #f94877;
+}
+
+.fa-paint-roller {
+  color: #fbbc05;
+}
+
+.fa-copyright {
+  color: #ea4335;
+}
+
+.fa-chevron-down {
+  color: #fffc00;
+}
+
+.fa-calendar-alt,
+.fa-calendar-day {
+  color: #35465d;
+}
+
+.fa-book {
+  color: #ff4500;
+}
+
+.fa-address-book {
+  color: #a6b1b7;
+}
+
+.fa-tag,
+.fa-tags {
+  color: #ff9900;
+}
+
+.fa-th-list,
+.fa-folder-open {
+  color: #03a5f0;
+}
+
+.fa-rss {
+  color: #f06d1b;
+}
+
+.fa-stopwatch {
+  color: #00aff0;
+}
+
+.fa-pencil-alt {
+  color: #db4437;
+}
+
+.fa-angle-double-left {
+  color: #df6d46;
+}
+
+.fa-angle-double-right {
+  color: #52b1b3;
+}
+
+.fa-link {
+  color: #34a853;
+}
+
+.fa-poo {
+  color: #4a154b;
+}
+
+.post-body p {
+  text-indent: 2rem;
+}

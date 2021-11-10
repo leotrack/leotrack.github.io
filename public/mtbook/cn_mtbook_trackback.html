@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <title>第七章 ─ 引用功能</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="zh-cn" />
+  <link rel="stylesheet" href="doc-styles.css" type="text/css">
+  <link rel="author" title="寄信给作者" href="mailto:Jedi@idej.org" />
+  <link rel="copyright" title="版权宣告" href="cn_mtbook_copyright.html" />
+  <link rel="help" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="made" title="Jedi" href="mailto:Jedi@idej.org" />
+  <link rel="start" title="首页" href="http://mtbook.net/" />
+  <link rel="contents" title="目录" href="index.html" />
+  <link rel="up" title="目录" href="index.html" />
+  <link rel="first" title="关于 MOVABLE TYPE 完全手册" href="cn_mtbook_about.html" />
+  <link rel="last" title="附录四 ─ 补增信息" href="cn_mtbook_new.html" />
+  <link rel="prev" title="第六章 ─ 回响功能" href="cn_mtbook_comment.html" />
+  <link rel="next" title="第八章 ─ 汇整" href="cn_mtbook_archive.html" />
+</head>
+<body>
+<h3>Movable Type 完全手册：第七章 ─ 引用功能</h3>
+<p><a href="index.html" accesskey="1">&laquo; 目录</a></p>
+<a id="__index__"></a>
+<ul>
+  <li><a href="#trackback">第七章 ─ 引用功能</a></li>
+  <ul>
+    <li><a href="#intro">什么是引用</a></li>
+    <li><a href="#enable">启用引用功能</a></li>
+    <li><a href="#bookmarklet">MT it!</a></li>
+    <li><a href="#category">类别与引用功能</a></li>
+    <li><a href="#ban">禁用 IP</a></li>
+  </ul>
+</ul>
+<hr size="1" color="#CCCCCC" />
+<h1><a id="trackback"></a>第七章 ─ 引用功能</h1>
+<p>如果你能够弄懂<a href="cn_mtbook_comment.html">前一章</a>介绍的<code>回响功能</code>的话，此时正是你乘胜追击，进一步弄懂<strong>引用功能</strong>的大好时机。照例，这一章祇会介绍各种与引用功能有关的设定与用途，但不会谈及跟引用功能有关的模版写作。实际上对于多数人来说，这样也就够了。</p>
+<h2><a id="intro"></a>甚么是引用</h2>
+<p>请读者诸君回忆一下我们在<a href="cn_mtbook_comment.html">前一章</a>介绍的回响功能，这个功能能够让读者在你的网志发表回响；反过来说，如果你就是那个去逛别人网志的读者，那么你就能够利用回响功能，在别人的站台上发表你的回响。</p>
+<p>问题来了，如果你想要把回响发表在自己的网志上，该怎么办？当然你可以写一篇文章，然后在里面加上一个链结，连回原本的那一篇文章。这样似乎能够解决问题，不过这会儿又会冒出新的问题。如果今天有另外一位读者，从来没有浏览过你的网志，不过却也跟你一样读到了原本的那一篇文章，那么她并不会知道其实你为那一篇文章写过一篇回响─而且这还可能是一篇洋洋洒洒、万分精彩的回响（所以你才会想要专文放回自己的网志）。于是，你所精心撰写的回响就没办法被很多人读过，这个讨论串就此分叉了，没办法很方便地让人们看到多样而精彩的文字交流。</p>
+<p>问题看起来很麻烦，不过<code>引用功能</code>正是你的救星。</p>
+<p>在前面的例子里，如果文章原作者启用了引用功能，那么你在撰写这篇回响专文的时候，就能够<strong>引用</strong>回原本的那一篇文章。你的文章照样被储存、显示在你的网志里，就跟以前一模一样；但是原本那一篇文章的网志，此时也发生了变化。</p>
+<p>原本文章所在的网志，在你（在自己的网志上）发表文章的时候，会收到一个来自你自己网志的<code>引用通告</code>，这个引用通告不祇是用来通知说「嘿！有人引用这篇文章了」，它还会挟带许多其它的信息，包括了：你的文章的<code>标题</code>、<code>文摘</code>、<code>静态链结</code>，以及你的<code>网志的名称</code>。这些信息将可以被显示在原本文章所在的网志上，而且是你一写完文章，该站台上就马上会出现这些信息。</p>
+<p>现在对于其它读者来说，当她们读过那一篇原本的文章后，不但能够看到直接附加在那一篇文章后面的回响（如果原作者有启用回响功能的话），还能够看到<code>前来引用的文章</code>。她们甚至能先读到这些文章的文摘，再决定要不会花费这些时间与频宽，连到其它的网志或站台去。</p>
+<p>让我们来看看实际的使用范例：</p>
+<p><ol>
+  <li><a id="intro_01"></a>假设我在 Jedi 的网志上看到了一篇文章，有感而发想要写些东西；我在这一篇文章看到了一个像<a href="#img_01">图一</a>里的「<strong>引用</strong>」链结，于是就加以点击这个链结。这个时候就会弹出一个如<a href="#img_02">图二</a>的窗口，除了会列出跟这一篇文章有关的引用项目外，也会标示出这一篇文章的「<strong>引用链结</strong>」；这个时候请如<a href="#img_03">图三</a>选取这个链结网址，再按鼠标右键复制起来（也可以按 <code>Ctrl</code> - <code>C</code> 来复制）。<div class="img"><a id="img_01"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_01.png" alt="Jedi 的「本类别宣告」文章"><br />图一：在 䩥摩 的「本类别宣告」文章（ <a href="http://blog.elixus.org/jedi/archives/000810.html">http://blog.elixus.org/jedi/archives/000810.html</a> ）页面中，有一个「引用」的链结。</div><div class="img"><a id="img_02"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_02.png" alt="链结网址是「 http://blog.elixus.org/cgi-bin/mt-tb.cgi/513 」"><br />图二：按下「引用」链结后，弹出的窗口里会写著该篇文章的「引用网址」。在这个范例里的是「 <a href="http://blog.elixus.org/cgi-bin/mt-tb.cgi/513">http://blog.elixus.org/cgi-bin/mt-tb.cgi/513</a> 」。</div><div class="img"><a id="img_03"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_03.png" alt="选取并复制引用网址"><br />图三：用鼠标选取这个窗口里的引用网址，并复制起来。</div></li>
+  <li><a id="intro_02"></a>接著可以在自己的网志上如<a href="#img_04">图四</a>发表文章，然后储存之前记得如<a href="#img_05">图五</a>那样把稍早复制起来的<code>引用网址</code>贴到<strong>要通告的网址</strong>字段里。<div class="img"><a id="img_04"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_04.png" alt="发表文章"><br />图四：在自己的网志上发表新文章，在这个范例里我们填写的文章标题是「心有戚戚焉」，主要文章本体里也写了一些内容；除此之外我们还在「文摘」字段里写进了这一篇文章的文摘（如果你没有填写文摘内容的话， Movable Type 就会自动拿「主要文章本体」里的前几个字来当作文摘）。</div><div class="img"><a id="img_05"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_05.png" alt="在「要通告的网址」里贴上了「 http://blog.elixus.org/cgi-bin/mt-tb.cgi/513 」"><br />图五：在「要通告的网址」里贴上了「 <a href="http://blog.elixus.org/cgi-bin/mt-tb.cgi/513">http://blog.elixus.org/cgi-bin/mt-tb.cgi/513</a> 」。</div></li>
+  <li><a id="intro_03"></a>当你按下「储存」按钮后，还会看到如<a href="#img_06">图六</a>的画面，表示你的 Movable Type 正在送出一个<code>引用通告</code>给你指定的网址。<div class="img"><a id="img_06"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_06.png" alt="正在送出通告给 http://blog.elixus.org/cgi-bin/mt-tb.cgi/513"><br />图六：储存文章后，正在送出引用通告。在这个范例里通告被送到 http://blog.elixus.org/cgi-bin/mt-tb.cgi/513 。</div></li>
+  <li><a id="intro_04"></a>送出通告后，任何人再次阅读 Jedi 的那一篇文章时，就会发现「引用」链结后面的数字如<a href="#img_07">图七</a>增加了一，按下「引用」链结后所弹出的窗口也如<a href="#img_08">图八</a>那样，会出现你刚刚所发表文章的<strong>标题</strong>、<strong>链结</strong>、<strong>文摘</strong>还有<strong>引用时间</strong>，另外也会列出你的<strong>网志名称</strong>。<div class="img"><a id="img_07"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_07.png" alt="「引用」链结后面的数字多了一"><br />图七：「引用」链结后面的数字多了一，表示这个站台又多收到了一个引用通告。</div><div class="img"><a id="img_08"></a><img src="http://junnie.3322.org/bookimg/mttrackback_intro_08.png" alt="引用清单窗口里多了一份你刚刚所发表的文章的信息"><br />图八：在弹出的引用清单窗口里，多了一份你刚刚所发表的文章的信息，包含了站台名称、文章标题、文章摘要、引用时间和网址。</div></li>
+</ol></p>
+<h2><a id="enable"></a>启用引用功能</h2>
+<p>同样地，你也可以在自己的网志启用引用功能，让别人能够引用你的文章；你祇需要在发表文章的时候，如<a href="#img_09">图九</a>核选「允许通告」就可以了。当然你也可以在事后编辑文章的时候重新调整这里的设定。<div class="img"><a id="img_09"></a><img src="http://junnie.3322.org/bookimg/mttrackback_enable_entry_01.png" alt="核选「允许通告」"><br />图九：新增或编辑文章的时候，核选「允许通告」就能够启用这个功能。</div></p>
+<p>当然你也可以直接把这个选项设成预设值，这么一来你就不需要每次核选这个核选框了。方法如下：</p>
+<p><ol>
+  <li><a id="enable_01"></a>请如<a href="#img_10">图十</a>按下左方工具列的「网志组态」按钮，然后如<a href="#img_11">图十一</a>按下「偏好」链结，再如<a href="#img_12">图十二</a>按下「<strong>出版/远程接口/引用</strong>」链结。<div class="img"><a id="img_10"></a><img src="http://junnie.3322.org/bookimg/mttrackback_enable_default_01.png" alt="按下工具列的「网志组态」按钮"><br />图十：按下左方工具列的「网志组态」按钮。</div><div class="img"><a id="img_11"></a><img src="http://junnie.3322.org/bookimg/mttrackback_enable_default_02.png" alt="点选「偏好」链结"><br />图十一：点选偏好链结。</div><div class="img"><a id="img_12"></a><img src="http://junnie.3322.org/bookimg/mttrackback_enable_default_03.png" alt="点选「出版/远程接口/引用」链结"><br />图十二：点选「出版/远程接口/引用」链结。</div></li>
+  <li><a id="enable_02"></a>就在「<code>出版/远程接口/引用</code>」段落的第四项设定值，就是用来设定预设要不要启用引用功能的。请如<a href="#img_13">图十三</a>核选「<strong>预设允许通告</strong>」的核选框，再按「储存」按钮。这么一来之后所有的文章就都会预设核选「允许通告」核选框了。<div class="img"><a id="img_13"></a><img src="http://junnie.3322.org/bookimg/mttrackback_enable_default_04.png" alt=""><br />图十三：核选「预设允许通告」核选框。</div></li>
+</ol></p>
+<h2><a id="bookmarklet"></a>MT It!</h2>
+<p>随著你涉猎的网志越来越多，你发出<code>引用通告</code>的机会也会越来越多；如果每一次你都得像<a href="#intro">第一小节</a>那样子辛苦地复制<code>引用网址</code>显然过于麻烦。 Movable Type 提供了一个称做「<strong>小书签</strong>」的功能，会挖掘出藏在页面里的文章信息，自动取用隐藏在页面里的引用网址（对，这些信息其实都在页面里了，祇是你看不到而已），这绝对能让你更顺手。以下我们将说明安装小书签的功能，并示范小书签的用途：</p>
+<p><ol>
+  <li><a id="bookmarklet_01"></a>如<a href="#img_14">图十四</a>点击网志<code>主选单</code>里的「<strong>安装小书签</strong>」链结。<div class="img"><a id="img_14"></a><img src="http://junnie.3322.org/bookimg/mttrackback_bookmarklet_01.png" alt="点击主选单里的「安装小书签」链结"><br />图十四：点击主选单里的「安装小书签」链结。</div></li>
+  <li><a id="bookmarklet_02"></a>在如<a href="#img_15">图十五</a>的画面中，请先核选你发表文章时比较会动用到的字段，然后再按下「建立」按钮。<div class="img"><a id="img_15"></a><img src="http://junnie.3322.org/bookimg/mttrackback_bookmarklet_02.png" alt="核选会用到的字段再按下「建立」按钮"><br />图十五：核选会用到的字段再按下「建立」按钮，在这个范例中核选的是「类别」和「额外文章内容」。</div></li>
+  <li><a id="bookmarklet_03"></a>接著你会看到如<a href="#img_16">图十六</a>的画面，请如图点击那个「<strong>把 MT It! 加入 Windows 的右键选单里</strong>」的链结。<div class="img"><a id="img_16"></a><img src="http://junnie.3322.org/bookimg/mttrackback_bookmarklet_03.png" alt="点击「把 MT It! 加入 Windows 的右键选单里」"><br />图十六：点击「把 MT It! 加入 Windows 的右键选单里」的链结。</div></li>
+  <li><a id="bookmarklet_04"></a>从此之后，当你浏览到任何一篇文章而想要马上引用来写作时，就可以在该页面按下鼠标右键，并如<a href="#img_17">图十七</a>那样选择「<strong> MT It! </strong>」，随即就会弹出如<a href="#img_18">图十八</a>的窗口，你可以直接用这个接口撰写新文章，而毋须另外登入 Movable Type ，更不用大费周章地去复制引用网址。如果你手上有好几份网志的话，你也能够在这里选择要发表在哪一份网志上。<div class="img"><a id="img_17"></a><img src="http://junnie.3322.org/bookimg/mttrackback_bookmarklet_04.png" alt="从右键选单里选择「 MT It! 」"><br />图十七：在文章页面里按鼠标右键，并从右键选单里选择「 MT It! 」。</div><div class="img"><a id="img_18"></a><img src="http://junnie.3322.org/bookimg/mttrackback_bookmarklet_05.png" alt="MT It! 的弹出式窗口"><br />图十八： MT It! 的弹出式窗口，你可以直接用这个接口撰写新文章，而毋须另外登入 Movable Type ，更不用大费周章地去复制引用网址。</div></li>
+</ol></p>
+<h2><a id="category"></a>类别与引用功能</h2>
+<p>现在我们所要介绍的功能是比较鲜为人知的。一般人祇知道每一篇文章都可以去引用别的文章，也能够被别的文章所引用，不过其实「类别」也可以。让我们说明白点，「类别」其实可以接受来自某一篇文章所发出的通告，同时你也可以设定祇要是某个类别里的文章，就都要发送一份通告到某几个特定的通告网址去。让我们看一看实际的例子与作法：</p>
+<p><ol>
+  <li><a id="category_01"></a>如<a href="#img_19">图十九</a>，这是<a href="http://blog.elixus.org/">艺立协繁体中文 blog 中心</a>的首页；你可以看到在最右边那一栏里列出了好几个不同类别的<code>引用网址</code>，而最左边这一栏的内容，确实就是按照这些类别来分别列出来自不同网志的新文章的。祇要任何一篇文章发出了通告到这里列出的引用网址，那么这一篇文章就会被汇集进来。如果你自己的网志里，刚好有某个类别跟艺立协繁体中文 blog 中心的某个类别刚好能够相呼应的话，当你发表该类别的文章时，就都得把这个引用网址给贴进去 ─ 这样实在不够科学；实际上我们可以如<a href="#img_20">图二十</a>在<code>编辑类别属性画面</code>里，预先把这个引用网址填到引用设定里，以后就不需要自己填写了。<div class="img"><a id="img_19"></a><img src="http://junnie.3322.org/bookimg/mttrackback_category_01.png" alt="艺立协繁体中文 blog 中心利用类别的引用网址来处理主动式的文章分类汇集"><br />图十九：艺立协繁体中文 blog 中心利用类别的引用网址来处理主动式的文章分类汇集。</div><div class="img"><a id="img_20"></a><img src="http://junnie.3322.org/bookimg/mttrackback_category_02.png" alt="在「编辑类别属性」的画面里预填预设要发送通告的网址"><br />图二十：在「编辑类别属性」的画面里，预填此类别预设要发送通告的网址。在这个范例中填写的是「 http://blog.elixus.org/cgi-bin/mt-tb.cgi/690 」。</div></li>
+  <li><a id="category_02"></a>如果你也想做类似的事，首先你得让你的类别也要能够接受通告。方法是如<a href="#img_21">图二十一</a>在<code>编辑类别属性画面</code>里启用「<strong>接受送进来的引用通告</strong>」，储存后你就会看到如<a href="#img_22">图二十二</a>那样，多显示出一个属于这个类别的<code>引用网址</code>，接下来你就祇需要修改模版，并且把这个引用网址昭告天下了。<div class="img"><a id="img_21"></a><img src="http://junnie.3322.org/bookimg/mttrackback_category_03.png" alt="启用「接受送进来的引用通告」"><br />图二十一：在「编辑类别属性」画面里，启用「接受送进来的引用通告」。</div><div class="img"><a id="img_22"></a><img src="http://junnie.3322.org/bookimg/mttrackback_category_04.png" alt="「编辑类别属性」画面里出现了 http://Jedimt.dyndns.org/mt-tb.cgi/184"><br />图二十二：「编辑类别属性」画面里出现了该类别的引用网址，在这个范例中是「 <a href="http://Jedimt.dyndns.org/mt-tb.cgi/184">http://Jedimt.dyndns.org/mt-tb.cgi/184</a> 」。</div></li>
+  <li><a id="category_03"></a>如果你希望让这个类别能够接受别人送出来的引用通告，但是又希望稍微管理，不要让闲杂人等也都能任意发送通告过来的话，你也可以如<a href="#img_23">图二十三</a>设定口令，那么就祇有知道口令的人，才有办法发送通告给你了。<div class="img"><a id="img_23"></a><img src="http://junnie.3322.org/bookimg/mttrackback_category_05.png" alt="把口令设为 test"><br />图二十三：设定这个类别的引用网址的口令，在这个范例中口令是「 test 」。</div></li>
+</ol></p>
+<h2><a id="ban"></a>禁用 IP</h2>
+<p><code>回响功能</code>可以禁用 IP ，同样地<code>引用功能</code>也行。实际上它们叫用的是同一份清单，这意味著不能发表回响的 IP 地址，也将不能发送引用通告给你。如果你发现有人发疯似地不断发送引用通告到你的站台，那么你就可以透过这个功能先阻断这些通告，再想办法联络上那位不断发送通告的仁兄，看看到底是哪儿出了差错。此时，所有的其它使用者却都不会因此而受影响。请见下列的步骤：</p>
+<p><ol>
+  <li><a id="ban_01"></a>请如<a href="#img_24">图二十四</a>按下网志管理接口左方工具列上的「<strong>网志组态</strong>」按钮，然后如<a href="#img_25">图二十五</a>点击网志组态画面上方的「<strong>禁用 IP </strong>」链结。<div class="img"><a id="img_24"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_01.png" alt="按下「网志组态」按钮"><br />图二十四：按下左方工具列上的「网志组态」按钮。</div><div class="img"><a id="img_25"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_02.png" alt="点击「禁用 IP 」链结"><br />图二十五：点击「禁用 IP 」链结。</div></li>
+  <li><a id="ban_02"></a>把你打算要禁用的 IP 地址如<a href="#img_26">图二十六</a>填入 IP 地址的字段，然后再如<a href="#img_27">图二十七</a>按下「<strong>加入</strong>」按钮。<div class="img"><a id="img_26"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_03.png" alt="填入要禁用的 IP 地址"><br />图二十六：填入要禁用的 IP 地址，在这个范例里我们填的是「 192.168.1.99 」。</div><div class="img"><a id="img_27"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_04.png" alt="按下「加入」按钮"><br />图二十七：按下「加入」按钮，把我们所填写的 IP 地址加进<code> IP 禁用清单</code>里。</div></li>
+  <li><a id="ban_03"></a>你会看到如<a href="#img_28">图二十八</a>的画面，在<code> IP 禁用清单</code>里会列出已被禁用的 IP 地址。<div class="img"><a id="img_28"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_05.png" alt="IP 禁用清单"><br />图二十八： IP 禁用清单里会列出已被禁用的 IP 地址，在这个范例里的是「 192.168.1.99 」。</div></li>
+  <li><a id="ban_04"></a>如果你打算取消对某几个 IP 地址的禁用令的话，请如<a href="#img_29">图二十九</a>核选这些 IP 地址后面的核选框，再如<a href="#img_30">图三十</a>按下「<strong>删除</strong>」按钮。<div class="img"><a id="img_29"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_06.png" alt="核选欲取消禁用的 IP 地址"><br />图二十九：核选欲取消禁用的 IP 地址，在这个范例里我们核选了「 192.168.1.99 」后的核选框。</div><div class="img"><a id="img_30"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_07.png" alt="按下「删除」按钮"><br />图三十：按下「删除」按钮，来把被核选的 IP 地址移出 IP 禁用清单。</div></li>
+  <li><a id="ban_05"></a>接著会弹出如<a href="#img_31">图三十一</a>的窗口，请按「<strong>删除</strong>」按钮，来确定删除这些 IP 地址的禁用令。<div class="img"><a id="img_31"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_08.png" alt="按下「删除」按钮"><br />图三十一：按下「删除」按钮。</div></li>
+  <li><a id="ban_06"></a>如<a href="#img_32">图三十二</a>，这样子来自这些 IP 的读者就又能够向你的网志发送引用通告了。<div class="img"><a id="img_32"></a><img src="http://junnie.3322.org/bookimg/mttrackback_ban_09.png" alt="指定的 IP 地址被取消禁用了"><br />图三十二：指定的 IP 地址被取消禁用了。</div></li>
+</ol></p>
+<hr size="1" color="#CCCCCC" />
+<img src="http://junnie.3322.org/bookimg/cc.png" alt="保留部分权利" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_by.png" alt="Attribution" class="ccicon"><img src="http://junnie.3322.org/bookimg/cc_sa.png" alt="Share Alike" class="ccicon"><p class="copyright">版权所有 &copy; 2003, 2004 Jedi. <a href="cn_mtbook_copyright.html#copyright">保留部分权利</a>。<i style="color:#A5A5A5">Modified By <a href="http://www.zhu8.net/" rel="bookmark">Zhu8</a> | 2009.11.20 | Friday | 22:27:43</i></p>
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4945528698886553";
+/* 468x60, 创建于 09-11-20 */
+google_ad_slot = "8448824973";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7102271-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

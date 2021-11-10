@@ -1,0 +1,183 @@
+.gfg-root {
+	width:100%;
+	height:auto;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+
+.gfg-title {
+	font-weight:700;
+	color:#36c;
+	line-height:1.4em;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.gfg-entry {
+	width:100%;
+	height:10em;
+	position:relative;
+	overflow:hidden;
+	text-align:left;
+	margin-top:3px;
+}
+
+/* To allow correct behavior for overlay */
+.gfg-root .gfg-entry .gf-result {
+	position:relative;
+	width:auto;
+	height:100%;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.gfg-list {
+	position:relative;
+	overflow:hidden;
+	text-align:left;
+	margin-bottom:5px;
+}
+
+.gfg-listentry {
+	line-height:1.5em;
+	overflow:hidden;
+	white-space:nowrap;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.gfg-listentry-odd {
+	border-bottom:#F63 1px solid;
+	border-top:#F63 1px solid;
+}
+
+.gfg-listentry-highlight {
+	background-image:url('garrow.gif');
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+/* FeedControl customizations.*/
+.gfg-root .gfg-entry .gf-result .gf-title {
+	line-height:1em;
+	overflow:hidden;
+	white-space:nowrap;
+	margin-bottom:2px;
+}
+
+.gfg-root .gfg-entry .gf-result .gf-snippet {
+	height:3.8em;
+	color:#fff;
+	margin-top:3px;
+}
+
+/* Easy way to get horizontal mode, applicable via js options to gadget.*/
+.gfg-horizontal-container {
+	position:relative;
+}
+
+.gfg-horizontal-root {
+	height:1.5em;
+	position:relative;
+	white-space:nowrap;
+	overflow:hidden;
+	text-align:center;
+	font-family:"Arial", sans-serif;
+	border:1px solid #AAA;
+	margin-right:80px;
+	padding:5px;
+}
+
+.gfg-horizontal-root .gfg-title {
+	font-weight:700;
+	line-height:1.5em;
+	overflow:hidden;
+	white-space:nowrap;
+	float:left;
+	padding-left:10px;
+	padding-right:12px;
+	border-right:1px solid #AAA;
+}
+
+.gfg-horizontal-root .gfg-title a {
+	color:#444;
+	text-decoration:none;
+}
+
+.gfg-horizontal-root .gfg-entry {
+	width:auto;
+	height:1.5em;
+	position:relative;
+	overflow:hidden;
+	text-align:left;
+	margin-top:0;
+	margin-left:0;
+	padding-left:10px;
+}
+
+/* To allow correct behavior for overlay */
+.gfg-horizontal-root .gfg-entry .gf-result {
+	position:relative;
+	width:100%;
+	height:100%;
+	line-height:1.5em;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-title {
+	color:#00c;
+	margin-right:3px;
+	float:left;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer,.gfg-horizontal-root .gfg-entry .gf-result .gf-relativePublishedDate {
+	display:block;
+	color:#AAA;
+}
+
+.gfg-branding {
+	white-space:nowrap;
+	overflow:hidden;
+	text-align:left;
+	position:absolute;
+	right:0;
+	top:0;
+	width:80px;
+}
+
+.gfg-collapse-open,.gfg-collapse-closed {
+	background-repeat:no-repeat;
+	background-position:center;
+	cursor:pointer;
+	float:right;
+	width:17px;
+	height:20px;
+}
+
+.gfg-collapse-open {
+	background-image:url('arrow_open.gif');
+}
+
+.gfg-collapse-closed {
+	background-image:url('arrow_close.gif');
+}
+
+.clearFloat {
+	clear:both;
+}
+
+.gfg-title a,.gfg-subtitle a {
+	color:#36c;
+}
+
+.gfg-subtitle,.gfg-horizontal-root .gfg-list,.gfg-horizontal-root .gfg-entry .gf-result .gf-snippet,.gfg-horizontal-root .gfg-entry .gf-result .gf-author {
+	display:none;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer,.gfg-collapse-href {
+	float:left;
+}

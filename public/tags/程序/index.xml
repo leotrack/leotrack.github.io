@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>程序 on 猪八的网：浮生志</title>
+    <link>/tags/%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 程序 on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Tue, 16 Jun 2009 20:58:44 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Movable Type中文化书签插件-Bookmarks Chinese</title>
+      <link>/blog/2009/06/bookmarks-chinese.html</link>
+      <pubDate>Tue, 16 Jun 2009 20:58:44 +0800</pubDate>
+      
+      <guid>/blog/2009/06/bookmarks-chinese.html</guid>
+      <description>&lt;p&gt;###&lt;strong&gt;描述：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;BookmarksChinese&lt;/strong&gt;&lt;/em&gt;是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
+作者信息：Zhu8 (&lt;a href=&#34;https://zhu8.net&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net&lt;/a&gt;)&lt;br&gt;
+插件地址：&lt;a href=&#34;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&lt;/a&gt;&lt;br&gt;
+插件版本：1.0 Final (2009.6.4)&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;插件结构：&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;mt-static/&lt;br&gt;
+　　　　plugins/&lt;br&gt;
+　　　　　　　　BookmarksChinese/&lt;br&gt;
+　　　　　　　　　　　　style.css&lt;br&gt;
+　　　　　　　　　　　　images/&lt;br&gt;
+　　　　　　　　　　　　　　addtoany.png&lt;br&gt;
+　　　　　　　　　　　　　　google.png&lt;br&gt;
+　　　　　　　　　　　　　　digg.png&lt;br&gt;
+　　　　　　　　　　　　　　technorati.png&lt;br&gt;
+　　　　　　　　　　　　　　delicious.png&lt;br&gt;
+　　　　　　　　　　　　　　friendfeed.png&lt;br&gt;
+　　　　　　　　　　　　　　twitter.png&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cgi-bin/mt/&lt;br&gt;
+　　　　plugins/&lt;br&gt;
+　　　　　　　　BookmarksChinese/&lt;br&gt;
+　　　　　　　　　　　　BookmarksChinese.pl&lt;br&gt;
+　　　　　　　　　　　　php/&lt;br&gt;
+　　　　　　　　　　　　　　function.mtaddtoanyurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mtgoogleurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mtdiggurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mttechnoratiurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mtdeliciousurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mtfriendfeedurl.php&lt;br&gt;
+　　　　　　　　　　　　　　function.mttwitterurl.php&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;###&lt;strong&gt;模板标签：&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;$MTAddToAnyURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTDiggURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTDeliciousURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTFriendFeedURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTGoogleURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTTechnoratiURL$&amp;gt;&lt;br&gt;
+&amp;lt;$MTTwitterURL$&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;###&lt;strong&gt;例子：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到美味书签&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;###&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载插件：｛&lt;a href=&#34;https://zhu8.net/uploads/BookMarksChinese.zip&#34; title=&#34;Bookmarks Chinese 下载地址&#34;&gt;&lt;strong&gt;这里下载&lt;/strong&gt;&lt;/a&gt;｝&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;参照文件目录，上传插件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改Index Templates中的Stylesheet（Style.css），在最后一行加上&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#111&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&amp;lt;$&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;mt&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;StaticWebPath&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;$&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;plugins&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;BookmarksChinese&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;比如小站，我修改了Template Modules中的Entry Metadata，在其中找到：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;mt:ifpingsactive&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;separator&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;¦&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$mt:entrypermalink$&amp;gt;#trackbacks&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;&lt;/span&gt;$mt:entrytrackbackcount plural=&amp;#34;# Trackbacks&amp;#34; singular=&amp;#34;1 Trackback&amp;#34;$&amp;gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;mt:ifpingsactive&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在后面加上引用代码，示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;separator&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;¦&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到Delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;twitter&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTTwitterURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到Twitter&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;friendfeed&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTFriendFeedURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到FriendFeed&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;google&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTGoogleURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到Google Bookmarks&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;digg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTDiggURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;Digg This!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;technorati&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTTechnoratiURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;收藏到Technorati&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;addtoany&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;&amp;lt;$MTAddToAnyURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;更多...&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;More!&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;请注意，代码需在之前，以免破坏网页格式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果你需要加入其他的社会化网络按钮，请自己研究下源代码，参数很简单 :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;###&lt;strong&gt;结束语：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以上，是我在Movable Type的&lt;strong&gt;最后一篇帖子&lt;/strong&gt;。经过和Wordpress的对比，MT在可定制性和易用性方面，在资源&lt;strong&gt;特别是中文资源&lt;/strong&gt;方面，远远&lt;strong&gt;落后&lt;/strong&gt;于WP，而且我从06年开始就使用WP，也有一定的感情，所以决定，今天：2009年6月16日，再次回到WordPress的怀抱，使用WordPress 2.8重新搭建站点。&lt;/p&gt;
+&lt;p&gt;不过说实话，不知道是我用的&lt;em&gt;Webhostingbuzz&lt;/em&gt;很不错还是我的日志比较少的原因，没有出现过CPU超限被警告的问题。而且，说实话，我很热爱静态化的MT，在访问速度上，静态化确实很是舒爽。&lt;/p&gt;
+&lt;p&gt;唉，废话少说，准备更新数据库，换WP。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Bye-Bye，活字印刷&amp;hellip;&amp;hellip;（抱歉，在十二小时之后，我又回来了&amp;hellip;&amp;hellip;）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-=The End=-&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Movable Type 4网站重构记录</title>
+      <link>/blog/2008/10/reborn-with-movable-type-4.html</link>
+      <pubDate>Thu, 30 Oct 2008 16:22:40 +0800</pubDate>
+      
+      <guid>/blog/2008/10/reborn-with-movable-type-4.html</guid>
+      <description>&lt;p&gt;即将使用MT进行网站的重构，全线启用&lt;a href=&#34;http://www.movabletype.com/&#34;&gt;Movable Type&lt;/a&gt; （MT.com貌似被GFW了，虽然不知道为什么连一个专业的Blog平台长城都要去过问……请访问&lt;a href=&#34;http://www.movabletype.org/&#34;&gt;MT.org&lt;/a&gt;获得新消息。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>又换回MovableType</title>
+      <link>/blog/2008/05/back-to-movabletype.html</link>
+      <pubDate>Thu, 15 May 2008 22:48:21 +0800</pubDate>
+      
+      <guid>/blog/2008/05/back-to-movabletype.html</guid>
+      <description>&lt;p&gt;其实还是摆脱不了喜欢静态页面&lt;strong&gt;HTML&lt;/strong&gt;的癖好，所以说第一次用什么程序对个人的看法是最大的，我第一次选择了&lt;a href=&#34;http://www.rainbowsoft.org&#34;&gt;Z-Blog&lt;/a&gt;，然后就总是念念不忘。存档还在我的&lt;a href=&#34;http://chenjun.com/old/&#34;&gt;/old/&lt;/a&gt;目录下。&lt;/p&gt;
+&lt;p&gt;当时用Z-Blog搭建网站的乐趣，学习ASP的乐趣，修改模板的乐趣，都对我以后产生了很大的影响。其实现在是因为改用了PHP的缘故，所以没有办法再用Z-Blog了，但是很佩服zx.asd当年发布的这个程序，以及当时陪伴Z-Blog一起成长的过程，虽然也许现在没有一个人会记得我、记得我当年发布过2Sky和Firefox的Z-Blog模板、记得我写过的一篇弱智的&lt;a href=&#34;http://bbs.rainbowsoft.org/thread-254-1-2.html&#34;&gt;教程&lt;/a&gt;，呵呵，如今已经好些年过去了，我再次回到了可爱的&lt;strong&gt;HTML&lt;/strong&gt;身边……&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress 2.5</title>
+      <link>/blog/2008/03/wordpress-25.html</link>
+      <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
+      
+      <guid>/blog/2008/03/wordpress-25.html</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
+&lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>终于用上Movable Type!</title>
+      <link>/blog/2008/03/change-to-movable-type.html</link>
+      <pubDate>Sat, 08 Mar 2008 00:14:31 +0800</pubDate>
+      
+      <guid>/blog/2008/03/change-to-movable-type.html</guid>
+      <description>&lt;p&gt;&lt;del datetime=&#34;2008-03-15T07:28:46+00:00&#34;&gt;准备慢慢玩玩MT，敬请期待！&lt;/del&gt;&lt;em&gt;By Zhu8 on Friday, Mar 7, 2008 12:14:53&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Update:2008/03/15&lt;/em&gt; 呵呵，玩了两天，还是不习惯，又换回&lt;del&gt;WordPress&lt;/del&gt;了。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update Again:2008/05/15&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;看来我是极度的喜新厌旧型-_-#，两个月后，又回到了MT。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update Again &amp;amp; Again:2008/08/21&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;昨天，我在回到WP之后三个月，又回到了MT。&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
