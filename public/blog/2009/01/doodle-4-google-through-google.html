@@ -343,12 +343,12 @@ onload='renderMathInElement(document.body);'></script>
 	
 </div>
 	<div class="text-sm text-gray-500 leading-tight a-gray">
-		
+		<br>
 		<i class="fas fa-paint-roller"></i>Theme <a 
-		href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a> with375 words here.<br>
-		<i class="fas fa-code-branch"></i><a href="https://coding.net">CODING</a> Powered by <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a><br><br>
+		href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a> with 375 words here.<br>
+		<i class="fas fa-code-branch"></i><a href="https://coding.net">CODING</a> on <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a><br>
 		
-		<i class="fas fa-copyright"></i>2021 &sect; Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;] 
+		<i class="fas fa-copyright"></i>2021 &sect; Zhu8, [<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA</a>] 
 	</div>
 </div>
 
@@ -393,14 +393,17 @@ onload='renderMathInElement(document.body);'></script>
 <hr />
 <div class="pb-2">
     
+
 <div id="waline"></div>
 <script>
     new Waline({
         el: '#waline',
         path: location.pathname,
         serverURL: "https://waline-zhu8.vercel.app/" ,
-        visitor: 'true'
-        uploadImage: false
+		visitor: 'true',
+dark: 'auto',
+login: 'enable',
+uploadImage: false,
     });
     </script>
 

@@ -36,17 +36,6 @@
 </div>
 <hr />
 <div class="pb-2">
-    {{ if .Site.Params.walineServer }}
-<div id="waline"></div>
-<script>
-    new Waline({
-        el: '#waline',
-        path: location.pathname,
-        serverURL: {{.Site.Params.walineServer}} ,
-        visitor: 'true'
-        uploadImage: false
-    });
-    </script>
-{{ end }}
+    {{ partial "comment.html" . }}
 </div>
 <hr />
