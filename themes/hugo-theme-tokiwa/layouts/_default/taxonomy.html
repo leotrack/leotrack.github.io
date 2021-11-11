@@ -7,11 +7,7 @@
 		{{ range (.Paginator 10).Pages }}
 		<div>
 			{{ partial "summary.html" . }}
-		</div>
-		{{ end }}
+		</div> {{ end }}
 	</section>
-</div>
-{{ end }}
-{{define "footer"}}
-{{ partial "list-footer.html" . }}
-{{end}}
+</div> {{ end }}
+{{define "footer"}} {{ partial "list-footer.html" . }} {{end}}

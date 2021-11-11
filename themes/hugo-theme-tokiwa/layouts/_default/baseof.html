@@ -9,28 +9,19 @@
 	{{ hugo.Generator }}
 	{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	<meta name="description" content="{{ .Site.Params.description }}">
-	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-	{{ else }}
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-	{{ end }}
+	<meta name="description" content="{{ .Site.Params.sitedescription }}">
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> {{ else }}
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
 	{{ $stylesheet := .Site.Data.webpack_assets.app }}
 	{{ with $stylesheet.css }}
-	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
-	{{ end }}
+	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
 	{{ range .Site.Params.custom_css }}
-	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
-	{{ end }}
-	{{ block "favicon" . }}
-	{{ partial "site-favicon.html" . }}
-	{{ end }}
+	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}"> {{ end }}
+	{{ block "favicon" . }} {{ partial "site-favicon.html" . }} {{ end }}
 	{{ with .OutputFormats.Get "RSS" }}
 	<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-	{{end}}
-	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	{{ template "_internal/google_analytics.html" . }}
-	{{ end }}
+	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
+	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }} {{ template "_internal/google_analytics.html" . }} {{ end }}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
 	<script src="{{"/vendor/js/jquery.min.js" | relURL}}"></script>
 	<script src="{{"/vendor/js/popper.min.js" | relURL}}"></script>
@@ -40,9 +31,6 @@
 	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<script src="{{"/vendor/js/vue.min.js" | relURL}}"></script>
-	{{ if or .Params.math .Site.Params.math }}
-	{{ partial "math.html" . }}
-	{{ end }}
 	{{ if ne $.Site.LanguageCode "en"}}
 	<!--pangu.js-->
 	<script>
@@ -73,53 +61,6 @@
 			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
 				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
-		/*  For varible font usage sometimes */
-		/*
-		@font-face {
-			font-family: 'Source Han Serif CN Variable';
-			src: url('{{"fonts/SourceHanSerifCN-VF.otf.woff2" | absURL }}') format('woff2');
-			font-weight: 1 999;
-			font-style: normal;
-			font-display: swap;
-		} */
-		/* noto-serif-sc-300 - latin_chinese-simplified */
-		@font-face {
-			font-family: 'Noto Serif CJK SC';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: local('Noto Serif CJK SC Light'), local('NotoSerifCJK-Light'),
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff2" | absURL }}') format('woff2'),
-				/* Chrome 26+, Opera 23+, Firefox 39+ */
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff" | absURL }}') format('woff');
-			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-		}
-
-		/* noto-serif-sc-regular - latin_chinese-simplified */
-		@font-face {
-			font-family: 'Noto Serif CJK SC';
-			font-style: normal;
-			font-weight: 400;
-			font-display: swap;
-			src: local('Noto Serif CJK SC'), local('NotoSerifCJK-Regular'),
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff2" | absURL }}') format('woff2'),
-				/* Chrome 26+, Opera 23+, Firefox 39+ */
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff" | absURL }}') format('woff');
-			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-		}
-
-		/* noto-serif-sc-500 - latin_chinese-simplified */
-		@font-face {
-			font-family: 'Noto Serif CJK SC';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: local('Noto Serif CJK SC Medium'), local('NotoSerifCJK-Medium'),
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff2" | absURL }}') format('woff2'),
-				/* Chrome 26+, Opera 23+, Firefox 39+ */
-				url('{{"fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff" | absURL }}') format('woff');
-			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-		}
 	</style>
 	{{ end }}
 </head>
@@ -143,8 +84,7 @@
 			</div>
 		</aside>
 		<footer class="w-full md:w-3/5 xl:w-1/2 order-3 max-w-3xl md:order-4 pt-2">
-			{{ block "footer" . }}
-			{{ end }}
+			{{ block "footer" . }} {{ end }}
 		</footer>
 		{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 	</div>

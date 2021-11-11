@@ -20,9 +20,10 @@ style = "monokailight"
 unsafe = true
 
 [params]
-  math = true
+  math = false
+  toc = true
   env = "production"
-  subtitle = """
+  description = """
   庸俗路上的无尽狂奔……
   """
   favicon = "/favicon.ico"
@@ -37,7 +38,7 @@ enableReadingTime = true
   githubName = "Zhu8"
   email = "zhu8@msn.com"
   twitterName = "5CJ"
-  description = "陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。"
+  sitedescription = "陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。"
 enableWaline = true
 googleSiteVerification = "Mfl8lf6NN0DWPluv8lQpBL-mrKi22ZOcnlKXYURni1Y"
 appletouchicon ="/apple-touch-icon.png"
@@ -101,10 +102,12 @@ walineServer = "https://waline-zhu8.vercel.app/"
 	weight = 7
 	pre = "<i class=\"fas fa-rss\"></i>"
 [social]
-github = "http://github.com/zhu8"
-gitlab = "http://gitlab.com/zhu8.net"
-twitter = "http://twitter.com/5CJ"
-weibo = "http://weibo.com/zhu8"
+github = "https://github.com/zhu8"
+gitlab = "https://gitlab.com/zhu8.net"
+twitter = "https://twitter.com/5CJ"
+weibo = "https://weibo.com/zhu8"
+douban = "https://douban.com/people/zhu8"
+tumblr = "https://zhu8.tumblr.com/"
 # any icon in layouts/partials/svg can be used by the name without the "-line.svg"
 
 [outputs]

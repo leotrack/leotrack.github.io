@@ -1,7 +1,4 @@
-{{ define "header" }}
-{{ partial "page-header.html" . }}
-{{ end }}
-
+{{ define "header" }} {{ partial "page-header.html" . }} {{ end }}
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <article>
@@ -10,14 +7,6 @@
 			{{- .Content -}}
 		</div>
 	</section>
-
-
-</article>
-{{ end }}
-
-{{ define "aside" }}
-	{{ partial "page-aside.html" . }}
-{{ end }}
-{{ define "footer" }}
-{{ partial "page-footer.html" . }}
-{{ end }}
+</article>{{ end }}
+{{ define "aside" }} {{ partial "page-aside.html" . }} {{ end }}
+{{ define "footer" }} {{ partial "page-footer.html" . }} {{ end }}
