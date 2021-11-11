@@ -93,11 +93,11 @@ walineServer = "https://comm.zhu8.net/"
 	url = "/tags/"
 	name = "Tags § 标签"
 	weight = 6
-	pre = "<i class=\"fas fa-tags\"></i>"
+	pre = "<i class=\"fas fa-tag\"></i>"
 [[menu.main]]
 	identifier = "rss"
 	url = "/index.xml"
-	name = "RSS Feed § 订阅"
+	name = "RSS § 订阅"
 	weight = 7
 	pre = "<i class=\"fas fa-rss\"></i>"
 [social]
