@@ -6,7 +6,7 @@
 <h2 class="pt-2">
 	<i class="fas fa-bookmark"></i> {{- .Title -}}
 </h2>
-<h3 class="text-java-700 font-normal leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 {{.WordCount }} 字，阅读需 <i class="fas fa-stopwatch"></i> {{ if .Site.Params.enableReadingTime }} <span class="more-meta">{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}{{ $minutes := math.Floor (div $readTime 60) }}{{ $seconds := mod $readTime 60 }}{{ $minutes }} {{ cond (eq $minutes 1) "minute" "分" }}&nbsp;{{ $seconds }} {{ cond (eq $seconds 1) "second" "秒" }}.</span>{{ end }}.</h3>
+<h3 class="text-java-700 font-normal leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 {{.WordCount }} 字 § 阅读需 <i class="fas fa-stopwatch"></i> {{ if .Site.Params.enableReadingTime }} <span class="more-meta">{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}{{ $minutes := math.Floor (div $readTime 60) }}{{ $seconds := mod $readTime 60 }}{{ $minutes }} {{ cond (eq $minutes 1) "minute" "分" }}&nbsp;{{ $seconds }} {{ cond (eq $seconds 1) "second" "秒" }}</span>{{ end }}</h3>
 <div class="flex flex-wrap justify-end pt-2 ">
 	{{- partial "tags.html" . -}}
 	<time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4"
