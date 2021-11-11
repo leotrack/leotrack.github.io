@@ -1,7 +1,13 @@
-{{ define "header" }}
-{{ partial "page-header.html" . }}
-{{ end }}
-
+<div>
+	<h1>
+		<a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" class="heading font-cursive icon">{{ .Site.Title }}</a>
+	</h1>
+</div>
+<h2 class="pt-2">
+	<i class="fas fa-bookmark"></i> {{- .Title -}}
+</h2>
+{{ partial "toc.html" . }}
+<hr />
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <article>
@@ -10,14 +16,6 @@
 			{{- .Content -}}
 		</div>
 	</section>
-
-
-</article>
-{{ end }}
-
-{{ define "aside" }}
-	{{ partial "page-aside.html" . }}
-{{ end }}
-{{ define "footer" }}
-{{ partial "page-footer.html" . }}
-{{ end }}
+</article>{{ end }}
+{{ define "aside" }} {{ partial "page-aside.html" . }} {{ end }}
+{{ define "footer" }} {{ partial "page-footer.html" . }} {{ end }}
