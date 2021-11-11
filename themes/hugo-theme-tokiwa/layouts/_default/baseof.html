@@ -23,14 +23,9 @@
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
 	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }} {{ template "_internal/google_analytics.html" . }} {{ end }}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
-	<script src="{{"/vendor/js/jquery.min.js" | relURL}}"></script>
-	<script src="{{"/vendor/js/popper.min.js" | relURL}}"></script>
-	<script src="{{"/vendor/js/bootstrap.min.js" | relURL}}"></script>
-	<script src="{{"/vendor/js/smooth-scroll.polyfills.min.js" | relURL}}"></script>
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<script src="{{"/vendor/js/vue.min.js" | relURL}}"></script>
 	{{ if ne $.Site.LanguageCode "en"}}
 	<!--pangu.js-->
 	<script>
