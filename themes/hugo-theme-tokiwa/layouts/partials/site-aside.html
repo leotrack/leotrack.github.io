@@ -1,7 +1,4 @@
-{{$scratch := newScratch}}
-{{ range (.Site.Pages)}}
-{{$scratch.Add "total" .WordCount}}
-{{ end }}
+{{$scratch := newScratch}} {{ range (.Site.Pages)}} {{$scratch.Add "total" .WordCount}} {{ end }}
 <div class="md:max-w-xs  flex flex-col md:items-end pt-2">
 	{{ partial "social-follow.html" . }}
 	<div class="a-gray text-sm text-gray-500 leading-tight">

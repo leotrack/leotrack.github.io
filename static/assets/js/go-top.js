@@ -8,7 +8,7 @@ var scrolltotop={
 
     controlHTML: '<img src="/images/dora.png" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
 
-    controlattrs: {offsetx:50, offsety:20}, //offset of control relative to right/ bottom of window corner
+    controlattrs: {offsetx:20, offsety:20}, //offset of control relative to right/ bottom of window corner
 
     anchorkeyword: 'javascript:scroll(0,0)', //Enter href value of HTML anchors on the page that should also act as "Scroll Up" links
 

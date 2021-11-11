@@ -30,8 +30,8 @@ unsafe = true
   fuse = true 
   useChineseFonts = true
   bannerFont = "fonts/杨任东竹石体-Light"
-
-enableReadingTime = true
+  PostDateFormat = "Mon, 02 Jan 2006 15:04:05 MST"
+  enableReadingTime = true
   author = "Zhu8"
   authorlocation = "Nanjing, China"
   authorwebsite = "https://zhu8.net/"
@@ -39,15 +39,10 @@ enableReadingTime = true
   email = "zhu8@msn.com"
   twitterName = "5CJ"
   sitedescription = "陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。"
-enableWaline = true
-googleSiteVerification = "Mfl8lf6NN0DWPluv8lQpBL-mrKi22ZOcnlKXYURni1Y"
-appletouchicon ="/apple-touch-icon.png"
-walineServer = "https://comm.zhu8.net/"
-
-[params.waline]
-    visitor = 'true'
-	login = 'disable'
-	uploadImage = false
+  enableWaline = true
+  googleSiteVerification = "Mfl8lf6NN0DWPluv8lQpBL-mrKi22ZOcnlKXYURni1Y"
+  appletouchicon ="/apple-touch-icon.png"
+  walineServer = "https://comm.zhu8.net/"
 	
 [permalinks]
   posts = "/blog/:year/:month/:slug/"
