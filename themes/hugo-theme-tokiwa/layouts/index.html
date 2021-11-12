@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if isset .Site.Params "description" }}
-<div class="font-serif text-medium-red-violet-400 pt-3">
+<div class="font-serif text-medium-red-violet-400 pt-3 text-xl">
 	{{ .Site.Params.Description | markdownify }}
 </div>
 <hr  class="pt-2"/> {{end}}

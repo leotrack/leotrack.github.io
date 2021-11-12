@@ -19,9 +19,9 @@
       
       <guid>/blog/2008/12/error-scribefire-to-blogger.html</guid>
       <description>&lt;p&gt;ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说出错，没有任何内容。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/blogger-error.jpg&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;解决方法：把Http://改成&lt;span style=&#39;color: red;&#39;&gt;&lt;strong&gt;Https://&lt;/strong&gt;&lt;/span&gt;，如图：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/Blogger-set.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/blogger-error.jpg&#34; alt=&#34;&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：把Http://改成&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;Https://&lt;/strong&gt;&lt;!-- raw HTML omitted --&gt;，如图：&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/Blogger-set.png&#34; alt=&#34;&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ok，搞定！&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;P.S：为了凑点字数，同时测试一下新买的键盘Dell SK-8115。发表感想若干：&lt;/p&gt;
@@ -48,7 +48,7 @@
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;HTTPS&lt;/strong&gt;以保密为目标研发，简单讲是&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTP&#34; title=&#34;HTTP&#34;&gt;HTTP&lt;/a&gt;的安全版。其安全基础是SSL协议，因此加密的详细内容请看&lt;a href=&#34;http://zh.wikipedia.org/wiki/SSL&#34; title=&#34;SSL&#34;&gt;SSL&lt;/a&gt;。全称&lt;strong&gt;Hypertext Transfer Protocol over Secure Socket Layer&lt;/strong&gt;。&lt;br&gt;
-它是一个&lt;a href=&#34;http://zh.wikipedia.org/wiki/URI&#34; title=&#34;URI&#34;&gt;URI&lt;/a&gt; scheme，句法类同&lt;tt&gt;http:&lt;/tt&gt;体系。它使用了HTTP，但HTTPS存在不同于HTTP的默认&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%AB%AF%E5%8F%A3&#34; title=&#34;端口&#34;&gt;端口&lt;/a&gt;及一个加密/身份验证层（在&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTP&#34; title=&#34;HTTP&#34;&gt;HTTP&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/TCP&#34; title=&#34;TCP&#34;&gt;TCP&lt;/a&gt;之间）。这个协议的最初研发由&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%BD%91%E6%99%AF%E5%85%AC%E5%8F%B8&#34; title=&#34;网景公司&#34;&gt;网景公司&lt;/a&gt;进行，提供了&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81&#34; title=&#34;身份验证&#34;&gt;身份验证&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8A%A0%E5%AF%86&#34; title=&#34;加密&#34;&gt;加密&lt;/a&gt;通讯方法，现在它被广泛用于&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91&#34; title=&#34;互联网&#34;&gt;互联网&lt;/a&gt;上安全敏感的通讯，例如交易支付方面。&lt;/p&gt;
+它是一个&lt;a href=&#34;http://zh.wikipedia.org/wiki/URI&#34; title=&#34;URI&#34;&gt;URI&lt;/a&gt; scheme，句法类同&lt;!-- raw HTML omitted --&gt;http:&lt;!-- raw HTML omitted --&gt;体系。它使用了HTTP，但HTTPS存在不同于HTTP的默认&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%AB%AF%E5%8F%A3&#34; title=&#34;端口&#34;&gt;端口&lt;/a&gt;及一个加密/身份验证层（在&lt;a href=&#34;http://zh.wikipedia.org/wiki/HTTP&#34; title=&#34;HTTP&#34;&gt;HTTP&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/TCP&#34; title=&#34;TCP&#34;&gt;TCP&lt;/a&gt;之间）。这个协议的最初研发由&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E7%BD%91%E6%99%AF%E5%85%AC%E5%8F%B8&#34; title=&#34;网景公司&#34;&gt;网景公司&lt;/a&gt;进行，提供了&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81&#34; title=&#34;身份验证&#34;&gt;身份验证&lt;/a&gt;与&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8A%A0%E5%AF%86&#34; title=&#34;加密&#34;&gt;加密&lt;/a&gt;通讯方法，现在它被广泛用于&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91&#34; title=&#34;互联网&#34;&gt;互联网&lt;/a&gt;上安全敏感的通讯，例如交易支付方面。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>

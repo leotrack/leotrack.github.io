@@ -27,16 +27,16 @@
 &lt;/ol&gt;
 &lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
 &lt;p&gt;首先，打开你的OE：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如&lt;em&gt;My Contacts&lt;/em&gt;，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：&lt;/p&gt;
 &lt;p&gt;进入通讯录——按左键——管理联系人：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;选择——导入名片：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;找到你保存.vcf名片文件的文件夹，比如上面的&lt;em&gt;My Contacts&lt;/em&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;全选，导入！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;至此，你的E2已经与你的OE完全一致了！以后你要同步你的通讯录。重复上述步骤即可！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;此文为响应&lt;a href=&#34;http://welog.org/&#34;&gt;King&lt;/a&gt;对于我的“&lt;a href=&#34;https://zhu8.net/blog/2009/05/braid.html#comment-244&#34;&gt;月经&lt;/a&gt;”评论，在七月月底放出……哈哈&lt;/em&gt;&lt;/p&gt;</description>
@@ -53,7 +53,7 @@
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
 ErrorDocument 500 /error.html  
 RewriteEngine on  
 RewriteCond %{HTTP_REFERER} !^$  

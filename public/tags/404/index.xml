@@ -34,7 +34,7 @@
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
 ErrorDocument 500 /error.html  
 RewriteEngine on  
 RewriteCond %{HTTP_REFERER} !^$  

@@ -22,7 +22,7 @@
 &lt;p&gt;如何关闭Revision？我试用了几种方法：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;第一种&lt;/strong&gt;：在&lt;em&gt;wp-config.php&lt;/em&gt;中加入如下代码：
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;define(‘WP_POST_REVISIONS’, 0 );&lt;br&gt;
 define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;

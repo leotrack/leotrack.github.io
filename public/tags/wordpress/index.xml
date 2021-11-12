@@ -18,7 +18,7 @@
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
       <guid>/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;!-- raw HTML omitted --&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>
@@ -47,7 +47,7 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update On 2006/9/27&lt;/strong&gt;&lt;/em&gt;：更新了图片的链接问题，使用&lt;code&gt;“.get_settings(‘siteurl’).”&lt;/code&gt;使链接在更新Blog地址的时候不会出错。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;插件安装&lt;/strong&gt;：1) 下载插件：&lt;a title=&#34;下载插件&#34; href=&#34;https://zhu8.net/uploads/add-bookmarks.rar&#34;&gt;add-bookmarks.rar&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;插件安装&lt;/strong&gt;：1) 下载插件：&lt;!-- raw HTML omitted --&gt;add-bookmarks.rar&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&#34;2&#34;&gt;
@@ -71,7 +71,7 @@
 &lt;p&gt;&lt;code&gt;$createKind = “icon”; // links : 文字链接 – icon : 图标链接  &lt;/code&gt;
 文字链接示例：&lt;em&gt;Null&lt;/em&gt;
 图标链接示例：&lt;em&gt;Null&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;$beforeall = “&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt;收藏&lt;span style=&#34;color:#111&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;&amp;gt;&lt;/span&gt; “; // 你想显示在所有书签前面的  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;$beforeall = “&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;收藏&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt; “; // 你想显示在所有书签前面的  
 $beforeeach = ” [ &amp;#34;; // 你想显示在每个书签前面的  
 $aftereach = &amp;#34; ] “; // 你想显示在每个书签后面的  
 $afterall = “”; // 你想显示在所有书签后面的  
@@ -93,7 +93,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;function_exists&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;add_bookmarks&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;();&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;function_exists&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { &lt;span style=&#34;color:#a6e22e&#34;&gt;add_bookmarks&lt;/span&gt;(); } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;我是放置在&lt;em&gt;single.php&lt;/em&gt;中例如 &lt;em&gt;postmetadata&lt;/em&gt; 前面的，仅供参考。&lt;/li&gt;
 &lt;li&gt;如果你&lt;strong&gt;停用&lt;/strong&gt;了该插件，可以将该代码移除。（因为使用了if语句，所以不移出也不会影响其他正常功能的）&lt;/li&gt;
@@ -102,7 +102,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Tips(小提示)&lt;/strong&gt;：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Yahoo!我已经修改成&lt;a href=&#34;http://cn.yahoo.com/&#34; title=&#34;雅虎中国&#34;&gt;Yahoo!中国&lt;/a&gt;的&lt;a href=&#34;http://myweb.cn.yahoo.com/&#34; title=&#34;雅虎收藏+&#34;&gt;Yahoo!收藏&lt;/a&gt;&lt;sup&gt;+&lt;/sup&gt;，更符合国人习惯；你如果想修改图标内容，图标均在icon目录下，增加或修改的图标请注意在&lt;em&gt;add-bookmarks.php&lt;/em&gt;中也要记得修改图标的源文件地址。&lt;br&gt;
+&lt;p&gt;Yahoo!我已经修改成&lt;a href=&#34;http://cn.yahoo.com/&#34; title=&#34;雅虎中国&#34;&gt;Yahoo!中国&lt;/a&gt;的&lt;a href=&#34;http://myweb.cn.yahoo.com/&#34; title=&#34;雅虎收藏+&#34;&gt;Yahoo!收藏&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;，更符合国人习惯；你如果想修改图标内容，图标均在icon目录下，增加或修改的图标请注意在&lt;em&gt;add-bookmarks.php&lt;/em&gt;中也要记得修改图标的源文件地址。&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;Update@2006/09/05&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
 将所使用的五个书签的代码做了一次更新，确保每个对中文正确识别。其中Furl对中文的支持最不好，我使用其他人所最常使用的代码均会使中文标题变成乱码，所以我最后还是选择了一个弹出窗口的，可能使用&lt;strong&gt;窗口block&lt;/strong&gt;的会有一定影响。&lt;br&gt;
 更多书签网站请参考：&lt;a href=&#34;http://blog.donews.com/rss/archive/2005/10/16/590504.aspx&#34; title=&#34;网摘大全1016最新整理版　(rss8.net 木木牛牛整理) &#34;&gt;网摘大全1016最新整理版　(rss8.net 木木牛牛整理) &lt;/a&gt;&lt;br&gt;
@@ -114,7 +114,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 加入 &lt;a href=&#34;http://fanfou.com/&#34; title=&#34;饭否&amp;amp;迷你博客 随时随地发消息&#34;&gt;饭否&lt;/a&gt;&lt;br&gt;
 加入 &lt;a href=&#34;http://shuqian.qq.com/&#34; title=&#34;QQ书签&#34;&gt;QQ书签&lt;/a&gt;&lt;br&gt;
 加入 &lt;a href=&#34;http://technorati.com/faves/&#34; title=&#34;Technorati Favorites&#34;&gt;Technorati Favorites&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a id=&#34;Eng&#34;&gt;&lt;em&gt;English Vision:&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;em&gt;English Vision:&lt;/em&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add Bookmarks for WordPress&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;Plugin Name&lt;/strong&gt;: Add Bookmarks&lt;br&gt;
 &lt;strong&gt;Version&lt;/strong&gt;: 0.4 &lt;em&gt;(Last update:2008/03/18)&lt;/em&gt;&lt;br&gt;
@@ -126,7 +126,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#75af00&#34;&gt;function_exists&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#75af00&#34;&gt;add_bookmarks&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;();&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;function_exists&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { &lt;span style=&#34;color:#a6e22e&#34;&gt;add_bookmarks&lt;/span&gt;(); } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to where you want to put (I put it in &lt;em&gt;single.php&lt;/em&gt; &lt;strong&gt;before&lt;/strong&gt; &lt;em&gt;postmetadata&lt;/em&gt;).&lt;br&gt;
 DONE!&lt;br&gt;
 3)If you want to Add Your Bookmarks,open &lt;strong&gt;add-bookmarks.php&lt;/strong&gt; and config it in your Editor(as Editplus,Notepad++) in &lt;strong&gt;UTF-8&lt;/strong&gt;.&lt;br&gt;
@@ -146,7 +146,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;li&gt;&lt;a href=&#34;http://www.skippy.net/blog/plugins/&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;WordPress Database Backup&lt;/strong&gt;&lt;/a&gt;： 通过邮件没有发送的起来，其他都可以。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://vzho.ru/wordpress-related-stuff/meta-se&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Meta-SE&lt;/strong&gt;&lt;/a&gt;：自动生成每篇文章的meta信息。&lt;strong&gt;作用不大，已停用&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://mnm.uib.es/gallir/wp-cache-2/&#34;&gt;&lt;strong&gt;wp-cache&lt;/strong&gt;&lt;/a&gt; ：非wp自带 将wordpress静态化 有效减少载入时间 加快访问速度。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;Google Sitemaps&lt;/strong&gt;&lt;/a&gt; ：让google更快的收录你的blog。&lt;del datetime=&#34;2006-06-21T14:57:25+00:00&#34;&gt;常常在useronline里看到google来抓了，不过到现在还没收录。不会是因为我这个旧域名的缘故？&lt;/del&gt;&lt;strong&gt;已恢复正常&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;Google Sitemaps&lt;/strong&gt;&lt;/a&gt; ：让google更快的收录你的blog。&lt;!-- raw HTML omitted --&gt;常常在useronline里看到google来抓了，不过到现在还没收录。不会是因为我这个旧域名的缘故？&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;已恢复正常&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://axgle.com/?p=60&#34; title=&#34;Real IP&#34;&gt;&lt;strong&gt;Real IP&lt;/strong&gt;&lt;/a&gt;：显示发表帖子者的真实IP，后台观看。&lt;em&gt;Update:2006/08/17&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;文章效果类&#34;&gt;文章效果类：&lt;/h3&gt;
@@ -185,7 +185,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;&lt;a href=&#34;http://lifesinger.3322.org/blog/?p=88&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Related Posts&lt;/strong&gt;&lt;/a&gt;：不用说了吧，相关文章。&lt;strong&gt;已停用，有了随机再用这个显得页面太繁冗&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;WP-RelativeDate&lt;/strong&gt;&lt;/a&gt;：显示文章和评论是多久之前的，&lt;del datetime=&#34;2006-07-08T15:40:47+00:00&#34;&gt;我的好象只有评论里有效&lt;/del&gt;。&lt;em&gt;Update&lt;/em&gt;：原来要在这个插件使用之后发表的文章才行。**已停用，娱乐性太强-_-#**&lt;em&gt;&lt;strong&gt;Update:2006/9/9&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;WP-RelativeDate&lt;/strong&gt;&lt;/a&gt;：显示文章和评论是多久之前的，&lt;!-- raw HTML omitted --&gt;我的好象只有评论里有效&lt;!-- raw HTML omitted --&gt;。&lt;em&gt;Update&lt;/em&gt;：原来要在这个插件使用之后发表的文章才行。**已停用，娱乐性太强-_-#**&lt;em&gt;&lt;strong&gt;Update:2006/9/9&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;http://cavemonkey50.com/code/akismet-spam-count/&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Akismet Spam Count&lt;/strong&gt;&lt;/a&gt;：输出被Akismet挡住的Spam有多少，惊人的数字啊。&lt;em&gt;—-我的还好，不算惊人（见页面底部）&lt;/em&gt;&lt;/p&gt;
