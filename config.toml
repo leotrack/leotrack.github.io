@@ -12,11 +12,26 @@ hasCJKLanguage = true
 enableInlineShortcodes = true
 author = "Zhu8"
 
-[markup.goldmark]
-  [markup.goldmark.extensions]
-    typographer = false
-  [markup.goldmark.renderer]
-    unsafe= true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
 
   [markup.tableOfContents]
     endLevel = 3
