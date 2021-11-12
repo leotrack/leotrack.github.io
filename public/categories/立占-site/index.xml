@@ -78,7 +78,7 @@
       <pubDate>Wed, 04 Jun 2014 22:27:20 +0800</pubDate>
       
       <guid>/blog/2014/06/start.html</guid>
-      <description>&lt;p&gt;上一篇 &lt;!-- raw HTML omitted --&gt;日志&lt;!-- raw HTML omitted --&gt; 还是&lt;strong&gt;三年&lt;/strong&gt;前了。&lt;br&gt;
+      <description>&lt;p&gt;上一篇 &lt;a rel=&#34;nofollow&#34; href=&#34;http://chenjun.com/&#34;&gt;日志&lt;/a&gt; 还是&lt;strong&gt;三年&lt;/strong&gt;前了。&lt;br&gt;
 选择在&lt;strong&gt;今天&lt;/strong&gt;，开始新的网站更新吧。微博、微信，都是危险的东西。&lt;/p&gt;
 </description>
     </item>
@@ -117,7 +117,7 @@
       <pubDate>Mon, 02 Mar 2009 07:32:20 +0800</pubDate>
       
       <guid>/blog/2009/03/waitting-for-edit.html</guid>
-      <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……——**如何关闭？**看这里：&lt;!-- raw HTML omitted --&gt;关闭Wordpress的Revision功能&lt;!-- raw HTML omitted --&gt;。&lt;/p&gt;
+      <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……——**如何关闭？**看这里：&lt;a href=&#34;https://zhu8.net/blog/2009/03/disable-wordpress-revision.html&#34; rel=&#34;bookmark&#34;&gt;关闭Wordpress的Revision功能&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;其他事项将补充在这篇**/?p=1**的置顶文章中……&lt;/p&gt;
 </description>
     </item>

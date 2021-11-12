@@ -85,67 +85,67 @@
 &lt;p&gt;这里先放一个&lt;em&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/em&gt;，详细的请进入&lt;strong&gt;阅读全文&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;1归档页面模板&#34;&gt;1、归档页面模板&lt;/h3&gt;
 &lt;p&gt;（这里涉及到官方文档首段代码没有结尾，注意参考下面的第一段）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php
-&lt;span style=&#34;color:#cd5555&#34;&gt;/**
-&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; * 归档页面模板
-&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; *
-&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; * @package custom
-&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; */&lt;/span&gt;; &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php $this-&amp;gt;need(&amp;#39;header.php&amp;#39;); ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;div class=&amp;#34;col-mb-12 col-8&amp;#34; id=&amp;#34;main&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        &amp;lt;h3 class=&amp;#34;archive-title&amp;#34;&amp;gt;日志归档&amp;lt;/h3&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php $this-&amp;gt;widget(&amp;#39;Widget_Contents_Post_Recent&amp;#39;, &amp;#39;pageSize=10000&amp;#39;)-&amp;gt;to($archives);   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    $year=0; $mon=0; $i=0; $j=0;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    $output = &amp;#39;&amp;lt;div id=&amp;#34;archives&amp;#34;&amp;gt;&amp;#39;;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    while($archives-&amp;gt;next()):   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        $year_tmp = date(&amp;#39;Y&amp;#39;,$archives-&amp;gt;created);   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        $mon_tmp = date(&amp;#39;m&amp;#39;,$archives-&amp;gt;created);   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        $y=$year; $m=$mon;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        if ($mon != $mon_tmp &amp;amp;&amp;amp; $mon &amp;gt; 0) $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        if ($year != $year_tmp &amp;amp;&amp;amp; $year &amp;gt; 0) $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;#39;;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        if ($year != $year_tmp) {   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;            $year = $year_tmp;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;            $output .= &amp;#39;&amp;lt;h3 class=&amp;#34;al_year&amp;#34;&amp;gt;&amp;#39;. $year .&amp;#39; 年&amp;lt;/h3&amp;gt;&amp;lt;ul class=&amp;#34;al_mon_list&amp;#34;&amp;gt;&amp;#39;; //输出年份   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        }   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        if ($mon != $mon_tmp) {   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;            $mon = $mon_tmp;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;            $output .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;#34;al_mon&amp;#34;&amp;gt;&amp;#39;. $mon .&amp;#39; 月&amp;lt;/span&amp;gt;&amp;lt;ul class=&amp;#34;al_post_list&amp;#34;&amp;gt;&amp;#39;; //输出月份   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        }   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;        $output .= &amp;#39;&amp;lt;li&amp;gt;&amp;#39;.date(&amp;#39;d日: &amp;#39;,$archives-&amp;gt;created).&amp;#39;&amp;lt;a href=&amp;#34;&amp;#39;.$archives-&amp;gt;permalink .&amp;#39;&amp;#34;&amp;gt;&amp;#39;. $archives-&amp;gt;title .&amp;#39;&amp;lt;/a&amp;gt; &amp;lt;em&amp;gt;(&amp;#39;. $archives-&amp;gt;commentsNum.&amp;#39;)&amp;lt;/em&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;; //输出文章日期和标题   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    endwhile;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    echo $output;   
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;?&amp;gt; 
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;/div&amp;gt;&amp;lt;!-- end #main --&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;sidebar.php&amp;#39;); ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;footer.php&amp;#39;); ?&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * 归档页面模板
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; *
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; * @package custom
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; */&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php $this-&amp;gt;need(&amp;#39;header.php&amp;#39;); ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    &amp;lt;div class=&amp;#34;col-mb-12 col-8&amp;#34; id=&amp;#34;main&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        &amp;lt;h3 class=&amp;#34;archive-title&amp;#34;&amp;gt;日志归档&amp;lt;/h3&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php $this-&amp;gt;widget(&amp;#39;Widget_Contents_Post_Recent&amp;#39;, &amp;#39;pageSize=10000&amp;#39;)-&amp;gt;to($archives);   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    $year=0; $mon=0; $i=0; $j=0;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    $output = &amp;#39;&amp;lt;div id=&amp;#34;archives&amp;#34;&amp;gt;&amp;#39;;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    while($archives-&amp;gt;next()):   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        $year_tmp = date(&amp;#39;Y&amp;#39;,$archives-&amp;gt;created);   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        $mon_tmp = date(&amp;#39;m&amp;#39;,$archives-&amp;gt;created);   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        $y=$year; $m=$mon;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        if ($mon != $mon_tmp &amp;amp;&amp;amp; $mon &amp;gt; 0) $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        if ($year != $year_tmp &amp;amp;&amp;amp; $year &amp;gt; 0) $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;#39;;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        if ($year != $year_tmp) {   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;            $year = $year_tmp;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;            $output .= &amp;#39;&amp;lt;h3 class=&amp;#34;al_year&amp;#34;&amp;gt;&amp;#39;. $year .&amp;#39; 年&amp;lt;/h3&amp;gt;&amp;lt;ul class=&amp;#34;al_mon_list&amp;#34;&amp;gt;&amp;#39;; //输出年份   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        }   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        if ($mon != $mon_tmp) {   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;            $mon = $mon_tmp;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;            $output .= &amp;#39;&amp;lt;li&amp;gt;&amp;lt;span class=&amp;#34;al_mon&amp;#34;&amp;gt;&amp;#39;. $mon .&amp;#39; 月&amp;lt;/span&amp;gt;&amp;lt;ul class=&amp;#34;al_post_list&amp;#34;&amp;gt;&amp;#39;; //输出月份   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        }   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;        $output .= &amp;#39;&amp;lt;li&amp;gt;&amp;#39;.date(&amp;#39;d日: &amp;#39;,$archives-&amp;gt;created).&amp;#39;&amp;lt;a href=&amp;#34;&amp;#39;.$archives-&amp;gt;permalink .&amp;#39;&amp;#34;&amp;gt;&amp;#39;. $archives-&amp;gt;title .&amp;#39;&amp;lt;/a&amp;gt; &amp;lt;em&amp;gt;(&amp;#39;. $archives-&amp;gt;commentsNum.&amp;#39;)&amp;lt;/em&amp;gt;&amp;lt;/li&amp;gt;&amp;#39;; //输出文章日期和标题   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    endwhile;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    $output .= &amp;#39;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    echo $output;   
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;?&amp;gt; 
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    &amp;lt;/div&amp;gt;&amp;lt;!-- end #main --&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;sidebar.php&amp;#39;); ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;footer.php&amp;#39;); ?&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2获取分类描述&#34;&gt;2、获取分类描述&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php echo $this-&amp;gt;getDescription(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;案例演示：&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#00688b&#34;&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Widget_Metas_Category_List&amp;#39;&lt;/span&gt;)
--&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;parse&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{permalink}&amp;#34; title=&amp;#34;{description}&amp;#34;&amp;gt;{name}&amp;lt;/a&amp;gt; ({count})&amp;lt;/li&amp;gt;&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Widget_Metas_Category_List&amp;#39;&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;parse&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{permalink}&amp;#34; title=&amp;#34;{description}&amp;#34;&amp;gt;{name}&amp;lt;/a&amp;gt; ({count})&amp;lt;/li&amp;gt;&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3前后文章调用代码&#34;&gt;3、前后文章调用代码&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php $this-&amp;gt;thePrev(); ?&amp;gt; &amp;lt;?php $this-&amp;gt;theNext(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;4随机颜色标签云&#34;&gt;4、随机颜色标签云&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#00688b&#34;&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Widget_Metas_Tag_Cloud&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ignoreZeroCount=1&amp;amp;limit=30&amp;#39;&lt;/span&gt;)-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;to&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$tags&lt;/span&gt;); &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;ul class=&amp;#34;tags-list&amp;#34;&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php while($tags-&amp;gt;next()): ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;li&amp;gt;&amp;lt;a style=&amp;#34;color: rgb(&amp;lt;?php echo(rand(0, 255)); ?&amp;gt;, &amp;lt;?php echo(rand(0,255)); ?&amp;gt;, &amp;lt;?php echo(rand(0, 255)); ?&amp;gt;)&amp;#34; href=&amp;#34;&amp;lt;?php $tags-&amp;gt;permalink(); ?&amp;gt;&amp;#34; title=&amp;#39;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;#39;&amp;gt;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php endwhile; ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;/ul&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; $this&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Widget_Metas_Tag_Cloud&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ignoreZeroCount=1&amp;amp;limit=30&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;($tags); &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;ul class=&amp;#34;tags-list&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php while($tags-&amp;gt;next()): ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;    &amp;lt;li&amp;gt;&amp;lt;a style=&amp;#34;color: rgb(&amp;lt;?php echo(rand(0, 255)); ?&amp;gt;, &amp;lt;?php echo(rand(0,255)); ?&amp;gt;, &amp;lt;?php echo(rand(0, 255)); ?&amp;gt;)&amp;#34; href=&amp;#34;&amp;lt;?php $tags-&amp;gt;permalink(); ?&amp;gt;&amp;#34; title=&amp;#39;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;#39;&amp;gt;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php endwhile; ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;/ul&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5返回网页顶部&#34;&gt;5、返回网页顶部&lt;/h3&gt;
 &lt;p&gt;在footer.php页面增加如下代码（可直接下载我的第二段JS代码，将其中的图片地址改成你自己定义的）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&amp;lt;!-- Start of Go-Top Code --&amp;gt;&lt;/span&gt;
-&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;http://chenjun.com/usr/uploads/top.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
-&lt;span style=&#34;color:#228b22&#34;&gt;&amp;lt;!-- End of Go-Top Code --&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- Start of Go-Top Code --&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://chenjun.com/usr/uploads/top.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- End of Go-Top Code --&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;6段落首行缩进两字符&#34;&gt;6、段落首行缩进两字符&lt;/h3&gt;
 &lt;p&gt;编辑Style.css文件，增加如下代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;post-content&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;p&lt;/span&gt;{ 
-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;text-indent&lt;/span&gt;: &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;em&lt;/span&gt;; &lt;span style=&#34;color:#228b22&#34;&gt;/*em是相对单位，2em即现在一个字大小的两倍*/&lt;/span&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;post-content&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;{ 
+&lt;span style=&#34;color:#66d9ef&#34;&gt;text-indent&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;em&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;/*em是相对单位，2em即现在一个字大小的两倍*/&lt;/span&gt; 
 } 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;后续待补充，部分参考：&lt;a href=&#34;http://docs.typecho.org&#34;&gt;Typecho官方文档&lt;/a&gt;以及&lt;a href=&#34;http://typecho.me&#34;&gt;Typecho.me&lt;/a&gt;，一并致谢！&lt;/p&gt;</description>
     </item>
@@ -156,7 +156,7 @@
       <pubDate>Mon, 19 Jan 2009 12:46:24 +0800</pubDate>
       
       <guid>/blog/2009/01/blogger-custom-domain-404-error.html</guid>
-      <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：今天下午的时候blogger绑定的域名https://zhu8.net提示：&lt;strong&gt;&amp;ldquo;The page cannot be found. (Error 404)&amp;quot;&lt;/strong&gt;。不知道出现404错误是什么原因，大概搜了一下，发现原来是因为DNS缓存的问题，可能在Godaddy上的设置过2-3天才会生效。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：今天下午的时候blogger绑定的域名https://zhu8.net提示：&lt;strong&gt;&amp;quot;The page cannot be found. (Error 404)&amp;quot;&lt;/strong&gt;。不知道出现404错误是什么原因，大概搜了一下，发现原来是因为DNS缓存的问题，可能在Godaddy上的设置过2-3天才会生效。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;：将你的Blogger先切换回.blogspot.com，然后再切换回来。一切OK！（明后天再继续观察一下，因为我选中了redirect zhu8.net到 &lt;a href=&#34;http://www.zhu8.net&#34;&gt;www.zhu8.net&lt;/a&gt;）&lt;/p&gt;
 </description>
     </item>
@@ -228,7 +228,7 @@ RewriteRule (.*) &lt;a href=&#34;http://chenjun.com/$1&#34;&gt;http://chenjun.co
       <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
       
       <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
-      <description>&lt;p&gt;其实&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;!-- raw HTML omitted --&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;!-- raw HTML omitted --&gt;其实昨天&lt;!-- raw HTML omitted --&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -246,8 +246,8 @@ RewriteRule (.*) &lt;a href=&#34;http://chenjun.com/$1&#34;&gt;http://chenjun.co
 &lt;p&gt;同样的，找到这行：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Body_html = &#39;&amp;quot;.doSlash($Body_html).&amp;quot;&#39;,&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在后面加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;Excerpt = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
-Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt_html&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;不导入附件生成的页面&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -256,7 +256,7 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
 &lt;p&gt;在后面加上：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
-&lt;p&gt;*放出修改后的 &lt;!-- raw HTML omitted --&gt;import_wp.php&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
 </description>
     </item>
@@ -267,7 +267,7 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
       <guid>/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;!-- raw HTML omitted --&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>
@@ -279,7 +279,7 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
       <pubDate>Sat, 08 Mar 2008 00:14:31 +0800</pubDate>
       
       <guid>/blog/2008/03/change-to-movable-type.html</guid>
-      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;准备慢慢玩玩MT，敬请期待！&lt;!-- raw HTML omitted --&gt;&lt;em&gt;By Zhu8 on Friday, Mar 7, 2008 12:14:53&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;del datetime=&#34;2008-03-15T07:28:46+00:00&#34;&gt;准备慢慢玩玩MT，敬请期待！&lt;/del&gt;&lt;em&gt;By Zhu8 on Friday, Mar 7, 2008 12:14:53&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update:2008/03/15&lt;/em&gt; 呵呵，玩了两天，还是不习惯，又换回&lt;del&gt;WordPress&lt;/del&gt;了。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update Again:2008/05/15&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;看来我是极度的喜新厌旧型-_-#，两个月后，又回到了MT。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update Again &amp;amp; Again:2008/08/21&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;昨天，我在回到WP之后三个月，又回到了MT。&lt;/strong&gt;&lt;/p&gt;
@@ -295,28 +295,28 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
       <description>&lt;p&gt;首先要自我打击一下，在产生这个想法之后，本来我是&lt;strong&gt;异想天开&lt;/strong&gt;地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么简单，只好用笨办法了：手动添加代码到模板中去。&lt;/p&gt;
 &lt;p&gt;本来想用的来自这里：&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/commentstyling/&#34; title=&#34;Making Comments stand out&#34;&gt;WordPress – Comment styling&lt;/a&gt;，确实是一篇不错的文章，里面不仅介绍了为Trackback和Pingback增加独特样式，也有为特定评论的与众不同的显示提供了解决方案。而且作者Podz所写的&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/&#34; title=&#34;WordPress Help&amp;amp;Podz @ Tamba2&#34;&gt;The Temba2 WordPress Guides&lt;/a&gt;是一篇不错的基础教程。评论姑且不谈，我需要的是第一个。&lt;/p&gt;
 &lt;p&gt;首先是在你的Blog模版的评论页面（一般为&lt;strong&gt;comments.php&lt;/strong&gt;）找到这句：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;foreach&lt;/span&gt; (&lt;span style=&#34;color:#00688b&#34;&gt;$comments&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;$comment&lt;/span&gt;) : &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; ($comments &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; $comment) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在后面加上（&lt;strong&gt;1&lt;/strong&gt;）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#00688b&#34;&gt;$istback&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;false&lt;/span&gt;; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$comment&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;comment_type&lt;/span&gt; == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;trackback&amp;#39;&lt;/span&gt;) { &lt;span style=&#34;color:#00688b&#34;&gt;$istback&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;; } &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php $ispingb = false; if($comment-&amp;gt;comment_type == &amp;#39;pingback&amp;#39;) { $ispingb = true; } ?&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; $istback &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;($comment&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;comment_type&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;trackback&amp;#39;&lt;/span&gt;) { $istback &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;; } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php $ispingb = false; if($comment-&amp;gt;comment_type == &amp;#39;pingback&amp;#39;) { $ispingb = true; } ?&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;随后再找到这句：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php comment_text() &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;comment_text&lt;/span&gt;() &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在前后加上东西之后变成这个样子（&lt;strong&gt;2&lt;/strong&gt;）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$istback&lt;/span&gt; ) { &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;;} &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;div class=&amp;#34;pbcomment&amp;#34;&amp;gt;&amp;#39;;} ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php if($istback ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;($istback ) { &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;;} &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;div class=&amp;#34;pbcomment&amp;#34;&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($istback ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($ispingb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当然，为了不那么打击自己而全部照抄，我做了点小小的修改：将（&lt;strong&gt;1&lt;/strong&gt;）更改为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#00688b&#34;&gt;$istb&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;false&lt;/span&gt;; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(get_comment_type() != &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;comment&amp;#34;&lt;/span&gt;) { &lt;span style=&#34;color:#00688b&#34;&gt;$istb&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;; } &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; $istb &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;get_comment_type&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;comment&amp;#34;&lt;/span&gt;) { $istb &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;; } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里就是图个简单，逆向思维，不是comment的当然就是Trackback和Pingback了。后面的（&lt;strong&gt;2&lt;/strong&gt;）也就一起简单了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$istb&lt;/span&gt; ) { &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;;} &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
-&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php if($istb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;($istb ) { &lt;span style=&#34;color:#66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;div class=&amp;#34;tbcomment&amp;#34;&amp;gt;&amp;#39;&lt;/span&gt;;} &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php comment_text() ?&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;?php if($istb ) { echo &amp;#39;&amp;lt;/div&amp;gt;&amp;#39;;} ?&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后，在样式表中添加这个CSS样式，就大功告成了：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;tbcomment&lt;/span&gt; {
-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;font&lt;/span&gt;:&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;italic&lt;/span&gt; &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;em&lt;/span&gt;/&lt;span style=&#34;color:#b452cd&#34;&gt;140&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;%&lt;/span&gt; Georgia,&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;sans-serif&lt;/span&gt;;
-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;gray&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;tbcomment&lt;/span&gt; {
+&lt;span style=&#34;color:#66d9ef&#34;&gt;font&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;italic&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;em&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;140&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt; Georgia,&lt;span style=&#34;color:#66d9ef&#34;&gt;sans-serif&lt;/span&gt;;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;gray&lt;/span&gt;;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;勉强以此安慰下自己，还能有一小小的创新，不过我并没有彻底的将Comment和Trackback区分开来，单独显示。因为我的TB不算多，所以没有再去弄个插件影响速度，如果你有需要，可以看看这些地方，希望能对你有所帮助：&lt;/p&gt;
@@ -350,15 +350,15 @@ Mysql版本 Mysql 4.0.20&lt;br&gt;
 Zend支持 支持&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;原来都是&lt;strong&gt;PHP版本&lt;/strong&gt;搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在&lt;strong&gt;&lt;strong&gt;wp-includes/gettext.php&lt;/strong&gt;&lt;/strong&gt;中&lt;strong&gt;第105行&lt;/strong&gt;有这样一段代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;$MAGIC1&lt;/span&gt; = (int)&amp;amp;&lt;span style=&#34;color:#b452cd&#34;&gt;1794895138&lt;/span&gt;;  
-&lt;span style=&#34;color:#228b22&#34;&gt;// $MAGIC2 = (int)0xde120495; //bug  
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;$MAGIC2&lt;/span&gt; = (int)&amp;amp;&lt;span style=&#34;color:#b452cd&#34;&gt;569244523&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$MAGIC1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;int&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1794895138&lt;/span&gt;;  
+&lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)0xde120495; //bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$MAGIC2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;int&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;569244523&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要&lt;strong&gt;注释&lt;/strong&gt;掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt; &lt;span style=&#34;color:#00688b&#34;&gt;$MAGIC1&lt;/span&gt; = (int)&lt;span style=&#34;color:#b452cd&#34;&gt;0x950412de&lt;/span&gt;; &lt;span style=&#34;color:#228b22&#34;&gt;//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#228b22&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;$MAGIC2&lt;/span&gt; = (int)&lt;span style=&#34;color:#b452cd&#34;&gt;0xde120495&lt;/span&gt;; &lt;span style=&#34;color:#228b22&#34;&gt;//bug  
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#228b22&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt; $MAGIC1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;int&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;0x950412de&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;amp;item_id=10565  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; $MAGIC2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;int&lt;/span&gt;)&lt;span style=&#34;color:#ae81ff&#34;&gt;0xde120495&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;//bug  
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
@@ -397,7 +397,7 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update On 2006/9/27&lt;/strong&gt;&lt;/em&gt;：更新了图片的链接问题，使用&lt;code&gt;“.get_settings(‘siteurl’).”&lt;/code&gt;使链接在更新Blog地址的时候不会出错。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;插件安装&lt;/strong&gt;：1) 下载插件：&lt;!-- raw HTML omitted --&gt;add-bookmarks.rar&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;插件安装&lt;/strong&gt;：1) 下载插件：&lt;a title=&#34;下载插件&#34; href=&#34;https://zhu8.net/uploads/add-bookmarks.rar&#34;&gt;add-bookmarks.rar&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&#34;2&#34;&gt;
@@ -421,7 +421,7 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
 &lt;p&gt;&lt;code&gt;$createKind = “icon”; // links : 文字链接 – icon : 图标链接  &lt;/code&gt;
 文字链接示例：&lt;em&gt;Null&lt;/em&gt;
 图标链接示例：&lt;em&gt;Null&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;$beforeall = “&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;strong&lt;/span&gt;&amp;gt;收藏&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;strong&lt;/span&gt;&amp;gt; “; // 你想显示在所有书签前面的  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;$beforeall = “&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;收藏&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt; “; // 你想显示在所有书签前面的  
 $beforeeach = ” [ &amp;#34;; // 你想显示在每个书签前面的  
 $aftereach = &amp;#34; ] “; // 你想显示在每个书签后面的  
 $afterall = “”; // 你想显示在所有书签后面的  
@@ -443,7 +443,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;function_exists&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { &lt;span style=&#34;color:#a6e22e&#34;&gt;add_bookmarks&lt;/span&gt;(); } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;我是放置在&lt;em&gt;single.php&lt;/em&gt;中例如 &lt;em&gt;postmetadata&lt;/em&gt; 前面的，仅供参考。&lt;/li&gt;
 &lt;li&gt;如果你&lt;strong&gt;停用&lt;/strong&gt;了该插件，可以将该代码移除。（因为使用了if语句，所以不移出也不会影响其他正常功能的）&lt;/li&gt;
@@ -452,7 +452,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Tips(小提示)&lt;/strong&gt;：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Yahoo!我已经修改成&lt;a href=&#34;http://cn.yahoo.com/&#34; title=&#34;雅虎中国&#34;&gt;Yahoo!中国&lt;/a&gt;的&lt;a href=&#34;http://myweb.cn.yahoo.com/&#34; title=&#34;雅虎收藏+&#34;&gt;Yahoo!收藏&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;，更符合国人习惯；你如果想修改图标内容，图标均在icon目录下，增加或修改的图标请注意在&lt;em&gt;add-bookmarks.php&lt;/em&gt;中也要记得修改图标的源文件地址。&lt;br&gt;
+&lt;p&gt;Yahoo!我已经修改成&lt;a href=&#34;http://cn.yahoo.com/&#34; title=&#34;雅虎中国&#34;&gt;Yahoo!中国&lt;/a&gt;的&lt;a href=&#34;http://myweb.cn.yahoo.com/&#34; title=&#34;雅虎收藏+&#34;&gt;Yahoo!收藏&lt;/a&gt;&lt;sup&gt;+&lt;/sup&gt;，更符合国人习惯；你如果想修改图标内容，图标均在icon目录下，增加或修改的图标请注意在&lt;em&gt;add-bookmarks.php&lt;/em&gt;中也要记得修改图标的源文件地址。&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;Update@2006/09/05&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
 将所使用的五个书签的代码做了一次更新，确保每个对中文正确识别。其中Furl对中文的支持最不好，我使用其他人所最常使用的代码均会使中文标题变成乱码，所以我最后还是选择了一个弹出窗口的，可能使用&lt;strong&gt;窗口block&lt;/strong&gt;的会有一定影响。&lt;br&gt;
 更多书签网站请参考：&lt;a href=&#34;http://blog.donews.com/rss/archive/2005/10/16/590504.aspx&#34; title=&#34;网摘大全1016最新整理版　(rss8.net 木木牛牛整理) &#34;&gt;网摘大全1016最新整理版　(rss8.net 木木牛牛整理) &lt;/a&gt;&lt;br&gt;
@@ -464,7 +464,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 加入 &lt;a href=&#34;http://fanfou.com/&#34; title=&#34;饭否&amp;amp;迷你博客 随时随地发消息&#34;&gt;饭否&lt;/a&gt;&lt;br&gt;
 加入 &lt;a href=&#34;http://shuqian.qq.com/&#34; title=&#34;QQ书签&#34;&gt;QQ书签&lt;/a&gt;&lt;br&gt;
 加入 &lt;a href=&#34;http://technorati.com/faves/&#34; title=&#34;Technorati Favorites&#34;&gt;Technorati Favorites&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;em&gt;English Vision:&lt;/em&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;Eng&#34;&gt;&lt;em&gt;English Vision:&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Add Bookmarks for WordPress&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;Plugin Name&lt;/strong&gt;: Add Bookmarks&lt;br&gt;
 &lt;strong&gt;Version&lt;/strong&gt;: 0.4 &lt;em&gt;(Last update:2008/03/18)&lt;/em&gt;&lt;br&gt;
@@ -476,7 +476,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&amp;lt;?php &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;function_exists&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { &lt;span style=&#34;color:#a6e22e&#34;&gt;add_bookmarks&lt;/span&gt;(); } &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to where you want to put (I put it in &lt;em&gt;single.php&lt;/em&gt; &lt;strong&gt;before&lt;/strong&gt; &lt;em&gt;postmetadata&lt;/em&gt;).&lt;br&gt;
 DONE!&lt;br&gt;
 3)If you want to Add Your Bookmarks,open &lt;strong&gt;add-bookmarks.php&lt;/strong&gt; and config it in your Editor(as Editplus,Notepad++) in &lt;strong&gt;UTF-8&lt;/strong&gt;.&lt;br&gt;
@@ -489,16 +489,16 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
       <pubDate>Sun, 13 Aug 2006 12:30:25 +0800</pubDate>
       
       <guid>/blog/2006/08/usebb-chinese-simplified.html</guid>
-      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;!-- raw HTML omitted --&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;!-- raw HTML omitted --&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;!-- raw HTML omitted --&gt;By Chairman Mao&lt;!-- raw HTML omitted --&gt;了。&lt;/p&gt;
+      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;/span&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;acronym title=&#34;Unnecessary features&#34;&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;/acronym&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;sub&gt;By Chairman Mao&lt;/sub&gt;了。&lt;/p&gt;
 &lt;p&gt;废话少说，简单介绍一下UseBB吧！&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;UseBB使用&lt;em&gt;PHP+Mysql&lt;/em&gt;编写，支持mod_rewrite*（可惜我的空间并不支持）*整个程序简洁小巧。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;独立&lt;/strong&gt;的模版和语言包，可定制程度高。&lt;/li&gt;
-&lt;li&gt;支持&lt;!-- raw HTML omitted --&gt;BBCode&lt;!-- raw HTML omitted --&gt;和表情图标，同样可定制。&lt;/li&gt;
+&lt;li&gt;支持&lt;acronym title=&#34;Bulletin Board Code, replacing HTML&#34;&gt;BBCode&lt;/acronym&gt;和表情图标，同样可定制。&lt;/li&gt;
 &lt;li&gt;每个用户可以设置自己的个人资料、头像（只支持外部链接）、浏览论坛的模式以及语言。&lt;/li&gt;
 &lt;li&gt;支持帖子置顶、移动、删除、编辑（仅管理员和版主，用户可以在一定时间间隔内修改自己的帖子），支持完整HTML的帖子（仅管理员）。&lt;/li&gt;
 &lt;li&gt;支持群发邮件、关键字过滤，用户名、邮件地址、IP过滤、搜索、在线用户、论坛详细状态。&lt;/li&gt;
-&lt;li&gt;支持可开发的&lt;!-- raw HTML omitted --&gt;ACP&lt;!-- raw HTML omitted --&gt;插件&lt;/li&gt;
+&lt;li&gt;支持可开发的&lt;acronym title=&#34;Admin Control Panel&#34;&gt;ACP&lt;/acronym&gt;插件&lt;/li&gt;
 &lt;li&gt;支持&lt;strong&gt;RSS&lt;/strong&gt; 2.0订阅&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;搜索引擎友好 .html 格式的URL&lt;/strong&gt;（需mod_rewrite支持）&lt;/li&gt;
 &lt;/ul&gt;
@@ -519,33 +519,33 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;本方法基于一个简单的事实：即使IE会忽略&amp;lt;abbr&amp;gt;标签，但是其他嵌套在&amp;lt;abbr&amp;gt;标签里的标签还是正常的。所以我在嵌了一个&amp;lt;span&amp;gt;标签在&amp;lt;abbr&amp;gt;里，设置&amp;lt;span&amp;gt;的title和class属性，然后&amp;lt;abbr&amp;gt;开始变得和&amp;lt;acronym&amp;gt;标签一样了。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;代码例子&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;看一下下面的代码，是一个简单的缩写词的例子：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;    &amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;abbr&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;title&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;CSS&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;abbr&lt;/span&gt;&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;abbr&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;CSS&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;abbr&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;现在，对比一下修改后的代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;    &amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;abbr&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;title&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;class&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;abbr&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;title&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;CSS&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;span&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;abbr&lt;/span&gt;&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;abbr&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abbr&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cascading Style Sheets&amp;#34;&lt;/span&gt;&amp;gt;CSS&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;abbr&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;自动操作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;手动的给每一个&amp;lt;abbr&amp;gt;标签嵌入&amp;lt;span&amp;gt;显然不可能&amp;amp;#8212;-既无聊又对Mozilla和Opera没必要。幸运的是，现在有一个自动的、基于客户端脚本的解决方法。&lt;/p&gt;
 &lt;p&gt;你可能注意到了，这个页面（译者注：&lt;a href=&#34;http://www.sovavsiti.cz/css/abbr.html&#34;&gt;原作者的页面&lt;/a&gt;）上的简写词语即使在IE里都会有提示，并且加了CSS样式（虚下划线和一个问号状的鼠标光标）。然而你如果看一下源代码，你将找不到在上文提到的&amp;lt;span&amp;gt;标签。这得益于本页加载的一个简单的JavaScript：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    function &lt;span style=&#34;color:#008b45&#34;&gt;styleAbbr&lt;/span&gt;() {
-     var oldBodyText, newBodyText, reg
-     &lt;span style=&#34;color:#008b45&#34;&gt;if&lt;/span&gt; (isIE) {
-     oldBodyText = document.&lt;span style=&#34;color:#658b00&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;innerHTML&lt;/span&gt;;
-     reg = /&amp;lt;abbr([^&amp;gt;]*)&amp;gt;([^&amp;lt;]*)&amp;lt;/ABBR&amp;gt;/g;
-     newBodyText = oldBodyText.&lt;span style=&#34;color:#658b00&#34;&gt;replace&lt;/span&gt;(reg, &amp;amp;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;#&lt;/span&gt;8216;&amp;lt;abbr $1=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;span class=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;abbr&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; $1=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&amp;gt;$2&amp;lt;/span&amp;gt;&amp;lt;/abbr&amp;gt;&amp;amp;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;#&lt;/span&gt;8216;);
-     document.&lt;span style=&#34;color:#658b00&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;innerHTML&lt;/span&gt; = newBodyText;
-     }
-     }
-     window.&lt;span style=&#34;color:#658b00&#34;&gt;onload&lt;/span&gt; = function(){
-     styleAbbr()
-     };
-     isIE = (document.&lt;span style=&#34;color:#658b00&#34;&gt;all&lt;/span&gt;) ? &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;:&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;false&lt;/span&gt;;
-     &amp;lt;/abbr([^&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    function &lt;span style=&#34;color:#a6e22e&#34;&gt;styleAbbr&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+     var oldBodyText&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; newBodyText&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; reg
+     &lt;span style=&#34;color:#a6e22e&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;isIE&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+     oldBodyText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;innerHTML&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+     reg &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;lt;&lt;/span&gt;abbr&lt;span style=&#34;color:#f92672&#34;&gt;([^&amp;gt;]*)&amp;gt;([^&amp;lt;]*)&amp;lt;/&lt;/span&gt;ABBR&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;/&lt;/span&gt;g&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+     newBodyText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; oldBodyText&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;replace&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;reg&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;8216&lt;span style=&#34;color:#f92672&#34;&gt;;&amp;lt;&lt;/span&gt;abbr $1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;span class&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;abbr&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; $1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;$2&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/&lt;/span&gt;span&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;abbr&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt;8216&lt;span style=&#34;color:#f92672&#34;&gt;;);&lt;/span&gt;
+     document&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;innerHTML&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; newBodyText&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+     &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+     &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+     window&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onload&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; function&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt;
+     styleAbbr&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
+     &lt;span style=&#34;color:#f92672&#34;&gt;};&lt;/span&gt;
+     isIE &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;document&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;all&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+     &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/&lt;/span&gt;abbr&lt;span style=&#34;color:#f92672&#34;&gt;([^&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你可能注意到了，我的站点也具有了此功效，是因为我将上面的代码写入了一个名为_abbr.js_的脚本中，然后在_Theme_的_header.php_中加入了这样一段代码，同时和插件&lt;a href=&#34;https://zhu8.net/blog/?p=5&#34;&gt;Acronym Replacer&lt;/a&gt;配合使用就可以了。&lt;strong&gt;Zhu8[注]&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这段脚本会检查客户端浏览器，如果是IE，那么则替换所有的&amp;lt;abbr&amp;gt;标签为修改过的版本（嵌入了&amp;lt;span&amp;gt;）。注意的是我们必须使用正则表达式和innerHTML属性来取代标准的DOM方法，因为IE不能通过DOM来获取&amp;lt;abbr&amp;gt;属性。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;样式化&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最后看一下这个页面上使用的CSS。相当简单：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;abbr&lt;/span&gt;, &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;acronym&lt;/span&gt;, &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;span&lt;/span&gt;.&lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;abbr&lt;/span&gt; {
-     &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;cursor&lt;/span&gt;: &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;help&lt;/span&gt;;
-     &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;border-bottom&lt;/span&gt;: &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;dashed&lt;/span&gt; &lt;span style=&#34;color:#b452cd&#34;&gt;#000&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;abbr&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;acronym&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;abbr&lt;/span&gt; {
+     &lt;span style=&#34;color:#66d9ef&#34;&gt;cursor&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;help&lt;/span&gt;;
+     &lt;span style=&#34;color:#66d9ef&#34;&gt;border-bottom&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;dashed&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;#000&lt;/span&gt;;
      }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mozilla和Opera使用abbr和acronym属性选择器，IE则使用acronym和span.abbr。无论如何，&amp;lt;abbr&amp;gt;和&amp;lt;acronym&amp;gt;都被样式化了——一个问号状的鼠标光标（当鼠标指上后）和虚下划线。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;其他&lt;/strong&gt;&lt;/p&gt;
@@ -570,7 +570,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;li&gt;&lt;a href=&#34;http://www.skippy.net/blog/plugins/&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;WordPress Database Backup&lt;/strong&gt;&lt;/a&gt;： 通过邮件没有发送的起来，其他都可以。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://vzho.ru/wordpress-related-stuff/meta-se&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Meta-SE&lt;/strong&gt;&lt;/a&gt;：自动生成每篇文章的meta信息。&lt;strong&gt;作用不大，已停用&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://mnm.uib.es/gallir/wp-cache-2/&#34;&gt;&lt;strong&gt;wp-cache&lt;/strong&gt;&lt;/a&gt; ：非wp自带 将wordpress静态化 有效减少载入时间 加快访问速度。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;Google Sitemaps&lt;/strong&gt;&lt;/a&gt; ：让google更快的收录你的blog。&lt;!-- raw HTML omitted --&gt;常常在useronline里看到google来抓了，不过到现在还没收录。不会是因为我这个旧域名的缘故？&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;已恢复正常&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;Google Sitemaps&lt;/strong&gt;&lt;/a&gt; ：让google更快的收录你的blog。&lt;del datetime=&#34;2006-06-21T14:57:25+00:00&#34;&gt;常常在useronline里看到google来抓了，不过到现在还没收录。不会是因为我这个旧域名的缘故？&lt;/del&gt;&lt;strong&gt;已恢复正常&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://axgle.com/?p=60&#34; title=&#34;Real IP&#34;&gt;&lt;strong&gt;Real IP&lt;/strong&gt;&lt;/a&gt;：显示发表帖子者的真实IP，后台观看。&lt;em&gt;Update:2006/08/17&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;文章效果类&#34;&gt;文章效果类：&lt;/h3&gt;
@@ -609,7 +609,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;&lt;a href=&#34;http://lifesinger.3322.org/blog/?p=88&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Related Posts&lt;/strong&gt;&lt;/a&gt;：不用说了吧，相关文章。&lt;strong&gt;已停用，有了随机再用这个显得页面太繁冗&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;WP-RelativeDate&lt;/strong&gt;&lt;/a&gt;：显示文章和评论是多久之前的，&lt;!-- raw HTML omitted --&gt;我的好象只有评论里有效&lt;!-- raw HTML omitted --&gt;。&lt;em&gt;Update&lt;/em&gt;：原来要在这个插件使用之后发表的文章才行。**已停用，娱乐性太强-_-#**&lt;em&gt;&lt;strong&gt;Update:2006/9/9&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;WP-RelativeDate&lt;/strong&gt;&lt;/a&gt;：显示文章和评论是多久之前的，&lt;del datetime=&#34;2006-07-08T15:40:47+00:00&#34;&gt;我的好象只有评论里有效&lt;/del&gt;。&lt;em&gt;Update&lt;/em&gt;：原来要在这个插件使用之后发表的文章才行。**已停用，娱乐性太强-_-#**&lt;em&gt;&lt;strong&gt;Update:2006/9/9&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;http://cavemonkey50.com/code/akismet-spam-count/&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;Akismet Spam Count&lt;/strong&gt;&lt;/a&gt;：输出被Akismet挡住的Spam有多少，惊人的数字啊。&lt;em&gt;—-我的还好，不算惊人（见页面底部）&lt;/em&gt;&lt;/p&gt;

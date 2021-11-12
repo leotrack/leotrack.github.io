@@ -80,7 +80,7 @@ if (!doNotTrack) {
 </div>
 <h2 class="pt-2">
 	<i class="fas fa-bookmark"></i>从wordpress到textpattern</h2>
-<h3 class="text-java-700 font-normal leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 388 字 § 阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">1 分&nbsp;45 秒</span></h3>
+<h3 class="text-java-700 font-normal leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 389 字 § 阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">1 分&nbsp;46 秒</span></h3>
 <div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='/categories/%E7%9F%B3%E9%A9%AC-code'>石马 | Code</a>   
 	 &nbsp;&nbsp; 
@@ -98,7 +98,7 @@ if (!doNotTrack) {
 
 <article>
 	<section class="mx-auto content">
-		<div class="c-rich-text"><p>其实<!-- raw HTML omitted --><img src="/images/txp.gif" alt="Textpattern" title="Textpattern"><!-- raw HTML omitted -->很久以前就试用了 <a href="http://textpattern.com/">TXP</a> ，但是一直是一头雾水，今天终于 <!-- raw HTML omitted -->其实昨天<!-- raw HTML omitted --> 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 <strong>记录：</strong></p>
+		<div class="c-rich-text"><p>其实<span class="right"><img src="/images/txp.gif" alt="Textpattern" title="Textpattern"></span>很久以前就试用了 <a href="http://textpattern.com/">TXP</a> ，但是一直是一头雾水，今天终于 <sup>其实昨天</sup> 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 <strong>记录：</strong></p>
 <ul>
 <li><strong>解决乱码问题</strong></li>
 </ul>
@@ -116,8 +116,8 @@ if (!doNotTrack) {
 <p>同样的，找到这行：</p>
 <p><code>Body_html = '&quot;.doSlash($Body_html).&quot;',</code></p>
 <p>在后面加上：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">Excerpt = <span style="color:#cd5555">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
-Excerpt_html = <span style="color:#cd5555">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">Excerpt</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
+<span style="color:#a6e22e">Excerpt_html</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
 </code></pre></div><ul>
 <li><strong>不导入附件生成的页面</strong></li>
 </ul>
@@ -126,7 +126,7 @@ Excerpt_html = <span style="color:#cd5555">&#39;&#34;.doSlash($Excerpt).&#34;&#3
 <p>在后面加上：</p>
 <p><code>WHERE p.post_status != 'attachment'</code></p>
 <p>差不多就这些了，在懒懒喵的 <a href="http://blog.nahoya.com/archives/2006_09/129">旧文</a> 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 <strong>但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！</strong> 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。</p>
-<p>*放出修改后的 <!-- raw HTML omitted -->import_wp.php<!-- raw HTML omitted --></p>
+<p>*放出修改后的 <del>import_wp.php</del></p>
 <p><em>P.S</em> 初次使用 <a href="http://textile.thresholdstate.com/">Textile</a> ，感觉还要适应好段时间，不过用起来确实是种不同的体验。</p>
 </div>
 	</section>

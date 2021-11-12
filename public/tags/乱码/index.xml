@@ -18,7 +18,7 @@
       <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
       
       <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
-      <description>&lt;p&gt;其实&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;!-- raw HTML omitted --&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;!-- raw HTML omitted --&gt;其实昨天&lt;!-- raw HTML omitted --&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -36,8 +36,8 @@
 &lt;p&gt;同样的，找到这行：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Body_html = &#39;&amp;quot;.doSlash($Body_html).&amp;quot;&#39;,&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在后面加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;Excerpt = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
-Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt_html&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;不导入附件生成的页面&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -46,7 +46,7 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
 &lt;p&gt;在后面加上：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
-&lt;p&gt;*放出修改后的 &lt;!-- raw HTML omitted --&gt;import_wp.php&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
 </description>
     </item>
@@ -62,16 +62,16 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
 ErrorDocument 500 /error.html  
 RewriteEngine on  
 RewriteCond %{HTTP_REFERER} !^$  
 RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
-RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;amp;&lt;/span&gt;[F]
+RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;[F]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在下面的代码中，必须用您网站所用语言所对应的三位或四位数代码页编号来替换&amp;quot;您的网页所用代码页&amp;quot;。&lt;br&gt;
-例如，如果您的网站是用源于拉丁文的语言（英语、法语或德语）编写的，则用 1252 编号来取代此指令：value=&amp;ldquo;1252&amp;rdquo;&lt;br&gt;
+例如，如果您的网站是用源于拉丁文的语言（英语、法语或德语）编写的，则用 1252 编号来取代此指令：value=&amp;quot;1252&amp;quot;&lt;br&gt;
 有关各语言所对应的代码页值，请参阅 &lt;a href=&#34;http://g.msn.com/0HEWL_WEBMASTERSZHCN9/91008&#34; title=&#34;Code Pages Supported by Windows&#34;&gt;Windows 支持的代码页&lt;/a&gt;网页。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;很显然，里面有GBK码（代码：936），但是没有UTF-8码（应该不是我没有找到），只好到网上去找，不经意发现了&lt;strong&gt;UTF-8的代码：65001&lt;/strong&gt;，于是将代码一修改，就成了。详细可以到&lt;a href=&#34;http://chenjun.com/404.html&#34; title=&#34;404/500 错误页面&#34;&gt;这个页面&lt;/a&gt;去看下源代码就好了。&lt;/p&gt;

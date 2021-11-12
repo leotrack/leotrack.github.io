@@ -107,15 +107,15 @@ Mysql版本 Mysql 4.0.20<br>
 Zend支持 支持</p>
 </blockquote>
 <p>原来都是<strong>PHP版本</strong>搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在<strong><strong>wp-includes/gettext.php</strong></strong>中<strong>第105行</strong>有这样一段代码：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
-</span><span style="color:#228b22"></span><span style="color:#00688b">$MAGIC1</span> = (int)&amp;<span style="color:#b452cd">1794895138</span>;  
-<span style="color:#228b22">// $MAGIC2 = (int)0xde120495; //bug  
-</span><span style="color:#228b22"></span><span style="color:#00688b">$MAGIC2</span> = (int)&amp;<span style="color:#b452cd">569244523</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
+</span><span style="color:#75715e"></span>$MAGIC1 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">int</span>)<span style="color:#f92672">&amp;</span><span style="color:#ae81ff">1794895138</span>;  
+<span style="color:#75715e">// $MAGIC2 = (int)0xde120495; //bug  
+</span><span style="color:#75715e"></span>$MAGIC2 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">int</span>)<span style="color:#f92672">&amp;</span><span style="color:#ae81ff">569244523</span>;
 </code></pre></div><p>其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要<strong>注释</strong>掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> <span style="color:#00688b">$MAGIC1</span> = (int)<span style="color:#b452cd">0x950412de</span>; <span style="color:#228b22">//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
-</span><span style="color:#228b22"></span> <span style="color:#228b22">// $MAGIC1 = (int)&amp;1794895138;  
-</span><span style="color:#228b22"></span> <span style="color:#00688b">$MAGIC2</span> = (int)<span style="color:#b452cd">0xde120495</span>; <span style="color:#228b22">//bug  
-</span><span style="color:#228b22"></span> <span style="color:#228b22">// $MAGIC2 = (int)&amp;569244523;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> $MAGIC1 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">int</span>)<span style="color:#ae81ff">0x950412de</span>; <span style="color:#75715e">//bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
+</span><span style="color:#75715e"></span> <span style="color:#75715e">// $MAGIC1 = (int)&amp;1794895138;  
+</span><span style="color:#75715e"></span> $MAGIC2 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">int</span>)<span style="color:#ae81ff">0xde120495</span>; <span style="color:#75715e">//bug  
+</span><span style="color:#75715e"></span> <span style="color:#75715e">// $MAGIC2 = (int)&amp;569244523;
 </span></code></pre></div><p>上面的解决方案是在<a href="http://wordpress.org/support/topic/66818" title="Language set up problem (portuguese) « WordPress Support">WordPress Support</a>找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：<a href="/uploads/zh_CN.rar" title="中文汉化包：zh_CN.mo和zh_CN.po">下载</a>，使用方法如下：</p>
 <blockquote>
 <p>下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)<br>

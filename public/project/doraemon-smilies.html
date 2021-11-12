@@ -97,45 +97,45 @@ if (!doNotTrack) {
 <ul>
 <li>1.下载 <strong><a href="/uploads/doraemon-smilies.zip">插件</a> 和 <a href="/uploads/smilies.zip">图标</a></strong></li>
 <li><em>1.Download <strong><a href="/uploads/doraemon-smilies.zip">Plugin</a> &amp; <a href="/uploads/smilies.zip">Smilies</a> images</strong></em></li>
-<li>2.上传 &ldquo;doraemon-smilies&rdquo; 文件夹到 &ldquo;/wp-content/plugins&rdquo; 目录. 上传 &ldquo;smilies&rdquo; 文件夹到 &ldquo;/wp-includes/images&rdquo; 目录;</li>
-<li><em>2.Upload the directory &ldquo;doraemon-smilies&rdquo; to the &ldquo;/wp-content/plugins&rdquo; directory. Upload &ldquo;smilies&rdquo; folder to the &ldquo;/wp-includes/images&rdquo; directory;</em></li>
-<li>3.激活 &ldquo;Doraemon Smilies For Wordpress&rdquo; 在 &ldquo;管理面板&gt;插件&rdquo;;</li>
-<li><em>3.Activate &ldquo;Doraemon Smilies For Wordpress&rdquo; in &ldquo;Admin Panel&gt;plugin&rdquo;;</em></li>
+<li>2.上传 &quot;doraemon-smilies&quot; 文件夹到 &quot;/wp-content/plugins&quot; 目录. 上传 &quot;smilies&quot; 文件夹到 &quot;/wp-includes/images&quot; 目录;</li>
+<li><em>2.Upload the directory &quot;doraemon-smilies&quot; to the &quot;/wp-content/plugins&quot; directory. Upload &quot;smilies&quot; folder to the &quot;/wp-includes/images&quot; directory;</em></li>
+<li>3.激活 &quot;Doraemon Smilies For Wordpress&quot; 在 &quot;管理面板&gt;插件&quot;;</li>
+<li><em>3.Activate &quot;Doraemon Smilies For Wordpress&quot; in &quot;Admin Panel&gt;plugin&quot;;</em></li>
 <li>4.完成!</li>
 <li><em>4.All Done!Enjoy!</em></li>
 </ul>
 <h2 id="smilies-for-english-users"><em>Smilies For English Users</em></h2>
 <hr>
 <h3 id="modify-the-initphp-use-this-code-below">Modify the <strong>init.php</strong> use this <strong>Code</strong> below</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
-<span style="color:#00688b">$wpsmiliestrans</span> = <span style="color:#8b008b;font-weight:bold">array</span>(
-		<span style="color:#cd5555">&#39;:no_face:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_wuyan.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:naughty:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_wanpi.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:act_up:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_tiaopi.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:delight:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_gaoxing.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:envy:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_xianmu.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:laugh?:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_kuxiao.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:doubt:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_yiwen.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:ignorant:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_budong.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:evil:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_jianxiao.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:satisfaction:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_manzu.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:surprise:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_jingya.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:pity:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_yihan.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:scare:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_haipa.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:alarm:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_jinghuang.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:glory:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_deyi.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:happy:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_kuaile.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:angry:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_shengqi.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:bye:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_zaijian.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:nice:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_meihao.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:oo:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_oo.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:expect:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_qidai.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:duplicity:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_jianzha.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:humility:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_qianxu.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:scorn:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_buxie.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:pain:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_tongku.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:trouble:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_fannao.png&#39;</span>,
-		<span style="color:#cd5555">&#39;:think:&#39;</span> =&gt; <span style="color:#cd5555">&#39;dora_sikao.png&#39;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+$wpsmiliestrans <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+		<span style="color:#e6db74">&#39;:no_face:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_wuyan.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:naughty:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_wanpi.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:act_up:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_tiaopi.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:delight:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_gaoxing.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:envy:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_xianmu.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:laugh?:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_kuxiao.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:doubt:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_yiwen.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:ignorant:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_budong.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:evil:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_jianxiao.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:satisfaction:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_manzu.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:surprise:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_jingya.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:pity:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_yihan.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:scare:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_haipa.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:alarm:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_jinghuang.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:glory:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_deyi.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:happy:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_kuaile.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:angry:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_shengqi.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:bye:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_zaijian.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:nice:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_meihao.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:oo:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_oo.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:expect:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_qidai.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:duplicity:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_jianzha.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:humility:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_qianxu.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:scorn:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_buxie.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:pain:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_tongku.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:trouble:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_fannao.png&#39;</span>,
+		<span style="color:#e6db74">&#39;:think:&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;dora_sikao.png&#39;</span>,
 );
 </code></pre></div></div>
 	</section>

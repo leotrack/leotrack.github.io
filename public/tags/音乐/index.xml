@@ -18,15 +18,15 @@
       <pubDate>Sat, 14 Feb 2009 01:31:38 +0800</pubDate>
       
       <guid>/blog/2009/02/ide-cdrom-on-gigabyte-error.html</guid>
-      <description>&lt;p&gt;原来的板子坏了，新买了一块技嘉的板子（GA-M61PME-S2），因为我原来的硬盘和DVD-ROM都是IDE接口的，但是接上去之后系统要么启动很慢，要么在见到欢迎页面前就死掉。【启动&amp;quot;Detecting IDE Drives&amp;hellip;&amp;ldquo;处非常慢，然后就是到&amp;quot;Verifying DMI Pool Data&amp;hellip;&amp;quot;，一样巨慢，然后无法从硬盘启动……】而我原来的大板子悍马HA01-GT没有这个问题，只是被我刷BIOS刷爆了。不高兴去修了。反正技嘉那块板子才300多点，就买回来。前两天装系统，今天启动就老是不行。开始还怀疑是电源不够，我的是航嘉冷静王2.0钻石版300W的。后来检查跳线，因为我的跳线没有动过，Benq光驱还是在Slave上，而我的日立硬盘还是在Master上面；BIOS中的M/S设置也是对的。&lt;/p&gt;
+      <description>&lt;p&gt;原来的板子坏了，新买了一块技嘉的板子（GA-M61PME-S2），因为我原来的硬盘和DVD-ROM都是IDE接口的，但是接上去之后系统要么启动很慢，要么在见到欢迎页面前就死掉。【启动&amp;quot;Detecting IDE Drives...&amp;quot;处非常慢，然后就是到&amp;quot;Verifying DMI Pool Data...&amp;quot;，一样巨慢，然后无法从硬盘启动……】而我原来的大板子悍马HA01-GT没有这个问题，只是被我刷BIOS刷爆了。不高兴去修了。反正技嘉那块板子才300多点，就买回来。前两天装系统，今天启动就老是不行。开始还怀疑是电源不够，我的是航嘉冷静王2.0钻石版300W的。后来检查跳线，因为我的跳线没有动过，Benq光驱还是在Slave上，而我的日立硬盘还是在Master上面；BIOS中的M/S设置也是对的。&lt;/p&gt;
 &lt;p&gt;去网上查了一下，有位哥们跟我情况比较相似：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;急啊，高后帮下忙啊！！！！入手的技嘉GA-MA78GM-S2H 1.1版（BIOS版本是F5），用的是双IDE（光驱和硬盘），硬盘是希捷80G,光驱是原来dvd的，挂光驱硬盘开机检测查找IDE设备都要2分多钟，光驱是从盘,硬盘为主盘，用的一根IDE线，设置从CDROM第1启动盘，HDD第2可以安装好系统番茄花园SP3，装完重起电脑后进系统就找不到硬盘了，这个时候，不管我把光驱还是硬盘设为第一启动设备都是这样，是不是BIOS里有什么设置的问题？？？？？有什么办法不啊？配置：内存2G一根.，CPU4800+，电源全汉200W额定，硬盘80G IDE，光驱DVD IDE&lt;br&gt;
-这位兄弟的解答，也解决了我的问题：&lt;strong&gt;硬盘跳线设为 MASTER.光驱跳线设为slave或为无，&lt;!-- raw HTML omitted --&gt;ide线长端（好像蓝色）接主板IDE口，另一端（好像黑色）接硬盘，中间接光驱，硬盘与光驱距离连接短，注意硬盘光驱安装位置&lt;!-- raw HTML omitted --&gt;。我昨天用了2小时终于搞定。&lt;/strong&gt;&lt;/p&gt;
+这位兄弟的解答，也解决了我的问题：&lt;strong&gt;硬盘跳线设为 MASTER.光驱跳线设为slave或为无，&lt;span class=&#34;Apple-style-span&#34; style=&#34;color: rgb(255, 0, 0);&#34;&gt;ide线长端（好像蓝色）接主板IDE口，另一端（好像黑色）接硬盘，中间接光驱，硬盘与光驱距离连接短，注意硬盘光驱安装位置&lt;/span&gt;。我昨天用了2小时终于搞定。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;延伸阅读：跳线&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;!-- raw HTML omitted --&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;哦！今天是&lt;strong&gt;情人节&lt;/strong&gt;了哈！我这么晚还没有睡觉，老婆要打了……晚安！今晚特约演出：&lt;/p&gt;
 &lt;p&gt;歌手： Beyond&lt;br&gt;
@@ -87,12 +87,12 @@
       <pubDate>Mon, 30 Jun 2008 18:04:00 +0800</pubDate>
       
       <guid>/blog/2008/06/beyond-wong-ka-kui-15-years.html</guid>
-      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/beyond-wong-ka-kui.jpg&#34; alt=&#34;beyond-wong-ka-kui.jpg&#34; title=&#34;不死的家驹&#34;&gt;&lt;!-- raw HTML omitted --&gt;1996年，我在家乡的秤砣山上读初二，那时我们刚刚开始青春，小乡镇里消息闭塞、娱乐匮乏。我和小钱和建辉一起住在三张铁架子床的宿舍，后面就是食堂，西边是操场以及更西边的坟场。十多岁的我们并不知道外面世界的模样，我们的目标只是考上城里的高中，而已。建辉属于不太爱学习的那种，但是我们仨到现在为止都记得我们是如何一起度过那些岁月的，虽然见面后，感觉是有那么些陌生。毕竟离毕业分开，已整十年。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/beyond-wong-ka-kui.jpg&#34; alt=&#34;beyond-wong-ka-kui.jpg&#34; title=&#34;不死的家驹&#34;&gt;&lt;/span&gt;1996年，我在家乡的秤砣山上读初二，那时我们刚刚开始青春，小乡镇里消息闭塞、娱乐匮乏。我和小钱和建辉一起住在三张铁架子床的宿舍，后面就是食堂，西边是操场以及更西边的坟场。十多岁的我们并不知道外面世界的模样，我们的目标只是考上城里的高中，而已。建辉属于不太爱学习的那种，但是我们仨到现在为止都记得我们是如何一起度过那些岁月的，虽然见面后，感觉是有那么些陌生。毕竟离毕业分开，已整十年。&lt;/p&gt;
 &lt;p&gt;无聊的说起这些，因为就在那段岁月里，建辉把Beyond通过他的卡带介绍给了我和小钱，我们就想所有那时候的男孩子一样，都爱上了家驹的歌，爱上了撕心裂肺的吼起”背弃了理想，谁人都可以，哪会怕有一天只你共我。”&lt;/p&gt;
 &lt;p&gt;虽然只有那么一两盘卡带，虽然粤语我们一句都不懂，虽然大部分时候都是干吼，虽然有些歌词的意思仍不明了，但我们却可以闭着眼睛把那些歌唱得像卡拉OK的字幕一般精准。&lt;/p&gt;
 &lt;p&gt;高中和大学，我们都很怀念家驹的歌，我自己也把Beyond的CD几乎都买齐了，但是却没有以前那种一遍接一遍听不厌的激情、却没有那种一字一句都记得清楚却不明白是什么意思的耐性了。&lt;/p&gt;
 &lt;p&gt;今天，是家驹去世整十五周年，忍不住怀念一下，不死的家驹精神以及，我们的青春纪念。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;家驹资料&lt;/strong&gt;：（&lt;em&gt;来自Fucked By &lt;!-- raw HTML omitted --&gt;GFW&lt;!-- raw HTML omitted --&gt;的&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E9%BB%83%E5%AE%B6%E9%A7%92&#34; title=&#34;黄家驹- Wikipedia&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt; ）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;家驹资料&lt;/strong&gt;：（&lt;em&gt;来自Fucked By &lt;del datetime=&#34;2008-06-30T08:06:02+00:00&#34;&gt;GFW&lt;/del&gt;的&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E9%BB%83%E5%AE%B6%E9%A7%92&#34; title=&#34;黄家驹- Wikipedia&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt; ）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;黄家驹&lt;/strong&gt;（ Wong Ka Kui ，&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=1962%E5%B9%B4&amp;amp;variant=zh-hans&#34; title=&#34;1962年&#34;&gt;1962年&lt;/a&gt; &lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=6%E6%9C%8810%E6%97%A5&amp;amp;variant=zh-hans&#34; title=&#34;6月10日&#34;&gt;6月10日&lt;/a&gt;－&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=1993%E5%B9%B4&amp;amp;variant=zh-hans&#34; title=&#34;1993年&#34;&gt;1993年&lt;/a&gt; &lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=6%E6%9C%8830%E6%97%A5&amp;amp;variant=zh-hans&#34; title=&#34;6月30日&#34;&gt;6月30日&lt;/a&gt;），籍贯广东&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=%E5%8F%B0%E5%B1%B1&amp;amp;variant=zh-hans&#34; title=&#34;台山&#34;&gt;台山&lt;/a&gt;，是&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=1980%E5%B9%B4%E4%BB%A3&amp;amp;variant=zh-hans&#34; title=&#34;1980年代&#34;&gt;1980年代&lt;/a&gt;前期至&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=1990%E5%B9%B4%E4%BB%A3&amp;amp;variant=zh-hans&#34; title=&#34;1990年代&#34;&gt;1990年代&lt;/a&gt;中期&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=%E9%A6%99%E6%B8%AF&amp;amp;variant=zh-hans&#34; title=&#34;香港&#34;&gt;香港&lt;/a&gt;着名摇滚乐队&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=Beyond&amp;amp;variant=zh-hans&#34; title=&#34;Beyond&#34;&gt;Beyond&lt;/a&gt;的主音及吉他手，也是乐队低音吉他手&lt;a href=&#34;http://zh.wikipedia.org/w/index.php?title=%E9%BB%83%E5%AE%B6%E5%BC%B7&amp;amp;variant=zh-hans&#34; title=&#34;黃家強&#34;&gt;黄家强&lt;/a&gt;的二哥。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -112,7 +112,7 @@
 &lt;p&gt;记得你发给我的这首《值得》，好吗？&lt;/p&gt;
 &lt;p&gt;但愿，我们能有幸福的未来；但愿，我们能得到你爸妈的祝福；但愿，我们能坚决的走下去；但愿……&lt;/p&gt;
 &lt;p&gt;爱是什么？爱……是。&lt;strong&gt;你&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;[友情演出：梁静茹《爱是&amp;hellip;&amp;hellip;》]&lt;/em&gt;[http://www.zhu8.org/music/love_is.mp3]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[友情演出：梁静茹《爱是......》]&lt;/em&gt;[http://www.zhu8.org/music/love_is.mp3]&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;专辑：&lt;strong&gt;《恋爱的力量》&lt;/strong&gt;&lt;br&gt;
 作曲：&lt;strong&gt;陈韦翎&lt;/strong&gt;&lt;br&gt;
@@ -215,7 +215,7 @@
       <pubDate>Fri, 27 Oct 2006 09:28:25 +0800</pubDate>
       
       <guid>/blog/2006/10/long-hu-ren-sheng-and-xue-shan-fei-hu-rebroadcast.html</guid>
-      <description>&lt;p&gt;最近在看电视《龙虎人生》&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/tongyao.jpg&#34; alt=&#34;童瑶-方淑晴&#34; title=&#34;童瑶-方淑晴&#34;&gt;&lt;!-- raw HTML omitted --&gt;（最近一两个月本人不幸迅速沦为电视机的奴隶，虽然基本都是看球赛，但还是挡不住电视剧电影的诱惑啊，虽然看的数量相比电视狂人来说很少而已），南京某某台放的，嗯，感觉还可以，挺喜欢里面的&lt;strong&gt;晴小姐&lt;/strong&gt;的，护士的造型不禁让我想起了某某人*（唉，快嫁作他人妇了，不提不提）&lt;em&gt;前去Google一下，原来是皇帝专业户张国立的儿子张默&lt;a href=&#34;http://ent.sina.com.cn/f/zglezdr/index.shtml&#34; title=&#34;张默打人事件_影音娱乐_新浪网&#34;&gt;曾经打过&lt;/a&gt;而大噪的其女友&lt;strong&gt;童瑶&lt;/strong&gt;小姐&lt;/em&gt;（这句话咋这么绕口捏）*。小&lt;strong&gt;汗&lt;/strong&gt;一下自己，原来就是她呀。恕我孤陋寡闻，还不知道这档子事情原来是如此。不过我无所谓谁是谁非，是谁想帮谁炒作。我只是看电视而已，绯闻啊，炒作啊，都见鬼去罢。&lt;/p&gt;
+      <description>&lt;p&gt;最近在看电视《龙虎人生》&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/tongyao.jpg&#34; alt=&#34;童瑶-方淑晴&#34; title=&#34;童瑶-方淑晴&#34;&gt;&lt;/span&gt;（最近一两个月本人不幸迅速沦为电视机的奴隶，虽然基本都是看球赛，但还是挡不住电视剧电影的诱惑啊，虽然看的数量相比电视狂人来说很少而已），南京某某台放的，嗯，感觉还可以，挺喜欢里面的&lt;strong&gt;晴小姐&lt;/strong&gt;的，护士的造型不禁让我想起了某某人*（唉，快嫁作他人妇了，不提不提）&lt;em&gt;前去Google一下，原来是皇帝专业户张国立的儿子张默&lt;a href=&#34;http://ent.sina.com.cn/f/zglezdr/index.shtml&#34; title=&#34;张默打人事件_影音娱乐_新浪网&#34;&gt;曾经打过&lt;/a&gt;而大噪的其女友&lt;strong&gt;童瑶&lt;/strong&gt;小姐&lt;/em&gt;（这句话咋这么绕口捏）*。小&lt;strong&gt;汗&lt;/strong&gt;一下自己，原来就是她呀。恕我孤陋寡闻，还不知道这档子事情原来是如此。不过我无所谓谁是谁非，是谁想帮谁炒作。我只是看电视而已，绯闻啊，炒作啊，都见鬼去罢。&lt;/p&gt;
 &lt;p&gt;童瑶在她的&lt;a href=&#34;http://blog.sina.com.cn/m/tongyao&#34; title=&#34;童瑶的BLOG&amp;amp;童瑶&amp;amp;新浪BLOG&#34;&gt;Blog&lt;/a&gt;里说：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;那时的方淑晴眼里只有王志文（杨冠雨），&lt;br&gt;
@@ -264,7 +264,7 @@
       <pubDate>Wed, 09 Aug 2006 13:00:21 +0800</pubDate>
       
       <guid>/blog/2006/08/xiang-tian-zhen-de-nv-sheng-tou-xiang.html</guid>
-      <description>&lt;p&gt;只用了几分钟就喜欢上了这部电视剧，从刘烨向那个泼妇把献骨髓的价格从二十万到三十万开始，从”那我们给了你钱，你跑了怎么办？”、”你们只能冒这个险了。”开始。尽管我开始看的时候，已经快结束了。&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/tianzhen.jpg&#34; alt=&#34;向天真的女生投降&#34; title=&#34;向天真的女生投降&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+      <description>&lt;p&gt;只用了几分钟就喜欢上了这部电视剧，从刘烨向那个泼妇把献骨髓的价格从二十万到三十万开始，从”那我们给了你钱，你跑了怎么办？”、”你们只能冒这个险了。”开始。尽管我开始看的时候，已经快结束了。&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/tianzhen.jpg&#34; alt=&#34;向天真的女生投降&#34; title=&#34;向天真的女生投降&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;虽然电视和小说不过是为了我们去想象一下生活中不会出现的那些情节罢了，让自己去好好享受也未尝不是一件好事情，虽然也许永远是幻想，现实还是要去面对。那里面演小宝的小女孩挺可爱的，叫&lt;a href=&#34;http://blog.sina.com.cn/u/1219450272&#34; title=&#34;温智美的新浪Blog&#34;&gt;温智美&lt;/a&gt;，一出场就让我记住了，我看的时候刚好到她出场：）&lt;/p&gt;
 &lt;p&gt;小说可至新浪读书频道看：&lt;a href=&#34;http://book.sina.com.cn/nzt/lit/1105419875_touxiang/index.shtml&#34; title=&#34;向天真的女生投降_读书频道_新浪网&#34;&gt;这里&lt;/a&gt;。另&lt;a href=&#34;http://www.xxyst.com/V/48.htm&#34; title=&#34;小小影视厅&#34;&gt;这里&lt;/a&gt;可以在线观看（可以使用帐号：&lt;strong&gt;tianzhen&lt;/strong&gt;，密码：&lt;strong&gt;touxiang&lt;/strong&gt;。或者自己注册，密码可能很快会被人改了。我也没办法，注册也很简单。）；eMule下载链接：&lt;a href=&#34;http://lib.verycd.com/2006/04/29/0000100926.html&#34; title=&#34;VeryCD&#34;&gt;这里&lt;/a&gt;。片中的歌曲找了半天只有这些似乎是个人录制的，不过除了一些背景杂音效果还不错。听到那首插曲《&lt;strong&gt;牵我的手&lt;/strong&gt;》，真好听。暂时没有办法找到原唱版本的。将就吧：（&lt;/p&gt;
 &lt;blockquote&gt;
@@ -312,7 +312,7 @@
       <pubDate>Fri, 19 May 2006 10:48:18 +0800</pubDate>
       
       <guid>/blog/2006/05/1699-the-peach-blossom-fan.html</guid>
-      <description>&lt;p&gt;这个时候，南京的紫金大剧院正在上演着昆曲《1699·桃花扇》，票价似乎&lt;a href=&#34;http://culture.longhoo.net/news/userobject1ai497106.html&#34;&gt;很低&lt;/a&gt;，但我却只能坐在这，四处翻看着不同的新闻、旧闻，听着&lt;a href=&#34;http://www.wangfeng.com.cn/&#34;&gt;汪峰&lt;/a&gt;的老歌，来写上两个字。倒不是说我已然落魄得连最低20元的票价都出不起，确实是因为，我来南京，&lt;strong&gt;竟然还没拿过一分钱工资&lt;/strong&gt;。其实也没什么，就是我从常州来到南京，需要北京总公司批；而我这样一个无足轻重的小职位，也许人家根本没有放在心上。&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/peach-blossom-fan.jpg&#34; alt=&#34;昆曲&amp;ndash;桃花扇&#34; title=&#34;昆曲--桃花扇&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+      <description>&lt;p&gt;这个时候，南京的紫金大剧院正在上演着昆曲《1699·桃花扇》，票价似乎&lt;a href=&#34;http://culture.longhoo.net/news/userobject1ai497106.html&#34;&gt;很低&lt;/a&gt;，但我却只能坐在这，四处翻看着不同的新闻、旧闻，听着&lt;a href=&#34;http://www.wangfeng.com.cn/&#34;&gt;汪峰&lt;/a&gt;的老歌，来写上两个字。倒不是说我已然落魄得连最低20元的票价都出不起，确实是因为，我来南京，&lt;strong&gt;竟然还没拿过一分钱工资&lt;/strong&gt;。其实也没什么，就是我从常州来到南京，需要北京总公司批；而我这样一个无足轻重的小职位，也许人家根本没有放在心上。&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/peach-blossom-fan.jpg&#34; alt=&#34;昆曲--桃花扇&#34; title=&#34;昆曲--桃花扇&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;不过我也不能走，因为我走了，不止这儿的钱拿不到，到什么地方去再找这样一个”无足轻重的小职位”或许都还是个&lt;a href=&#34;http://www.yangtse.com/pub/yzweb/dzbpd/zyxw/t20060507_76346.htm&#34;&gt;问题&lt;/a&gt;，因为公司还算是个全国性的大公司，所以固然会如经理说的工资肯定会到时候一起发下来的。所以，我也就只能等着了。&lt;/p&gt;
 &lt;p&gt;现在，钱不钱不是问题，工作才是个问题。试想我在南京这名校林立的地方，如果现在就离开，那我这个又不是应届毕业生又几乎没有工作经验的人真不知道该去哪儿了。总之，钞票第一，被人&lt;strong&gt;压迫&lt;/strong&gt;也只好忍了。这世道，我又什么办法。我只需要牢记：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -322,7 +322,8 @@
 以骄奢淫逸为耻&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;好了，再来说说&lt;a href=&#34;http://www.google.com/search?q=%E7%9F%B3%E5%8D%A0%E6%98%8E&amp;amp;hl=zh-CN&amp;amp;newwindow=1&#34;&gt;石占明&lt;/a&gt;，还是不经意间在&lt;a href=&#34;http://mj6655.yculblog.com/&#34;&gt;孟静&lt;/a&gt;的站上看到的，原来最近还出了这么件事，有人鸣不平（&lt;a href=&#34;http://www.tianya.cn/publicforum/Content/free/1/692781.shtml&#34;&gt;1&lt;/a&gt;）、（&lt;a href=&#34;http://mj6655.yculblog.com/post.1248177.html&#34;&gt;2&lt;/a&gt;）、（&lt;a href=&#34;http://bbs.hongxiu.com/view.asp?BID=12&amp;amp;id=2365950&amp;amp;bname=%B6%C1%CA%E9%D4%D3%CC%B8&amp;amp;TITLE=%CB%AD%CA%C7%D6%D0%B9%FA%C8%CB%BA%CD%CA%AF%D5%BC%C3%F7&#34;&gt;3&lt;/a&gt;），更多的人则是一片质疑之声（&lt;a href=&#34;http://www.szwen.gov.cn/whlt/view.asp?position=20270&amp;amp;gate=1&amp;amp;T=%B6%D4%B2%BB%CA%B6%B9%FA%C6%EC%B5%C4%A1%B0%D1%F2%D9%C4%B8%E8%CD%F5%A1%B1%B2%BB%D3%A6%BF%ED%C8%DD&#34;&gt;1&lt;/a&gt;）、（&lt;a href=&#34;http://news.huash.com/2006-05/17/content_5425830.htm&#34;&gt;2&lt;/a&gt;）、（&lt;a href=&#34;http://test.52qj.com/form/dispbbs.asp?boardid=6&amp;amp;id=668&amp;amp;page=1&#34;&gt;3&lt;/a&gt;）、（&lt;a href=&#34;http://www.tianya.cn/new/Publicforum/Content.asp?idWriter=0&amp;amp;Key=0&amp;amp;strItem=free&amp;amp;idArticle=690879&amp;amp;flag=1&#34;&gt;4&lt;/a&gt;），但是还有人演变出支持&lt;a href=&#34;http://mj6655.yculblog.com/post.1248177.html#followups_1604599&#34;&gt;余秋雨&lt;/a&gt;、骂&lt;a href=&#34;http://mj6655.yculblog.com/post.1248177.html#followups_1606726&#34;&gt;三联&lt;/a&gt;的话出来了，无语。&lt;/p&gt;
-&lt;p&gt;我刚才在网上找了这个视频来看，开始看确实很震惊，他怎么会看着都是米字的旗帜说：”应该是中国吧，有三颗星。”但后来想想，其实很多事情并不能只从我们的角度去看，我只说一句罢：”我不同意你的观点,但我&lt;!-- raw HTML omitted --&gt;誓死捍卫你说话的权利！&lt;!-- raw HTML omitted --&gt;“。你没有无故&lt;a href=&#34;http://post.baidu.com/f?kw=%CA%AF%D5%BC%C3%F7&#34;&gt;谩骂&lt;/a&gt;别人的权利。或者，&lt;a href=&#34;http://post.baidu.com/f?kz=99297188&#34;&gt;这个帖子&lt;/a&gt;的26楼的事情，你相信吗？我不知道这位副营级干部和曾经的县人大代表以后的路会怎样。&lt;/p&gt;
+&lt;p&gt;我刚才在网上找了这个视频来看，开始看确实很震惊，他怎么会看着都是米字的旗帜说：”应该是中国吧，有三颗星。”但后来想想，其实很多事情并不能只从我们的角度去看，我只说一句罢：”我不同意你的观点,但我&lt;span
+style=&#34;color: rgb(198, 10, 0);&#34;&gt;誓死捍卫你说话的权利！&lt;/span&gt;“。你没有无故&lt;a href=&#34;http://post.baidu.com/f?kw=%CA%AF%D5%BC%C3%F7&#34;&gt;谩骂&lt;/a&gt;别人的权利。或者，&lt;a href=&#34;http://post.baidu.com/f?kz=99297188&#34;&gt;这个帖子&lt;/a&gt;的26楼的事情，你相信吗？我不知道这位副营级干部和曾经的县人大代表以后的路会怎样。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;延伸阅读&lt;/em&gt;：石占明&lt;a href=&#34;http://news.sina.com.cn/o/2006-05-15/09158927899s.shtml&#34;&gt;主动请求处分&lt;/a&gt;了 / 天涯上的&lt;a href=&#34;http://www.tianya.cn/publicforum/Content/free/1/690965.shtml&#34;&gt;讨论&lt;/a&gt; / &lt;a href=&#34;http://bbs.hongxiu.com/view.asp?BID=12&amp;amp;id=2367245&amp;amp;bname=%B6%C1%CA%E9%D4%D3%CC%B8&amp;amp;TITLE=%D2%B2%CB%B5%B2%BB%D6%AA%B5%C0%B9%FA%C6%EC&#34;&gt;也说不知道国旗&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;昆曲《1699.桃花扇》主题推广音乐：[http://mediamax.streamload.com/zhu8cn/Hosted/melody/nagaoka-themasong.mp3]&lt;/p&gt;</description>
     </item>
@@ -400,7 +401,7 @@
       <pubDate>Sun, 17 Oct 2004 10:54:16 +0800</pubDate>
       
       <guid>/blog/2004/10/xue-shan-fei-hu-gong-ci-en.html</guid>
-      <description>&lt;p&gt;居然可以看了！两年前我几乎看不了！&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/xueshanfeihu-logo.jpg&#34; alt=&#34;雪山飞狐-封面&#34; title=&#34;雪山飞狐-封面&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+      <description>&lt;p&gt;居然可以看了！两年前我几乎看不了！&lt;span class=&#34;left&#34;&gt;&lt;img src=&#34;/images/xueshanfeihu-logo.jpg&#34; alt=&#34;雪山飞狐-封面&#34; title=&#34;雪山飞狐-封面&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://vod.sdtv.cn/filmvod/filmplay.aspx?bianh=40&#34; title=&#34;山东台的播放地址&#34;&gt;山东台的播放地址&lt;/a&gt;&lt;em&gt;&lt;strong&gt;（播放地址已更新。）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;感谢山东电视台为我们提供的电视资源，让我们仍能回忆这一让我们魂萦梦牵的经典！&lt;/p&gt;
 &lt;p&gt;还记得那首《追梦人》么：让青春吹动了你的长发，让它牵引你的梦……确实，它牵动了我小时候对侠义的全部记忆（其中还有一些《射雕英雄传》），其中如雪一般洁白的冰雪儿，几乎是我直到如今对惹人爱怜的女孩的基本参照。如果今生能有如此的一位相伴一生，不管你处境如何，都对你不离不弃，不管你心情如何糟糕，只要看到她的嫣然一笑，顿时能心静如水，即使明天即将迎接死亡，那么前一晚仍能安心入眠，在第二天仍能吃到她为你做的最后一顿饭菜，还有什么可以遗憾的呢？&lt;/p&gt;
@@ -483,7 +484,7 @@
 商宝震 —— 玉 尚 饰&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update On 2006/8/9 22:12&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在线观看地址&lt;/strong&gt;：&lt;a href=&#34;http://www.15199.com/look.asp?id=993&#34; title=&#34;东方影迷网上半部&#34;&gt;东方影迷网上半部&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;，&lt;a href=&#34;http://www.15199.com/look.asp?id=994&#34; title=&#34;东方影迷网下半部&#34;&gt;东方影迷网下半部&lt;/a&gt;（已经测试，我是中午去的，所以有点卡，估计晚上会好的多。）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在线观看地址&lt;/strong&gt;：&lt;a href=&#34;http://www.15199.com/look.asp?id=993&#34; title=&#34;东方影迷网上半部&#34;&gt;东方影迷网上半部&lt;/a&gt;&lt;/a&gt;，&lt;a href=&#34;http://www.15199.com/look.asp?id=994&#34; title=&#34;东方影迷网下半部&#34;&gt;东方影迷网下半部&lt;/a&gt;（已经测试，我是中午去的，所以有点卡，估计晚上会好的多。）&lt;/p&gt;
 &lt;p&gt;季风岛在线下载地址：&lt;a href=&#34;http://www.aofeng.net/filmdown/movie.asp?id=1235&#34; title=&#34;查看地址&#34;&gt;查看地址&lt;/a&gt;。（注意：须依次点击它所要求的三个广告，下载地址才会出现。记得按右键另存为（我用Dudu下载也可以，用它所要求的影音传送带也可以，下载速度还不错。）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;推荐使用：Emule下载（主题曲、片尾曲+28集全集）&lt;/strong&gt; :&lt;a href=&#34;http://www.emule.org.cn/download/&#34; title=&#34;eMule 是下载迅速、资源丰富的新一代 P2P 软件，完全遵从 GPL 协议开发，开放源码，永久免费。利用他的卓越特性，我们不但可以与全世界的网友共同分享资源，更可以通过 VeryCD，下载和发布最新的资源，充分享受自由共享的乐趣！&#34;&gt;客户端下载&lt;/a&gt;&lt;/p&gt;</description>
     </item>

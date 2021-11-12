@@ -105,67 +105,67 @@ if (!doNotTrack) {
 <p>这里先放一个<em><strong>列表</strong></em>，详细的请进入<strong>阅读全文</strong>。</p>
 <h3 id="1归档页面模板">1、归档页面模板</h3>
 <p>（这里涉及到官方文档首段代码没有结尾，注意参考下面的第一段）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
-<span style="color:#cd5555">/**
-</span><span style="color:#cd5555"> * 归档页面模板
-</span><span style="color:#cd5555"> *
-</span><span style="color:#cd5555"> * @package custom
-</span><span style="color:#cd5555"> */</span>; <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;?php $this-&gt;need(&#39;header.php&#39;); ?&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;div class=&#34;col-mb-12 col-8&#34; id=&#34;main&#34; role=&#34;main&#34;&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">        &lt;h3 class=&#34;archive-title&#34;&gt;日志归档&lt;/h3&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;?php $this-&gt;widget(&#39;Widget_Contents_Post_Recent&#39;, &#39;pageSize=10000&#39;)-&gt;to($archives);   
-</span><span style="color:#a61717;background-color:#e3d2d2">    $year=0; $mon=0; $i=0; $j=0;   
-</span><span style="color:#a61717;background-color:#e3d2d2">    $output = &#39;&lt;div id=&#34;archives&#34;&gt;&#39;;   
-</span><span style="color:#a61717;background-color:#e3d2d2">    while($archives-&gt;next()):   
-</span><span style="color:#a61717;background-color:#e3d2d2">        $year_tmp = date(&#39;Y&#39;,$archives-&gt;created);   
-</span><span style="color:#a61717;background-color:#e3d2d2">        $mon_tmp = date(&#39;m&#39;,$archives-&gt;created);   
-</span><span style="color:#a61717;background-color:#e3d2d2">        $y=$year; $m=$mon;   
-</span><span style="color:#a61717;background-color:#e3d2d2">        if ($mon != $mon_tmp &amp;&amp; $mon &gt; 0) $output .= &#39;&lt;/ul&gt;&lt;/li&gt;&#39;;   
-</span><span style="color:#a61717;background-color:#e3d2d2">        if ($year != $year_tmp &amp;&amp; $year &gt; 0) $output .= &#39;&lt;/ul&gt;&#39;;   
-</span><span style="color:#a61717;background-color:#e3d2d2">        if ($year != $year_tmp) {   
-</span><span style="color:#a61717;background-color:#e3d2d2">            $year = $year_tmp;   
-</span><span style="color:#a61717;background-color:#e3d2d2">            $output .= &#39;&lt;h3 class=&#34;al_year&#34;&gt;&#39;. $year .&#39; 年&lt;/h3&gt;&lt;ul class=&#34;al_mon_list&#34;&gt;&#39;; //输出年份   
-</span><span style="color:#a61717;background-color:#e3d2d2">        }   
-</span><span style="color:#a61717;background-color:#e3d2d2">        if ($mon != $mon_tmp) {   
-</span><span style="color:#a61717;background-color:#e3d2d2">            $mon = $mon_tmp;   
-</span><span style="color:#a61717;background-color:#e3d2d2">            $output .= &#39;&lt;li&gt;&lt;span class=&#34;al_mon&#34;&gt;&#39;. $mon .&#39; 月&lt;/span&gt;&lt;ul class=&#34;al_post_list&#34;&gt;&#39;; //输出月份   
-</span><span style="color:#a61717;background-color:#e3d2d2">        }   
-</span><span style="color:#a61717;background-color:#e3d2d2">        $output .= &#39;&lt;li&gt;&#39;.date(&#39;d日: &#39;,$archives-&gt;created).&#39;&lt;a href=&#34;&#39;.$archives-&gt;permalink .&#39;&#34;&gt;&#39;. $archives-&gt;title .&#39;&lt;/a&gt; &lt;em&gt;(&#39;. $archives-&gt;commentsNum.&#39;)&lt;/em&gt;&lt;/li&gt;&#39;; //输出文章日期和标题   
-</span><span style="color:#a61717;background-color:#e3d2d2">    endwhile;   
-</span><span style="color:#a61717;background-color:#e3d2d2">    $output .= &#39;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&#39;;   
-</span><span style="color:#a61717;background-color:#e3d2d2">    echo $output;   
-</span><span style="color:#a61717;background-color:#e3d2d2">?&gt; 
-</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;/div&gt;&lt;!-- end #main --&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php $this-&gt;need(&#39;sidebar.php&#39;); ?&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php $this-&gt;need(&#39;footer.php&#39;); ?&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<span style="color:#e6db74">/**
+</span><span style="color:#e6db74"> * 归档页面模板
+</span><span style="color:#e6db74"> *
+</span><span style="color:#e6db74"> * @package custom
+</span><span style="color:#e6db74"> */</span>; <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php $this-&gt;need(&#39;header.php&#39;); ?&gt;
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">    &lt;div class=&#34;col-mb-12 col-8&#34; id=&#34;main&#34; role=&#34;main&#34;&gt;
+</span><span style="color:#960050;background-color:#1e0010">        &lt;h3 class=&#34;archive-title&#34;&gt;日志归档&lt;/h3&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php $this-&gt;widget(&#39;Widget_Contents_Post_Recent&#39;, &#39;pageSize=10000&#39;)-&gt;to($archives);   
+</span><span style="color:#960050;background-color:#1e0010">    $year=0; $mon=0; $i=0; $j=0;   
+</span><span style="color:#960050;background-color:#1e0010">    $output = &#39;&lt;div id=&#34;archives&#34;&gt;&#39;;   
+</span><span style="color:#960050;background-color:#1e0010">    while($archives-&gt;next()):   
+</span><span style="color:#960050;background-color:#1e0010">        $year_tmp = date(&#39;Y&#39;,$archives-&gt;created);   
+</span><span style="color:#960050;background-color:#1e0010">        $mon_tmp = date(&#39;m&#39;,$archives-&gt;created);   
+</span><span style="color:#960050;background-color:#1e0010">        $y=$year; $m=$mon;   
+</span><span style="color:#960050;background-color:#1e0010">        if ($mon != $mon_tmp &amp;&amp; $mon &gt; 0) $output .= &#39;&lt;/ul&gt;&lt;/li&gt;&#39;;   
+</span><span style="color:#960050;background-color:#1e0010">        if ($year != $year_tmp &amp;&amp; $year &gt; 0) $output .= &#39;&lt;/ul&gt;&#39;;   
+</span><span style="color:#960050;background-color:#1e0010">        if ($year != $year_tmp) {   
+</span><span style="color:#960050;background-color:#1e0010">            $year = $year_tmp;   
+</span><span style="color:#960050;background-color:#1e0010">            $output .= &#39;&lt;h3 class=&#34;al_year&#34;&gt;&#39;. $year .&#39; 年&lt;/h3&gt;&lt;ul class=&#34;al_mon_list&#34;&gt;&#39;; //输出年份   
+</span><span style="color:#960050;background-color:#1e0010">        }   
+</span><span style="color:#960050;background-color:#1e0010">        if ($mon != $mon_tmp) {   
+</span><span style="color:#960050;background-color:#1e0010">            $mon = $mon_tmp;   
+</span><span style="color:#960050;background-color:#1e0010">            $output .= &#39;&lt;li&gt;&lt;span class=&#34;al_mon&#34;&gt;&#39;. $mon .&#39; 月&lt;/span&gt;&lt;ul class=&#34;al_post_list&#34;&gt;&#39;; //输出月份   
+</span><span style="color:#960050;background-color:#1e0010">        }   
+</span><span style="color:#960050;background-color:#1e0010">        $output .= &#39;&lt;li&gt;&#39;.date(&#39;d日: &#39;,$archives-&gt;created).&#39;&lt;a href=&#34;&#39;.$archives-&gt;permalink .&#39;&#34;&gt;&#39;. $archives-&gt;title .&#39;&lt;/a&gt; &lt;em&gt;(&#39;. $archives-&gt;commentsNum.&#39;)&lt;/em&gt;&lt;/li&gt;&#39;; //输出文章日期和标题   
+</span><span style="color:#960050;background-color:#1e0010">    endwhile;   
+</span><span style="color:#960050;background-color:#1e0010">    $output .= &#39;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&#39;;   
+</span><span style="color:#960050;background-color:#1e0010">    echo $output;   
+</span><span style="color:#960050;background-color:#1e0010">?&gt; 
+</span><span style="color:#960050;background-color:#1e0010">    &lt;/div&gt;&lt;!-- end #main --&gt;
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">    &lt;?php $this-&gt;need(&#39;sidebar.php&#39;); ?&gt;
+</span><span style="color:#960050;background-color:#1e0010">    &lt;?php $this-&gt;need(&#39;footer.php&#39;); ?&gt;
 </span></code></pre></div><h3 id="2获取分类描述">2、获取分类描述</h3>
 <p><code>&lt;?php echo $this-&gt;getDescription(); ?&gt;</code></p>
 <p><em>案例演示：</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php <span style="color:#00688b">$this</span>-&gt;<span style="color:#658b00">widget</span>(<span style="color:#cd5555">&#39;Widget_Metas_Category_List&#39;</span>)
--&gt;<span style="color:#658b00">parse</span>(<span style="color:#cd5555">&#39;&lt;li&gt;&lt;a href=&#34;{permalink}&#34; title=&#34;{description}&#34;&gt;{name}&lt;/a&gt; ({count})&lt;/li&gt;&#39;</span>); <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">widget</span>(<span style="color:#e6db74">&#39;Widget_Metas_Category_List&#39;</span>)
+<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">parse</span>(<span style="color:#e6db74">&#39;&lt;li&gt;&lt;a href=&#34;{permalink}&#34; title=&#34;{description}&#34;&gt;{name}&lt;/a&gt; ({count})&lt;/li&gt;&#39;</span>); <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><h3 id="3前后文章调用代码">3、前后文章调用代码</h3>
 <p><code>&lt;?php $this-&gt;thePrev(); ?&gt; &lt;?php $this-&gt;theNext(); ?&gt;</code></p>
 <h3 id="4随机颜色标签云">4、随机颜色标签云</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php <span style="color:#00688b">$this</span>-&gt;<span style="color:#658b00">widget</span>(<span style="color:#cd5555">&#39;Widget_Metas_Tag_Cloud&#39;</span>, <span style="color:#cd5555">&#39;ignoreZeroCount=1&amp;limit=30&#39;</span>)-&gt;<span style="color:#658b00">to</span>(<span style="color:#00688b">$tags</span>); <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;ul class=&#34;tags-list&#34;&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;?php while($tags-&gt;next()): ?&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;li&gt;&lt;a style=&#34;color: rgb(&lt;?php echo(rand(0, 255)); ?&gt;, &lt;?php echo(rand(0,255)); ?&gt;, &lt;?php echo(rand(0, 255)); ?&gt;)&#34; href=&#34;&lt;?php $tags-&gt;permalink(); ?&gt;&#34; title=&#39;&lt;?php $tags-&gt;name(); ?&gt;&#39;&gt;&lt;?php $tags-&gt;name(); ?&gt;&lt;/a&gt;&lt;/li&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;?php endwhile; ?&gt;
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/ul&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">widget</span>(<span style="color:#e6db74">&#39;Widget_Metas_Tag_Cloud&#39;</span>, <span style="color:#e6db74">&#39;ignoreZeroCount=1&amp;limit=30&#39;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">to</span>($tags); <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">&lt;ul class=&#34;tags-list&#34;&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php while($tags-&gt;next()): ?&gt;
+</span><span style="color:#960050;background-color:#1e0010">    &lt;li&gt;&lt;a style=&#34;color: rgb(&lt;?php echo(rand(0, 255)); ?&gt;, &lt;?php echo(rand(0,255)); ?&gt;, &lt;?php echo(rand(0, 255)); ?&gt;)&#34; href=&#34;&lt;?php $tags-&gt;permalink(); ?&gt;&#34; title=&#39;&lt;?php $tags-&gt;name(); ?&gt;&#39;&gt;&lt;?php $tags-&gt;name(); ?&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;?php endwhile; ?&gt;
+</span><span style="color:#960050;background-color:#1e0010">&lt;/ul&gt;
 </span></code></pre></div><h3 id="5返回网页顶部">5、返回网页顶部</h3>
 <p>在footer.php页面增加如下代码（可直接下载我的第二段JS代码，将其中的图片地址改成你自己定义的）：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- Start of Go-Top Code --&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">script</span> <span style="color:#658b00">type</span>=<span style="color:#cd5555">&#34;text/javascript&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">script</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">script</span> <span style="color:#658b00">type</span>=<span style="color:#cd5555">&#34;text/javascript&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;http://chenjun.com/usr/uploads/top.js&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">script</span>&gt;
-<span style="color:#228b22">&lt;!-- End of Go-Top Code --&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- Start of Go-Top Code --&gt;</span>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://chenjun.com/usr/uploads/top.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<span style="color:#75715e">&lt;!-- End of Go-Top Code --&gt;</span>
 </code></pre></div><h3 id="6段落首行缩进两字符">6、段落首行缩进两字符</h3>
 <p>编辑Style.css文件，增加如下代码：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">post-content</span> <span style="color:#8b008b;font-weight:bold">p</span>{ 
-<span style="color:#8b008b;font-weight:bold">text-indent</span>: <span style="color:#b452cd">2</span><span style="color:#00688b;font-weight:bold">em</span>; <span style="color:#228b22">/*em是相对单位，2em即现在一个字大小的两倍*/</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">post-content</span> <span style="color:#f92672">p</span>{ 
+<span style="color:#66d9ef">text-indent</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">em</span>; <span style="color:#75715e">/*em是相对单位，2em即现在一个字大小的两倍*/</span> 
 } 
 </code></pre></div><p>后续待补充，部分参考：<a href="http://docs.typecho.org">Typecho官方文档</a>以及<a href="http://typecho.me">Typecho.me</a>，一并致谢！</p></div>
 	</section>

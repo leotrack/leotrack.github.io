@@ -18,7 +18,7 @@
       <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
       
       <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
-      <description>&lt;p&gt;其实&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;!-- raw HTML omitted --&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;!-- raw HTML omitted --&gt;其实昨天&lt;!-- raw HTML omitted --&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -36,8 +36,8 @@
 &lt;p&gt;同样的，找到这行：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Body_html = &#39;&amp;quot;.doSlash($Body_html).&amp;quot;&#39;,&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在后面加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;Excerpt = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
-Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt_html&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;不导入附件生成的页面&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -46,7 +46,7 @@ Excerpt_html = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;.doSl
 &lt;p&gt;在后面加上：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
-&lt;p&gt;*放出修改后的 &lt;!-- raw HTML omitted --&gt;import_wp.php&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
 </description>
     </item>
