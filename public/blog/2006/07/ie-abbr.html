@@ -105,33 +105,33 @@ if (!doNotTrack) {
 <p>本方法基于一个简单的事实：即使IE会忽略&lt;abbr&gt;标签，但是其他嵌套在&lt;abbr&gt;标签里的标签还是正常的。所以我在嵌了一个&lt;span&gt;标签在&lt;abbr&gt;里，设置&lt;span&gt;的title和class属性，然后&lt;abbr&gt;开始变得和&lt;acronym&gt;标签一样了。</p>
 <p><strong>代码例子</strong></p>
 <p>看一下下面的代码，是一个简单的缩写词的例子：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">abbr</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Cascading Style Sheets&#34;</span>&gt;CSS&lt;/<span style="color:#f92672">abbr</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#8b008b;font-weight:bold">abbr</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Cascading Style Sheets&#34;</span>&gt;CSS&lt;/<span style="color:#8b008b;font-weight:bold">abbr</span>&gt;
 </code></pre></div><p>现在，对比一下修改后的代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">abbr</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Cascading Style Sheets&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;abbr&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Cascading Style Sheets&#34;</span>&gt;CSS&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">abbr</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#8b008b;font-weight:bold">abbr</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Cascading Style Sheets&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;abbr&#34;</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Cascading Style Sheets&#34;</span>&gt;CSS&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">abbr</span>&gt;
 </code></pre></div><p><strong>自动操作</strong></p>
 <p>手动的给每一个&lt;abbr&gt;标签嵌入&lt;span&gt;显然不可能&amp;#8212;-既无聊又对Mozilla和Opera没必要。幸运的是，现在有一个自动的、基于客户端脚本的解决方法。</p>
 <p>你可能注意到了，这个页面（译者注：<a href="http://www.sovavsiti.cz/css/abbr.html">原作者的页面</a>）上的简写词语即使在IE里都会有提示，并且加了CSS样式（虚下划线和一个问号状的鼠标光标）。然而你如果看一下源代码，你将找不到在上文提到的&lt;span&gt;标签。这得益于本页加载的一个简单的JavaScript：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    function <span style="color:#a6e22e">styleAbbr</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-     var oldBodyText<span style="color:#f92672">,</span> newBodyText<span style="color:#f92672">,</span> reg
-     <span style="color:#a6e22e">if</span> <span style="color:#f92672">(</span>isIE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-     oldBodyText <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">.</span><span style="color:#a6e22e">innerHTML</span><span style="color:#f92672">;</span>
-     reg <span style="color:#f92672">=</span> <span style="color:#f92672">/&lt;</span>abbr<span style="color:#f92672">([^&gt;]*)&gt;([^&lt;]*)&lt;/</span>ABBR<span style="color:#f92672">&gt;/</span>g<span style="color:#f92672">;</span>
-     newBodyText <span style="color:#f92672">=</span> oldBodyText<span style="color:#f92672">.</span><span style="color:#a6e22e">replace</span><span style="color:#f92672">(</span>reg<span style="color:#f92672">,</span> <span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">#</span>8216<span style="color:#f92672">;&lt;</span>abbr $1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">&gt;&lt;</span>span class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>abbr<span style="color:#e6db74">&#34;&#34;</span> $1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">&gt;</span>$2<span style="color:#f92672">&lt;/</span>span<span style="color:#f92672">&gt;&lt;/</span>abbr<span style="color:#f92672">&gt;&amp;</span><span style="color:#960050;background-color:#1e0010">#</span>8216<span style="color:#f92672">;);</span>
-     document<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">.</span><span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> newBodyText<span style="color:#f92672">;</span>
-     <span style="color:#f92672">}</span>
-     <span style="color:#f92672">}</span>
-     window<span style="color:#f92672">.</span><span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> function<span style="color:#f92672">(){</span>
-     styleAbbr<span style="color:#f92672">()</span>
-     <span style="color:#f92672">};</span>
-     isIE <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>document<span style="color:#f92672">.</span><span style="color:#a6e22e">all</span><span style="color:#f92672">)</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">:</span><span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
-     <span style="color:#f92672">&lt;/</span>abbr<span style="color:#f92672">([^&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    function <span style="color:#008b45">styleAbbr</span>() {
+     var oldBodyText, newBodyText, reg
+     <span style="color:#008b45">if</span> (isIE) {
+     oldBodyText = document.<span style="color:#658b00">body</span>.<span style="color:#658b00">innerHTML</span>;
+     reg = /&lt;abbr([^&gt;]*)&gt;([^&lt;]*)&lt;/ABBR&gt;/g;
+     newBodyText = oldBodyText.<span style="color:#658b00">replace</span>(reg, &amp;<span style="color:#a61717;background-color:#e3d2d2">#</span>8216;&lt;abbr $1=<span style="color:#cd5555">&#34;&#34;</span>&gt;&lt;span class=<span style="color:#cd5555">&#34;&#34;</span>abbr<span style="color:#cd5555">&#34;&#34;</span> $1=<span style="color:#cd5555">&#34;&#34;</span>&gt;$2&lt;/span&gt;&lt;/abbr&gt;&amp;<span style="color:#a61717;background-color:#e3d2d2">#</span>8216;);
+     document.<span style="color:#658b00">body</span>.<span style="color:#658b00">innerHTML</span> = newBodyText;
+     }
+     }
+     window.<span style="color:#658b00">onload</span> = function(){
+     styleAbbr()
+     };
+     isIE = (document.<span style="color:#658b00">all</span>) ? <span style="color:#8b008b;font-weight:bold">true</span>:<span style="color:#8b008b;font-weight:bold">false</span>;
+     &lt;/abbr([^&gt;
 </code></pre></div><p>你可能注意到了，我的站点也具有了此功效，是因为我将上面的代码写入了一个名为_abbr.js_的脚本中，然后在_Theme_的_header.php_中加入了这样一段代码，同时和插件<a href="https://zhu8.net/blog/?p=5">Acronym Replacer</a>配合使用就可以了。<strong>Zhu8[注]</strong></p>
 <p>这段脚本会检查客户端浏览器，如果是IE，那么则替换所有的&lt;abbr&gt;标签为修改过的版本（嵌入了&lt;span&gt;）。注意的是我们必须使用正则表达式和innerHTML属性来取代标准的DOM方法，因为IE不能通过DOM来获取&lt;abbr&gt;属性。</p>
 <p><strong>样式化</strong></p>
 <p>最后看一下这个页面上使用的CSS。相当简单：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    <span style="color:#f92672">abbr</span><span style="color:#f92672">,</span> <span style="color:#f92672">acronym</span><span style="color:#f92672">,</span> <span style="color:#f92672">span</span>.<span style="color:#a6e22e">abbr</span> {
-     <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">help</span>;
-     <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">dashed</span> <span style="color:#ae81ff">#000</span>;
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">    <span style="color:#8b008b;font-weight:bold">abbr</span>, <span style="color:#8b008b;font-weight:bold">acronym</span>, <span style="color:#8b008b;font-weight:bold">span</span>.<span style="color:#008b45;font-weight:bold">abbr</span> {
+     <span style="color:#8b008b;font-weight:bold">cursor</span>: <span style="color:#8b008b;font-weight:bold">help</span>;
+     <span style="color:#8b008b;font-weight:bold">border-bottom</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">dashed</span> <span style="color:#b452cd">#000</span>;
      }
 </code></pre></div><p>Mozilla和Opera使用abbr和acronym属性选择器，IE则使用acronym和span.abbr。无论如何，&lt;abbr&gt;和&lt;acronym&gt;都被样式化了——一个问号状的鼠标光标（当鼠标指上后）和虚下划线。</p>
 <p><strong>其他</strong></p>

@@ -116,8 +116,8 @@ if (!doNotTrack) {
 <p>同样的，找到这行：</p>
 <p><code>Body_html = '&quot;.doSlash($Body_html).&quot;',</code></p>
 <p>在后面加上：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">Excerpt</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
-<span style="color:#a6e22e">Excerpt_html</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">Excerpt = <span style="color:#cd5555">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
+Excerpt_html = <span style="color:#cd5555">&#39;&#34;.doSlash($Excerpt).&#34;&#39;</span>,
 </code></pre></div><ul>
 <li><strong>不导入附件生成的页面</strong></li>
 </ul>

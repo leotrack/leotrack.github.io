@@ -139,7 +139,7 @@ if (!doNotTrack) {
 <p><code>$createKind = “icon”; // links : 文字链接 – icon : 图标链接  </code>
 文字链接示例：<em>Null</em>
 图标链接示例：<em>Null</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">$beforeall = “&lt;<span style="color:#f92672">strong</span>&gt;收藏&lt;/<span style="color:#f92672">strong</span>&gt; “; // 你想显示在所有书签前面的  
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">$beforeall = “&lt;<span style="color:#8b008b;font-weight:bold">strong</span>&gt;收藏&lt;/<span style="color:#8b008b;font-weight:bold">strong</span>&gt; “; // 你想显示在所有书签前面的  
 $beforeeach = ” [ &#34;; // 你想显示在每个书签前面的  
 $aftereach = &#34; ] “; // 你想显示在每个书签后面的  
 $afterall = “”; // 你想显示在所有书签后面的  
@@ -161,7 +161,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 </ol>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">function_exists</span>(<span style="color:#e6db74">&#39;add_bookmarks&#39;</span>)) { <span style="color:#a6e22e">add_bookmarks</span>(); } <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php <span style="color:#8b008b;font-weight:bold">if</span>(function_exists(<span style="color:#cd5555">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><ul>
 <li>我是放置在<em>single.php</em>中例如 <em>postmetadata</em> 前面的，仅供参考。</li>
 <li>如果你<strong>停用</strong>了该插件，可以将该代码移除。（因为使用了if语句，所以不移出也不会影响其他正常功能的）</li>
@@ -194,7 +194,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 <strong>Download</strong>:<a href="/uploads/add-bookmarks.zip" title="Download This Plugin">add-bookmarks.zip</a><br>
 <strong>Usage</strong>:1) Upload the <strong>folder</strong> to the <em>/wp-content/plugins/</em>.<br>
 2) Active it .Add</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">function_exists</span>(<span style="color:#e6db74">&#39;add_bookmarks&#39;</span>)) { <span style="color:#a6e22e">add_bookmarks</span>(); } <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php <span style="color:#8b008b;font-weight:bold">if</span>(function_exists(<span style="color:#cd5555">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>to where you want to put (I put it in <em>single.php</em> <strong>before</strong> <em>postmetadata</em>).<br>
 DONE!<br>
 3)If you want to Add Your Bookmarks,open <strong>add-bookmarks.php</strong> and config it in your Editor(as Editplus,Notepad++) in <strong>UTF-8</strong>.<br>
