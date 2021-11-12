@@ -1,10 +1,11 @@
-{{ partial "site-navigation.html" . }}
-<div class="md:max-w-xs  flex flex-col md:items-end">	
+<div class="md:max-w-xs  flex flex-col md:items-end">
+	{{ partial "site-navigation.html" . }}
+	<br /><br />
 	{{ partial "social-follow.html" . }}
 	<div class="text-sm text-gray-500 leading-tight a-gray">
-		<br><!-- Please don't remove the information of theme makers. -->
-		<i class="fas fa-paint-roller"></i>Life is Colorful, Just PAINT.<br>
-		<i class="fas fa-code-branch"></i>Theme with <a href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a>, Powered by <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a><br>
+		<br /><!-- Please don't remove the information of theme makers. -->
+		<i class="fas fa-paint-roller"></i>Life is Colorful, Just PAINT.<br />
+		<i class="fas fa-code-branch"></i>Theme with <a href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a>, Powered by <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a><br />
 		<!-- Because this project is under MIT licence. -->
 		<i class="fas fa-copyright"></i>2004-{{ now.Format "2006"}} &sect;{{ if .Site.Copyright }} {{ .Site.Copyright|safeHTML }} {{ else }} {{.Site.Title}} {{ end }}
 	</div>
