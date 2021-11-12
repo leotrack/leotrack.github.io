@@ -34,12 +34,12 @@
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
 ErrorDocument 500 /error.html  
 RewriteEngine on  
 RewriteCond %{HTTP_REFERER} !^$  
 RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
-RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;amp;&lt;/span&gt;[F]
+RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;amp;&lt;/span&gt;[F]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在下面的代码中，必须用您网站所用语言所对应的三位或四位数代码页编号来替换&amp;quot;您的网页所用代码页&amp;quot;。&lt;br&gt;

@@ -36,8 +36,8 @@
 &lt;p&gt;同样的，找到这行：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Body_html = &#39;&amp;quot;.doSlash($Body_html).&amp;quot;&#39;,&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在后面加上：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
-&lt;span style=&#34;color:#a6e22e&#34;&gt;Excerpt_html&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;Excerpt &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
+Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;&amp;#34;.doSlash($Excerpt).&amp;#34;&amp;#39;&lt;/span&gt;,
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;不导入附件生成的页面&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
