@@ -5,7 +5,7 @@ git init
 # 添加
 git add -A
 # 提交
-git commit -m deploy
+git commit -m "Deploy From Cloud Studio"
 # 强制推送到 GitLab 仓库的 master 分支
 git push -f git@gitlab.com:zhu8.net/main.git master
 # 结束
