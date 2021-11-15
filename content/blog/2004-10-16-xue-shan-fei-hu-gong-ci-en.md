@@ -1,7 +1,7 @@
 ---
 categories:
 - 景彡 | Vision
-date: "2004-10-17T10:54:16+08:00"
+date: "2004-10-16T20:54:16+08:00"
 tags:
 - 下载
 - 伍宇娟
@@ -10,7 +10,7 @@ tags:
 - 雪山飞狐
 - 音乐
 - 龚慈恩
-title: 《雪山飞狐》孟飞`龚慈恩`伍宇娟
+title: 《雪山飞狐》孟飞、龚慈恩、伍宇娟
 url: /blog/2004/10/xue-shan-fei-hu-gong-ci-en.html
 ---
 居然可以看了！两年前我几乎看不了！<span class="left">![雪山飞狐-封面][1]</span>

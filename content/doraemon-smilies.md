@@ -6,7 +6,10 @@ url: /project/doraemon-smilies.html
 shares: true
 comments: true
 enableReadingTime: false
+date: "2008-06-11T22:24:33+08:00"
 ---
+> *Doraemon Smilies For WordPress:该插件制作于2008年6月11日，并且一直没有继续维护，但是应该没有问题可以正常使用:)*
+> *This Plugin was made AT Wed Jun 11 22:24:33 2008,and not updated anymore,but it should work fine in any vision of WordPress :)*
 
 ## 介绍*Introduction*
 
