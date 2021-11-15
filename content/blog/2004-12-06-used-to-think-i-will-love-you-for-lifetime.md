@@ -6,8 +6,7 @@ tags:
 - Poem
 - 诗歌
 title: 曾经以为会爱你一辈子
-url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime
-.html
+url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html
 ---
 
 > 曾经以为你我会永远相随，但我没有想到爱是那么的辛苦。也许今生无法再牵你的手，但我想，我会记住属于我们的那段时光...

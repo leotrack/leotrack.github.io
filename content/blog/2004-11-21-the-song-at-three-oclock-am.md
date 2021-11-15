@@ -6,8 +6,7 @@ tags:
 - Poem
 - 诗歌
 title: 凌晨三点的歌谣
-url: /blog/2004/11/the-song-at-three-oclock-am
-.html
+url: /blog/2004/11/the-song-at-three-oclock-am.html
 ---
 谁这时还没睡，就不要睡了。  
 天很快就要明了。  

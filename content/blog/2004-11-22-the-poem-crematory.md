@@ -6,8 +6,7 @@ tags:
 - Poem
 - 诗歌
 title: 火葬场
-url: /blog/2004/11/the-poem-crematory
-.html
+url: /blog/2004/11/the-poem-crematory.html
 ---
 我们都曾无数次来过这里  
 来向亲人、朋友、领导、同事的遗体告别  
