@@ -171,7 +171,7 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
     <item>
       <title>我的WordPress插件列表</title>
       <link>/blog/2006/07/my-wordpress-plugins.html</link>
-      <pubDate>Sun, 09 Jul 2006 13:18:20 +0800</pubDate>
+      <pubDate>Sun, 09 Jul 2006 01:18:20 +0800</pubDate>
       
       <guid>/blog/2006/07/my-wordpress-plugins.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;

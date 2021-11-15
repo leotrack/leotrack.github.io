@@ -7,10 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
-    <lastBuildDate>Sun, 27 Jul 2014 13:23:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Nov 2021 22:58:19 +0800</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>追梦人、地铁、生活</title>
+      <link>/blog/2021/11/dream-catcher-metro-and-life.html</link>
+      <pubDate>Mon, 15 Nov 2021 22:58:19 +0800</pubDate>
+      
+      <guid>/blog/2021/11/dream-catcher-metro-and-life.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/wz.gif&#34; alt=&#34;2004年我的小网站的题图&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;题图：2004年，我的小网站的头图，由Web Archive存档&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;转眼，上一篇日志已经是2014年的事情了。这7年，我的人生已经发生了非常大的&lt;strong&gt;变化&lt;/strong&gt;，我有了两个孩子，我辗转了三个城市，此刻的我，正在中国城市建设的典范，上海，长宁区，3号线、4号线、10号线，三条地铁，在我左耳边的“虹桥路站” 不时的呼啸而过。
+而我的右耳边，罗大佑通过他二零二零八月的【&lt;strong&gt;宜花東鹿記&lt;/strong&gt;】一遍一遍的唱着他整整三十年前为了纪念&lt;em&gt;三毛&lt;/em&gt;而写下的那首《追梦人》。
+我是不是的跟唱一下。回忆一下。然后，通过使互联网有记忆的&lt;a href=&#34;https://web.archive.org/web/&#34;&gt;Wayback Machine&lt;/a&gt;。翻阅着我15年的各种小站的截图，非常荣幸，我的歪酷，我的各种用WordPress、Z-Blog、Movable Type，以及各个平台搭建的小站，它记录了很多的过往。
+本来想记录以下我这回重新折腾网站的记录，忽然发现，现在已经完全没有了给我留言的朋友们，没有可以串门的博客的博友们，大家都在为生计忙碌着，各自散落在世界的各端，看着15年前的各种留言，鲜活又陌生。&lt;/p&gt;
+&lt;p&gt;最后一段诗歌送给我自己吧，半首。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;span style=&#34;float:right&#34;&gt;-2021年11月15日，与魔都长宁安东小区XX栋501&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们最终都要在这里集合   当官的、经商的、做工的、务农的   富人、穷人、罪犯、妓女、朋友、仇人……   都要在同一个炉口排队&lt;br&gt;
+不分男女老幼、不分尊卑贵贱、不论级别、不论资格   不送人情、不走后门、不看尸下菜碟   不狗眼看尸低……&lt;br&gt;
+讲的只是先来后到，一律按规定排队买票   这些或胖或瘦 或俊或丑的肉体   连同附着在外面的皮尔卡丹西装、梦特娇衬衫&lt;br&gt;
+老人头皮鞋、伊利莎白超短裙、玛利莲梦露内衣   最后都变成了一把灰烬   那些无所依附的灵魂、思想、欲望&lt;br&gt;
+那些折磨了你一生的爱恨、情仇、名利   也被炉口的一阵风吹散了，所以   活着的人啊，你们还争什么&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;临沂邰筐——诗生活&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;完整的诗歌在这里：&lt;a href=&#34;/blog/2004/11/the-poem-crematory.html&#34;&gt;《火葬场》&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>使用BitBucket和FTPloy私有Jekyll源码</title>
@@ -2140,7 +2177,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     <item>
       <title>我的WordPress插件列表</title>
       <link>/blog/2006/07/my-wordpress-plugins.html</link>
-      <pubDate>Sun, 09 Jul 2006 13:18:20 +0800</pubDate>
+      <pubDate>Sun, 09 Jul 2006 01:18:20 +0800</pubDate>
       
       <guid>/blog/2006/07/my-wordpress-plugins.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
@@ -2227,7 +2264,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     <item>
       <title>世界杯——难得疯狂</title>
       <link>/blog/2006/06/worldcup-2006.html</link>
-      <pubDate>Sun, 11 Jun 2006 09:58:10 +0800</pubDate>
+      <pubDate>Sat, 10 Jun 2006 19:58:10 +0800</pubDate>
       
       <guid>/blog/2006/06/worldcup-2006.html</guid>
       <description>&lt;p&gt;![揭幕战德国对哥斯达黎加&amp;ndash;拉姆打进06世界杯首粒进球][1]昨夜压着一阵阵袭来的睡意，在我那十多平的破旧小屋里，几近裸身，坐在刚买的凉席上，四只眼睛紧盯着一个礼拜前买的14寸小彩电，开始了我的2006世界杯之旅。&lt;/p&gt;
@@ -2241,7 +2278,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     <item>
       <title>《1699·桃花扇》、钞票、石占明及其它</title>
       <link>/blog/2006/05/1699-the-peach-blossom-fan.html</link>
-      <pubDate>Fri, 19 May 2006 10:48:18 +0800</pubDate>
+      <pubDate>Thu, 18 May 2006 20:48:18 +0800</pubDate>
       
       <guid>/blog/2006/05/1699-the-peach-blossom-fan.html</guid>
       <description>&lt;p&gt;这个时候，南京的紫金大剧院正在上演着昆曲《1699·桃花扇》，票价似乎&lt;a href=&#34;http://culture.longhoo.net/news/userobject1ai497106.html&#34;&gt;很低&lt;/a&gt;，但我却只能坐在这，四处翻看着不同的新闻、旧闻，听着&lt;a href=&#34;http://www.wangfeng.com.cn/&#34;&gt;汪峰&lt;/a&gt;的老歌，来写上两个字。倒不是说我已然落魄得连最低20元的票价都出不起，确实是因为，我来南京，&lt;strong&gt;竟然还没拿过一分钱工资&lt;/strong&gt;。其实也没什么，就是我从常州来到南京，需要北京总公司批；而我这样一个无足轻重的小职位，也许人家根本没有放在心上。&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/peach-blossom-fan.jpg&#34; alt=&#34;昆曲&amp;ndash;桃花扇&#34; title=&#34;昆曲--桃花扇&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2263,7 +2300,7 @@ style=&#34;color: rgb(198, 10, 0);&#34;&gt;誓死捍卫你说话的权利！&lt;
     <item>
       <title>晚安南京</title>
       <link>/blog/2006/05/good-night-nanjing.html</link>
-      <pubDate>Thu, 18 May 2006 12:31:17 +0800</pubDate>
+      <pubDate>Wed, 17 May 2006 22:31:17 +0800</pubDate>
       
       <guid>/blog/2006/05/good-night-nanjing.html</guid>
       <description>&lt;p&gt;日子如流水，&lt;del&gt;&lt;a href=&#34;http://www.yangtse.com/dzbpd/zyxw/t20060517_82618.htm&#34;&gt;《又到一年毕业时》&lt;/a&gt;&lt;/del&gt;&lt;em&gt;（链接已失效）&lt;/em&gt;，转眼我来南京也有快两个月了，不知不觉我的Blog也停止了，虽然每天忙忙碌碌，却有时候忽然想起去年的&lt;a href=&#34;https://zhu8.net/blog/2005/05/for-the-forgetting-memories.html&#34; title=&#34;祝你一路顺风--为了忘却的纪念&#34;&gt;自己&lt;/a&gt;，去年的今天，我正在&lt;a href=&#34;http://www.gyctcm.edu.cn/&#34; title=&#34;贵阳中医学院&#34;&gt;学校&lt;/a&gt;附属一院里面，忙着踩气球，断然不会想到今天的我会在哪儿，而我那些曾经坐在一起的&lt;a href=&#34;/images/yifa.jpg&#34;&gt;兄弟姐妹们&lt;/a&gt;，如今又在哪儿，欢笑流泪、甘苦自知。我曾经以为我还有很长的路要走，曾经以为自己还是个孩子，却忽然在工作了之后，发现自己的路不知道在哪方，谈女朋友，很现实的东西：房子（&lt;a href=&#34;http://www.ehomeday.com/news/2005-11/20051121142410.htm&#34; title=&#34;从农村人到城里人18年难道就是为了买套房&#34;&gt;1&lt;/a&gt;）、（&lt;a href=&#34;http://economy.enorth.com.cn/system/2006/04/03/001271441.shtml&#34; title=&#34;南京房价高得离谱 每平方米叫价已纷纷超过万元&#34;&gt;2&lt;/a&gt;）就摆在我的面前，看来我不得不单身好久，因为人家跟我讲：现在的女生都很&lt;a href=&#34;http://sh.house.sina.com.cn/focus/20051025/7.html&#34;&gt;现实&lt;/a&gt;。
@@ -2305,7 +2342,7 @@ style=&#34;color: rgb(198, 10, 0);&#34;&gt;誓死捍卫你说话的权利！&lt;
     <item>
       <title>真实的幻梦</title>
       <link>/blog/2006/02/ture-dream.html</link>
-      <pubDate>Mon, 06 Feb 2006 21:06:06 +0800</pubDate>
+      <pubDate>Mon, 06 Feb 2006 09:06:06 +0800</pubDate>
       
       <guid>/blog/2006/02/ture-dream.html</guid>
       <description>&lt;p&gt;&lt;em&gt;原来作诗这么简单&lt;/em&gt;:em07:&lt;/p&gt;
@@ -2334,7 +2371,7 @@ style=&#34;color: rgb(198, 10, 0);&#34;&gt;誓死捍卫你说话的权利！&lt;
     <item>
       <title>我随时随地在等待</title>
       <link>/blog/2005/12/waiting-any-time.html</link>
-      <pubDate>Thu, 29 Dec 2005 04:41:28 +0800</pubDate>
+      <pubDate>Wed, 28 Dec 2005 00:41:28 +0800</pubDate>
       
       <guid>/blog/2005/12/waiting-any-time.html</guid>
       <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/libai.jpg&#34; alt=&#34;李白&amp;mdash;-将进酒&#34; title=&#34;李白----将进酒&#34;&gt;&lt;/span&gt;今天去了苏州，参加平安保险的书面考试，接下来就是等面试了。也不知道什么原因，现在没有兴趣去写Blog了，可能是因为自身的不确定吧！&lt;/p&gt;
@@ -2396,7 +2433,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>国家公务员考试——结束</title>
       <link>/blog/2005/11/government-workers-exam-over.html</link>
-      <pubDate>Sun, 27 Nov 2005 18:11:27 +0800</pubDate>
+      <pubDate>Sat, 26 Nov 2005 22:11:27 +0800</pubDate>
       
       <guid>/blog/2005/11/government-workers-exam-over.html</guid>
       <description>&lt;p&gt;石头城晃荡二日，廿五日害同学去通宵（他宿舍只有张单人床），廿六日考试，早晨《行政能力测验》，数字推理忒复杂（或是我反应不过来），耗时甚长，以致后15题没时间答了，遂于3分钟内涂鸦成功，估计—-惨。&lt;/p&gt;
@@ -2409,7 +2446,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>只是朱颜改</title>
       <link>/blog/2005/11/the-dog-ages.html</link>
-      <pubDate>Tue, 01 Nov 2005 18:11:01 +0800</pubDate>
+      <pubDate>Mon, 31 Oct 2005 22:11:01 +0800</pubDate>
       
       <guid>/blog/2005/11/the-dog-ages.html</guid>
       <description>&lt;p&gt;曾经我天真的想，我要等到我工作了以后，来好好的怀念一下我的初中和高中，那些无暇阴暗的岁月。因为我以为到那时候，我才能真正告别我的青春时代，现在仍可以如 [&lt;strong&gt;S&lt;/strong&gt;][1] 所说的那样：&lt;em&gt;&lt;strong&gt;好在仍然可以大言不惭说一句”还年轻”。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -2452,7 +2489,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>庄周又化蝶</title>
       <link>/blog/2005/10/in-the-dream-of-butterfly.html</link>
-      <pubDate>Sat, 15 Oct 2005 22:21:15 +0800</pubDate>
+      <pubDate>Sat, 15 Oct 2005 00:21:15 +0800</pubDate>
       
       <guid>/blog/2005/10/in-the-dream-of-butterfly.html</guid>
       <description>&lt;p&gt;忙活了一天，总算把国家公务员报名完成了，也通过了资格审查。就等传上相关东西之后考试了。不过，最要命的是，书刚买来一天，看来要很多的努力和很多的运气才有希望&lt;strong&gt;达线&lt;/strong&gt;了，加油！Zhu8，有点苍白罢。&lt;/p&gt;
@@ -2501,7 +2538,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>想念，在不同的时刻来临</title>
       <link>/blog/2005/09/miss-any-time.html</link>
-      <pubDate>Fri, 16 Sep 2005 06:10:15 +0800</pubDate>
+      <pubDate>Thu, 15 Sep 2005 16:10:15 +0800</pubDate>
       
       <guid>/blog/2005/09/miss-any-time.html</guid>
       <description>&lt;p&gt;昨晚，忽然就梦见了&lt;a href=&#34;http://alumni.chinaren.com/class/class_index.jsp?classuuid=2917034545012212546&#34; title=&#34;永远的医法01&#34;&gt;好些人&lt;/a&gt;，所以我今早就给Fish发去短信，得知她已经在我们当年军训的地方带学生了，只不过待遇不一样了。仿佛还是昨日的事，眼前却是物是人非了。而我们，也已经天个一方，各自算计着不知道是否是以后自己该走的路了，想念猛然间似乎强烈了起来，耳边想起&lt;a href=&#34;http://chenjun.com/old/post/Shunza_Dear_Friend.html&#34; title=&#34;顺子《Dear Friend》&#34;&gt;顺子&lt;/a&gt;的歌：&lt;/p&gt;
@@ -2527,7 +2564,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>在路上</title>
       <link>/blog/2005/08/on-the-way.html</link>
-      <pubDate>Tue, 16 Aug 2005 09:39:15 +0800</pubDate>
+      <pubDate>Tue, 16 Aug 2005 19:39:15 +0800</pubDate>
       
       <guid>/blog/2005/08/on-the-way.html</guid>
       <description>&lt;p&gt;今天的事就是办档案和户籍了。先是在常州火车站，等2002次车。本是8点39分到的，结果要晚点至10点才到，心里一不舒服，就跑去汽车站了，结果，豪华VOLVO，价格自然上去了1倍。一到南京已经是中午11点半了。摇到一家KFC，要了个新出的新奥尔良鸡腿堡套餐：19文。饕餮完了赶快去找车，在网上查到：&lt;/p&gt;
@@ -2547,7 +2584,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>纪念我即将逝去的大学</title>
       <link>/blog/2005/06/commemorate-my-college-life.html</link>
-      <pubDate>Mon, 27 Jun 2005 22:12:27 +0800</pubDate>
+      <pubDate>Mon, 27 Jun 2005 08:12:27 +0800</pubDate>
       
       <guid>/blog/2005/06/commemorate-my-college-life.html</guid>
       <description>&lt;p&gt;大学四年，似乎眨眼间，便已然走到了尽头，现在似乎没什么想法，就好像浑浑噩噩的睡过了四年，一觉醒来，便忘却了曾经做过的那些梦了。身边的同学，都在忙着工作的事情，似乎只有我，像个闲人似的，天天就在玩。&lt;/p&gt;
@@ -2569,7 +2606,7 @@ I just can’t be your friend&lt;/p&gt;
     <item>
       <title>祝你一路顺风—为了忘却的纪念</title>
       <link>/blog/2005/05/for-the-forgetting-memories.html</link>
-      <pubDate>Wed, 18 May 2005 14:18:18 +0800</pubDate>
+      <pubDate>Thu, 19 May 2005 12:18:18 +0800</pubDate>
       
       <guid>/blog/2005/05/for-the-forgetting-memories.html</guid>
       <description>&lt;p&gt;我一向不屑于表现我很喜欢我的大学，以及我的大学生活的。我一直固执的认为，我不喜欢、甚至于厌烦我这4年来的龌龊大学生活——因为于我，就像是一段真空，空空而无物——似乎什么都没有经历，我的大学生涯就这样结束了。&lt;/p&gt;
@@ -2602,7 +2639,7 @@ Oh ~ Friend　我对你的想念&lt;br&gt;
     <item>
       <title>《罗生门》——透视人性</title>
       <link>/blog/2005/04/rashomon.html</link>
-      <pubDate>Fri, 29 Apr 2005 09:02:28 +0800</pubDate>
+      <pubDate>Thu, 28 Apr 2005 19:02:28 +0800</pubDate>
       
       <guid>/blog/2005/04/rashomon.html</guid>
       <description>&lt;blockquote&gt;
@@ -2633,7 +2670,7 @@ Oh ~ Friend　我对你的想念&lt;br&gt;
     <item>
       <title>风飞飞_追梦人、萨冈、孤独</title>
       <link>/blog/2005/03/lonely-dream-catcher-and-francoise-sagan.html</link>
-      <pubDate>Wed, 16 Mar 2005 11:12:15 +0800</pubDate>
+      <pubDate>Tue, 15 Mar 2005 23:12:15 +0800</pubDate>
       
       <guid>/blog/2005/03/lonely-dream-catcher-and-francoise-sagan.html</guid>
       <description>&lt;p&gt;忽然间伤感莫名，就在这快毕业而没毕业的当口。想到未来，那不确定的未来；就不免回忆起那无忧无虑的中小学的时光。&lt;/p&gt;
@@ -2656,7 +2693,7 @@ Oh ~ Friend　我对你的想念&lt;br&gt;
     <item>
       <title>讲政治别讲法律</title>
       <link>/blog/2005/01/politics-no-law.html</link>
-      <pubDate>Sun, 16 Jan 2005 09:50:15 +0800</pubDate>
+      <pubDate>Sat, 15 Jan 2005 20:23:15 +0800</pubDate>
       
       <guid>/blog/2005/01/politics-no-law.html</guid>
       <description>&lt;p&gt;这些天，因为天气冷，再加上带我的老师去学习，整个办案的事都落到了我头上，于是就以公安局为家，10天没回来过了。&lt;/p&gt;
@@ -2698,7 +2735,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     <item>
       <title>他和她的故事</title>
       <link>/blog/2005/01/just-a-story.html</link>
-      <pubDate>Tue, 04 Jan 2005 04:40:03 +0800</pubDate>
+      <pubDate>Mon, 03 Jan 2005 16:40:03 +0800</pubDate>
       
       <guid>/blog/2005/01/just-a-story.html</guid>
       <description>&lt;p&gt;&lt;em&gt;竟然是去年的同一时间写的……&lt;/em&gt;–2006.1.3 By Zhu8&lt;/p&gt;
@@ -2749,9 +2786,9 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     </item>
     
     <item>
-      <title>2期`艾瑞克.霍布斯鲍姆`极端的年代</title>
+      <title>万象2期、艾瑞克.霍布斯鲍姆、极端的年代</title>
       <link>/blog/2004/12/panorama-2nd.html</link>
-      <pubDate>Wed, 08 Dec 2004 10:10:07 +0800</pubDate>
+      <pubDate>Tue, 07 Dec 2004 22:10:07 +0800</pubDate>
       
       <guid>/blog/2004/12/panorama-2nd.html</guid>
       <description>&lt;p&gt;今日去书店，看到我2月没买到的2期万象，遂立刻买回来翻了。&lt;/p&gt;
@@ -2767,9 +2804,148 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     </item>
     
     <item>
+      <title>曾经以为会爱你一辈子</title>
+      <link>/blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html</link>
+      <pubDate>Mon, 06 Dec 2004 19:12:19 +0800</pubDate>
+      
+      <guid>/blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;曾经以为你我会永远相随，但我没有想到爱是那么的辛苦。也许今生无法再牵你的手，但我想，我会记住属于我们的那段时光&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我都忘记曾经是怎么爱上你的，&lt;/p&gt;
+&lt;p&gt;对着你的时候心里充满了幸福，&lt;/p&gt;
+&lt;p&gt;亲手描绘过属于我们自己的天空，&lt;/p&gt;
+&lt;p&gt;但日记却是一片空白，&lt;/p&gt;
+&lt;p&gt;我不敢回忆，&lt;/p&gt;
+&lt;p&gt;回忆总是太美，&lt;/p&gt;
+&lt;p&gt;回忆总是带点伤感。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349453.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;总把爱想得太美，&lt;/p&gt;
+&lt;p&gt;当爱情宣告完结时，&lt;/p&gt;
+&lt;p&gt;爱情真的是不在乎天长地久,只愿曾经拥有吗?&lt;/p&gt;
+&lt;p&gt;我以为我们能长相厮守。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349454.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;爱是一种感觉，你知道的，&lt;/p&gt;
+&lt;p&gt;我不知道你是否爱过我，&lt;/p&gt;
+&lt;p&gt;也许我们在一起的日子很短，&lt;/p&gt;
+&lt;p&gt;但足以让我铭记一辈子。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349455.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我知道我们根本不可能，&lt;/p&gt;
+&lt;p&gt;我们根本不同，&lt;/p&gt;
+&lt;p&gt;我们本来就是两个世界不同的人，&lt;/p&gt;
+&lt;p&gt;你有你的追求，&lt;/p&gt;
+&lt;p&gt;我有我的梦想。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349456.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;再拼接的完整，&lt;/p&gt;
+&lt;p&gt;也无法补缀细密的伤口。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349457.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我们的相遇，&lt;/p&gt;
+&lt;p&gt;即使不是错误，&lt;/p&gt;
+&lt;p&gt;也可能只是，&lt;/p&gt;
+&lt;p&gt;命运的一个定数&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;就象这条铁路线 ，&lt;/p&gt;
+&lt;p&gt;也许永远没有尽头，&lt;/p&gt;
+&lt;p&gt;两条平行的线也永远不可能交汇在一起。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349458.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我们没有过多地料到，&lt;/p&gt;
+&lt;p&gt;伤害一个人要比挽回一颗心要容易的多；&lt;/p&gt;
+&lt;p&gt;于是往往在冲动的话语脱口而出后,&lt;/p&gt;
+&lt;p&gt;纵使会浮掠起一丝悔意。&lt;br&gt;
+&lt;img src=&#34;http://photo.sohu.com/20041206/Img223349459.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果我们年轻，&lt;/p&gt;
+&lt;p&gt;还有改过的时间，&lt;/p&gt;
+&lt;p&gt;如果在同一个地方跌到两次是愚蠢和可耻的，&lt;/p&gt;
+&lt;p&gt;等我爬起,&lt;/p&gt;
+&lt;p&gt;岁月却在提醒我，&lt;/p&gt;
+&lt;p&gt;我们已不再年轻&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;呼,我的大学也快在匆匆的脚步里迈向了结尾.而匆匆的爱恋也已成往事,如风一般的消逝在寒风之中.仅以此纪念我的青春&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>火葬场</title>
+      <link>/blog/2004/11/the-poem-crematory.html</link>
+      <pubDate>Mon, 22 Nov 2004 01:02:19 +0800</pubDate>
+      
+      <guid>/blog/2004/11/the-poem-crematory.html</guid>
+      <description>&lt;p&gt;我们都曾无数次来过这里&lt;br&gt;
+来向亲人、朋友、领导、同事的遗体告别&lt;br&gt;
+我们最后都将来到这里&lt;br&gt;
+躺在这里&lt;br&gt;
+&amp;ndash;这才是我们真正的终点站&lt;br&gt;
+一艘艘肉体的航船，最后都驶向&lt;br&gt;
+那一片大火的港湾&lt;/p&gt;
+&lt;p&gt;我们最终都要在这里集合&lt;br&gt;
+当官的、经商的、做工的、务农的&lt;br&gt;
+富人、穷人、罪犯、妓女、朋友、仇人……&lt;br&gt;
+都要在同一个炉口排队&lt;br&gt;
+不分男女老幼、不分尊卑贵贱、不论级别、不论资格&lt;br&gt;
+不送人情、不走后门、不看尸下菜碟&lt;br&gt;
+不狗眼看尸低……&lt;br&gt;
+讲的只是先来后到，一律按规定排队买票&lt;br&gt;
+这些或胖或瘦 或俊或丑的肉体&lt;br&gt;
+连同附着在外面的皮尔卡丹西装、梦特娇衬衫&lt;br&gt;
+老人头皮鞋、伊利莎白超短裙、玛利莲梦露内衣&lt;br&gt;
+最后都变成了一把灰烬&lt;br&gt;
+那些无所依附的灵魂、思想、欲望&lt;br&gt;
+那些折磨了你一生的爱恨、情仇、名利&lt;br&gt;
+也被炉口的一阵风吹散了，所以&lt;br&gt;
+活着的人啊，你们还争什么&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;临沂邰筐——诗生活&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>凌晨三点的歌谣</title>
+      <link>/blog/2004/11/the-song-at-three-oclock-am.html</link>
+      <pubDate>Sun, 21 Nov 2004 23:05:19 +0800</pubDate>
+      
+      <guid>/blog/2004/11/the-song-at-three-oclock-am.html</guid>
+      <description>&lt;p&gt;谁这时还没睡，就不要睡了。&lt;br&gt;
+天很快就要明了。&lt;br&gt;
+你可以到外面走一走，难得的好空气，&lt;br&gt;
+你可以比平时多吸一些。&lt;br&gt;
+你顺着平安路朝东走吧。&lt;br&gt;
+你最先遇到的人，是几个勤劳的人。&lt;br&gt;
+他们对着几片落叶挥舞着大扫帚，&lt;br&gt;
+他们一锨一锨清理着路边的垃圾，&lt;br&gt;
+他们哼着歌儿向前走，&lt;br&gt;
+他们与这座城市的肮脏誓不两立。&lt;br&gt;
+你接着还会遇到一个诗人。&lt;br&gt;
+他踱着步子，像一个赫赫帝王。&lt;br&gt;
+他刚刚完成一首惊世之作，&lt;br&gt;
+十年后将被选入一个国家的课本，&lt;br&gt;
+三十年后将被译成外文，引起纽约纸贵，&lt;br&gt;
+六十年后将被刻上他自己的墓碑……&lt;br&gt;
+现在的诗人在黑暗中向前走着，在冥想中慢慢回味。&lt;br&gt;
+迎面走来一群女人，她们是凯旋歌厅收工的小姐，&lt;br&gt;
+你在和她们擦肩而过的瞬间，&lt;br&gt;
+会听到她们的几声呵欠，&lt;br&gt;
+会看到一张张因熬夜而苍白模糊的脸。&lt;br&gt;
+你接着朝东走，就会走到沂蒙路口。&lt;br&gt;
+路北的沂州糁馆早就开门了，&lt;br&gt;
+小伙计已在门前摆好了桌子、板凳，&lt;br&gt;
+熬糁的老师傅，正向糁锅里撒着生姜和胡椒面。&lt;br&gt;
+他们最后都要在一张餐桌上碰面：&lt;br&gt;
+一个诗人、几个环卫工人、一群歌厅小姐，&lt;br&gt;
+像一家人，围着一张桌子吃早餐。&lt;br&gt;
+小姐们旁若无人地计算着夜间的收入，&lt;br&gt;
+其间，某个小姐递给诗人一个微笑，&lt;br&gt;
+递给环卫工一张餐巾。&lt;br&gt;
+这一和睦场景持续了大约十五分钟，&lt;br&gt;
+然后各付各钱，各自走散。&lt;br&gt;
+只剩下一桌子空碗，陷入了黎明前最后的黑暗。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>再见，灵素……</title>
       <link>/blog/2004/10/bye-bye-ling-su.html</link>
-      <pubDate>Tue, 19 Oct 2004 10:23:18 +0800</pubDate>
+      <pubDate>Mon, 18 Oct 2004 20:23:18 +0800</pubDate>
       
       <guid>/blog/2004/10/bye-bye-ling-su.html</guid>
       <description>&lt;p&gt;今日，看完了23，24两集，就让时间停滞在第25集罢。因为，即使他们的故事再吸引我，再令我伤感，我也只能停止了。因为，现在不是在清朝，我不是胡斐，也没有一个程灵素，袁紫衣，甚至苗若兰，为了我伤神。我需要面对的是现实，是那越来越近的考试，是那越压越紧的未来。看到24集结束，我才知道原来袁是想成全斐和素，就让他们停在这吧，在谁也没有伤害谁之前。以后，我会重新看的，我会买下一套碟（如果还能买到的话），然后慢慢地，慢慢地，跟着他们一起去追梦吧！现在，该追的是自己的梦。&lt;/p&gt;
@@ -2782,7 +2958,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     <item>
       <title>《雪山飞狐》今日观感</title>
       <link>/blog/2004/10/xue-shan-fei-hu-today-feeling.html</link>
-      <pubDate>Mon, 18 Oct 2004 22:09:18 +0800</pubDate>
+      <pubDate>Mon, 18 Oct 2004 08:09:18 +0800</pubDate>
       
       <guid>/blog/2004/10/xue-shan-fei-hu-today-feeling.html</guid>
       <description>&lt;p&gt;昨晚和今晚看了18集，现在已经看到23集了。&lt;/p&gt;
@@ -2795,9 +2971,9 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     </item>
     
     <item>
-      <title>《雪山飞狐》孟飞`龚慈恩`伍宇娟</title>
+      <title>《雪山飞狐》孟飞、龚慈恩、伍宇娟</title>
       <link>/blog/2004/10/xue-shan-fei-hu-gong-ci-en.html</link>
-      <pubDate>Sun, 17 Oct 2004 10:54:16 +0800</pubDate>
+      <pubDate>Sat, 16 Oct 2004 20:54:16 +0800</pubDate>
       
       <guid>/blog/2004/10/xue-shan-fei-hu-gong-ci-en.html</guid>
       <description>&lt;p&gt;居然可以看了！两年前我几乎看不了！&lt;span class=&#34;left&#34;&gt;&lt;img src=&#34;/images/xueshanfeihu-logo.jpg&#34; alt=&#34;雪山飞狐-封面&#34; title=&#34;雪山飞狐-封面&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2937,7 +3113,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     <item>
       <title>在雨中</title>
       <link>/blog/2004/10/in-the-rain.html</link>
-      <pubDate>Thu, 14 Oct 2004 02:05:13 +0800</pubDate>
+      <pubDate>Wed, 13 Oct 2004 12:05:13 +0800</pubDate>
       
       <guid>/blog/2004/10/in-the-rain.html</guid>
       <description>&lt;p&gt;今日微寒，中雨。&lt;/p&gt;
@@ -2965,7 +3141,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     <item>
       <title>梦里花落。。</title>
       <link>/blog/2004/10/falling-dreams.html</link>
-      <pubDate>Tue, 05 Oct 2004 05:15:04 +0800</pubDate>
+      <pubDate>Mon, 04 Oct 2004 15:15:04 +0800</pubDate>
       
       <guid>/blog/2004/10/falling-dreams.html</guid>
       <description>&lt;p&gt;今晨4点，忽然醒来，CD还开着，里面的碟是&lt;strong&gt;老歌150首&lt;/strong&gt;。放着的正是梁雁翎的《像雾像雨又像风》，转身乱按了一通CD，翻身准备继续睡。&lt;/p&gt;
@@ -2981,9 +3157,33 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     </item>
     
     <item>
+      <title>由简入繁易……</title>
+      <link>/blog/2004/09/from-simple-to-complex-so-easy.html</link>
+      <pubDate>Mon, 27 Sep 2004 22:19:18 +0800</pubDate>
+      
+      <guid>/blog/2004/09/from-simple-to-complex-so-easy.html</guid>
+      <description>&lt;p&gt;近日不知怎地，常常会觉得心里虚无莫名，考研已经报名了，但心深处的感觉，软软的，象那么一坨海绵，想用力捶打上去，却无论如何使不上力了。这个部落格不知怎么，好像几位都因为两天的无缘无故上不去，仿佛世界里失去了某个东西，竟惶恐不安起来。&lt;br&gt;
+在不知某人的部落格里，链到了高二的语文老师：&lt;a href=&#34;http://feiyuwen.blogchina.com/&#34;&gt;王雷老师的BLOG&lt;/a&gt;里去了，看到他对教育，特别是语文教育的近乎鄙夷的文字，不禁要细细想想，这些年来，我真正，为了自己，以及未来，是否都在为它朝着“+”的方向行走？我的所谓考研“梦”，是否仅仅为了一个不甘心而已？&lt;br&gt;
+头脑里跌跌撞撞的冲出一串记忆来，关于朋友的，关于昔日恋人的，关于我寞落的大学生活的。我的心灵中，何时何日生生多出来这么多东西来？&lt;br&gt;
+坐在网吧里，通宵的人，已经开始来“上班”了。&lt;br&gt;
+躺在宿舍的时候，一位已经时常一起玩游戏的同学，说实话，他脑瓜蛮好使的，但常常向我抱怨：在“这样一个充满堕落与颓废的校园里”（原语），他却提不起哪怕一丁点学习的劲头来。&lt;br&gt;
+其实，我自己也知道，我现在所在的，是怎样的一所学校，学校里面是肥头油脑的领导，系里面是靠拍马屁爬上来竟然明年能带研究生的系主任，以及懦弱的没有自己一点主见的辅导员。而仅仅60人不到的班级里面，竟然就为了搞跨那个班长，弹劾那个委员弄的你死我活，一盘散沙。或许，这些话里面有我的片面之词吧。但无论如何，我已经陷进或者说已经无意地去适应这样一个环境，并渐渐让自己变的麻木和明哲保身。&lt;br&gt;
+曾经在高中无限向往的，大一踌躇满志的，美好的大学，就剩下9个月了，并且是无觉珍贵的9个月，一班同学，竟还如以往一般，各人自扫门前雪。&lt;br&gt;
+而自己，竟也是这班中如此的一员。&lt;br&gt;
+由此才想到，由简入繁易，由繁入简难。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;（P.S：将友情链接改的简单了，原来的看上去稍显繁缛）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;（又及：明天是中秋了，希望爸爸妈妈弟弟永远平安，还有爷爷奶奶婆婆，以及我自己，还有所有曾经关心过和我关心的朋友们）&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>两年前ChinaRen上的日记</title>
       <link>/blog/2004/03/diary-on-chinaren-two-years-ago.html</link>
-      <pubDate>Fri, 19 Mar 2004 04:42:18 +0800</pubDate>
+      <pubDate>Fri, 19 Mar 2004 12:42:18 +0800</pubDate>
       
       <guid>/blog/2004/03/diary-on-chinaren-two-years-ago.html</guid>
       <description>&lt;h2 id=&#34;第一篇-自以为清醒的我&#34;&gt;第一篇 &lt;strong&gt;自以为清醒的我&lt;/strong&gt;&lt;/h2&gt;
@@ -3031,7 +3231,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
     <item>
       <title>第一篇：留声机</title>
       <link>/blog/2004/03/gramophone.html</link>
-      <pubDate>Fri, 19 Mar 2004 04:41:54 +0800</pubDate>
+      <pubDate>Fri, 19 Mar 2004 12:41:54 +0800</pubDate>
       
       <guid>/blog/2004/03/gramophone.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;此文的内容已经不再重要；&lt;/strong&gt;&lt;/p&gt;

@@ -6,8 +6,7 @@ tags:
 - 日记
 - 回忆
 title: 追梦人、地铁、生活
-url: /blog/2021/11/dream-catcher-metro-and-life
-.html
+url: /blog/2021/11/dream-catcher-metro-and-life.html
 featured_image: /images/wz.gif
 description: 转眼，上一篇日志已经是2014年的事情了。这7年，我的人生已经发生了非常大的**变化**，我有了两个孩子，我辗转了三个城市，此刻的我，正在中国城市建设的典范，上海，长宁区，3号线、4号线、10号线，三条地铁，在我左耳边的“虹桥路站” 不时的呼啸而过。
 ---
