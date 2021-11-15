@@ -7,9 +7,7 @@
 	{{/*  {{ if   .Description}}{{ .Description }}{{else}}{{ .Summary }}{{end}}
 </div> */}}
 	{{ with .Description }}
-	<div class="font-serif text-gray-600 font-light pt-1">
-		{{ .}}</div>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4945528698886553"
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4945528698886553"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -19,7 +17,10 @@
      data-ad-slot="2174653532"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>{{ end }}
+</script>
+	<div class="font-serif text-gray-600 font-light pt-1">
+		{{ .}}</div>
+		{{ end }}
 	<div class="flex flex-wrap justify-between pt-1">
 		{{- partial "tags.html" . -}}
 		<time class="text-eucalyptus-500 md:text-right md:flex-grow font-light"
