@@ -8,12 +8,16 @@
 </article>
 <div>
 	<section>
-		{{ range $key, $value := .Data.Terms }}
+	{{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $name := .Name }}
+    {{- $count := .Count }}
+    {{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
 		<section>
 		<hr class="p-0 my-4" />
 			<div class="clearfix">
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
-					<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"> {{ $key | capfirst }} </a>
+					<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"> {{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
 				</span>
 				{{$count:=len ( first $pageCount $value.Pages ) }}
 				{{ range $k,$v:=( first $pageCount $value.Pages ) }}
