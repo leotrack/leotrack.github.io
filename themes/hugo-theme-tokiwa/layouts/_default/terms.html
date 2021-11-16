@@ -13,7 +13,7 @@
 		<hr class="p-0 my-4" />
 			<div class="clearfix">
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
-					<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"> {{ $value.Name }} </a>
+					<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"> {{ .Title }} </a>
 				</span>
 				{{$count:=len ( first $pageCount $value.Pages ) }}
 				{{ range $k,$v:=( first $pageCount $value.Pages ) }}
