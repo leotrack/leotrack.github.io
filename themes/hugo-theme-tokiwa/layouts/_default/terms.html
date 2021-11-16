@@ -10,17 +10,17 @@
 	<section>
 		<section>
 		<hr class="p-0 my-4" />
-			<div class="clearfix">
-			{{- $type := .Type }}
-			{{- range $key, $value := .Data.Terms.Alphabetical }}
-			{{- $name := .Name }}
-			{{- $count := .Count }}
-			{{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}	
+			<div class="clearfix">	
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
+				{{- $type := .Type }}
+				{{- range $key, $value := .Data.Terms.Alphabetical }}
+				{{- $name := .Name }}
+				{{- $count := .Count }}
+				{{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
 					<a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+				{{- end }}
+				{{- end }}
 				</span>
-			{{- end }}
-			{{- end }}
 				{{ range $key, $value := .Data.Terms }}
 				{{$count:=len ( first $pageCount $value.Pages ) }}
 				{{ range $k,$v:=( first $pageCount $value.Pages ) }}
