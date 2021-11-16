@@ -1,12 +1,21 @@
 {{ $count := len .Site.Social}}
 <div class="flex flex-wrap-reverse md:justify-end content-end md:content-start justify-start items-start {{if gt $count 4}}md:flex-col{{end}}  max-h-16">
-	{{ range $key,$value:=.Site.Social }}
-	<a href='{{$value}}' target="_blank" class="{{- $key}} icon pl-1 text-eucalyptus-400 hover:text-java-400" title="View My {{$key}}" rel="noopener"
-		aria-label="follow on {{$key}}——Opens in a new window">
-		{{/*  <object type="image/svg+xml" data='{{ relURL (printf "%s%s%s" "svg/" $key ".svg") }}' class="w-12 h-12
-		text-gray-200"></object> */}}
-		<div class="fill-current h-8 w-8">
-			{{ partial (printf "%s%s%s" "svg/" $key "-line.svg") . }}
-		</div>
-	</a> {{ end }}
+  {{ with .Site.Params.social.twitter }}
+  <a href="https://twitter.com/{{.}}" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.facebook }}
+  <a href="https://facebook.com/{{.}}" aria-label="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.github }}
+  <a href="https://github.com/{{.}}" aria-label="Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.instagram }}
+  <a href="https://instagram.com/{{.}}" aria-label="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.gitlab}}
+  <a href="https://gitlab.com/{{.}}" aria-label="Gitlab" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.tumblr}}
+  <a href="https://{{.}}.tumblr.com" aria-label="Tumblr" target="_blank"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+  {{ end }}
 </div>

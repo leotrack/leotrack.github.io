@@ -1,4 +1,4 @@
-baseURL = "https:/zhu8.net/"
+baseURL = "https://zhu8.net/"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh"
 title = "猪八的网：浮生志"
@@ -100,12 +100,12 @@ style = "github"
 	weight = 7
 	pre = "<i class=\"fas fa-rss\"></i>"
 [social]
-github = "https://github.com/zhu8"
-gitlab = "https://gitlab.com/zhu8.net"
-twitter = "https://twitter.com/5CJ"
-weibo = "https://weibo.com/zhu8"
-douban = "https://douban.com/people/zhu8"
-tumblr = "https://zhu8.tumblr.com/"
+github = "zhu8"
+gitlab = "zhu8.net"
+twitter = "5CJ"
+weibo = "zhu8"
+tumblr = "zhu8"
+instagram = "5CJ"
 # any icon in layouts/partials/svg can be used by the name without the "-line.svg"
 
 [outputs]
