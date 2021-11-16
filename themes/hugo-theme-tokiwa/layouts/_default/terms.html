@@ -17,7 +17,7 @@
 			{{- $count := .Count }}
 			{{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}	
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
-					<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"> {{ .Data.Term }} </a>
+					<a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
 				</span>
 			{{- end }}
 			{{- end }}
