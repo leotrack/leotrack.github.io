@@ -100,7 +100,7 @@ style = "github"
 	weight = 7
 	pre = "<i class=\"fas fa-rss\"></i>"
 
-[social]
+[params.social]
 Github = "zhu8"
 Gitlab = "zhu8.net"
 Twitter = "5CJ"
@@ -108,7 +108,6 @@ Weibo = "zhu8"
 Tumblr = "zhu8"
 Instagram = "5CJ"
 Facebook = "ichenjun"
-# any icon in layouts/partials/svg can be used by the name without the "-line.svg"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]

@@ -87,6 +87,25 @@ fa-info {
   color: #4a154b;
 }
 
-.post-body p {
+.article p {
   text-indent: 2rem;
+}
+
+#twitter-ic:hover,#twitter-ic:focus {
+  color: #00aced !important;
+}
+#rss-ic:hover,#rss-ic:focus {
+  color: #ff9933 !important;
+}
+#google-ic:hover,#google-ic:focus {
+  color: #dd4b39 !important;
+}
+#weibo-ic:hover,#weibo-ic:focus {
+  color: #E6162D !important;
+}
+#facebook-ic:hover,#facebook-ic:focus {
+  color: #3B5998 !important;
+}
+#delicious-ic:hover,#delicious-ic:focus {
+  color: #3271CB !important;
 }
