@@ -11,6 +11,7 @@
 		<section class="pin">
 		<hr class="p-0 my-4" />
 			<div class="clearfix">
+				{{ range $key, $value := .Data.Terms }}
 				{{ range .Data.Terms.Alphabetical }}
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
 					<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> <sup><strong><sup>{{ .Count }}</sup></strong></sup>
