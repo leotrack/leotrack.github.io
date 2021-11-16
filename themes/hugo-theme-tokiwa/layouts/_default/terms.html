@@ -13,9 +13,7 @@
 		<hr class="p-0 my-4" />
 			<div class="clearfix">	
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
-					{{ range .Data.Terms.Alphabetical }}
 					<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
-					{{ end }}
 				</span>
 				{{$count:=len ( first $pageCount $value.Pages ) }}
 				{{ range $k,$v:=( first $pageCount $value.Pages ) }}
