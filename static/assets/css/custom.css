@@ -1,5 +1,6 @@
 .fa,
-.fas {
+.fas,
+.fab {
   border-left: 3px solid transparent !important;
   border-right: 3px solid transparent !important;
 }
