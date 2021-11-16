@@ -4,8 +4,8 @@ categories:
 - 石马 | Code
 date: "2014-07-04T23:23:44+08:00"
 tags:
-- jekyll
-- github
+- Jekyll
+- Github
 - Markdown
 - Stackedit
 featured_image: /images/vector_jerry_8ball_by_svezate-d6lzyyh.png
