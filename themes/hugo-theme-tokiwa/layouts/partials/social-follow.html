@@ -1,5 +1,4 @@
-{{ $count := len .Site.Social}}
-<div class="flex flex-wrap-reverse md:justify-end content-end md:content-start justify-start items-start {{if gt $count 4}}md:flex-col{{end}}  max-h-16">
+<div class="flex flex-wrap-reverse md:justify-end content-end md:content-start justify-start items-start md:flex-col  max-h-16">
   {{ with .Site.Params.Social.Twitter }}
   <a href="https://twitter.com/{{.}}" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
   {{ end }}
