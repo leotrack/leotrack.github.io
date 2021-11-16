@@ -6,6 +6,7 @@ shares: true
 comments: true
 enableReadingTime: false
 date: "2020-05-17T22:58:19+08:00"
+lastmod: "2021-11-16T10:23:59+08:00"
 ---
 
 ## 个人简介
@@ -23,7 +24,8 @@ date: "2020-05-17T22:58:19+08:00"
 * 搭建工具：~~[Jekyll](http://jekyllrb.com/)~~ & [BitBucket](https://bitbucket.org/) & [StackEdit](https://stackedit.io/) & [FTPloy](http://ftploy.com/)
 * 模板及样式来源：~~[Useful Paradigm](http://usefulparadigm.com/)~~
 * 折腾开始于2014年7月1日，基本在2014年7月5日完工。
-* 2020年5月17日，用[Hugo](https://gohugo.io/)和主题[Daily](https://github.com/amazingrise/hugo-theme-diary)继续折腾。
+* 2020年5月17日，用[Hugo](https://gohugo.io/)和主题[Daily](https://github.com/amazingrise/hugo-theme-diary)。
+* 2021年11月1日-11月16日，换主题[Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa)继续折腾，其中使用到的平台和工具包括：腾讯云提供的**CloudStudio**、Git平台**Gitlab**（比*Github*的好处就是访问稳定）、网站发布平台**Vercel**（大赞！）。
 
 ## 其他流言
 

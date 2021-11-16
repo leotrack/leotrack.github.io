@@ -170,7 +170,8 @@
 &lt;li&gt;搭建工具：&lt;del&gt;&lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&lt;/del&gt; &amp;amp; &lt;a href=&#34;https://bitbucket.org/&#34;&gt;BitBucket&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://stackedit.io/&#34;&gt;StackEdit&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://ftploy.com/&#34;&gt;FTPloy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;模板及样式来源：&lt;del&gt;&lt;a href=&#34;http://usefulparadigm.com/&#34;&gt;Useful Paradigm&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;折腾开始于2014年7月1日，基本在2014年7月5日完工。&lt;/li&gt;
-&lt;li&gt;2020年5月17日，用&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;和主题&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Daily&lt;/a&gt;继续折腾。&lt;/li&gt;
+&lt;li&gt;2020年5月17日，用&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;和主题&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Daily&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;2021年11月1日-11月16日，换主题&lt;a href=&#34;https://github.com/heyeshuang/hugo-theme-tokiwa&#34;&gt;Tokiwa&lt;/a&gt;继续折腾，其中使用到的平台和工具包括：腾讯云提供的&lt;strong&gt;CloudStudio&lt;/strong&gt;、Git平台&lt;strong&gt;Gitlab&lt;/strong&gt;（比&lt;em&gt;Github&lt;/em&gt;的好处就是访问稳定）、网站发布平台&lt;strong&gt;Vercel&lt;/strong&gt;（大赞！）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;其他流言&#34;&gt;其他流言&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1096,7 +1097,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
       
       <guid>/project/doraemon-smilies.html</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Doraemon Smilies For WordPress:该插件制作于2008年6月11日，并且一直没有继续维护，但是应该没有问题可以正常使用:)&lt;/em&gt;
+&lt;p&gt;&lt;em&gt;Doraemon Smilies For WordPress:该插件制作于2008年6月11日，并且一直没有继续维护，但是应该没有问题可以正常使用:)&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;This Plugin was made AT Wed Jun 11 22:24:33 2008,and not updated anymore,but it should work fine in any vision of WordPress :)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;介绍introduction&#34;&gt;介绍&lt;em&gt;Introduction&lt;/em&gt;&lt;/h2&gt;
