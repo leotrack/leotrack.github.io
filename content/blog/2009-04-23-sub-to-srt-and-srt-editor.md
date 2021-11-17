@@ -20,12 +20,12 @@ PS-***No.2***：新测试版的**Mplayer WW**真的很牛，那么微小的体�
 
 ***附件下载：***
 
-大话西游之月光宝盒&#8212;-SRT字幕：<a href="/uploads/A.Chinese.Odyssey.Part.One.%281994%29.Dvdrip%5BVeryCD.com%5D.zip?attredirects=0" target="\_blank" closure\_hashcode_uydfvb="238">A.Chinese.Odyssey.Part.One.(1994).Dvdrip[VeryCD.com].zip</a>
+大话西游之月光宝盒&#8212;-SRT字幕：<a href="/uploads/A.Chinese.Odyssey.Part.One.%281994%29.Dvdrip%5BVeryCD.com%5D.zip" target="_blank">A.Chinese.Odyssey.Part.One.(1994).Dvdrip[VeryCD.com].zip</a>
 
-大话西游之仙履奇缘&#8212;-SRT字幕：<a href="/uploads/A.Chinese.Odyssey.Part.Two.%281995%29.Dvdrip%5BVeryCD.com%5D.zip?attredirects=0" target="\_blank" closure\_hashcode_uydfvb="239">A.Chinese.Odyssey.Part.Two.(1995).Dvdrip[VeryCD.com].zip</a>
+大话西游之仙履奇缘&#8212;-SRT字幕：<a href="/uploads/A.Chinese.Odyssey.Part.Two.%281995%29.Dvdrip%5BVeryCD.com%5D.zip" target="_blank">A.Chinese.Odyssey.Part.Two.(1995).Dvdrip[VeryCD.com].zip</a>
 
-Idx、Sub转换Srt，绿色包：<a href="/uploads/IdxSub2Srt%5BZhu8.Net%5D.zip?attredirects=0" target="\_blank" closure\_hashcode_uydfvb="240">IdxSub2Srt[Zhu8.Net].zip</a>
+Idx、Sub转换Srt，绿色包：<a href="/uploads/IdxSub2Srt%5BZhu8.Net%5D.zip" target="_blank">IdxSub2Srt[Zhu8.Net].zip</a>
 
-Srt编辑器，绿色包：<a href="/uploads/SrtEditor%5BZhu8.Net%5D.zip?attredirects=0" target="\_blank" closure\_hashcode_uydfvb="241">SrtEditor[Zhu8.Net].zip</a>
+Srt编辑器，绿色包：<a href="/uploads/SrtEditor%5BZhu8.Net%5D.zip" target="_blank">SrtEditor[Zhu8.Net].zip</a>
 
 PS-***No.N***：弟弟明天即将搭上前往韩国的飞机，开始他的船员生涯，希望他平平安安，早日成为一个真正的男人。
