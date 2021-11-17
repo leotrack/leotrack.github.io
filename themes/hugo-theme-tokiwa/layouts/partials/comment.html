@@ -11,10 +11,12 @@
     new Waline({
         el: '#waline',
         path: location.pathname,
-        serverURL: {{.Site.Params.walineServer}} ,
+        serverURL: {{.Site.Params.walineServer}},
 		visitor: 'true',
 		login: 'enable',
 		uploadImage: false,
+        avatar: 'robohash',
+        emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq'],
     });
     </script>
 {{ end }}
