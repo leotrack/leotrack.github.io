@@ -91,6 +91,13 @@ fa-info {
 .c-rich-text p {
   text-indent: 2rem;
 }
+.c-rich-text .blockquote p {
+  text-indent: 0rem !important;
+}
+
+.highlight {
+  word-break: break-all;
+}
 
 #twitter-ic:hover,#twitter-ic:focus {
   color: #00aced !important;
