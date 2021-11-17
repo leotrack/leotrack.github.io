@@ -91,11 +91,11 @@ fa-info {
 .c-rich-text p {
   text-indent: 2rem;
 }
-.c-rich-text .blockquote p {
-  text-indent: 0rem !important;
+.c-rich-text blockquote p {
+  text-indent: 0;
 }
 
-.highlight {
+.highlight pre {
   word-break: break-all;
 }
 
