@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<html lang="{{ $.Site.LanguageCode | default " en" }}">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,16 +15,18 @@
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
 	{{ $stylesheet := .Site.Data.webpack_assets.app }}
 	{{ with $stylesheet.css }}
-	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
+	<link href="{{ relURL (printf " %s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
 	{{ range .Site.Params.custom_css }}
 	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}"> {{ end }}
 	{{ block "favicon" . }} {{ partial "site-favicon.html" . }} {{ end }}
 	{{ with .OutputFormats.Get "RSS" }}
 	<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
-	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
-	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
-	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	{{ if and (.Site.Params.walineServer) (.IsPage) }}
+	<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
+	<link type="text/css" rel="stylesheet" href="{{" /assets/css/custom.css" | relURL}}" />
+	<link type="text/css" rel="stylesheet"
+		href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 	<link type="text/css" rel="stylesheet" href="https://fonts.font.im/css?family=Noto+Serif+SC" />
 	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	{{ if ne $.Site.LanguageCode "en"}}
@@ -54,7 +57,7 @@
 			font-style: normal;
 			font-display: swap;
 			src: url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff2") | absURL }}') format('woff2'),
-				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
+			url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 	</style>
 	{{ end }}

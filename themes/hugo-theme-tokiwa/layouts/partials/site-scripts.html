@@ -9,4 +9,11 @@
 <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>{{ end }}
 {{ if .Site.Params.fuse }}<script src="/lib/fuse.min.js"></script> <!-- download and copy over fuse.min.js file from fusejs.io -->
 <script src="/lib/fastsearch.js"></script>
+<script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "56s5u33lqf");
+  </script>
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }} {{ template "_internal/google_analytics.html" . }} {{ end }}{{ end }}
