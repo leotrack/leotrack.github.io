@@ -109,6 +109,3 @@ Facebook = "ichenjun"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
-[params.toc]
-toc = true                # 是否开启目录

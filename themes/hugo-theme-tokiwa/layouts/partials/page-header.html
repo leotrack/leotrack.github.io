@@ -13,7 +13,4 @@
 		<i class="fas fa-calendar-day"></i> {{- .Date.Format (.Site.Params.PostDateFormat | default "2006-1-2 15:04") -}}
 	</time>
 </div>
-{{ if ( .Site.Params.toc | default true ) }}
-{{ partial "toc.html" . }}
-{{ end }}
 <hr />
