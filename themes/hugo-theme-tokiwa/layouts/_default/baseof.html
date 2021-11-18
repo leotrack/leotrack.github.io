@@ -14,11 +14,10 @@
 	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
 	{{ range .Site.Params.custom_css }}
 	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}"> {{ end }}
-	{{ block "favicon" . }} {{ partial "site-favicon.html" . }} {{ end }}
+	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
 	{{ with .OutputFormats.Get "RSS" }}
 	<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
-	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }} {{ template "_internal/google_analytics.html" . }} {{ end }}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
