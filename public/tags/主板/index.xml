@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>主板 on 猪八的网：浮生志</title>
-    <link>/tags/%E4%B8%BB%E6%9D%BF/</link>
+    <link>https://zhu8.net/tags/%E4%B8%BB%E6%9D%BF/</link>
     <description>Recent content in 主板 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Sat, 14 Feb 2009 01:31:38 +0800</lastBuildDate>
     
-	<atom:link href="/tags/%E4%B8%BB%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/%E4%B8%BB%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>技嘉主板安装IDE光驱和硬盘跳线问题(赠：Beyond-情人)</title>
-      <link>/blog/2009/02/ide-cdrom-on-gigabyte-error.html</link>
+      <link>https://zhu8.net/blog/2009/02/ide-cdrom-on-gigabyte-error.html</link>
       <pubDate>Sat, 14 Feb 2009 01:31:38 +0800</pubDate>
       
-      <guid>/blog/2009/02/ide-cdrom-on-gigabyte-error.html</guid>
+      <guid>https://zhu8.net/blog/2009/02/ide-cdrom-on-gigabyte-error.html</guid>
       <description>&lt;p&gt;原来的板子坏了，新买了一块技嘉的板子（GA-M61PME-S2），因为我原来的硬盘和DVD-ROM都是IDE接口的，但是接上去之后系统要么启动很慢，要么在见到欢迎页面前就死掉。【启动&amp;quot;Detecting IDE Drives&amp;hellip;&amp;ldquo;处非常慢，然后就是到&amp;quot;Verifying DMI Pool Data&amp;hellip;&amp;quot;，一样巨慢，然后无法从硬盘启动……】而我原来的大板子悍马HA01-GT没有这个问题，只是被我刷BIOS刷爆了。不高兴去修了。反正技嘉那块板子才300多点，就买回来。前两天装系统，今天启动就老是不行。开始还怀疑是电源不够，我的是航嘉冷静王2.0钻石版300W的。后来检查跳线，因为我的跳线没有动过，Benq光驱还是在Slave上，而我的日立硬盘还是在Master上面；BIOS中的M/S设置也是对的。&lt;/p&gt;
 &lt;p&gt;去网上查了一下，有位哥们跟我情况比较相似：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,7 +26,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;延伸阅读：跳线&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;哦！今天是&lt;strong&gt;情人节&lt;/strong&gt;了哈！我这么晚还没有睡觉，老婆要打了……晚安！今晚特约演出：&lt;/p&gt;
 &lt;p&gt;歌手： Beyond&lt;br&gt;

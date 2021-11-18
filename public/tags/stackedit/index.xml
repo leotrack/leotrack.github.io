@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stackedit on 猪八的网：浮生志</title>
-    <link>/tags/stackedit/</link>
+    <link>https://zhu8.net/tags/stackedit/</link>
     <description>Recent content in Stackedit on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Fri, 04 Jul 2014 23:23:44 +0800</lastBuildDate>
     
-	<atom:link href="/tags/stackedit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/stackedit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>重生@Jekyll&#43;GitHub Pages</title>
-      <link>/blog/2014/07/jekyll-github.html</link>
+      <link>https://zhu8.net/blog/2014/07/jekyll-github.html</link>
       <pubDate>Fri, 04 Jul 2014 23:23:44 +0800</pubDate>
       
-      <guid>/blog/2014/07/jekyll-github.html</guid>
+      <guid>https://zhu8.net/blog/2014/07/jekyll-github.html</guid>
       <description>&lt;p&gt;本博开篇，Zhu8.Net Reborn!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Enjoy it!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll？&lt;/h2&gt;
 &lt;p&gt;我想这不需要多说了吧？&lt;strong&gt;版本记录+Markdown+本地编辑&lt;/strong&gt;。嗯！爽！&lt;/p&gt;
 &lt;h3 id=&#34;1如何离线或在线编辑&#34;&gt;1.如何离线或在线编辑？&lt;/h3&gt;

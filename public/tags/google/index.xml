@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google on 猪八的网：浮生志</title>
-    <link>/tags/google/</link>
+    <link>https://zhu8.net/tags/google/</link>
     <description>Recent content in Google on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Thu, 21 Jan 2010 14:02:35 +0800</lastBuildDate>
     
-	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/google/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>招行信用卡绑定Google Checkout</title>
-      <link>/blog/2010/01/use-cmb-card-as-google-checkout.html</link>
+      <link>https://zhu8.net/blog/2010/01/use-cmb-card-as-google-checkout.html</link>
       <pubDate>Thu, 21 Jan 2010 14:02:35 +0800</pubDate>
       
-      <guid>/blog/2010/01/use-cmb-card-as-google-checkout.html</guid>
+      <guid>https://zhu8.net/blog/2010/01/use-cmb-card-as-google-checkout.html</guid>
       <description>&lt;p&gt;使用招行信用卡购买了Google的**$5**/年的&lt;strong&gt;20GB&lt;/strong&gt;存储空间！没有办法，&lt;a href=&#34;https://checkout.google.com/&#34;&gt;Google Checkout&lt;/a&gt;不支持&lt;strong&gt;中国（P.R.C）&lt;/strong&gt;，所以只能**“被”**成为香港（&lt;strong&gt;Hong.Kong&lt;/strong&gt;）公民了，因为只能购买一年的，Google提示是：&lt;strong&gt;您目前的方案將在 2011/1/20自動續約&lt;/strong&gt;。目前已经增容成功，关键一点就是害怕，会不会因为卡片的注册地不在香港被停止这张信用卡在Google Checkout的使用，明年会自动续费么？这些都得等明年才知道了。&lt;/p&gt;
 &lt;p&gt;信用卡使用的是&lt;strong&gt;双币&lt;/strong&gt;信用卡，&lt;strong&gt;Visa&lt;/strong&gt;的，开通了&lt;strong&gt;Visa验证&lt;/strong&gt;，购买后，招行短信提示有两条：&lt;/p&gt;
 &lt;ol&gt;
@@ -33,24 +33,24 @@ When you check your bank account or credit card statement, payment authorization
 Authorizations can remain in your account anywhere from 24 hours up to 14 business days, depending on the bank. You may contact your bank to confirm the charge for your purchase with Google or to check on the authorization status.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;购买的截图，注意&lt;strong&gt;Outlying Islands&lt;/strong&gt;和&lt;strong&gt;Hong Kong&lt;/strong&gt;这两个地址哈：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googlecheckout.png&#34; alt=&#34;google-checkout&#34; title=&#34;google-checkout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleCheckout_10D83/googlecheckout.png&#34; alt=&#34;google-checkout&#34; title=&#34;google-checkout&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S ：&lt;strong&gt;上面的图片就是用&lt;/strong&gt;&lt;del&gt;Google Docs&lt;/del&gt;&lt;/strong&gt;（经数次测试，图片链接&lt;strong&gt;不是&lt;/strong&gt;固定链接，过一段时间就会变化，无法外部引用，只能用来存储了……）**附：**上传界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googledocs.png&#34; alt=&#34;google-docs&#34; title=&#34;google-docs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleCheckout_10D83/googledocs.png&#34; alt=&#34;google-docs&#34; title=&#34;google-docs&#34;&gt;&lt;/p&gt;
 &lt;p&gt;关于信用卡是否会被停用Google Checkout和订单是否会被退订，我会在这里&lt;strong&gt;继续更新&lt;/strong&gt;，或者知道的可以&lt;strong&gt;留言&lt;/strong&gt;哈！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Google Go Le?</title>
-      <link>/blog/2010/01/google-go-le.html</link>
+      <link>https://zhu8.net/blog/2010/01/google-go-le.html</link>
       <pubDate>Fri, 15 Jan 2010 23:25:14 +0800</pubDate>
       
-      <guid>/blog/2010/01/google-go-le.html</guid>
+      <guid>https://zhu8.net/blog/2010/01/google-go-le.html</guid>
       <description>&lt;p&gt;Google&lt;a href=&#34;http://googleblog.blogspot.com/2010/01/new-approach-to-china.html&#34; title=&#34;Official Google Blog: A new approach to China&#34;&gt;要走了&lt;/a&gt;？大家都在这么说，各处新闻长篇累牍，也不需要我等草民复述。我与&lt;a href=&#34;http://blog.donews.com/keso/archive/2010/01/13/1580275.aspx&#34; title=&#34;三言二拍：Google退出中国&amp;amp;对牛乱弹琴&amp;amp;Playin&#34;&gt;Keso&lt;/a&gt;（妄自尊大了）的想法如出一辙，我的这么多服务怎么办？我的&lt;del&gt;Gmail、Google Reader、Analytics、AdSense、Blogger、Talk、Chrome、PinYin、PicasaWeb&lt;/del&gt;以及还没有盼到的&lt;del&gt;Nexus One&lt;/del&gt;，它们怎么办？&lt;/p&gt;
 &lt;p&gt;也许有一天，我的所有这些都无法访问，我得把我的身体练得愈发强壮，好爬过那耸入云霄的文明用语；也许有一天，我会发现我惟一的祈祷就是能亲手砸烂那伟岸无比的文明用语；也许有一天，我得不停的说着：“文明用语你文明用语的文明用语。”才能倾泄我对文明用语的文明用语。&lt;/p&gt;
 &lt;p&gt;好吧，那我就就把我的站搬家吧，搬到文明用语的那边，不用再接受贵国的文明用语的洗礼。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;附图两张：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleGoLe_14149/chinainventions10hp.gif&#34; alt=&#34;chinainventions10-hp&#34; title=&#34;chinainventions10-hp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleGoLe_14149/mygoogleproducts.png&#34; alt=&#34;my-google-products&#34; title=&#34;my-google-products&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleGoLe_14149/chinainventions10hp.gif&#34; alt=&#34;chinainventions10-hp&#34; title=&#34;chinainventions10-hp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleGoLe_14149/mygoogleproducts.png&#34; alt=&#34;my-google-products&#34; title=&#34;my-google-products&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;延伸阅读：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2010/01/google_to_quit_china.html&#34; title=&#34;壮士断腕，义无再辱&amp;amp;阮一峰的网络日志&#34;&gt;壮士断腕，义无再辱—阮一峰的网络日志&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -61,12 +61,12 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>Doodle 4 Google作品———Through Google</title>
-      <link>/blog/2009/01/doodle-4-google-through-google.html</link>
+      <link>https://zhu8.net/blog/2009/01/doodle-4-google-through-google.html</link>
       <pubDate>Fri, 16 Jan 2009 02:21:51 +0800</pubDate>
       
-      <guid>/blog/2009/01/doodle-4-google-through-google.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/doodle-4-google-through-google.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;当时，我曾在Google Reader里面分享了别人分享的这一篇Blog，也去投了一票的。可惜，不知道为什么，什么奖都没得？？？土啬伟大得超出我们的想象……&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Google-wall.jpg&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/Google-wall.jpg&#34; alt=&#34;&#34;&gt;
 这是Doodle 4 Google “我的中国”谷歌国际少年绘画大赛中的一幅参赛作品。你看到它想起了什么？是的，我想起了&lt;strong&gt;土啬&lt;/strong&gt;。在墙内的小朋友透过谷歌在墙上开设的一个一个小洞，看到了墙外的另一个世界。这个世界充满了鸟语花香，绿树葱葱。多么有寓意的作品呀。&lt;/p&gt;
 &lt;p&gt;google对该作品的解释是：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -78,10 +78,10 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>我被Google封了？</title>
-      <link>/blog/2006/07/google-ban-zhu8-net.html</link>
+      <link>https://zhu8.net/blog/2006/07/google-ban-zhu8-net.html</link>
       <pubDate>Fri, 21 Jul 2006 13:30:26 +0800</pubDate>
       
-      <guid>/blog/2006/07/google-ban-zhu8-net.html</guid>
+      <guid>https://zhu8.net/blog/2006/07/google-ban-zhu8-net.html</guid>
       <description>&lt;p&gt;好多天没写日志了，工作了之后没什么热情了，不知道该写些什么了。我不知道是怎么一回事，我的这个站Zhu8.Net我也不知道原来是干什么的，好象在Google一直没有被收录过。我把它弄来之后，架这个站已经有快一个月了，在百度、Yahoo!、MSN都收录了之后，Google在开始的时候还收录了我的Blog&lt;a href=&#34;http://zhu8.512j.com/blog/&#34;&gt;原始地址&lt;/a&gt;里可怜的两篇文章，但后来，不光原始地址的记录没有了，就连连接到这里的&lt;a href=&#34;http://feeds.feedburner.com/Zhu8&#34;&gt;FeedBurner&lt;/a&gt;也没有了，仅仅留下一个地址，连标题都没有了。更不要提我的这个顶级域名了。&lt;/p&gt;
 &lt;p&gt;可笑的是，从统计里看，百度已经收录了我几乎所有的页面，关于WP的某些关键词还相当靠前；而Google里没有一丝一毫关于本站的东西，当我在用着这些服务的时候：&lt;/p&gt;
 &lt;ul&gt;

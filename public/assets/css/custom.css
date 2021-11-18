@@ -1,5 +1,6 @@
 .fa,
-.fas {
+.fas,
+.fab {
   border-left: 3px solid transparent !important;
   border-right: 3px solid transparent !important;
 }
@@ -87,6 +88,35 @@ fa-info {
   color: #4a154b;
 }
 
-.post-body p {
+.c-rich-text p {
   text-indent: 2rem;
+}
+.c-rich-text blockquote p {
+  text-indent: 0;
+}
+
+.highlight pre {
+  word-break: break-all;
+}
+
+#twitter-ic:hover,#twitter-ic:focus {
+  color: #00aced !important;
+}
+#tumblr-ic:hover,#tumblr-ic:focus {
+  color: #35465d !important;
+}
+#instagram-ic:hover,#instagram-ic:focus {
+  color: #c32aa3 !important;
+}
+#weibo-ic:hover,#weibo-ic:focus {
+  color: #E6162D !important;
+}
+#facebook-ic:hover,#facebook-ic:focus {
+  color: #3B5998 !important;
+}
+#github-ic:hover,#github-ic:focus {
+  color: #333333 !important;
+}
+#gitlab-ic:hover,#gitlab-ic:focus {
+  color: #FC6D27 !important;
 }

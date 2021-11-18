@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on 猪八的网：浮生志</title>
-    <link>/tags/wordpress/</link>
+    <link>https://zhu8.net/tags/wordpress/</link>
     <description>Recent content in Wordpress on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Wed, 19 Mar 2008 08:48:02 +0800</lastBuildDate>
     
-	<atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WordPress 2.5</title>
-      <link>/blog/2008/03/wordpress-25.html</link>
+      <link>https://zhu8.net/blog/2008/03/wordpress-25.html</link>
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
-      <guid>/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2008/03/wordpress-25.html</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>
@@ -26,10 +26,10 @@
     
     <item>
       <title>WordPress插件:Add Bookmarks</title>
-      <link>/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
+      <link>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
       <pubDate>Mon, 04 Sep 2006 12:23:28 +0800</pubDate>
       
-      <guid>/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
+      <guid>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
       <description>&lt;p&gt;First plugin for WordPress:&lt;a href=&#34;#Eng&#34;&gt;English vision&lt;/a&gt; (2008/03/18)&lt;/p&gt;
 &lt;p&gt;这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)&lt;/p&gt;
 &lt;ul&gt;
@@ -123,7 +123,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Tested up to&lt;/strong&gt;: WordPress 2.5&lt;br&gt;
 &lt;strong&gt;Author&lt;/strong&gt;: Zhu8&lt;br&gt;
 &lt;strong&gt;Plugin URI&lt;/strong&gt;: &lt;a href=&#34;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&#34;&gt;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&lt;/a&gt;&lt;br&gt;
-&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;https://zhu8.net/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
@@ -135,11 +135,11 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     
     <item>
       <title>我的WordPress插件列表</title>
-      <link>/blog/2006/07/my-wordpress-plugins.html</link>
+      <link>https://zhu8.net/blog/2006/07/my-wordpress-plugins.html</link>
       <pubDate>Sun, 09 Jul 2006 01:18:20 +0800</pubDate>
       
-      <guid>/blog/2006/07/my-wordpress-plugins.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2006/07/my-wordpress-plugins.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
 &lt;p&gt;在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的&lt;a href=&#34;http://www.ilemoned.com/wordpress/theme-greenery&#34;&gt;Greenery&lt;/a&gt;，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）&lt;/p&gt;
 &lt;h3 id=&#34;后台管理类&#34;&gt;后台管理类：&lt;/h3&gt;
 &lt;ul&gt;

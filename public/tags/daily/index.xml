@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daily on 猪八的网：浮生志</title>
-    <link>/tags/daily/</link>
+    <link>https://zhu8.net/tags/daily/</link>
     <description>Recent content in Daily on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Thu, 27 Nov 2008 18:22:04 +0800</lastBuildDate>
     
-	<atom:link href="/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/daily/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>感谢有你</title>
-      <link>/blog/2008/11/thanksgiving.html</link>
+      <link>https://zhu8.net/blog/2008/11/thanksgiving.html</link>
       <pubDate>Thu, 27 Nov 2008 18:22:04 +0800</pubDate>
       
-      <guid>/blog/2008/11/thanksgiving.html</guid>
+      <guid>https://zhu8.net/blog/2008/11/thanksgiving.html</guid>
       <description>&lt;p&gt;感谢爸妈，给了我生命与成长中他们所能给的一切；&lt;/p&gt;
 &lt;p&gt;感谢朋友，平时的关怀、照顾、提携抑或激励；&lt;/p&gt;
 &lt;p&gt;最最要感谢的老婆，陪我走南闯北，义无反顾。&lt;/p&gt;

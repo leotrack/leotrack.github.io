@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>论坛 on 猪八的网：浮生志</title>
-    <link>/tags/%E8%AE%BA%E5%9D%9B/</link>
+    <link>https://zhu8.net/tags/%E8%AE%BA%E5%9D%9B/</link>
     <description>Recent content in 论坛 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Sun, 13 Aug 2006 12:30:25 +0800</lastBuildDate>
     
-	<atom:link href="/tags/%E8%AE%BA%E5%9D%9B/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/%E8%AE%BA%E5%9D%9B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>UseBB汉化暨论坛搭建完成</title>
-      <link>/blog/2006/08/usebb-chinese-simplified.html</link>
+      <link>https://zhu8.net/blog/2006/08/usebb-chinese-simplified.html</link>
       <pubDate>Sun, 13 Aug 2006 12:30:25 +0800</pubDate>
       
-      <guid>/blog/2006/08/usebb-chinese-simplified.html</guid>
-      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;/span&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;acronym title=&#34;Unnecessary features&#34;&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;/acronym&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;sub&gt;By Chairman Mao&lt;/sub&gt;了。&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2006/08/usebb-chinese-simplified.html</guid>
+      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;/span&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;acronym title=&#34;Unnecessary features&#34;&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;/acronym&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;sub&gt;By Chairman Mao&lt;/sub&gt;了。&lt;/p&gt;
 &lt;p&gt;废话少说，简单介绍一下UseBB吧！&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;UseBB使用&lt;em&gt;PHP+Mysql&lt;/em&gt;编写，支持mod_rewrite*（可惜我的空间并不支持）*整个程序简洁小巧。&lt;/li&gt;

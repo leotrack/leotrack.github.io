@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hack on 猪八的网：浮生志</title>
-    <link>/tags/hack/</link>
+    <link>https://zhu8.net/tags/hack/</link>
     <description>Recent content in Hack on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Mon, 27 Jul 2009 15:04:22 +0800</lastBuildDate>
     
-	<atom:link href="/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/hack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rokr E2从Outlook Express中导入联系人</title>
-      <link>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
+      <link>https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
       <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
       
-      <guid>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
+      <guid>https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
       <description>&lt;p&gt;最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。&lt;/p&gt;
 &lt;p&gt;就是一直为如何将原来Palm 680的通讯录导过来以及更新烦恼。寻找了如下方法：&lt;/p&gt;
 &lt;ol&gt;
@@ -27,16 +27,16 @@
 &lt;/ol&gt;
 &lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
 &lt;p&gt;首先，打开你的OE：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如&lt;em&gt;My Contacts&lt;/em&gt;，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：&lt;/p&gt;
 &lt;p&gt;进入通讯录——按左键——管理联系人：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;选择——导入名片：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;找到你保存.vcf名片文件的文件夹，比如上面的&lt;em&gt;My Contacts&lt;/em&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;全选，导入！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;至此，你的E2已经与你的OE完全一致了！以后你要同步你的通讯录。重复上述步骤即可！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;此文为响应&lt;a href=&#34;http://welog.org/&#34;&gt;King&lt;/a&gt;对于我的“&lt;a href=&#34;https://zhu8.net/blog/2009/05/braid.html#comment-244&#34;&gt;月经&lt;/a&gt;”评论，在七月月底放出……哈哈&lt;/em&gt;&lt;/p&gt;</description>
@@ -44,10 +44,10 @@
     
     <item>
       <title>关闭WordPress的Revision功能</title>
-      <link>/blog/2009/03/disable-wordpress-revision.html</link>
+      <link>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</link>
       <pubDate>Tue, 03 Mar 2009 23:25:55 +0800</pubDate>
       
-      <guid>/blog/2009/03/disable-wordpress-revision.html</guid>
+      <guid>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</guid>
       <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……&lt;/p&gt;
 &lt;p&gt;如何关闭Revision？我试用了几种方法：&lt;/p&gt;
 &lt;ul&gt;
@@ -71,11 +71,11 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
     
     <item>
       <title>从wordpress到textpattern</title>
-      <link>/blog/2008/04/from-wordpress-to-textpattern.html</link>
+      <link>https://zhu8.net/blog/2008/04/from-wordpress-to-textpattern.html</link>
       <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
       
-      <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
-      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2008/04/from-wordpress-to-textpattern.html</guid>
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -110,10 +110,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>定制Trackback特定样式</title>
-      <link>/blog/2006/12/style-wordpress-trackback.html</link>
+      <link>https://zhu8.net/blog/2006/12/style-wordpress-trackback.html</link>
       <pubDate>Sat, 23 Dec 2006 12:06:50 +0800</pubDate>
       
-      <guid>/blog/2006/12/style-wordpress-trackback.html</guid>
+      <guid>https://zhu8.net/blog/2006/12/style-wordpress-trackback.html</guid>
       <description>&lt;p&gt;首先要自我打击一下，在产生这个想法之后，本来我是&lt;strong&gt;异想天开&lt;/strong&gt;地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么简单，只好用笨办法了：手动添加代码到模板中去。&lt;/p&gt;
 &lt;p&gt;本来想用的来自这里：&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/commentstyling/&#34; title=&#34;Making Comments stand out&#34;&gt;WordPress – Comment styling&lt;/a&gt;，确实是一篇不错的文章，里面不仅介绍了为Trackback和Pingback增加独特样式，也有为特定评论的与众不同的显示提供了解决方案。而且作者Podz所写的&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/&#34; title=&#34;WordPress Help&amp;amp;Podz @ Tamba2&#34;&gt;The Temba2 WordPress Guides&lt;/a&gt;是一篇不错的基础教程。评论姑且不谈，我需要的是第一个。&lt;/p&gt;
 &lt;p&gt;首先是在你的Blog模版的评论页面（一般为&lt;strong&gt;comments.php&lt;/strong&gt;）找到这句：&lt;/p&gt;
@@ -159,10 +159,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>发现自己原来一根筋</title>
-      <link>/blog/2006/11/trouble-with-so-much-things.html</link>
+      <link>https://zhu8.net/blog/2006/11/trouble-with-so-much-things.html</link>
       <pubDate>Mon, 27 Nov 2006 06:39:54 +0800</pubDate>
       
-      <guid>/blog/2006/11/trouble-with-so-much-things.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/trouble-with-so-much-things.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;em&gt;到底出了什么问题？&lt;strong&gt;这句话是我刚才试着看发帖是否能通过的，结果还是给我空白页面，或者是&lt;/strong&gt;&lt;/em&gt;“该页无法显示找不到服务器或发生DNS错误”&lt;/em&gt;**。今天一天都在搞新Theme的修改，最后快大功告成的时候，准备发点小文字来，结果又出现了…&lt;/p&gt;
 &lt;p&gt;不好意思，到现在还没说具体是哪儿的问题，其他都好的，就是修改或者新撰写文章时，&lt;em&gt;&lt;strong&gt;../wp-admin/post.php&lt;/strong&gt;&lt;/em&gt;就报上面的错误。但是我又犯了二十多年的老毛病，一根筋往这上面想，把&lt;a href=&#34;http://wordpress.org/support/forum/3&#34; title=&#34;How-To and Troubleshooting « WordPress Support&#34;&gt;WordPress Support Forum&lt;/a&gt;几乎翻了个底朝天，发现一些情况和我一样的空白页面的，但是没有一个好好回答的，因为我上午装了Php+Apche+Mysql调试的，在Wordpress支持论坛看到说有&lt;em&gt;&lt;strong&gt;php.ini&lt;/strong&gt;&lt;/em&gt;配置错误导致此种问题的，于是一根筋的我就正经八百的把这些全都卸载，结果还是不行啊。在WpCN的&lt;a href=&#34;http://groups.google.com/group/WordPressCN&#34; title=&#34;WordpressCN Google Group&#34;&gt;Group&lt;/a&gt;里问了一下，没人帮我解答，只好继续自己动手。&lt;/p&gt;
 &lt;p&gt;千错万错，只怪我弄Theme忘了，其实我是自己新建的一个Theme，怎么也没想到会是我的Plugin出了问题，因为我是在&lt;a href=&#34;http://binarybonsai.com/wordpress/kubrick/&#34; title=&#34;Kubrick at Binary Bonsai&#34;&gt;Kubrick&lt;/a&gt;上搞的Theme，所以一下把它的&lt;em&gt;&lt;strong&gt;fuctions.php&lt;/strong&gt;&lt;/em&gt;什么的都搞来了，再阴差阳错什么时候装了个&lt;del datetime=&#34;2006-11-26T11:22:41+00:00&#34;&gt;Widgets插件&lt;/del&gt;，原来就是&lt;strong&gt;它&lt;/strong&gt;的问题！&lt;/p&gt;
@@ -172,10 +172,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>解决WP汉化和UTW链接问题</title>
-      <link>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
+      <link>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
       <pubDate>Sun, 19 Nov 2006 04:17:00 +0800</pubDate>
       
-      <guid>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
       <description>&lt;p&gt;其实严格说来是因为我在&lt;a href=&#34;http://www.512j.com/&#34; title=&#34;我要安家&#34;&gt;我要安家&lt;/a&gt;的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);&lt;br&gt;
@@ -194,7 +194,7 @@ Zend支持 支持&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; (int)&lt;span style=&#34;color:#099&#34;&gt;0xde120495&lt;/span&gt;; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;//bug  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;https://zhu8.net/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
 在Blog的wp-includes目录下建立languages文件夹&lt;br&gt;
@@ -211,10 +211,10 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
     
     <item>
       <title>二三事</title>
-      <link>/blog/2006/11/small-cases.html</link>
+      <link>https://zhu8.net/blog/2006/11/small-cases.html</link>
       <pubDate>Sun, 05 Nov 2006 21:10:10 +0800</pubDate>
       
-      <guid>/blog/2006/11/small-cases.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/small-cases.html</guid>
       <description>&lt;p&gt;瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;

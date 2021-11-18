@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nod32 on 猪八的网：浮生志</title>
-    <link>/tags/nod32/</link>
+    <link>https://zhu8.net/tags/nod32/</link>
     <description>Recent content in Nod32 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Thu, 15 Jan 2009 02:53:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/nod32/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/nod32/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NOD32浩方等对战平台NO PING及解决</title>
-      <link>/blog/2009/01/nod32-no-ping.html</link>
+      <link>https://zhu8.net/blog/2009/01/nod32-no-ping.html</link>
       <pubDate>Thu, 15 Jan 2009 02:53:00 +0800</pubDate>
       
-      <guid>/blog/2009/01/nod32-no-ping.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/nod32-no-ping.html</guid>
       <description>&lt;h2 id=&#34;安装了eset-nod32安全套装登陆浩方对战平台后显示no-ping在游戏房间看不到人&#34;&gt;安装了ESET NOD32安全套装，登陆浩方对战平台后显示NO PING，在游戏房间看不到人?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：ESET NOD32,No Ping,浩方,对战平台&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;适用产品&lt;/strong&gt;：ESET NOD32 安全套装&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;浩方房间能够进入，但都显示 &lt;strong&gt;no ping&lt;/strong&gt;，所以无法联网游戏。已经确认网络、系统都没有问题，在装 ESS 3.0前都正常。&lt;br&gt;
-&lt;img src=&#34;/images/no-ping.png&#34; alt=&#34;浩方-No Ping&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/no-ping.png&#34; alt=&#34;浩方-No Ping&#34;&gt;&lt;br&gt;
 装了ESS 3.0后 就No Ping，暂时关闭防火墙都一样no ping，过滤模式 设置为自动模式；其它都是默认选项；其中&lt;strong&gt;IDS和高级选项&lt;/strong&gt;中&lt;strong&gt;允许服务&lt;/strong&gt;及&lt;strong&gt;入侵检测&lt;/strong&gt;都是选中的。该修改那个选项才能让浩方正常有ping值？&lt;/p&gt;
 &lt;p&gt;若出现此情况，请您打开杀毒软件界面，按&lt;strong&gt;F5&lt;/strong&gt;进入&lt;strong&gt;高级设置——Web访问保护——HTTP——Web浏览器——添加浩方对战平台主程序“GameClient.exe”——在主程序前面的小框中打叉——确定——重新登陆浩方对战平台&lt;/strong&gt;。如下图：&lt;br&gt;
-&lt;img src=&#34;/images/nod32-set.jpg&#34; alt=&#34;Nod32-设置&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/nod32-set.jpg&#34; alt=&#34;Nod32-设置&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;补充一点：&lt;br&gt;
 Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;

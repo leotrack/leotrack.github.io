@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Revision on 猪八的网：浮生志</title>
-    <link>/tags/revision/</link>
+    <link>https://zhu8.net/tags/revision/</link>
     <description>Recent content in Revision on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Tue, 03 Mar 2009 23:25:55 +0800</lastBuildDate>
     
-	<atom:link href="/tags/revision/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/revision/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关闭WordPress的Revision功能</title>
-      <link>/blog/2009/03/disable-wordpress-revision.html</link>
+      <link>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</link>
       <pubDate>Tue, 03 Mar 2009 23:25:55 +0800</pubDate>
       
-      <guid>/blog/2009/03/disable-wordpress-revision.html</guid>
+      <guid>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</guid>
       <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……&lt;/p&gt;
 &lt;p&gt;如何关闭Revision？我试用了几种方法：&lt;/p&gt;
 &lt;ul&gt;

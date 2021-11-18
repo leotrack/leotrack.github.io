@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>随笔 on 猪八的网：浮生志</title>
-    <link>/tags/%E9%9A%8F%E7%AC%94/</link>
+    <link>https://zhu8.net/tags/%E9%9A%8F%E7%AC%94/</link>
     <description>Recent content in 随笔 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Fri, 04 Jun 2010 21:52:37 +0800</lastBuildDate>
     
-	<atom:link href="/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ChenJun.COM重生及继续折腾</title>
-      <link>/blog/2010/06/chenjun-com-reborn-and-zheteng.html</link>
+      <link>https://zhu8.net/blog/2010/06/chenjun-com-reborn-and-zheteng.html</link>
       <pubDate>Fri, 04 Jun 2010 21:52:37 +0800</pubDate>
       
-      <guid>/blog/2010/06/chenjun-com-reborn-and-zheteng.html</guid>
+      <guid>https://zhu8.net/blog/2010/06/chenjun-com-reborn-and-zheteng.html</guid>
       <description>&lt;p&gt;自从去年&lt;a href=&#34;https://zhu8.net/blog/2009/03/chenjun-dot-com-online.html&#34;&gt;被不幸&lt;del&gt;与世隔绝&lt;/del&gt;&lt;/a&gt;1年余，&lt;strong&gt;今日&lt;/strong&gt;幸得真主眷顾，冲出牢笼。&lt;/p&gt;
 &lt;p&gt;兴奋不已，重燃激情，欣闻&lt;a href=&#34;http://wordpress.org/development/2010/05/wordpress-3-0-release-candidate/&#34;&gt;WordPress快到3.0&lt;/a&gt;，且使用Movable Type已有倦意，而WordPress的用户群广大，插件众多，用户感受颇好。且多年前我就是从&lt;a href=&#34;http://www.rainbowsoft.org&#34;&gt;Z-Blog&lt;/a&gt;之后就是&lt;a href=&#34;https://zhu8.net/blog/2006/07/my-wordpress-plugins.html&#34;&gt;从WordPress开始&lt;/a&gt;的，遂重新启用域名的同时，也改头换面，用回WP，继续折腾！&lt;/p&gt;
-&lt;p&gt;另：WordPress 3.0的默认主题TwentyTen很不错，也不至于像Kubrick那么久了难免有些审美疲劳，网上搜了一下未发现&lt;strong&gt;中文包&lt;/strong&gt;，遂做了一个：有需要的尽管自取：&lt;a href=&#34;/uploads/languages.zip&#34; title=&#34;Chinese Simplified Language Pack for WordPress 3.0 Defult Theme:TwentyTen&#34;&gt;&lt;strong&gt;zh_CN.po/mo&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另：WordPress 3.0的默认主题TwentyTen很不错，也不至于像Kubrick那么久了难免有些审美疲劳，网上搜了一下未发现&lt;strong&gt;中文包&lt;/strong&gt;，遂做了一个：有需要的尽管自取：&lt;a href=&#34;https://zhu8.net/uploads/languages.zip&#34; title=&#34;Chinese Simplified Language Pack for WordPress 3.0 Defult Theme:TwentyTen&#34;&gt;&lt;strong&gt;zh_CN.po/mo&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;下周三开始即将&lt;strong&gt;休假半月&lt;/strong&gt;，回来后可能还会结束北漂生涯，彼时又将是一个新的开始！&lt;/p&gt;
 &lt;p&gt;有人说我：&lt;em&gt;来北漂，三年后又结束北漂，真够折腾的。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;嗯，**生命在于折腾！**与君共勉。&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>2010新开始</title>
-      <link>/blog/2010/01/new-start-form-2010.html</link>
+      <link>https://zhu8.net/blog/2010/01/new-start-form-2010.html</link>
       <pubDate>Mon, 11 Jan 2010 12:01:41 +0800</pubDate>
       
-      <guid>/blog/2010/01/new-start-form-2010.html</guid>
+      <guid>https://zhu8.net/blog/2010/01/new-start-form-2010.html</guid>
       <description>&lt;p&gt;2010年终于到来了，北京的两场大雪也下的扎扎实实，我的未来却还没有扎实，中国的未来吾等草民还是继续为我们的那座小屋努力吧！&lt;/p&gt;
 &lt;p&gt;也许是厌倦了不停的升级，虽然SixApart终于在两次跳票后发布了&lt;strong&gt;Movable Type 5&lt;/strong&gt;，Wordpress的更新速度更甚，反而是默默的Blogger，被关注的次数也越来越少，所以，我还是继续小众好了。害怕&lt;del&gt;看不到&lt;/del&gt;这里的更新？&lt;strong&gt;Who Cares!&lt;/strong&gt;&lt;/p&gt;
 &lt;span class=&#34;center&#34;&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>战争的艺术（War Craft）</title>
-      <link>/blog/2009/11/warcraft.html</link>
+      <link>https://zhu8.net/blog/2009/11/warcraft.html</link>
       <pubDate>Tue, 03 Nov 2009 12:04:44 +0800</pubDate>
       
-      <guid>/blog/2009/11/warcraft.html</guid>
+      <guid>https://zhu8.net/blog/2009/11/warcraft.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;战争&lt;/strong&gt;还是爆发了。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cnbeta.com/articles/96873.htm&#34;&gt;&lt;strong&gt;版署终止《魔兽世界》审批 要求网易停止违规&lt;/strong&gt;&lt;/a&gt;（2009-11-02 19:16）&lt;/p&gt;
 &lt;blockquote&gt;
@@ -76,11 +76,11 @@
     
     <item>
       <title>我随时随地在等待</title>
-      <link>/blog/2005/12/waiting-any-time.html</link>
+      <link>https://zhu8.net/blog/2005/12/waiting-any-time.html</link>
       <pubDate>Wed, 28 Dec 2005 00:41:28 +0800</pubDate>
       
-      <guid>/blog/2005/12/waiting-any-time.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/libai.jpg&#34; alt=&#34;李白&amp;mdash;-将进酒&#34; title=&#34;李白----将进酒&#34;&gt;&lt;/span&gt;今天去了苏州，参加平安保险的书面考试，接下来就是等面试了。也不知道什么原因，现在没有兴趣去写Blog了，可能是因为自身的不确定吧！&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2005/12/waiting-any-time.html</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/libai.jpg&#34; alt=&#34;李白&amp;mdash;-将进酒&#34; title=&#34;李白----将进酒&#34;&gt;&lt;/span&gt;今天去了苏州，参加平安保险的书面考试，接下来就是等面试了。也不知道什么原因，现在没有兴趣去写Blog了，可能是因为自身的不确定吧！&lt;/p&gt;
 &lt;p&gt;前两天域名服务商忽然挂了，我还不知道。也就是&lt;strong&gt;聚网&lt;/strong&gt;，他提供的免费php+Mysql服务器在国内来说少见的坚持了那么长时间—-两年多，我还正准备找到工作之后第一件事情就是在他那弄个空间+域名好好研究研究WordPress，没想到，就象一夜之间，就蒸发了。虽然花了40块钱买的原来的域名挂了，但还得庆幸自己还没有把新的砸上去。&lt;/p&gt;
 &lt;p&gt;忽然之间就觉得一切都是那么的无常。&lt;em&gt;&lt;em&gt;原来有些你认为很好的东西，并不是对的。&lt;strong&gt;就象&lt;/strong&gt;&lt;/em&gt;某些东西某些人&lt;/em&gt;**也忽然就消失了，就象没有存在过一样。&lt;/p&gt;
 &lt;p&gt;我随时等待一切美好的到来。真的，就在前夜的梦中，我猛然发现，其实我们就应该好好的享受一切，等待一切，他们虽然都会在某个时刻消失的无影无踪，也绝对会在某个时刻统统降临。不是吗？我深深记得，我当时脑中的句子是：&lt;strong&gt;人生得意须尽欢，莫使金樽空对月。&lt;/strong&gt;&lt;/p&gt;
@@ -138,10 +138,10 @@ I just can’t be your friend&lt;/p&gt;
     
     <item>
       <title>由简入繁易……</title>
-      <link>/blog/2004/09/from-simple-to-complex-so-easy.html</link>
+      <link>https://zhu8.net/blog/2004/09/from-simple-to-complex-so-easy.html</link>
       <pubDate>Mon, 27 Sep 2004 22:19:18 +0800</pubDate>
       
-      <guid>/blog/2004/09/from-simple-to-complex-so-easy.html</guid>
+      <guid>https://zhu8.net/blog/2004/09/from-simple-to-complex-so-easy.html</guid>
       <description>&lt;p&gt;近日不知怎地，常常会觉得心里虚无莫名，考研已经报名了，但心深处的感觉，软软的，象那么一坨海绵，想用力捶打上去，却无论如何使不上力了。这个部落格不知怎么，好像几位都因为两天的无缘无故上不去，仿佛世界里失去了某个东西，竟惶恐不安起来。&lt;br&gt;
 在不知某人的部落格里，链到了高二的语文老师：&lt;a href=&#34;http://feiyuwen.blogchina.com/&#34;&gt;王雷老师的BLOG&lt;/a&gt;里去了，看到他对教育，特别是语文教育的近乎鄙夷的文字，不禁要细细想想，这些年来，我真正，为了自己，以及未来，是否都在为它朝着“+”的方向行走？我的所谓考研“梦”，是否仅仅为了一个不甘心而已？&lt;br&gt;
 头脑里跌跌撞撞的冲出一串记忆来，关于朋友的，关于昔日恋人的，关于我寞落的大学生活的。我的心灵中，何时何日生生多出来这么多东西来？&lt;br&gt;

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>有道 on 猪八的网：浮生志</title>
-    <link>/tags/%E6%9C%89%E9%81%93/</link>
+    <link>https://zhu8.net/tags/%E6%9C%89%E9%81%93/</link>
     <description>Recent content in 有道 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Tue, 19 Dec 2006 12:26:04 +0800</lastBuildDate>
     
-	<atom:link href="/tags/%E6%9C%89%E9%81%93/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/%E6%9C%89%E9%81%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>津津乐道-有道</title>
-      <link>/blog/2006/12/new-choice-of-search-yodao.html</link>
+      <link>https://zhu8.net/blog/2006/12/new-choice-of-search-yodao.html</link>
       <pubDate>Tue, 19 Dec 2006 12:26:04 +0800</pubDate>
       
-      <guid>/blog/2006/12/new-choice-of-search-yodao.html</guid>
+      <guid>https://zhu8.net/blog/2006/12/new-choice-of-search-yodao.html</guid>
       <description>&lt;p&gt;无意中发现了一个新搜索引擎-有道(&lt;a href=&#34;http://www.yodao.com/&#34; title=&#34;有道搜索&#34;&gt;yodao.com&lt;/a&gt;)，界面简洁干净，目前包含了三个子搜索：网页、博客、海量词典。简单试用了一下，速度很不错，索引也比较齐全，网页搜索比较独特的是预览功能，小&lt;a href=&#34;http://www.yodao.com/search?lq=site%3Awww.zhu8.net&amp;amp;ue=utf8&amp;amp;keyfrom=web.bottom&amp;amp;q=site%3Awww.zhu8.net+zhu8&#34; title=&#34;site:www.zhu8.net zhu8&amp;amp;有道搜索&#34;&gt;测试&lt;/a&gt;了一下小站，可以看到在蜘蛛抓取的情况下，网页所呈现的样貌。在使用**site:&lt;strong&gt;单独定义的时候索引的不是该域名下的网页，而是含有该网址的网页（指内容之中），与不使用&lt;/strong&gt;site:&lt;strong&gt;标记的效果是一样的。必须要在&lt;/strong&gt;site:**标记的前面或者后面加上关键词才能搜索出该域名下的网页内容。这与Google和百度有所不同，不知道是有意为之还是正在测试当中。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/yodao.gif&#34; alt=&#34;有道logo&#34; title=&#34;有道logo&#34;&gt;其博客搜索的特色功能包括：&lt;a href=&#34;http://www.yodao.com/help/websearch/features/002/&#34;&gt;即时提示&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/blogsearch/features/001/&#34;&gt;博客卡片&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/blogsearch/features/002/&#34;&gt;博客档案&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/dict/features/001/&#34;&gt;网络释义&lt;/a&gt;等等，很有意思，值得一提的是，刚刚发现他们的博客搜索因为和百度&lt;a href=&#34;http://blogsearch.baidu.com/&#34; title=&#34;百度博客搜索&#34;&gt;博客搜索&lt;/a&gt;一样，独立的Blogger相对于寄居BSP门下的更难索引到，且所用程序和样式千千万万，索引的并不多，刚好发现有道的交流论坛：&lt;a href=&#34;http://u.yodao.com/&#34; title=&#34;坐而论道&#34;&gt;坐而论道&lt;/a&gt;，于是进去发了个&lt;a href=&#34;http://u.yodao.com/viewthread.php?tid=229&amp;amp;extra=page%3D1&#34;&gt;帖子&lt;/a&gt;问一下，在别人的建议下去&lt;a href=&#34;http://tellbot.yodao.com/report?type=BLOG&#34; title=&#34;有道登录您的网站&#34;&gt;提交&lt;/a&gt;了一下自己的Blog，结果也许是机缘巧合，也许是真的就那么快，我的Blog就被&lt;a href=&#34;http://blog.yodao.com/search?q=zhu8&amp;amp;t=a&amp;amp;keyfrom=blog.bar&#34; title=&#34;zhu8&amp;amp;有道博客搜索&#34;&gt;收录&lt;/a&gt;了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/yodao.gif&#34; alt=&#34;有道logo&#34; title=&#34;有道logo&#34;&gt;其博客搜索的特色功能包括：&lt;a href=&#34;http://www.yodao.com/help/websearch/features/002/&#34;&gt;即时提示&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/blogsearch/features/001/&#34;&gt;博客卡片&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/blogsearch/features/002/&#34;&gt;博客档案&lt;/a&gt;、&lt;a href=&#34;http://www.yodao.com/help/dict/features/001/&#34;&gt;网络释义&lt;/a&gt;等等，很有意思，值得一提的是，刚刚发现他们的博客搜索因为和百度&lt;a href=&#34;http://blogsearch.baidu.com/&#34; title=&#34;百度博客搜索&#34;&gt;博客搜索&lt;/a&gt;一样，独立的Blogger相对于寄居BSP门下的更难索引到，且所用程序和样式千千万万，索引的并不多，刚好发现有道的交流论坛：&lt;a href=&#34;http://u.yodao.com/&#34; title=&#34;坐而论道&#34;&gt;坐而论道&lt;/a&gt;，于是进去发了个&lt;a href=&#34;http://u.yodao.com/viewthread.php?tid=229&amp;amp;extra=page%3D1&#34;&gt;帖子&lt;/a&gt;问一下，在别人的建议下去&lt;a href=&#34;http://tellbot.yodao.com/report?type=BLOG&#34; title=&#34;有道登录您的网站&#34;&gt;提交&lt;/a&gt;了一下自己的Blog，结果也许是机缘巧合，也许是真的就那么快，我的Blog就被&lt;a href=&#34;http://blog.yodao.com/search?q=zhu8&amp;amp;t=a&amp;amp;keyfrom=blog.bar&#34; title=&#34;zhu8&amp;amp;有道博客搜索&#34;&gt;收录&lt;/a&gt;了。&lt;/p&gt;
 &lt;p&gt;有道的海量词典也是一个蛮好玩的功能，用&lt;strong&gt;网页&lt;/strong&gt;而非&lt;strong&gt;定语&lt;/strong&gt;来解释词语，有兴趣地可以去&lt;a href=&#34;http://www.yodao.com/help/dict/features/001/&#34;&gt;玩一下&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;期间和一个网友有了些小小的交流：&lt;/p&gt;
 &lt;blockquote&gt;

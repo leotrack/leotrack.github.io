@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bookmarks on 猪八的网：浮生志</title>
-    <link>/tags/bookmarks/</link>
+    <link>https://zhu8.net/tags/bookmarks/</link>
     <description>Recent content in Bookmarks on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Tue, 16 Jun 2009 20:58:44 +0800</lastBuildDate>
     
-	<atom:link href="/tags/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/bookmarks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Movable Type中文化书签插件-Bookmarks Chinese</title>
-      <link>/blog/2009/06/bookmarks-chinese.html</link>
+      <link>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</link>
       <pubDate>Tue, 16 Jun 2009 20:58:44 +0800</pubDate>
       
-      <guid>/blog/2009/06/bookmarks-chinese.html</guid>
+      <guid>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</guid>
       <description>&lt;p&gt;###&lt;strong&gt;描述：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;BookmarksChinese&lt;/strong&gt;&lt;/em&gt;是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
 作者信息：Zhu8 (&lt;a href=&#34;https://zhu8.net&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net&lt;/a&gt;)&lt;br&gt;
@@ -63,7 +63,7 @@
 &amp;lt;$MTTwitterURL$&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;###&lt;strong&gt;例子：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;收藏到美味书签&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;###&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -108,10 +108,10 @@
     
     <item>
       <title>WordPress插件:Add Bookmarks</title>
-      <link>/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
+      <link>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
       <pubDate>Mon, 04 Sep 2006 12:23:28 +0800</pubDate>
       
-      <guid>/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
+      <guid>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
       <description>&lt;p&gt;First plugin for WordPress:&lt;a href=&#34;#Eng&#34;&gt;English vision&lt;/a&gt; (2008/03/18)&lt;/p&gt;
 &lt;p&gt;这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)&lt;/p&gt;
 &lt;ul&gt;
@@ -205,7 +205,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Tested up to&lt;/strong&gt;: WordPress 2.5&lt;br&gt;
 &lt;strong&gt;Author&lt;/strong&gt;: Zhu8&lt;br&gt;
 &lt;strong&gt;Plugin URI&lt;/strong&gt;: &lt;a href=&#34;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&#34;&gt;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&lt;/a&gt;&lt;br&gt;
-&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;https://zhu8.net/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;

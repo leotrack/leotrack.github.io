@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UTW on 猪八的网：浮生志</title>
-    <link>/tags/utw/</link>
+    <link>https://zhu8.net/tags/utw/</link>
     <description>Recent content in UTW on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Sun, 19 Nov 2006 04:17:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/utw/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/utw/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>解决WP汉化和UTW链接问题</title>
-      <link>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
+      <link>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
       <pubDate>Sun, 19 Nov 2006 04:17:00 +0800</pubDate>
       
-      <guid>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
       <description>&lt;p&gt;其实严格说来是因为我在&lt;a href=&#34;http://www.512j.com/&#34; title=&#34;我要安家&#34;&gt;我要安家&lt;/a&gt;的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);&lt;br&gt;
@@ -36,7 +36,7 @@ Zend支持 支持&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; (int)&lt;span style=&#34;color:#099&#34;&gt;0xde120495&lt;/span&gt;; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;//bug  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;https://zhu8.net/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
 在Blog的wp-includes目录下建立languages文件夹&lt;br&gt;

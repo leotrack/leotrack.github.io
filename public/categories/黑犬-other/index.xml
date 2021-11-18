@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>黑犬 | Other on 猪八的网：浮生志</title>
-    <link>/categories/%E9%BB%91%E7%8A%AC-other/</link>
+    <link>https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/</link>
     <description>Recent content in 黑犬 | Other on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Thu, 21 Jan 2010 14:02:35 +0800</lastBuildDate>
     
-	<atom:link href="/categories/%E9%BB%91%E7%8A%AC-other/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>招行信用卡绑定Google Checkout</title>
-      <link>/blog/2010/01/use-cmb-card-as-google-checkout.html</link>
+      <link>https://zhu8.net/blog/2010/01/use-cmb-card-as-google-checkout.html</link>
       <pubDate>Thu, 21 Jan 2010 14:02:35 +0800</pubDate>
       
-      <guid>/blog/2010/01/use-cmb-card-as-google-checkout.html</guid>
+      <guid>https://zhu8.net/blog/2010/01/use-cmb-card-as-google-checkout.html</guid>
       <description>&lt;p&gt;使用招行信用卡购买了Google的**$5**/年的&lt;strong&gt;20GB&lt;/strong&gt;存储空间！没有办法，&lt;a href=&#34;https://checkout.google.com/&#34;&gt;Google Checkout&lt;/a&gt;不支持&lt;strong&gt;中国（P.R.C）&lt;/strong&gt;，所以只能**“被”**成为香港（&lt;strong&gt;Hong.Kong&lt;/strong&gt;）公民了，因为只能购买一年的，Google提示是：&lt;strong&gt;您目前的方案將在 2011/1/20自動續約&lt;/strong&gt;。目前已经增容成功，关键一点就是害怕，会不会因为卡片的注册地不在香港被停止这张信用卡在Google Checkout的使用，明年会自动续费么？这些都得等明年才知道了。&lt;/p&gt;
 &lt;p&gt;信用卡使用的是&lt;strong&gt;双币&lt;/strong&gt;信用卡，&lt;strong&gt;Visa&lt;/strong&gt;的，开通了&lt;strong&gt;Visa验证&lt;/strong&gt;，购买后，招行短信提示有两条：&lt;/p&gt;
 &lt;ol&gt;
@@ -33,24 +33,24 @@ When you check your bank account or credit card statement, payment authorization
 Authorizations can remain in your account anywhere from 24 hours up to 14 business days, depending on the bank. You may contact your bank to confirm the charge for your purchase with Google or to check on the authorization status.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;购买的截图，注意&lt;strong&gt;Outlying Islands&lt;/strong&gt;和&lt;strong&gt;Hong Kong&lt;/strong&gt;这两个地址哈：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googlecheckout.png&#34; alt=&#34;google-checkout&#34; title=&#34;google-checkout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleCheckout_10D83/googlecheckout.png&#34; alt=&#34;google-checkout&#34; title=&#34;google-checkout&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S ：&lt;strong&gt;上面的图片就是用&lt;/strong&gt;&lt;del&gt;Google Docs&lt;/del&gt;&lt;/strong&gt;（经数次测试，图片链接&lt;strong&gt;不是&lt;/strong&gt;固定链接，过一段时间就会变化，无法外部引用，只能用来存储了……）**附：**上传界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleCheckout_10D83/googledocs.png&#34; alt=&#34;google-docs&#34; title=&#34;google-docs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleCheckout_10D83/googledocs.png&#34; alt=&#34;google-docs&#34; title=&#34;google-docs&#34;&gt;&lt;/p&gt;
 &lt;p&gt;关于信用卡是否会被停用Google Checkout和订单是否会被退订，我会在这里&lt;strong&gt;继续更新&lt;/strong&gt;，或者知道的可以&lt;strong&gt;留言&lt;/strong&gt;哈！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Google Go Le?</title>
-      <link>/blog/2010/01/google-go-le.html</link>
+      <link>https://zhu8.net/blog/2010/01/google-go-le.html</link>
       <pubDate>Fri, 15 Jan 2010 23:25:14 +0800</pubDate>
       
-      <guid>/blog/2010/01/google-go-le.html</guid>
+      <guid>https://zhu8.net/blog/2010/01/google-go-le.html</guid>
       <description>&lt;p&gt;Google&lt;a href=&#34;http://googleblog.blogspot.com/2010/01/new-approach-to-china.html&#34; title=&#34;Official Google Blog: A new approach to China&#34;&gt;要走了&lt;/a&gt;？大家都在这么说，各处新闻长篇累牍，也不需要我等草民复述。我与&lt;a href=&#34;http://blog.donews.com/keso/archive/2010/01/13/1580275.aspx&#34; title=&#34;三言二拍：Google退出中国&amp;amp;对牛乱弹琴&amp;amp;Playin&#34;&gt;Keso&lt;/a&gt;（妄自尊大了）的想法如出一辙，我的这么多服务怎么办？我的&lt;del&gt;Gmail、Google Reader、Analytics、AdSense、Blogger、Talk、Chrome、PinYin、PicasaWeb&lt;/del&gt;以及还没有盼到的&lt;del&gt;Nexus One&lt;/del&gt;，它们怎么办？&lt;/p&gt;
 &lt;p&gt;也许有一天，我的所有这些都无法访问，我得把我的身体练得愈发强壮，好爬过那耸入云霄的文明用语；也许有一天，我会发现我惟一的祈祷就是能亲手砸烂那伟岸无比的文明用语；也许有一天，我得不停的说着：“文明用语你文明用语的文明用语。”才能倾泄我对文明用语的文明用语。&lt;/p&gt;
 &lt;p&gt;好吧，那我就就把我的站搬家吧，搬到文明用语的那边，不用再接受贵国的文明用语的洗礼。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;附图两张：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleGoLe_14149/chinainventions10hp.gif&#34; alt=&#34;chinainventions10-hp&#34; title=&#34;chinainventions10-hp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/GoogleGoLe_14149/mygoogleproducts.png&#34; alt=&#34;my-google-products&#34; title=&#34;my-google-products&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleGoLe_14149/chinainventions10hp.gif&#34; alt=&#34;chinainventions10-hp&#34; title=&#34;chinainventions10-hp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/GoogleGoLe_14149/mygoogleproducts.png&#34; alt=&#34;my-google-products&#34; title=&#34;my-google-products&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;延伸阅读：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2010/01/google_to_quit_china.html&#34; title=&#34;壮士断腕，义无再辱&amp;amp;阮一峰的网络日志&#34;&gt;壮士断腕，义无再辱—阮一峰的网络日志&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -61,10 +61,10 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>战争的艺术（War Craft）</title>
-      <link>/blog/2009/11/warcraft.html</link>
+      <link>https://zhu8.net/blog/2009/11/warcraft.html</link>
       <pubDate>Tue, 03 Nov 2009 12:04:44 +0800</pubDate>
       
-      <guid>/blog/2009/11/warcraft.html</guid>
+      <guid>https://zhu8.net/blog/2009/11/warcraft.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;战争&lt;/strong&gt;还是爆发了。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cnbeta.com/articles/96873.htm&#34;&gt;&lt;strong&gt;版署终止《魔兽世界》审批 要求网易停止违规&lt;/strong&gt;&lt;/a&gt;（2009-11-02 19:16）&lt;/p&gt;
 &lt;blockquote&gt;
@@ -94,10 +94,10 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>Rokr E2从Outlook Express中导入联系人</title>
-      <link>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
+      <link>https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</link>
       <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
       
-      <guid>/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
+      <guid>https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</guid>
       <description>&lt;p&gt;最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。&lt;/p&gt;
 &lt;p&gt;就是一直为如何将原来Palm 680的通讯录导过来以及更新烦恼。寻找了如下方法：&lt;/p&gt;
 &lt;ol&gt;
@@ -107,16 +107,16 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
 &lt;/ol&gt;
 &lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
 &lt;p&gt;首先，打开你的OE：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_outlook_2_thumb.png&#34; alt=&#34;e2_contact_outlook_2&#34; title=&#34;e2_contact_outlook_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如&lt;em&gt;My Contacts&lt;/em&gt;，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：&lt;/p&gt;
 &lt;p&gt;进入通讯录——按左键——管理联系人：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_1_thumb.png&#34; alt=&#34;e2_contact_snap_1&#34; title=&#34;e2_contact_snap_1&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;选择——导入名片：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_2_thumb.png&#34; alt=&#34;e2_contact_snap_2&#34; title=&#34;e2_contact_snap_2&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;找到你保存.vcf名片文件的文件夹，比如上面的&lt;em&gt;My Contacts&lt;/em&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_snap_3_thumb.png&#34; alt=&#34;e2_contact_snap_3&#34; title=&#34;e2_contact_snap_3&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;全选，导入！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;至此，你的E2已经与你的OE完全一致了！以后你要同步你的通讯录。重复上述步骤即可！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;此文为响应&lt;a href=&#34;http://welog.org/&#34;&gt;King&lt;/a&gt;对于我的“&lt;a href=&#34;https://zhu8.net/blog/2009/05/braid.html#comment-244&#34;&gt;月经&lt;/a&gt;”评论，在七月月底放出……哈哈&lt;/em&gt;&lt;/p&gt;</description>
@@ -124,10 +124,10 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>Movable Type中文化书签插件-Bookmarks Chinese</title>
-      <link>/blog/2009/06/bookmarks-chinese.html</link>
+      <link>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</link>
       <pubDate>Tue, 16 Jun 2009 20:58:44 +0800</pubDate>
       
-      <guid>/blog/2009/06/bookmarks-chinese.html</guid>
+      <guid>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</guid>
       <description>&lt;p&gt;###&lt;strong&gt;描述：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;BookmarksChinese&lt;/strong&gt;&lt;/em&gt;是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
 作者信息：Zhu8 (&lt;a href=&#34;https://zhu8.net&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net&lt;/a&gt;)&lt;br&gt;
@@ -173,7 +173,7 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
 &amp;lt;$MTTwitterURL$&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;###&lt;strong&gt;例子：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;收藏到美味书签&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;###&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -218,15 +218,15 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
     
     <item>
       <title>【Braid/时空幻境】图文介绍&#43;视频攻略</title>
-      <link>/blog/2009/05/braid.html</link>
+      <link>https://zhu8.net/blog/2009/05/braid.html</link>
       <pubDate>Sat, 09 May 2009 00:44:10 +0800</pubDate>
       
-      <guid>/blog/2009/05/braid.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;left&#34;&gt; &lt;img src=&#34;/images/killsign.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;当我看到&lt;a href=&#34;http://woooh.com/2009/05/braid.html&#34; title=&#34;Woooh:Braid&#34;&gt;Aether&lt;/a&gt;在FriendFeed上推荐了这个游戏的时候，回家我用最快的速度下载了下来。很小（100多Mb，仅相当于动辄N个G的一些“&lt;del&gt;大作&lt;/del&gt;”的数十分之一），但是画面细腻有加，音乐有些像我们当年玩**《英雄无敌3之死亡阴影》**时候的背景音乐，唯美动听。&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2009/05/braid.html</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;left&#34;&gt; &lt;img src=&#34;https://zhu8.net/images/killsign.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;当我看到&lt;a href=&#34;http://woooh.com/2009/05/braid.html&#34; title=&#34;Woooh:Braid&#34;&gt;Aether&lt;/a&gt;在FriendFeed上推荐了这个游戏的时候，回家我用最快的速度下载了下来。很小（100多Mb，仅相当于动辄N个G的一些“&lt;del&gt;大作&lt;/del&gt;”的数十分之一），但是画面细腻有加，音乐有些像我们当年玩**《英雄无敌3之死亡阴影》**时候的背景音乐，唯美动听。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Updated on 2009/05/09 21：15&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;变态的玩了一晚上，真的对自己的游戏体验有了一种全新的感受，从95年开始，玩游戏到现在，没有想到还可以有这样的叙事和创造性的玩法。所有的时光倒流，所有的World开篇的那片云山，那些翻开的书页上所有的哀伤并优美的文字，绘画板式的画面，都是一种强烈而变态的刺激。有些画面不得不借助攻略才能过关，才逐渐适应这个BT的时光倒流的世界，这个小游戏至少告诉了我：&lt;strong&gt;有些东西是可以挽回的，而有些东西，一旦溜走或失去了，你就再也回不去了。&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/Braid-flow_of_time.jpg&#34; alt=&#34;Braid-flow of time&#34;&gt;&lt;/span&gt;***Who has seen the wind?&lt;br&gt;
+&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/Braid-flow_of_time.jpg&#34; alt=&#34;Braid-flow of time&#34;&gt;&lt;/span&gt;***Who has seen the wind?&lt;br&gt;
 Neither you nor I.&lt;br&gt;
 But when the trees bow down their heads,&lt;br&gt;
 The wind is passing by.&lt;br&gt;
@@ -247,7 +247,7 @@ _&lt;strong&gt;开发：&lt;/strong&gt;_Jonathan Blow&lt;br&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Braid-Title.jpg&#34; alt=&#34;Braid Title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/Braid-Title.jpg&#34; alt=&#34;Braid Title&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;【游戏简介】&lt;/p&gt;
@@ -259,7 +259,7 @@ _&lt;strong&gt;开发：&lt;/strong&gt;_Jonathan Blow&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;【等我把Youtube的视频攻略转过来再贴上来吧，有人说不许转载的呢，哈哈，真无语，不就是分享么……装B……】&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;【官方简介】&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Braid-Intro.jpg&#34; alt=&#34;Braid Intro&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/Braid-Intro.jpg&#34; alt=&#34;Braid Intro&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Braid is a platform game in a painterly style where you manipulate the flow of time to solve puzzles.&lt;br&gt;
 Every puzzle in Braid is unique. There is no filler.&lt;br&gt;
 Braid treats your time and attention as precious.&lt;br&gt;
@@ -272,10 +272,10 @@ Journey into worlds where time behaves strangely; observe, learn from, and then 
     
     <item>
       <title>关闭WordPress的Revision功能</title>
-      <link>/blog/2009/03/disable-wordpress-revision.html</link>
+      <link>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</link>
       <pubDate>Tue, 03 Mar 2009 23:25:55 +0800</pubDate>
       
-      <guid>/blog/2009/03/disable-wordpress-revision.html</guid>
+      <guid>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</guid>
       <description>&lt;p&gt;还是使用 &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……&lt;/p&gt;
 &lt;p&gt;如何关闭Revision？我试用了几种方法：&lt;/p&gt;
 &lt;ul&gt;
@@ -299,10 +299,10 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
     
     <item>
       <title>技嘉主板安装IDE光驱和硬盘跳线问题(赠：Beyond-情人)</title>
-      <link>/blog/2009/02/ide-cdrom-on-gigabyte-error.html</link>
+      <link>https://zhu8.net/blog/2009/02/ide-cdrom-on-gigabyte-error.html</link>
       <pubDate>Sat, 14 Feb 2009 01:31:38 +0800</pubDate>
       
-      <guid>/blog/2009/02/ide-cdrom-on-gigabyte-error.html</guid>
+      <guid>https://zhu8.net/blog/2009/02/ide-cdrom-on-gigabyte-error.html</guid>
       <description>&lt;p&gt;原来的板子坏了，新买了一块技嘉的板子（GA-M61PME-S2），因为我原来的硬盘和DVD-ROM都是IDE接口的，但是接上去之后系统要么启动很慢，要么在见到欢迎页面前就死掉。【启动&amp;quot;Detecting IDE Drives&amp;hellip;&amp;ldquo;处非常慢，然后就是到&amp;quot;Verifying DMI Pool Data&amp;hellip;&amp;quot;，一样巨慢，然后无法从硬盘启动……】而我原来的大板子悍马HA01-GT没有这个问题，只是被我刷BIOS刷爆了。不高兴去修了。反正技嘉那块板子才300多点，就买回来。前两天装系统，今天启动就老是不行。开始还怀疑是电源不够，我的是航嘉冷静王2.0钻石版300W的。后来检查跳线，因为我的跳线没有动过，Benq光驱还是在Slave上，而我的日立硬盘还是在Master上面；BIOS中的M/S设置也是对的。&lt;/p&gt;
 &lt;p&gt;去网上查了一下，有位哥们跟我情况比较相似：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -311,7 +311,7 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;延伸阅读：跳线&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;哦！今天是&lt;strong&gt;情人节&lt;/strong&gt;了哈！我这么晚还没有睡觉，老婆要打了……晚安！今晚特约演出：&lt;/p&gt;
 &lt;p&gt;歌手： Beyond&lt;br&gt;
@@ -368,12 +368,12 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
     
     <item>
       <title>Doodle 4 Google作品———Through Google</title>
-      <link>/blog/2009/01/doodle-4-google-through-google.html</link>
+      <link>https://zhu8.net/blog/2009/01/doodle-4-google-through-google.html</link>
       <pubDate>Fri, 16 Jan 2009 02:21:51 +0800</pubDate>
       
-      <guid>/blog/2009/01/doodle-4-google-through-google.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/doodle-4-google-through-google.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;当时，我曾在Google Reader里面分享了别人分享的这一篇Blog，也去投了一票的。可惜，不知道为什么，什么奖都没得？？？土啬伟大得超出我们的想象……&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Google-wall.jpg&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/Google-wall.jpg&#34; alt=&#34;&#34;&gt;
 这是Doodle 4 Google “我的中国”谷歌国际少年绘画大赛中的一幅参赛作品。你看到它想起了什么？是的，我想起了&lt;strong&gt;土啬&lt;/strong&gt;。在墙内的小朋友透过谷歌在墙上开设的一个一个小洞，看到了墙外的另一个世界。这个世界充满了鸟语花香，绿树葱葱。多么有寓意的作品呀。&lt;/p&gt;
 &lt;p&gt;google对该作品的解释是：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -385,19 +385,19 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
     
     <item>
       <title>NOD32浩方等对战平台NO PING及解决</title>
-      <link>/blog/2009/01/nod32-no-ping.html</link>
+      <link>https://zhu8.net/blog/2009/01/nod32-no-ping.html</link>
       <pubDate>Thu, 15 Jan 2009 02:53:00 +0800</pubDate>
       
-      <guid>/blog/2009/01/nod32-no-ping.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/nod32-no-ping.html</guid>
       <description>&lt;h2 id=&#34;安装了eset-nod32安全套装登陆浩方对战平台后显示no-ping在游戏房间看不到人&#34;&gt;安装了ESET NOD32安全套装，登陆浩方对战平台后显示NO PING，在游戏房间看不到人?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：ESET NOD32,No Ping,浩方,对战平台&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;适用产品&lt;/strong&gt;：ESET NOD32 安全套装&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;浩方房间能够进入，但都显示 &lt;strong&gt;no ping&lt;/strong&gt;，所以无法联网游戏。已经确认网络、系统都没有问题，在装 ESS 3.0前都正常。&lt;br&gt;
-&lt;img src=&#34;/images/no-ping.png&#34; alt=&#34;浩方-No Ping&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/no-ping.png&#34; alt=&#34;浩方-No Ping&#34;&gt;&lt;br&gt;
 装了ESS 3.0后 就No Ping，暂时关闭防火墙都一样no ping，过滤模式 设置为自动模式；其它都是默认选项；其中&lt;strong&gt;IDS和高级选项&lt;/strong&gt;中&lt;strong&gt;允许服务&lt;/strong&gt;及&lt;strong&gt;入侵检测&lt;/strong&gt;都是选中的。该修改那个选项才能让浩方正常有ping值？&lt;/p&gt;
 &lt;p&gt;若出现此情况，请您打开杀毒软件界面，按&lt;strong&gt;F5&lt;/strong&gt;进入&lt;strong&gt;高级设置——Web访问保护——HTTP——Web浏览器——添加浩方对战平台主程序“GameClient.exe”——在主程序前面的小框中打叉——确定——重新登陆浩方对战平台&lt;/strong&gt;。如下图：&lt;br&gt;
-&lt;img src=&#34;/images/nod32-set.jpg&#34; alt=&#34;Nod32-设置&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/nod32-set.jpg&#34; alt=&#34;Nod32-设置&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;补充一点：&lt;br&gt;
 Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
@@ -418,14 +418,14 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
     
     <item>
       <title>ScribeFire添加Blogger出错及解决</title>
-      <link>/blog/2008/12/error-scribefire-to-blogger.html</link>
+      <link>https://zhu8.net/blog/2008/12/error-scribefire-to-blogger.html</link>
       <pubDate>Fri, 26 Dec 2008 15:33:00 +0800</pubDate>
       
-      <guid>/blog/2008/12/error-scribefire-to-blogger.html</guid>
+      <guid>https://zhu8.net/blog/2008/12/error-scribefire-to-blogger.html</guid>
       <description>&lt;p&gt;ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说出错，没有任何内容。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/blogger-error.jpg&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/blogger-error.jpg&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;解决方法：把Http://改成&lt;span style=&#39;color: red;&#39;&gt;&lt;strong&gt;Https://&lt;/strong&gt;&lt;/span&gt;，如图：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;/images/Blogger-set.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/Blogger-set.png&#34; alt=&#34;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ok，搞定！&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;P.S：为了凑点字数，同时测试一下新买的键盘Dell SK-8115。发表感想若干：&lt;/p&gt;
@@ -459,10 +459,10 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
     
     <item>
       <title>涅磐-WhoPig.COM</title>
-      <link>/blog/2008/10/nirvana-at-whopig-dot-com.html</link>
+      <link>https://zhu8.net/blog/2008/10/nirvana-at-whopig-dot-com.html</link>
       <pubDate>Thu, 30 Oct 2008 16:21:40 +0800</pubDate>
       
-      <guid>/blog/2008/10/nirvana-at-whopig-dot-com.html</guid>
+      <guid>https://zhu8.net/blog/2008/10/nirvana-at-whopig-dot-com.html</guid>
       <description>&lt;p&gt;2008年10月28日，小站&lt;strong&gt;浮生小筑&lt;/strong&gt; （WhoPig.COM）在WebHostingBUZZ重生，将用&lt;a href=&#34;%CB%9Dhttps://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html&#34;&gt;MT对整站进行重建&lt;/a&gt;。期待自己能有一个新的开始！以前的&lt;strike&gt;&lt;em&gt;&lt;strong&gt;Zhu8&lt;/strong&gt;&lt;/em&gt;&lt;/strike&gt;以及***&lt;strike&gt;Zhu8.Net&lt;/strike&gt;&lt;em&gt;&lt;strong&gt;就是今天和以后的&lt;/strong&gt;WhoPig&lt;/em&gt;*。欢迎Gtalk到：&lt;strong&gt;WhoPig@Gmail&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;待补充（Reborning……）&lt;a href=&#34;http://technorati.com/claim/kz3xq7ibs5&#34;&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -470,11 +470,11 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
     
     <item>
       <title>中国足球终于雄起了！</title>
-      <link>/blog/2006/09/china-football.html</link>
+      <link>https://zhu8.net/blog/2006/09/china-football.html</link>
       <pubDate>Wed, 13 Sep 2006 02:20:06 +0800</pubDate>
       
-      <guid>/blog/2006/09/china-football.html</guid>
-      <description>&lt;p&gt;昨日，中国国家少年队（U-17）&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/china-football.jpg&#34; alt=&#34;康玄秀领到红牌&#34; title=&#34;康玄秀领到红牌&#34;&gt;&lt;/span&gt;在新加坡举行的亚足联U17少年锦标赛中拚搏努力，在昨晚的比赛中顽强的和十五分钟罚下一人，加时赛两人抽筋的朝鲜队拚搏到了加时赛的最后一分钟！并奋勇无比的将比分从一比一追成了一比二，当仁不让的将狼狈的在场上乱奔的朝鲜队送进了四强，并无情的将朝鲜队接下来想好好休息以及明年可以好好休息不打世青赛的美梦给打碎了，从而将宝贵的休息和调整的时间掌握在自己的手中。&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2006/09/china-football.html</guid>
+      <description>&lt;p&gt;昨日，中国国家少年队（U-17）&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/china-football.jpg&#34; alt=&#34;康玄秀领到红牌&#34; title=&#34;康玄秀领到红牌&#34;&gt;&lt;/span&gt;在新加坡举行的亚足联U17少年锦标赛中拚搏努力，在昨晚的比赛中顽强的和十五分钟罚下一人，加时赛两人抽筋的朝鲜队拚搏到了加时赛的最后一分钟！并奋勇无比的将比分从一比一追成了一比二，当仁不让的将狼狈的在场上乱奔的朝鲜队送进了四强，并无情的将朝鲜队接下来想好好休息以及明年可以好好休息不打世青赛的美梦给打碎了，从而将宝贵的休息和调整的时间掌握在自己的手中。&lt;/p&gt;
 &lt;p&gt;中国的未来之星们在多么努力和拚搏！他们就是中国足球的未来！我们在这里可以大大的舒一口气了，中国足球，终于出头了！！在这大快人心的日子里，我郑重决定：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;从此中国队的比赛每场必看！一定要看看以后的那些对手们，怎样像越南一样被中国拚的无话可说，只好拿平局；怎样像朝鲜一样，被中国队搞的罚下一人，拍手称快；怎样被拖入加时赛，打的浑身抽筋，满地找牙；怎样被五个后卫加门将围堵，只好选择打门！&lt;/p&gt;
@@ -486,10 +486,10 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
     
     <item>
       <title>我被Google封了？</title>
-      <link>/blog/2006/07/google-ban-zhu8-net.html</link>
+      <link>https://zhu8.net/blog/2006/07/google-ban-zhu8-net.html</link>
       <pubDate>Fri, 21 Jul 2006 13:30:26 +0800</pubDate>
       
-      <guid>/blog/2006/07/google-ban-zhu8-net.html</guid>
+      <guid>https://zhu8.net/blog/2006/07/google-ban-zhu8-net.html</guid>
       <description>&lt;p&gt;好多天没写日志了，工作了之后没什么热情了，不知道该写些什么了。我不知道是怎么一回事，我的这个站Zhu8.Net我也不知道原来是干什么的，好象在Google一直没有被收录过。我把它弄来之后，架这个站已经有快一个月了，在百度、Yahoo!、MSN都收录了之后，Google在开始的时候还收录了我的Blog&lt;a href=&#34;http://zhu8.512j.com/blog/&#34;&gt;原始地址&lt;/a&gt;里可怜的两篇文章，但后来，不光原始地址的记录没有了，就连连接到这里的&lt;a href=&#34;http://feeds.feedburner.com/Zhu8&#34;&gt;FeedBurner&lt;/a&gt;也没有了，仅仅留下一个地址，连标题都没有了。更不要提我的这个顶级域名了。&lt;/p&gt;
 &lt;p&gt;可笑的是，从统计里看，百度已经收录了我几乎所有的页面，关于WP的某些关键词还相当靠前；而Google里没有一丝一毫关于本站的东西，当我在用着这些服务的时候：&lt;/p&gt;
 &lt;ul&gt;
@@ -518,10 +518,10 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
     
     <item>
       <title>第一篇：留声机</title>
-      <link>/blog/2004/03/gramophone.html</link>
+      <link>https://zhu8.net/blog/2004/03/gramophone.html</link>
       <pubDate>Fri, 19 Mar 2004 12:41:54 +0800</pubDate>
       
-      <guid>/blog/2004/03/gramophone.html</guid>
+      <guid>https://zhu8.net/blog/2004/03/gramophone.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;此文的内容已经不再重要；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;我只是为了记住这个时间。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这个时间也已经不再重要；&lt;/strong&gt;&lt;/p&gt;

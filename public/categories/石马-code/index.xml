@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>石马 | Code on 猪八的网：浮生志</title>
-    <link>/categories/%E7%9F%B3%E9%A9%AC-code/</link>
+    <link>https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/</link>
     <description>Recent content in 石马 | Code on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Sun, 27 Jul 2014 13:23:33 +0800</lastBuildDate>
     
-	<atom:link href="/categories/%E7%9F%B3%E9%A9%AC-code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用BitBucket和FTPloy私有Jekyll源码</title>
-      <link>/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</link>
+      <link>https://zhu8.net/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</link>
       <pubDate>Sun, 27 Jul 2014 13:23:33 +0800</pubDate>
       
-      <guid>/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</guid>
+      <guid>https://zhu8.net/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</guid>
       <description>&lt;h2 id=&#34;为何用bitbucketftploy&#34;&gt;为何用BitBucket&amp;amp;FTPloy？&lt;/h2&gt;
 &lt;p&gt;网站使用&lt;a href=&#34;http://jekyllrb.com&#34; title=&#34;Jekyll • Simple, blog-aware, static sites&#34;&gt;Jekyll&lt;/a&gt;建成之后，放置在&lt;a href=&#34;https://pages.github.com&#34; title=&#34;Github Pages&#34;&gt;Github Pages&lt;/a&gt;的源码属于公开的访问，处于一些个人安全考虑，最重要的是放置在自己的FTP空间会相对安全一些，所以，我采用了支持私有源码的&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;作为Git仓库，并使用&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;作为Deploy方案，实现了自动发布到个人FTP的目的。
-&lt;img src=&#34;/images/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;注册并使用bitbucket&#34;&gt;注册并使用BitBucket&lt;/h3&gt;
 &lt;p&gt;Github私有源码的话，是需要美刀的，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;吧：）注册完成之后，创建一个仓库，如 &lt;em&gt;&lt;strong&gt;下图&lt;/strong&gt;&lt;/em&gt; 所示，注意可选 &lt;strong&gt;私人仓库&lt;/strong&gt; 选项。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。
-&lt;img src=&#34;/images/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;注册并使用ftploy&#34;&gt;注册并使用FTPloy&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;是一个自动监控Git库分支变更并发布到FTP的网站，支持Bitbucket和Github，当然为了简便起见，你也可以直接监控你的Github仓库，能使用的，应该都不用教啦！FTPloy&lt;em&gt;免费版&lt;/em&gt;仅支持&lt;strong&gt;一&lt;/strong&gt;个Project，但是对于小站长来说，监控一个就足够啦！所以，如&lt;em&gt;&lt;strong&gt;下面&lt;/strong&gt;&lt;/em&gt;两幅图，先新建Server，后新建Project。
-&lt;img src=&#34;/images/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
-&lt;img src=&#34;/images/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
+&lt;img src=&#34;https://zhu8.net/images/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;本地生成jekyll页面并push&#34;&gt;本地生成Jekyll页面并Push&lt;/h3&gt;
 &lt;p&gt;本地安装网上教程太多，不多说啦，直接&lt;strong&gt;CMD&lt;/strong&gt;：&lt;em&gt;&lt;strong&gt;jekyll build&lt;/strong&gt;&lt;/em&gt;
-&lt;img src=&#34;/images/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
+&lt;img src=&#34;https://zhu8.net/images/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
 然后就是如何Push，我使用的是&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;，所以，Windows用户请直接下载&lt;a href=&#34;http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;amp;utm_medium=link&amp;amp;utm_campaign=chenjun.com&#34; title=&#34;Mac/Windows上的免费Git/Mercurial客户端.&#34;&gt;SourceTree&lt;/a&gt;，自行探索吧，这就不教程了。&lt;/p&gt;
 &lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
 &lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;
@@ -39,13 +39,13 @@
     
     <item>
       <title>重生@Jekyll&#43;GitHub Pages</title>
-      <link>/blog/2014/07/jekyll-github.html</link>
+      <link>https://zhu8.net/blog/2014/07/jekyll-github.html</link>
       <pubDate>Fri, 04 Jul 2014 23:23:44 +0800</pubDate>
       
-      <guid>/blog/2014/07/jekyll-github.html</guid>
+      <guid>https://zhu8.net/blog/2014/07/jekyll-github.html</guid>
       <description>&lt;p&gt;本博开篇，Zhu8.Net Reborn!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Enjoy it!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll？&lt;/h2&gt;
 &lt;p&gt;我想这不需要多说了吧？&lt;strong&gt;版本记录+Markdown+本地编辑&lt;/strong&gt;。嗯！爽！&lt;/p&gt;
 &lt;h3 id=&#34;1如何离线或在线编辑&#34;&gt;1.如何离线或在线编辑？&lt;/h3&gt;
@@ -74,11 +74,11 @@
     
     <item>
       <title>Typecho个性化常用代码</title>
-      <link>/blog/2014/06/typecho-personalize.html</link>
+      <link>https://zhu8.net/blog/2014/06/typecho-personalize.html</link>
       <pubDate>Mon, 30 Jun 2014 20:51:49 +0800</pubDate>
       
-      <guid>/blog/2014/06/typecho-personalize.html</guid>
-      <description>&lt;p&gt;发觉自己真的老了，好多东西折腾不动了……一个网站模版和个性化，竟然每天就只能折腾一点点。遥想公瑾当年，一晚上不睡觉，整个网站页面就优化完毕了。&lt;img src=&#34;/images/st1.png&#34; alt=&#34;Typecho&#34;&gt;&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2014/06/typecho-personalize.html</guid>
+      <description>&lt;p&gt;发觉自己真的老了，好多东西折腾不动了……一个网站模版和个性化，竟然每天就只能折腾一点点。遥想公瑾当年，一晚上不睡觉，整个网站页面就优化完毕了。&lt;img src=&#34;https://zhu8.net/images/st1.png&#34; alt=&#34;Typecho&#34;&gt;&lt;/p&gt;
 &lt;p&gt;网站以前用&lt;a href=&#34;http://www.movabletype.com&#34;&gt;MT&lt;/a&gt;，最喜欢的当然是静态化，虽然用的是3.X，但是能达到我的要求，就一直没有换。但是后来不知道为什么，反垃圾评论功能失效了……作为一个强迫症兼偏执狂，当然受不了这个，但是自己又没劲再去折腾了。于是，换到了&lt;a href=&#34;http://www.typecho.org&#34;&gt;Typecho&lt;/a&gt;，因为实在是不想用大众脸的&lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;！&lt;/p&gt;
 &lt;p&gt;诚如我&lt;a href=&#34;http://chenjun.com/2014/06/start.html&#34;&gt;第一篇日志&lt;/a&gt;所言，微博微信都是危险的，他让我们渐渐失去了长时间去思考的能力，适应了快餐文化，适应了随手点个赞。还是回到公开在互联网的个人网志，保存放心、安全，所有东西都归我管。当然，如果不是&lt;a href=&#34;http://www.blogger.com&#34;&gt;Blogger&lt;/a&gt;被&lt;strong&gt;土啬女干&lt;/strong&gt;了，我是愿意去那里安家的。&lt;/p&gt;
 &lt;p&gt;好久没有废话了，那废话就说到这里吧，因为Typecho的官方文档还有很多不完善的地方，自己找以及在网上琢磨，为了方便也许只有一两个人能到的这里的友人们，下面就放一些常用的Typecho的代码吧。&lt;/p&gt;
@@ -152,10 +152,10 @@
     
     <item>
       <title>Blogger绑定自定义域名404错误</title>
-      <link>/blog/2009/01/blogger-custom-domain-404-error.html</link>
+      <link>https://zhu8.net/blog/2009/01/blogger-custom-domain-404-error.html</link>
       <pubDate>Mon, 19 Jan 2009 12:46:24 +0800</pubDate>
       
-      <guid>/blog/2009/01/blogger-custom-domain-404-error.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/blogger-custom-domain-404-error.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：今天下午的时候blogger绑定的域名https://zhu8.net提示：&lt;strong&gt;&amp;ldquo;The page cannot be found. (Error 404)&amp;quot;&lt;/strong&gt;。不知道出现404错误是什么原因，大概搜了一下，发现原来是因为DNS缓存的问题，可能在Godaddy上的设置过2-3天才会生效。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;：将你的Blogger先切换回.blogspot.com，然后再切换回来。一切OK！（明后天再继续观察一下，因为我选中了redirect zhu8.net到 &lt;a href=&#34;http://www.zhu8.net&#34;&gt;www.zhu8.net&lt;/a&gt;）&lt;/p&gt;
 </description>
@@ -163,25 +163,25 @@
     
     <item>
       <title>看图说话：绑定Godaddy域名到Blogger</title>
-      <link>/blog/2009/01/google-blogger-custom-domain-godaddy.html</link>
+      <link>https://zhu8.net/blog/2009/01/google-blogger-custom-domain-godaddy.html</link>
       <pubDate>Fri, 16 Jan 2009 17:05:32 +0800</pubDate>
       
-      <guid>/blog/2009/01/google-blogger-custom-domain-godaddy.html</guid>
+      <guid>https://zhu8.net/blog/2009/01/google-blogger-custom-domain-godaddy.html</guid>
       <description>&lt;p&gt;为了用上已强大的Blogger，同时不闲置自己的域名，觉得绑定到Blogger上来，但是&lt;strong&gt;万恶的土啬作祟&lt;/strong&gt;，拼命封我们的ghs.google.com，没有办法，只好曲线救国。 废话少说，以我的域名Zhu8.Net为例，域名位于同样被频繁&lt;strong&gt;土啬&lt;/strong&gt;的Godaddy。相信很多域名位于天朝管理之外的朋友都有这样的问题，经过万能的Google和自己的摸索，总结如下：&lt;/p&gt;
 &lt;p&gt;**第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用&lt;a href=&#34;http://chenjun.com/&#34;&gt;http://chenjun.com/&lt;/a&gt; 绑定了我的Blogger，故而在Godaddy里面如下设置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/godaddy-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/godaddy-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;请列位看官自行看图说话，如何创造自己的ghs.xxx.com。实在看不懂请留言。ghs.google.com的IP有&lt;a href=&#34;http://out.zhu8.net/ghs&#34;&gt;这个地方&lt;/a&gt;查很不错&lt;/p&gt;
 &lt;p&gt;**第二步：**解决www和non-www制定不同的问题。 由于Google只能绑定子域名（www亦是一种特殊格式的子域名），故我们要让根域名也指向到这里，&lt;del&gt;如果你是Host domain在Godaddy，只要使用Forward就可以了。&lt;/del&gt;（&lt;strong&gt;经反复测试，此方法没有用，只有使用.htaccess解决，详见：[注释]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/strong&gt;）如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/godaddy-8.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/godaddy-8.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这样本来就算完了，但是因为无孔不入的&lt;strong&gt;土啬&lt;/strong&gt;又来了。封掉了不知道多少Godaddy的IP，所以如果你不幸如果，域名的IP被封了，那你就需要换IP了。Godaddy的域名自带有免费空间，我们可以通过切换域名空间的IP。网上有很多教程，但是目前来说Godaddy把它藏的深了一点，不再是Switch Operating System，换成了&lt;strong&gt;Upgrade/Downgrade Hosting Account&lt;/strong&gt;。图解如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/godaddy-1.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-2.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-3.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-4.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-5.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-6.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;/images/godaddy-7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/godaddy-1.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-2.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-3.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-4.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-5.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-6.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://zhu8.net/images/godaddy-7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;等待不过十几分钟，虽然Account Details里面的Status还是Pending Account Change，但是IP地址已经换了，Total DNS Control Panel里面的A Records已经变成了新的IP，等待……生效，一切OK！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S:&lt;/strong&gt;_Google Apps_等所有**&lt;em&gt;Google Custom Domain&lt;/em&gt;**都适用此法。有问题，请留言！&lt;/p&gt;
 &lt;p&gt;至此全部完成。请测试：&lt;a href=&#34;https://zhu8.net/&#34; title=&#34;Zhu8.Net&#34;&gt;https://zhu8.net&lt;/a&gt;&lt;/p&gt;
@@ -203,20 +203,20 @@ RewriteRule (.*) &lt;a href=&#34;http://chenjun.com/$1&#34;&gt;http://chenjun.co
     
     <item>
       <title>Movable Type 4网站重构记录</title>
-      <link>/blog/2008/10/reborn-with-movable-type-4.html</link>
+      <link>https://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html</link>
       <pubDate>Thu, 30 Oct 2008 16:22:40 +0800</pubDate>
       
-      <guid>/blog/2008/10/reborn-with-movable-type-4.html</guid>
+      <guid>https://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html</guid>
       <description>&lt;p&gt;即将使用MT进行网站的重构，全线启用&lt;a href=&#34;http://www.movabletype.com/&#34;&gt;Movable Type&lt;/a&gt; （MT.com貌似被GFW了，虽然不知道为什么连一个专业的Blog平台长城都要去过问……请访问&lt;a href=&#34;http://www.movabletype.org/&#34;&gt;MT.org&lt;/a&gt;获得新消息。）&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>又换回MovableType</title>
-      <link>/blog/2008/05/back-to-movabletype.html</link>
+      <link>https://zhu8.net/blog/2008/05/back-to-movabletype.html</link>
       <pubDate>Thu, 15 May 2008 22:48:21 +0800</pubDate>
       
-      <guid>/blog/2008/05/back-to-movabletype.html</guid>
+      <guid>https://zhu8.net/blog/2008/05/back-to-movabletype.html</guid>
       <description>&lt;p&gt;其实还是摆脱不了喜欢静态页面&lt;strong&gt;HTML&lt;/strong&gt;的癖好，所以说第一次用什么程序对个人的看法是最大的，我第一次选择了&lt;a href=&#34;http://www.rainbowsoft.org&#34;&gt;Z-Blog&lt;/a&gt;，然后就总是念念不忘。存档还在我的&lt;a href=&#34;http://chenjun.com/old/&#34;&gt;/old/&lt;/a&gt;目录下。&lt;/p&gt;
 &lt;p&gt;当时用Z-Blog搭建网站的乐趣，学习ASP的乐趣，修改模板的乐趣，都对我以后产生了很大的影响。其实现在是因为改用了PHP的缘故，所以没有办法再用Z-Blog了，但是很佩服zx.asd当年发布的这个程序，以及当时陪伴Z-Blog一起成长的过程，虽然也许现在没有一个人会记得我、记得我当年发布过2Sky和Firefox的Z-Blog模板、记得我写过的一篇弱智的&lt;a href=&#34;http://bbs.rainbowsoft.org/thread-254-1-2.html&#34;&gt;教程&lt;/a&gt;，呵呵，如今已经好些年过去了，我再次回到了可爱的&lt;strong&gt;HTML&lt;/strong&gt;身边……&lt;/p&gt;
 </description>
@@ -224,11 +224,11 @@ RewriteRule (.*) &lt;a href=&#34;http://chenjun.com/$1&#34;&gt;http://chenjun.co
     
     <item>
       <title>从wordpress到textpattern</title>
-      <link>/blog/2008/04/from-wordpress-to-textpattern.html</link>
+      <link>https://zhu8.net/blog/2008/04/from-wordpress-to-textpattern.html</link>
       <pubDate>Wed, 16 Apr 2008 22:29:04 +0800</pubDate>
       
-      <guid>/blog/2008/04/from-wordpress-to-textpattern.html</guid>
-      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2008/04/from-wordpress-to-textpattern.html</guid>
+      <description>&lt;p&gt;其实&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/txp.gif&#34; alt=&#34;Textpattern&#34; title=&#34;Textpattern&#34;&gt;&lt;/span&gt;很久以前就试用了 &lt;a href=&#34;http://textpattern.com/&#34;&gt;TXP&lt;/a&gt; ，但是一直是一头雾水，今天终于 &lt;sup&gt;其实昨天&lt;/sup&gt; 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 &lt;strong&gt;记录：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;解决乱码问题&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -263,11 +263,11 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>WordPress 2.5</title>
-      <link>/blog/2008/03/wordpress-25.html</link>
+      <link>https://zhu8.net/blog/2008/03/wordpress-25.html</link>
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
-      <guid>/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2008/03/wordpress-25.html</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>
@@ -275,10 +275,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>终于用上Movable Type!</title>
-      <link>/blog/2008/03/change-to-movable-type.html</link>
+      <link>https://zhu8.net/blog/2008/03/change-to-movable-type.html</link>
       <pubDate>Sat, 08 Mar 2008 00:14:31 +0800</pubDate>
       
-      <guid>/blog/2008/03/change-to-movable-type.html</guid>
+      <guid>https://zhu8.net/blog/2008/03/change-to-movable-type.html</guid>
       <description>&lt;p&gt;&lt;del datetime=&#34;2008-03-15T07:28:46+00:00&#34;&gt;准备慢慢玩玩MT，敬请期待！&lt;/del&gt;&lt;em&gt;By Zhu8 on Friday, Mar 7, 2008 12:14:53&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update:2008/03/15&lt;/em&gt; 呵呵，玩了两天，还是不习惯，又换回&lt;del&gt;WordPress&lt;/del&gt;了。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Update Again:2008/05/15&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;看来我是极度的喜新厌旧型-_-#，两个月后，又回到了MT。&lt;/strong&gt;&lt;/p&gt;
@@ -288,10 +288,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>定制Trackback特定样式</title>
-      <link>/blog/2006/12/style-wordpress-trackback.html</link>
+      <link>https://zhu8.net/blog/2006/12/style-wordpress-trackback.html</link>
       <pubDate>Sat, 23 Dec 2006 12:06:50 +0800</pubDate>
       
-      <guid>/blog/2006/12/style-wordpress-trackback.html</guid>
+      <guid>https://zhu8.net/blog/2006/12/style-wordpress-trackback.html</guid>
       <description>&lt;p&gt;首先要自我打击一下，在产生这个想法之后，本来我是&lt;strong&gt;异想天开&lt;/strong&gt;地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么简单，只好用笨办法了：手动添加代码到模板中去。&lt;/p&gt;
 &lt;p&gt;本来想用的来自这里：&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/commentstyling/&#34; title=&#34;Making Comments stand out&#34;&gt;WordPress – Comment styling&lt;/a&gt;，确实是一篇不错的文章，里面不仅介绍了为Trackback和Pingback增加独特样式，也有为特定评论的与众不同的显示提供了解决方案。而且作者Podz所写的&lt;a href=&#34;http://www.tamba2.org.uk/wordpress/&#34; title=&#34;WordPress Help&amp;amp;Podz @ Tamba2&#34;&gt;The Temba2 WordPress Guides&lt;/a&gt;是一篇不错的基础教程。评论姑且不谈，我需要的是第一个。&lt;/p&gt;
 &lt;p&gt;首先是在你的Blog模版的评论页面（一般为&lt;strong&gt;comments.php&lt;/strong&gt;）找到这句：&lt;/p&gt;
@@ -337,10 +337,10 @@ Excerpt_html &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&
     
     <item>
       <title>解决WP汉化和UTW链接问题</title>
-      <link>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
+      <link>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</link>
       <pubDate>Sun, 19 Nov 2006 04:17:00 +0800</pubDate>
       
-      <guid>/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html</guid>
       <description>&lt;p&gt;其实严格说来是因为我在&lt;a href=&#34;http://www.512j.com/&#34; title=&#34;我要安家&#34;&gt;我要安家&lt;/a&gt;的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);&lt;br&gt;
@@ -359,7 +359,7 @@ Zend支持 支持&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC1 = (int)&amp;amp;1794895138;  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;$MAGIC2&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; (int)&lt;span style=&#34;color:#099&#34;&gt;0xde120495&lt;/span&gt;; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;//bug  
 &lt;/span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&lt;/span&gt; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;// $MAGIC2 = (int)&amp;amp;569244523;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面的解决方案是在&lt;a href=&#34;http://wordpress.org/support/topic/66818&#34; title=&#34;Language set up problem (portuguese) « WordPress Support&#34;&gt;WordPress Support&lt;/a&gt;找到的。好了，照上面做完一切OK了，现在可以正常使用中文包（zh_CN.mo以及zh_CN.po）了。这里放下本人正在使用的中文包：&lt;a href=&#34;https://zhu8.net/uploads/zh_CN.rar&#34; title=&#34;中文汉化包：zh_CN.mo和zh_CN.po&#34;&gt;下载&lt;/a&gt;，使用方法如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下载编译好的zh_CN.mo文件(当然你也可以下载zh_CN.po文件然后自行编译)&lt;br&gt;
 在Blog的wp-includes目录下建立languages文件夹&lt;br&gt;
@@ -376,10 +376,10 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
     
     <item>
       <title>WordPress插件:Add Bookmarks</title>
-      <link>/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
+      <link>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</link>
       <pubDate>Mon, 04 Sep 2006 12:23:28 +0800</pubDate>
       
-      <guid>/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
+      <guid>https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html</guid>
       <description>&lt;p&gt;First plugin for WordPress:&lt;a href=&#34;#Eng&#34;&gt;English vision&lt;/a&gt; (2008/03/18)&lt;/p&gt;
 &lt;p&gt;这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)&lt;/p&gt;
 &lt;ul&gt;
@@ -473,7 +473,7 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Tested up to&lt;/strong&gt;: WordPress 2.5&lt;br&gt;
 &lt;strong&gt;Author&lt;/strong&gt;: Zhu8&lt;br&gt;
 &lt;strong&gt;Plugin URI&lt;/strong&gt;: &lt;a href=&#34;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&#34;&gt;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&lt;/a&gt;&lt;br&gt;
-&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;https://zhu8.net/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
@@ -485,11 +485,11 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     
     <item>
       <title>UseBB汉化暨论坛搭建完成</title>
-      <link>/blog/2006/08/usebb-chinese-simplified.html</link>
+      <link>https://zhu8.net/blog/2006/08/usebb-chinese-simplified.html</link>
       <pubDate>Sun, 13 Aug 2006 12:30:25 +0800</pubDate>
       
-      <guid>/blog/2006/08/usebb-chinese-simplified.html</guid>
-      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;/span&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;acronym title=&#34;Unnecessary features&#34;&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;/acronym&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;sub&gt;By Chairman Mao&lt;/sub&gt;了。&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2006/08/usebb-chinese-simplified.html</guid>
+      <description>&lt;p&gt;好啦，昨晚折腾了一个晚上，总算完成了。&lt;em&gt;&lt;strong&gt;〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/usebb-chinese.jpg&#34; alt=&#34;ScreenShot of UseBB Chinese&#34; title=&#34;ScreenShot of UseBB Chinese&#34;&gt;&lt;/span&gt;最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样&lt;strong&gt;惊人&lt;/strong&gt;。用UseBB的介绍文件来说就是&lt;acronym title=&#34;Unnecessary features&#34;&gt;&lt;strong&gt;bloat&lt;/strong&gt;&lt;/acronym&gt;。后来找到了&lt;a href=&#34;http://www.usebb.net/&#34;&gt;UseBB&lt;/a&gt;，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就&lt;a href=&#34;http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe&#34; title=&#34;UseBB中文字符截断函数（UTF-8）修改&#34;&gt;修改&lt;/a&gt;了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食&lt;sub&gt;By Chairman Mao&lt;/sub&gt;了。&lt;/p&gt;
 &lt;p&gt;废话少说，简单介绍一下UseBB吧！&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;UseBB使用&lt;em&gt;PHP+Mysql&lt;/em&gt;编写，支持mod_rewrite*（可惜我的空间并不支持）*整个程序简洁小巧。&lt;/li&gt;
@@ -508,10 +508,10 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     
     <item>
       <title>在IE中为abbr标签加样式</title>
-      <link>/blog/2006/07/ie-abbr.html</link>
+      <link>https://zhu8.net/blog/2006/07/ie-abbr.html</link>
       <pubDate>Fri, 21 Jul 2006 11:27:45 +0800</pubDate>
       
-      <guid>/blog/2006/07/ie-abbr.html</guid>
+      <guid>https://zhu8.net/blog/2006/07/ie-abbr.html</guid>
       <description>&lt;p&gt;&lt;strong&gt;简介&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lt;abbr&amp;gt;是用来为web页面上的简称（译者注：这里把简称和缩写分开而论，简称范围比缩写大，取首字母的缩写用&amp;lt;acronym&amp;gt;标签）&lt;a href=&#34;http://www.evolt.org/article/HTML_is_not_an_acronym/17/35750/index.html&#34;&gt;添加适当标注&lt;/a&gt;的XHTML标签，Windows的IE浏览器暂不支持&amp;lt;abbr&amp;gt;标签。 在IE里，你可以应用CSS给&amp;lt;acronym&amp;gt;但是不能应用给&amp;lt;abbr&amp;gt;标签，IE会为&amp;lt;acronym&amp;gt;标签的title属性显示提示，但是会忽略&amp;lt;abbr&amp;gt;标签。&lt;/p&gt;
 &lt;p&gt;这个IE的bug（或者特色）使得一些网站人员认为&amp;lt;abbr&amp;gt;标签一点用都没有，而显然这么认为是不对的。在Mozilla和Opera里还是很正确的处理了这个标签，并且它对于web内容的可读性和语义化来说非常重要。这也是我为什么一直在寻找解决方法，最终我找到了。&lt;/p&gt;
@@ -559,11 +559,11 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
     
     <item>
       <title>我的WordPress插件列表</title>
-      <link>/blog/2006/07/my-wordpress-plugins.html</link>
+      <link>https://zhu8.net/blog/2006/07/my-wordpress-plugins.html</link>
       <pubDate>Sun, 09 Jul 2006 01:18:20 +0800</pubDate>
       
-      <guid>/blog/2006/07/my-wordpress-plugins.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
+      <guid>https://zhu8.net/blog/2006/07/my-wordpress-plugins.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
 &lt;p&gt;在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的&lt;a href=&#34;http://www.ilemoned.com/wordpress/theme-greenery&#34;&gt;Greenery&lt;/a&gt;，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）&lt;/p&gt;
 &lt;h3 id=&#34;后台管理类&#34;&gt;后台管理类：&lt;/h3&gt;
 &lt;ul&gt;

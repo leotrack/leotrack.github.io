@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UTF-8 on 猪八的网：浮生志</title>
-    <link>/tags/utf-8/</link>
+    <link>https://zhu8.net/tags/utf-8/</link>
     <description>Recent content in UTF-8 on 猪八的网：浮生志</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
+    <language>zh-cn</language>
     <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
     <lastBuildDate>Sun, 05 Nov 2006 21:10:10 +0800</lastBuildDate>
     
-	<atom:link href="/tags/utf-8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhu8.net/tags/utf-8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>二三事</title>
-      <link>/blog/2006/11/small-cases.html</link>
+      <link>https://zhu8.net/blog/2006/11/small-cases.html</link>
       <pubDate>Sun, 05 Nov 2006 21:10:10 +0800</pubDate>
       
-      <guid>/blog/2006/11/small-cases.html</guid>
+      <guid>https://zhu8.net/blog/2006/11/small-cases.html</guid>
       <description>&lt;p&gt;瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;壹、解决了Live Search的编码问题&lt;/li&gt;
