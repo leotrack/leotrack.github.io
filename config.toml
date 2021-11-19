@@ -18,8 +18,8 @@ author = "Zhu8"
   [markup.goldmark.renderer]
   unsafe = true
   [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
+    startLevel = 3
+    endLevel = 5
     ordered = false
 
 [params]

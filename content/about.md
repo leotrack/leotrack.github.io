@@ -10,7 +10,7 @@ lastmod: "2021-11-16T10:23:59+08:00"
 toc: true
 ---
 
-## 个人简介
+### 个人简介
 
 陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。
 
@@ -20,7 +20,7 @@ toc: true
 
 来自[江苏](https://zh.wikipedia.org/wiki/%E6%B1%9F%E8%8B%8F "江苏")[金坛](https://zh.wikipedia.org/wiki/%E9%87%91%E5%9D%9B "金坛")，[北漂](https://zh.wikipedia.org/wiki/%E5%8C%97%E6%BC%82 "北漂")三年后，现定居[南京](https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC "南京")。
 
-## 关于本站
+### 关于本站
 
 * 搭建工具：~~[Jekyll](http://jekyllrb.com/)~~ & [BitBucket](https://bitbucket.org/) & [StackEdit](https://stackedit.io/) & [FTPloy](http://ftploy.com/)
 * 模板及样式来源：~~[Useful Paradigm](http://usefulparadigm.com/)~~
@@ -28,13 +28,13 @@ toc: true
 * 2020年5月17日，用[Hugo](https://gohugo.io/)和主题[Daily](https://github.com/amazingrise/hugo-theme-diary)。
 * 2021年11月1日-11月16日，换主题[Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa)继续折腾，其中使用到的平台和工具包括：腾讯云提供的**CloudStudio**、Git平台**Gitlab**（比*Github*的好处就是访问稳定）、网站发布平台**Vercel**（大赞！）。
 
-## 其他流言
+### 其他流言
 
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；
 > * CS **1.5** 死忠，目前仍在某服务器内拥有会员并混迹；
 
-## 联系我
+### 联系我
 
 > -   Mail : [Zhu8.Net[at]Gmail]
 > -   Mobile : 1377\*\*\*7752（请邮件咨询\^oo\^）
