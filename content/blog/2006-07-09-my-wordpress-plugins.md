@@ -8,6 +8,7 @@ tags:
 - Wordpress
 title: 我的WordPress插件列表
 url: /blog/2006/07/my-wordpress-plugins.html
+toc: true
 ---
 ![Wordpress Logo](/images/wordpress-logo.png "WordpressLogo")[WordPress](http://wordpress.org/)是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！
 
