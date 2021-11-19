@@ -686,7 +686,7 @@
   }
   
   details.toc hr:after {
-    content: "&darr;Navigation&darr;";
+    content: "-=T O C=-";
     display: inline-block;
     position: relative;
     top: -19px;
