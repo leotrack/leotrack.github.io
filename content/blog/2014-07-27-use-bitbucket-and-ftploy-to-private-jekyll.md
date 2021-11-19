@@ -13,6 +13,7 @@ featured_image: /images/FTPloy.png
 title: 使用BitBucket和FTPloy私有Jekyll源码
 url: /blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html
 description: 网站使用Jekyll建成之后，放置在Github Pages的源码属于公开的访问，处于一些个人安全考虑，放置在自己的空间会相对安全一些。
+toc: true
 ---
 ## 为何用BitBucket&FTPloy？
 

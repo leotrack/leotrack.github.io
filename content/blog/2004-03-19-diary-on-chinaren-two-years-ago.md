@@ -9,6 +9,7 @@ tags:
 - 贵阳中医学院
 title: 两年前ChinaRen上的日记
 url: /blog/2004/03/diary-on-chinaren-two-years-ago.html
+toc: true
 ---
 ## 第一篇 **自以为清醒的我**
 笔名：不会飞的云 2002年01月05日 天气：sunny 心情：gray

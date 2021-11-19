@@ -12,6 +12,7 @@ featured_image: /images/vector_jerry_8ball_by_svezate-d6lzyyh.png
 title: 重生@Jekyll+GitHub Pages
 url: /blog/2014/07/jekyll-github.html
 description: 版本记录+Markdown+本地编辑。嗯！爽！
+toc: true
 ---
 
 本博开篇，Zhu8.Net Reborn!

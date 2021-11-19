@@ -8,6 +8,7 @@ tags:
 - Wordpress
 title: WordPress插件:Add Bookmarks
 url: /blog/2006/09/wordpress-plugin-add-bookmarks.html
+toc: true
 ---
 First plugin for WordPress:[English vision][1] (2008/03/18)
 

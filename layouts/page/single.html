@@ -7,7 +7,7 @@
 <h2 class="pt-2">
 	<i class="fas fa-bookmark"></i> {{- .Title -}}
 </h2>
-{{ partial "toc.html" . }}
+{{ if .Site.Params.toc }}{{ partial "toc" . }}{{ end }}
 <hr />{{ end }}
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}

@@ -10,6 +10,7 @@ featured_image: /images/st1.png
 title: Typecho个性化常用代码
 url: /blog/2014/06/typecho-personalize.html
 description: 发觉自己真的老了，好多东西折腾不动了……一个网站模版和个性化，竟然每天就只能折腾一点点。遥想公瑾当年，一晚上不睡觉，整个网站页面就优化完毕了。
+toc: true
 ---
 发觉自己真的老了，好多东西折腾不动了……一个网站模版和个性化，竟然每天就只能折腾一点点。遥想公瑾当年，一晚上不睡觉，整个网站页面就优化完毕了。![Typecho](/images/st1.png)
 

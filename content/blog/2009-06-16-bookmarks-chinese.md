@@ -9,6 +9,7 @@ tags:
 - 程序
 title: Movable Type中文化书签插件-Bookmarks Chinese
 url: /blog/2009/06/bookmarks-chinese.html
+toc: true
 ---
 ###**描述：**
 

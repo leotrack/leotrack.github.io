@@ -25,6 +25,7 @@ style = "github"
 
 [params]
   math = false
+  toc = true
   env = "production"
   description = """
   庸俗路上的无尽狂奔……
