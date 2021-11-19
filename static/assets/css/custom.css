@@ -120,3 +120,9 @@ fa-info {
 #gitlab-ic:hover,#gitlab-ic:focus {
   color: #FC6D27 !important;
 }
+/* Media Queries */
+@media (max-width: 1080px) {
+  .toc {
+      display: none;
+  }
+}

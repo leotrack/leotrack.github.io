@@ -630,12 +630,13 @@
   
   details.toc nav {
     overflow-x: hidden;
+    width: 80%;
+    float: right;
   }
   
   details.toc nav ul {
     list-style: disc;
     list-style-position: inside;
-    direction: rtl;
   }
   
   details.toc nav ul ul {
@@ -685,7 +686,7 @@
   }
   
   details.toc hr:after {
-    content: "Table of Contents";
+    content: "&darr;Navigation&darr;";
     display: inline-block;
     position: relative;
     top: -19px;
