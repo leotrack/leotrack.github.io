@@ -7,10 +7,9 @@ shares: true
 comments: true
 enableReadingTime: false
 date: "2020-05-18T22:58:19+08:00"
-toc: true
 ---
 
-## 关于bbPress Theme
+### 关于bbPress Theme
 
 其实是在遥远的2007年3月，我做了一个WordPress 的Theme，名字叫：bbPress，绿色版本，很漂亮。
 

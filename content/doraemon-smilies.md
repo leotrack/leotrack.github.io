@@ -12,13 +12,13 @@ toc: true
 > *Doraemon Smilies For WordPress:该插件制作于2008年6月11日，并且一直没有继续维护，但是应该没有问题可以正常使用:)*  
 > *This Plugin was made AT Wed Jun 11 22:24:33 2008,and not updated anymore,but it should work fine in any vision of WordPress :)*
 
-## 介绍*Introduction*
+### 介绍*Introduction*
 
 WordPress表情插件,来自神奇的哆啦A梦.
 
 *WordPress Smilies plugin with emotions by Doraemon*
 
-## 安装*Installation*
+### 安装*Installation*
 
 - 1.下载 **[插件](/uploads/doraemon-smilies.zip) 和 [图标](/uploads/smilies.zip)**
 - *1.Download **[Plugin](/uploads/doraemon-smilies.zip) & [Smilies](/uploads/smilies.zip) images***
@@ -29,11 +29,11 @@ WordPress表情插件,来自神奇的哆啦A梦.
 - 4.完成!
 - *4.All Done!Enjoy!*
 
-## *Smilies For English Users*
+### *Smilies For English Users*
 
 ------
 
-### Modify the **init.php** use this **Code** below
+#### Modify the **init.php** use this **Code** below
 
 ```php
 <?php

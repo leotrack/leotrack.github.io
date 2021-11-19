@@ -72,14 +72,26 @@
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4" datetime="2009-06-16T20:58:44&#43;08:00">
 		<i class="fas fa-calendar-day"></i>2009-06-16 20:58 @ Tue</time>
 </div>
-<span class="a-gray text-md text-gray-500 leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 1065 字，阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">4 分&nbsp;50 秒</span></span>
+<span class="a-gray text-md text-gray-500 leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 1047 字，阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">4 分&nbsp;45 秒</span></span>
 
 <details class="toc" open>
 <summary>
     <hr />
 </summary>
 <div class="inline toc-content">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#描述"><strong>描述：</strong></a></li>
+    <li><a href="#插件结构font"><strong>插件结构：</strong></font></a></li>
+    <li><a href="#模板标签font"><strong>模板标签：</strong></font></a></li>
+    <li><a href="#例子"><strong>例子：</strong></a></li>
+    <li><a href="#如何使用"><strong>如何使用：</strong></a>
+      <ul>
+        <li><a href="#结束语"><strong>结束语：</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </details>
 <hr /> 
@@ -90,12 +102,12 @@
 
 <article>
 	<section class="mx-auto content">
-		<div class="c-rich-text"><p>###<strong>描述：</strong></p>
+		<div class="c-rich-text"><h3 id="描述"><strong>描述：</strong></h3>
 <p><em><strong>BookmarksChinese</strong></em>是我在使用了一些如<a href="http://www.addthis.com/" title="AddThis">addthis.com</a>的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。<br>
 作者信息：Zhu8 (<a href="https://zhu8.net" title="Zhu8">https://zhu8.net</a>)<br>
 插件地址：<a href="https://zhu8.net/blog/2009/06/bookmarks-chinese.html" title="Zhu8">https://zhu8.net/blog/2009/06/bookmarks-chinese.html</a><br>
 插件版本：1.0 Final (2009.6.4)</p>
-<p>###<strong>插件结构：</strong></font></p>
+<h3 id="插件结构font"><strong>插件结构：</strong></font></h3>
 <blockquote>
 <p>mt-static/<br>
 　　　　plugins/<br>
@@ -124,7 +136,7 @@
 　　　　　　　　　　　　　　function.mtfriendfeedurl.php<br>
 　　　　　　　　　　　　　　function.mttwitterurl.php</p>
 </blockquote>
-<p>###<strong>模板标签：</strong></font></p>
+<h3 id="模板标签font"><strong>模板标签：</strong></font></h3>
 <blockquote>
 <p>&lt;$MTAddToAnyURL$&gt;<br>
 &lt;$MTDiggURL$&gt;<br>
@@ -134,10 +146,10 @@
 &lt;$MTTechnoratiURL$&gt;<br>
 &lt;$MTTwitterURL$&gt;</p>
 </blockquote>
-<p>###<strong>例子：</strong></p>
+<h3 id="例子"><strong>例子：</strong></h3>
 <p><img src="https://zhu8.net/images/BookmarksChinese.png" alt="Bookmarks Chinese Screenshot" title="Bookmarks Chinese Screenshot"></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">a</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;delicious&#34;</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;&lt;$MTDeliciousURL$&gt;&#34;</span> <span style="color:#008080">title</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;收藏到美味书签&#34;</span> <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>&gt;&lt;/<span style="color:#000080">a</span>&gt;
-</code></pre></div><p>###<strong>如何使用：</strong></p>
+</code></pre></div><h3 id="如何使用"><strong>如何使用：</strong></h3>
 <ol>
 <li>
 <p>下载插件：｛<a href="https://zhu8.net/uploads/BookMarksChinese.zip" title="Bookmarks Chinese 下载地址"><strong>这里下载</strong></a>｝</p>
@@ -170,7 +182,7 @@
 <p>如果你需要加入其他的社会化网络按钮，请自己研究下源代码，参数很简单 :)</p>
 </li>
 </ol>
-<p>###<strong>结束语：</strong></p>
+<h4 id="结束语"><strong>结束语：</strong></h4>
 <p>以上，是我在Movable Type的<strong>最后一篇帖子</strong>。经过和Wordpress的对比，MT在可定制性和易用性方面，在资源<strong>特别是中文资源</strong>方面，远远<strong>落后</strong>于WP，而且我从06年开始就使用WP，也有一定的感情，所以决定，今天：2009年6月16日，再次回到WordPress的怀抱，使用WordPress 2.8重新搭建站点。</p>
 <p>不过说实话，不知道是我用的<em>Webhostingbuzz</em>很不错还是我的日志比较少的原因，没有出现过CPU超限被警告的问题。而且，说实话，我很热爱静态化的MT，在访问速度上，静态化确实很是舒爽。</p>
 <p>唉，废话少说，准备更新数据库，换WP。</p>

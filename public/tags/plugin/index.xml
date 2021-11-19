@@ -18,12 +18,12 @@
       <pubDate>Tue, 16 Jun 2009 20:58:44 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</guid>
-      <description>&lt;p&gt;###&lt;strong&gt;描述：&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;h3 id=&#34;描述&#34;&gt;&lt;strong&gt;描述：&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;BookmarksChinese&lt;/strong&gt;&lt;/em&gt;是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
 作者信息：Zhu8 (&lt;a href=&#34;https://zhu8.net&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net&lt;/a&gt;)&lt;br&gt;
 插件地址：&lt;a href=&#34;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&lt;/a&gt;&lt;br&gt;
 插件版本：1.0 Final (2009.6.4)&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;插件结构：&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;插件结构font&#34;&gt;&lt;strong&gt;插件结构：&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;mt-static/&lt;br&gt;
 　　　　plugins/&lt;br&gt;
@@ -52,7 +52,7 @@
 　　　　　　　　　　　　　　function.mtfriendfeedurl.php&lt;br&gt;
 　　　　　　　　　　　　　　function.mttwitterurl.php&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;###&lt;strong&gt;模板标签：&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;模板标签font&#34;&gt;&lt;strong&gt;模板标签：&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;lt;$MTAddToAnyURL$&amp;gt;&lt;br&gt;
 &amp;lt;$MTDiggURL$&amp;gt;&lt;br&gt;
@@ -62,10 +62,10 @@
 &amp;lt;$MTTechnoratiURL$&amp;gt;&lt;br&gt;
 &amp;lt;$MTTwitterURL$&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;###&lt;strong&gt;例子：&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;例子&#34;&gt;&lt;strong&gt;例子：&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;收藏到美味书签&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;###&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;如何使用&#34;&gt;&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;下载插件：｛&lt;a href=&#34;https://zhu8.net/uploads/BookMarksChinese.zip&#34; title=&#34;Bookmarks Chinese 下载地址&#34;&gt;&lt;strong&gt;这里下载&lt;/strong&gt;&lt;/a&gt;｝&lt;/p&gt;
@@ -98,7 +98,7 @@
 &lt;p&gt;如果你需要加入其他的社会化网络按钮，请自己研究下源代码，参数很简单 :)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;###&lt;strong&gt;结束语：&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;结束语&#34;&gt;&lt;strong&gt;结束语：&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;以上，是我在Movable Type的&lt;strong&gt;最后一篇帖子&lt;/strong&gt;。经过和Wordpress的对比，MT在可定制性和易用性方面，在资源&lt;strong&gt;特别是中文资源&lt;/strong&gt;方面，远远&lt;strong&gt;落后&lt;/strong&gt;于WP，而且我从06年开始就使用WP，也有一定的感情，所以决定，今天：2009年6月16日，再次回到WordPress的怀抱，使用WordPress 2.8重新搭建站点。&lt;/p&gt;
 &lt;p&gt;不过说实话，不知道是我用的&lt;em&gt;Webhostingbuzz&lt;/em&gt;很不错还是我的日志比较少的原因，没有出现过CPU超限被警告的问题。而且，说实话，我很热爱静态化的MT，在访问速度上，静态化确实很是舒爽。&lt;/p&gt;
 &lt;p&gt;唉，废话少说，准备更新数据库，换WP。&lt;/p&gt;

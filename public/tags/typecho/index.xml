@@ -23,7 +23,7 @@
 &lt;p&gt;诚如我&lt;a href=&#34;http://chenjun.com/2014/06/start.html&#34;&gt;第一篇日志&lt;/a&gt;所言，微博微信都是危险的，他让我们渐渐失去了长时间去思考的能力，适应了快餐文化，适应了随手点个赞。还是回到公开在互联网的个人网志，保存放心、安全，所有东西都归我管。当然，如果不是&lt;a href=&#34;http://www.blogger.com&#34;&gt;Blogger&lt;/a&gt;被&lt;strong&gt;土啬女干&lt;/strong&gt;了，我是愿意去那里安家的。&lt;/p&gt;
 &lt;p&gt;好久没有废话了，那废话就说到这里吧，因为Typecho的官方文档还有很多不完善的地方，自己找以及在网上琢磨，为了方便也许只有一两个人能到的这里的友人们，下面就放一些常用的Typecho的代码吧。&lt;/p&gt;
 &lt;p&gt;这里先放一个&lt;em&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/em&gt;，详细的请进入&lt;strong&gt;阅读全文&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;1归档页面模板&#34;&gt;1、归档页面模板&lt;/h3&gt;
+&lt;h3 id=&#34;归档页面模板&#34;&gt;归档页面模板&lt;/h3&gt;
 &lt;p&gt;（这里涉及到官方文档首段代码没有结尾，注意参考下面的第一段）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php
 &lt;span style=&#34;color:#d14&#34;&gt;/**
@@ -62,27 +62,27 @@
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;sidebar.php&amp;#39;); ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;footer.php&amp;#39;); ?&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2获取分类描述&#34;&gt;2、获取分类描述&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;获取分类描述&#34;&gt;获取分类描述&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php echo $this-&amp;gt;getDescription(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;案例演示：&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#008080&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;Widget_Metas_Category_List&amp;#39;&lt;/span&gt;)
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;parse&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{permalink}&amp;#34; title=&amp;#34;{description}&amp;#34;&amp;gt;{name}&amp;lt;/a&amp;gt; ({count})&amp;lt;/li&amp;gt;&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3前后文章调用代码&#34;&gt;3、前后文章调用代码&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;前后文章调用代码&#34;&gt;前后文章调用代码&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php $this-&amp;gt;thePrev(); ?&amp;gt; &amp;lt;?php $this-&amp;gt;theNext(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4随机颜色标签云&#34;&gt;4、随机颜色标签云&lt;/h3&gt;
+&lt;h3 id=&#34;随机颜色标签云&#34;&gt;随机颜色标签云&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#008080&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;Widget_Metas_Tag_Cloud&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;ignoreZeroCount=1&amp;amp;limit=30&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;to&lt;/span&gt;(&lt;span style=&#34;color:#008080&#34;&gt;$tags&lt;/span&gt;); &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;ul class=&amp;#34;tags-list&amp;#34;&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php while($tags-&amp;gt;next()): ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;li&amp;gt;&amp;lt;a style=&amp;#34;color: rgb(&amp;lt;?php echo(rand(0, 255)); ?&amp;gt;, &amp;lt;?php echo(rand(0,255)); ?&amp;gt;, &amp;lt;?php echo(rand(0, 255)); ?&amp;gt;)&amp;#34; href=&amp;#34;&amp;lt;?php $tags-&amp;gt;permalink(); ?&amp;gt;&amp;#34; title=&amp;#39;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;#39;&amp;gt;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php endwhile; ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;/ul&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5返回网页顶部&#34;&gt;5、返回网页顶部&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;返回网页顶部&#34;&gt;返回网页顶部&lt;/h3&gt;
 &lt;p&gt;在footer.php页面增加如下代码（可直接下载我的第二段JS代码，将其中的图片地址改成你自己定义的）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&amp;lt;!-- Start of Go-Top Code --&amp;gt;&lt;/span&gt;
 &amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt;&amp;gt;
 &amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;http://chenjun.com/usr/uploads/top.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt;&amp;gt;
 &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&amp;lt;!-- End of Go-Top Code --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;6段落首行缩进两字符&#34;&gt;6、段落首行缩进两字符&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;段落首行缩进两字符&#34;&gt;段落首行缩进两字符&lt;/h3&gt;
 &lt;p&gt;编辑Style.css文件，增加如下代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;post-content&lt;/span&gt; &lt;span style=&#34;color:#000080&#34;&gt;p&lt;/span&gt;{ 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;text-indent&lt;/span&gt;: &lt;span style=&#34;color:#099&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;em&lt;/span&gt;; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;/*em是相对单位，2em即现在一个字大小的两倍*/&lt;/span&gt; 

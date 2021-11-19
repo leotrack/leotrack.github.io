@@ -24,7 +24,7 @@ toc: true
 
 <!--more-->
 
-### 1、归档页面模板
+### 归档页面模板
 
 （这里涉及到官方文档首段代码没有结尾，注意参考下面的第一段）
 
@@ -68,7 +68,7 @@ toc: true
     <?php $this->need('footer.php'); ?>
 ```
 
-### 2、获取分类描述
+### 获取分类描述
 
 `<?php echo $this->getDescription(); ?>`
 
@@ -80,11 +80,11 @@ toc: true
 ->parse('<li><a href="{permalink}" title="{description}">{name}</a> ({count})</li>'); ?>
 ```
 
-### 3、前后文章调用代码
+### 前后文章调用代码
 
 `<?php $this->thePrev(); ?> <?php $this->theNext(); ?>`
 
-### 4、随机颜色标签云
+### 随机颜色标签云
 
 ```php
 <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
@@ -95,7 +95,7 @@ toc: true
 </ul>
 ```
 
-### 5、返回网页顶部
+### 返回网页顶部
 
 在footer.php页面增加如下代码（可直接下载我的第二段JS代码，将其中的图片地址改成你自己定义的）：
 
@@ -106,7 +106,7 @@ toc: true
 <!-- End of Go-Top Code -->
 ```
 
-### 6、段落首行缩进两字符
+### 段落首行缩进两字符
 
 编辑Style.css文件，增加如下代码：
 

@@ -18,21 +18,21 @@
       <pubDate>Sun, 27 Jul 2014 13:23:33 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</guid>
-      <description>&lt;h2 id=&#34;为何用bitbucketftploy&#34;&gt;为何用BitBucket&amp;amp;FTPloy？&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;为何用bitbucketftploy&#34;&gt;为何用BitBucket&amp;amp;FTPloy？&lt;/h3&gt;
 &lt;p&gt;网站使用&lt;a href=&#34;http://jekyllrb.com&#34; title=&#34;Jekyll • Simple, blog-aware, static sites&#34;&gt;Jekyll&lt;/a&gt;建成之后，放置在&lt;a href=&#34;https://pages.github.com&#34; title=&#34;Github Pages&#34;&gt;Github Pages&lt;/a&gt;的源码属于公开的访问，处于一些个人安全考虑，最重要的是放置在自己的FTP空间会相对安全一些，所以，我采用了支持私有源码的&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;作为Git仓库，并使用&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;作为Deploy方案，实现了自动发布到个人FTP的目的。
 &lt;img src=&#34;https://zhu8.net/images/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;注册并使用bitbucket&#34;&gt;注册并使用BitBucket&lt;/h3&gt;
+&lt;h4 id=&#34;注册并使用bitbucket&#34;&gt;注册并使用BitBucket&lt;/h4&gt;
 &lt;p&gt;Github私有源码的话，是需要美刀的，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;吧：）注册完成之后，创建一个仓库，如 &lt;em&gt;&lt;strong&gt;下图&lt;/strong&gt;&lt;/em&gt; 所示，注意可选 &lt;strong&gt;私人仓库&lt;/strong&gt; 选项。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。
 &lt;img src=&#34;https://zhu8.net/images/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;注册并使用ftploy&#34;&gt;注册并使用FTPloy&lt;/h3&gt;
+&lt;h4 id=&#34;注册并使用ftploy&#34;&gt;注册并使用FTPloy&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;是一个自动监控Git库分支变更并发布到FTP的网站，支持Bitbucket和Github，当然为了简便起见，你也可以直接监控你的Github仓库，能使用的，应该都不用教啦！FTPloy&lt;em&gt;免费版&lt;/em&gt;仅支持&lt;strong&gt;一&lt;/strong&gt;个Project，但是对于小站长来说，监控一个就足够啦！所以，如&lt;em&gt;&lt;strong&gt;下面&lt;/strong&gt;&lt;/em&gt;两幅图，先新建Server，后新建Project。
 &lt;img src=&#34;https://zhu8.net/images/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
 &lt;img src=&#34;https://zhu8.net/images/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;本地生成jekyll页面并push&#34;&gt;本地生成Jekyll页面并Push&lt;/h3&gt;
+&lt;h4 id=&#34;本地生成jekyll页面并push&#34;&gt;本地生成Jekyll页面并Push&lt;/h4&gt;
 &lt;p&gt;本地安装网上教程太多，不多说啦，直接&lt;strong&gt;CMD&lt;/strong&gt;：&lt;em&gt;&lt;strong&gt;jekyll build&lt;/strong&gt;&lt;/em&gt;
 &lt;img src=&#34;https://zhu8.net/images/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
 然后就是如何Push，我使用的是&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;，所以，Windows用户请直接下载&lt;a href=&#34;http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;amp;utm_medium=link&amp;amp;utm_campaign=chenjun.com&#34; title=&#34;Mac/Windows上的免费Git/Mercurial客户端.&#34;&gt;SourceTree&lt;/a&gt;，自行探索吧，这就不教程了。&lt;/p&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
 &lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;
 </description>
     </item>
@@ -46,11 +46,11 @@
       <description>&lt;p&gt;本博开篇，Zhu8.Net Reborn!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Enjoy it!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll？&lt;/h2&gt;
+&lt;h3 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll&lt;/h3&gt;
 &lt;p&gt;我想这不需要多说了吧？&lt;strong&gt;版本记录+Markdown+本地编辑&lt;/strong&gt;。嗯！爽！&lt;/p&gt;
-&lt;h3 id=&#34;1如何离线或在线编辑&#34;&gt;1.如何离线或在线编辑？&lt;/h3&gt;
+&lt;h4 id=&#34;如何离线或在线编辑&#34;&gt;如何离线或在线编辑&lt;/h4&gt;
 &lt;p&gt;经过无数试用，建议Chrome+&lt;a href=&#34;https://stackedit.io&#34; title=&#34;StackEdit&#34;&gt;Stackedit&lt;/a&gt;（&lt;a href=&#34;https://chrome.google.com/webstore/detail/stackedit/iiooodelglhkcpgbajoejffhijaclcdg?utm_source=chrome-ntp-launcher&#34;&gt;应用商店下载地址&lt;/a&gt;）！一个搞定所有！Stackedit可以支持安装应用商店使用离线功能，并且有完整的快捷键面板以及物理快捷键！&lt;/p&gt;
-&lt;h3 id=&#34;2-markdown新手快捷键参考&#34;&gt;2. Markdown新手快捷键参考&lt;/h3&gt;
+&lt;h4 id=&#34;markdown新手快捷键参考&#34;&gt;Markdown新手快捷键参考&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;加粗——Ctrl+B&lt;br&gt;
 斜体——Ctrl+I&lt;br&gt;
@@ -63,11 +63,11 @@
 标题——Ctrl+H&lt;br&gt;
 水平分割线——Ctrl+R&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;3-模板问题&#34;&gt;3. 模板问题&lt;/h3&gt;
+&lt;h4 id=&#34;模板问题&#34;&gt;模板问题&lt;/h4&gt;
 &lt;p&gt;直接Fork我的Github页面吧，花费了一个礼拜折腾的！当然，你得把里面的ga.html跟踪页码换掉，Disqus的代码换掉，config.yml里面的文件换成自己的，以及，你所有文件看一遍就明白了：）&lt;/p&gt;
-&lt;h3 id=&#34;4-wordpress导出&#34;&gt;4. Wordpress导出&lt;/h3&gt;
+&lt;h4 id=&#34;wordpress导出&#34;&gt;Wordpress导出&lt;/h4&gt;
 &lt;p&gt;为什么要用Wordpress导出？因为最方便，其他平台使用率没有那么高，我使用的是wordpress-to-jekyll-exporter.zip，请点击&lt;a href=&#34;https://www.dropbox.com/s/maf5zc5zoj3eqec/wordpress-to-jekyll-exporter.zip&#34; title=&#34;wordpress-to-jekyll-exporter.zip&#34;&gt;下载&lt;/a&gt;，里面我修改并增加了日期和时间选项，方便使用。&lt;/p&gt;
-&lt;h3 id=&#34;5-待补充&#34;&gt;5. 待补充&lt;/h3&gt;
+&lt;h3 id=&#34;待补充&#34;&gt;待补充&lt;/h3&gt;
 &lt;p&gt;回头再补充一些吧，就酱。&lt;/p&gt;
 </description>
     </item>
@@ -83,7 +83,7 @@
 &lt;p&gt;诚如我&lt;a href=&#34;http://chenjun.com/2014/06/start.html&#34;&gt;第一篇日志&lt;/a&gt;所言，微博微信都是危险的，他让我们渐渐失去了长时间去思考的能力，适应了快餐文化，适应了随手点个赞。还是回到公开在互联网的个人网志，保存放心、安全，所有东西都归我管。当然，如果不是&lt;a href=&#34;http://www.blogger.com&#34;&gt;Blogger&lt;/a&gt;被&lt;strong&gt;土啬女干&lt;/strong&gt;了，我是愿意去那里安家的。&lt;/p&gt;
 &lt;p&gt;好久没有废话了，那废话就说到这里吧，因为Typecho的官方文档还有很多不完善的地方，自己找以及在网上琢磨，为了方便也许只有一两个人能到的这里的友人们，下面就放一些常用的Typecho的代码吧。&lt;/p&gt;
 &lt;p&gt;这里先放一个&lt;em&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/em&gt;，详细的请进入&lt;strong&gt;阅读全文&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;1归档页面模板&#34;&gt;1、归档页面模板&lt;/h3&gt;
+&lt;h3 id=&#34;归档页面模板&#34;&gt;归档页面模板&lt;/h3&gt;
 &lt;p&gt;（这里涉及到官方文档首段代码没有结尾，注意参考下面的第一段）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php
 &lt;span style=&#34;color:#d14&#34;&gt;/**
@@ -122,27 +122,27 @@
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;sidebar.php&amp;#39;); ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;?php $this-&amp;gt;need(&amp;#39;footer.php&amp;#39;); ?&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2获取分类描述&#34;&gt;2、获取分类描述&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;获取分类描述&#34;&gt;获取分类描述&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php echo $this-&amp;gt;getDescription(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;案例演示：&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#008080&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;Widget_Metas_Category_List&amp;#39;&lt;/span&gt;)
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;parse&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{permalink}&amp;#34; title=&amp;#34;{description}&amp;#34;&amp;gt;{name}&amp;lt;/a&amp;gt; ({count})&amp;lt;/li&amp;gt;&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3前后文章调用代码&#34;&gt;3、前后文章调用代码&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;前后文章调用代码&#34;&gt;前后文章调用代码&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;?php $this-&amp;gt;thePrev(); ?&amp;gt; &amp;lt;?php $this-&amp;gt;theNext(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4随机颜色标签云&#34;&gt;4、随机颜色标签云&lt;/h3&gt;
+&lt;h3 id=&#34;随机颜色标签云&#34;&gt;随机颜色标签云&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#008080&#34;&gt;$this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;widget&lt;/span&gt;(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;Widget_Metas_Tag_Cloud&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;ignoreZeroCount=1&amp;amp;limit=30&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#008080&#34;&gt;to&lt;/span&gt;(&lt;span style=&#34;color:#008080&#34;&gt;$tags&lt;/span&gt;); &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;ul class=&amp;#34;tags-list&amp;#34;&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php while($tags-&amp;gt;next()): ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;    &amp;lt;li&amp;gt;&amp;lt;a style=&amp;#34;color: rgb(&amp;lt;?php echo(rand(0, 255)); ?&amp;gt;, &amp;lt;?php echo(rand(0,255)); ?&amp;gt;, &amp;lt;?php echo(rand(0, 255)); ?&amp;gt;)&amp;#34; href=&amp;#34;&amp;lt;?php $tags-&amp;gt;permalink(); ?&amp;gt;&amp;#34; title=&amp;#39;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;#39;&amp;gt;&amp;lt;?php $tags-&amp;gt;name(); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php endwhile; ?&amp;gt;
 &lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;/ul&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5返回网页顶部&#34;&gt;5、返回网页顶部&lt;/h3&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;返回网页顶部&#34;&gt;返回网页顶部&lt;/h3&gt;
 &lt;p&gt;在footer.php页面增加如下代码（可直接下载我的第二段JS代码，将其中的图片地址改成你自己定义的）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&amp;lt;!-- Start of Go-Top Code --&amp;gt;&lt;/span&gt;
 &amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt;&amp;gt;
 &amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;http://chenjun.com/usr/uploads/top.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;script&lt;/span&gt;&amp;gt;
 &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;&amp;lt;!-- End of Go-Top Code --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;6段落首行缩进两字符&#34;&gt;6、段落首行缩进两字符&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;段落首行缩进两字符&#34;&gt;段落首行缩进两字符&lt;/h3&gt;
 &lt;p&gt;编辑Style.css文件，增加如下代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;post-content&lt;/span&gt; &lt;span style=&#34;color:#000080&#34;&gt;p&lt;/span&gt;{ 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;text-indent&lt;/span&gt;: &lt;span style=&#34;color:#099&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#458;font-weight:bold&#34;&gt;em&lt;/span&gt;; &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;/*em是相对单位，2em即现在一个字大小的两倍*/&lt;/span&gt; 
