@@ -6,7 +6,7 @@ var scrolltotop={
 
     setting: {startline:100, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]},
 
-    controlHTML: '<img src="/images/dora.png" height="60" border="0" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+    controlHTML: '<img src="/images/dora.png" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
 
     controlattrs: {offsetx:20, offsety:20}, //offset of control relative to right/ bottom of window corner
 
