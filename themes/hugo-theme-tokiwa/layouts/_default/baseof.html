@@ -3,27 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	{{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+	<title>{{ if .IsHome }}{{else}}{{ if .Title }}{{ .Title }} | {{ end }}{{end}}{{ .Site.Title }}</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	{{ hugo.Generator }}{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
 	<meta name="description" content="{{ .Site.Params.sitedescription }}">
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> {{ else }}
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
-	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}
-	<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
-	{{ range .Site.Params.custom_css }}
-	<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}"> {{ end }}
+	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
+	{{ range .Site.Params.custom_css }}<link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}"> {{ end }}
 	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
-	{{ with .OutputFormats.Get "RSS" }}
-	<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 	<link type="text/css" rel="stylesheet" href="https://fonts.font.im/css?family=Noto+Serif+SC" />
-	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	{{ if ne $.Site.LanguageCode "en"}}<!--pangu.js-->
+	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->{{ if ne $.Site.LanguageCode "en"}}<!--pangu.js-->
 	<script>
 		(function (u, c) {
 			var d = document,
