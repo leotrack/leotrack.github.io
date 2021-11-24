@@ -109,7 +109,3 @@ Facebook = "ichenjun"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
-[frontmatter]
-# update sitemap.xml's lastmod datetime by file change time, instead of git.
-lastmod = ["lastmod", ":fileModTime", ":default"]

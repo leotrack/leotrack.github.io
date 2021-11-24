@@ -12,6 +12,7 @@
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
 	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
 	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
+	<link rel="apple-touch-icon" href="{{ .Site.Params.appletouchicon }}" />
 	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
