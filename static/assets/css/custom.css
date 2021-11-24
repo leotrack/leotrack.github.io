@@ -99,25 +99,45 @@
   word-break: break-all;
 }
 
-#twitter-ic:hover,#twitter-ic:focus {
+#twitter-ic,
+#twitter-ic:hover,
+#twitter-ic:focus {
   color: #00aced !important;
 }
-#tumblr-ic:hover,#tumblr-ic:focus {
+
+#tumblr-ic,
+#tumblr-ic:hover,
+#tumblr-ic:focus {
   color: #35465d !important;
 }
-#instagram-ic:hover,#instagram-ic:focus {
+
+#instagram-ic,
+#instagram-ic:hover,
+#instagram-ic:focus {
   color: #c32aa3 !important;
 }
-#weibo-ic:hover,#weibo-ic:focus {
+
+#weibo-ic,
+#weibo-ic:hover,
+#weibo-ic:focus {
   color: #E6162D !important;
 }
-#facebook-ic:hover,#facebook-ic:focus {
+
+#facebook-ic,
+#facebook-ic:hover,
+#facebook-ic:focus {
   color: #3B5998 !important;
 }
-#github-ic:hover,#github-ic:focus {
+
+#github-ic,
+#github-ic:hover,
+#github-ic:focus {
   color: #333333 !important;
 }
-#gitlab-ic:hover,#gitlab-ic:focus {
+
+#gitlab-ic,
+#gitlab-ic:hover,
+#gitlab-ic:focus {
   color: #FC6D27 !important;
 }
 /* Media Queries */
