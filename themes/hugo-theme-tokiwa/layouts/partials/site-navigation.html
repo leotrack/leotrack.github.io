@@ -1,7 +1,7 @@
 <ul class="font-serif flex-grow-0 flex justify-between flex-wrap md:flex-col">
 	{{ if .Site.Menus.main }} {{ range .Site.Menus.main }}
 	<li class="px-1 md:px-0">
-		<a href="{{ .URL }}" title="Go to {{ .Name }}" {{ if in ($.Permalink| absURL ) (.URL|absURL) }} class="font-medium text-medium-red-violet-600 hover:text-medium-red-violet-400" {{ end }}> {{ .Name }}  {{ .Pre }}</a>
+		<a href="{{ .URL }}" title="Go to {{ .Name }}" {{ if in ($.Permalink| absURL ) (.URL|absURL) }} class="font-medium text-medium-red-violet-600 hover:text-medium-red-violet-400" {{ end }}>{{ .Name }}  {{ .Pre }}</a>
 	</li> {{ end }} {{ end }}
 	{{ if .Site.Params.fuse }}
 	<div id="fastSearch" class="m-0">
