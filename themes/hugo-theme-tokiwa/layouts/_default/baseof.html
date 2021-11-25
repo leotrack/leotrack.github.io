@@ -18,7 +18,14 @@
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<link type="text/css" rel="stylesheet" href="https://fonts.font.im/css?family=Noto+Serif+SC" />
+	<script type="text/javascript" src="https://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+	<script type="text/javascript">
+	   $webfont.load("body", "f3296fd93caf4ea5b6a4d22c1d953319", "HanWangKaiMedium-Gb5");
+	   /*$webfont.load("#id1,.class1,h1", "f3296fd93caf4ea5b6a4d22c1d953319", "HanWangKaiMedium-Gb5");*/
+	   /*．．．*/
+	   $webfont.draw();
+	</script>
+	<!-- <link type="text/css" rel="stylesheet" href="https://fonts.font.im/css?family=Noto+Serif+SC" /> -->
 	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->{{ if ne $.Site.LanguageCode "en"}}<!--pangu.js-->
 	<script>
 		(function (u, c) {
@@ -38,7 +45,7 @@
 		});
 	</script>
 	{{end}}
-	<!-- @font-face for Chinese -->{{ if .Site.Params.useChineseFonts}}
+	<!-- {{ if .Site.Params.useChineseFonts}}
 	<style type="text/css" media="screen, print">
 		@font-face {
 			font-family: "FancyTitleFont";
@@ -48,7 +55,7 @@
 				url('{{ ( printf "%s%s" .Site.Params.bannerFont ".woff") | absURL }}') format('woff');
 		}
 	</style>
-	{{ end }}
+	{{ end }} -->
 </head>
 
 <body class="bg-gray-100 text-gray-700 font-sans">
