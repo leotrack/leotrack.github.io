@@ -53,19 +53,25 @@ function loadSearch() {
   console.log('loadSearch()')
   fetchJSONFile('/index.json', function (data) {
 
-    var options = { // fuse.js options; check fuse.js website for details
-      shouldSort: true,
-      location: 0,
-      distance: 100,
-      threshold: 0.4,
-      minMatchCharLength: 1,
-      keys: [
-        'permalink',
-        'title',
-        'tags',
-        'contents'
-      ]
-    };
+// Options for fuse.js
+var options = {
+  shouldSort: true,
+  includeMatches: true,
+  tokenize: true,
+  matchAllTokens: true,
+  threshold: 0.2,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 64,
+  minMatchCharLength: 2,
+  keys: [
+    {name:"title",weight:0.8},
+    {name:"tags",weight:0.5},
+    {name:"categories",weight:0.5},
+    {name:"contents",weight:0.4}
+  ]
+};
+
     // Create the Fuse index
     fuseIndex = Fuse.createIndex(options.keys, data)
     fuse = new Fuse(data, options, fuseIndex); // build the index from the json file
