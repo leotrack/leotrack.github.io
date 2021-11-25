@@ -7,7 +7,8 @@
 </script>
 <script src="/assets/js/go-top.js" type="text/javascript"></script>
 <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>{{ end }}
-{{ if .Site.Params.fuse }}<script src="/lib/fuse.min.js"></script> <!-- download and copy over fuse.min.js file from fusejs.io -->
+{{ if .Site.Params.fuse }}<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+<!-- download and copy over fuse.min.js file from fusejs.io -->
 <script src="/lib/fastsearch.js"></script>
 <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
