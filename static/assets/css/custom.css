@@ -145,12 +145,12 @@
   color: #FC6D27 !important;
 }
 
-​#fastSearch input {
+#fastSearch input {
   width: 100%;
   height: 2.5rem;
-  padding-right:0.125rem;
-  margin: 0 0.25rem 0.5rem -2rem;
-  border: 2px solid #ffaac2;
+  padding-right:0.25rem;
+  margin: 0 0 0.5rem -2rem;
+  border: 0.125rem solid #ffaac2;
   border-radius: 0.5rem;
   outline: none;
   background: #e3f9da;
