@@ -59,7 +59,7 @@ var options = {
   includeMatches: true,
   tokenize: true,
   matchAllTokens: true,
-  threshold: 0.2,
+  threshold: 0.8,
   location: 0,
   distance: 100,
   maxPatternLength: 64,
