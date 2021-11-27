@@ -10,15 +10,15 @@
 	<meta name="description" content="{{ .Site.Params.sitedescription }}">
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> {{ else }}
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
-	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet"> {{ end }}
+	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link type="text/css" rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .) }}" media="all" /> {{ end }}
 	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
 	<link rel="apple-touch-icon" href="{{ .Site.Params.appletouchicon }}" />
-	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}" />
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
 	{{ if and (.Site.Params.walineServer) (.IsPage) }}<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>{{ end }}
-	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" />
-	<link type="text/css" rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css" />
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" />
+	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" media="all" />
+	<link type="text/css" rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" media="all" />
 	<!--[if lt IE 9]><script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->{{ if ne $.Site.LanguageCode "en"}}<!--pangu.js-->
 	<script>
 		(function (u, c) {

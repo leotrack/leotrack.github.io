@@ -157,6 +157,11 @@
   color: #9E9C9C;
 }
 
+#dora-three {
+  width: 180;
+  height: 145;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
   .toc {
