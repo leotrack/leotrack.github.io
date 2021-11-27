@@ -157,9 +157,9 @@
   color: #9E9C9C;
 }
 
-#dora-three {
-  width: 180;
-  height: 145;
+img#dora-three {
+  width: auto;
+  height: auto;
 }
 
 /* Media Queries */

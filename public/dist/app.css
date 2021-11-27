@@ -994,7 +994,7 @@ details.toc hr:after {
 
 .hover\:text-gray-700:hover,.text-gray-700 {
   --tw-text-opacity: 1;
-  color: rgba(74,85,104,var(--tw-text-opacity))
+  color: rgba(0,0,0,var(--tw-text-opacity))
 }
 
 .text-eucalyptus-400 {
