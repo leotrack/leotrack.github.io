@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	<meta name="author" content="{{ .Site.Params.author }}">
 	{{ hugo.Generator }}{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	<meta name="description" content="{{ .Site.Params.sitedescription }}">
-	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> {{ else }}
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
+	<meta name="description" content="{{ if .Description}}{{ .Description }}{{else}}{{ if .Summary}}{{ .Summary }}{{else}}{{ .Site.Params.sitedescription }}{{end}}{{end}}">
+	<meta name="robots" content="index, follow"> {{ else }}
+	<meta name="robots" content="noindex, nofollow"> {{ end }}
 	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link type="text/css" rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .) }}" media="all" /> {{ end }}
 	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
 	<link rel="apple-touch-icon" href="{{ .Site.Params.appletouchicon }}" />

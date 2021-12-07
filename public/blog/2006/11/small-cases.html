@@ -7,8 +7,17 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	<meta name="author" content="Zhu8">
 	<meta name="generator" content="Hugo 0.89.4" />
-	<meta name="description" content="陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。">
-	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> 
+	<meta name="description" content="瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。
+壹、解决了Live Search的编码问题
+微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在首页里面加上自定义的404/500页面，所以就用了**.htaccess**加了几句就OK，代码为：
+ErrorDocument 404 /error.html  
+ErrorDocument 500 /error.html  
+RewriteEngine on  
+RewriteCond %{HTTP_REFERER} !^$  
+RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
+RewriteRule .(js¦mp3¦wma)$&amp;[F]
+我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（见此），但是在编码上遇到了问题：">
+	<meta name="robots" content="index, follow"> 
 	<link type="text/css" rel="stylesheet" href="https://zhu8.net/dist/app.css" media="all" /> 
 	<link rel="shortcut icon" href="https://zhu8.net/favicon.ico" type="image/x-icon" /> 
 	<link rel="apple-touch-icon" href="https://zhu8.net/apple-touch-icon.png" />
