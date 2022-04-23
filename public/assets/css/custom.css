@@ -168,3 +168,6 @@ img#dora-three {
       display: none;
   }
 }
+.right {float: right;}
+.left {float: left;}
+.center {text-align: center;}
