@@ -15,9 +15,9 @@ url: /blog/2022/04/make-a-whole-cloud-site-with-hugo.html
 description: 我的网站搭建，通过Gitlab（源码存储）、Gitpod（Web IDE）、Vercel（站点发布与域名）、Waline（评论系统），构建了完整的生态链。也就是，我只需要出域名的钱，所有东西就全部呈现出来啦！
 toc: true
 ---
-### 为何用Hugo？
+### 为何用Hugo
 
-网站使用[Hugo][1]搭建，放置在[Github][2]上储存源码属于公开的访问，处于一些个人安全考虑，还是放到私有一些的地方吧。
+网站使用[Hugo][1]搭建，教程就不写了，网上太多了，放置在[Github][2]上储存源码属于公开的访问，而且经常被 ~~**土啬**~~ ，因此，处于安全考虑，还是放到私有或者小众一些的地方吧。
 
 ### 为何使用Gitlab
 
@@ -27,7 +27,7 @@ Github私有源码的话，是需要**美刀的**，作为小站长，一个虚�
 
 [Gitpod][6]是一个Web IDE的云工具，可以在线编辑和同步你的源码，包括在线安装Hugo程序，我的安装包如下：
 
-```Bash
+```bash
 sudo apt-get update
 wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_extended_0.89.4_Linux-64bit.deb
 sudo dpkg -i hugo_extended_0.89.4_Linux-64bit.deb
@@ -42,7 +42,6 @@ sudo dpkg -i hugo_extended_0.89.4_Linux-64bit.deb
 ### 结语
 
 经过以上部署之后，你只需要购买域名，其他的，**全部交给云** 吧，而且，**全免费** 哦！完美，安心！祝你使用愉快！
-
 
 [1]: https://gohugo.io/ "Hugo is one of the most popular open-source static site generators."
 [2]: https://github.com/ "Github"
