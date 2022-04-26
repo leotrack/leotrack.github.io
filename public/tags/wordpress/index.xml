@@ -71,12 +71,12 @@
 &lt;p&gt;&lt;code&gt;$createKind = “icon”; // links : 文字链接 – icon : 图标链接  &lt;/code&gt;
 文字链接示例：&lt;em&gt;Null&lt;/em&gt;
 图标链接示例：&lt;em&gt;Null&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;$beforeall = “&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;strong&lt;/span&gt;&amp;gt;收藏&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;strong&lt;/span&gt;&amp;gt; “; // 你想显示在所有书签前面的  
-$beforeeach = ” [ &amp;#34;; // 你想显示在每个书签前面的  
-$aftereach = &amp;#34; ] “; // 你想显示在每个书签后面的  
-$afterall = “”; // 你想显示在所有书签后面的  
-// 可以使用HTML标签，但不能使用(“)哦！
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$beforeall = “&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;strong&lt;/span&gt;&amp;gt;收藏&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;strong&lt;/span&gt;&amp;gt; “; // 你想显示在所有书签前面的  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$beforeeach = ” [ &amp;#34;; // 你想显示在每个书签前面的  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$aftereach = &amp;#34; ] “; // 你想显示在每个书签后面的  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$afterall = “”; // 你想显示在所有书签后面的  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;// 可以使用HTML标签，但不能使用(“)哦！
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;上传&lt;strong&gt;文件夹&lt;/strong&gt;&lt;em&gt;add-bookmarks&lt;/em&gt;到你的插件目录（注意：包括icon文件夹和add-bookmarks.php）。&lt;/li&gt;
@@ -93,8 +93,8 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;我是放置在&lt;em&gt;single.php&lt;/em&gt;中例如 &lt;em&gt;postmetadata&lt;/em&gt; 前面的，仅供参考。&lt;/li&gt;
 &lt;li&gt;如果你&lt;strong&gt;停用&lt;/strong&gt;了该插件，可以将该代码移除。（因为使用了if语句，所以不移出也不会影响其他正常功能的）&lt;/li&gt;
 &lt;/ul&gt;
@@ -126,8 +126,8 @@ $afterall = “”; // 你想显示在所有书签后面的
 &lt;strong&gt;Download&lt;/strong&gt;:&lt;a href=&#34;https://zhu8.net/uploads/add-bookmarks.zip&#34; title=&#34;Download This Plugin&#34;&gt;add-bookmarks.zip&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Usage&lt;/strong&gt;:1) Upload the &lt;strong&gt;folder&lt;/strong&gt; to the &lt;em&gt;/wp-content/plugins/&lt;/em&gt;.&lt;br&gt;
 2) Active it .Add&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to where you want to put (I put it in &lt;em&gt;single.php&lt;/em&gt; &lt;strong&gt;before&lt;/strong&gt; &lt;em&gt;postmetadata&lt;/em&gt;).&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;?&lt;/span&gt;php &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;if&lt;/span&gt;(function_exists(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;add_bookmarks&amp;#39;&lt;/span&gt;)) { add_bookmarks(); } &lt;span style=&#34;color:#999;font-weight:bold;font-style:italic&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to where you want to put (I put it in &lt;em&gt;single.php&lt;/em&gt; &lt;strong&gt;before&lt;/strong&gt; &lt;em&gt;postmetadata&lt;/em&gt;).&lt;br&gt;
 DONE!&lt;br&gt;
 3)If you want to Add Your Bookmarks,open &lt;strong&gt;add-bookmarks.php&lt;/strong&gt; and config it in your Editor(as Editplus,Notepad++) in &lt;strong&gt;UTF-8&lt;/strong&gt;.&lt;br&gt;
 Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; me and Trackback here!&lt;/p&gt;</description>

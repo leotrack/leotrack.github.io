@@ -438,13 +438,13 @@ I&amp;rsquo;m thinking of you&lt;br&gt;
       <description>&lt;p&gt;瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。&lt;/p&gt;
 &lt;h3 id=&#34;壹解决了live-search的编码问题&#34;&gt;壹、解决了Live Search的编码问题&lt;/h3&gt;
 &lt;p&gt;微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在&lt;a href=&#34;http://chenjun.com/&#34;&gt;首页&lt;/a&gt;里面加上自定义的&lt;strong&gt;404/500页面&lt;/strong&gt;，所以就用了**.htaccess**加了几句就OK，代码为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;ErrorDocument 404 /error.html  
-ErrorDocument 500 /error.html  
-RewriteEngine on  
-RewriteCond %{HTTP_REFERER} !^$  
-RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
-RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;amp;&lt;/span&gt;[F]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ErrorDocument 404 /error.html  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ErrorDocument 500 /error.html  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RewriteEngine on  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RewriteCond %{HTTP_REFERER} !^$  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;amp;&lt;/span&gt;[F]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（&lt;a href=&#34;http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn&#34; title=&#34;Live Search 站点所有者帮助&#34;&gt;见此&lt;/a&gt;），但是在编码上遇到了问题：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在下面的代码中，必须用您网站所用语言所对应的三位或四位数代码页编号来替换&amp;quot;您的网页所用代码页&amp;quot;。&lt;br&gt;
 例如，如果您的网站是用源于拉丁文的语言（英语、法语或德语）编写的，则用 1252 编号来取代此指令：value=&amp;ldquo;1252&amp;rdquo;&lt;br&gt;
@@ -556,7 +556,7 @@ RewriteRule .(js¦mp3¦wma)$&lt;span style=&#34;color:#a61717;background-color:#
       <pubDate>Thu, 18 May 2006 20:48:18 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2006/05/1699-the-peach-blossom-fan.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/peach-blossom-fan.jpg&#34; alt=&#34;昆曲&amp;ndash;桃花扇&#34; title=&#34;昆曲--桃花扇&#34;&gt;&lt;/span&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/peach-blossom-fan.jpg&#34; alt=&#34;昆曲&amp;amp;ndash;桃花扇&#34; title=&#34;昆曲--桃花扇&#34;&gt;&lt;/span&gt;
 这个时候，南京的紫金大剧院正在上演着昆曲《1699·桃花扇》，票价似乎&lt;a href=&#34;http://culture.longhoo.net/news/userobject1ai497106.html&#34;&gt;很低&lt;/a&gt;，但我却只能坐在这，四处翻看着不同的新闻、旧闻，听着&lt;a href=&#34;http://www.wangfeng.com.cn/&#34;&gt;汪峰&lt;/a&gt;的老歌，来写上两个字。倒不是说我已然落魄得连最低20元的票价都出不起，确实是因为，我来南京，&lt;strong&gt;竟然还没拿过一分钱工资&lt;/strong&gt;。其实也没什么，就是我从常州来到南京，需要北京总公司批；而我这样一个无足轻重的小职位，也许人家根本没有放在心上。&lt;/p&gt;
 &lt;p&gt;不过我也不能走，因为我走了，不止这儿的钱拿不到，到什么地方去再找这样一个”无足轻重的小职位”或许都还是个&lt;a href=&#34;http://www.yangtse.com/pub/yzweb/dzbpd/zyxw/t20060507_76346.htm&#34;&gt;问题&lt;/a&gt;，因为公司还算是个全国性的大公司，所以固然会如经理说的工资肯定会到时候一起发下来的。所以，我也就只能等着了。&lt;/p&gt;
 &lt;p&gt;现在，钱不钱不是问题，工作才是个问题。试想我在南京这名校林立的地方，如果现在就离开，那我这个又不是应届毕业生又几乎没有工作经验的人真不知道该去哪儿了。总之，钞票第一，被人&lt;strong&gt;压迫&lt;/strong&gt;也只好忍了。这世道，我又什么办法。我只需要牢记：&lt;/p&gt;
@@ -651,7 +651,7 @@ style=&#34;color: rgb(198, 10, 0);&#34;&gt;誓死捍卫你说话的权利！&lt;
       <pubDate>Wed, 28 Dec 2005 00:41:28 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2005/12/waiting-any-time.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/libai.jpg&#34; alt=&#34;李白&amp;mdash;-将进酒&#34; title=&#34;李白----将进酒&#34;&gt;&lt;/span&gt;今天去了苏州，参加平安保险的书面考试，接下来就是等面试了。也不知道什么原因，现在没有兴趣去写Blog了，可能是因为自身的不确定吧！&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/libai.jpg&#34; alt=&#34;李白&amp;amp;mdash;-将进酒&#34; title=&#34;李白----将进酒&#34;&gt;&lt;/span&gt;今天去了苏州，参加平安保险的书面考试，接下来就是等面试了。也不知道什么原因，现在没有兴趣去写Blog了，可能是因为自身的不确定吧！&lt;/p&gt;
 &lt;p&gt;前两天域名服务商忽然挂了，我还不知道。也就是&lt;strong&gt;聚网&lt;/strong&gt;，他提供的免费php+Mysql服务器在国内来说少见的坚持了那么长时间—-两年多，我还正准备找到工作之后第一件事情就是在他那弄个空间+域名好好研究研究WordPress，没想到，就象一夜之间，就蒸发了。虽然花了40块钱买的原来的域名挂了，但还得庆幸自己还没有把新的砸上去。&lt;/p&gt;
 &lt;p&gt;忽然之间就觉得一切都是那么的无常。&lt;em&gt;&lt;em&gt;原来有些你认为很好的东西，并不是对的。&lt;strong&gt;就象&lt;/strong&gt;&lt;/em&gt;某些东西某些人&lt;/em&gt;**也忽然就消失了，就象没有存在过一样。&lt;/p&gt;
 &lt;p&gt;我随时等待一切美好的到来。真的，就在前夜的梦中，我猛然发现，其实我们就应该好好的享受一切，等待一切，他们虽然都会在某个时刻消失的无影无踪，也绝对会在某个时刻统统降临。不是吗？我深深记得，我当时脑中的句子是：&lt;strong&gt;人生得意须尽欢，莫使金樽空对月。&lt;/strong&gt;&lt;/p&gt;

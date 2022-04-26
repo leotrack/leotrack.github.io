@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gitlab on 猪八的网：浮生志</title>
+    <link>https://zhu8.net/tags/gitlab/</link>
+    <description>Recent content in Gitlab on 猪八的网：浮生志</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Zhu8, [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
+    <lastBuildDate>Tue, 26 Apr 2022 23:00:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://zhu8.net/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo搭建完全云托管个人网站</title>
+      <link>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</link>
+      <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
+      
+      <guid>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</guid>
+      <description>&lt;h3 id=&#34;为何用hugo&#34;&gt;为何用Hugo？&lt;/h3&gt;
+&lt;p&gt;网站使用&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo is one of the most popular open-source static site generators.&#34;&gt;Hugo&lt;/a&gt;搭建，放置在&lt;a href=&#34;https://github.com/&#34; title=&#34;Github&#34;&gt;Github&lt;/a&gt;上储存源码属于公开的访问，处于一些个人安全考虑，还是放到私有一些的地方吧。&lt;/p&gt;
+&lt;h3 id=&#34;为何使用gitlab&#34;&gt;为何使用Gitlab&lt;/h3&gt;
+&lt;p&gt;Github私有源码的话，是需要&lt;strong&gt;美刀的&lt;/strong&gt;，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt;吧：）注册完成之后，创建一个仓库，上传你所有的Hugo源代码。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。&lt;/p&gt;
+&lt;h3 id=&#34;使用gitpod&#34;&gt;使用Gitpod&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitpod.io/&#34; title=&#34;Gitpod Web IDE&#34;&gt;Gitpod&lt;/a&gt;是一个Web IDE的云工具，可以在线编辑和同步你的源码，包括在线安装Hugo程序，我的安装包如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_extended_0.89.4_Linux-64bit.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dpkg -i hugo_extended_0.89.4_Linux-64bit.deb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以在线编辑，增加，上传，发布 &lt;code&gt;Hugo&lt;/code&gt;命令，然后直接用 Gitlab 自带的Push，就可以了。当然，前提是你得绑定下面说的 &lt;a href=&#34;https://vercel.com&#34; title=&#34;Develop. Preview. Ship. For the best frontend teams – Vercel&#34;&gt;Vercel&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;使用vercel&#34;&gt;使用Vercel&lt;/h3&gt;
+&lt;p&gt;网上教程太多，不多说啦，绑定你的 &lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt; 即可。支持 &lt;strong&gt;“HTTPS”&lt;/strong&gt; ，支持 &lt;strong&gt;“Hugo”&lt;/strong&gt; 指定版本，支持 &lt;strong&gt;多域名绑定&lt;/strong&gt; ，支持 &lt;strong&gt;域名跳转&lt;/strong&gt; ，谁用谁知道。
+&lt;img src=&#34;https://zhu8.net/images/Vercel.png&#34; alt=&#34;Vervel 界面&#34; title=&#34;Vercel 界面&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
+&lt;p&gt;经过以上部署之后，你只需要购买域名，其他的，&lt;strong&gt;全部交给云&lt;/strong&gt; 吧，而且，&lt;strong&gt;全免费&lt;/strong&gt; 哦！完美，安心！祝你使用愉快！&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

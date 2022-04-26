@@ -6,7 +6,7 @@
 	<title>WordPress插件:Add Bookmarks | 猪八的网：浮生志</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	<meta name="author" content="Zhu8">
-	<meta name="generator" content="Hugo 0.89.4" />
+	<meta name="generator" content="Hugo 0.97.3" />
 	<meta name="description" content="First plugin for WordPress:English vision (2008/03/18)
 这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)
 
@@ -65,9 +65,9 @@ Update On 2006/9/27：更新了图片的链接问题，使用“.get_settings(�
 <h2 class="pt-2">
 	<i class="far fa-bookmark"></i>WordPress插件:Add Bookmarks</h2>
 <div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
-	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code'>石马 | Code</a>   
+	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
 	 &nbsp;&nbsp; 
-	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/bookmarks'>Bookmarks</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/plugin'>Plugin</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/wordpress'>Wordpress</a> 	 	 	
+	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/bookmarks/'>Bookmarks</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/plugin/'>Plugin</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/wordpress/'>Wordpress</a> 	 	 	
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4" datetime="2006-09-04T12:23:28&#43;08:00">
 		<i class="fas fa-calendar-day"></i>2006-09-04 12:23 @ Mon</time>
 </div>
@@ -122,12 +122,12 @@ Update On 2006/9/27：更新了图片的链接问题，使用“.get_settings(�
 <p><code>$createKind = “icon”; // links : 文字链接 – icon : 图标链接  </code>
 文字链接示例：<em>Null</em>
 图标链接示例：<em>Null</em></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">$beforeall = “&lt;<span style="color:#000080">strong</span>&gt;收藏&lt;/<span style="color:#000080">strong</span>&gt; “; // 你想显示在所有书签前面的  
-$beforeeach = ” [ &#34;; // 你想显示在每个书签前面的  
-$aftereach = &#34; ] “; // 你想显示在每个书签后面的  
-$afterall = “”; // 你想显示在所有书签后面的  
-// 可以使用HTML标签，但不能使用(“)哦！
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$beforeall = “&lt;<span style="color:#000080">strong</span>&gt;收藏&lt;/<span style="color:#000080">strong</span>&gt; “; // 你想显示在所有书签前面的  
+</span></span><span style="display:flex;"><span>$beforeeach = ” [ &#34;; // 你想显示在每个书签前面的  
+</span></span><span style="display:flex;"><span>$aftereach = &#34; ] “; // 你想显示在每个书签后面的  
+</span></span><span style="display:flex;"><span>$afterall = “”; // 你想显示在所有书签后面的  
+</span></span><span style="display:flex;"><span>// 可以使用HTML标签，但不能使用(“)哦！
+</span></span></code></pre></div><ul>
 <li>
 <ol start="5">
 <li>上传<strong>文件夹</strong><em>add-bookmarks</em>到你的插件目录（注意：包括icon文件夹和add-bookmarks.php）。</li>
@@ -144,8 +144,8 @@ $afterall = “”; // 你想显示在所有书签后面的
 </ol>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#000;font-weight:bold">&lt;?</span>php <span style="color:#000;font-weight:bold">if</span>(function_exists(<span style="color:#d14">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#999;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;?</span>php <span style="color:#000;font-weight:bold">if</span>(function_exists(<span style="color:#d14">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#999;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><ul>
 <li>我是放置在<em>single.php</em>中例如 <em>postmetadata</em> 前面的，仅供参考。</li>
 <li>如果你<strong>停用</strong>了该插件，可以将该代码移除。（因为使用了if语句，所以不移出也不会影响其他正常功能的）</li>
 </ul>
@@ -177,8 +177,8 @@ $afterall = “”; // 你想显示在所有书签后面的
 <strong>Download</strong>:<a href="https://zhu8.net/uploads/add-bookmarks.zip" title="Download This Plugin">add-bookmarks.zip</a><br>
 <strong>Usage</strong>:1) Upload the <strong>folder</strong> to the <em>/wp-content/plugins/</em>.<br>
 2) Active it .Add</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#000;font-weight:bold">&lt;?</span>php <span style="color:#000;font-weight:bold">if</span>(function_exists(<span style="color:#d14">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#999;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>to where you want to put (I put it in <em>single.php</em> <strong>before</strong> <em>postmetadata</em>).<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;?</span>php <span style="color:#000;font-weight:bold">if</span>(function_exists(<span style="color:#d14">&#39;add_bookmarks&#39;</span>)) { add_bookmarks(); } <span style="color:#999;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><p>to where you want to put (I put it in <em>single.php</em> <strong>before</strong> <em>postmetadata</em>).<br>
 DONE!<br>
 3)If you want to Add Your Bookmarks,open <strong>add-bookmarks.php</strong> and config it in your Editor(as Editplus,Notepad++) in <strong>UTF-8</strong>.<br>
 Fell free to <a href="https://zhu8.net/about/">Contact</a> me and Trackback here!</p></div>

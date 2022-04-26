@@ -6,7 +6,7 @@
 	<title>关闭WordPress的Revision功能 | 猪八的网：浮生志</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	<meta name="author" content="Zhu8">
-	<meta name="generator" content="Hugo 0.89.4" />
+	<meta name="generator" content="Hugo 0.97.3" />
 	<meta name="description" content="还是使用 WordPress 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision…… 如何关闭R">
 	<meta name="robots" content="index, follow"> 
 	<link type="text/css" rel="stylesheet" href="https://zhu8.net/dist/app.css" media="all" /> 
@@ -51,9 +51,9 @@
 <h2 class="pt-2">
 	<i class="far fa-bookmark"></i>关闭WordPress的Revision功能</h2>
 <div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
-	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other'>黑犬 | Other</a>   
+	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/'>黑犬 | Other</a>   
 	 &nbsp;&nbsp; 
-	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/hack'>Hack</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/revision'>Revision</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/%E7%BD%91%E7%AB%99'>网站</a> 	 	 	
+	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/hack/'>Hack</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/revision/'>Revision</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" 		href='https://zhu8.net/tags/%E7%BD%91%E7%AB%99/'>网站</a> 	 	 	
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4" datetime="2009-03-03T23:25:55&#43;08:00">
 		<i class="fas fa-calendar-day"></i>2009-03-03 23:25 @ Tue</time>
 </div>
@@ -71,7 +71,7 @@
 <p>如何关闭Revision？我试用了几种方法：</p>
 <ul>
 <li><strong>第一种</strong>：在<em>wp-config.php</em>中加入如下代码：
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></li>
 </ul>
 <p>define(‘WP_POST_REVISIONS’, 0 );<br>
 define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
@@ -79,7 +79,7 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
     经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——**放弃**。
 *   **第二种**：使用插件：[No Revisions][2]，经测试可以使用。看了一下他的代码，很纯粹：  
     ```php
-&lt;?php @remove_action ( 'pre_post_update', 'wp_save_post_revision' ); ?&gt;
+&lt;?php @remove_action ( &#39;pre_post_update&#39;, &#39;wp_save_post_revision&#39; ); ?&gt;
 </code></pre><p>——<strong>使用</strong>。</p>
 <ul>
 <li><strong>第三种</strong>：如果你不想使用插件，可以参考这位老兄的<a href="http://programmingnote.com/blog/?p=35">修改方法</a>。他说Comment掉第二条插件所使用的命令之后还要再加一句，但我测试，<strong>单纯用上面那个插件是没有问题的</strong>。</li>
