@@ -27,10 +27,10 @@ Github私有源码的话，是需要**美刀的**，作为小站长，一个虚�
 
 [Gitpod][6]是一个Web IDE的云工具，可以在线编辑和同步你的源码，包括在线安装Hugo程序，我的安装包如下：
 
-```php
+```bash
 sudo apt-get update
-wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_extended_0.89.4_Linux-64bit.deb
-sudo dpkg -i hugo_extended_0.89.4_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.97.3/hugo_extended_0.97.3_Linux-64bit.deb
+sudo dpkg -i hugo_extended_0.97.3_Linux-64bit.deb
 ```
 之后就可以在线编辑，增加，上传，发布 `Hugo`命令，然后直接用 Gitlab 自带的Push，就可以了。当然，前提是你得绑定下面说的 [Vercel][4]
 
