@@ -4,8 +4,8 @@
 		<a href="{{ .URL }}" title="Go to {{ .Name }}" {{ if in ($.Permalink| absURL ) (.URL|absURL) }} class="font-medium text-medium-red-violet-600 hover:text-medium-red-violet-400" {{ end }}>{{ .Name }}  {{ .Pre }}</a>
 	</li> {{ end }} {{ end }}
 	{{ if .Site.Params.fuse }}
-	<div id="fastSearch" class="m-0">
+	<span id="fastSearch" class="m-0">
 		<input id="searchInput" type="text" size=10 class="bg-gray-100 focus:outline-none border-b border-gray-100 focus:border-eucalyptus-300 md:text-right placeholder-java-500 min-w-0 max-w-xxxs" placeholder="Type, Search!" /><i class="fas fa-search"></i>
 		<ul id="searchResults" class="bg-gray-200 px-2 divide-y divide-gray-400"> </ul>
-	</div> {{ end }}
+	</span> {{ end }}
 </ul>

@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>{{ if .IsHome }}{{else}}{{ if .Title }}{{ .Title }} | {{ end }}{{end}}{{ .Site.Title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="{{ .Site.Params.author }}" />
@@ -48,11 +48,11 @@
 				{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
 			</div>
 		</header>
-		<main role="main" class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
+		<main class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
 			{{ block "main" . }}{{ end }}
 		</main>
 		<div class="w-full h-0 flex-none order-3"></div>
-		<aside role="contentinfo"
+		<aside
 			class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
 			<div class="md:float-right md:text-right leading-loose tracking-tight md:mb-2">
 				{{ block "aside" . }}{{ partial "site-aside.html" . }}{{ end }}

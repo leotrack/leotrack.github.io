@@ -8,12 +8,12 @@
     <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
         <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} title="Previous Page" class="page-link" aria-label="Previous"><span aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left h-4 w-4 relative -bottom-1"> <polyline points="15 18 9 12 15 6"></polyline> </svg> </span></a>
     </li>
-    <div class="flex-grow-3"></div>
+    <li class="flex-grow-3"></li>
 {{ $ellipsed := false }} {{ $shouldEllipse := false }} {{ range $pag.Pagers }} {{ $right := sub .TotalPages .PageNumber }} {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }} {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }} {{ if $showNumber }} {{ $ellipsed = false }} {{ $shouldEllipse = false }} {{ else }} {{ $shouldEllipse = not $ellipsed }} {{ $ellipsed = true }} {{ end }} {{ if $showNumber }}
     <li class="page-item{{ if eq . $pag }} active{{ end }}"><a class="page-link" href="{{ .URL }}" title="Page {{ .PageNumber }}">{{ .PageNumber }}</a>
     </li> {{ else if $shouldEllipse }}
     <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li> {{ end }} {{ end }}
-    <div class="flex-grow-3"></div>
+    <li class="flex-grow-3"></li>
     <li class="page-item{{ if not $pag.HasNext }} disabled{{ end }}">
         <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}" {{ end }} title="Next Page" class="page-link" aria-label="Next"><span aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right h-4 w-4 relative -bottom-1"> <polyline points="9 18 15 12 9 6"></polyline> </svg> </span></a>
     </li>
