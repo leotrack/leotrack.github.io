@@ -7,9 +7,9 @@
 	</div>
 </article>
 <div>
-	<section>
+	<div>
 		{{ range $key, $value := .Data.Terms }}
-		<section>
+		<div>
 		<hr class="p-0 my-4" />
 			<div class="clearfix">	
 				<span class="float-left text-3xl pr-6 font-serif pt-1">
@@ -24,6 +24,6 @@
 					<a class="leading-relaxed text-gray-600 hover:text-gray-700 focus:text-gray-700 font-light" href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">&hellip;&hellip;</a>
 				</span> {{ end }}
 			</div>
-		</section> {{ end }}
-	</section>
+		</div> {{ end }}
+	</div>
 </div> {{ end }}

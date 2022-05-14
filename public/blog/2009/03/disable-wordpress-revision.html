@@ -66,7 +66,7 @@
 			
 
 <article>
-	<section class="mx-auto content">
+	<div class="mx-auto content">
 		<div class="c-rich-text"><p>还是使用 <a href="http://wordpress.org">WordPress</a> 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……</p>
 <p>如何关闭Revision？我试用了几种方法：</p>
 <ul>
@@ -86,7 +86,7 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
 </ul>
 <p>关于如何<strong>回收利用在你还没来得及关闭Revision功能之前就产生的Revisions</strong>？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 <em>post_type = “revision”</em> 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 <em>post_status</em> 从 <em>inherit</em> 改成 <strong>publish</strong> ，将 <em>post_type</em> 从 <strong>revision</strong> 改成 <strong>post</strong>，其它例如： <em>post_name</em> <em>post_date</em> 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！</p>
 </div>
-	</section>
+	</div>
 </article>
 		</main>
 		<div class="w-full h-0 flex-none order-3"></div>

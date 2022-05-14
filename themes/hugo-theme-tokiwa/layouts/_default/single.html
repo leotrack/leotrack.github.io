@@ -2,11 +2,11 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <article>
-	<section class="mx-auto content">
+	<div class="mx-auto content">
 		<div class="c-rich-text">
 			{{- .Content -}}
 		</div>
-	</section>
+	</div>
 </article>{{ end }}
 {{ define "aside" }} {{ partial "page-aside.html" . }} {{ end }}
 {{ define "footer" }} {{ partial "page-footer.html" . }} {{ end }}
