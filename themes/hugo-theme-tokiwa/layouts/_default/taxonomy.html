@@ -3,11 +3,11 @@
 	{{ .Title }}
 </h1>
 <div>
-	<section>
+	<div>
 		{{ range (.Paginator 10).Pages }}
 		<div>
 			{{ partial "summary.html" . }}
 		</div> {{ end }}
-	</section>
+	</div>
 </div> {{ end }}
 {{define "footer"}} {{ partial "list-footer.html" . }} {{end}}
