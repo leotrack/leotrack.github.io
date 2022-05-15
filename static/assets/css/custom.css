@@ -172,21 +172,8 @@ img#dora-three {
 .left {float: left;}
 .center {text-align: center;}
 
-.wl-content .vemoji, .wl-content .wl-emoji {
-  width: auto !important;
-  height: auto !important;
-  max-width: auto !important;
-  max-height: auto !important;
-}
-
-.wl-emoji-popup {
-  width: auto !important;
-  height: auto !important;
-  max-width: auto !important;
-  max-height: auto !important;
-}
-
-.wl-emoji {
+.wl-content img[src^="https://zhu8.net/images/smilies"]
+{
   width: auto !important;
   height: auto !important;
   max-width: auto !important;
