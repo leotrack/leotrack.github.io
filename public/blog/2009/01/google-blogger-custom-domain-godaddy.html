@@ -207,12 +207,12 @@ RewriteRule (.*) <a href="http://chenjun.com/$1">http://chenjun.com/$1</a> [R=30
   Waline.init({
     el: '#waline',
     serverURL: 'https://comm.zhu8.net',
-	  visitor: 'true',
-    pageview: 'true',
-	  imageUploader: 'false',
-    avatar: 'robohash',
+    visitor: 'true',
+    pageview: true,
+    imageUploader: false,
+    avatar: robohash,
     path: location.pathname,
-	  uploadImage: 'false',
+    uploadImage: false,
     emoji: ['https://zhu8.net/images/smilies/'],
   });
 </script>
