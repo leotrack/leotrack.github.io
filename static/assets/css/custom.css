@@ -172,7 +172,7 @@ img#dora-three {
 .left {float: left;}
 .center {text-align: center;}
 
-.wl-emoji .vemoji{
+img.wl-emoji img.vemoji {
   max-width: auto !important;
   max-height: auto !important;
   height: auto !important;
