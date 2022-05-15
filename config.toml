@@ -44,7 +44,6 @@ author = "Zhu8"
   enableWaline = true
   googleSiteVerification = "Mfl8lf6NN0DWPluv8lQpBL-mrKi22ZOcnlKXYURni1Y"
   appletouchicon ="/apple-touch-icon.png"
-  walineServer = "https://comm.zhu8.net/"
 	
 [permalinks]
   posts = "/blog/:year/:month/:slug/"

@@ -5,18 +5,13 @@
 <noscript><noscript>{{ i18n "comments_activate_js" }}</noscript></noscript>
 <a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
 {{ end }}
-{{ if .Site.Params.walineServer }}
 <div id="waline"></div>
 <script>
-    new Waline.init({
-        el: '#waline',
-        path: location.pathname,
-        serverURL: {{.Site.Params.walineServer}},
-		visitor: 'true',
-		login: 'enable',
-		uploadImage: false,
-        avatar: 'robohash',
-        emoji: ['https://zhu8.net/images/smilies/'],
-    });
-    </script>
-{{ end }}
+  Waline.init({
+    el: '#waline',
+    serverURL: 'https://comm.zhu8.net',
+	visitor: 'true',
+	uploadImage: false,
+    emoji: ['https://zhu8.net/images/smilies/'],
+  });
+</script>
