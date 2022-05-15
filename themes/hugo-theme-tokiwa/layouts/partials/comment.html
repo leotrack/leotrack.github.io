@@ -8,7 +8,7 @@
 {{ if .Site.Params.walineServer }}
 <div id="waline"></div>
 <script>
-    new Waline({
+    new Waline.init({
         el: '#waline',
         path: location.pathname,
         serverURL: {{.Site.Params.walineServer}},

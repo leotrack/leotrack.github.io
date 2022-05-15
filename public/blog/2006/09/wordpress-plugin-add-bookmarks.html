@@ -27,7 +27,8 @@ Update On 2006/9/27：更新了图片的链接问题，使用“.get_settings(�
 	<link rel="shortcut icon" href="https://zhu8.net/favicon.ico" type="image/x-icon" /> 
 	<link rel="apple-touch-icon" href="https://zhu8.net/apple-touch-icon.png" />
 	
-	<script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+	<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
 	<link type="text/css" rel="stylesheet" href="https://zhu8.net/assets/css/custom.css" media="all" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css" media="all" />
 	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" media="all" />
@@ -284,7 +285,7 @@ Fell free to <a href="https://zhu8.net/about/">Contact</a> me and Trackback here
 
 <div id="waline"></div>
 <script>
-    new Waline({
+    new Waline.init({
         el: '#waline',
         path: location.pathname,
         serverURL: "https://comm.zhu8.net/",
