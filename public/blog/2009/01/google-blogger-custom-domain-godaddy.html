@@ -6,7 +6,7 @@
 	<title>看图说话：绑定Godaddy域名到Blogger | 猪八的网：浮生志</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="Zhu8" />
-	<meta name="generator" content="Hugo 0.97.3" />
+	<meta name="generator" content="Hugo 0.99.0" />
 	<meta name="description" content="为了用上已强大的Blogger，同时不闲置自己的域名，觉得绑定到Blogger上来，但是万恶的土啬作祟，拼命封我们的ghs.google.com，没有办法，只好曲线救国。 废话少说，以我的域名Zhu8.Net为例，域名位于同样被频繁土啬的Godaddy。相信很多域名位于天朝管理之外的朋友都有这样的问题，经过万能的Google和自己的摸索，总结如下：
 **第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用http://chenjun.com/ 绑定了我的Blogger，故而在Godaddy里面如下设置：
 
@@ -20,7 +20,11 @@
 	<link type="text/css" rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
 	<link type="text/css" rel="stylesheet" href="https://zhu8.net/assets/css/custom.css" media="all" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css" media="all" />
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" media="all" />
+	<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+	<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&family=Long+Cang&display=swap" media=print onload='this.media="all"'>
+	<noscript>
+		<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&family=Long+Cang&display=swap">
+	</noscript>
 	
 	<script>
 		(function (u, c) {
@@ -89,10 +93,10 @@
 <p>等待不过十几分钟，虽然Account Details里面的Status还是Pending Account Change，但是IP地址已经换了，Total DNS Control Panel里面的A Records已经变成了新的IP，等待……生效，一切OK！</p>
 <p><strong>P.S:</strong>_Google Apps_等所有**<em>Google Custom Domain</em>**都适用此法。有问题，请留言！</p>
 <p>至此全部完成。请测试：<a href="https://zhu8.net/" title="Zhu8.Net">https://zhu8.net</a></p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>注释：使用编辑器，如EditPlus新建UTF-8的新文件，内容为：</p>
 <blockquote>
 <p>RewriteEngine<br>
@@ -102,7 +106,7 @@ RewriteRule (.*) <a href="http://chenjun.com/$1">http://chenjun.com/$1</a> [R=30
 <p>请自行更改域名为你的域名即可，将文件保存为**.htaccess**。使用<strong>ASCII</strong>格式上传到你的Godaddy免费空间根目录，文件属性<strong>644</strong>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section></div>
+</div></div>
 	</div>
 </article>
 		</main>
