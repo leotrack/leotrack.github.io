@@ -5,7 +5,9 @@
 <noscript><noscript>{{ i18n "comments_activate_js" }}</noscript></noscript>
 <a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
 {{ end }}
-<div id="waline"></div>
+{{ if .Site.Params.enableWaline }}
+<div class="comments">
+<div id="waline">
 <script>
   Waline.init({
     el: '#waline',
@@ -21,3 +23,8 @@
   ],
   });
 </script>
+</div>
+</div>
+<noscript><noscript>{{ i18n "comments_activate_js" }}</noscript></noscript>
+<a href="https://waline.js.org/">Comments powered by Waline</a>
+{{ end }}
