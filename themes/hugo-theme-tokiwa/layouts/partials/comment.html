@@ -7,7 +7,7 @@
 {{ end }}
 {{ if .Site.Params.enableWaline }}
 <div class="comments">
-<div id="waline">
+<div id="waline"></div>
 <script>
   Waline.init({
     el: '#waline',
@@ -23,8 +23,6 @@
   ],
   });
 </script>
+<noscript>Please enable JavaScript to view the <a href=https://waline.js.org/?ref_noscript>comments powered by Waline.</a></noscript>
 </div>
-</div>
-<noscript><noscript>{{ i18n "comments_activate_js" }}</noscript></noscript>
-<a href="https://waline.js.org/">Comments powered by Waline</a>
 {{ end }}
