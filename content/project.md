@@ -4,7 +4,7 @@ type: page
 title: Project | 项目
 url: /project/
 shares: true
-comments: true
+comments: fllse
 enableReadingTime: false
 date: "2020-05-20T22:58:19+08:00"
 toc: true

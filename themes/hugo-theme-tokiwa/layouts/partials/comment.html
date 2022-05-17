@@ -3,26 +3,23 @@
     <vue-disqus shortname="{{.Site.Params.disqusShortname}}"></vue-disqus>
 </div>
 <noscript><noscript>{{ i18n "comments_activate_js" }}</noscript></noscript>
-<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
-{{ end }}
+<a href="https://disqus.com/" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>{{ end }}
 {{ if .Site.Params.enableWaline }}
 <div class="comments">
-<div id="waline"></div>
-<script>
-  Waline.init({
-    el: '#waline',
-    serverURL: 'https://comm.zhu8.net',
-    visitor: true,
-    pageview: true,
-    imageUploader: false,
-    avatar: 'monsterid',
-    uploadImage: false,
-    emoji: [
-    'https://zhu8.net/images/smilies/',
-    'https://unpkg.com/@waline/emojis@1.0.1/qq',
-  ],
-  });
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://waline.js.org/?ref_noscript>comments powered by Waline.</a></noscript>
-</div>
-{{ end }}
+  <div id="waline"></div>
+  <script>
+    Waline.init({
+      el: '#waline',
+      serverURL: 'https://comm.zhu8.net',
+      visitor: true,
+      pageview: true,
+      imageUploader: false,
+      avatar: 'monsterid',
+      uploadImage: false,
+      emoji: [
+      'https://zhu8.net/images/smilies/',
+      'https://unpkg.com/@waline/emojis@1.0.1/qq',
+    ],
+    });
+  </script>
+</div>{{ end }}
