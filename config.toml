@@ -2,7 +2,7 @@ baseURL = "https://zhu8.net/"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh"
 title = "猪八的网：浮生志"
-copyright = "🚀 Zhu8, [<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>]"
+copyright = " ❤️Zhu8, 🚀[<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>]"
 theme = "hugo-theme-tokiwa"
 canonifyurls = true
 footnoteReturnLinkContents = "↩"
