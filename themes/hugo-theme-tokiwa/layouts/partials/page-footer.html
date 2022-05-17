@@ -26,9 +26,9 @@
 </div>
 <hr />
 <div class="pb-2">
-    {{ if eq .Params.comment false }}
+    {{ if eq .Params.comments false }}
     <p style="opacity: 0.6" align="center">
-        <small>{{ i18n "comments_disabled" }}</small>
+        <small>Comments Are Disabled.</small>
     </p>
     {{ else }}
     {{- partial "comment.html" . -}}
