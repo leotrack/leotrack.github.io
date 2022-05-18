@@ -170,7 +170,7 @@ img#dora-three {
 }
 .right {float: right;}
 .left {float: left;}
-.center {text-align: center;}
+.center {margin:0 auto;}
 
 .wl-content img {
   width: auto !important;
