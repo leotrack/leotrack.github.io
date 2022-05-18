@@ -19,29 +19,20 @@
       
       <guid>https://zhu8.net/blog/2022/05/resolve-browser-x-content-type-options-error.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/http-error.png&#34; alt=&#34;HTTP-ERROR RESPONSE&#34;&gt;&lt;/p&gt;
-&lt;p&gt;今天无意用Edge的开发人员调试工具，就出现了如上图的&lt;mark&gt;错误&lt;/mark&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Response should include &#39;x-content-type-options&#39; header.&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;错误提示&#34;&gt;错误提示：&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;请求&lt;/th&gt;
-&lt;th&gt;FURTHER READING&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://zhu8.net/project/&#34;&gt;https://zhu8.net/project/&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Learn why this is important and how to fix it on &lt;a href=&#34;https://webhint.io/docs/user-guide/hints/hint-x-content-type-options/&#34;&gt;webhint.io&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;今天无意用Edge的开发人员调试工具，就出现了如上图的&lt;mark&gt;错误&lt;/mark&gt;：&lt;code&gt;Response should include &#39;x-content-type-options&#39; header.&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;错误提示&#34;&gt;&lt;strong&gt;错误提示：&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| 请求                        | FURTHER READING                                                  |
++===========================+==================================================================+
+| &lt;a href=&#34;https://zhu8.net/project/&#34;&gt;https://zhu8.net/project/&lt;/a&gt; | Learn why this is important and how to fix it on &lt;a href=&#34;https://webhint.io/docs/user-guide/hints/hint-x-content-type-options/&#34; title=&#34;Use `X-Content-Type-Options` header | webhint documentation&#34;&gt;webhint.io&lt;/a&gt; |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
 &lt;p&gt;研究了一下，发现是HTTP响应头的问题，需要从我的托管网站Vercel着手。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The &lt;strong&gt;X-Content-Type-Options&lt;/strong&gt; response &lt;strong&gt;HTTP&lt;/strong&gt; header is a marker used by the server to indicate that the &lt;abbr title=&#34;Multipurpose Internet Mail Extensions&#34;&gt;&lt;strong&gt;MIME&lt;/strong&gt;&lt;/abbr&gt; types advertised in the &lt;strong&gt;Content-Type&lt;/strong&gt; headers should be followed and not be changed. The header allows you to avoid &lt;strong&gt;MIME type&lt;/strong&gt; sniffing by saying that the MIME types are deliberately configured.  &lt;cite&gt;— via &lt;strong&gt;MDN&lt;/strong&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;&lt;strong&gt;*X-Content-Type-Options*&lt;/strong&gt;&lt;/em&gt; response &lt;em&gt;&lt;strong&gt;*HTTP*&lt;/strong&gt;&lt;/em&gt; header is a marker used by the server to indicate that the &lt;abbr title=&#34;Multipurpose Internet Mail Extensions&#34;&gt;&lt;em&gt;&lt;strong&gt;*MIME*&lt;/strong&gt;&lt;/em&gt;&lt;/abbr&gt; types advertised in the &lt;em&gt;&lt;strong&gt;*Content-Type*&lt;/strong&gt;&lt;/em&gt; headers should be followed and not be changed. The header allows you to avoid &lt;em&gt;&lt;strong&gt;*MIME type*&lt;/strong&gt;&lt;/em&gt; sniffing by saying that the MIME types are deliberately configured.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;— via &lt;em&gt;&lt;strong&gt;*MDN*&lt;/strong&gt;&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解决方法&#34;&gt;解决方法：&lt;/h3&gt;
-&lt;p&gt;在你的Github或者Gitlab的库首页，增加文件：&lt;code&gt;vercel.json&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解决方法&#34;&gt;&lt;strong&gt;解决方法：&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;在你的Github或者Gitlab的库首页，增加文件：&lt;code&gt;vercel.json&lt;/code&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000080&#34;&gt;&amp;#34;headers&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
@@ -71,9 +62,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后，继续按照我&lt;a href=&#34;https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html&#34;&gt;上一篇文字&lt;/a&gt;的方法，去更新和发布就好啦！&lt;/p&gt;
-&lt;h3 id=&#34;最终成果&#34;&gt;最终成果：&lt;/h3&gt;
-&lt;p&gt;最后，得到如下的响应头，可以看到，已经有了&lt;code&gt;x-content-type-options: nosniff&lt;/code&gt;：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后，继续按照我&lt;a href=&#34;https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html&#34; title=&#34;Hugo搭建完全云托管个人网站&#34;&gt;上一篇文字&lt;/a&gt;的方法，去更新和发布就好啦！&lt;/p&gt;
+&lt;h3 id=&#34;最终成果&#34;&gt;&lt;strong&gt;最终成果：&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;最后，得到如下的响应头，可以看到，已经有了&lt;code&gt;X-Content-Type-Options: nosniff&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-http&#34; data-lang=&#34;http&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;access-control-allow-origin: *
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;age: 8412
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;cache-control: public, max-age=0, must-revalidate
@@ -90,12 +81,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;x-frame-options: DENY
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;x-vercel-cache: HIT
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;x-vercel-id: hnd1:hnd1::857cn-1652843467303-5523938ae2c8
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;x-xss-protection: 1; mode=block
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;x-xss-protection: 1; mode=block&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options&#34;&gt;X-Content-Type-Options - HTTP | MDN&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options&#34; title=&#34;MDN Web Docs&#34;&gt;X-Content-Type-Options - HTTP | MDN&lt;/a&gt; - Mozilla Developer Network&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blakey.co/blog/setting-up-security-headers-with-vercel&#34; title=&#34;Setting up Security Headers with Vercel | Dave Blakey&#34;&gt;Setting up Security Headers with Vercel&lt;/a&gt; - Dave Blakey&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description>
