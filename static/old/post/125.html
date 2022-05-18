@@ -16,7 +16,7 @@
 	<div id="divMiddle">
 		<div id="divTop">
 			<h1 id="BlogTitle"><a href="../">Zhu8's Weblog - 短長書</a></h1>
-			<h2 id="BlogSubTitle">此处为旧网志存档，请前往新站：<a href="https://www.zhu8.net" title="返回Zhu8.Net">Zhu8.Net</a></h2>
+			<h2 id="BlogSubTitle">此处为旧网志存档，请前往新站：<a href="https://zhu8.net" title="返回Zhu8.Net">Zhu8.Net</a></h2>
 		</div>
 
 		<div id="divMain">
@@ -26,17 +26,7 @@
 	<h4 class="post-date">2005年6月21日  23:26:17  Tue
 	</h4>
 	<h2 class="post-title">《魔兽世界》— 我常用的宏</h2>
-<center><script type="text/javascript"><!--
-google_ad_client = "pub-4945528698886553";
-/* 468x60, 创建于 09-1-16 */
-google_ad_slot = "1362627836";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></center>
+
 	<div class="post-body">　<font color="Blue">　嘿嘿，方便换不同的机子的时候加上。</font><br/><br/><b>对友好单位或自己使用绷带：</b><br/><p class="code">/script&nbsp;UseContainerItem(2,1)<br/>/script&nbsp;TargetUnit(&quot;player&quot;)</p>　　如果你当前选择的目标是可以对其使用绷带的友好单位的话，则对其使用绷带。<br/>如当前目标是不能被打绷带的单位，或没有选择任何目标的话，则对自己使用绷带。<br/>而且不会对当前目标进行切换，不会中断对当前敌人的攻击。<br/><br/>使用此宏，你必须把你要用的绷带放在背包的特定位置中。UseContainerItem(2,1)中的2是背包的编号，1是格子的编号。(2,1)表示右数第3个包的第一个格子。把它们换成对应你绷带位置的编号。<br/>5个背包按照排列位置编号如下：<br/><br/>[4][3][2][1][0]]<br/><br/>6格包的格子编号如下：<br/><br/>_____[1][2]<br/>[3][4][5][6]<br/><br/>16格包的格子编号如下：<br/><br/>[ 1][ 2][ 3][ 4]<br/>[ 5][ 6][ 7][ 8]<br/>[ 9][10][11][12]<br/>[13][14][15][16]<br/><br/>其他格数以此类推。<br/><br/><b>切换主手武器和副手武器并同时潜行：</b><br/><br/><p class="code">/script&nbsp;PickupInventoryItem(16);PickupInventoryItem(17)<br/>/施放&nbsp;潜行(等级&nbsp;X)&nbsp;</p><br/><b>打开/关闭背包：</b><br/><br/><p class="code">/script&nbsp;ToggleBag(0)&nbsp;背囊<br/>/script&nbsp;ToggleBag(1)&nbsp;右数第二个包<br/>/script&nbsp;ToggleBag(2)&nbsp;右数第三个包<br/>/script&nbsp;ToggleBag(3)&nbsp;右数第四个包<br/>/script&nbsp;ToggleBag(4)&nbsp;右数第五个包<br/><br/>　　上面的几个是切换特定背包的状态，如果当前是打开着的则关闭。如果当前是关闭着的，则打开。<br/>适当的组合可以让你设定只打开特定的几个背包。如猎人可以选择不打开箭筒或子弹袋。<br/><br/>/script&nbsp;OpenAllBags()打开所有背包</p><br/>　　<b>自动判断主、副手武器攻击并切换：</b><br/><p class="code">/script&nbsp;if&nbsp;(GetInventoryItemLink(&quot;player&quot;,&nbsp;16)&lt;GetInventoryItemLink(&quot;player&quot;,&nbsp;17))&nbsp;then&nbsp;PickupInventoryItem(16);PickupInventoryItem(17);end;<br/>/施放&nbsp;邪恶攻击(等级&nbsp;X)</p></div>
   <div class="post-tags"><a href="tags.asp">Tags</a>&nbsp;:&nbsp;
 <a href="https://technorati.com/tag/游戏" rel="tag">
@@ -84,7 +74,7 @@ class="statcounter" href="https://www.statcounter.com/"><img
 class="statcounter"
 src="https://c8.statcounter.com/941480/0/1460a243/0/"
 alt="web analytics" /></a></div></noscript>
-<!-- End of StatCounter Code --> | <a href="https://www.zhu8.net" rel="bookmark" title="返回Zhu8.Net">Zhu8.Net&trade;</a> &copy;  2005 Some Rights Reserved</h2>
+<!-- End of StatCounter Code --> | <a href="https://zhu8.net" rel="bookmark" title="返回Zhu8.Net">Zhu8.Net&trade;</a> &copy;  2005 Some Rights Reserved</h2>
 		</div>
 	</div>
 	</div>
