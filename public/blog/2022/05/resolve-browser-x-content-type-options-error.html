@@ -70,9 +70,9 @@
 <div class="inline toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#错误提示"><strong>错误提示：</strong></a></li>
-    <li><a href="#解决方法"><strong>解决方法：</strong></a></li>
-    <li><a href="#最终成果"><strong>最终成果：</strong></a></li>
+    <li><a href="#错误提示">错误提示：</a></li>
+    <li><a href="#解决方法">解决方法：</a></li>
+    <li><a href="#最终成果">最终成果：</a></li>
   </ul>
 </nav>
 </div>
@@ -87,7 +87,7 @@
 	<div class="mx-auto content">
 		<div class="c-rich-text"><p><img src="https://zhu8.net/images/http-error.png" alt="HTTP-ERROR RESPONSE"></p>
 <p>今天无意用Edge的开发人员调试工具，就出现了如上图的<mark>错误</mark>：<code>Response should include 'x-content-type-options' header.</code></p>
-<h3 id="错误提示"><strong>错误提示：</strong></h3>
+<h3 id="错误提示">错误提示：</h3>
 <p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
 | 请求                        | FURTHER READING                                                  |
 +===========================+==================================================================+
@@ -98,7 +98,7 @@
 <p>The <em><strong>*X-Content-Type-Options*</strong></em> response <em><strong>*HTTP*</strong></em> header is a marker used by the server to indicate that the <abbr title="Multipurpose Internet Mail Extensions"><em><strong>*MIME*</strong></em></abbr> types advertised in the <em><strong>*Content-Type*</strong></em> headers should be followed and not be changed. The header allows you to avoid <em><strong>*MIME type*</strong></em> sniffing by saying that the MIME types are deliberately configured.</p>
 <p><cite>— via <em><strong>*MDN*</strong></em> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
 </blockquote>
-<h3 id="解决方法"><strong>解决方法：</strong></h3>
+<h3 id="解决方法">解决方法：</h3>
 <p>在你的Github或者Gitlab的库首页，增加文件：<code>vercel.json</code><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#000080">&#34;headers&#34;</span>: [
@@ -130,7 +130,7 @@
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>然后，继续按照我<a href="https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html" title="Hugo搭建完全云托管个人网站">上一篇文字</a>的方法，去更新和发布就好啦！</p>
-<h3 id="最终成果"><strong>最终成果：</strong></h3>
+<h3 id="最终成果">最终成果：</h3>
 <p>最后，得到如下的响应头，可以看到，已经有了<code>X-Content-Type-Options: nosniff</code>：</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">access-control-allow-origin: *
 </span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">age: 8412
@@ -148,8 +148,8 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">x-frame-options: DENY
 </span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">x-vercel-cache: HIT
 </span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">x-vercel-id: hnd1:hnd1::857cn-1652843467303-5523938ae2c8
-</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">x-xss-protection: 1; mode=block</span></span></span></code></pre></div>
-<div class="footnotes" role="doc-endnotes">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">x-xss-protection: 1; mode=block
+</span></span></span></code></pre></div><div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">

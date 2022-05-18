@@ -21,7 +21,7 @@ toc: true
 
 <!--more-->
 
-### **错误提示：**
+### 错误提示：
 
 +---------------------------+------------------------------------------------------------------+
 | 请求                        | FURTHER READING                                                  |
@@ -34,7 +34,7 @@ toc: true
 >
 > <cite>— via ***\*MDN\**** [^2]</cite>
 
-### **解决方法：**
+### 解决方法：
 
 在你的Github或者Gitlab的库首页，增加文件：`vercel.json`[^4]
 
@@ -72,11 +72,11 @@ toc: true
 
 然后，继续按照我[上一篇文字][6]的方法，去更新和发布就好啦！
 
-### **最终成果：**
+### 最终成果：
 
 最后，得到如下的响应头，可以看到，已经有了`X-Content-Type-Options: nosniff`：
 
-{{< highlight http >}}
+```http
 access-control-allow-origin: *
 age: 8412
 cache-control: public, max-age=0, must-revalidate
@@ -94,7 +94,7 @@ x-frame-options: DENY
 x-vercel-cache: HIT
 x-vercel-id: hnd1:hnd1::857cn-1652843467303-5523938ae2c8
 x-xss-protection: 1; mode=block
-{{< /highlight >}}
+```
 
 [1]: https://webhint.io/docs/user-guide/hints/hint-x-content-type-options/	"Use `X-Content-Type-Options` header | webhint documentation"
 [^2]: [X-Content-Type-Options - HTTP | MDN][3] - Mozilla Developer Network
