@@ -3,37 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zhu8.net/blog/</loc>
-    <lastmod>2022-05-07T23:05:10+08:00</lastmod>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/categories/</loc>
-    <lastmod>2022-05-07T23:05:10+08:00</lastmod>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/tags/gitlab/</loc>
-    <lastmod>2022-04-26T23:00:10+08:00</lastmod>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/http/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/hugo/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/vercel/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/blog/2022/05/resolve-browser-x-content-type-options-error.html</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/categories/%E7%AB%8B%E5%8D%A0-site/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/</loc>
+    <lastmod>2022-05-18T11:10:10+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/tags/gitpod/</loc>
     <lastmod>2022-04-26T23:00:10+08:00</lastmod>
   </url><url>
-    <loc>https://zhu8.net/tags/hugo/</loc>
-    <lastmod>2022-04-26T23:00:10+08:00</lastmod>
-  </url><url>
     <loc>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</loc>
     <lastmod>2022-04-26T23:00:10+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/</loc>
-    <lastmod>2022-05-07T23:05:10+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/vercel/</loc>
-    <lastmod>2022-04-26T23:00:10+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/categories/%E7%AB%8B%E5%8D%A0-site/</loc>
-    <lastmod>2022-04-26T23:00:10+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/</loc>
-    <lastmod>2022-04-26T23:00:10+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/</loc>
-    <lastmod>2022-05-07T23:05:10+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/tags/%E5%9B%9E%E5%BF%86/</loc>
     <lastmod>2021-11-15T22:58:19+08:00</lastmod>

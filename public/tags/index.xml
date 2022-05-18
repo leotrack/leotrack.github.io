@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Zhu8.Net 🚀 [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
-    <lastBuildDate>Tue, 26 Apr 2022 23:00:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 May 2022 23:40:10 +0800</lastBuildDate>
     
 	<atom:link href="https://zhu8.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,36 @@
     <item>
       <title>Gitlab</title>
       <link>https://zhu8.net/tags/gitlab/</link>
-      <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
+      <pubDate>Tue, 17 May 2022 23:40:10 +0800</pubDate>
       
       <guid>https://zhu8.net/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>https://zhu8.net/tags/http/</link>
+      <pubDate>Tue, 17 May 2022 23:40:10 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://zhu8.net/tags/hugo/</link>
+      <pubDate>Tue, 17 May 2022 23:40:10 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vercel</title>
+      <link>https://zhu8.net/tags/vercel/</link>
+      <pubDate>Tue, 17 May 2022 23:40:10 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/vercel/</guid>
       <description></description>
     </item>
     
@@ -27,24 +54,6 @@
       <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
       
       <guid>https://zhu8.net/tags/gitpod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://zhu8.net/tags/hugo/</link>
-      <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vercel</title>
-      <link>https://zhu8.net/tags/vercel/</link>
-      <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/vercel/</guid>
       <description></description>
     </item>
     
