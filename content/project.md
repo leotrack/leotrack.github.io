@@ -25,7 +25,7 @@ toc: true
 
 #### 网站收集类
 
-- [简繁体转换](/tools/chinese-converter/)
+- [网页小工具集合](/tools/) - 包括简繁体在线转换、微博、Emoji表情代码等。
 - [Movable Type中文手册 / MT Book](/mtbook/)
 
 #### 个人存档类
