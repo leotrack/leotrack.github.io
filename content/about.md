@@ -6,15 +6,15 @@ shares: true
 comments: true
 enableReadingTime: false
 date: "2020-05-17T22:58:19+08:00"
-lastmod: "2022-04-23T23:26:59+08:00"
+lastmod: "2022-05-20T00:26:59+08:00"
 toc: true
 ---
 
 ### 个人简介
 
-陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联死忠粉，王小波门下走狗。
+陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。
 
-<img src="/images/pages/ManUtd.png" width="180px" height="180px" class="right" style="float: right;" />
+<img src="/images/pages/doraemon.png" width="300px" class="right" />
 
 [Zhu8](https://zhu8.net/)是我的网名，用了应该有14年啦，**Zhu8**，其名取自“[猪八戒](https://zh.wikipedia.org/wiki/%E7%8C%AA%E5%85%AB%E6%88%92 "猪八戒")”，另一说是来自[电视剧](https://zh.wikipedia.org/wiki/%E7%94%B5%E8%A7%86%E5%89%A7 "电视剧")《[春光灿烂猪八戒](https://zh.wikipedia.org/wiki/%E6%98%A5%E5%85%89%E7%81%BF%E7%83%82%E7%8C%AA%E5%85%AB%E6%88%92 "春光灿烂猪八戒")》中的***小猪八***。
 
@@ -31,9 +31,12 @@ toc: true
 
 ### 其他流言
 
+<img src="/images/pages/ManUtd.png" width="180px" class="right" />
+
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；
 > * CS **1.5** 死忠，目前仍在某服务器内拥有会员并混迹；
+> * 同时，观察一下我的网站的风格，应该能知道，我是一位 **Doraemon** 脑残粉了吧；
 
 ### 联系我
 
