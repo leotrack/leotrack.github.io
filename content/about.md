@@ -14,7 +14,7 @@ toc: true
 
 陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。
 
-<img src="/images/pages/doraemon.png" width="300px" class="right" />
+<img src="/images/pages/doraemon-300.png" width="300px" class="right" id="trans" />
 
 [Zhu8](https://zhu8.net/)是我的网名，用了应该有14年啦，**Zhu8**，其名取自“[猪八戒](https://zh.wikipedia.org/wiki/%E7%8C%AA%E5%85%AB%E6%88%92 "猪八戒")”，另一说是来自[电视剧](https://zh.wikipedia.org/wiki/%E7%94%B5%E8%A7%86%E5%89%A7 "电视剧")《[春光灿烂猪八戒](https://zh.wikipedia.org/wiki/%E6%98%A5%E5%85%89%E7%81%BF%E7%83%82%E7%8C%AA%E5%85%AB%E6%88%92 "春光灿烂猪八戒")》中的***小猪八***。
 
@@ -31,7 +31,7 @@ toc: true
 
 ### 其他流言
 
-<img src="/images/pages/ManUtd.png" width="180px" class="right" />
+<img src="/images/pages/ManUtd.png" width="180px" class="right" id="trans" />
 
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；

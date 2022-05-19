@@ -162,6 +162,11 @@ img#dora-three {
   height: 145px;
 }
 
+img#trans {
+  box-shadow: none !important;
+  --tw-shadow: none !important;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
   .toc {
