@@ -21,7 +21,7 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 来自[江苏](https://zh.wikipedia.org/wiki/%E6%B1%9F%E8%8B%8F "江苏")[金坛](https://zh.wikipedia.org/wiki/%E9%87%91%E5%9D%9B "金坛")，[北漂](https://zh.wikipedia.org/wiki/%E5%8C%97%E6%BC%82 "北漂")三年后，现定居[南京](https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC "南京")。
 
-开始学习HTML，大概应该是在2001年，贵阳开始读书之后，无意间研究了各种HTML建站，那个时候的互联网是Free的，各种免费托管陪伴我度过了年轻的万东桥下的网吧，然后，发现Blog是个好东西，所以就开始了：**小歪**帮我从Blogcn上的 [曾经坚持过的故事…](http://zhu8.blogone.net)上搬过来了从2004年2月19日开始的Blog旅程，尔后是从2004年9月9日在 [歪酷](http://zhu8.yculblog.com)开始的新的旅程。 接着就是在 [这里](https://www.4thway.cn)啦！-Via [^1]
+开始学习HTML，大概应该是在2001年，贵阳开始读书之后，无意间研究了各种HTML建站，那个时候的互联网是Free的，各种免费托管陪伴我度过了年轻的万东桥下的网吧，然后，发现Blog是个好东西，所以就开始了：**小歪**帮我从Blogcn上的 [曾经坚持过的故事…](http://zhu8.blogone.net)上搬过来了从2004年2月19日开始的Blog旅程，尔后是从2004年9月9日在 [歪酷](http://zhu8.yculblog.com)开始的新的旅程。 接着就是在 [这里](https://www.4thway.cn)啦！- *Via* [^1]
 
 中间也折腾了ZX.asd 大佬开发的 [Z-Blog](https://www.rainbowsoft.org)，[Wordpress](https://wordpress.org)，[Movable Type](https://movabletype.org)，[Blogger](https://www.blogger.com)等等，应该能从的历史文章看出来，除了HTML, CSS 外，还额外学习了ASP, PHP, MySQL 等等各路语言，成了一个野生的前端工程师。
 
@@ -41,7 +41,7 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；
 > * CS **1.5** 死忠，目前仍在某服务器内拥有会员并混迹；
-> * 我的网站的风格已经说明，我是一位 <img src="/images/pages/doraemon-logo-small.png" width="192px" id="pure" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉。
+> * 如**网站**风格，我是一位 <img src="/images/pages/doraemon-logo-small.png" width="96px" id="pure" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉。
 
 ### 联系我
 
@@ -56,3 +56,7 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 -   **您有发表任何看法和言论的权利 // Anything is Acceptable**
 -   **同时我保留忽视您的留言的权利 // Anything is Neglectable**
+
+[^1]: [短長書-第一次哦！][2] - 旧日志存档
+
+[2]:https://zhu8.net/old/post/1.html "短長書-第一次哦！"
