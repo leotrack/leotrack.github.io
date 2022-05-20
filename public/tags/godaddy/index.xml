@@ -22,6 +22,7 @@
 &lt;p&gt;**第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用&lt;a href=&#34;http://chenjun.com/&#34;&gt;http://chenjun.com/&lt;/a&gt; 绑定了我的Blogger，故而在Godaddy里面如下设置：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/godaddy-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;请列位看官自行看图说话，如何创造自己的ghs.xxx.com。实在看不懂请留言。ghs.google.com的IP有&lt;a href=&#34;http://out.zhu8.net/ghs&#34;&gt;这个地方&lt;/a&gt;查很不错&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;**第二步：**解决www和non-www制定不同的问题。 由于Google只能绑定子域名（www亦是一种特殊格式的子域名），故我们要让根域名也指向到这里，&lt;del&gt;如果你是Host domain在Godaddy，只要使用Forward就可以了。&lt;/del&gt;（&lt;strong&gt;经反复测试，此方法没有用，只有使用.htaccess解决，详见：[注释]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/strong&gt;）如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/godaddy-8.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 &lt;img src=&#34;https://zhu8.net/images/godaddy-9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;

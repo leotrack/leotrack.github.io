@@ -9,7 +9,7 @@ title: ScribeFire添加Blogger出错及解决
 url: /blog/2008/12/error-scribefire-to-blogger.html
 ---
 ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说出错，没有任何内容。
-
+<!--more-->
 <span class="center">![](/images/blogger-error.jpg)</span>
 
 解决方法：把Http://改成<span style='color: red;'>**Https://**</span>，如图：

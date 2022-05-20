@@ -26,6 +26,7 @@
 &lt;li&gt;研究了一下Moto自带的&lt;strong&gt;导入名片&lt;/strong&gt;功能，发现它可以支持vcf格式文件——名片（vCard）文件的！这样就简单了。具体操作步骤如下：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;首先，打开你的OE：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/e2_contact_outlook_1_thumb.png&#34; alt=&#34;e2_contact_outlook_1&#34; title=&#34;e2_contact_outlook_1&#34;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;然后打开“地址”，就到了如下的页面：&lt;/p&gt;
@@ -65,8 +66,7 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;第三种&lt;/strong&gt;：如果你不想使用插件，可以参考这位老兄的&lt;a href=&#34;http://programmingnote.com/blog/?p=35&#34;&gt;修改方法&lt;/a&gt;。他说Comment掉第二条插件所使用的命令之后还要再加一句，但我测试，&lt;strong&gt;单纯用上面那个插件是没有问题的&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;关于如何&lt;strong&gt;回收利用在你还没来得及关闭Revision功能之前就产生的Revisions&lt;/strong&gt;？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 &lt;em&gt;post_type = “revision”&lt;/em&gt; 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 &lt;em&gt;post_status&lt;/em&gt; 从 &lt;em&gt;inherit&lt;/em&gt; 改成 &lt;strong&gt;publish&lt;/strong&gt; ，将 &lt;em&gt;post_type&lt;/em&gt; 从 &lt;strong&gt;revision&lt;/strong&gt; 改成 &lt;strong&gt;post&lt;/strong&gt;，其它例如： &lt;em&gt;post_name&lt;/em&gt; &lt;em&gt;post_date&lt;/em&gt; 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！&lt;/p&gt;
-</description>
+&lt;p&gt;关于如何&lt;strong&gt;回收利用在你还没来得及关闭Revision功能之前就产生的Revisions&lt;/strong&gt;？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 &lt;em&gt;post_type = “revision”&lt;/em&gt; 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 &lt;em&gt;post_status&lt;/em&gt; 从 &lt;em&gt;inherit&lt;/em&gt; 改成 &lt;strong&gt;publish&lt;/strong&gt; ，将 &lt;em&gt;post_type&lt;/em&gt; 从 &lt;strong&gt;revision&lt;/strong&gt; 改成 &lt;strong&gt;post&lt;/strong&gt;，其它例如： &lt;em&gt;post_name&lt;/em&gt; &lt;em&gt;post_date&lt;/em&gt; 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！&lt;/p&gt;</description>
     </item>
     
     <item>

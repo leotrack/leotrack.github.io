@@ -40,10 +40,12 @@ author = "Zhu8"
   githubName = "Zhu8"
   email = "zhu8@msn.com"
   twitterName = "5CJ"
-  sitedescription = "［陈俊/ChenJun］aka [猪八/Zhu8]的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。"
+  sitedescription = "{陈俊/ChenJun} aka {猪八/Zhu8} 的个人网站，江苏金坛人士，现居金陵，83年生人，电子产品、代码、海淘 、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。"
   enableWaline = true
   googleSiteVerification = "Mfl8lf6NN0DWPluv8lQpBL-mrKi22ZOcnlKXYURni1Y"
   appletouchicon ="/apple-touch-icon.png"
+  keywords = ["陈俊", "ChenJun", "猪八", "Zhu8", "个人网站", "chenjun.com", "zhu8.net", "Doraemon", "王小波", "Hugo"]
+  showRelatedPosts = true
 	
 [permalinks]
   posts = "/blog/:year/:month/:slug/"

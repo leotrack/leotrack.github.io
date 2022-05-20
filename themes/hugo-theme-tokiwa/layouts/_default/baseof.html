@@ -7,14 +7,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="{{ .Site.Params.author }}" />
 	{{ hugo.Generator }}{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	<meta name="description" content="{{ if .Description}}{{ .Description }}{{else}}{{ if .Summary}}{{ .Summary }}{{else}}{{ .Site.Params.sitedescription }}{{end}}{{end}}" />
-	<meta name="robots" content="index, follow" /> {{ else }}
-	<meta name="robots" content="noindex, nofollow" /> {{ end }}
-	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link type="text/css" rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .) }}" media="all" /> {{ end }}
+	<meta name="description" content="{{ if .Description}}{{ .Description|safeHTML }}{{else}}{{ if .Summary}}{{ .Summary|safeHTML }}{{else}}{{ .Site.Params.sitedescription|safeHTML }}{{end}}{{end}}" />
+	{{- if .IsNode }}
+	{{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+	{{- else }}
+	<meta name="keywords" content="{{ if .Params.keywords -}}
+		{{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+		{{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
+	{{- end }}
+	<meta name="robots" content="index, follow" />{{ else }}
+	<meta name="robots" content="noindex, nofollow" />{{ end }}
+	<meta name="revised" content="{{ .Site.Params.author }}, {{ .Page.Lastmod.Format "2006-01-02" }}" />
+	<meta name="copyright" content="{{ if .Site.Copyright }}{{ .Site.Copyright|safeHTML }}{{ end }}, All Rights Reserved." />
+	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link type="text/css" rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .) }}" media="all" />{{ end }}
 	{{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }}
 	<link rel="apple-touch-icon" href="{{ .Site.Params.appletouchicon }}" />
 	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}" />
-	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}"> {{end}}
+	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">{{end}}
 	{{ if .IsPage }}<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
 	<link type="text/css" rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />{{ end }}
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" media="all" />
@@ -41,10 +50,8 @@
 		})('{{"lib/pangu.min.js"|absURL}}', function () {
 			pangu.spacingPage();
 		});
-	</script>
-	{{end}}
+	</script>{{end}}
 </head>
-
 <body class="bg-gray-100 text-gray-700 font-sans">
 	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
 		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">

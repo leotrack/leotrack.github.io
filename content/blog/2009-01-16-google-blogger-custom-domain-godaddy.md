@@ -10,7 +10,7 @@ title: 看图说话：绑定Godaddy域名到Blogger
 url: /blog/2009/01/google-blogger-custom-domain-godaddy.html
 ---
 为了用上已强大的Blogger，同时不闲置自己的域名，觉得绑定到Blogger上来，但是**万恶的土啬作祟**，拼命封我们的ghs.google.com，没有办法，只好曲线救国。 废话少说，以我的域名Zhu8.Net为例，域名位于同样被频繁**土啬**的Godaddy。相信很多域名位于天朝管理之外的朋友都有这样的问题，经过万能的Google和自己的摸索，总结如下：
-
+<!--more-->
 **第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用[http://chenjun.com/](http://chenjun.com/) 绑定了我的Blogger，故而在Godaddy里面如下设置：
 
 ![](/images/godaddy-11.png) 

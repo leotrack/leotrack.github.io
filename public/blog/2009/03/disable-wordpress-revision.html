@@ -7,9 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="Zhu8" />
 	<meta name="generator" content="Hugo 0.99.0" />
-	<meta name="description" content="还是使用 WordPress 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision…… 如何关闭R" />
-	<meta name="robots" content="index, follow" /> 
-	<link type="text/css" rel="stylesheet" href="https://zhu8.net/dist/app.css" media="all" /> 
+	<meta name="description" content="还是使用 WordPress 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……" />
+	<meta name="keywords" content="Hack, Revision, 网站">
+	<meta name="robots" content="index, follow" />
+	<meta name="revised" content="Zhu8, 2009-03-03" />
+	<meta name="copyright" content="Zhu8.Net 🚀 [CC BY-SA], All Rights Reserved." />
+	<link type="text/css" rel="stylesheet" href="https://zhu8.net/dist/app.css" media="all" />
 	<link rel="shortcut icon" href="https://zhu8.net/favicon.ico" type="image/x-icon" /> 
 	<link rel="apple-touch-icon" href="https://zhu8.net/apple-touch-icon.png" />
 	
@@ -40,9 +43,7 @@
 			pangu.spacingPage();
 		});
 	</script>
-	
 </head>
-
 <body class="bg-gray-100 text-gray-700 font-sans">
 	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
 		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
@@ -89,8 +90,7 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
 <ul>
 <li><strong>第三种</strong>：如果你不想使用插件，可以参考这位老兄的<a href="http://programmingnote.com/blog/?p=35">修改方法</a>。他说Comment掉第二条插件所使用的命令之后还要再加一句，但我测试，<strong>单纯用上面那个插件是没有问题的</strong>。</li>
 </ul>
-<p>关于如何<strong>回收利用在你还没来得及关闭Revision功能之前就产生的Revisions</strong>？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 <em>post_type = “revision”</em> 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 <em>post_status</em> 从 <em>inherit</em> 改成 <strong>publish</strong> ，将 <em>post_type</em> 从 <strong>revision</strong> 改成 <strong>post</strong>，其它例如： <em>post_name</em> <em>post_date</em> 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！</p>
-</div>
+<p>关于如何<strong>回收利用在你还没来得及关闭Revision功能之前就产生的Revisions</strong>？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 <em>post_type = “revision”</em> 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 <em>post_status</em> 从 <em>inherit</em> 改成 <strong>publish</strong> ，将 <em>post_type</em> 从 <strong>revision</strong> 改成 <strong>post</strong>，其它例如： <em>post_name</em> <em>post_date</em> 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！</p></div>
 	</div>
 </article>
 		</main>
@@ -167,13 +167,31 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
         </svg></a> 
 </div>
 <div>
-      
-    <div class="font-serif pb-2 flex align-start leading-loose">
-        <span class="heading pr-6 leading-loose">Related Post(s):</span>
-        <span>
-             <a href="https://zhu8.net/blog/2008/04/from-wordpress-to-textpattern.html">从wordpress到textpattern</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2006/12/style-wordpress-trackback.html">定制Trackback特定样式</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2009/03/waitting-for-edit.html">等待编辑中</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html">Movable Type 4网站重构记录</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/10/nirvana-at-whopig-dot-com.html">涅磐-WhoPig.COM</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/05/back-to-movabletype.html">又换回MovableType</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/03/the-forgotten.html">被遗忘的海子及其他</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/03/wordpress-25.html">WordPress 2.5</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2008/03/change-to-movable-type.html">终于用上Movable Type!</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2006/11/trouble-with-so-much-things.html">发现自己原来一根筋</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html">解决WP汉化和UTW链接问题</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2006/11/small-cases.html">二三事</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2006/08/time-back-to-2004.html">时光倒回贰零零肆</a>&nbsp;&nbsp;&#47;&nbsp;  <a href="https://zhu8.net/blog/2004/03/gramophone.html">第一篇：留声机</a> 
-        </span>
-    </div> 
+    
+    
+    
+  
+
+  
+  <div class="font-serif pb-2 flex align-start leading-loose">
+    <span class="heading pr-6 leading-loose">Related Post(s):</span>
+    <span>
+        
+        
+        <a href="https://zhu8.net/blog/2014/06/start.html">今天开始</a>
+        
+        <a href="https://zhu8.net/blog/2010/06/chenjun-com-reborn-and-zheteng.html">ChenJun.COM重生及继续折腾</a>
+        
+        <a href="https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html">Rokr E2从Outlook Express中导入联系人</a>
+        
+        <a href="https://zhu8.net/blog/2009/03/chenjun-dot-com-online.html">ChenJun dot COM上线!</a>
+        
+        <a href="https://zhu8.net/blog/2009/03/waitting-for-edit.html">等待编辑中</a>
+        
+    </span>
+</div> 
+
+  
 </div>
 <hr />
 <div class="pb-2">

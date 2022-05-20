@@ -12,7 +12,7 @@ title: Rokr E2从Outlook Express中导入联系人
 url: /blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html
 ---
 最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。
-
+<!--more-->
 就是一直为如何将原来Palm 680的通讯录导过来以及更新烦恼。寻找了如下方法：
 
 1.  装Moto的官方软件Motorola Phone Tools，可以与Outlook Express互相同步，但是不知道什么原因，老是无法连接机器，我想再次更新的时候却没辙了。只好——**放弃**。 

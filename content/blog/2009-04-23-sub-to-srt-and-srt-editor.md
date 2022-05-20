@@ -11,7 +11,7 @@ title: Sub字幕转换Srt字幕：赠：大话西游字幕及Srt编辑器
 url: /blog/2009/04/sub-to-srt-and-srt-editor.html
 ---
 还是没事做，又欣赏了一遍鬼斧神道的大话西游，心中默念着台词，然后在周星星的某个表情还没有开始的时候偷偷笑，肆意模仿着星爷的夸张语气和表演，忍不住回想起当年，才发觉初次在家中用那台2800大洋的Panasonic录像机看它的时候，已经是10年甚至更早了（大约是在96-98之间）。那时的我刚刚初三或者高一，仍然懵懂，记得当时的录像带上有周星星的孙悟空扮相，当时的录像带上名字分明是：《齐天大圣东游记》。
-
+<!--more-->
 饶有兴致的翻出我的刻录碟：Verycd上下的：<a href="http://www.verycd.com/topics/8613/">《大话西游之月光宝盒》(A Chinese Odyssey Part One: Pandora&#8217;s Box)</a>&<a href="http://www.verycd.com/topics/17571/">《大话西游之仙履奇缘》(A Chinese Odyssey Part Two: Cinderella)</a>，发现我这里的字幕文件有一个是Srt，还有一个是Idx+Sub的，而我比较不喜欢Sub，于是到处倒腾了一下，找到了一些转换的软件和编辑软件，所以随便鼓捣了一番，并且放出了下面的下载。
 
 PS-***No.1***：我的<a href="https://chenjun.com/">**chenjun dot com**</a>被伟大的*土啬*给<strike>干掉了</strike>，阿门&#8230;&#8230;我已经向他们求饶了，不知道何时会放了我。

@@ -12,7 +12,7 @@ title: Great Teacher Onizuka
 url: /blog/2008/06/gto-great-teacher-onizuka.html
 ---
 初次使用[Live Writer](http://writer.live.com "Windows Live Writer") 写日志，不知道是否能完美支持[WordPress](http://wordpress.org/ "WordPress")。周末儿童节，终于看完了GTO，看到他牛X的跑到美国载着金发姐姐一脸YD，然后冲入某*California High School*，一帮金毛孩成了Great Teacher Onizuka 即简称GTO的22岁单身教师鬼塚 英吉, *Onizuka Eikichi*的学生，而天真可爱的冬月 あずさ, *Fuyutsuki Azusa*还在武藏野圣林学苑苦等着他。
-
+<!--more-->
 <span class="left">![GTO](/images/GTO.jpg "GTO")</span>个人比较喜欢动画版（43集），因为电视剧和电影版的无法表现那么夸张，很多东西电视剧表现不了，比如，鬼塚那种猥琐的神情，十个反町隆史都不能刻画一二。而且对原著不忠实，很多地方看得人二楞二楞的……。感谢伟大的[骡子](http://www.emule.org.cn)，包罗万象，我可以把GTO的[《麻辣教师》(G.T.O.)[R2Jraw+外挂字幕][43更新][wmv][DVDRip]](http://lib.verycd.com/2007/12/25/0000175166.html)、[原声大碟 -《麻辣教师 1》(Great.Teacher.Onizuka OST 1)[MP3!]][1]、[原声大碟 -《麻辣教师 2》(Great Teacher Onizuka Ost 2)[MP3!]][2]、[《麻辣教师》(Great.Teacher.Onizuka)DVD转制蓝色字幕版（1-12集全）[RMVB]][3]全部下齐了，然后慢慢看，刻到我一块三一张的紫光 16X DVD+R 里面去。对了，wmv版的动画片字幕不对，万能的电骡告诉我还有这个字幕[GTO.Lesson.01-43[R3DVDSUB].rar][4]可以下载。
 
 <!--more-->

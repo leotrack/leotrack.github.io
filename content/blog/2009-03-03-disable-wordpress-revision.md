@@ -10,7 +10,7 @@ title: 关闭WordPress的Revision功能
 url: /blog/2009/03/disable-wordpress-revision.html
 ---
 还是使用 [WordPress][1] 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……
-
+<!--more-->
 如何关闭Revision？我试用了几种方法：
 
 *   **第一种**：在*wp-config.php*中加入如下代码：  
