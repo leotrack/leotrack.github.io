@@ -30,7 +30,6 @@ url: /blog/2005/01/politics-no-law.html
 我
 
 不知道。
-
 <!--more-->
 
   

@@ -167,6 +167,14 @@ img#trans {
   --tw-shadow: none !important;
 }
 
+img#pure {
+  box-shadow: none !important;
+  --tw-shadow: none !important;
+  margin: 0%;
+  padding: 0%;
+  display: inline;
+}
+
 /* Media Queries */
 @media (max-width: 1080px) {
   .toc {

@@ -6,7 +6,7 @@ shares: true
 comments: true
 enableReadingTime: false
 date: "2020-05-17T22:58:19+08:00"
-lastmod: "2022-05-20T00:26:59+08:00"
+lastmod: "2022-05-21T00:58:59+08:00"
 toc: true
 keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Doraemon, 王小波, Hugo]
 ---
@@ -15,11 +15,15 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。
 <!--more-->
-<img src="/images/pages/doraemon-300.png" width="300px" class="right" id="trans" alt="Doraemon on Taimu Mashin" title="Doraemon on Taimu Mashin" />
+<img src="/images/pages/doraemon-300.png" width="300px" class="left" id="trans" alt="Doraemon on Taimu Mashin" title="Doraemon on Taimu Mashin" />
 
 [Zhu8](https://zhu8.net/)是我的网名，用了应该有14年啦，**Zhu8**，其名取自“[猪八戒](https://zh.wikipedia.org/wiki/%E7%8C%AA%E5%85%AB%E6%88%92 "猪八戒")”，另一说是来自[电视剧](https://zh.wikipedia.org/wiki/%E7%94%B5%E8%A7%86%E5%89%A7 "电视剧")《[春光灿烂猪八戒](https://zh.wikipedia.org/wiki/%E6%98%A5%E5%85%89%E7%81%BF%E7%83%82%E7%8C%AA%E5%85%AB%E6%88%92 "春光灿烂猪八戒")》中的***小猪八***。
 
 来自[江苏](https://zh.wikipedia.org/wiki/%E6%B1%9F%E8%8B%8F "江苏")[金坛](https://zh.wikipedia.org/wiki/%E9%87%91%E5%9D%9B "金坛")，[北漂](https://zh.wikipedia.org/wiki/%E5%8C%97%E6%BC%82 "北漂")三年后，现定居[南京](https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC "南京")。
+
+开始学习HTML，大概应该是在2001年，贵阳开始读书之后，无意间研究了各种HTML建站，那个时候的互联网是Free的，各种免费托管陪伴我度过了年轻的万东桥下的网吧，然后，发现Blog是个好东西，所以就开始了：**小歪**帮我从Blogcn上的 [曾经坚持过的故事…](http://zhu8.blogone.net)上搬过来了从2004年2月19日开始的Blog旅程，尔后是从2004年9月9日在 [歪酷](http://zhu8.yculblog.com)开始的新的旅程。 接着就是在 [这里](https://www.4thway.cn)啦！-Via [^1]
+
+中间也折腾了ZX.asd 大佬开发的 [Z-Blog](https://www.rainbowsoft.org)，[Wordpress](https://wordpress.org)，[Movable Type](https://movabletype.org)，[Blogger](https://www.blogger.com)等等，应该能从的历史文章看出来，除了HTML, CSS 外，还额外学习了ASP, PHP, MySQL 等等各路语言，成了一个野生的前端工程师。
 
 ### 关于本站
 
@@ -30,14 +34,14 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 * 2021年11月1日-11月16日，换主题[Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa)继续折腾，其中使用到的平台和工具包括：~~腾讯云提供的**CloudStudio**~~、Git平台[**Gitlab**](https://gitlab.com/)（比*Github*的好处就是访问稳定）、在线IDE平台[**Gitlpod**](https://gitpod.io/)、网站发布平台[**Vercel**](https://vercel.com/)（大赞！）。
 * 2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具[**Wayback Machine**](https://web.archive.org/web/20060614054822/http://219.141.36.145/school/UploadFiles/20041115162230783.jpg)。*@深圳·福田·景田*
 
-### 其他流言
-
 <img src="/images/pages/ManUtd.png" width="180px" class="right" id="trans" alt="Manchester United" title="Manchester United" />
+
+### 其他流言
 
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；
 > * CS **1.5** 死忠，目前仍在某服务器内拥有会员并混迹；
-> * 同时，观察一下我的网站的风格，应该能知道，我是一位 <img src="/images/pages/doraemon-logo-small.png" id="trans" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉了吧；
+> * 我的网站的风格已经说明，我是一位 <img src="/images/pages/doraemon-logo-small.png" width="192px" id="pure" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉。
 
 ### 联系我
 

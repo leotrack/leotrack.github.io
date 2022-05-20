@@ -20,7 +20,6 @@ url: /blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html
 3.  研究了一下Moto自带的**导入名片**功能，发现它可以支持vcf格式文件——名片（vCard）文件的！这样就简单了。具体操作步骤如下： 
 
 前面如何将你的通讯录导入到Outlook Express（以下简称OE）我就不说了，我只说如何将OE里面的通讯录导入到E2的过程。
-
 <!--more-->
 
 首先，打开你的OE：

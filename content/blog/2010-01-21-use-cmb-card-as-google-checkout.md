@@ -25,7 +25,6 @@ url: /blog/2010/01/use-cmb-card-as-google-checkout.html
 > Authorizations can remain in your account anywhere from 24 hours up to 14 business days, depending on the bank. You may contact your bank to confirm the charge for your purchase with Google or to check on the authorization status.
 
 购买的截图，注意**Outlying Islands**和**Hong Kong**这两个地址哈：
-
 <!--more-->
 
   ![google-checkout](/images/GoogleCheckout_10D83/googlecheckout.png "google-checkout")

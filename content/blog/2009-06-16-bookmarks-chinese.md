@@ -17,7 +17,6 @@ toc: true
 作者信息：Zhu8 ([https://zhu8.net](https://zhu8.net "Zhu8"))  
 插件地址：[https://zhu8.net/blog/2009/06/bookmarks-chinese.html](https://zhu8.net/blog/2009/06/bookmarks-chinese.html "Zhu8")  
 插件版本：1.0 Final (2009.6.4)
-
 <!--more-->
 
 ### **插件结构：**</font>

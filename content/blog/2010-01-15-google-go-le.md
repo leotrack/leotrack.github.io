@@ -16,7 +16,6 @@ Google[要走了](http://googleblog.blogspot.com/2010/01/new-approach-to-china.h
 好吧，那我就就把我的站搬家吧，搬到文明用语的那边，不用再接受贵国的文明用语的洗礼。
 
 **附图两张：**
-
 <!--more-->
 
 ![chinainventions10-hp](/images/GoogleGoLe_14149/chinainventions10hp.gif "chinainventions10-hp")

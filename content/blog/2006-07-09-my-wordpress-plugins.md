@@ -13,7 +13,6 @@ toc: true
 ![Wordpress Logo](/images/wordpress-logo.png "WordpressLogo")[WordPress](http://wordpress.org/)是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！
 
 在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的[Greenery](http://www.ilemoned.com/wordpress/theme-greenery)，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）
-
 <!--more-->
 
 ### 后台管理类：

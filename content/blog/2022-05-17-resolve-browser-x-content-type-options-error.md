@@ -19,7 +19,6 @@ toc: true
 ![HTTP-ERROR RESPONSE](/images/http-error.png)
 
 今天无意用Edge的开发人员调试工具，就出现了如上图的<mark>错误</mark>：`Response should include 'x-content-type-options' header.`
-
 <!--more-->
 
 ### 错误提示：

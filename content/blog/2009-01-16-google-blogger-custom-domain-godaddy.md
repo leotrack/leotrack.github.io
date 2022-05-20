@@ -16,7 +16,6 @@ url: /blog/2009/01/google-blogger-custom-domain-godaddy.html
 ![](/images/godaddy-11.png) 
 
 请列位看官自行看图说话，如何创造自己的ghs.xxx.com。实在看不懂请留言。ghs.google.com的IP有[这个地方](http://out.zhu8.net/ghs)查很不错
-
 <!--more-->
 
    **第二步：**解决www和non-www制定不同的问题。 由于Google只能绑定子域名（www亦是一种特殊格式的子域名），故我们要让根域名也指向到这里，~~如果你是Host domain在Godaddy，只要使用Forward就可以了。~~（**经反复测试，此方法没有用，只有使用.htaccess解决，详见：[注释][^1]**）如下：

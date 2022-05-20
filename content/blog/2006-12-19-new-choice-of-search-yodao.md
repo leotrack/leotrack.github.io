@@ -13,7 +13,6 @@ url: /blog/2006/12/new-choice-of-search-yodao.html
 ![有道logo](/images/yodao.gif "有道logo")其博客搜索的特色功能包括：[即时提示](http://www.yodao.com/help/websearch/features/002/)、[博客卡片](http://www.yodao.com/help/blogsearch/features/001/)、[博客档案](http://www.yodao.com/help/blogsearch/features/002/)、[网络释义](http://www.yodao.com/help/dict/features/001/)等等，很有意思，值得一提的是，刚刚发现他们的博客搜索因为和百度[博客搜索](http://blogsearch.baidu.com/ "百度博客搜索")一样，独立的Blogger相对于寄居BSP门下的更难索引到，且所用程序和样式千千万万，索引的并不多，刚好发现有道的交流论坛：[坐而论道](http://u.yodao.com/ "坐而论道")，于是进去发了个[帖子](http://u.yodao.com/viewthread.php?tid=229&extra=page%3D1)问一下，在别人的建议下去[提交](http://tellbot.yodao.com/report?type=BLOG "有道登录您的网站")了一下自己的Blog，结果也许是机缘巧合，也许是真的就那么快，我的Blog就被[收录](http://blog.yodao.com/search?q=zhu8&t=a&keyfrom=blog.bar "zhu8&有道博客搜索")了。
 
 有道的海量词典也是一个蛮好玩的功能，用**网页**而非**定语**来解释词语，有兴趣地可以去[玩一下](http://www.yodao.com/help/dict/features/001/)。  
-
 <!--more-->
 
 期间和一个网友有了些小小的交流：

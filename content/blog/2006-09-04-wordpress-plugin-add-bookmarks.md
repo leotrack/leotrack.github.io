@@ -22,7 +22,6 @@ First plugin for WordPress:[English vision][1] (2008/03/18)
 在你的文章下加入添加到书签或网摘的代码，参考*Thomas McMahon*插件[*Social Bookmark Links*](http://www.twistermc.com/shake/wordpress-social.php)修改，可选择文字链接或图标链接，若喜欢还可以自己添加。
 
 ***Update On 2006/9/27***：更新了图片的链接问题，使用`“.get_settings(‘siteurl’).”`使链接在更新Blog地址的时候不会出错。
-
 <!--more-->
 
 *   **插件安装**：1) 下载插件：<a title="下载插件" href="https://zhu8.net/uploads/add-bookmarks.rar">add-bookmarks.rar</a>
