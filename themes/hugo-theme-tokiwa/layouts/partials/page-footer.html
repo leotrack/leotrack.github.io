@@ -28,7 +28,7 @@
 <div class="pb-2">
     {{ if eq .Params.comments false }}
     <p style="opacity: 0.6" align="center">
-        <small>Comments Are Disabled.</small>
+        <small>Comments <b><i>CLOSED</i></b> for This Post.</small>
     </p>
     {{ else }}
     {{- partial "comment.html" . -}}
