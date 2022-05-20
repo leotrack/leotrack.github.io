@@ -24,7 +24,7 @@
     <div class="font-serif pb-2 flex align-start leading-loose">
         <span class="heading pr-6 leading-loose">Related Post(s):</span>
         <span>
-            {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}{{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>}&nbsp;&nbsp;&#47;&nbsp;{{ end }}
+            {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}{{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>&nbsp;&nbsp;&#47;&nbsp; {{ end }}
         </span>
     </div> {{ end }}{{ end }}
 </div>
