@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="{{ .Site.Params.author }}" />
 	{{ hugo.Generator }}{{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	<meta name="description" content="{{ if .Description }}{{ .Description|safeHTML }}{{ else }}{{ if .Summary }}{{ .Summary|safeHTML }}{{ else }}{{ .Site.Params.sitedescription|safeHTML }}{{ end }}{{ end }}" />
+	<meta name="description" content="{{ if .Description }}{{ .Description | safeHTML }}{{ else }}{{ if .Summary }}{{ .Summary | safeHTML }}{{ else }}{{ .Site.Params.sitedescription | safeHTML }}{{ end }}{{ end }}" />
 	{{- if .IsNode }}
 	{{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" />{{ end }}
 	{{- else }}
