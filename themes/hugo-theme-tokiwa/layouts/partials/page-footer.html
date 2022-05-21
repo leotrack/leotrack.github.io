@@ -16,17 +16,27 @@
         </svg></a> {{end}}
 </div>
 <div>
-    {{ if .Site.Params.showRelatedPosts }}
-    {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-    {{ $.Scratch.Set "has_related" true }}
-    {{ end }}
-    {{ if $.Scratch.Get "has_related" }}
-    <div class="font-serif pb-2 flex align-start leading-loose">
-        <span class="heading pr-6 leading-loose">Related Post(s):</span>
-        <span>
-            {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}{{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>&nbsp;&nbsp;&#47;&nbsp; {{ end }}
-        </span>
-    </div> {{ end }}{{ end }}
+    {{- range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) -}}
+    {{- $.Scratch.Set "has_related" true -}}
+{{- end -}}
+
+{{ if $.Scratch.Get "has_related" }}
+<div class="font-serif pb-2 flex align-start leading-loose">
+    <span class="heading pr-6 leading-loose">Related Post(s):</span>
+        <ul>
+            {{- $num_to_show := .Site.Params.related_content_limit | default 5 -}}
+            {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                &ndash; 
+                <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05-0700" }}">
+                    {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+            </li>
+          {{ end }}
+        </ul>
+    </div>
+{{ end }}
 </div>
 <hr />
 <div class="pb-2">
