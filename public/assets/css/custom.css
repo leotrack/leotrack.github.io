@@ -215,12 +215,7 @@ ol li {
   list-style-type: upper-roman;
 }
 hr.summary {
-  border: none;
-  margin: 1em;
+  border:none;
+  margin: .5em;
   text-align: center;
-}
-hr.summary::after {
-      content: "";
-      letter-spacing: 2em;
-      padding-left: 2em;
 }
