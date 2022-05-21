@@ -214,13 +214,13 @@ ol li {
   margin: 0;
   list-style-type: upper-roman;
 }
-.summary hr {
+hr.summary {
   border: none;
-  margin: 2.427em 0 1.5em;
+  margin: 1em;
   text-align: center;
-  &::after {
-      content: "···";
+}
+hr.summary::after {
+      content: "";
       letter-spacing: 2em;
       padding-left: 2em;
-  }
 }
