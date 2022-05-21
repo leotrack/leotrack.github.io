@@ -36,4 +36,4 @@ url: /blog/2005/03/lonely-dream-catcher-and-francoise-sagan.html
 
 *孤独始终伴随着我——此记*
 
-  [1]: /images/sanjiao.jpg "雪山飞狐-三角关系"
+  [1]: /images/posts/sanjiao.jpg "雪山飞狐-三角关系"

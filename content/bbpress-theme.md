@@ -23,10 +23,10 @@ keywords: [Wordpress, Theme, bbPress, 主题, 绿色]
 
 Theme的截图在这里瞻仰：
 
-![bbPress Screenshot](/images/bbPress-screenshot.png)
+![bbPress Screenshot](/images/pages/bbPress-screenshot.png)
 
 ------
 
 顺便在放上Google Code的页面截图，也许这个Archive页面不久也会消失了。。。
 
-<img src="/images/zhu8-google-code.png" alt="Google Code Archive" style="zoom:50%;" />
+<img src="/images/pages/zhu8-google-code.png" alt="Google Code Archive" style="zoom:50%;" />

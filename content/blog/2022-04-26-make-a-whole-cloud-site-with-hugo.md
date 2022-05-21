@@ -9,7 +9,7 @@ tags:
 - Gitlab
 - Gitpod
 - Vercel
-featured_image: /images/Vercel.png
+featured_image: /images/posts/Vercel.png
 title: Hugo搭建完全云托管个人网站
 url: /blog/2022/04/make-a-whole-cloud-site-with-hugo.html
 description: 我的网站搭建，通过Gitlab（源码存储）、Gitpod（Web IDE）、Vercel（站点发布与域名）、Waline（评论系统），构建了完整的生态链。也就是，我只需要出域名的钱，所有东西就全部呈现出来啦！
@@ -47,5 +47,5 @@ sudo dpkg -i hugo_extended_0.97.3_Linux-64bit.deb
 [2]: https://github.com/ "Github"
 [3]: https://gitlab.com/ "Gitlab"
 [4]: https://vercel.com "Develop. Preview. Ship. For the best frontend teams – Vercel"
-[5]: /images/Vercel.png "Vercel 界面"
+[5]: /images/posts/Vercel.png "Vercel 界面"
 [6]: https://gitpod.io/ "Gitpod Web IDE"

@@ -2,7 +2,7 @@
 categories:
 - 景彡 | Vision
 date: "2010-11-30T22:45:08+08:00"
-featured_image: /images/Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv.jpg
+featured_image: /images/posts/Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv.jpg
 tags:
 - 下载
 - 雪山飞狐
@@ -17,7 +17,7 @@ description: 今天，终于有新的出来了！600M一集，480P（720*480）�
 今天，终于有新的出来了！600M一集，480P（720*480）的TVRip，应该不会辜负大家的期望！我还正在下载中，但是还是迫不及待的来更新下我的濒死的小小Weblog，希望能够帮到要找的兄弟姐妹！
 <!--more-->
 
-<span class="center">![雪山飞狐.Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv](/images/Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv.jpg "雪山飞狐.Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv")</span>
+<span class="center">![雪山飞狐.Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv](/images/posts/Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv.jpg "雪山飞狐.Flying.Fox.of.Snowy.Mountain.1991.Ep01.TVRip.mkv")</span>
 
 闲话不多说，地址在这里：[《雪山飞狐》(Flying Fox of Snowy Mountain)[更新完毕][MKV]](http://www.verycd.com/topics/2852020/ "http://www.verycd.com/topics/2852020/")，不过有一点小遗憾，因为其原始文件就没有，所以楼主没有提供**第21集**的下载。这里附上我上次找到的448*336的第21集，聊胜于无吧：
 

@@ -10,7 +10,7 @@ title: 我的WordPress插件列表
 url: /blog/2006/07/my-wordpress-plugins.html
 toc: true
 ---
-![Wordpress Logo](/images/wordpress-logo.png "WordpressLogo")[WordPress](http://wordpress.org/)是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！
+![Wordpress Logo](/images/posts/wordpress-logo.png "WordpressLogo")[WordPress](http://wordpress.org/)是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！
 
 在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的[Greenery](http://www.ilemoned.com/wordpress/theme-greenery)，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）
 <!--more-->
@@ -29,7 +29,7 @@ toc: true
 - [**CoolPlayer**](http://www.coolcode.cn/?p=100) ：国人制作，强大方便的媒体播放插件。几乎所有格式都可以播放。支持[ ]标签，异步调用媒体文件，不影响页面载入速度。**已停用，改用**：[DewMP3](http://www.caboulot.org/dewmp3.html "DewMP3")
 - [**coolcode**](http://www.coolcode.cn/?p=26) ：在帖子里高亮显示代码。**已停用，我不怎么使用代码**
 - [**WP-PostRatings**](http://www.lesterchan.net/portfolio/programming.php "访问插件主页") ：每篇帖子打分的插件，5颗星，呵呵，纯粹娱乐。
-- [**WP Grins**](http://www.alexking.org/software/wordpress/ "访问插件主页") ：给wp加入表情 By [alexking](http://alexking.org/)。由于此插件并不是针对2.0开发，因此要先修改一下。找到wp-grins.php中的下面这句（大约在34行）：`$grins .=`将其中的”/wp-images/smilies/”修改为”/wp-includes/images/smilies/”。自行添加自定义表情：编辑/wp-includes/vars.php，搜索`‘:mrgreen:’ => ‘icon_mrgreen.gif’,`（大致在91行），在其下方添加如下代码：`‘:emXX:’ => ‘em01.gif’,`
+- [**WP Grins**](http://www.alexking.org/software/wordpress/ "访问插件主页") ：给wp加入表情 By [alexking](http://alexking.org/)。由于此插件并不是针对2.0开发，因此要先修改一下。找到wp-grins.php中的下面这句（大约在34行）：`$grins .=`将其中的”/wp-images/smilies/”修改为”/wp-includes/images/posts/smilies/”。自行添加自定义表情：编辑/wp-includes/vars.php，搜索`‘:mrgreen:’ => ‘icon_mrgreen.gif’,`（大致在91行），在其下方添加如下代码：`‘:emXX:’ => ‘em01.gif’,`
 
 - [**WP-EMail**](http://www.lesterchan.net/portfolio/programming.php "Visit plugin homepage")：通过邮件把文章分享给好友。
 - [**Gravatar**](http://www.gravatar.com/implement.php#section_2_2 "访问插件主页") ：显示Gravatar头像的插件，如果你已经在Gravatar注册过，那么填上你的email就会显示你的头像。（[gravatar](http://tinn.writestyle.cn/?p=97)?）

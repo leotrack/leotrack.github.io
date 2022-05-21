@@ -13,25 +13,25 @@ url: /blog/2009/01/google-blogger-custom-domain-godaddy.html
 <!--more-->
 **第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用[http://chenjun.com/](http://chenjun.com/) 绑定了我的Blogger，故而在Godaddy里面如下设置：
 
-![](/images/godaddy-11.png) 
+![](/images/posts/godaddy-11.png) 
 
 请列位看官自行看图说话，如何创造自己的ghs.xxx.com。实在看不懂请留言。ghs.google.com的IP有[这个地方](http://out.zhu8.net/ghs)查很不错
 <!--more-->
 
    **第二步：**解决www和non-www制定不同的问题。 由于Google只能绑定子域名（www亦是一种特殊格式的子域名），故我们要让根域名也指向到这里，~~如果你是Host domain在Godaddy，只要使用Forward就可以了。~~（**经反复测试，此方法没有用，只有使用.htaccess解决，详见：[注释][^1]**）如下：
 
-![](/images/godaddy-8.png)  
-![](/images/godaddy-9.png) 
+![](/images/posts/godaddy-8.png)  
+![](/images/posts/godaddy-9.png) 
 
 这样本来就算完了，但是因为无孔不入的**土啬**又来了。封掉了不知道多少Godaddy的IP，所以如果你不幸如果，域名的IP被封了，那你就需要换IP了。Godaddy的域名自带有免费空间，我们可以通过切换域名空间的IP。网上有很多教程，但是目前来说Godaddy把它藏的深了一点，不再是Switch Operating System，换成了**Upgrade/Downgrade Hosting Account**。图解如下：
 
-![](/images/godaddy-1.png)  
-![](/images/godaddy-2.png)  
-![](/images/godaddy-3.png)  
-![](/images/godaddy-4.png)  
-![](/images/godaddy-5.png)  
-![](/images/godaddy-6.png)  
-![](/images/godaddy-7.png) 
+![](/images/posts/godaddy-1.png)  
+![](/images/posts/godaddy-2.png)  
+![](/images/posts/godaddy-3.png)  
+![](/images/posts/godaddy-4.png)  
+![](/images/posts/godaddy-5.png)  
+![](/images/posts/godaddy-6.png)  
+![](/images/posts/godaddy-7.png) 
 
 等待不过十几分钟，虽然Account Details里面的Status还是Pending Account Change，但是IP地址已经换了，Total DNS Control Panel里面的A Records已经变成了新的IP，等待……生效，一切OK！
 

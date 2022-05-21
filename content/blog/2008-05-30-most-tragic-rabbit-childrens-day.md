@@ -13,20 +13,20 @@ url: /blog/2008/05/most-tragic-rabbit-childrens-day.html
 凄惨的小白兔，周末我就不来陪你了……（连环画，为减少载入时间，请入内……）
 <!--more-->
 
-![史上最惨的小白兔-01](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/01.jpg "史上最惨的小白兔-01")
-![史上最惨的小白兔-02](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/02.jpg "史上最惨的小白兔-02")
-![史上最惨的小白兔-03](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/03.jpg "史上最惨的小白兔-03")
-![史上最惨的小白兔-04](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/04.jpg "史上最惨的小白兔-04")
-![史上最惨的小白兔-05](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/05.jpg "史上最惨的小白兔-05")
-![史上最惨的小白兔-06](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/06.jpg "史上最惨的小白兔-06")
-![史上最惨的小白兔-07](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/07.jpg "史上最惨的小白兔-07")
-![史上最惨的小白兔-08](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/08.jpg "史上最惨的小白兔-08")
-![史上最惨的小白兔-09](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/09.jpg "史上最惨的小白兔-09")
-![史上最惨的小白兔-10](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/10.jpg "史上最惨的小白兔-10")
-![史上最惨的小白兔-11](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/11.jpg "史上最惨的小白兔-11")
-![史上最惨的小白兔-12](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/12.jpg "史上最惨的小白兔-12")
-![史上最惨的小白兔-13](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/13.jpg "史上最惨的小白兔-13")
-![史上最惨的小白兔-14](http://mat1.qq.com/joke/images/joke/200801/03/tuzi/14.jpg "史上最惨的小白兔-14")
+![史上最惨的小白兔-01](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/01.jpg "史上最惨的小白兔-01")
+![史上最惨的小白兔-02](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/02.jpg "史上最惨的小白兔-02")
+![史上最惨的小白兔-03](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/03.jpg "史上最惨的小白兔-03")
+![史上最惨的小白兔-04](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/04.jpg "史上最惨的小白兔-04")
+![史上最惨的小白兔-05](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/05.jpg "史上最惨的小白兔-05")
+![史上最惨的小白兔-06](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/06.jpg "史上最惨的小白兔-06")
+![史上最惨的小白兔-07](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/07.jpg "史上最惨的小白兔-07")
+![史上最惨的小白兔-08](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/08.jpg "史上最惨的小白兔-08")
+![史上最惨的小白兔-09](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/09.jpg "史上最惨的小白兔-09")
+![史上最惨的小白兔-10](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/10.jpg "史上最惨的小白兔-10")
+![史上最惨的小白兔-11](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/11.jpg "史上最惨的小白兔-11")
+![史上最惨的小白兔-12](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/12.jpg "史上最惨的小白兔-12")
+![史上最惨的小白兔-13](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/13.jpg "史上最惨的小白兔-13")
+![史上最惨的小白兔-14](http://mat1.qq.com/joke/images/posts/joke/200801/03/tuzi/14.jpg "史上最惨的小白兔-14")
 
 我的/Old/存档里面有05年的儿童节转的两篇文：
 

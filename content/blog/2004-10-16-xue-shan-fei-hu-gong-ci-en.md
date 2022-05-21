@@ -113,12 +113,12 @@ url: /blog/2004/10/xue-shan-fei-hu-gong-ci-en.html
 **推荐使用：Emule下载（主题曲、片尾曲+28集全集）** :[客户端下载][10]
 
 
-  [1]: /images/xueshanfeihu-logo.jpg "雪山飞狐-封面"
+  [1]: /images/posts/xueshanfeihu-logo.jpg "雪山飞狐-封面"
   [2]: http://vod.sdtv.cn/filmvod/filmplay.aspx?bianh=40 "山东台的播放地址"
   [3]: http://sendoh.yculblog.com/ "Sendoh"
-  [4]: /images/xueshanfeihu-chatu-1.jpg "插图1"
-  [5]: /images/xueshanfeihu-chatu-2.jpg "插图2"
-  [6]: /images/xueshanfeihu-chatu-3.jpg "插图3"
+  [4]: /images/posts/xueshanfeihu-chatu-1.jpg "插图1"
+  [5]: /images/posts/xueshanfeihu-chatu-2.jpg "插图2"
+  [6]: /images/posts/xueshanfeihu-chatu-3.jpg "插图3"
   [7]: http://www.15199.com/look.asp?id=993 "东方影迷网上半部"
   [8]: http://www.15199.com/look.asp?id=994 "东方影迷网下半部"
   [9]: http://www.aofeng.net/filmdown/movie.asp?id=1235 "查看地址"

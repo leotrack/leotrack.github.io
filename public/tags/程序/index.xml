@@ -63,7 +63,7 @@
 &amp;lt;$MTTwitterURL$&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;例子&#34;&gt;&lt;strong&gt;例子：&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/BookmarksChinese.png&#34; alt=&#34;Bookmarks Chinese Screenshot&#34; title=&#34;Bookmarks Chinese Screenshot&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;delicious&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;&amp;lt;$MTDeliciousURL$&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;收藏到美味书签&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#008080&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#d14&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#000080&#34;&gt;a&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;如何使用&#34;&gt;&lt;strong&gt;如何使用：&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
@@ -132,7 +132,7 @@
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>

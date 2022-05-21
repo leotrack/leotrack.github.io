@@ -9,7 +9,7 @@ tags:
 - Github
 - BitBucket
 - FTPloy
-featured_image: /images/FTPloy.png
+featured_image: /images/posts/FTPloy.png
 title: 使用BitBucket和FTPloy私有Jekyll源码
 url: /blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html
 description: 网站使用Jekyll建成之后，放置在Github Pages的源码属于公开的访问，处于一些个人安全考虑，放置在自己的空间会相对安全一些。
@@ -45,12 +45,12 @@ Github私有源码的话，是需要美刀的，作为小站长，一个虚拟�
 [2]: https://pages.github.com "Github Pages"
 [3]: https://bitbucket.org/ "Bitbucket 由旧金山的Atlassian公司开发"
 [4]: https://ftploy.com "FTP Deploy"
-[5]: /images/FTPloy.png "FTPloy"
+[5]: /images/posts/FTPloy.png "FTPloy"
 [6]: https://bitbucket.org/ "Bitbucket 由旧金山的Atlassian公司开发"
-[7]: /images/Bitbucket.png "BitBucket"
+[7]: /images/posts/Bitbucket.png "BitBucket"
 [8]: https://ftploy.com "FTP Deploy"
-[9]: /images/Server-FTPloy.png "FTPloy新建Server"
-[10]: /images/Project-FTPloy.png "FTPloy新建Project"
-[11]: /images/Jekyll-CMD.png "Jekyll Build in one CMD line"
+[9]: /images/posts/Server-FTPloy.png "FTPloy新建Server"
+[10]: /images/posts/Project-FTPloy.png "FTPloy新建Project"
+[11]: /images/posts/Jekyll-CMD.png "Jekyll Build in one CMD line"
 [12]: https://bitbucket.org/ "Bitbucket 由旧金山的Atlassian公司开发"
 [13]: http://www.sourcetreeapp.com/?utm_source=bitbucket&utm_medium=link&utm_campaign=chenjun.com "Mac/Windows上的免费Git/Mercurial客户端."

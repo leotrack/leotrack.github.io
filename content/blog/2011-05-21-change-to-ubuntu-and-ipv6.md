@@ -5,7 +5,7 @@ date: "2011-05-21T00:46:07+08:00"
 tags:
 - ipv6
 - Ubuntu
-featured_image: /images/ubuntu-screenshot.png
+featured_image: /images/posts/ubuntu-screenshot.png
 title: 转移到Ubuntu同时开启ipv6
 url: /blog/2011/05/change-to-ubuntu-and-ipv6.html
 description: 闲得无事，终于想去折腾Linux，选择自然是我在06还是07年索取过的漂洋过海来到中国的Ubuntu。不料冲动坏事，在格式化的时候把我的1TB硬盘全部格掉，更始料未及的是两天前冲动的那个我用Recovery软件恢复的时候，把原来要恢复的扇区给覆盖了，导致近一年的相片无存，如同我的生命少了一年。
@@ -18,7 +18,7 @@ description: 闲得无事，终于想去折腾Linux，选择自然是我在06还
 今天在Hi-PDA的水与空气的D版，再次翻回两天前看到的IPV6的帖子，以及关于“方校长”和“白名单”的种种讨论和逆袭，干脆“破罐破摔”，系统就装了Ubuntu 11.04，反正不得已用Windows的时候，我那1000块收回来的IBM Thinkpad X41上面的Win7可以派上用场。于是终于第一次完整的体验了Linux，用起了命令行，穿越了IPV6，很好很强大——不得不说。虽然固有的10多年的Windows想法时时作崇，影响使用，但是如今的系统的人性化已经让我很受用，特别是强大的命令行，不再需要找网站，下软件，安装到哪哪，注意有没有恶意插件，只需要简单的几行命令。这让我觉得我以前可浪费了多么宝贵的生命！
 
 ***IPV6完成后的截图：***  
-![Ubuntu Screenshot](/images/ubuntu-screenshot.png "Ubuntu Screenshot")
+![Ubuntu Screenshot](/images/posts/ubuntu-screenshot.png "Ubuntu Screenshot")
 
 ### 具体步骤：
 

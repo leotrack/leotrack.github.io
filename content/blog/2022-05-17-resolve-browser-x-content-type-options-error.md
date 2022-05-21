@@ -9,14 +9,14 @@ tags:
 - Gitlab
 - HTTP
 - Vercel
-featured_image: /images/http-error.png
+featured_image: /images/posts/http-error.png
 title: 解决浏览器X-Content-Type-Options报错
 url: /blog/2022/05/resolve-browser-x-content-type-options-error.html
 description: 今天无意用Edge的开发人员调试工具，就出现了错误：Response should include 'x-content-type-options' header.
 toc: true
 ---
 
-![HTTP-ERROR RESPONSE](/images/http-error.png)
+![HTTP-ERROR RESPONSE](/images/posts/http-error.png)
 
 今天无意用Edge的开发人员调试工具，就出现了如上图的<mark>错误</mark>：`Response should include 'x-content-type-options' header.`
 <!--more-->

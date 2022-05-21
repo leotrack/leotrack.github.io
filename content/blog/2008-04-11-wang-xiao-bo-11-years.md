@@ -8,7 +8,7 @@ tags:
 title: 小波十一年
 url: /blog/2008/04/wang-xiao-bo-11-years.html
 ---
-<span style="float:right;">![当年的小波](/images/xiaobo.jpg)</span>
+<span style="float:right;">![当年的小波](/images/posts/xiaobo.jpg)</span>
 纪念小波逝世**十一周年 **» 特制作 ***•浮生小筑-王小波作品精选***™ [/Wang2/](http://chenjun.com/wang2/ "王小波作品精选")（正在补充中），先把那边做好再说。。来源自停摆差不多五年的**_opig的《无声听雨》_**
 
 > 王小波，1952年出生于北京，并先后当过知青、民办教师、工人、工科大学生。其后，王小波在美国匹兹堡大学取得文学硕士，再学电脑，于统计系当助教，回国后在中国人民大学任教。1980年，他与李银河结婚。  

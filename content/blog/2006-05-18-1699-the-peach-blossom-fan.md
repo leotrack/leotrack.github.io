@@ -36,7 +36,7 @@ style="color: rgb(198, 10, 0);">誓死捍卫你说话的权利！</span>“。�
 
   [很低]: http://culture.longhoo.net/news/userobject1ai497106.html
   [汪峰]: http://www.wangfeng.com.cn/
-  [昆曲--桃花扇]: /images/peach-blossom-fan.jpg "昆曲--桃花扇"
+  [昆曲--桃花扇]: /images/posts/peach-blossom-fan.jpg "昆曲--桃花扇"
   [问题]: http://www.yangtse.com/pub/yzweb/dzbpd/zyxw/t20060507_76346.htm
   [石占明]: http://www.google.com/search?q=%E7%9F%B3%E5%8D%A0%E6%98%8E&hl=zh-CN&newwindow=1
   [孟静]: http://mj6655.yculblog.com/

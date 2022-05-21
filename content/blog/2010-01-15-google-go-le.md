@@ -2,7 +2,7 @@
 categories:
 - 黑犬 | Other
 date: "2010-01-15T23:25:14+08:00"
-featured_image: /images/GoogleGoLe_14149/mygoogleproducts.png
+featured_image: /images/posts/GoogleGoLe_14149/mygoogleproducts.png
 tags:
 - Google
 - 中国
@@ -18,9 +18,9 @@ Google[要走了](http://googleblog.blogspot.com/2010/01/new-approach-to-china.h
 **附图两张：**
 <!--more-->
 
-![chinainventions10-hp](/images/GoogleGoLe_14149/chinainventions10hp.gif "chinainventions10-hp")
+![chinainventions10-hp](/images/posts/GoogleGoLe_14149/chinainventions10hp.gif "chinainventions10-hp")
 
-![my-google-products](/images/GoogleGoLe_14149/mygoogleproducts.png "my-google-products")
+![my-google-products](/images/posts/GoogleGoLe_14149/mygoogleproducts.png "my-google-products")
 
 **延伸阅读：**
 

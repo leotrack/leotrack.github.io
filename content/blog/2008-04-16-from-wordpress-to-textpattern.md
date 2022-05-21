@@ -10,7 +10,7 @@ tags:
 title: 从wordpress到textpattern
 url: /blog/2008/04/from-wordpress-to-textpattern.html
 ---
-其实<span class="right">![Textpattern](/images/txp.gif "Textpattern")</span>很久以前就试用了 [TXP][1] ，但是一直是一头雾水，今天终于 <sup>其实昨天</sup> 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 **记录：**
+其实<span class="right">![Textpattern](/images/posts/txp.gif "Textpattern")</span>很久以前就试用了 [TXP][1] ，但是一直是一头雾水，今天终于 <sup>其实昨天</sup> 就已经弄好了。不过一直wordpress导入有点小问题，所以一直没有换过来。现在折腾好了，做一下小 **记录：**
 
 * **解决乱码问题**
 

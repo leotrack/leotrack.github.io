@@ -18,7 +18,7 @@
       <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2008/03/wordpress-25.html</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/wordpress-logo.png&#34; alt=&#34;WordPress Logo&#34; title=&#34;WordPress Logo&#34;&gt;&lt;/span&gt;现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）&lt;em&gt;&lt;strong&gt;修改于2008/3/31&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;WordPress持续爆发中&lt;a href=&#34;http://ma.tt/&#34; title=&#34;域名比较......帅&#34;&gt;Matt&lt;/a&gt;连续爆发了RC1、RC2后，正式版终于在愚人节前上线了。呼。更新到2.5就先停一下吧。两天更新一次实在是跟不上了。&lt;/p&gt;
 &lt;p&gt;不过我的问题还是没有解决，在Firefox和Safari下Add media 仍然是报HTTP Error，估计是服务器的关系，虽然Wordpress Support 上面很多人也出现了此类问题，但似乎还没有解决办法。在IE7下更万恶，传完了，占了地儿，却无法显示和使用，更绝。看来我还是手动Upload的好了。&lt;/p&gt;
 </description>
@@ -139,7 +139,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
       <pubDate>Sun, 09 Jul 2006 01:18:20 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2006/07/my-wordpress-plugins.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/wordpress-logo.png&#34; alt=&#34;Wordpress Logo&#34; title=&#34;WordpressLogo&#34;&gt;&lt;a href=&#34;http://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！&lt;/p&gt;
 &lt;p&gt;在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的&lt;a href=&#34;http://www.ilemoned.com/wordpress/theme-greenery&#34;&gt;Greenery&lt;/a&gt;，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）&lt;/p&gt;
 &lt;h3 id=&#34;后台管理类&#34;&gt;后台管理类：&lt;/h3&gt;
 &lt;ul&gt;
@@ -164,7 +164,7 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;WP-PostRatings&lt;/strong&gt;&lt;/a&gt; ：每篇帖子打分的插件，5颗星，呵呵，纯粹娱乐。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.alexking.org/software/wordpress/&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;WP Grins&lt;/strong&gt;&lt;/a&gt; ：给wp加入表情 By &lt;a href=&#34;http://alexking.org/&#34;&gt;alexking&lt;/a&gt;。由于此插件并不是针对2.0开发，因此要先修改一下。找到wp-grins.php中的下面这句（大约在34行）：&lt;code&gt;$grins .=&lt;/code&gt;将其中的”/wp-images/smilies/”修改为”/wp-includes/images/smilies/”。自行添加自定义表情：编辑/wp-includes/vars.php，搜索&lt;code&gt;‘:mrgreen:’ =&amp;gt; ‘icon_mrgreen.gif’,&lt;/code&gt;（大致在91行），在其下方添加如下代码：&lt;code&gt;‘:emXX:’ =&amp;gt; ‘em01.gif’,&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.alexking.org/software/wordpress/&#34; title=&#34;访问插件主页&#34;&gt;&lt;strong&gt;WP Grins&lt;/strong&gt;&lt;/a&gt; ：给wp加入表情 By &lt;a href=&#34;http://alexking.org/&#34;&gt;alexking&lt;/a&gt;。由于此插件并不是针对2.0开发，因此要先修改一下。找到wp-grins.php中的下面这句（大约在34行）：&lt;code&gt;$grins .=&lt;/code&gt;将其中的”/wp-images/smilies/”修改为”/wp-includes/images/posts/smilies/”。自行添加自定义表情：编辑/wp-includes/vars.php，搜索&lt;code&gt;‘:mrgreen:’ =&amp;gt; ‘icon_mrgreen.gif’,&lt;/code&gt;（大致在91行），在其下方添加如下代码：&lt;code&gt;‘:emXX:’ =&amp;gt; ‘em01.gif’,&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.lesterchan.net/portfolio/programming.php&#34; title=&#34;Visit plugin homepage&#34;&gt;&lt;strong&gt;WP-EMail&lt;/strong&gt;&lt;/a&gt;：通过邮件把文章分享给好友。&lt;/p&gt;

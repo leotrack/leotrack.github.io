@@ -20,17 +20,17 @@
       <guid>https://zhu8.net/blog/2014/07/use-bitbucket-and-ftploy-to-private-jekyll.html</guid>
       <description>&lt;h3 id=&#34;为何用bitbucketftploy&#34;&gt;为何用BitBucket&amp;amp;FTPloy？&lt;/h3&gt;
 &lt;p&gt;网站使用&lt;a href=&#34;http://jekyllrb.com&#34; title=&#34;Jekyll • Simple, blog-aware, static sites&#34;&gt;Jekyll&lt;/a&gt;建成之后，放置在&lt;a href=&#34;https://pages.github.com&#34; title=&#34;Github Pages&#34;&gt;Github Pages&lt;/a&gt;的源码属于公开的访问，处于一些个人安全考虑，最重要的是放置在自己的FTP空间会相对安全一些，所以，我采用了支持私有源码的&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;作为Git仓库，并使用&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;作为Deploy方案，实现了自动发布到个人FTP的目的。
-&lt;img src=&#34;https://zhu8.net/images/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/FTPloy.png&#34; alt=&#34;FTPloy&#34; title=&#34;FTPloy&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;注册并使用bitbucket&#34;&gt;注册并使用BitBucket&lt;/h4&gt;
 &lt;p&gt;Github私有源码的话，是需要美刀的，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;吧：）注册完成之后，创建一个仓库，如 &lt;em&gt;&lt;strong&gt;下图&lt;/strong&gt;&lt;/em&gt; 所示，注意可选 &lt;strong&gt;私人仓库&lt;/strong&gt; 选项。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。
-&lt;img src=&#34;https://zhu8.net/images/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/Bitbucket.png&#34; alt=&#34;BitBucket新建仓库&#34; title=&#34;BitBucket&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;注册并使用ftploy&#34;&gt;注册并使用FTPloy&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://ftploy.com&#34; title=&#34;FTP Deploy&#34;&gt;FTPloy&lt;/a&gt;是一个自动监控Git库分支变更并发布到FTP的网站，支持Bitbucket和Github，当然为了简便起见，你也可以直接监控你的Github仓库，能使用的，应该都不用教啦！FTPloy&lt;em&gt;免费版&lt;/em&gt;仅支持&lt;strong&gt;一&lt;/strong&gt;个Project，但是对于小站长来说，监控一个就足够啦！所以，如&lt;em&gt;&lt;strong&gt;下面&lt;/strong&gt;&lt;/em&gt;两幅图，先新建Server，后新建Project。
-&lt;img src=&#34;https://zhu8.net/images/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
-&lt;img src=&#34;https://zhu8.net/images/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/Server-FTPloy.png&#34; alt=&#34;FTPloy新建Server&#34; title=&#34;FTPloy新建Server&#34;&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/Project-FTPloy.png&#34; alt=&#34;FTPloy新建Project&#34; title=&#34;FTPloy新建Project&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;本地生成jekyll页面并push&#34;&gt;本地生成Jekyll页面并Push&lt;/h4&gt;
 &lt;p&gt;本地安装网上教程太多，不多说啦，直接&lt;strong&gt;CMD&lt;/strong&gt;：&lt;em&gt;&lt;strong&gt;jekyll build&lt;/strong&gt;&lt;/em&gt;
-&lt;img src=&#34;https://zhu8.net/images/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
 然后就是如何Push，我使用的是&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;，所以，Windows用户请直接下载&lt;a href=&#34;http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;amp;utm_medium=link&amp;amp;utm_campaign=chenjun.com&#34; title=&#34;Mac/Windows上的免费Git/Mercurial客户端.&#34;&gt;SourceTree&lt;/a&gt;，自行探索吧，这就不教程了。&lt;/p&gt;
 &lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
 &lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;
@@ -45,7 +45,7 @@
       <guid>https://zhu8.net/blog/2014/07/jekyll-github.html</guid>
       <description>&lt;p&gt;本博开篇，Zhu8.Net Reborn!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Enjoy it!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/vector_jerry_8ball_by_svezate-d6lzyyh.png&#34; alt=&#34;Jerry and the 8 Ball&#34; title=&#34;Jerry and the 8 Ball&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;为何用githubjekyll&#34;&gt;为何用Github&amp;amp;Jekyll&lt;/h3&gt;
 &lt;p&gt;我想这不需要多说了吧？&lt;strong&gt;版本记录+Markdown+本地编辑&lt;/strong&gt;。嗯！爽！&lt;/p&gt;
 &lt;h4 id=&#34;如何离线或在线编辑&#34;&gt;如何离线或在线编辑&lt;/h4&gt;

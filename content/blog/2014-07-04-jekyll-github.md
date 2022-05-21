@@ -8,7 +8,7 @@ tags:
 - Github
 - Markdown
 - Stackedit
-featured_image: /images/vector_jerry_8ball_by_svezate-d6lzyyh.png
+featured_image: /images/posts/vector_jerry_8ball_by_svezate-d6lzyyh.png
 title: 重生@Jekyll+GitHub Pages
 url: /blog/2014/07/jekyll-github.html
 description: 版本记录+Markdown+本地编辑。嗯！爽！
@@ -55,7 +55,7 @@ toc: true
 回头再补充一些吧，就酱。
 
 
-  [1]: /images/vector_jerry_8ball_by_svezate-d6lzyyh.png "Jerry and the 8 Ball"
+  [1]: /images/posts/vector_jerry_8ball_by_svezate-d6lzyyh.png "Jerry and the 8 Ball"
   [2]: https://stackedit.io "StackEdit"
   [3]: https://chrome.google.com/webstore/detail/stackedit/iiooodelglhkcpgbajoejffhijaclcdg?utm_source=chrome-ntp-launcher
   [4]: https://www.dropbox.com/s/maf5zc5zoj3eqec/wordpress-to-jekyll-exporter.zip "wordpress-to-jekyll-exporter.zip"

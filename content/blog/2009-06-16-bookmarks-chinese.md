@@ -59,7 +59,7 @@ toc: true
 
 ### **例子：**
 
-![Bookmarks Chinese Screenshot](/images/BookmarksChinese.png "Bookmarks Chinese Screenshot")
+![Bookmarks Chinese Screenshot](/images/posts/BookmarksChinese.png "Bookmarks Chinese Screenshot")
 
 ```html
 <a class="delicious" href="<$MTDeliciousURL$>" title="收藏到美味书签" target="_blank"></a>

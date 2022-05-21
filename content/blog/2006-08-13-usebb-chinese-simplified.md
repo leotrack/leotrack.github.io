@@ -9,7 +9,7 @@ tags:
 title: UseBB汉化暨论坛搭建完成
 url: /blog/2006/08/usebb-chinese-simplified.html
 ---
-好啦，昨晚折腾了一个晚上，总算完成了。***〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕***<span class="right">![ScreenShot of UseBB Chinese](/images/usebb-chinese.jpg "ScreenShot of UseBB Chinese")</span>最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样**惊人**。用UseBB的介绍文件来说就是<acronym title="Unnecessary features">**bloat**</acronym>。后来找到了[UseBB](http://www.usebb.net/)，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就[修改](http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe "UseBB中文字符截断函数（UTF-8）修改")了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食<sub>By Chairman Mao</sub>了。
+好啦，昨晚折腾了一个晚上，总算完成了。***〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕***<span class="right">![ScreenShot of UseBB Chinese](/images/posts/usebb-chinese.jpg "ScreenShot of UseBB Chinese")</span>最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样**惊人**。用UseBB的介绍文件来说就是<acronym title="Unnecessary features">**bloat**</acronym>。后来找到了[UseBB](http://www.usebb.net/)，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就[修改](http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe "UseBB中文字符截断函数（UTF-8）修改")了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食<sub>By Chairman Mao</sub>了。
 
 废话少说，简单介绍一下UseBB吧！
 <!--more-->

@@ -27,10 +27,10 @@ url: /blog/2010/01/use-cmb-card-as-google-checkout.html
 购买的截图，注意**Outlying Islands**和**Hong Kong**这两个地址哈：
 <!--more-->
 
-  ![google-checkout](/images/GoogleCheckout_10D83/googlecheckout.png "google-checkout")
+  ![google-checkout](/images/posts/GoogleCheckout_10D83/googlecheckout.png "google-checkout")
 
 **P.S ：**上面的图片就是用**~~Google Docs~~**（经数次测试，图片链接**不是**固定链接，过一段时间就会变化，无法外部引用，只能用来存储了……）**附：**上传界面：
 
-![google-docs](/images/GoogleCheckout_10D83/googledocs.png "google-docs")
+![google-docs](/images/posts/GoogleCheckout_10D83/googledocs.png "google-docs")
 
 关于信用卡是否会被停用Google Checkout和订单是否会被退订，我会在这里**继续更新**，或者知道的可以**留言**哈！

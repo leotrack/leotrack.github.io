@@ -92,17 +92,17 @@
 	<div class="mx-auto content">
 		<div class="c-rich-text"><h3 id="为何用bitbucketftploy">为何用BitBucket&amp;FTPloy？</h3>
 <p>网站使用<a href="http://jekyllrb.com" title="Jekyll • Simple, blog-aware, static sites">Jekyll</a>建成之后，放置在<a href="https://pages.github.com" title="Github Pages">Github Pages</a>的源码属于公开的访问，处于一些个人安全考虑，最重要的是放置在自己的FTP空间会相对安全一些，所以，我采用了支持私有源码的<a href="https://bitbucket.org/" title="Bitbucket 由旧金山的Atlassian公司开发">BitBucket</a>作为Git仓库，并使用<a href="https://ftploy.com" title="FTP Deploy">FTPloy</a>作为Deploy方案，实现了自动发布到个人FTP的目的。
-<img src="https://zhu8.net/images/FTPloy.png" alt="FTPloy" title="FTPloy"></p>
+<img src="https://zhu8.net/images/posts/FTPloy.png" alt="FTPloy" title="FTPloy"></p>
 <h4 id="注册并使用bitbucket">注册并使用BitBucket</h4>
 <p>Github私有源码的话，是需要美刀的，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册<a href="https://bitbucket.org/" title="Bitbucket 由旧金山的Atlassian公司开发">BitBucket</a>吧：）注册完成之后，创建一个仓库，如 <em><strong>下图</strong></em> 所示，注意可选 <strong>私人仓库</strong> 选项。当然，也可以按右上角的<strong>import</strong>导入你的Github仓库。
-<img src="https://zhu8.net/images/Bitbucket.png" alt="BitBucket新建仓库" title="BitBucket"></p>
+<img src="https://zhu8.net/images/posts/Bitbucket.png" alt="BitBucket新建仓库" title="BitBucket"></p>
 <h4 id="注册并使用ftploy">注册并使用FTPloy</h4>
 <p><a href="https://ftploy.com" title="FTP Deploy">FTPloy</a>是一个自动监控Git库分支变更并发布到FTP的网站，支持Bitbucket和Github，当然为了简便起见，你也可以直接监控你的Github仓库，能使用的，应该都不用教啦！FTPloy<em>免费版</em>仅支持<strong>一</strong>个Project，但是对于小站长来说，监控一个就足够啦！所以，如<em><strong>下面</strong></em>两幅图，先新建Server，后新建Project。
-<img src="https://zhu8.net/images/Server-FTPloy.png" alt="FTPloy新建Server" title="FTPloy新建Server">
-<img src="https://zhu8.net/images/Project-FTPloy.png" alt="FTPloy新建Project" title="FTPloy新建Project"></p>
+<img src="https://zhu8.net/images/posts/Server-FTPloy.png" alt="FTPloy新建Server" title="FTPloy新建Server">
+<img src="https://zhu8.net/images/posts/Project-FTPloy.png" alt="FTPloy新建Project" title="FTPloy新建Project"></p>
 <h4 id="本地生成jekyll页面并push">本地生成Jekyll页面并Push</h4>
 <p>本地安装网上教程太多，不多说啦，直接<strong>CMD</strong>：<em><strong>jekyll build</strong></em>
-<img src="https://zhu8.net/images/Jekyll-CMD.png" alt="Jekyll Build in one CMD line" title="Jekyll Build in one CMD line">
+<img src="https://zhu8.net/images/posts/Jekyll-CMD.png" alt="Jekyll Build in one CMD line" title="Jekyll Build in one CMD line">
 然后就是如何Push，我使用的是<a href="https://bitbucket.org/" title="Bitbucket 由旧金山的Atlassian公司开发">BitBucket</a>，所以，Windows用户请直接下载<a href="http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;utm_medium=link&amp;utm_campaign=chenjun.com" title="Mac/Windows上的免费Git/Mercurial客户端.">SourceTree</a>，自行探索吧，这就不教程了。</p>
 <h3 id="结语">结语</h3>
 <p>经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！</p>
@@ -143,7 +143,7 @@
 		<ul id="searchResults" class="bg-gray-200 px-2 divide-y divide-gray-400"> </ul>
 	</li> 
 </ul>
-	<img src="https://zhu8.net/images/dora-three.png" id="dora-three" alt="Doraemon-Stand By Me!" title="Doraemon-Stand By Me!">
+	<img src="https://zhu8.net/images/sites/dora-three.png" id="dora-three" alt="Doraemon-Stand By Me!" title="Doraemon-Stand By Me!">
 	<div class="font-medium text-xl flex flex-wrap-reverse">
   <a href="https://twitter.com/5CJ" aria-label="Twitter"  title="View My Twitter"><i id="twitter-ic" class="fab fa-twitter" aria-hidden="true"></i></a>  
   <a href="https://facebook.com/ichenjun" aria-label="Facebook"  title="View My Facebook"><i id="facebook-ic" class="fab fa-facebook" aria-hidden="true"></i></a> 

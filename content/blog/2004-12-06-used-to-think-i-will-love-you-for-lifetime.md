@@ -22,21 +22,21 @@ url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html
 > 回忆总是太美，  
 > 回忆总是带点伤感。  
 
-![](/images/Img223349453.jpg)  
+![](/images/posts/Img223349453.jpg)  
 
 > 总把爱想得太美，  
 > 当爱情宣告完结时，  
 > 爱情真的是不在乎天长地久,只愿曾经拥有吗?  
 > 我以为我们能长相厮守。    
 
-![](/images/Img223349454.jpg)  
+![](/images/posts/Img223349454.jpg)  
 
 > 爱是一种感觉，你知道的，  
 > 我不知道你是否爱过我，  
 > 也许我们在一起的日子很短，  
 > 但足以让我铭记一辈子。  
 
-![](/images/Img223349455.jpg)  
+![](/images/posts/Img223349455.jpg)  
 
 > 我知道我们根本不可能，  
 > 我们根本不同，  
@@ -44,12 +44,12 @@ url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html
 > 你有你的追求，  
 > 我有我的梦想。  
 
-![](/images/Img223349456.jpg)  
+![](/images/posts/Img223349456.jpg)  
 
 > 再拼接的完整，  
 > 也无法补缀细密的伤口。  
 
-![](/images/Img223349457.jpg)  
+![](/images/posts/Img223349457.jpg)  
 
 > 我们的相遇，  
 > 即使不是错误，  
@@ -59,14 +59,14 @@ url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html
 > 也许永远没有尽头，  
 > 两条平行的线也永远不可能交汇在一起。  
 
-![](/images/Img223349458.jpg)  
+![](/images/posts/Img223349458.jpg)  
 
 > 我们没有过多地料到，  
 > 伤害一个人要比挽回一颗心要容易的多；  
 > 于是往往在冲动的话语脱口而出后,  
 > 纵使会浮掠起一丝悔意。  
 
-![](/images/Img223349459.jpg)  
+![](/images/posts/Img223349459.jpg)  
 
 > 如果我们年轻，  
 > 还有改过的时间，  

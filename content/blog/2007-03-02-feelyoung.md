@@ -14,7 +14,7 @@ url: /blog/2007/03/feelyoung.html
 ---
 哈哈，老夫愈发无聊了现在！
 
-**Oh! Phil-Seung, Bong, Soon-Young**![必胜和顺英](/images/feelyoung.jpg "必胜和顺英")
+**Oh! Phil-Seung, Bong, Soon-Young**![必胜和顺英](/images/posts/feelyoung.jpg "必胜和顺英")
 
 片子开头的某一句话打动了我：
   

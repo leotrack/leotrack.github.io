@@ -54,9 +54,9 @@ description: 日子如流水，又到一年毕业时，转眼我来南京也有�
 
   [自己]: https://zhu8.net/blog/2005/05/for-the-forgetting-memories.html "祝你一路顺风--为了忘却的纪念"
   [《又到一年毕业时》]: http://www.yangtse.com/dzbpd/zyxw/t20060517_82618.htm "扬子晚报——又到一年毕业时"
-  [这是上午9：45记者在南京大学门前拍下的镜头。]: /images/graduate.jpeg "这是上午9：45记者在南京大学门前拍下的镜头。"
+  [这是上午9：45记者在南京大学门前拍下的镜头。]: /images/posts/graduate.jpeg "这是上午9：45记者在南京大学门前拍下的镜头。"
   [学校]: http://www.gyctcm.edu.cn/ "贵阳中医学院"
-  [兄弟姐妹们]: /images/yifa.jpg
+  [兄弟姐妹们]: /images/posts/yifa.jpg
   [1]: http://www.ehomeday.com/news/2005-11/20051121142410.htm "从农村人到城里人18年难道就是为了买套房"
   [2]: http://economy.enorth.com.cn/system/2006/04/03/001271441.shtml "南京房价高得离谱 每平方米叫价已纷纷超过万元"
   [现实]: http://sh.house.sina.com.cn/focus/20051025/7.html

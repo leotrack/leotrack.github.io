@@ -18,7 +18,7 @@
       <pubDate>Tue, 17 May 2022 23:40:10 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2022/05/resolve-browser-x-content-type-options-error.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/http-error.png&#34; alt=&#34;HTTP-ERROR RESPONSE&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/http-error.png&#34; alt=&#34;HTTP-ERROR RESPONSE&#34;&gt;&lt;/p&gt;
 &lt;p&gt;今天无意用Edge的开发人员调试工具，就出现了如上图的&lt;mark&gt;错误&lt;/mark&gt;：&lt;code&gt;Response should include &#39;x-content-type-options&#39; header.&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;错误提示&#34;&gt;错误提示：&lt;/h3&gt;
 &lt;table&gt;
@@ -113,7 +113,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后就可以在线编辑，增加，上传，发布 &lt;code&gt;Hugo&lt;/code&gt;命令，然后直接用 Gitlab 自带的Push，就可以了。当然，前提是你得绑定下面说的 &lt;a href=&#34;https://vercel.com&#34; title=&#34;Develop. Preview. Ship. For the best frontend teams – Vercel&#34;&gt;Vercel&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用vercel&#34;&gt;使用Vercel&lt;/h3&gt;
 &lt;p&gt;网上教程太多，不多说啦，绑定你的 &lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt; 即可。支持 &lt;strong&gt;“HTTPS”&lt;/strong&gt; ，支持 &lt;strong&gt;“Hugo”&lt;/strong&gt; 指定版本，支持 &lt;strong&gt;多域名绑定&lt;/strong&gt; ，支持 &lt;strong&gt;域名跳转&lt;/strong&gt; ，谁用谁知道。
-&lt;img src=&#34;https://zhu8.net/images/Vercel.png&#34; alt=&#34;Vervel 界面&#34; title=&#34;Vercel 界面&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://zhu8.net/images/posts/Vercel.png&#34; alt=&#34;Vervel 界面&#34; title=&#34;Vercel 界面&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
 &lt;p&gt;经过以上部署之后，你只需要购买域名，其他的，&lt;strong&gt;全部交给云&lt;/strong&gt; 吧，而且，&lt;strong&gt;全免费&lt;/strong&gt; 哦！完美，安心！祝你使用愉快！&lt;/p&gt;
 </description>

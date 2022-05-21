@@ -17,8 +17,8 @@ url: /blog/2006/09/incomplete.html
 网站留言问题在[Rolly](http://www.rolly.cn/)的提醒下已修改，近日访问量有些多了，匆匆过客们：
 <!--more-->
 
-<span class="right">![最近关键词](/images/zhu8-net-keywords.jpg "最近关键词")</span>
+<span class="right">![最近关键词](/images/posts/zhu8-net-keywords.jpg "最近关键词")</span>
 
-<span class="right">![最近搜索引擎](/images/zhu8-net-searchengine.jpg "最近搜索引擎")</span>
+<span class="right">![最近搜索引擎](/images/posts/zhu8-net-searchengine.jpg "最近搜索引擎")</span>
 
 计划要写的《大字报时代》、《洪水猛兽之网游》*（何时写来就不知道了）*

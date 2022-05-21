@@ -22,4 +22,4 @@ url: /blog/2004/10/saint-seiya.html
 谁，都会想当英雄的，我永远相信：人的血液里总有追求更好的目标的因子。
 
 
-  [1]: /images/saint-seiya.jpg "你还记得他们吗？"
+  [1]: /images/posts/saint-seiya.jpg "你还记得他们吗？"

@@ -24,25 +24,25 @@ url: /blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html
 
 首先，打开你的OE：
 
-<span class="center">![e2_contact_outlook_1](/images/e2_contact_outlook_1_thumb.png "e2_contact_outlook_1") </span> 
+<span class="center">![e2_contact_outlook_1](/images/posts/e2_contact_outlook_1_thumb.png "e2_contact_outlook_1") </span> 
 
 然后打开“地址”，就到了如下的页面：
 
-<span class="center">![e2_contact_outlook_2](/images/e2_contact_outlook_2_thumb.png "e2_contact_outlook_2") </span> 
+<span class="center">![e2_contact_outlook_2](/images/posts/e2_contact_outlook_2_thumb.png "e2_contact_outlook_2") </span> 
 
 剩下的就比较简单了，Ctrl+A（全选）——Ctrl+C（复制），连接你的E2到电脑，然后在你的E2储存卡上新建一个文件夹比如*My Contacts*，将这些.vcf文件全部拷进去。断开手机与电脑的连接。接下来就是手机端的操作了，如下图：
 
 进入通讯录——按左键——管理联系人：
 
-<span class="center">![e2_contact_snap_1](/images/e2_contact_snap_1_thumb.png "e2_contact_snap_1")</span> 
+<span class="center">![e2_contact_snap_1](/images/posts/e2_contact_snap_1_thumb.png "e2_contact_snap_1")</span> 
 
 选择——导入名片：
 
-<span class="center">![e2_contact_snap_2](/images/e2_contact_snap_2_thumb.png "e2_contact_snap_2") </span> 
+<span class="center">![e2_contact_snap_2](/images/posts/e2_contact_snap_2_thumb.png "e2_contact_snap_2") </span> 
 
 找到你保存.vcf名片文件的文件夹，比如上面的*My Contacts*：
 
-<span class="center">![e2_contact_snap_3](/images/e2_contact_snap_3_thumb.png "e2_contact_snap_3") </span> 
+<span class="center">![e2_contact_snap_3](/images/posts/e2_contact_snap_3_thumb.png "e2_contact_snap_3") </span> 
 
 全选，导入！
 
