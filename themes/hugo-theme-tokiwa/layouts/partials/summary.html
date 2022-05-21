@@ -2,9 +2,10 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="{{ .Permalink }}">{{ .Title }}</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	{{ if   .Description}}{{ .Description }}{{else}}{{ .Summary }}{{end}}
-	</div>
+	{{/*I just don't like .Summary */}}
+	{{/*  <div class="pl-4  text-gray-600 font-light italic">  */}}
+	{{/*  {{ if   .Description}}{{ .Description }}{{else}}{{ .Summary }}{{end}}
+	</div> */}}
 	{{ with .Description }}
 	<div class="font-serif text-gray-600 font-light pt-1">
 		{{ .}}
@@ -15,4 +16,5 @@
 			<i class="fas fa-calendar-day"></i> {{- .Date.Format (.Site.Params.PostDateFormat | default "2006-1-2 15:04") -}}
 		</time>
 	</div>
+	<hr class="double-line" />
 </div>

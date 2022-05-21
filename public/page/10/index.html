@@ -102,22 +102,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html">解决WP汉化和UTW链接问题</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	<p>其实严格说来是因为我在<a href="http://www.512j.com/" title="我要安家">我要安家</a>的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：</p>
-<blockquote>
-<p>操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);<br>
-web服务器 Apache 1.3.31<br>
-PHP版本 PHP 4.3.11<br>
-Mysql版本 Mysql 4.0.20<br>
-Zend支持 支持</p>
-</blockquote>
-<p>原来都是<strong>PHP版本</strong>搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在<strong><strong>wp-includes/gettext.php</strong></strong>中<strong>第105行</strong>有这样一段代码：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#008080">$MAGIC1</span> <span style="color:#000;font-weight:bold">=</span> (int)<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#099">1794895138</span>;  
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// $MAGIC2 = (int)0xde120495; //bug  
-</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#008080">$MAGIC2</span> <span style="color:#000;font-weight:bold">=</span> (int)<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#099">569244523</span>;
-</span></span></code></pre></div><p>其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要<strong>注释</strong>掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：</p>
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -126,6 +113,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-11-19T04:17:00&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-11-19 04:17 @ Sun</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 		<div>
@@ -133,18 +121,9 @@ Zend支持 支持</p>
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/11/small-cases.html">二三事</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	<p>瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。</p>
-<h3 id="壹解决了live-search的编码问题">壹、解决了Live Search的编码问题</h3>
-<p>微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在<a href="http://chenjun.com/">首页</a>里面加上自定义的<strong>404/500页面</strong>，所以就用了**.htaccess**加了几句就OK，代码为：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>ErrorDocument 404 /error.html  
-</span></span><span style="display:flex;"><span>ErrorDocument 500 /error.html  
-</span></span><span style="display:flex;"><span>RewriteEngine on  
-</span></span><span style="display:flex;"><span>RewriteCond %{HTTP_REFERER} !^$  
-</span></span><span style="display:flex;"><span>RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
-</span></span><span style="display:flex;"><span>RewriteRule .(js¦mp3¦wma)$<span style="color:#a61717;background-color:#e3d2d2">&amp;</span>[F]
-</span></span></code></pre></div><p>我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（<a href="http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn" title="Live Search 站点所有者帮助">见此</a>），但是在编码上遇到了问题：</p>
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E8%A8%80%E5%90%BE-talk/'>言吾 | Talk</a>   
@@ -153,6 +132,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-11-05T21:10:10&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-11-05 21:10 @ Sun</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 		<div>
@@ -160,9 +140,9 @@ Zend支持 支持</p>
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/11/chaos.html">混言乱语</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	注：（以下情景都为梦） 一个同学，抑或老乡、朋友，本来我们是要一起杀了某个人的，故我走在最前面吸引那个人，我同学走在最后。 他上前从后面抱住将死
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E8%A8%80%E5%90%BE-talk/'>言吾 | Talk</a>   
@@ -171,6 +151,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-11-04T01:02:48&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-11-04 01:02 @ Sat</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 		<div>
@@ -178,9 +159,9 @@ Zend支持 支持</p>
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/10/long-hu-ren-sheng-and-xue-shan-fei-hu-rebroadcast.html">龙虎人生、雪山飞狐重播</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	<p>最近在看电视《龙虎人生》<span class="right"><img src="https://zhu8.net/images/posts/tongyao.jpg" alt="童瑶-方淑晴" title="童瑶-方淑晴"></span>（最近一两个月本人不幸迅速沦为电视机的奴隶，虽然基本都是看球赛，但还是挡不住电视剧电影的诱惑啊，虽然看的数量相比电视狂人来说很少而已），南京某某台放的，嗯，感觉还可以，挺喜欢里面的<strong>晴小姐</strong>的，护士的造型不禁让我想起了某某人*（唉，快嫁作他人妇了，不提不提）<em>前去Google一下，原来是皇帝专业户张国立的儿子张默<a href="http://ent.sina.com.cn/f/zglezdr/index.shtml" title="张默打人事件_影音娱乐_新浪网">曾经打过</a>而大噪的其女友<strong>童瑶</strong>小姐</em>（这句话咋这么绕口捏）*。小<strong>汗</strong>一下自己，原来就是她呀。恕我孤陋寡闻，还不知道这档子事情原来是如此。不过我无所谓谁是谁非，是谁想帮谁炒作。我只是看电视而已，绯闻啊，炒作啊，都见鬼去罢。</p>
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E6%99%AF%E5%BD%A1-vision/'>景彡 | Vision</a>   
@@ -189,6 +170,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-10-27T09:28:25&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-10-27 09:28 @ Fri</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 		<div>
@@ -196,9 +178,9 @@ Zend支持 支持</p>
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/09/china-football.html">中国足球终于雄起了！</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	昨日，中国国家少年队（U-17）在新加坡举行的亚足联U17少年锦标赛中拚搏努力，在昨晚的比赛中顽强的和十五分钟罚下一人，加时赛两人抽筋的朝鲜
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/'>黑犬 | Other</a>   
@@ -207,6 +189,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-09-13T02:20:06&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-09-13 02:20 @ Wed</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 		<div>
@@ -214,23 +197,9 @@ Zend支持 支持</p>
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html">WordPress插件:Add Bookmarks</a>
 	</div>
-	<div class="pl-4  text-gray-600 font-light italic">
-	<p>First plugin for WordPress:<a href="#Eng">English vision</a> (2008/03/18)</p>
-<p>这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)</p>
-<ul>
-<li>
-<p><strong>插件名称</strong>：Add Bookmarks</p>
-</li>
-<li>
-<p><strong>插件版本</strong>：0.1（0.4 <em><strong>Updated on 2008.03.18</strong></em>）</p>
-</li>
-<li>
-<p><strong>插件描述</strong>：</p>
-</li>
-</ul>
-<p>在你的文章下加入添加到书签或网摘的代码，参考<em>Thomas McMahon</em>插件<a href="http://www.twistermc.com/shake/wordpress-social.php"><em>Social Bookmark Links</em></a>修改，可选择文字链接或图标链接，若喜欢还可以自己添加。</p>
-<p><em><strong>Update On 2006/9/27</strong></em>：更新了图片的链接问题，使用<code>“.get_settings(‘siteurl’).”</code>使链接在更新Blog地址的时候不会出错。</p>
-	</div>
+	
+	
+	
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -239,6 +208,7 @@ Zend支持 支持</p>
 </div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light" datetime="2006-09-04T12:23:28&#43;08:00">
 			<i class="fas fa-calendar-day"></i>2006-09-04 12:23 @ Mon</time>
 	</div>
+	<hr class="double-line" />
 </div>
 		</div> 
 	</div>
