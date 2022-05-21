@@ -197,15 +197,20 @@ img#banner {margin: 0 auto;}
 
 .wl-gif-popup {width: auto !important;}
 
-ul#related,.c-rich-text ul,.c-rich-text ol {
-  list-style-type:none;
-  padding:0 1em;
-  margin:0;
+ul#related {
+  list-style-type: none;
+  padding: 0 1em;
+  margin: 0;
 }
-ul#related li,.c-rich-text ul li,.c-rich-text ol li {
-  background-image:url("/images/sites/doraemon-bell.png");
-  background-repeat:no-repeat;
-  background-size:1em;
-  background-position:0 0.5em;
-  padding-left:1.2em;
+ul#related li {
+  background-image: url("/images/sites/doraemon-bell.png");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 0 0.5em;
+  padding-left: 1.2em;
+}
+ol li {
+  padding: 0 1em;
+  margin: 0;
+  list-style-type: upper-roman;
 }
