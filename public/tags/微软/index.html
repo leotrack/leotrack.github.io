@@ -97,9 +97,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html">Rokr E2从Outlook Express中导入联系人</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p>最近购入了Moto的Rokr E2，一部已经停产快两年，但我一直想拥有但苦于一直行货缺货的机器。前段时间卓越竟然有货了，毫不犹豫的购入了一台，刷机，很好很强大，用着也挺顺心的。</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/'>黑犬 | Other</a>   
@@ -115,9 +115,18 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/11/small-cases.html">二三事</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p>瞎忙乎了老半天，觉得还是记下来好，要不老是犯迷糊。</p>
+<h3 id="壹解决了live-search的编码问题">壹、解决了Live Search的编码问题</h3>
+<p>微软的Live Search其实很不错的，原来的MSN虽然默默无闻，但是索引起来也蛮勤快的，今天忽然想到在<a href="http://chenjun.com/">首页</a>里面加上自定义的<strong>404/500页面</strong>，所以就用了**.htaccess**加了几句就OK，代码为：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>ErrorDocument 404 /error.html  
+</span></span><span style="display:flex;"><span>ErrorDocument 500 /error.html  
+</span></span><span style="display:flex;"><span>RewriteEngine on  
+</span></span><span style="display:flex;"><span>RewriteCond %{HTTP_REFERER} !^$  
+</span></span><span style="display:flex;"><span>RewriteCond %{HTTP_REFERER} !^http://(www.)?zhu8.net/.*$ [NC]  
+</span></span><span style="display:flex;"><span>RewriteRule .(js¦mp3¦wma)$<span style="color:#a61717;background-color:#e3d2d2">&amp;</span>[F]
+</span></span></code></pre></div><p>我是把404和500放在一个页面的，省得麻烦，所以就想弄一个单纯的搜索页面，一直发现Live!对我的站索引还蛮全的，所以除了加上Google之外，还想加上Live Search的（<a href="http://help.live.com/help.aspx?project=wl_webmasters%EF%BF%BDmkt=zh-cn" title="Live Search 站点所有者帮助">见此</a>），但是在编码上遇到了问题：</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E8%A8%80%E5%90%BE-talk/'>言吾 | Talk</a>   

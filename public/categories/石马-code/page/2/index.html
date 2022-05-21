@@ -97,9 +97,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2008/03/wordpress-25.html">WordPress 2.5</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	现在我正在用着 beta1，RC1就来了，真是神速，一会就上！（待修改）修改于2008/3/31 WordPress持续爆发中Matt连续爆发了
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -115,9 +115,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2008/03/change-to-movable-type.html">终于用上Movable Type!</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	准备慢慢玩玩MT，敬请期待！By Zhu8 on Friday, Mar 7, 2008 12:14:53 Update:2008/03/15 呵呵，玩了两天，还是不习惯，又换回WordPress了。 Update Again:2008/05/15 看来我是极度的喜新厌旧型-_-#
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -133,9 +133,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/12/style-wordpress-trackback.html">定制Trackback特定样式</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	首先要自我打击一下，在产生这个想法之后，本来我是异想天开地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -151,9 +151,22 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html">解决WP汉化和UTW链接问题</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p>其实严格说来是因为我在<a href="http://www.512j.com/" title="我要安家">我要安家</a>的服务器的关系，所以导致无法使用中文语言包。看下我要安家的配置：</p>
+<blockquote>
+<p>操作系统 Linux Fedora core 1.0(2.4内核)或Linux Fedora core 2.0(2.6内核);<br>
+web服务器 Apache 1.3.31<br>
+PHP版本 PHP 4.3.11<br>
+Mysql版本 Mysql 4.0.20<br>
+Zend支持 支持</p>
+</blockquote>
+<p>原来都是<strong>PHP版本</strong>搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在<strong><strong>wp-includes/gettext.php</strong></strong>中<strong>第105行</strong>有这样一段代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&amp;item_id=10565  
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#008080">$MAGIC1</span> <span style="color:#000;font-weight:bold">=</span> (int)<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#099">1794895138</span>;  
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// $MAGIC2 = (int)0xde120495; //bug  
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#008080">$MAGIC2</span> <span style="color:#000;font-weight:bold">=</span> (int)<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#099">569244523</span>;
+</span></span></code></pre></div><p>其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要<strong>注释</strong>掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -169,9 +182,23 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html">WordPress插件:Add Bookmarks</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p>First plugin for WordPress:<a href="#Eng">English vision</a> (2008/03/18)</p>
+<p>这是我第一次做的插件，虽然是东参考西参考，也整整折腾了我半天的工夫，呼……闲话少说，入正题。(现在想再做一个，但是发现却是是水平有限。在瞎折腾两三个小时之后，发现自己只是稍长于修改，真正要做确实不是我等门外汉能力所及。)</p>
+<ul>
+<li>
+<p><strong>插件名称</strong>：Add Bookmarks</p>
+</li>
+<li>
+<p><strong>插件版本</strong>：0.1（0.4 <em><strong>Updated on 2008.03.18</strong></em>）</p>
+</li>
+<li>
+<p><strong>插件描述</strong>：</p>
+</li>
+</ul>
+<p>在你的文章下加入添加到书签或网摘的代码，参考<em>Thomas McMahon</em>插件<a href="http://www.twistermc.com/shake/wordpress-social.php"><em>Social Bookmark Links</em></a>修改，可选择文字链接或图标链接，若喜欢还可以自己添加。</p>
+<p><em><strong>Update On 2006/9/27</strong></em>：更新了图片的链接问题，使用<code>“.get_settings(‘siteurl’).”</code>使链接在更新Blog地址的时候不会出错。</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -187,9 +214,10 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/08/usebb-chinese-simplified.html">UseBB汉化暨论坛搭建完成</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p>好啦，昨晚折腾了一个晚上，总算完成了。<em><strong>〔Update:2007/03/08：把链接修改到我的永硕硬盘上去。〕</strong></em><span class="right"><img src="https://zhu8.net/images/posts/usebb-chinese.jpg" alt="ScreenShot of UseBB Chinese" title="ScreenShot of UseBB Chinese"></span>最近想搭建一个论坛玩玩，结果，找到的个个功能惊人，体积同样<strong>惊人</strong>。用UseBB的介绍文件来说就是<acronym title="Unnecessary features"><strong>bloat</strong></acronym>。后来找到了<a href="http://www.usebb.net/">UseBB</a>，汉化了一下，本来不想汉化后台的，就和WP一样，后来发现到现在为止还没有人弄简体中文的汉化包，后来发现了和WP一样存在中文字符截断的问题，今天就<a href="http://groups.google.com/group/Zhu8/browse_thread/thread/7cf0947ec61ac13a/4cf29f9e175b04fe" title="UseBB中文字符截断函数（UTF-8）修改">修改</a>了一下源代码，唉，发现玩程序真的有时候挺头大的，特别是这些英文软件压根就不可能考虑到咱中文的编码问题。可是要想程序如自己的意，只好自己动手，丰衣足食<sub>By Chairman Mao</sub>了。</p>
+<p>废话少说，简单介绍一下UseBB吧！</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -205,9 +233,11 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/07/ie-abbr.html">在IE中为abbr标签加样式</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p><strong>简介</strong></p>
+<p>&lt;abbr&gt;是用来为web页面上的简称（译者注：这里把简称和缩写分开而论，简称范围比缩写大，取首字母的缩写用&lt;acronym&gt;标签）<a href="http://www.evolt.org/article/HTML_is_not_an_acronym/17/35750/index.html">添加适当标注</a>的XHTML标签，Windows的IE浏览器暂不支持&lt;abbr&gt;标签。 在IE里，你可以应用CSS给&lt;acronym&gt;但是不能应用给&lt;abbr&gt;标签，IE会为&lt;acronym&gt;标签的title属性显示提示，但是会忽略&lt;abbr&gt;标签。</p>
+<p>这个IE的bug（或者特色）使得一些网站人员认为&lt;abbr&gt;标签一点用都没有，而显然这么认为是不对的。在Mozilla和Opera里还是很正确的处理了这个标签，并且它对于web内容的可读性和语义化来说非常重要。这也是我为什么一直在寻找解决方法，最终我找到了。</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   
@@ -223,9 +253,10 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="https://zhu8.net/blog/2006/07/my-wordpress-plugins.html">我的WordPress插件列表</a>
 	</div>
-	
-	
-	
+	<div class="pl-4  text-gray-600 font-light italic">
+	<p><img src="https://zhu8.net/images/posts/wordpress-logo.png" alt="Wordpress Logo" title="WordpressLogo"><a href="http://wordpress.org/">WordPress</a>是个好东西，虽然使用各种各样的插件调试的时候有时会为了某几段代码怎么修改都不成焦头烂额，但弄好了，就可以好好享受啦！</p>
+<p>在开始的时候先是拼命寻找Theme，在alexking和wordpress.net里找了好久，最后选择了现在的<a href="http://www.ilemoned.com/wordpress/theme-greenery">Greenery</a>，出自国人之手哦！初始的对FF下的中文显示效果不太好，不过简单修改了下CSS就好了。 好了不多说了，下面就是我的插件列表：（其中某些我做了一些简单的汉化，可以到我的永硕硬盘去下载，地址和详细修改在最下边在最下边。）</p>
+	</div>
 	
 	<div class="flex flex-wrap justify-between pt-1"><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/'>石马 | Code</a>   

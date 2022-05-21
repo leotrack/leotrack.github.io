@@ -2,10 +2,9 @@
 	<div class="font-serif font-medium text-xl">
 		<i class="far fa-bookmark"></i> <a href="{{ .Permalink }}">{{ .Title }}</a>
 	</div>
-	{{/*I just don't like .Summary */}}
-	{{/*  <div class="pl-4  text-gray-600 font-light italic">  */}}
-	{{/*  {{ if   .Description}}{{ .Description }}{{else}}{{ .Summary }}{{end}}
-</div> */}}
+	<div class="pl-4  text-gray-600 font-light italic">
+	{{ if   .Description}}{{ .Description }}{{else}}{{ .Summary }}{{end}}
+	</div>
 	{{ with .Description }}
 	<div class="font-serif text-gray-600 font-light pt-1">
 		{{ .}}

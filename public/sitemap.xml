@@ -8,30 +8,6 @@
     <loc>https://zhu8.net/categories/</loc>
     <lastmod>2022-05-21T19:05:55+08:00</lastmod>
   </url><url>
-    <loc>https://zhu8.net/tags/hack/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/revision/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/wordpress/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://zhu8.net/</loc>
-    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
-  </url><url>
     <loc>https://zhu8.net/tags/gitlab/</loc>
     <lastmod>2022-05-18T19:20:10+08:00</lastmod>
   </url><url>
@@ -40,6 +16,9 @@
   </url><url>
     <loc>https://zhu8.net/tags/hugo/</loc>
     <lastmod>2022-05-18T19:20:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/tags/vercel/</loc>
     <lastmod>2022-05-18T19:20:10+08:00</lastmod>
@@ -52,6 +31,9 @@
   </url><url>
     <loc>https://zhu8.net/categories/%E7%9F%B3%E9%A9%AC-code/</loc>
     <lastmod>2022-05-18T19:20:10+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/tags/gitpod/</loc>
     <lastmod>2022-04-26T23:00:10+08:00</lastmod>
@@ -125,6 +107,9 @@
     <loc>https://zhu8.net/blog/2014/06/start.html</loc>
     <lastmod>2014-06-04T22:27:20+08:00</lastmod>
   </url><url>
+    <loc>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
+  </url><url>
     <loc>https://zhu8.net/tags/ipv6/</loc>
     <lastmod>2011-05-21T00:46:07+08:00</lastmod>
   </url><url>
@@ -182,6 +167,9 @@
     <loc>https://zhu8.net/tags/google/</loc>
     <lastmod>2010-01-21T14:02:35+08:00</lastmod>
   </url><url>
+    <loc>https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
+  </url><url>
     <loc>https://zhu8.net/tags/%E4%BF%A1%E7%94%A8%E5%8D%A1/</loc>
     <lastmod>2010-01-21T14:02:35+08:00</lastmod>
   </url><url>
@@ -211,6 +199,9 @@
   </url><url>
     <loc>https://zhu8.net/blog/2009/11/warcraft.html</loc>
     <lastmod>2009-11-03T12:04:44+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/hack/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/blog/2009/07/rokr-e2-import-contacts-from-outlook-express.html</loc>
     <lastmod>2009-07-27T15:04:22+08:00</lastmod>
@@ -274,6 +265,15 @@
   </url><url>
     <loc>https://zhu8.net/tags/domain/</loc>
     <lastmod>2009-03-12T23:10:33+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/revision/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/tags/wordpress/</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://zhu8.net/blog/2009/03/disable-wordpress-revision.html</loc>
+    <lastmod>2022-05-21T19:05:55+08:00</lastmod>
   </url><url>
     <loc>https://zhu8.net/blog/2009/03/waitting-for-edit.html</loc>
     <lastmod>2009-03-02T07:32:20+08:00</lastmod>
