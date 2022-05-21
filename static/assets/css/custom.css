@@ -181,20 +181,14 @@ img#pure {
       display: none;
   }
 }
-.right {float: right;}
-.left {float: left;}
-.center {text-align:center;}
+.right {float: right !important;}
+.left {float: left !important;}
+.center {text-align:center !important;}
+.center img {margin: 0 auto !important;}
 
 img#banner {margin: 0 auto;}
 
-.wl-content img {
-  width: auto !important;
-  height: auto !important;
-  max-width: 2em !important;
-  max-height: 2em !important;
-}
-
-.wl-emoji-popup .wl-emoji {
+.wl-content img,.wl-emoji-popup .wl-emoji {
   width: auto !important;
   height: auto !important;
   max-width: 2em !important;
@@ -203,15 +197,15 @@ img#banner {margin: 0 auto;}
 
 .wl-gif-popup {width: auto !important;}
 
-article #related ul {
+ul#related,.c-rich-text ul,.c-rich-text ol {
   list-style-type:none;
   padding:0 1em;
   margin:0;
 }
-article #related ul li {
+ul#related li,.c-rich-text ul li,.c-rich-text ol li {
   background-image:url("/images/sites/doraemon-bell.png");
   background-repeat:no-repeat;
-  background-size:18px 18px;
-  background-position:0px 5px;
-  padding-left:20px;
+  background-size:1em;
+  background-position:0 0.5em;
+  padding-left:1.2em;
 }
