@@ -8,9 +8,9 @@
 	<meta name="author" content="Zhu8" />
 	<meta name="generator" content="Hugo 0.99.0" />
 	<meta name="description" content="还是使用 WordPress 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……" />
-	<meta name="keywords" content="Hack, Revision, 网站" />
+	<meta name="keywords" content="Hack, Wordpress, Revision, 网站" />
 	<meta name="robots" content="index, follow" />
-	<meta name="revised" content="Zhu8, 2009-03-03" />
+	<meta name="revised" content="Zhu8, 2022-05-21" />
 	<meta name="copyright" content="Zhu8.Net 🚀 [CC BY-SA], All Rights Reserved." />
 	<link type="text/css" rel="stylesheet" href="https://zhu8.net/dist/app.css" media="all" />
 	<link rel="shortcut icon" href="https://zhu8.net/favicon.ico" type="image/x-icon" /> 
@@ -58,11 +58,11 @@
 <div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
 	<i class="fas fa-folder-open"></i>     <a class="post-taxonomy-category text-medium-red-violet-600 hover:text-medium-red-violet-400" href='https://zhu8.net/categories/%E9%BB%91%E7%8A%AC-other/'>黑犬 | Other</a>   
 	 &nbsp;&nbsp; 
-	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/hack/'>Hack</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/revision/'>Revision</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/%E7%BD%91%E7%AB%99/'>网站</a> 	 	 	
-</div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4" datetime="2009-03-03T23:25:55&#43;08:00">
-		<i class="fas fa-calendar-day"></i>2009-03-03 23:25 @ Tue</time>
+	<i class="fas fa-tags"></i>  	 	 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/hack/'>Hack</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/wordpress/'>Wordpress</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/revision/'>Revision</a>&nbsp;&#47; 	 	<a class="post-taxonomy-tag text-eucalyptus-500" href='https://zhu8.net/tags/%E7%BD%91%E7%AB%99/'>网站</a> 	 	 	
+</div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4" datetime="2022-05-21T19:05:55&#43;08:00">
+		<i class="fas fa-calendar-day"></i>2022-05-21 19:05 @ Sat</time>
 </div>
-<span class="a-gray text-md text-gray-500 leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 561 字，阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">2 分&nbsp;33 秒</span></span>
+<span class="a-gray text-md text-gray-500 leading-relaxed pt-2"><i class="fas fa-info"></i> 全文共 498 字，阅读需 <i class="fas fa-stopwatch"></i>  <span class="more-meta">2 分&nbsp;15 秒</span></span>
 
 <hr /> 
 			</div>
@@ -73,23 +73,26 @@
 <article>
 	<div class="mx-auto content">
 		<div class="c-rich-text"><p>还是使用 <a href="http://wordpress.org">WordPress</a> 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……</p>
-<p>如何关闭Revision？我试用了几种方法：</p>
+<p><strong>如何关闭Revision？</strong></p>
+<p>我试用了几种方法：</p>
 <ul>
-<li><strong>第一种</strong>：在<em>wp-config.php</em>中加入如下代码：
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></li>
+<li><strong>第一种</strong>：在 <code>wp-config.php</code>中加入如下代码：</li>
 </ul>
-<p>define(‘WP_POST_REVISIONS’, 0 );<br>
-define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
-<pre tabindex="0"><code>  
-    经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——**放弃**。
-*   **第二种**：使用插件：[No Revisions][2]，经测试可以使用。看了一下他的代码，很纯粹：  
-    ```php
-&lt;?php @remove_action ( &#39;pre_post_update&#39;, &#39;wp_save_post_revision&#39; ); ?&gt;
-</code></pre><p>——<strong>使用</strong>。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    define(<span style="color:#d14">&#39;WP_POST_REVISIONS&#39;</span>, <span style="color:#099">0</span> ); 
+</span></span><span style="display:flex;"><span>    define(<span style="color:#d14">&#39;AUTOSAVE_INTERVAL&#39;</span>, <span style="color:#099">72000</span> );
+</span></span></code></pre></div><p>经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——<strong>放弃</strong>。</p>
+<ul>
+<li><strong>第二种</strong>：使用插件：<a href="http://www.hostscope.com/wordpress-plugins/norevisions-wordpress-plugin/" title="The No Revisions WordPress Plugin">No Revisions</a>，经测试可以使用。看了一下他的代码，很纯粹：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">&lt;?</span>php <span style="color:#000;font-weight:bold">@</span>remove_action ( <span style="color:#d14">&#39;pre_post_update&#39;</span>, <span style="color:#d14">&#39;wp_save_post_revision&#39;</span> ); <span style="color:#999;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><p>——<strong>使用</strong>。</p>
 <ul>
 <li><strong>第三种</strong>：如果你不想使用插件，可以参考这位老兄的<a href="http://programmingnote.com/blog/?p=35">修改方法</a>。他说Comment掉第二条插件所使用的命令之后还要再加一句，但我测试，<strong>单纯用上面那个插件是没有问题的</strong>。</li>
 </ul>
-<p>关于如何<strong>回收利用在你还没来得及关闭Revision功能之前就产生的Revisions</strong>？对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：找到 <em>post_type = “revision”</em> 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 <em>post_status</em> 从 <em>inherit</em> 改成 <strong>publish</strong> ，将 <em>post_type</em> 从 <strong>revision</strong> 改成 <strong>post</strong>，其它例如： <em>post_name</em> <em>post_date</em> 这些自己改好就行啦！然后你就可以在你的文章列表中看到咯！</p></div>
+<p>关于如何<strong>回收利用在你还没来得及关闭Revision功能之前就产生的Revisions</strong>？</p>
+<p>对我这个完美主义来说，我是不能容忍一堆无用的数据在我的Mysql里面，所以你可以去你的数据库进行编辑一番：</p>
+<p>找到 <em><code>post_type = “revision”</code></em> 的文章，将其数值修改为你即将要张贴的文章，其中几个要点：将 <em><code>post_status</code></em> 从 <em><code>inherit</code></em> 改成 <strong><code>publish</code></strong> ，将 <em><code>post_type</code></em> 从 <strong><code>revision</code></strong> 改成 <strong><code>post</code></strong>，其它例如： <em><code>post_name</code></em> <em><code>post_date</code></em> 这些自己改好就行啦！</p>
+<p>然后你就可以在你的文章列表中看到咯！</p></div>
 	</div>
 </article>
 		</main>
@@ -148,21 +151,16 @@ define(‘AUTOSAVE_INTERVAL’, 72000 );</p>
 		</aside>
 		<footer class="w-full md:w-3/5 xl:w-1/2 order-3 max-w-3xl md:order-4 pt-2">
 			 
-<div class="a-gray text-sm text-gray-500 leading-tight pb-6"><i class="fas fa-pencil-alt"></i> LastMod @ <em>2009-03-03</em> & Pageviews: <i class="waline-pageview-count"></i></div>
+<div class="a-gray text-sm text-gray-500 leading-tight pb-6"><i class="fas fa-pencil-alt"></i> LastMod @ <em>2022-05-21</em> & Pageviews: <i class="waline-pageview-count"></i></div>
 <hr class="double-line" />
 <div class="flex flex-wrap justify-between pb-2 leading-loose font-serif">
     
-    <a class="flex-grow-0" href="https://zhu8.net/blog/2009/03/waitting-for-edit.html"> 
+    <a class="flex-grow-0" href="https://zhu8.net/blog/2022/05/resolve-browser-x-content-type-options-error.html"> 
         <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
-        </svg> 等待编辑中 </a> 
+        </svg> 解决浏览器X-Content-Type-Options报错 </a> 
     
-    <a class="flex-grow-0" href="https://zhu8.net/blog/2009/03/chenjun-dot-com-online.html"> ChenJun dot COM上线! 
-        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-        </svg></a> 
 </div>
 <div>
 <div class="font-serif pb-2 flex align-start leading-loose">

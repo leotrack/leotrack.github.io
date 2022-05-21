@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Zhu8.Net 🚀 [&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/deed.zh&#34;&gt;CC BY-SA&lt;/a&gt;]</copyright>
-    <lastBuildDate>Tue, 17 May 2022 23:40:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 May 2022 19:05:55 +0800</lastBuildDate>
     
 	<atom:link href="https://zhu8.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hack</title>
+      <link>https://zhu8.net/tags/hack/</link>
+      <pubDate>Sat, 21 May 2022 19:05:55 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revision</title>
+      <link>https://zhu8.net/tags/revision/</link>
+      <pubDate>Sat, 21 May 2022 19:05:55 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/revision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://zhu8.net/tags/wordpress/</link>
+      <pubDate>Sat, 21 May 2022 19:05:55 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>网站</title>
+      <link>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Sat, 21 May 2022 19:05:55 +0800</pubDate>
+      
+      <guid>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gitlab</title>
@@ -162,15 +198,6 @@
       <pubDate>Wed, 04 Jun 2014 22:27:20 +0800</pubDate>
       
       <guid>https://zhu8.net/tags/%E6%9B%B4%E6%96%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>网站</title>
-      <link>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Wed, 04 Jun 2014 22:27:20 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/%E7%BD%91%E7%AB%99/</guid>
       <description></description>
     </item>
     
@@ -355,15 +382,6 @@
     </item>
     
     <item>
-      <title>Hack</title>
-      <link>https://zhu8.net/tags/hack/</link>
-      <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/hack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>联系人</title>
       <link>https://zhu8.net/tags/%E8%81%94%E7%B3%BB%E4%BA%BA/</link>
       <pubDate>Mon, 27 Jul 2009 15:04:22 +0800</pubDate>
@@ -504,15 +522,6 @@
       <pubDate>Thu, 12 Mar 2009 23:10:33 +0800</pubDate>
       
       <guid>https://zhu8.net/tags/domain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Revision</title>
-      <link>https://zhu8.net/tags/revision/</link>
-      <pubDate>Tue, 03 Mar 2009 23:25:55 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/revision/</guid>
       <description></description>
     </item>
     
@@ -837,15 +846,6 @@
       <pubDate>Fri, 28 Mar 2008 10:00:27 +0800</pubDate>
       
       <guid>https://zhu8.net/tags/%E8%AF%97%E6%AD%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wordpress</title>
-      <link>https://zhu8.net/tags/wordpress/</link>
-      <pubDate>Wed, 19 Mar 2008 08:48:02 +0800</pubDate>
-      
-      <guid>https://zhu8.net/tags/wordpress/</guid>
       <description></description>
     </item>
     
