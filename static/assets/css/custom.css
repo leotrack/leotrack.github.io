@@ -188,11 +188,18 @@ img#pure {
 
 img#banner {margin: 0 auto;}
 
-.wl-content img,.wl-emoji-popup .wl-emoji {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 3em !important;
-  max-height: 3em !important;
+.wl-emoji-popup .wl-emoji {
+  width: auto !important;
+  height: auto !important;
+  max-width: 2.5em !important;
+  max-height: 2.1em !important;
+}
+
+.wl-content img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 2.4em !important;
+  max-height: 2.5em !important;
 }
 
 .wl-gif-popup {width: auto !important;}

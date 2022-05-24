@@ -20,7 +20,7 @@
 	<meta name="revised" content="{{ .Site.Params.author }}, {{ .Page.Lastmod.Format "2006-01-02" }}" />
 	<meta name="copyright" content="{{ if .Site.Copyright }}{{ .Site.Copyright|safeHTML }}{{ end }}, All Rights Reserved." />
 	{{ $stylesheet := .Site.Data.webpack_assets.app }}{{ with $stylesheet.css }}<link type="text/css" rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .) }}" media="all" />{{ end }}
-	<!-- {{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }} --><link rel="shortcut icon" href="/favicon.ico?=v2" type="image/x-icon" />
+	<!-- {{ block "favicon" . }}{{ partial "site-favicon.html" . }} {{ end }} --><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
