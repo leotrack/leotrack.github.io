@@ -26,8 +26,7 @@ author = "Zhu8"
   toc = true
   env = "production"
   description = """
-## 🍄 *一个人只拥有此生此世是不够的* 🍓 
-## 🍶 *他还应该拥有诗意的世界* 🌼
+## 🚴‍♀️ *庸俗路上的无尽狂奔……* 🔱 
   """
   favicon = "/favicon.ico"
   fuse = true 
