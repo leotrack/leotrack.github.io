@@ -26,7 +26,7 @@ author = "Zhu8"
   toc = true
   env = "production"
   description = """
-## 🚴‍♀️ *庸俗路上的无尽狂奔……* 🔱 
+## 🚴‍♂️ *庸俗路上的无尽狂奔……* 🔱 
   """
   favicon = "/favicon.ico"
   fuse = true 
