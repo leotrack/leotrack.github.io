@@ -264,27 +264,24 @@
 &lt;li&gt;2021年11月1日-11月16日，换主题&lt;a href=&#34;https://github.com/heyeshuang/hugo-theme-tokiwa&#34;&gt;Tokiwa&lt;/a&gt;继续折腾，其中使用到的平台和工具包括：&lt;del&gt;腾讯云提供的&lt;strong&gt;CloudStudio&lt;/strong&gt;&lt;/del&gt;、Git平台&lt;a href=&#34;https://gitlab.com/&#34;&gt;&lt;strong&gt;Gitlab&lt;/strong&gt;&lt;/a&gt;（比&lt;em&gt;Github&lt;/em&gt;的好处就是访问稳定）、在线IDE平台&lt;a href=&#34;https://gitpod.io/&#34;&gt;&lt;strong&gt;Gitlpod&lt;/strong&gt;&lt;/a&gt;、网站发布平台&lt;a href=&#34;https://vercel.com/&#34;&gt;&lt;strong&gt;Vercel&lt;/strong&gt;&lt;/a&gt;（大赞！）。&lt;/li&gt;
 &lt;li&gt;2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具&lt;a href=&#34;https://web.archive.org/web/20060614054822/http://219.141.36.145/school/UploadFiles/20041115162230783.jpg&#34;&gt;&lt;strong&gt;Wayback Machine&lt;/strong&gt;&lt;/a&gt;。&lt;em&gt;@深圳·福田·景田&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;https://zhu8.net/images/pages/ManUtd.png&#34; width=&#34;180px&#34; class=&#34;right&#34; id=&#34;trans&#34; alt=&#34;Manchester United&#34; title=&#34;Manchester United&#34; /&gt;
+&lt;img src=&#34;https://zhu8.net/images/pages/ManUtd.png&#34; width=&#34;180&#34; class=&#34;right&#34; id=&#34;trans&#34; alt=&#34;Manchester United&#34; title=&#34;Manchester United&#34; /&gt;
 &lt;h3 id=&#34;其他流言&#34;&gt;其他流言&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;已&lt;strong&gt;女昏&lt;/strong&gt;人士；&lt;/li&gt;
 &lt;li&gt;如&lt;strong&gt;题图&lt;/strong&gt;所示，曼联死忠；&lt;/li&gt;
 &lt;li&gt;CS &lt;strong&gt;1.5&lt;/strong&gt; 死忠，目前仍在某服务器内拥有会员并混迹；&lt;/li&gt;
-&lt;li&gt;如&lt;strong&gt;网站&lt;/strong&gt;风格，我是一位 &lt;img src=&#34;https://zhu8.net/images/pages/doraemon-logo-small.png&#34; width=&#34;96px&#34; id=&#34;pure&#34; alt=&#34;Doraemon Logo&#34; title=&#34;Doraemon Logo&#34; /&gt; 脑残粉。&lt;/li&gt;
+&lt;li&gt;如&lt;strong&gt;网站&lt;/strong&gt;风格，我是一位 &lt;img src=&#34;https://zhu8.net/images/pages/doraemon-logo-small.png&#34; width=&#34;96&#34; id=&#34;pure&#34; alt=&#34;Doraemon Logo&#34; title=&#34;Doraemon Logo&#34; /&gt; 脑残粉。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;联系我&#34;&gt;联系我&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Mail : [Zhu8.Net[at]Gmail]&lt;/li&gt;
+&lt;li&gt;Mail : &lt;a href=&#34;mailto:%7A%68%75%38%2E%6E%65%74%40%67%6D%61%69%6C%2E%63%6F%6D&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/pages/gmail.png&#34; width=&#34;168&#34; height=&#34;24&#34; alt=&#34;Zhu8.Net Gmail&#34; title=&#34;Zhu8.Net Gmail&#34; /&gt;&lt;/a&gt;&lt;!-- zhu8 dot net at gmail dot com --&gt;&lt;/li&gt;
 &lt;li&gt;Mobile : 1377***7752（请邮件咨询^oo^）&lt;/li&gt;
-&lt;li&gt;Delicious : &lt;a href=&#34;http://delicious.com/zhu8&#34;&gt;Zhu8&lt;/a&gt; -
-&lt;a href=&#34;http://delicious.com/zhu8&#34;&gt;http://delicious.com/zhu8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Twitter : &lt;a href=&#34;https://twitter.com/5CJ&#34;&gt;@5CJ&lt;/a&gt; -
-&lt;a href=&#34;https://twitter.com/5CJ&#34;&gt;https://twitter.com/5CJ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;WeiBo : &lt;a href=&#34;http://weibo.com/zhu8&#34;&gt;@Zhu8&lt;/a&gt; -
-&lt;a href=&#34;http://weibo.com/zhu8&#34;&gt;http://weibo.com/zhu8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github : &lt;a href=&#34;http://github.com/zhu8&#34;&gt;Zhu8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter : &lt;a href=&#34;https://twitter.com/5CJ&#34;&gt;@5CJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;WeiBo : &lt;a href=&#34;http://weibo.com/zhu8&#34;&gt;@Zhu8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;

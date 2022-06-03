@@ -34,25 +34,22 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 * 2021年11月1日-11月16日，换主题[Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa)继续折腾，其中使用到的平台和工具包括：~~腾讯云提供的**CloudStudio**~~、Git平台[**Gitlab**](https://gitlab.com/)（比*Github*的好处就是访问稳定）、在线IDE平台[**Gitlpod**](https://gitpod.io/)、网站发布平台[**Vercel**](https://vercel.com/)（大赞！）。
 * 2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具[**Wayback Machine**](https://web.archive.org/web/20060614054822/http://219.141.36.145/school/UploadFiles/20041115162230783.jpg)。*@深圳·福田·景田*
 
-<img src="/images/pages/ManUtd.png" width="180px" class="right" id="trans" alt="Manchester United" title="Manchester United" />
+<img src="/images/pages/ManUtd.png" width="180" class="right" id="trans" alt="Manchester United" title="Manchester United" />
 
 ### 其他流言
 
 > * 已**女昏**人士；
 > * 如**题图**所示，曼联死忠；
 > * CS **1.5** 死忠，目前仍在某服务器内拥有会员并混迹；
-> * 如**网站**风格，我是一位 <img src="/images/pages/doraemon-logo-small.png" width="96px" id="pure" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉。
+> * 如**网站**风格，我是一位 <img src="/images/pages/doraemon-logo-small.png" width="96" id="pure" alt="Doraemon Logo" title="Doraemon Logo" /> 脑残粉。
 
 ### 联系我
 
-> -   Mail : [Zhu8.Net[at]Gmail]
+> -   Mail : <a href="mailto:%7A%68%75%38%2E%6E%65%74%40%67%6D%61%69%6C%2E%63%6F%6D"><img src="/images/pages/gmail.png" width="168" height="24" alt="Zhu8.Net Gmail" title="Zhu8.Net Gmail" /></a><!-- zhu8 dot net at gmail dot com -->
 > -   Mobile : 1377\*\*\*7752（请邮件咨询\^oo\^）
-> -   Delicious : [Zhu8](http://delicious.com/zhu8) -
->     http://delicious.com/zhu8
-> -   Twitter : [@5CJ](https://twitter.com/5CJ) -
->     https://twitter.com/5CJ
-> -   WeiBo : [@Zhu8](http://weibo.com/zhu8) -
->     http://weibo.com/zhu8
+> -   Github : [Zhu8](http://github.com/zhu8)
+> -   Twitter : [@5CJ](https://twitter.com/5CJ)
+> -   WeiBo : [@Zhu8](http://weibo.com/zhu8)
 
 -   **您有发表任何看法和言论的权利 // Anything is Acceptable**
 -   **同时我保留忽视您的留言的权利 // Anything is Neglectable**
