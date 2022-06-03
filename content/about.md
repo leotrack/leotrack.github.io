@@ -6,7 +6,7 @@ shares: true
 comments: true
 enableReadingTime: false
 date: "2020-05-17T22:58:19+08:00"
-lastmod: "2022-05-21T00:58:59+08:00"
+lastmod: "2022-06-04T00:08:08+08:00"
 toc: true
 keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Doraemon, 王小波, Hugo]
 ---
@@ -21,18 +21,18 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 来自[江苏](https://zh.wikipedia.org/wiki/%E6%B1%9F%E8%8B%8F "江苏")[金坛](https://zh.wikipedia.org/wiki/%E9%87%91%E5%9D%9B "金坛")，[北漂](https://zh.wikipedia.org/wiki/%E5%8C%97%E6%BC%82 "北漂")三年后，现定居[南京](https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC "南京")。
 
-开始学习HTML，大概应该是在2001年，贵阳开始读书之后，无意间研究了各种HTML建站，那个时候的互联网是Free的，各种免费托管陪伴我度过了年轻的万东桥下的网吧，然后，发现Blog是个好东西，所以就开始了：**小歪**帮我从Blogcn上的 [曾经坚持过的故事…](http://zhu8.blogone.net)上搬过来了从2004年2月19日开始的Blog旅程，尔后是从2004年9月9日在 [歪酷](http://zhu8.yculblog.com)开始的新的旅程。 接着就是在 [这里](https://www.4thway.cn)啦！- *Via* [^1]
+开始学习HTML，大概应该是在2001年，贵阳开始读书之后，无意间研究了各种HTML建站，那个时候的互联网是Free的，各种免费托管陪伴我度过了年轻的万东桥下的网吧，然后，发现Blog是个好东西，所以就开始了：**小歪**帮我从Blogcn上的 [曾经坚持过的故事…](https://zhu8.blogone.net)上搬过来了从2004年2月19日开始的Blog旅程，尔后是从2004年9月9日在 [歪酷](https://zhu8.yculblog.com)开始的新的旅程。 接着就是在 [这里](https://www.4thway.cn)啦！- *Via* [^1]
 
 中间也折腾了ZX.asd 大佬开发的 [Z-Blog](https://www.rainbowsoft.org)，[Wordpress](https://wordpress.org)，[Movable Type](https://movabletype.org)，[Blogger](https://www.blogger.com)等等，应该能从的历史文章看出来，除了HTML, CSS 外，还额外学习了ASP, PHP, MySQL 等等各路语言，成了一个野生的前端工程师。
 
 ### 关于本站
 
-* 搭建工具：~~[Jekyll](http://jekyllrb.com/)~~ & [BitBucket](https://bitbucket.org/) & [StackEdit](https://stackedit.io/) & [FTPloy](http://ftploy.com/)
-* 模板及样式来源：~~[Useful Paradigm](http://usefulparadigm.com/)~~
+* 搭建工具：~~[Jekyll](https://jekyllrb.com/)~~ & [BitBucket](https://bitbucket.org/) & [StackEdit](https://stackedit.io/) & [FTPloy](https://ftploy.com/)
+* 模板及样式来源：~~[Useful Paradigm](https://usefulparadigm.com/)~~
 * 折腾开始于2014年7月1日，基本在2014年7月5日完工。
 * 2020年5月17日，用[Hugo](https://gohugo.io/)和主题[Daily](https://github.com/amazingrise/hugo-theme-diary)。
 * 2021年11月1日-11月16日，换主题[Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa)继续折腾，其中使用到的平台和工具包括：~~腾讯云提供的**CloudStudio**~~、Git平台[**Gitlab**](https://gitlab.com/)（比*Github*的好处就是访问稳定）、在线IDE平台[**Gitlpod**](https://gitpod.io/)、网站发布平台[**Vercel**](https://vercel.com/)（大赞！）。
-* 2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具[**Wayback Machine**](https://web.archive.org/web/20060614054822/http://219.141.36.145/school/UploadFiles/20041115162230783.jpg)。*@深圳·福田·景田*
+* 2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具[**Wayback Machine**](https://web.archive.org/web/20060614054822/https://219.141.36.145/school/UploadFiles/20041115162230783.jpg)。*@深圳·福田·景田*
 
 <img src="/images/pages/ManUtd.png" width="180" class="right" id="trans" alt="Manchester United" title="Manchester United" />
 
@@ -45,11 +45,11 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 ### 联系我
 
-> -   Mail : <a href="mailto:%7A%68%75%38%2E%6E%65%74%40%67%6D%61%69%6C%2E%63%6F%6D"><img src="/images/pages/gmail.png" width="168" height="24" alt="Zhu8.Net Gmail" title="Zhu8.Net Gmail" /></a><!-- zhu8 dot net at gmail dot com -->
+> -   Mail : <a href="mailto:%7A%68%75%38%2E%6E%65%74%40%67%6D%61%69%6C%2E%63%6F%6D"><img src="/images/pages/gmail.png" width="168" height="24" id="pure" alt="Zhu8.Net Gmail" title="Zhu8.Net Gmail" /></a><!-- zhu8 dot net at gmail dot com -->
 > -   Mobile : 1377\*\*\*7752（请邮件咨询\^oo\^）
-> -   Github : [Zhu8](http://github.com/zhu8)
+> -   Github : [Zhu8](https://github.com/zhu8)
 > -   Twitter : [@5CJ](https://twitter.com/5CJ)
-> -   WeiBo : [@Zhu8](http://weibo.com/zhu8)
+> -   WeiBo : [@Zhu8](https://weibo.com/zhu8)
 
 -   **您有发表任何看法和言论的权利 // Anything is Acceptable**
 -   **同时我保留忽视您的留言的权利 // Anything is Neglectable**
