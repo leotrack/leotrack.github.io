@@ -158,8 +158,8 @@
 }
 
 img#dora-three {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 80%;
+  height: auto;
 }
 
 img#trans {
@@ -227,9 +227,9 @@ hr.summary {
   text-align: center;
 }
 a.heading.font-cursive.icon {
-  padding-right: 1.5em;
+  padding-right: 2.25rem;
   background-image: url("/images/sites/dora-bamboo.png");
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 2.75rem;
+  background-size: 2.25rem;
 }
