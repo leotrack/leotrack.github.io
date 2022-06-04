@@ -158,8 +158,8 @@
 }
 
 img#dora-three {
-  width: 180px;
-  height: 145px;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 img#trans {
@@ -210,7 +210,7 @@ ul#related {
   margin: 0;
 }
 ul#related li {
-  background-image: url("/images/sites/doraemon-bell.png");
+  background-image: url("/images/sites/dora-bell.png");
   background-repeat: no-repeat;
   background-size: 1em;
   background-position: 0 0.5em;
@@ -225,4 +225,11 @@ hr.summary {
   border:none;
   margin: .5em;
   text-align: center;
+}
+a.heading.font-cursive.icon {
+  padding-right: 1.5em;
+  background-image: url("/images/sites/dora-bamboo.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 2.75rem;
 }
