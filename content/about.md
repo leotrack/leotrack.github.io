@@ -15,7 +15,7 @@ keywords: [陈俊, ChenJun, 猪八, Zhu8, 个人网站,chenjun.com, zhu8.net, Do
 
 陈俊［ChenJun(Zhu8)］的个人网站，江苏金坛人士，83年生人，电子产品、代码、海淘、智能设备、网页设计自虐狂，曼联、Doraemon、CS 1.5 死忠粉，王小波门下走狗。
 <!--more-->
-<img src="/images/pages/doraemon.png" width="300" class="left trans" alt="Doraemon on Taimu Mashin" title="Doraemon on Taimu Mashin" />
+<img src="/images/pages/doraemon-spec.png" width="400" class="left trans" alt="Doraemon Specification" title="Doraemon Specification" />
 
 [Zhu8](https://zhu8.net/)是我的网名，用了应该有14年啦，**Zhu8**，其名取自“[猪八戒](https://zh.wikipedia.org/wiki/%E7%8C%AA%E5%85%AB%E6%88%92 "猪八戒")”，另一说是来自[电视剧](https://zh.wikipedia.org/wiki/%E7%94%B5%E8%A7%86%E5%89%A7 "电视剧")《[春光灿烂猪八戒](https://zh.wikipedia.org/wiki/%E6%98%A5%E5%85%89%E7%81%BF%E7%83%82%E7%8C%AA%E5%85%AB%E6%88%92 "春光灿烂猪八戒")》中的***小猪八***。
 

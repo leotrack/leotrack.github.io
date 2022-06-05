@@ -6,7 +6,6 @@
         '/images/sites/random/dora-cast-min.png',
         '/images/sites/random/dora-allsix.png',
         '/images/sites/random/dora-family-fly.png',
-        '/images/sites/random/dora-spec.png',
         '/images/sites/random/dora-cute.png',
         '/images/sites/random/dora-door.png',
         '/images/sites/random/dora-draw.png',
