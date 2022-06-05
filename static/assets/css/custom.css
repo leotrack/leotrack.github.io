@@ -233,3 +233,10 @@ a.heading.font-cursive.icon {
   background-repeat: no-repeat;
   background-size: 2.25rem;
 }
+#random-images {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+}

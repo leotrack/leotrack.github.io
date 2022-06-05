@@ -15,6 +15,7 @@
         '/images/sites/random/dora-logo-all.png',
         '/images/sites/random/dora-stand.png',
         '/images/sites/random/dora-time.png',
+        '/images/sites/random/dora-time-new.png',
         '/images/sites/random/dora-two.png',
         '/images/sites/random/dora-sailing.png',
         '/images/sites/random/dora-mantel.png',
