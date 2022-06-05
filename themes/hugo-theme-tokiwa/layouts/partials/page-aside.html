@@ -4,9 +4,16 @@
 	{{ partial "social-follow.html" . }}
 	<div class="text-sm text-gray-500 leading-tight a-gray">
 		<!-- Please don't remove the information of theme makers. -->
-		<i class="fas fa-paint-roller"></i>Life is Colorful, Just PAINT.<br />
+		<i class="fas fa-paint-roller"></i><span class="waline-pageview-count" data-path="/" /> Views &amp; Life is Colorful, Just PAINT.<br />
 		<i class="fas fa-code-branch"></i>Theme with <a href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a>, Powered by <a href="https://gohugo.io"><span style="color:#f40083">H</span><span style="color:#246dd6">U</span><span style="color:#4dc47d">G</span><span style="color:#fcb643">O</span></a>.<br />
 		<!-- Because this project is under MIT licence. -->
-		<i class="fas fa-copyright"></i>2004-{{ now.Format "2006"}} &sect;{{ if .Site.Copyright }}{{ .Site.Copyright|safeHTML }}{{ end }}.
+		<i class="fas fa-copyright"></i>2004-{{ now.Format "2006"}} &sect; {{ if .Site.Copyright }}{{ .Site.Copyright|safeHTML }}{{ end }}.
 	</div>
+	<script src="https://unpkg.com/@waline/client/dist/pageview.js"></script>
+	<script>
+	Waline.pageviewCount({
+		serverURL: 'https://zhu8.net/',
+		path: window.location.pathname,
+	});
+	</script>
 </div>
