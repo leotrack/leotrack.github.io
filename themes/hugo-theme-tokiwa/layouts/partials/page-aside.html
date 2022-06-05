@@ -9,11 +9,4 @@
 		<!-- Because this project is under MIT licence. -->
 		<i class="fas fa-copyright"></i>2004-{{ now.Format "2006"}} &sect; {{ if .Site.Copyright }}{{ .Site.Copyright|safeHTML }}{{ end }}.
 	</div>
-	<script src="https://unpkg.com/@waline/client/dist/pageview.js"></script>
-	<script>
-	Waline.pageviewCount({
-		serverURL: 'https://zhu8.net/',
-		path: window.location.pathname,
-	});
-	</script>
 </div>

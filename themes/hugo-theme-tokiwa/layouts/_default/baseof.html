@@ -30,8 +30,8 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 	{{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}" />
 	<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}" />{{end}}
-	{{ if .IsPage }}<script src="https://unpkg.com/@waline/client/dist/waline.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://unpkg.com/@waline/client/dist/waline.css" />{{ end }}
+	<script src="https://unpkg.com/@waline/client/dist/waline.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://unpkg.com/@waline/client/dist/waline.css" />
 	<link type="text/css" rel="stylesheet" href="{{"/assets/css/custom.css" | relURL}}" media="all" />
 	<link type="text/css" rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css" media="all" />
 	<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
