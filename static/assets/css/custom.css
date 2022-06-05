@@ -162,12 +162,12 @@ img#dora-three {
   height: auto;
 }
 
-img#trans {
+img.trans {
   box-shadow: none !important;
   --tw-shadow: none !important;
 }
 
-img#pure {
+img.pure {
   box-shadow: none !important;
   --tw-shadow: none !important;
   margin: 0%;
