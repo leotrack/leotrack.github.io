@@ -14,9 +14,10 @@ keywords: [Projects, Tools, Collections, Movable Type, Wordpress, Z-Blog, 王小
 
 ### 关于项目
 
-一些Wordpress或者Movable Type的插件、模板等等。***//*** *Some Projects About WordPress Or Movable Type,like Plgins / Themes and so on.*
+> 一些Wordpress或者Movable Type的插件、模板等等。***//*** *Some Projects About WordPress Or Movable Type,like Plgins / Themes and so on.*
+> 
+> 还有一些是个人收集的小程序、源码，或者是一些专题文章和个人存档之类的。
 
-还有一些是个人收集的小程序、源码，或者是一些专题文章和个人存档之类的。
 <!--more-->
 #### 程序插件类
 

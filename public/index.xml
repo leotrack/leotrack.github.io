@@ -174,8 +174,10 @@
       
       <guid>https://zhu8.net/project/</guid>
       <description>&lt;h3 id=&#34;关于项目&#34;&gt;关于项目&lt;/h3&gt;
+&lt;blockquote&gt;
 &lt;p&gt;一些Wordpress或者Movable Type的插件、模板等等。&lt;em&gt;&lt;strong&gt;//&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;Some Projects About WordPress Or Movable Type,like Plgins / Themes and so on.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;还有一些是个人收集的小程序、源码，或者是一些专题文章和个人存档之类的。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;程序插件类&#34;&gt;程序插件类&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://zhu8.net/blog/2006/09/wordpress-plugin-add-bookmarks.html&#34;&gt;WordPress Plugin:Add Bookmarks&lt;/a&gt;&lt;/li&gt;
