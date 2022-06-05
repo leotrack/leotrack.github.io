@@ -3,3 +3,4 @@ HelloWrold.class
 
 # 忽略指定文件夹
 hugo/
+.DS_Store
