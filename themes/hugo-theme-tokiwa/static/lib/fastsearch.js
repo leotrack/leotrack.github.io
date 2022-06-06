@@ -59,16 +59,16 @@ var options = {
   includeMatches: true,
   tokenize: true,
   matchAllTokens: true,
-  threshold: 0.4,
+  threshold: 0.6,
   location: 0,
-  distance: 150,
+  distance: 200,
   maxPatternLength: 64,
   minMatchCharLength: 2,
   keys: [
     {name:"title",weight:0.8},
     {name:"tags",weight:0.5},
-    {name:"categories",weight:0.5},
-    {name:"contents",weight:0.4}
+    {name:"categories",weight:0.4},
+    {name:"contents",weight:0.9}
   ]
 };
 
