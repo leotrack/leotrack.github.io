@@ -12,6 +12,7 @@ url: /blog/2006/12/style-wordpress-trackback.html
 首先要自我打击一下，在产生这个想法之后，本来我是**异想天开**地想编成一个插件的，但研究半天发现自己其实对PHP语言还是个大菜鸟，远没有我想的那么简单，只好用笨办法了：手动添加代码到模板中去。
 
 本来想用的来自这里：[WordPress &#8211; Comment styling](http://www.tamba2.org.uk/wordpress/commentstyling/ "Making Comments stand out")，确实是一篇不错的文章，里面不仅介绍了为Trackback和Pingback增加独特样式，也有为特定评论的与众不同的显示提供了解决方案。而且作者Podz所写的[The Temba2 WordPress Guides](http://www.tamba2.org.uk/wordpress/ "WordPress Help&Podz @ Tamba2")是一篇不错的基础教程。评论姑且不谈，我需要的是第一个。
+<!--more-->
 
 首先是在你的Blog模版的评论页面（一般为**comments.php**）找到这句：
 

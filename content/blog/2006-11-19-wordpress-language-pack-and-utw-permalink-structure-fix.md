@@ -17,6 +17,7 @@ url: /blog/2006/11/wordpress-language-pack-and-utw-permalink-structure-fix.html
 > PHP版本 PHP 4.3.11  
 > Mysql版本 Mysql 4.0.20  
 > Zend支持 支持
+<!--more-->
 
 原来都是**PHP版本**搞的鬼，Wordpress默认的是PHP 5的，但是我现在的服务器是4.3.11，因为在****wp-includes/gettext.php****中**第105行**有这样一段代码：
 
@@ -26,9 +27,8 @@ $MAGIC1 = (int)&1794895138;
 // $MAGIC2 = (int)0xde120495; //bug  
 $MAGIC2 = (int)&569244523;
 ```
-  
+
 其中注释掉的目的是为了修复PHP 5的错误的，因为我的服务器不是PHP 5，所以不需要**注释**掉。相反需要注释掉正在使用的，所以将上面那段代码替换成：
-<!--more-->
 
 ```php
  $MAGIC1 = (int)0x950412de; //bug in PHP 5.0.2, see https://savannah.nongnu.org/bugs/?func=detailitem&item_id=10565  

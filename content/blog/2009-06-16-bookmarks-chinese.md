@@ -13,7 +13,7 @@ toc: true
 ---
 ### **描述：**
 
-***BookmarksChinese***是我在使用了一些如[addthis.com](http://www.addthis.com/ "AddThis")的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。  
+***Bookmarks Chinese*** 是我在使用了一些如[addthis.com](http://www.addthis.com/ "AddThis")的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。  
 作者信息：Zhu8 ([https://zhu8.net](https://zhu8.net "Zhu8"))  
 插件地址：[https://zhu8.net/blog/2009/06/bookmarks-chinese.html](https://zhu8.net/blog/2009/06/bookmarks-chinese.html "Zhu8")  
 插件版本：1.0 Final (2009.6.4)
@@ -111,4 +111,4 @@ toc: true
 
 ***Bye-Bye，活字印刷......（抱歉，在十二小时之后，我又回来了......）***
 
-**-=The End=-** 
+**-=The End=-**

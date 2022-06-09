@@ -15,7 +15,6 @@ url: /blog/2006/09/incomplete.html
 > 希望你能快乐。
 
 网站留言问题在[Rolly](http://www.rolly.cn/)的提醒下已修改，近日访问量有些多了，匆匆过客们：
-<!--more-->
 
 <span class="right">![最近关键词](/images/posts/zhu8-net-keywords.jpg "最近关键词")</span>
 

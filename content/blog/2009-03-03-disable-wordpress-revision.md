@@ -13,16 +13,17 @@ url: /blog/2009/03/disable-wordpress-revision.html
 ---
 还是使用 [WordPress][1] 吧！。因为它的2.7实在是太诱人了。我从WP1.3开始用到现在，实在是太习惯和依赖了。虽然他有讨厌的Revision……
 <!--more-->
+
 **如何关闭Revision？**
 
 我试用了几种方法：
 
 - **第一种**：在 `wp-config.php`中加入如下代码：  
 ```php
-    define('WP_POST_REVISIONS', 0 ); 
+    define('WP_POST_REVISIONS', 0 );
     define('AUTOSAVE_INTERVAL', 72000 );
 ```
-  
+
 经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——**放弃**。
 
 - **第二种**：使用插件：[No Revisions][2]，经测试可以使用。看了一下他的代码，很纯粹：  

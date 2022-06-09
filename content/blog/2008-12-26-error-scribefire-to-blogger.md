@@ -10,6 +10,7 @@ url: /blog/2008/12/error-scribefire-to-blogger.html
 ---
 ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说出错，没有任何内容。
 <!--more-->
+
 <span class="center">![](/images/posts/blogger-error.jpg)</span>
 
 解决方法：把Http://改成<span style='color: red;'>**Https://**</span>，如图：
@@ -27,7 +28,7 @@ ScribeFire添加Blogger出错，按照常规的步骤来，提示消息只是说
 >   
 > *   Blog.Zhu8.Net很快就被Google全盘收录了（*数小时之内，并且连我开始发布错误的测试页都收了*），而WhoPig.Com到目前还没有收完……
 >   
-> 
+>
 
 >   **测试Windows Live Writer，发现配置同样需要修改，先选择其他日志服务，使用原始地址http://zhu8.blogspot.com或者http://chenjun.com/都提示错误，必须将两个都改成HTTPS才可以，然后输入你的Google帐号和密码，另外类型需选择Atom Publishing Protocol，不要选择Blogger，然后在下面的地址输入：https://www.blogger.com/feeds/1265273302531055728/posts/default。记得将blogID换成你自己的。**_——其实我自己试下来，无法读取旧日志，提示：远程主机强迫关闭了一个现有的连接，而且开始连接老是断掉，ScribeFire却不会断，亦可以读取，具体原因不明。_
 

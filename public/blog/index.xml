@@ -115,8 +115,7 @@
 &lt;p&gt;网上教程太多，不多说啦，绑定你的 &lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt; 即可。支持 &lt;strong&gt;“HTTPS”&lt;/strong&gt; ，支持 &lt;strong&gt;“Hugo”&lt;/strong&gt; 指定版本，支持 &lt;strong&gt;多域名绑定&lt;/strong&gt; ，支持 &lt;strong&gt;域名跳转&lt;/strong&gt; ，谁用谁知道。
 &lt;img src=&#34;https://zhu8.net/images/posts/Vercel.png&#34; alt=&#34;Vervel 界面&#34; title=&#34;Vercel 界面&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
-&lt;p&gt;经过以上部署之后，你只需要购买域名，其他的，&lt;strong&gt;全部交给云&lt;/strong&gt; 吧，而且，&lt;strong&gt;全免费&lt;/strong&gt; 哦！完美，安心！祝你使用愉快！&lt;/p&gt;
-</description>
+&lt;p&gt;经过以上部署之后，你只需要购买域名，其他的，&lt;strong&gt;全部交给云&lt;/strong&gt; 吧，而且，&lt;strong&gt;全免费&lt;/strong&gt; 哦！完美，安心！祝你使用愉快！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,8 +162,7 @@
 &lt;p&gt;完整的诗歌在这里：&lt;a href=&#34;https://zhu8.net/blog/2004/11/the-poem-crematory.html&#34;&gt;《火葬场》&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -188,8 +186,7 @@
 &lt;img src=&#34;https://zhu8.net/images/posts/Jekyll-CMD.png&#34; alt=&#34;Jekyll Build in one CMD line&#34; title=&#34;Jekyll Build in one CMD line&#34;&gt;
 然后就是如何Push，我使用的是&lt;a href=&#34;https://bitbucket.org/&#34; title=&#34;Bitbucket 由旧金山的Atlassian公司开发&#34;&gt;BitBucket&lt;/a&gt;，所以，Windows用户请直接下载&lt;a href=&#34;http://www.sourcetreeapp.com/?utm_source=bitbucket&amp;amp;utm_medium=link&amp;amp;utm_campaign=chenjun.com&#34; title=&#34;Mac/Windows上的免费Git/Mercurial客户端.&#34;&gt;SourceTree&lt;/a&gt;，自行探索吧，这就不教程了。&lt;/p&gt;
 &lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
-&lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;
-</description>
+&lt;p&gt;经过以上部署之后，你的Jekyll网站在本地编辑并Build之后，使用SourceTree提交并推送之后，FTPloy就会自动将你的新网站PUSH到你的FTP，完美，安心！祝你使用愉快！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -223,8 +220,7 @@
 &lt;h4 id=&#34;wordpress导出&#34;&gt;Wordpress导出&lt;/h4&gt;
 &lt;p&gt;为什么要用Wordpress导出？因为最方便，其他平台使用率没有那么高，我使用的是wordpress-to-jekyll-exporter.zip，请点击&lt;a href=&#34;https://www.dropbox.com/s/maf5zc5zoj3eqec/wordpress-to-jekyll-exporter.zip&#34; title=&#34;wordpress-to-jekyll-exporter.zip&#34;&gt;下载&lt;/a&gt;，里面我修改并增加了日期和时间选项，方便使用。&lt;/p&gt;
 &lt;h3 id=&#34;待补充&#34;&gt;待补充&lt;/h3&gt;
-&lt;p&gt;回头再补充一些吧，就酱。&lt;/p&gt;
-</description>
+&lt;p&gt;回头再补充一些吧，就酱。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -400,7 +396,6 @@ sha1：A739DAA8A11498BA166CBD1C278D187E888A0D21&lt;br&gt;
       <guid>https://zhu8.net/blog/2010/08/n97-stolen-by-a-uighur-at-taiyuan-railway-station.html</guid>
       <description>&lt;p&gt;很久没有写&lt;strong&gt;日志&lt;/strong&gt;了，因为一直没有啥动力，本来世界杯完了准备再写一篇&lt;a href=&#34;https://zhu8.net/blog/2006/06/worldcup-2006.html&#34; title=&#34;世界杯–难得疯狂&#34;&gt;&lt;strong&gt;世界杯感受&lt;/strong&gt;&lt;/a&gt;的，可是我可爱的**&lt;a href=&#34;http://twitter.com/5CJ/status/17593626413&#34;&gt;斯内德&lt;/a&gt;（要翻土啬，你懂的。）&lt;strong&gt;没有带领荷兰笑到最后，与数个被&lt;/strong&gt;无比功利**的1个净胜球杀回家的球队一样，被西班牙1：0送回了阿姆斯特丹。&lt;/p&gt;
 &lt;p&gt;今天写的目的，是说下我在太原火车站，丢了我半年前引以为豪，机缘巧合用1900元人民币买回来的全新的&lt;strong&gt;Nokia N97&lt;/strong&gt;行货（当时N97的行货价是3900大洋），&lt;strong&gt;不是丢！是偷！2010年8月11日&lt;/strong&gt;，我第二次来太原出差，下午&lt;strong&gt;15：40&lt;/strong&gt;分左右，出了出站口，因为一只手拿着行李和笔记本包，另一只手打着伞，所以身上斜跨的小KAPPA包赤果果的暴露在了不法之徒的眼底。&lt;/p&gt;
-&lt;!--more--&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/o_N97.jpg&#34; alt=&#34;诺基亚 Nokia N97&#34; title=&#34;诺基亚 Nokia N97&#34;&gt;&lt;/p&gt;
 &lt;p&gt;5分钟后，我走到了过马路的人行横道，这里要说一下，那天下雨，本来太原火车站就全是人，门口的路永远的拥堵着（貌似中国的每个火车站都是这样）。等着过马路的档口，一个小伙子很小声的跟我说：“&lt;strong&gt;你手机被偷了……&lt;/strong&gt;”，我没反应过来（&lt;strong&gt;我从没被偷过，只丢过&lt;/strong&gt;），啊的一声，低头一看，包的拉链被拉开了一半，那个小伙子跟我说：“就在那边，一个穿紫红色衣服的新疆人……”，我转头去追，可我手里拿走行李、笔记本、伞，压根没法追，那个新疆人（&lt;strong&gt;是个很年轻的小孩儿&lt;/strong&gt;）回头瞪了我一眼，两下就消失在车流中（因为车都堵着，他在车子中间穿过去马路斜对面的）。我无奈的走到岗亭，里面的师傅让我去找马路中停着的一辆警车，我过去了，跟警官说我手机被偷了，后面的人拉开面包车的门，我边进去他们边跟我说：“我们也是被新疆人偷了手机……”，我当时就绿了-_-#，然后跟着警车在火车站前的马路上兜了一圈，啥都没发现，回到&lt;a href=&#34;http://ditu.google.cn/maps/place?cid=10855601891869304576&amp;amp;q=%E7%AB%99%E5%89%8D%E6%B4%BE%E5%87%BA%E6%89%80&amp;amp;cd=1&amp;amp;ei=1qtjTMrHA5KuvgPtlKCaBQ&amp;amp;dtab=0&amp;amp;sll=37.859866,112.585513&amp;amp;sspn=0.006295,0.006295&amp;amp;brcurrent=3,0x360aa9ac374e1b01:0x8284ea0e3b705928,0,0x35e002fb0ddfec21:0x47c3b5b3cab4ae8c%3B5,0,0&amp;amp;ie=UTF8&amp;amp;ll=37.85976,112.582682&amp;amp;spn=0,0&amp;amp;z=18&amp;amp;iwloc=lyrftr:m,10855601891869304576,37.858066,112.584645&#34;&gt;&lt;strong&gt;站前派出所&lt;/strong&gt;&lt;/a&gt;，跟警官聊了几句，告诉我基本找不回来了，我们3个手机被偷的，和一个钱包被偷的。写了完全没有希望的报案材料，走了。&lt;/p&gt;
 &lt;p&gt;以上基本是事情的全过程，其中我要说的几点是：&lt;/p&gt;
@@ -468,7 +463,6 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
 &lt;p&gt;也许有一天，我的所有这些都无法访问，我得把我的身体练得愈发强壮，好爬过那耸入云霄的文明用语；也许有一天，我会发现我惟一的祈祷就是能亲手砸烂那伟岸无比的文明用语；也许有一天，我得不停的说着：“文明用语你文明用语的文明用语。”才能倾泄我对文明用语的文明用语。&lt;/p&gt;
 &lt;p&gt;好吧，那我就就把我的站搬家吧，搬到文明用语的那边，不用再接受贵国的文明用语的洗礼。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;附图两张：&lt;/strong&gt;&lt;/p&gt;
-&lt;!--more--&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/GoogleGoLe_14149/chinainventions10hp.gif&#34; alt=&#34;chinainventions10-hp&#34; title=&#34;chinainventions10-hp&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/GoogleGoLe_14149/mygoogleproducts.png&#34; alt=&#34;my-google-products&#34; title=&#34;my-google-products&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;延伸阅读：&lt;/strong&gt;&lt;/p&gt;
@@ -567,7 +561,7 @@ Authorizations can remain in your account anywhere from 24 hours up to 14 busine
       
       <guid>https://zhu8.net/blog/2009/06/bookmarks-chinese.html</guid>
       <description>&lt;h3 id=&#34;描述&#34;&gt;&lt;strong&gt;描述：&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;BookmarksChinese&lt;/strong&gt;&lt;/em&gt;是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Bookmarks Chinese&lt;/strong&gt;&lt;/em&gt; 是我在使用了一些如&lt;a href=&#34;http://www.addthis.com/&#34; title=&#34;AddThis&#34;&gt;addthis.com&lt;/a&gt;的按钮之后，发现对中文支持很差，所以弄的一个中文化的书签插件如果你还需要其他的按钮，请自行参考开发即可。&lt;br&gt;
 作者信息：Zhu8 (&lt;a href=&#34;https://zhu8.net&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net&lt;/a&gt;)&lt;br&gt;
 插件地址：&lt;a href=&#34;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&#34; title=&#34;Zhu8&#34;&gt;https://zhu8.net/blog/2009/06/bookmarks-chinese.html&lt;/a&gt;&lt;br&gt;
 插件版本：1.0 Final (2009.6.4)&lt;/p&gt;
@@ -751,7 +745,7 @@ Journey into worlds where time behaves strangely; observe, learn from, and then 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;第一种&lt;/strong&gt;：在 &lt;code&gt;wp-config.php&lt;/code&gt;中加入如下代码：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    define(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;WP_POST_REVISIONS&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; ); 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    define(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;WP_POST_REVISIONS&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#099&#34;&gt;0&lt;/span&gt; );
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    define(&lt;span style=&#34;color:#d14&#34;&gt;&amp;#39;AUTOSAVE_INTERVAL&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#099&#34;&gt;72000&lt;/span&gt; );
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;经测试，新建文章没有问题，似乎是可以关掉，但当你在修改已经发布的文章的时候，仍然在其作用。——&lt;strong&gt;放弃&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
@@ -794,7 +788,6 @@ Journey into worlds where time behaves strangely; observe, learn from, and then 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/jumper.jpg&#34; alt=&#34;跳线（Jumper）&#34; title=&#34;跳线（Jumper）&#34;&gt;&lt;/span&gt;跳线（英文Jumper）是控制线路板上电流流动的小开关。它的作用是调整设备上不同电信号的通断关系，并以此调节设备的工作状态，如确定主板电压、驱动器的主从关系等。跳线基本上由两个部分组成，一部分是固定在主板、硬盘等设备上的，由两根或两根以上金属跳针组成（如图1）；另一部分是跳线帽（如图2），这是一个可以活动的部件，外层是绝缘塑料，内层是导电材料，可以插在跳线针上面，将两根跳线针连接起来。&lt;a href=&#34;http://www.cfanclub.net/article.php?itemid-3866-type-news.html&#34;&gt;&lt;em&gt;&lt;strong&gt;更多……&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;!--more--&gt;
 &lt;p&gt;哦！今天是&lt;strong&gt;情人节&lt;/strong&gt;了哈！我这么晚还没有睡觉，老婆要打了……晚安！今晚特约演出：&lt;/p&gt;
 &lt;p&gt;歌手： Beyond&lt;br&gt;
 专辑： 海阔天空 精选&lt;br&gt;
@@ -868,7 +861,6 @@ Journey into worlds where time behaves strangely; observe, learn from, and then 
 &lt;p&gt;**第一步：**绑定域名，在Blogger里很好设置，这里就不赘述了。我使用&lt;a href=&#34;http://chenjun.com/&#34;&gt;http://chenjun.com/&lt;/a&gt; 绑定了我的Blogger，故而在Godaddy里面如下设置：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/godaddy-11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;请列位看官自行看图说话，如何创造自己的ghs.xxx.com。实在看不懂请留言。ghs.google.com的IP有&lt;a href=&#34;http://out.zhu8.net/ghs&#34;&gt;这个地方&lt;/a&gt;查很不错&lt;/p&gt;
-&lt;!--more--&gt;
 &lt;p&gt;**第二步：**解决www和non-www制定不同的问题。 由于Google只能绑定子域名（www亦是一种特殊格式的子域名），故我们要让根域名也指向到这里，&lt;del&gt;如果你是Host domain在Godaddy，只要使用Forward就可以了。&lt;/del&gt;（&lt;strong&gt;经反复测试，此方法没有用，只有使用.htaccess解决，详见：[注释]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/strong&gt;）如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/godaddy-8.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
 &lt;img src=&#34;https://zhu8.net/images/posts/godaddy-9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -1025,7 +1017,8 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
       <pubDate>Thu, 30 Oct 2008 16:22:40 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html</guid>
-      <description>&lt;p&gt;即将使用MT进行网站的重构，全线启用&lt;a href=&#34;http://www.movabletype.com/&#34;&gt;Movable Type&lt;/a&gt; （MT.com貌似被GFW了，虽然不知道为什么连一个专业的Blog平台长城都要去过问……请访问&lt;a href=&#34;http://www.movabletype.org/&#34;&gt;MT.org&lt;/a&gt;获得新消息。）&lt;/p&gt;</description>
+      <description>&lt;p&gt;即将使用MT进行网站的重构，全线启用&lt;a href=&#34;http://www.movabletype.com/&#34;&gt;Movable Type&lt;/a&gt; （MT.com貌似被GFW了，虽然不知道为什么连一个专业的Blog平台长城都要去过问……请访问&lt;a href=&#34;http://www.movabletype.org/&#34;&gt;MT.org&lt;/a&gt;获得新消息。）&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -1035,7 +1028,8 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
       
       <guid>https://zhu8.net/blog/2008/10/nirvana-at-whopig-dot-com.html</guid>
       <description>&lt;p&gt;2008年10月28日，小站&lt;strong&gt;浮生小筑&lt;/strong&gt; （WhoPig.COM）在WebHostingBUZZ重生，将用&lt;a href=&#34;%CB%9Dhttps://zhu8.net/blog/2008/10/reborn-with-movable-type-4.html&#34;&gt;MT对整站进行重建&lt;/a&gt;。期待自己能有一个新的开始！以前的&lt;strike&gt;&lt;em&gt;&lt;strong&gt;Zhu8&lt;/strong&gt;&lt;/em&gt;&lt;/strike&gt;以及***&lt;strike&gt;Zhu8.Net&lt;/strike&gt;&lt;em&gt;&lt;strong&gt;就是今天和以后的&lt;/strong&gt;WhoPig&lt;/em&gt;*。欢迎Gtalk到：&lt;strong&gt;WhoPig@Gmail&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;待补充（Reborning……）&lt;a href=&#34;http://technorati.com/claim/kz3xq7ibs5&#34;&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;待补充（Reborning……）&lt;a href=&#34;http://technorati.com/claim/kz3xq7ibs5&#34;&gt;Technorati Profile&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -1063,12 +1057,11 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
       <guid>https://zhu8.net/blog/2008/06/gto-great-teacher-onizuka.html</guid>
       <description>&lt;p&gt;初次使用&lt;a href=&#34;http://writer.live.com&#34; title=&#34;Windows Live Writer&#34;&gt;Live Writer&lt;/a&gt; 写日志，不知道是否能完美支持&lt;a href=&#34;http://wordpress.org/&#34; title=&#34;WordPress&#34;&gt;WordPress&lt;/a&gt;。周末儿童节，终于看完了GTO，看到他牛X的跑到美国载着金发姐姐一脸YD，然后冲入某&lt;em&gt;California High School&lt;/em&gt;，一帮金毛孩成了Great Teacher Onizuka 即简称GTO的22岁单身教师鬼塚 英吉, &lt;em&gt;Onizuka Eikichi&lt;/em&gt;的学生，而天真可爱的冬月 あずさ, &lt;em&gt;Fuyutsuki Azusa&lt;/em&gt;还在武藏野圣林学苑苦等着他。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;left&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/GTO.jpg&#34; alt=&#34;GTO&#34; title=&#34;GTO&#34;&gt;&lt;/span&gt;个人比较喜欢动画版（43集），因为电视剧和电影版的无法表现那么夸张，很多东西电视剧表现不了，比如，鬼塚那种猥琐的神情，十个反町隆史都不能刻画一二。而且对原著不忠实，很多地方看得人二楞二楞的……。感谢伟大的&lt;a href=&#34;http://www.emule.org.cn&#34;&gt;骡子&lt;/a&gt;，包罗万象，我可以把GTO的&lt;a href=&#34;http://lib.verycd.com/2007/12/25/0000175166.html&#34;&gt;《麻辣教师》(G.T.O.)[R2Jraw+外挂字幕][43更新][wmv][DVDRip]&lt;/a&gt;、&lt;a href=&#34;http://lib.verycd.com/2005/09/05/0000063934.html&#34;&gt;原声大碟 -《麻辣教师 1》(Great.Teacher.Onizuka OST 1)[MP3!]&lt;/a&gt;、&lt;a href=&#34;http://lib.verycd.com/2005/09/05/0000063936.html&#34;&gt;原声大碟 -《麻辣教师 2》(Great Teacher Onizuka Ost 2)[MP3!]&lt;/a&gt;、&lt;a href=&#34;http://lib.verycd.com/2005/11/08/0000073685.html&#34;&gt;《麻辣教师》(Great.Teacher.Onizuka)DVD转制蓝色字幕版（1-12集全）[RMVB]&lt;/a&gt;全部下齐了，然后慢慢看，刻到我一块三一张的紫光 16X DVD+R 里面去。对了，wmv版的动画片字幕不对，万能的电骡告诉我还有这个字幕&lt;a href=&#34;http://www.verycd.com/files/a680106dea1a3fdaee2bae8bec97cc11479318&#34;&gt;GTO.Lesson.01-43[R3DVDSUB].rar&lt;/a&gt;可以下载。&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/gto-comic.jpg&#34; alt=&#34;GTO-comic&#34; title=&#34;GTO-comic&#34;&gt;&lt;/span&gt;不过很惭愧啊，原版漫画到现在还没看过，但还是要拜谢藤沢とおる &lt;em&gt;Fujisawa Tooru&lt;/em&gt;先师（GTO漫画原版作者），以及阿部 記之 (formerly 阿部 紀之), &lt;em&gt;Abe Noriyuki&lt;/em&gt;师（GTO动画版导演）。在Verycd倒是找到：&lt;a href=&#34;http://lib.verycd.com/2004/03/31/0000008077.html&#34;&gt;[漫画]《麻辣教师》(G.T.O)&lt;/a&gt;，&lt;a href=&#34;http://board.verycd.com/t334956.html&#34; title=&#34;VeryCD.com 分享互联网社区-《麻辣教师》(GTO)PDF格式东立版&#34;&gt; 《麻辣教师》(GTO)PDF格式东立版&lt;/a&gt;两个版本，都在下。不知道什么时候能下完，源很少，但每天上班开着总会有下完的时候的，哈哈！又得说到我支持eMule而不用BT那种短命的有违P2P最基本原则的东西。（下比赛录像等有时效性的东西除外，当然是刚放出来没多久的时候，种子多，种越多越好。）如果下下来看不行就得到淘宝上去淘一套来就得了。不知道以后会不会再找来《湘南純愛組!, &lt;em&gt;Shōnan Jun’ai Gumi&lt;/em&gt;》看看。&lt;/p&gt;
-&lt;p&gt;在我以前的旧日志：&lt;em&gt;&lt;strong&gt;短長書&lt;/strong&gt;&lt;/em&gt;里，我就记录过GTO了。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/gto-comic.jpg&#34; alt=&#34;GTO-comic&#34; title=&#34;GTO-comic&#34;&gt;&lt;/span&gt;不过很惭愧啊，原版漫画到现在还没看过，但还是要拜谢藤沢とおる &lt;em&gt;Fujisawa Tooru&lt;/em&gt; 先师（GTO漫画原版作者），以及阿部 記之 (formerly 阿部 紀之), &lt;em&gt;Abe Noriyuki&lt;/em&gt; 师（GTO动画版导演）。在Verycd倒是找到：&lt;a href=&#34;http://lib.verycd.com/2004/03/31/0000008077.html&#34;&gt;[漫画]《麻辣教师》(G.T.O)&lt;/a&gt;，&lt;a href=&#34;http://board.verycd.com/t334956.html&#34; title=&#34;VeryCD.com 分享互联网社区-《麻辣教师》(GTO)PDF格式东立版&#34;&gt; 《麻辣教师》(GTO)PDF格式东立版&lt;/a&gt;两个版本，都在下。不知道什么时候能下完，源很少，但每天上班开着总会有下完的时候的，哈哈！又得说到我支持eMule而不用BT那种短命的有违P2P最基本原则的东西。（下比赛录像等有时效性的东西除外，当然是刚放出来没多久的时候，种子多，种越多越好。）如果下下来看不行就得到淘宝上去淘一套来就得了。不知道以后会不会再找来《湘南純愛組!, &lt;em&gt;Shōnan Jun’ai Gumi&lt;/em&gt;》看看。&lt;/p&gt;
+&lt;p&gt;在我以前的旧日志：&lt;em&gt;&lt;strong&gt;短長書&lt;/strong&gt;&lt;/em&gt; 里，我就记录过GTO了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;编号：&lt;strong&gt;148&lt;/strong&gt;¦&lt;a href=&#34;https://zhu8.net/old/post/GTO.html&#34;&gt;GTO麻辣教师有的看了&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;时间：&lt;strong&gt;2005-11-12 14:57&lt;/strong&gt;¦评论：&lt;strong&gt;1&lt;/strong&gt;¦浏览：&lt;strong&gt;1776&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;编号：&lt;strong&gt;148&lt;/strong&gt; ¦&lt;a href=&#34;https://zhu8.net/old/post/GTO.html&#34;&gt;GTO麻辣教师有的看了&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;时间：&lt;strong&gt;2005-11-12 14:57&lt;/strong&gt; ¦评论：&lt;strong&gt;1&lt;/strong&gt; ¦浏览：&lt;strong&gt;1776&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;当年在学校的时候，和HSF一起把电视剧和动画版全部下了下来，在&lt;strong&gt;网吧&lt;/strong&gt;哦！花费了不少时间和精力，嘻嘻哈哈的看完，昨日通电话的时候还提起当年的时光，如今已经过去应该差不多4、5年了罢。&lt;/p&gt;
 &lt;p&gt;怀念GTO，怀念从内测就开始玩大海战时候的鬼塚英吉-我以及弹间龙二-HSF，怀念当年与几个哥们的狗脸岁月。&lt;/p&gt;</description>
@@ -1109,12 +1102,13 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
       <pubDate>Tue, 27 May 2008 19:58:18 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2008/05/are-you-sad-nanjing.html</guid>
-      <description>&lt;p&gt;&lt;cite&gt;大屠杀时期的救助者拉贝说：“可以宽恕，但不可以忘却。”南京不可能忘却，他被赋予了帮助这个国家记忆或清晰或模糊历史的角色。每年的12月13日，南京人都要被集体唤醒，全国各地的人们在这里表达愤怒和同情。但是除了悲伤南京还需要生活，还要思考城市的未来和命运。&lt;/cite&gt;&lt;/p&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;大屠杀时期的救助者拉贝说：“可以宽恕，但不可以忘却。”南京不可能忘却，他被赋予了帮助这个国家记忆或清晰或模糊历史的角色。每年的12月13日，南京人都要被集体唤醒，全国各地的人们在这里表达愤怒和同情。但是除了悲伤南京还需要生活，还要思考城市的未来和命运。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;5月27日的奥运火炬传递在哀悼地震亡灵中开始，这符合南京的气质。全国的文人们经常忧郁地说，南京是座悲伤的城市。&lt;/p&gt;
 &lt;p&gt;在中山陵背面的一座公墓里，坐着一个同样忧郁的小伙子，他在墓园里踱步，遇见了我。我以为他知道这里的历史，要和他交谈，但他告诉我，他只是心情不好，在这个寂静的墓园里转转。&lt;/p&gt;
 &lt;p&gt;你必须穿过中山陵的喧闹，绕过钟山，才能到达这座罕有人光顾的航空烈士陵园，他建于1932年，后因埋葬二战中国战场上牺牲的中外飞行员而存在。1937年的笕桥空战，中国军队创造了击落敌机6架，本方无损失的记录，蒋介石把这一天（8月14日）定为空军日。后来，江山易主，公墓的8月14日也不再是节日，只剩下静静躺在这里的飞行员们，和每年来给他们献花的惦记者。&lt;/p&gt;
 &lt;p&gt;吴先生带着他的儿子到这里散步，他住在紫金山脚下，步行可及。每一次来，他都会矗立在写着牺牲者姓名的黑色大理石碑前，仔细看那些风华正茂年轻人的名字。他们曾和中央大学的女生们联谊，是众人倾慕的对象，但战争开始后，从航校毕业到最后牺牲，这群空中精英的平均寿命只有6个月。直到有一天史沫特莱在重庆看到了一架孤独的飞机起飞拦截日本轰炸机群。他只是孤独的一架，此时是1940年。史沫特莱说，在那样一种时刻，我曾希望有能力为那一架小小的飞机写一首不朽的诗。&lt;/p&gt;
-&lt;!--more--&gt;
 &lt;p&gt;在南京，没有诗歌，有的是记述他们的文字：“抗日战争是在中国共产党倡导的抗日民族统一战线旗帜下，以国共合作为基础，全国各民族人民团结抗日的正义战争……”吴先生说，他每年8月14日的时候都会到这里来给英雄们献花，黄色的菊花，一个墓碑一朵，还有人会带一些祭品，放在战士墓前，“有一次看到一家人来给他父亲上香，他们找到了父亲的名字，所有人抱在一起哭泣，这里很安静，哭声让人觉得心酸。”&lt;/p&gt;
 &lt;p&gt;这是一座悲伤的城市，从这个意义上说，至少哭声确实让人悲痛。经过大约60年的岁月，第一批埋葬的烈士被1937年侵占南京的日本人抛尸荒野，而抗日战争中牺牲的飞行员，则在1966年8月再次被红卫兵凌辱，他们依据的是“凡是敌人拥护的我们就要反对”的最高指示，留下了现在这座没有任何遗骸的墓园。这些被侮辱的人来自中国、美国和俄国。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zhu8.net/images/posts/Nanjing-1.jpg&#34; alt=&#34;南京航空烈士公墓&#34;&gt;&lt;/p&gt;
@@ -1214,8 +1208,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
 &lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1273,8 +1266,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;p&gt;风和、日丽、人山、人海。半数是老外，且半数神情呆滞。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://farm3.static.flickr.com/2156/2422689478_d3154639e8_b.jpg&#34; title=&#34;颐和园1&#34;&gt;&lt;img src=&#34;http://farm3.static.flickr.com/2156/2422689478_d3154639e8.jpg&#34; alt=&#34;颐和园1&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://farm4.static.flickr.com/3173/2422689290_9fe44a51cb_b.jpg&#34; title=&#34;颐和园2&#34;&gt;&lt;img src=&#34;http://farm4.static.flickr.com/3173/2422689290_9fe44a51cb.jpg&#34; alt=&#34;颐和园2&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://farm4.static.flickr.com/3272/2422688814_092169b280_b.jpg&#34; title=&#34;颐和园3&#34;&gt;&lt;img src=&#34;http://farm4.static.flickr.com/3272/2422688814_092169b280.jpg&#34; alt=&#34;颐和园3&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://farm3.static.flickr.com/2311/2421876449_36bdc95640_b.jpg&#34; title=&#34;颐和园4&#34;&gt;&lt;img src=&#34;http://farm3.static.flickr.com/2311/2421876449_36bdc95640.jpg&#34; alt=&#34;颐和园4&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://farm4.static.flickr.com/3111/2422688196_00c01ae541_b.jpg&#34; title=&#34;颐和园5&#34;&gt;&lt;img src=&#34;http://farm4.static.flickr.com/3111/2422688196_00c01ae541.jpg&#34; alt=&#34;颐和园5&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;【全文完】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;浏览所有图片至&lt;/strong&gt;：&lt;a href=&#34;http://picasaweb.google.com/Zhu8CN/qIgmxG&#34;&gt;颐和园的春天&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;strong&gt;浏览所有图片至&lt;/strong&gt;：&lt;a href=&#34;http://picasaweb.google.com/Zhu8CN/qIgmxG&#34;&gt;颐和园的春天&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1294,8 +1286,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;li&gt;&lt;strong&gt;-=The End=-&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;来听首歌（友情演出：容畅《七月》）：&lt;/strong&gt;&lt;br&gt;
 [http://leotrack.googlepages.com/july-rong.mp3]&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -1335,8 +1326,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;p&gt;周小狄做梦中长江七号依次出演了&lt;strong&gt;Bruce Lee 李小龙&lt;/strong&gt;、&lt;strong&gt;喜剧之王 尹天仇&lt;/strong&gt;、&lt;strong&gt;哆啦A梦 Doraemon&lt;/strong&gt;的神奇口袋，周小狄后来的**《功夫》&lt;strong&gt;之&lt;/strong&gt;如来神掌**，是致敬？应该是，就算调侃自己，也不会去调侃自己的偶像吧！&lt;/p&gt;
 &lt;p&gt;其实我印象最深刻，而且笑的最欢的就是那场他们父子打蟑螂的那一段了，后来他老爸（周铁&lt;sub&gt;P.S&lt;/sub&gt;我是现在才知道原来星爷的角色也有名字的）挂了，那场哭戏也把&lt;a href=&#34;http://baipig.blogspot.com/&#34;&gt;小白同志&lt;/a&gt;给弄哭了。其中石班瑜配音版星爷两段重复的“我们虽然穷，但是要有骨气，不打架……”云云，全然不再是星爷以前的无厘头味道，难道真变身成谆谆教诲了？不过话说回来，星爷扮民工在宁波的高楼大厦上站着也不容易啊……&lt;/p&gt;
 &lt;p&gt;结尾很仓促，不过终于出来了两句星爷的味道：“你身体还好吧”、“不太好了，因为忽然发现我很英俊”、“你难道真的没有发现我很英俊吗”，不过一堆长江七号的兄弟姐妹在桥上跑了过来，就完了。中国版ET……片长90分钟。&lt;/p&gt;
-&lt;p&gt;惟一的感觉，&lt;strong&gt;星爷三年的破茧，化了一只我不再认识和熟悉的蝶。&lt;/strong&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;惟一的感觉，&lt;strong&gt;星爷三年的破茧，化了一只我不再认识和熟悉的蝶。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1353,6 +1343,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;p&gt;但愿，我们能有幸福的未来；但愿，我们能得到你爸妈的祝福；但愿，我们能坚决的走下去；但愿……&lt;/p&gt;
 &lt;p&gt;爱是什么？爱……是。&lt;strong&gt;你&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;[友情演出：梁静茹《爱是&amp;hellip;&amp;hellip;》]&lt;/em&gt;[http://www.zhu8.org/music/love_is.mp3]&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;blockquote&gt;
 &lt;p&gt;专辑：&lt;strong&gt;《恋爱的力量》&lt;/strong&gt;&lt;br&gt;
 作曲：&lt;strong&gt;陈韦翎&lt;/strong&gt;&lt;br&gt;
@@ -1407,6 +1398,8 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 可心中还想把你挽留&lt;br&gt;
 不知不觉 不知不觉&lt;br&gt;
 已被你看透&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;你问我这些日子是怎么过&lt;br&gt;
 没有你是不是很寂寞&lt;br&gt;
 我依然还是容易冲动&lt;br&gt;
@@ -1445,8 +1438,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;[http://www.zhu8.org/music/WuFaTaoTuo.mp3]&lt;br&gt;
 &lt;a href=&#34;http://www.box.net/shared/1na0zxtx6b&#34; title=&#34;单曲 无法逃脱&#34;&gt;下载&lt;/a&gt;《&lt;strong&gt;无法逃脱&lt;/strong&gt;》的单曲及歌词，网上的歌词都有错误，我根据MTV编的，应该没什么错误了吧：）&lt;/p&gt;
-&lt;p&gt;eMule下载链接： &lt;a href=&#34;ed2k://%7Cfile%7C%E6%8C%87%E5%8D%97%E9%92%88%E4%B9%90%E9%98%9F.-.%5B%E6%97%A0%E6%B3%95%E9%80%83%E8%84%B1%5D.%E4%B8%93%E8%BE%91.%28APE%29.rar%7C362624802%7Cce06927067c9d448f92347c935f294da%7Ch=3BJF3S56OMH7UVBKOCDJP3CZ2JR5XHCI%7C/&#34;&gt;指南针乐队.-.[无法逃脱].专辑.(APE).rar&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;eMule下载链接： &lt;a href=&#34;ed2k://%7Cfile%7C%E6%8C%87%E5%8D%97%E9%92%88%E4%B9%90%E9%98%9F.-.%5B%E6%97%A0%E6%B3%95%E9%80%83%E8%84%B1%5D.%E4%B8%93%E8%BE%91.%28APE%29.rar%7C362624802%7Cce06927067c9d448f92347c935f294da%7Ch=3BJF3S56OMH7UVBKOCDJP3CZ2JR5XHCI%7C/&#34;&gt;指南针乐队.-.[无法逃脱].专辑.(APE).rar&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1461,6 +1453,7 @@ Web浏览器里面的叉叉跟空白究竟有什么不同？&lt;br&gt;
 &lt;p&gt;昨夜，却真真切切的体会到想一个人到无法呼吸。真真切切体会到了原来思念可以如此美好。我一直想写下一些东西来，虽然现在的我还没有跟她走到一起，她问我怕不怕压力，怕不怕责任，怕不怕后悔。我知道，现在的我已经不在是年少不更事的年纪了，如果要走，必然要承担起该负起的责任。不要甜言蜜语，不要海誓山盟。其实最简单的也是最难的，就是一定要让她过的开心，每天起床的时候能够微笑，这就够了，是吗？小白？&lt;/p&gt;
 &lt;p&gt;我不知道谁会看到这篇日志，不知道你是否会看到这篇日志，不知道路过的人是留下只言片语，抑或一笑而过。但是，我想，我还是该把我的一些想法记录下来，正如数年前的我们，不知道今天在发生着怎样的故事。此刻的你睡的正香呢罢！有没有想我呢？但是我知道此刻的我正是微笑着写下这篇日志，在数月数年之后再看到它，会想起今天的我，有这样的一段心情。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;有你真好&lt;/strong&gt;&lt;/em&gt; &amp;amp; &lt;em&gt;&lt;strong&gt;我愿意&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;有你真好&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;歌手&lt;/strong&gt;：范玮琪/杨丞琳 &lt;strong&gt;专辑&lt;/strong&gt;：真善美&lt;br&gt;
 &lt;strong&gt;词&lt;/strong&gt;：陈淑秋 &lt;strong&gt;曲&lt;/strong&gt;：黄丹仪&lt;br&gt;
@@ -1684,8 +1677,7 @@ I’m the owner of my life~~&lt;br&gt;
 Only you , I need for my life…….&lt;br&gt;
 我人生的主人公就是我，&lt;br&gt;
 唯有你，伴我人生路…&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -1761,8 +1753,7 @@ Only you , I need for my life…….&lt;br&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;http://jackosh.com/wpplugins/trackbacklist/&#34; title=&#34;Trackback List Plugin&#34;&gt;Trackback List Plugin&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -1965,8 +1956,7 @@ define (‘WPLANG’, ‘zh_CN’);&lt;br&gt;
 &lt;p&gt;从此中国队的比赛每场必看！一定要看看以后的那些对手们，怎样像越南一样被中国拚的无话可说，只好拿平局；怎样像朝鲜一样，被中国队搞的罚下一人，拍手称快；怎样被拖入加时赛，打的浑身抽筋，满地找牙；怎样被五个后卫加门将围堵，只好选择打门！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;好了，我要说，中国足球的希望&lt;strong&gt;越来越大&lt;/strong&gt;！你看，他们可以不用继续打亚洲U-17这种低级别的比赛，回家好好按照中国足球既有创意、又很实用的技战术训练；他们可以不用参加明年的世青赛，那些其它的小毛孩们哪里能有资格跟中国足球比拚？我们只需要把我们的水平和优势发挥出来，就凭像朝鲜队那样的队，上半场就低级犯规、下半场就体力不支、加时赛就两人抽筋，不配和中国足球打，女青&lt;strong&gt;0-5&lt;/strong&gt;算什么，玩玩嘛！男少&lt;strong&gt;1-2&lt;/strong&gt;算什么，让让呗！&lt;/p&gt;
-&lt;p&gt;我应该怀着怎样的心情，严肃却掩饰不住内心狂喜的向全世界宣布：&lt;strong&gt;中国足球终于雄起了！雄！起！了&lt;sup&gt;了了了了&lt;/sup&gt;！&lt;/strong&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;我应该怀着怎样的心情，严肃却掩饰不住内心狂喜的向全世界宣布：&lt;strong&gt;中国足球终于雄起了！雄！起！了&lt;sup&gt;了了了了&lt;/sup&gt;！&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2093,7 +2083,8 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;网站留言问题在&lt;a href=&#34;http://www.rolly.cn/&#34;&gt;Rolly&lt;/a&gt;的提醒下已修改，近日访问量有些多了，匆匆过客们：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/zhu8-net-keywords.jpg&#34; alt=&#34;最近关键词&#34; title=&#34;最近关键词&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;right&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/zhu8-net-searchengine.jpg&#34; alt=&#34;最近搜索引擎&#34; title=&#34;最近搜索引擎&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;计划要写的《大字报时代》、《洪水猛兽之网游》&lt;em&gt;（何时写来就不知道了）&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;计划要写的《大字报时代》、《洪水猛兽之网游》&lt;em&gt;（何时写来就不知道了）&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -2193,7 +2184,8 @@ Fell free to &lt;a href=&#34;https://zhu8.net/about/&#34;&gt;Contact&lt;/a&gt; m
 &lt;p&gt;更新于8月8日22：40&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -3002,8 +2994,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;呼，我的大学也快在匆匆的脚步里迈向了结尾。而匆匆的爱恋也已成往事，如风一般的消逝在寒风之中。仅以此纪念我的青春……&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -3110,8 +3101,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
 &lt;p&gt;不知道导演是作何想法，不仅让胡一刀和胡斐由孟飞一个人来饰演，更是让龚慈恩演绎了冰雪儿和程灵素两个角色。书中对程的给予可谓吝啬，不仅身材矮小，而且面带菜色，仅仅就是“目光明亮”罢了，然而龚却真的是一位一笑一颦，皆令人（至少是我）魂牵梦萦的女子。她所诠释的程，比书中少了一分机智（只是个人感觉在对斐感情上的问话很是取巧，甚有咄咄逼人之势），却多了一分惹人爱怜的女子。她在跟斐说到紫衣的时候，那种眼中的伤感，真的让我觉得心被她一小揪动了，为何胡斐不选择她？难道是因为紫衣的先入为主？还是因为她太过聪明？胡斐怕她胜过自己？记得她在前几次试探斐的时候，已然流露出的对胡的爱，以及她听到胡问她：有件事不知道自己高攀得上不？那份娇羞，而在听到胡说的尽是拉她结为兄妹，而后在跪拜天地的时候，有点发颠的行为，我的心都快碎了。胡倒底是真的不知道她对自己的爱恋，还是故意回避她，就因为她不漂亮？&lt;/p&gt;
 &lt;p&gt;唉，最是伤心，我爱的人不爱我，而我，却还要给他祝福。&lt;/p&gt;
 &lt;p&gt;因白天看会经常缓冲，所以，只能晚上看，真是……&lt;/p&gt;
-&lt;p&gt;回去睡觉了，累……&lt;/p&gt;
-</description>
+&lt;p&gt;回去睡觉了，累……&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -3220,8 +3210,7 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
 &lt;p&gt;而我在当时，即不知道什么是休克，只是深深的记得，我的星矢永远的少看了一集。&lt;/p&gt;
 &lt;p&gt;在当时，他们是怎么吸引我们的？&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;center&#34;&gt;&lt;img src=&#34;https://zhu8.net/images/posts/saint-seiya.jpg&#34; alt=&#34;你还记得他们吗？&#34; title=&#34;你还记得他们吗？&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;谁，都会想当英雄的，我永远相信：人的血液里总有追求更好的目标的因子。&lt;/p&gt;
-</description>
+&lt;p&gt;谁，都会想当英雄的，我永远相信：人的血液里总有追求更好的目标的因子。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -3306,22 +3295,21 @@ liu6 @ 2005-02-05 22:56&lt;br&gt;
       <pubDate>Mon, 27 Sep 2004 22:19:18 +0800</pubDate>
       
       <guid>https://zhu8.net/blog/2004/09/from-simple-to-complex-so-easy.html</guid>
-      <description>&lt;p&gt;近日不知怎地，常常会觉得心里虚无莫名，考研已经报名了，但心深处的感觉，软软的，象那么一坨海绵，想用力捶打上去，却无论如何使不上力了。这个部落格不知怎么，好像几位都因为两天的无缘无故上不去，仿佛世界里失去了某个东西，竟惶恐不安起来。&lt;br&gt;
-在不知某人的部落格里，链到了高二的语文老师：&lt;a href=&#34;http://feiyuwen.blogchina.com/&#34;&gt;王雷老师的BLOG&lt;/a&gt;里去了，看到他对教育，特别是语文教育的近乎鄙夷的文字，不禁要细细想想，这些年来，我真正，为了自己，以及未来，是否都在为它朝着“+”的方向行走？我的所谓考研“梦”，是否仅仅为了一个不甘心而已？&lt;br&gt;
-头脑里跌跌撞撞的冲出一串记忆来，关于朋友的，关于昔日恋人的，关于我寞落的大学生活的。我的心灵中，何时何日生生多出来这么多东西来？&lt;br&gt;
-坐在网吧里，通宵的人，已经开始来“上班”了。&lt;br&gt;
-躺在宿舍的时候，一位已经时常一起玩游戏的同学，说实话，他脑瓜蛮好使的，但常常向我抱怨：在“这样一个充满堕落与颓废的校园里”（原语），他却提不起哪怕一丁点学习的劲头来。&lt;br&gt;
-其实，我自己也知道，我现在所在的，是怎样的一所学校，学校里面是肥头油脑的领导，系里面是靠拍马屁爬上来竟然明年能带研究生的系主任，以及懦弱的没有自己一点主见的辅导员。而仅仅60人不到的班级里面，竟然就为了搞跨那个班长，弹劾那个委员弄的你死我活，一盘散沙。或许，这些话里面有我的片面之词吧。但无论如何，我已经陷进或者说已经无意地去适应这样一个环境，并渐渐让自己变的麻木和明哲保身。&lt;br&gt;
-曾经在高中无限向往的，大一踌躇满志的，美好的大学，就剩下9个月了，并且是无觉珍贵的9个月，一班同学，竟还如以往一般，各人自扫门前雪。&lt;br&gt;
-而自己，竟也是这班中如此的一员。&lt;br&gt;
-由此才想到，由简入繁易，由繁入简难。&lt;/p&gt;
+      <description>&lt;p&gt;近日不知怎地，常常会觉得心里虚无莫名，考研已经报名了，但心深处的感觉，软软的，象那么一坨海绵，想用力捶打上去，却无论如何使不上力了。这个部落格不知怎么，好像几位都因为两天的无缘无故上不去，仿佛世界里失去了某个东西，竟惶恐不安起来。&lt;/p&gt;
+&lt;p&gt;在不知某人的部落格里，链到了高二的语文老师：&lt;a href=&#34;http://feiyuwen.blogchina.com/&#34;&gt;王雷老师的BLOG&lt;/a&gt;里去了，看到他对教育，特别是语文教育的近乎鄙夷的文字，不禁要细细想想，这些年来，我真正，为了自己，以及未来，是否都在为它朝着“+”的方向行走？我的所谓考研“梦”，是否仅仅为了一个不甘心而已？&lt;/p&gt;
+&lt;p&gt;头脑里跌跌撞撞的冲出一串记忆来，关于朋友的，关于昔日恋人的，关于我寞落的大学生活的。我的心灵中，何时何日生生多出来这么多东西来？&lt;/p&gt;
+&lt;p&gt;坐在网吧里，通宵的人，已经开始来“上班”了。&lt;/p&gt;
+&lt;p&gt;躺在宿舍的时候，一位已经时常一起玩游戏的同学，说实话，他脑瓜蛮好使的，但常常向我抱怨：在“这样一个充满堕落与颓废的校园里”（原语），他却提不起哪怕一丁点学习的劲头来。&lt;/p&gt;
+&lt;p&gt;其实，我自己也知道，我现在所在的，是怎样的一所学校，学校里面是肥头油脑的领导，系里面是靠拍马屁爬上来竟然明年能带研究生的系主任，以及懦弱的没有自己一点主见的辅导员。而仅仅60人不到的班级里面，竟然就为了搞跨那个班长，弹劾那个委员弄的你死我活，一盘散沙。或许，这些话里面有我的片面之词吧。但无论如何，我已经陷进或者说已经无意地去适应这样一个环境，并渐渐让自己变的麻木和明哲保身。&lt;/p&gt;
+&lt;p&gt;曾经在高中无限向往的，大一踌躇满志的，美好的大学，就剩下9个月了，并且是无觉珍贵的9个月，一班同学，竟还如以往一般，各人自扫门前雪。&lt;/p&gt;
+&lt;p&gt;而自己，竟也是这班中如此的一员。&lt;/p&gt;
+&lt;p&gt;由此才想到，由简入繁易，由繁入简难。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;（P.S：将友情链接改的简单了，原来的看上去稍显繁缛）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;（又及：明天是中秋了，希望爸爸妈妈弟弟永远平安，还有爷爷奶奶婆婆，以及我自己，还有所有曾经关心过和我关心的朋友们）&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>

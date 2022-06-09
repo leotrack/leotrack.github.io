@@ -21,6 +21,7 @@ url: /blog/2004/12/used-to-think-i-will-love-you-for-lifetime.html
 > 我不敢回忆，  
 > 回忆总是太美，  
 > 回忆总是带点伤感。  
+<!--more-->
 
 ![](/images/posts/Img223349453.jpg)  
 

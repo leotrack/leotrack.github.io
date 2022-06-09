@@ -47,8 +47,7 @@
 &lt;p&gt;&lt;code&gt;WHERE p.post_status != &#39;attachment&#39;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;差不多就这些了，在懒懒喵的 &lt;a href=&#34;http://blog.nahoya.com/archives/2006_09/129&#34;&gt;旧文&lt;/a&gt; 中提到的留言关闭问题已经在Textpattern · 4.0.6中得到了解决。 &lt;strong&gt;但是我本人的一个问题，Tag问题还没有搞定，导入会变成Category，我是用的笨办法：直接在WP数据库中先删除它，哈哈！&lt;/strong&gt; 还有一个小问题，导入user错误，不过如果是单用户的Blog，大可不必去管这个问题。&lt;/p&gt;
 &lt;p&gt;*放出修改后的 &lt;del&gt;import_wp.php&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;em&gt;P.S&lt;/em&gt; 初次使用 &lt;a href=&#34;http://textile.thresholdstate.com/&#34;&gt;Textile&lt;/a&gt; ，感觉还要适应好段时间，不过用起来确实是种不同的体验。&lt;/p&gt;</description>
     </item>
     
     <item>

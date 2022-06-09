@@ -13,6 +13,7 @@ url: /blog/2010/06/chenjun-com-reborn-and-zheteng.html
 
 兴奋不已，重燃激情，欣闻[WordPress快到3.0][2]，且使用Movable Type已有倦意，而WordPress的用户群广大，插件众多，用户感受颇好。且多年前我就是从[Z-Blog][3]之后就是[从WordPress开始][4]的，遂重新启用域名的同时，也改头换面，用回WP，继续折腾！
 <!--more-->
+
 另：WordPress 3.0的默认主题TwentyTen很不错，也不至于像Kubrick那么久了难免有些审美疲劳，网上搜了一下未发现**中文包**，遂做了一个：有需要的尽管自取：[**zh_CN.po/mo**][5]
 
 下周三开始即将**休假半月**，回来后可能还会结束北漂生涯，彼时又将是一个新的开始！
