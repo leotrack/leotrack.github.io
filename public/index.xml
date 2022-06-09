@@ -103,8 +103,8 @@
       <guid>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</guid>
       <description>&lt;h3 id=&#34;为何用hugo&#34;&gt;为何用Hugo&lt;/h3&gt;
 &lt;p&gt;网站使用&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo is one of the most popular open-source static site generators.&#34;&gt;Hugo&lt;/a&gt;搭建，教程就不写了，网上太多了，放置在&lt;a href=&#34;https://github.com/&#34; title=&#34;Github&#34;&gt;Github&lt;/a&gt;上储存源码属于公开的访问，而且经常被 &lt;del&gt;&lt;strong&gt;土啬&lt;/strong&gt;&lt;/del&gt; ，因此，处于安全考虑，还是放到私有或者小众一些的地方吧。&lt;/p&gt;
-&lt;h3 id=&#34;为何使用gitlab&#34;&gt;为何使用Gitlab&lt;/h3&gt;
-&lt;p&gt;Github私有源码的话，是需要&lt;strong&gt;美刀的&lt;/strong&gt;，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt;吧：）注册完成之后，创建一个仓库，上传你所有的Hugo源代码。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。&lt;/p&gt;
+&lt;h3 id=&#34;为何使用gitlab--github&#34;&gt;为何使用&lt;del&gt;Gitlab&lt;/del&gt; / &lt;strong&gt;GitHub&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Github私有源码的话，是需要&lt;strong&gt;美刀的&lt;/strong&gt;，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册&lt;a href=&#34;https://gitlab.com/&#34; title=&#34;Gitlab&#34;&gt;Gitlab&lt;/a&gt;吧：）注册完成之后，创建一个仓库，上传你所有的Hugo源代码。当然，也可以按右上角的&lt;strong&gt;import&lt;/strong&gt;导入你的Github仓库。———— &lt;em&gt;Updated on 2022/06/09:在&lt;a href=&#34;https://github.com/zhu8&#34;&gt;GitHub&lt;/a&gt;完全可以访问的情况下，我又默默的换回了GitHub。就是这么 &lt;strong&gt;出尔反尔&lt;/strong&gt; 。&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用gitpod&#34;&gt;使用Gitpod&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://gitpod.io/&#34; title=&#34;Gitpod Web IDE&#34;&gt;Gitpod&lt;/a&gt;是一个Web IDE的云工具，可以在线编辑和同步你的源码，包括在线安装Hugo程序，我的安装包如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
@@ -261,7 +261,7 @@
 &lt;li&gt;模板及样式来源：&lt;del&gt;&lt;a href=&#34;https://usefulparadigm.com/&#34;&gt;Useful Paradigm&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;折腾开始于2014年7月1日，基本在2014年7月5日完工。&lt;/li&gt;
 &lt;li&gt;2020年5月17日，用&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;和主题&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34;&gt;Daily&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;2021年11月1日-11月16日，换主题&lt;a href=&#34;https://github.com/heyeshuang/hugo-theme-tokiwa&#34;&gt;Tokiwa&lt;/a&gt;继续折腾，其中使用到的平台和工具包括：&lt;del&gt;腾讯云提供的&lt;strong&gt;CloudStudio&lt;/strong&gt;&lt;/del&gt;、Git平台&lt;a href=&#34;https://gitlab.com/&#34;&gt;&lt;strong&gt;Gitlab&lt;/strong&gt;&lt;/a&gt;（比&lt;em&gt;Github&lt;/em&gt;的好处就是访问稳定）、在线IDE平台&lt;a href=&#34;https://gitpod.io/&#34;&gt;&lt;strong&gt;Gitlpod&lt;/strong&gt;&lt;/a&gt;、网站发布平台&lt;a href=&#34;https://vercel.com/&#34;&gt;&lt;strong&gt;Vercel&lt;/strong&gt;&lt;/a&gt;（大赞！）。&lt;/li&gt;
+&lt;li&gt;2021年11月1日-11月16日，换主题&lt;a href=&#34;https://github.com/heyeshuang/hugo-theme-tokiwa&#34;&gt;Tokiwa&lt;/a&gt;继续折腾，其中使用到的平台和工具包括：&lt;del&gt;腾讯云提供的&lt;strong&gt;CloudStudio&lt;/strong&gt;&lt;/del&gt;、Git平台&lt;a href=&#34;https://github.com/&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;、在线IDE平台&lt;a href=&#34;https://gitpod.io/&#34;&gt;&lt;strong&gt;Gitlpod&lt;/strong&gt;&lt;/a&gt;、网站发布平台&lt;a href=&#34;https://vercel.com/&#34;&gt;&lt;strong&gt;Vercel&lt;/strong&gt;&lt;/a&gt;（大赞！）。&lt;/li&gt;
 &lt;li&gt;2022年4月23日，悄咪咪的更新了一些源代码，主要是CSS里面的图片居左居右，以及放出了一些本来以为已经找不到的网站的老图片，感谢伟大的工具&lt;a href=&#34;https://web.archive.org/web/20060614054822/https://219.141.36.145/school/UploadFiles/20041115162230783.jpg&#34;&gt;&lt;strong&gt;Wayback Machine&lt;/strong&gt;&lt;/a&gt;。&lt;em&gt;@深圳·福田·景田&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;img src=&#34;https://zhu8.net/images/pages/ManUtd.png&#34; width=&#34;180&#34; class=&#34;right trans&#34; alt=&#34;Manchester United&#34; title=&#34;Manchester United&#34; /&gt;

@@ -26,10 +26,10 @@ author = "Zhu8"
   toc = true
   env = "production"
   description = """
-## 🚴‍♂️ *庸俗路上的无尽狂奔……* 🔱 
+## 🚴‍♂️ *庸俗路上的无尽狂奔……* 🔱
   """
   favicon = "/favicon.ico"
-  fuse = true 
+  fuse = true
   useChineseFonts = true
   PostDateFormat = "2006-01-02 15:04 @ Mon"
   enableReadingTime = true
@@ -48,7 +48,7 @@ author = "Zhu8"
   summaryLength = 140
   twitterCards = true
   openGraph = true
-  
+
 [permalinks]
   posts = "/blog/:year/:month/:slug/"
   categories = "/categories/:slug/"
@@ -102,7 +102,6 @@ author = "Zhu8"
 
 [params.social]
 Github = "zhu8"
-Gitlab = "zhu8.net"
 Twitter = "5CJ"
 Weibo = "zhu8"
 Tumblr = "zhu8"

@@ -12,16 +12,16 @@ tags:
 featured_image: /images/posts/Vercel.png
 title: Hugo搭建完全云托管个人网站
 url: /blog/2022/04/make-a-whole-cloud-site-with-hugo.html
-description: 我的网站搭建，通过Gitlab（源码存储）、Gitpod（Web IDE）、Vercel（站点发布与域名）、Waline（评论系统），构建了完整的生态链。也就是，我只需要出域名的钱，所有东西就全部呈现出来啦！
+description: 我的网站搭建，通过GitHub（源码存储）、Gitpod（Web IDE）、Vercel（站点发布与域名）、Waline（评论系统），构建了完整的生态链。也就是，我只需要出域名的钱，所有东西就全部呈现出来啦！
 toc: true
 ---
 ### 为何用Hugo
 
 网站使用[Hugo][1]搭建，教程就不写了，网上太多了，放置在[Github][2]上储存源码属于公开的访问，而且经常被 ~~**土啬**~~ ，因此，处于安全考虑，还是放到私有或者小众一些的地方吧。
 
-### 为何使用Gitlab
+### 为何使用~~Gitlab~~ / **GitHub**
 
-Github私有源码的话，是需要**美刀的**，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册[Gitlab][3]吧：）注册完成之后，创建一个仓库，上传你所有的Hugo源代码。当然，也可以按右上角的**import**导入你的Github仓库。
+Github私有源码的话，是需要**美刀的**，作为小站长，一个虚拟空间的钱还是要省的，所以，去注册[Gitlab][3]吧：）注册完成之后，创建一个仓库，上传你所有的Hugo源代码。当然，也可以按右上角的**import**导入你的Github仓库。———— _Updated on 2022/06/09:在[GitHub](https://github.com/zhu8)完全可以访问的情况下，我又默默的换回了GitHub。就是这么 **出尔反尔** 。_
 <!--more-->
 
 ### 使用Gitpod
