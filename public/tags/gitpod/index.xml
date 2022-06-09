@@ -14,10 +14,10 @@
     
     <item>
       <title>Hugo搭建完全云托管个人网站</title>
-      <link>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</link>
+      <link>https://zhu8.net/blog/2022/04/make-a-entire-cloud-site-with-hugo.html</link>
       <pubDate>Tue, 26 Apr 2022 23:00:10 +0800</pubDate>
       
-      <guid>https://zhu8.net/blog/2022/04/make-a-whole-cloud-site-with-hugo.html</guid>
+      <guid>https://zhu8.net/blog/2022/04/make-a-entire-cloud-site-with-hugo.html</guid>
       <description>&lt;h3 id=&#34;为何用hugo&#34;&gt;为何用Hugo&lt;/h3&gt;
 &lt;p&gt;网站使用&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo is one of the most popular open-source static site generators.&#34;&gt;Hugo&lt;/a&gt;搭建，教程就不写了，网上太多了，放置在&lt;a href=&#34;https://github.com/&#34; title=&#34;Github&#34;&gt;Github&lt;/a&gt;上储存源码属于公开的访问，而且经常被 &lt;del&gt;&lt;strong&gt;土啬&lt;/strong&gt;&lt;/del&gt; ，因此，处于安全考虑，还是放到私有或者小众一些的地方吧。&lt;/p&gt;
 &lt;h3 id=&#34;为何使用gitlab--github&#34;&gt;为何使用&lt;del&gt;Gitlab&lt;/del&gt; / &lt;strong&gt;GitHub&lt;/strong&gt;&lt;/h3&gt;
