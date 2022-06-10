@@ -1,7 +1,7 @@
 baseURL = "https://leotrack.github.io/"
 languageCode = "zh-cn"
 DefaultContentLanguage = "zh"
-title = "猪八的网：浮生志"
+title = "LeoTrack's Test"
 copyright = "Zhu8.Net 🚀 [<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\">CC BY-SA</a>]"
 theme = "hugo-theme-tokiwa"
 canonifyurls = true
