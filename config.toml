@@ -12,6 +12,12 @@ enableInlineShortcodes = true
 author = "Zhu8"
 publishdir = "docs"
 
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
+
 [markup]
   [markup.highlight]
   style = "github"
@@ -33,6 +39,7 @@ publishdir = "docs"
   fuse = true
   useChineseFonts = true
   PostDateFormat = "2006-01-02 15:04 @ Mon"
+  dateFormat = "2006-01-02"
   enableReadingTime = true
   author = "Zhu8"
   authorlocation = "Nanjing, China"
@@ -47,8 +54,12 @@ publishdir = "docs"
   keywords = ['陈俊', 'ChenJun', 'Chen Jun', '猪八', 'Zhu8', '个人网站', 'chenjun.com', 'zhu8.net', 'Doraemon', '王小波', 'Hugo']
   showRelatedPosts = true
   summaryLength = 140
-  twitterCards = true
-  openGraph = true
+  enableGitInfo = true
+
+  [params.GitRepo]
+  # this is for "Updated: time" with an hyperlink to commit hash, see single.html
+  enable = true
+  Host = "https://github.com/leotrack/leotrack.github.io/commit/"
 
 [permalinks]
   posts = "/blog/:year/:month/:slug/"

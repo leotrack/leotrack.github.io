@@ -11,7 +11,7 @@
     transition: all .3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-main, ul li, .wl-count {
+.theme-dark main, .theme-dark ul li, .theme-dark .wl-count {
     color: var(--text-faded);
 }
 
@@ -20,7 +20,7 @@ main, ul li, .wl-count {
     font-family: sans-serif;
     font-size: 14px;
 }
-pre, th, code, kbd, hr.double-line:after, .wl-panel, #fastSearch input {
+.theme-dark pre, .theme-dark th, .theme-dark code, .theme-dark kbd, .theme-dark hr.double-line:after, .theme-dark .wl-panel, .theme-dark #fastSearch input {
     background: rgba(105, 105, 105, var(--tw-bg-opacity)) !important;
     --tw-bg-opacity: 0.1 !important;
 }
