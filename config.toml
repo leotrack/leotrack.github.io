@@ -10,6 +10,7 @@ preserveTaxonomyNames = true
 hasCJKLanguage = true
 enableInlineShortcodes = true
 author = "Zhu8"
+publishdir = "docs"
 
 [markup]
   [markup.highlight]
