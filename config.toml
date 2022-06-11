@@ -63,7 +63,7 @@ publishdir = "docs"
   repoURL = "https://github.com/leotrack/leotrack.github.io/blob/master"
   repoEditURL = "https://github.com/leotrack/leotrack.github.io/edit/master"
   displayRAW = true
-  RAWText = "RAW MD"
+  RAWText = "MD"
   displayEditLink = true
   editText = "Edit Me?"
 
