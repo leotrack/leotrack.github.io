@@ -55,11 +55,17 @@ publishdir = "docs"
   showRelatedPosts = true
   summaryLength = 140
   enableGitInfo = true
-
-  [params.GitRepo]
-  # this is for "Updated: time" with an hyperlink to commit hash, see single.html
-  enable = true
-  Host = "https://github.com/leotrack/leotrack.github.io/commit/"
+  gitRepo = "https://github.com/leotrack/leotrack.github.io"
+  # 是否开启
+  enablePostGitInfo = true
+  displayPostGitInfo = true
+      # 说明：文章的 Front Matter 中的 `gitinfo`
+  repoURL = "https://github.com/leotrack/leotrack.github.io/blob/master"
+  repoEditURL = "https://github.com/leotrack/leotrack.github.io/edit/master"
+  displayRAW = true
+  RAWText = "RAW MD"
+  displayEditLink = true
+  editText = "Edit Me?"
 
 [permalinks]
   posts = "/blog/:year/:month/:slug/"
